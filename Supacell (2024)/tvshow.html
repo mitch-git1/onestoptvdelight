@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- Copyright DeadSix27 2013-2014 -->
+<!-- Generated with DeadSix27's HTML Generator-->
+<!-- https://forum.kodi.tv/showthread.php?tid=160863 -->
+<!-- adapted for tinyMediaManager -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="author" content="DeadSix27" />
+  <meta name="publisher" content="DeadSix27" />
+  <meta name="description" content="Share your Library with DeadSix27&#39;s HTML Generator" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="generator" content="tinyMediaManager (template from abandoned HTML Generator)" />
+  <title></title>
+</head>
+<body>
+  Library - TV Shows - Supacell
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <span class="copyrightInfo">HTML Generator v7.0.0 Revision: 19536 - <a href="#">moreIT.eu</a> <a href="#">Dead6.eu</a></span>
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Supacell</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Supacell%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Supacell%20-%20S01E01%20-%20Michael-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Michael
+          </div>
+          <div class="plot">Delivery driver Michael has big plans for the future with his girlfriend. Until something odd starts happening to him and others across South London.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Supacell%20-%20S01E02%20-%20Tazer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Tazer
+          </div>
+          <div class="plot">Four Londoners reel from the discovery of their powers, while another knows exactly how to make the most of his. Michael desperately looks for answers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Supacell%20-%20S01E03%20-%20Sabrina-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Sabrina
+          </div>
+          <div class="plot">Sabrina and Sharleen plan a night out after a long day. The Tower Boys get into a fight that leaves Tazer swearing revenge. Michael comes up with a plan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Supacell%20-%20S01E04%20-%20Andre-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Andre
+          </div>
+          <div class="plot">Andre makes a dangerous decision after the bailiffs pay him a visit. Rodney's business slows down, and Dionne meets the mother of a missing girl.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Supacell%20-%20S01E05%20-%20Rodney-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Rodney
+          </div>
+          <div class="plot">With his best friend in hospital, Rodney has a change of heart. Michael resolves to telling Dionne everything &mdash; but first he has to find the others.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Supacell%20-%20S01E06%20-%20Supacell-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Supacell
+          </div>
+          <div class="plot">The stakes are high as Tazer and Sabrina both search for Krazy. With powers pushed beyond their limit, the five must unite to save the ones they love.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+          <span class="title">Style:</span> <span class="value">Transparent Style (Author: DeadSix27)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

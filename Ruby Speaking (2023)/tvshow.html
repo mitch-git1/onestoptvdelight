@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- Copyright DeadSix27 2013-2014 -->
+<!-- Generated with DeadSix27's HTML Generator-->
+<!-- https://forum.kodi.tv/showthread.php?tid=160863 -->
+<!-- adapted for tinyMediaManager -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="author" content="DeadSix27" />
+  <meta name="publisher" content="DeadSix27" />
+  <meta name="description" content="Share your Library with DeadSix27&#39;s HTML Generator" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="generator" content="tinyMediaManager (template from abandoned HTML Generator)" />
+  <title></title>
+</head>
+<body>
+  Library - TV Shows - Ruby Speaking
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <span class="copyrightInfo">HTML Generator v7.0.0 Revision: 19536 - <a href="#">moreIT.eu</a> <a href="#">Dead6.eu</a></span>
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Ruby Speaking</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Ruby%20Speaking%20%282023%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ruby%20Speaking%20-%20S01E01%20-%20Episode%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Episode 1
+          </div>
+          <div class="plot">At Hellocom, a Bristol call centre, fun and irreverent Ruby tries to put a smile on her colleagues' faces, dodge getting the sack, and run a choir that she'd much sooner avoid.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ruby%20Speaking%20-%20S01E02%20-%20Episode%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Episode 2
+          </div>
+          <div class="plot">Ruby discovers that turning on the charm at work boosts sales but brings a new headache for her to deal with, along with running the world's worst choir.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ruby%20Speaking%20-%20S01E03%20-%20Episode%203-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Episode 3
+          </div>
+          <div class="plot">Ruby decides to sort everyone else's life out, from Cameron's commute crush to Melon's birthday party. After all, anything is better than fixing her own mess.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ruby%20Speaking%20-%20S01E04%20-%20Episode%204-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Episode 4
+          </div>
+          <div class="plot">Ruby decides that running the choir is becoming too much of a hassle but stepping down now proves harder than she realised, especially now she's heard Western Windows perform.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ruby%20Speaking%20-%20S01E05%20-%20Episode%205-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Episode 5
+          </div>
+          <div class="plot">It&rsquo;s Cameron&rsquo;s last day at Hellocom and Ruby learns that you don&rsquo;t always know what you&rsquo;ve got til it&rsquo;s gone. Is she about to lose everything?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ruby%20Speaking%20-%20S01E06%20-%20Episode%206-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Episode 6
+          </div>
+          <div class="plot">It's the final of ChoirFest SouthWest and Ruby's forced to decide if she can put the happiness of her team ahead of her overwhelming desire to self-sabotage.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+          <span class="title">Style:</span> <span class="value">Transparent Style (Author: DeadSix27)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

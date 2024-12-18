@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title></title>
+</head>
+<body>
+  Library - TV Shows - The Mick
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Mick</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Mick%20%282017%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">An unapologetic degenerate moves to affluent Greenwich, CT, to raise the outrageously spoiled kids of her wealthy sister and brother-in-law, who have fled the country to avoid prosecution for illegal activities.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E02%20-%20The%20Grandparents-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Grandparents
+          </div>
+          <div class="plot">The Pemberton kids learn some lessons in &quot;tough love,&quot; when Mickey calls in their overly strict grandmother to discipline them. Meanwhile, Mickey reunites with Jimmy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E03%20-%20The%20Buffer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Buffer
+          </div>
+          <div class="plot">Mickey tricks Sabrina into thinking she's pregnant to scare her into taking birth control. Meanwhile, Chip considers a vasectomy to thwart gold-diggers, but has not even kissed a girl.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E04%20-%20The%20Balloon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Balloon
+          </div>
+          <div class="plot">When Mickey learns they've all forgotten Ben's seventh birthday, the family is forced to put their selfish tendencies aside for one day and throw him the celebration he deserves, which proves way harder than it sounds.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E05%20-%20The%20Fire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Fire
+          </div>
+          <div class="plot">Mickey tries to quit smoking. Meanwhile, Ben meets a new friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E06%20-%20The%20Master-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Master
+          </div>
+          <div class="plot">The kids fight over who will take the master bedroom!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E07%20-%20The%20Country%20Club-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Country Club
+          </div>
+          <div class="plot">The Pembertons return to their country club to restore their family reputation, but Mickey gets into a fight with the phony country club ladies and Chip has been demoted from the champion golf foursome.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E08%20-%20The%20Snitch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Snitch
+          </div>
+          <div class="plot">After Chip gets roped into a scandal, Sabrina leads a School Honor Board trial against him, where he must choose between snitching on his teammates or taking the fall. Meanwhile, Alba dents the family Bugatti, with Ben as a witness.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E09%20-%20The%20Mess-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Mess
+          </div>
+          <div class="plot">When Mickey's attempts at disciplining the kids are ignored, she decides to shed her &quot;cool aunt&quot; persona and lay down the law.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E10%20-%20The%20Baggage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Baggage
+          </div>
+          <div class="plot">Mickey's unwanted suitors team up to thwart her new romance. Meanwhile, Sabrina and Alba teach Ben a lesson in responsibility.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E11%20-%20The%20New%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The New Girl
+          </div>
+          <div class="plot">When Mickey believes Ben's school is discriminating against him, she stands up for her nephew. Meanwhile, Sabrina and Chip spend time with Alba and learn some surprising things about her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E12%20-%20The%20Wolf-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Wolf
+          </div>
+          <div class="plot">When it seems as though Chip is getting scammed by a girl he met online, Mickey tries to teach him how to be a &quot;wolf&quot; vs. a &quot;sheep.&quot; Meanwhile, Sabrina is scared that her boyfriend is beginning to mirror Jimmy's ways and she plans an intervention.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E13%20-%20The%20Bully-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - The Bully
+          </div>
+          <div class="plot">The tables are turned when a cyber bully targets Sofia, leading Mickey to come up with a plan for revenge. Meanwhile, Jimmy teaches Chip and Ben how to be self-sufficient, resulting in a painful disaster.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E14%20-%20The%20Heater-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - The Heater
+          </div>
+          <div class="plot">Mickey and Alba go on a gambling binge. In Mickey's absence, Jimmy, Sabrina and Chip fight for control over the house, while one of them must watch over Ben.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E15%20-%20The%20Sleepover-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - The Sleepover
+          </div>
+          <div class="plot">Mickey's poor parenting skills are only made worse when a popular kid in Chip's class comes to the house for a sleepover. Meanwhile, Mickey and Alba try to tame Ben's fear of monsters.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E16%20-%20The%20Implant-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - The Implant
+          </div>
+          <div class="plot">Sabrina tells Mickey she wants to augment her figure, so Mickey decides the best way to dissuade her from doing so is to do a test-run in public. Meanwhile, Jimmy takes Chip and Ben to a baseball game to teach them how to be more masculine.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Mick%20-%20S01E17%20-%20The%20Intruder-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - The Intruder
+          </div>
+          <div class="plot">Life in the Pemberton mansion gets even more chaotic when the kids catch a pair of intruders trying to break in. Then, Mickey tries to protect the kids in a case of mistaken identity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
