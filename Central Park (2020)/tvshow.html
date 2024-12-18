@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<!-- Copyright DeadSix27 2013-2014 -->
+<!-- Generated with DeadSix27's HTML Generator-->
+<!-- https://forum.kodi.tv/showthread.php?tid=160863 -->
+<!-- adapted for tinyMediaManager -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="author" content="DeadSix27" />
+  <meta name="publisher" content="DeadSix27" />
+  <meta name="description" content="Share your Library with DeadSix27&#39;s HTML Generator" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="generator" content="tinyMediaManager (template from abandoned HTML Generator)" />
+  <title></title>
+</head>
+<body>
+  Library - TV Shows - Central Park
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <span class="copyrightInfo">HTML Generator v7.0.0 Revision: 19536 - <a href="#">moreIT.eu</a> <a href="#">Dead6.eu</a></span>
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Central Park</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Central%20Park%20%282020%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S01E01%20-%20Episode%20One-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Episode One
+          </div>
+          <div class="plot">An event goes awry in the New York park, which Owen manages and lives in with his family. Paige chases a hard news story.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S01E02%20-%20Skater%E2%80%99s%20Circle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Skater&rsquo;s Circle
+          </div>
+          <div class="plot">Bitsy pitches her plan to buy the park. Owen deals with a mini-mugging in Skater&rsquo;s Circle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S01E03%20-%20Hat%20Luncheon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Hat Luncheon
+          </div>
+          <div class="plot">Owen speaks at a tense Hat Luncheon charity event. Cole helps Molly meet up with Brendan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S01E04%20-%20Garbage%20Ballet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Garbage Ballet
+          </div>
+          <div class="plot">Paige hunts a rat, Owen battles trash in the park, and Molly obsesses over her disastrous first kiss.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S01E05%20-%20Dog%20Spray%20Afternoon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Dog Spray Afternoon
+          </div>
+          <div class="plot">Owen grapples with a graffiti artist tagging the park, while Helen plots against Bitsy&rsquo;s dog, Shampagne.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S01E06%20-%20Rival%20Busker-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Rival Busker
+          </div>
+          <div class="plot">Birdieʼs job is threatened by a rival busker, Bitsy hosts a wedding, and Paige spends the night at The Brandenham.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S01E07%20-%20Squirrel%2C%20Interrupted-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Squirrel, Interrupted
+          </div>
+          <div class="plot">Cole and Owen do a scavenger hunt in Central Park. Paige discovers Molly is a great chess player.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S01E08%20-%20Hot%20Oven-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Hot Oven
+          </div>
+          <div class="plot">Molly introduces Brendan to the family. Helen stumbles upon a new way to get Shampagne out of her life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S01E09%20-%20Live%20it%20Up%20Tonight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Live it Up Tonight
+          </div>
+          <div class="plot">Molly and Cole go on a special park tour as Owen and Paige try to have a date night.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S01E10%20-%20A%20Fish%20Called%20Snakehead-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - A Fish Called Snakehead
+          </div>
+          <div class="plot">Season finale. Owen and his family search for a snakehead fish that might be in the Harlem Meer. Bitsy works with a likability consultant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E01%20-%20Central%20Dark-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Central Dark
+          </div>
+          <div class="plot">A tristate blackout leaves Bitsy and Helen trapped in New Jersey&mdash;and forces the Tillerman family to see each other in a new light.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E02%20-%20Mother%27s%20Daze-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Mother's Daze
+          </div>
+          <div class="plot">Owen and the kids go all out for Paige on Mother&rsquo;s Day. Bitsy has to handle things on her own when Helen takes a day off.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E03%20-%20Fista%20Puffs%20Mets%20Out%20Justice-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Fista Puffs Mets Out Justice
+          </div>
+          <div class="plot">As a test to see if she's worthy of joining an elite girl group, Fista Puffs battles a monster in the Metropolitan Museum of Art.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E04%20-%20Of%20Course%20You%20Realize%20This%20Means%20Ward-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Of Course You Realize This Means Ward
+          </div>
+          <div class="plot">Owen oversees a kids' field trip in the park, while Molly and Cole help Brendan with his indoor kite competition. Bitsy and her brother write memoirs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E05%20-%20Down%20to%20the%20Underwire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Down to the Underwire
+          </div>
+          <div class="plot">When Molly needs a new bra, Owen takes her shopping. Helen finds a key that could finally reveal whether she's in Bitsy&rsquo;s will.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E06%20-%20The%20Shadow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - The Shadow
+          </div>
+          <div class="plot">The Brandenham is robbed by a jewel thief, reminding Bitsy of a criminal who terrorized the hotel over 50 years ago.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E07%20-%20A%20Decent%20Proposal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - A Decent Proposal
+          </div>
+          <div class="plot">Owen does damage control after accidentally ruining a marriage proposal. Molly attends Bitsy&rsquo;s birthday party with Brendan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E08%20-%20Sir%20Bricks-A-Lot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Sir Bricks-A-Lot
+          </div>
+          <div class="plot">When Owen considers a new job in Connecticut, the family uses Cole&rsquo;s toys to imagine what their lives would be like if they moved out of the park.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E09%20-%20A%20Boat-iful%20Mind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - A Boat-iful Mind
+          </div>
+          <div class="plot">Cole finds an escape from his homework in model sail-boating. Molly becomes a published artist in the school newspaper but isn&rsquo;t proud of her work.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E10%20-%20Bee%20Is%20for%20Brandenham-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Bee Is for Brandenham
+          </div>
+          <div class="plot">Owen is called to the Brandenham to help Bitsy deal with a swarm of bees, while Paige and the kids attempt to care for her boss&rsquo; cat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E11%20-%20The%20PAIGE-riarchy%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - The PAIGE-riarchy!
+          </div>
+          <div class="plot">Paige tries to convince Molly that her period is a blessing. Bitsy is desperate to get back on a prestigious list of rich women over 50.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E12%20-%20Castle%20Sweet%20Castle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Castle Sweet Castle
+          </div>
+          <div class="plot">Owen and Paige set out to make the castle everything they dreamed it would be&mdash;if they can get the approval.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E13%20-%20Celeste%20We%20Forget-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Celeste We Forget
+          </div>
+          <div class="plot">Owen&rsquo;s mom derails a trip to the botanical garden when she makes a surprise visit. Paige chases a lead while writing a fluff piece on gifting suites.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E14%20-%20The%20Ballad%20of%20Johnnie%20Lee-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - The Ballad of Johnnie Lee
+          </div>
+          <div class="plot">After an embarrassing moment at school, Cole wants to change his name and identity. Owen, Paige, and Molly tell stories to help him cope.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E15%20-%20Where%20There%E2%80%99s%20Smoke-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Where There&rsquo;s Smoke
+          </div>
+          <div class="plot">In search of evidence for a story, Paige brings the family to a wake. Bitsy and Helen try to convince a big investor to join them in buying Central Park.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S02E16%20-%20The%20Lyin%E2%80%99%20in%20Winter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - The Lyin&rsquo; in Winter
+          </div>
+          <div class="plot">Bitsy and Helen get stranded during a blizzard. The family finds out that the deal to sell Central Park is happening today. Season finale.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S03E01%20-%20A%20Star%20Is%20Owen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - A Star Is Owen
+          </div>
+          <div class="plot">The Tillerman family welcomes spring as an episode of a hit crime show films in the park.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S03E02%20-%20Paige%E2%80%99s%20Next%20Chapter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Paige&rsquo;s Next Chapter
+          </div>
+          <div class="plot">As Paige prepares for a big meeting with a book publisher, she welcomes her sister Abby to New York City.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S03E03%20-%20Ice%20Ice%20Not%20Baby-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Ice Ice Not Baby
+          </div>
+          <div class="plot">Molly and Brendan get into their first big fight, while Abby gets her first big commercial audition for a local deli.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S03E04%20-%20A%20Triptych%20Down%20Memory%20Lane-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - A Triptych Down Memory Lane
+          </div>
+          <div class="plot">Elwood forgets the password he created for the Tillermans&rsquo; hard drive, so the family must help him remember it or their memories will be erased.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S03E05%20-%20Golden%20Owen%20Manager%20Damager-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Golden Owen: Manager Damager
+          </div>
+          <div class="plot">In order to get his &ldquo;I Heart the Park&rdquo; campaign proposal approved, Owen has to repair old friendships at the Park Managers&rsquo; Conference.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S03E06%20-%20A%20Matter%20of%20Life%20and%20Boeuf-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - A Matter of Life and Boeuf
+          </div>
+          <div class="plot">When the Tillermans visit Abby at her new job as waitress, a precious item goes missing&mdash;and everyone in the restaurant is a&nbsp;suspect.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S03E07%20-%20Slumber-Dog-Molly-An-Aire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Slumber-Dog-Molly-An-Aire
+          </div>
+          <div class="plot">Molly hosts her first teenage slumber party, which creates a rift between her and Paige.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S03E08%20-%20Lunar%20Palaver-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Lunar Palaver
+          </div>
+          <div class="plot">On the day of the Lunar Palaver&mdash;a big Squirrel Quarrels event&mdash;Cole has a run-in with a racist lady in the park.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S03E09%20-%20A%20Killer%20Deadline-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - A Killer Deadline
+          </div>
+          <div class="plot">Paige checks into a hotel to focus on two writing deadlines. Owen volunteers for a school kickball tournament that Molly is trying to avoid.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S03E10%20-%20Money%20Candy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Money Candy
+          </div>
+          <div class="plot">Owen and Paige set out to buy tickets to a K-pop boy band&rsquo;s concert for the kids. Bitsy looks into cloning her dog.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S03E11%20-%20The%20Puffs%20Go%20Poof-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - The Puffs Go Poof
+          </div>
+          <div class="plot">Fista Puffs considers straightening her hair.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S03E12%20-%20A%20Hot%20Dog%20to%20Remember-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - A Hot Dog to Remember
+          </div>
+          <div class="plot">When a beloved hot dog vendor has to take a rare morning off, Owen and Cole volunteer to help set up his cart so he can break a park record.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Central%20Park%20-%20S03E13%20-%20The%20Brandenpire%20Strikes%20Back-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - The Brandenpire Strikes Back
+          </div>
+          <div class="plot">Owen&rsquo;s &ldquo;I Heart the Park&rdquo; campaign is in full swing with all hands on deck. Bitsy schemes to cement her political influence. Season finale.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+          <span class="title">Style:</span> <span class="value">Transparent Style (Author: DeadSix27)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

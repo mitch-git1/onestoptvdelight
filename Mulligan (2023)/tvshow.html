@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!-- Copyright DeadSix27 2013-2014 -->
+<!-- Generated with DeadSix27's HTML Generator-->
+<!-- https://forum.kodi.tv/showthread.php?tid=160863 -->
+<!-- adapted for tinyMediaManager -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="author" content="DeadSix27" />
+  <meta name="publisher" content="DeadSix27" />
+  <meta name="description" content="Share your Library with DeadSix27&#39;s HTML Generator" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="generator" content="tinyMediaManager (template from abandoned HTML Generator)" />
+  <title></title>
+</head>
+<body>
+  Library - TV Shows - Mulligan
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <span class="copyrightInfo">HTML Generator v7.0.0 Revision: 19536 - <a href="#">moreIT.eu</a> <a href="#">Dead6.eu</a></span>
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Mulligan</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Mulligan%20%282023%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E01%20-%20The%20Great%20Mulligan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Great Mulligan
+          </div>
+          <div class="plot">After blowing up an alien army and saving humanity from extinction, regular guy Mulligan must figure out how to lead his fellow survivors as president.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E02%20-%20Morning%20in%20America-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Morning in America
+          </div>
+          <div class="plot">To start rebuilding society, Simon and Farrah ask Mulligan if they can take a census. But there's one thing they didn't count on: catching feelings.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E03%20-%20Grand%20Old%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Grand Old Party
+          </div>
+          <div class="plot">With only 1,132 people left on Earth, Mulligan throws an epic party at the White House in hopes to out-rage former presidents &mdash; and make Lucy jealous.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E04%20-%20The%20Stamp%20Act-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Stamp Act
+          </div>
+          <div class="plot">Women outnumber men two to one! To distract the fairer sex from their obvious advantage, Senator LaMarr proposes a contest to feature a woman on a stamp.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E05%20-%20The%20Stench-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Stench
+          </div>
+          <div class="plot">First Lady Lucy takes up her latest cause: a benefit concert called &quot;Quench the Stench&quot; to eradicate a pervasive and putrid odor plaguing D.C.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E06%20-%20Opening%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Opening Day
+          </div>
+          <div class="plot">If Simon and Lucy want Mulligan to sign an executive order for solar power, they'll have to go through the proper protocol: seducing Senator LaMarr.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E07%20-%20The%20Egg%20Hunt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Egg Hunt
+          </div>
+          <div class="plot">On Easter, Senator LaMarr worries traditional religion may be losing its influence on their new government until he meets a doomsday prophet named Dave.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E08%20-%20Matty%27s%20Treasure%20Book%20of%20Seeds-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Matty's Treasure: Book of Seeds
+          </div>
+          <div class="plot">To get Mulligan on board to raid the seed vault in Maryland, Simon and Farrah tell him they're on a quest for the legendary national treasure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E09%20-%20Not%20My%20President-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Not My President
+          </div>
+          <div class="plot">If former President Brad Chadman survived the invasion in an alien-proof bunker, will Mulligan take one for the team and relinquish his power?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E10%20-%20The%20Love%20Choice-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Love Choice
+          </div>
+          <div class="plot">In an effort to display more transparency in government, the Cabinet decides to hold a public election, which quickly devolves into a reality show.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E11%20-%20A%20Rising%20Tide-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - A Rising Tide
+          </div>
+          <div class="plot">Mulligan tries to convince cruise ship passengers &mdash; and potential future voters &mdash; to join him on land, but the Thirsty Princess is just too much fun.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E12%20-%20Party%20Foul-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Party Foul
+          </div>
+          <div class="plot">Aboard the cruise ship, Lucy and Zhao suspect the Fun Police are up to no good. Back on land, Mulligan turns America over to the United Kingdom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E13%20-%20The%20Great%20Depression-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - The Great Depression
+          </div>
+          <div class="plot">While Farrah searches for TOD in an abandoned shopping mall, the rest of the cabinet suffers from post-boat blues &mdash; except for a repressed Mulligan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E14%20-%20Sic%20Semper%20Mulligan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Sic Semper Mulligan
+          </div>
+          <div class="plot">When Mulligan learns about presidential assassinations, he changes his policies to avoid a similar fate. Meanwhile, Farrah worries she's mothering TOD.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E15%20-%20DC%20AC-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - DC/AC
+          </div>
+          <div class="plot">During a heatwave, Farrah tries to prevent a power outage, Mulligan keeps the only copy of the Constitution safe, and LaMarr spends time with family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E16%20-%20The%20Ballad%20of%20Sentient%20Meat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - The Ballad of Sentient Meat
+          </div>
+          <div class="plot">When food becomes scarce, Mulligan and Lucy go on a campaign to promote vegetables while Farrah tries to create an ethical alternative to meat in a lab.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E17%20-%20Watergate%20Watergate-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Watergate Watergate
+          </div>
+          <div class="plot">The Mulligan administration announces a lottery for free housing, but there's one catch: no running water. Can the only plumber left on Earth help?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E18%20-%20Dr.%20Johnny%27s%20Wonder%20Pill-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Dr. Johnny's Wonder Pill
+          </div>
+          <div class="plot">When Zhao asks LaMarr for help fast-tracking a wonder drug, LaMarr knows just the president who can get it approved... in exchange for a shiny trophy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E19%20-%20Camp%20David-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Camp David
+          </div>
+          <div class="plot">The cabinet heads to Camp David to solve issues with the UK in a good old fashioned peace summit &mdash; if they can survive homesickness and camp crushes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mulligan%20-%20S01E20%20-%20A%20House%20Divided-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - A House Divided
+          </div>
+          <div class="plot">An unexpected visitor hatches a plan that could destroy humankind unless Mulligan can act fast. But all of his cabinet &mdash; except Lucy &mdash; has abandoned him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+          <span class="title">Style:</span> <span class="value">Transparent Style (Author: DeadSix27)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
