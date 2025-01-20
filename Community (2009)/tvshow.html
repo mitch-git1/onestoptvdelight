@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Community
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Community</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Community%20%282009%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">When the legitimacy of his degree is challenged, lawyer Jeff Winger must return to school, where he meets a clan of misfit community college students.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E02%20-%20Spanish%20101-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Spanish 101
+          </div>
+          <div class="plot">While Jeff looks to use a Spanish class assignment to get close to Britta, Pierce has something altogether different in mind.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E03%20-%20Introduction%20to%20Film-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Introduction to Film
+          </div>
+          <div class="plot">Jeff struggles to get a good grade, and Britta's offer to bankroll his film class exposes a rift between Abed and his angry father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E04%20-%20Social%20Psychology-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Social Psychology
+          </div>
+          <div class="plot">As Annie recruits Abed and Troy for a psychology class experiment, Jeff and Shirley bond over their mutual fondness for gossip.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E05%20-%20Advanced%20Criminal%20Law-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Advanced Criminal Law
+          </div>
+          <div class="plot">As Pierce volunteers to compose a new school song, a cheating episode in Spanish class leaves Jeff defending Britta before a disciplinary tribunal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E06%20-%20Football%2C%20Feminism%20and%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Football, Feminism and You
+          </div>
+          <div class="plot">Annie's dream of being the ex-football star's girlfriend is in jeopardy when Jeff is blackmailed into getting Troy to join Greendale's football team.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E07%20-%20Introduction%20to%20Statistics-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Introduction to Statistics
+          </div>
+          <div class="plot">Jeff sets his sights on an attractive professor, and Annie looks to boost her social standing by hosting a Day of the Dead party.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E08%20-%20Home%20Economics-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Home Economics
+          </div>
+          <div class="plot">Jeff is forced out of his condo and into Abed's dorm room, and Annie looks to get Troy's attention by helping him plan a romantic picnic.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E09%20-%20Debate%20109-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Debate 109
+          </div>
+          <div class="plot">As Jeff is drafted to help lead Greendale's debate team against the formidable City College, Abed's film-class projects appear to predict the future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E10%20-%20Environmental%20Science-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Environmental Science
+          </div>
+          <div class="plot">Faced with an unreasonable amount of Spanish homework, Jeff's efforts to handle Se&ntilde;or Chang manage to help him, but not the rest of the class.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E11%20-%20The%20Politics%20of%20Human%20Sexuality-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Politics of Human Sexuality
+          </div>
+          <div class="plot">With his high-price &quot;escort&quot; girlfriend on his arm, Pierce pressures Jeff into asking Dean Pelton's airhead secretary to double date at the STD Fair.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E12%20-%20Comparative%20Religion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Comparative Religion
+          </div>
+          <div class="plot">Shirley's plans for a holiday party are in jeopardy when Jeff is drawn into a fight with a campus bully.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E13%20-%20Investigative%20Journalism-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Investigative Journalism
+          </div>
+          <div class="plot">Jeff accepts an invitation to be the editor of the school paper as he and his friends fend off an interloper who wants to join their study group.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E14%20-%20Interpretive%20Dance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Interpretive Dance
+          </div>
+          <div class="plot">As Jeff and Prof. Slater try to keep their student-teacher romance under wraps, Britta and Troy tell everyone about their shared passion for dance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E15%20-%20Romantic%20Expressionism-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Romantic Expressionism
+          </div>
+          <div class="plot">Jeff and Britta team up to derail Annie's fledgling romance with Greendale's resident hippie singer-songwriter, Vaughn.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E16%20-%20Communication%20Studies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Communication Studies
+          </div>
+          <div class="plot">As Valentine's Day finds Jeff struggling with his feelings for Britta and Professor Slater, Pierce and Troy are wrongly blamed for a prank.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E17%20-%20Physical%20Education-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Physical Education
+          </div>
+          <div class="plot">The study group helps Abed land a date with a girl, and Jeff squares off with a P.E. coach who insists that he wear gym shorts to a billiards class.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E18%20-%20Basic%20Genealogy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Basic Genealogy
+          </div>
+          <div class="plot">As Family Day lands Jeff in the middle of an affair with Pierce's sexy ex-stepdaughter, Shirley's unruly sons help liberate Abed's Afghani cousin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E19%20-%20Beginner%20Pottery-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Beginner Pottery
+          </div>
+          <div class="plot">A pottery class he takes for an easy A reveals Jeff's deep-seated need to succeed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E20%20-%20The%20Science%20of%20Illusion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - The Science of Illusion
+          </div>
+          <div class="plot">When her April Fools' Day prank inadvertently sends a human cadaver out the anatomy lab window, Britta looks to place the blame on Jeff.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E21%20-%20Contemporary%20American%20Poultry-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - Contemporary American Poultry
+          </div>
+          <div class="plot">A scheme to replace a corrupt cafeteria employee transforms the study group into a criminal gang run by a power-hungry Abed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E22%20-%20The%20Art%20of%20Discourse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - The Art of Discourse
+          </div>
+          <div class="plot">While a tasteless prank ends with Pierce being tossed out of the group, Britta and Jeff are forced to team up against some teen newcomers at school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E23%20-%20Modern%20Warfare-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - Modern Warfare
+          </div>
+          <div class="plot">The first prize of priority registration engulfs Greendale Community College in a Spring Fling paintball war.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E24%20-%20English%20as%20a%20Second%20Language-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - English as a Second Language
+          </div>
+          <div class="plot">On the eve of an important final exam in Spanish, everyone's grades are jeopardized when it is discovered that Se&ntilde;or Chang has a damaging secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S01E25%20-%20Pascal%27s%20Triangle%20Revisited-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x25 - Pascal's Triangle Revisited
+          </div>
+          <div class="plot">As the end of the school year finds Jeff at the apex of a romantic triangle, Annie ponders moving away with her hacky sack-playing boyfriend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E01%20-%20Anthropology%20101-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Anthropology 101
+          </div>
+          <div class="plot">When the semester starts, Jeff is stunned that his rejection of Britta has made her a campus star; Chang wants to be accepted into the study group.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E02%20-%20Accounting%20for%20Lawyers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Accounting for Lawyers
+          </div>
+          <div class="plot">When an old friend from Jeff's past appears unexpectedly, his friends discover that he was the one responsible for Jeff's disbarment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E03%20-%20The%20Psychology%20of%20Letting%20Go-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - The Psychology of Letting Go
+          </div>
+          <div class="plot">A death provokes a fierce debate about Pierce's religious beliefs. Britta and Annie are at odds over tactics in the Gulf oil spill fund-raising drive.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E04%20-%20Basic%20Rocket%20Science-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Basic Rocket Science
+          </div>
+          <div class="plot">Jeff and the group must salvage an aging museum exhibit that Dean Pelton wants as the centerpiece of Greendale's proposed aerospace training program.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E05%20-%20Messianic%20Myths%20and%20Ancient%20Peoples-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Messianic Myths and Ancient Peoples
+          </div>
+          <div class="plot">Shirley and Abed are at odds over his plan to direct and star in his own epic religious film.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E06%20-%20Epidemiology-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Epidemiology
+          </div>
+          <div class="plot">Dean Pelton's army surplus party food sparks an outbreak of zombie-ism at the Greendale Halloween party.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E07%20-%20Aerodynamics%20of%20Gender-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Aerodynamics of Gender
+          </div>
+          <div class="plot">Abed endears himself to the girls after he offers to take down their enemies on campus; Jeff and Troy stumble onto a groundskeeper's secret paradise.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E08%20-%20Cooperative%20Calligraphy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Cooperative Calligraphy
+          </div>
+          <div class="plot">Annie's missing pen leads to friction within the group.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E09%20-%20Conspiracy%20Theories%20and%20Interior%20Design-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Conspiracy Theories and Interior Design
+          </div>
+          <div class="plot">When Jeff tries to obtain credit for a fictitious class, the unintended consequences rock Greendale. Abed and Troy build an elaborate blanket fort.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E10%20-%20Mixology%20Certification-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Mixology Certification
+          </div>
+          <div class="plot">Troy's friends help him celebrate his 21st birthday.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E11%20-%20Abed%27s%20Uncontrollable%20Christmas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Abed's Uncontrollable Christmas
+          </div>
+          <div class="plot">The meaning of Christmas is lost and Abed's intense fixation on the holiday concerns the group in this special stop-motion animation episode.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E12%20-%20Asian%20Population%20Studies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Asian Population Studies
+          </div>
+          <div class="plot">With Chang pressing for membership in the study group, Annie's latest crush has Jeff reeling as Shirley unveils some stunning news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E13%20-%20Celebrity%20Pharmacology-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Celebrity Pharmacology
+          </div>
+          <div class="plot">Pierce's efforts to bribe director Annie may undermine the theater group's antidrug play; Jeff's texting prank puts Britta in an awkward situation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E14%20-%20Advanced%20Dungeons%20%26%20Dragons-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - Advanced Dungeons &amp; Dragons
+          </div>
+          <div class="plot">Abed invites &quot;Fat Neil&quot; to play a game of Dungeons &amp; Dragons with the rest of the study group, hoping to boost his confidence, after Jeff becomes concerned about him being a loner. When Pierce finds out he was not invited, he joins anyway, disrupting their plans.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E15%20-%20Early%2021st%20Century%20Romanticism-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Early 21st Century Romanticism
+          </div>
+          <div class="plot">On Valentine's Day, Troy and Abed compete for the attention of an assistant librarian, while Britta tries to show she's open-minded about lesbians.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E16%20-%20Intermediate%20Documentary%20Filmmaking-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - Intermediate Documentary Filmmaking
+          </div>
+          <div class="plot">Claiming that he is about to die, Pierce summons the study group to the hospital to bequeath his belongings to them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E17%20-%20Intro%20to%20Political%20Science-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Intro to Political Science
+          </div>
+          <div class="plot">For an upcoming vice-presidential visit, Glendale's Dean Pelton hastily organizes an election for student body president that pits Annie against Jeff.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E18%20-%20Custody%20Law%20and%20Eastern%20European%20Diplomacy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - Custody Law and Eastern European Diplomacy
+          </div>
+          <div class="plot">Although Shirley and Andre don't want Chang involved with her baby, he resolves to be a good dad. Abed and Troy's new friend may be a war criminal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E19%20-%20Critical%20Film%20Studies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Critical Film Studies
+          </div>
+          <div class="plot">Jeff and the group arrange a Pulp Fiction birthday party for Abed, but he has his own plans, starting with an expensive dinner for himself and Jeff.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E20%20-%20Competitive%20Wine%20Tasting-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - Competitive Wine Tasting
+          </div>
+          <div class="plot">Jeff is suspicious of Pierce's engagement to a pretty classmate. Troy invents a childhood trauma to impress Britta, and Abed challenges a professor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E21%20-%20Paradigms%20of%20Human%20Memory-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - Paradigms of Human Memory
+          </div>
+          <div class="plot">Working on their final anthropology diorama, Chang finds a cache of items stolen by Troy's monkey that dredge up unhappy memories for the study group.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E22%20-%20Applied%20Anthropology%20and%20Culinary%20Arts-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - Applied Anthropology and Culinary Arts
+          </div>
+          <div class="plot">As the semester ends, the anthropology final is disrupted when Shirley goes into labor and her husband, Andre, is summoned to school for the birth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E23%20-%20A%20Fistful%20of%20Paintballs%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x23 - A Fistful of Paintballs (1)
+          </div>
+          <div class="plot">A $100,000 paintball war prize pits members of the study group against one another, until they decide to join forces to stop a mysterious challenger.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S02E24%20-%20For%20a%20Few%20Paintballs%20More%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x24 - For a Few Paintballs More (2)
+          </div>
+          <div class="plot">As the paintball war is revealed to be a City College plot, Jeff and Troy vie for control of Greendale's ragtag army, while Pierce betrays the group.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E01%20-%20Biology%20101-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Biology 101
+          </div>
+          <div class="plot">As Jeff tries to keep Pierce from rejoining the study group, Dean Pelton faces off with Vice Dean Laybourne for control of Greendale.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E02%20-%20Geography%20of%20Global%20Conflict-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Geography of Global Conflict
+          </div>
+          <div class="plot">As Annie competes with an overachieving rival in a Model United Nations competition, Jeff wrestles with his feelings for his ambitious friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E03%20-%20Competitive%20Ecology-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Competitive Ecology
+          </div>
+          <div class="plot">The study group struggles to incorporate a fellow classmate while working on a project for Professor Kane's class.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E04%20-%20Remedial%20Chaos%20Theory-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Remedial Chaos Theory
+          </div>
+          <div class="plot">When Jeff introduces an element of randomness into Troy and Abed's housewarming party, reality splits into six timelines.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E05%20-%20Horror%20Fiction%20in%20Seven%20Spooky%20Steps-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Horror Fiction in Seven Spooky Steps
+          </div>
+          <div class="plot">When a personality test suggests that one group member is a homicidal maniac, they use a series of scary Halloween stories to expose the killer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E06%20-%20Advanced%20Gay-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Advanced Gay
+          </div>
+          <div class="plot">When a drag queen's song makes Hawthorne Wipes an iconic gay product, Pierce embraces it, until his homophobic dad shows up to squelch the idea.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E07%20-%20Studies%20in%20Modern%20Movement-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Studies in Modern Movement
+          </div>
+          <div class="plot">Annie has second thoughts about moving in with Troy and Abed once she realizes that they expect her to live in a blanket fort.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E08%20-%20Documentary%20Filmmaking%20Redux-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Documentary Filmmaking: Redux
+          </div>
+          <div class="plot">As Dean Pelton films a new commercial for Greendale, the production takes a wild turn once he discovers that a famous alum has agreed to appear in it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E09%20-%20Foosball%20and%20Nocturnal%20Vigilantism-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Foosball and Nocturnal Vigilantism
+          </div>
+          <div class="plot">When Shirley agrees to coach Jeff in foosball, they realize that she bullied him mercilessly when they were kids.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E10%20-%20Regional%20Holiday%20Music-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Regional Holiday Music
+          </div>
+          <div class="plot">The study group is slowly convinced to fill in for the Glee Club at Greendale's Christmas pageant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E11%20-%20Urban%20Matrimony%20and%20the%20Sandwich%20Arts-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Urban Matrimony and the Sandwich Arts
+          </div>
+          <div class="plot">When Shirley's remarriage to Andre threatens to put her dreams of starting a business with Pierce on hold, Britta steps in.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E12%20-%20Contemporary%20Impressionists-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Contemporary Impressionists
+          </div>
+          <div class="plot">The study group must work as celebrity impersonators at a bar mitzvah to pay off Abed's debt to a talent agency owner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E13%20-%20Digital%20Exploration%20of%20Interior%20Design%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Digital Exploration of Interior Design (1)
+          </div>
+          <div class="plot">When Britta falls for the human embodiment of the Subway sandwich chain, Shirley and Pierce hope to use the situation to their advantage.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E14%20-%20Pillows%20and%20Blankets%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - Pillows and Blankets (2)
+          </div>
+          <div class="plot">The students of Greendale are drawn into an epic pillow fight as Troy and Abed start a war that threatens to destroy their unique friendship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E15%20-%20Origins%20of%20Vampire%20Mythology-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - Origins of Vampire Mythology
+          </div>
+          <div class="plot">When a carnival comes to Greendale, Annie goes to great lengths to make sure that Britta doesn't contact her carnival worker ex-boyfriend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E16%20-%20Virtual%20Systems%20Analysis-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - Virtual Systems Analysis
+          </div>
+          <div class="plot">After sending Troy and Britta on a date, Annie volunteers to keep Abed company in his Dreamatorium.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E17%20-%20Basic%20Lupine%20Urology-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - Basic Lupine Urology
+          </div>
+          <div class="plot">When the yam the study group was growing for biology class is killed, Troy and Abed are on the case.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E18%20-%20Course%20Listing%20Unavailable-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x18 - Course Listing Unavailable
+          </div>
+          <div class="plot">After a classmate suddenly dies, the study group decides to host a memorial, but Jeff turns his speech into an angry anti-Greendale rant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E19%20-%20Curriculum%20Unavailable-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x19 - Curriculum Unavailable
+          </div>
+          <div class="plot">After Abed is caught trespassing at Greendale, he and his friends visit a psychiatrist.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E20%20-%20Digital%20Estate%20Planning-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x20 - Digital Estate Planning
+          </div>
+          <div class="plot">Pierce and his closest friends are summoned to Hawthorne Labs to play a video game that will determine who will inherit his father's fortune.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E21%20-%20The%20First%20Chang%20Dynasty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x21 - The First Chang Dynasty
+          </div>
+          <div class="plot">The study group stages an elaborate heist to break in to Greendale and free Dean Pelton from the clutches of Chang.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S03E22%20-%20Introduction%20to%20Finality-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x22 - Introduction to Finality
+          </div>
+          <div class="plot">Jeff agrees to represent Shirley in a case against Pierce to determine official ownership of their new sandwich shop.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S04E01%20-%20History%20101-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - History 101
+          </div>
+          <div class="plot">As Jeff competes for spots in an overbooked 'History of Ice Cream' class, Abed copes with the looming end of their time at Greendale by retreating into a surreal mental 'happy place', while Annie and Shirley engage in school-wide pranks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S04E02%20-%20Paranormal%20Parentage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Paranormal Parentage
+          </div>
+          <div class="plot">On the way to a Halloween party, the study group must free Pierce from his panic room and slowly comes to suspect that his mansion is haunted.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S04E03%20-%20Conventions%20of%20Space%20and%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Conventions of Space and Time
+          </div>
+          <div class="plot">Troy worries about losing Abed to a fellow Inspector Spacetime fan at a convention for the show, while Annie fantasizes about being married to Jeff.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S04E04%20-%20Alternative%20History%20of%20the%20German%20Invasion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Alternative History of the German Invasion
+          </div>
+          <div class="plot">The study group contends with a group of German students who take over the study room. Chang makes his return to campus.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S04E05%20-%20Cooperative%20Escapism%20in%20Familial%20Relations-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Cooperative Escapism in Familial Relations
+          </div>
+          <div class="plot">Britta joins Jeff to see his estranged father on Thanksgiving. Shirley invites the rest of the group to spend the holiday with her judgmental in-laws.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S04E06%20-%20Advanced%20Documentary%20Filmmaking-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Advanced Documentary Filmmaking
+          </div>
+          <div class="plot">Greendale comes together to get to the bottom of Chang's amnesia, which Abed films as a documentary. Jeff, however, suspects Chang is faking it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S04E07%20-%20Economics%20of%20Marine%20Biology-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Economics of Marine Biology
+          </div>
+          <div class="plot">Dean Pelton enlists the study group to beautify the campus to woo a wealthy student to Greendale. A class on teaching P.E. pits Shirley against Troy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S04E08%20-%20Herstory%20of%20Dance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Herstory of Dance
+          </div>
+          <div class="plot">Jeff sets out to embarrass Britta when she announces a dance for women's empowerment. Abed dreams of shuttling between two dates in one night.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S04E09%20-%20Intro%20to%20Felt%20Surrogacy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Intro to Felt Surrogacy
+          </div>
+          <div class="plot">Dean Pelton prompts the study group to use puppets to relive the traumatic events of a recent adventure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S04E10%20-%20Intro%20to%20Knots-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Intro to Knots
+          </div>
+          <div class="plot">Jeff organizes a lovely holiday gathering at his apartment, but Annie secretly invites Professor Cornwallis to get in his good graces.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S04E11%20-%20Basic%20Human%20Anatomy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Basic Human Anatomy
+          </div>
+          <div class="plot">When Annie and Shirley learn that Leonard is actually holding the spot as the class valedictorian, they join forces to bring him down.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S04E12%20-%20Heroic%20Origins-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - Heroic Origins
+          </div>
+          <div class="plot">Abed's research into the study group's history uncovers an overlooked series of chance encounters that led each of them to Greendale.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S04E13%20-%20Advanced%20Introduction%20to%20Finality-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - Advanced Introduction to Finality
+          </div>
+          <div class="plot">A plan to celebrate Jeff's early graduation is unexpectedly disrupted by the study group's evil doppelgangers from the Darkest Timeline.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S05E01%20-%20Repilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x1 - Repilot
+          </div>
+          <div class="plot">With his law practice doomed, Jeff returns to Greendale to start a class action suit against the school, but a hologram of Pierce has him reconsider.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S05E02%20-%20Introduction%20to%20Teaching-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x2 - Introduction to Teaching
+          </div>
+          <div class="plot">Abed tackles a two-day crash course on Nicolas Cage, while a clueless Jeff begins his teaching career with Annie as his most demanding student.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S05E03%20-%20Basic%20Intergluteal%20Numismatics-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x3 - Basic Intergluteal Numismatics
+          </div>
+          <div class="plot">With the mysterious Ass Crack Bandit back at Greendale, Annie and Jeff are on the case. As clues and suspicions mount, Shirley delivers shocking news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S05E04%20-%20Cooperative%20Polygraphy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x4 - Cooperative Polygraphy
+          </div>
+          <div class="plot">Pierce's funeral leaves the study group with mixed feelings, especially after their late tormentor leaves one last test to reveal everyone's secrets.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S05E05%20-%20Geothermal%20Escapism-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - Geothermal Escapism
+          </div>
+          <div class="plot">For Troy's last day at Greendale, Abed holds a campus-wide &quot;hot lava&quot; fantasy game. With a comic book worth $50,000 as the prize, it's an all-out war.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S05E06%20-%20Analysis%20of%20Cork-Based%20Networking-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x6 - Analysis of Cork-Based Networking
+          </div>
+          <div class="plot">While Annie and Hickey's fight to get a bulletin board repaired spirals out of control, Abed and Britta go to war over spoilers of his favorite show.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S05E07%20-%20Bondage%20and%20Beta%20Male%20Sexuality-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x7 - Bondage and Beta Male Sexuality
+          </div>
+          <div class="plot">Jeff counsels a smitten Duncan on how to get a date with Britta but is developing feelings of his own. An angry Hickey tries to teach Abed a lesson.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S05E08%20-%20App%20Development%20and%20Condiments-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x8 - App Development and Condiments
+          </div>
+          <div class="plot">A new caste system takes over when Greendale beta tests an app that ranks everyone. Shirley loves her new status, but Jeff and Britta want it stopped.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S05E09%20-%20VCR%20Maintenance%20and%20Educational%20Publishing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x9 - VCR Maintenance and Educational Publishing
+          </div>
+          <div class="plot">Abed and Annie try to solve their new roommate dilemma with a retro VCR game, while Jeff, Shirley and Hickey hatch a plan to sell stolen textbooks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S05E10%20-%20Advanced%20Advanced%20Dungeons%20%26%20Dragons-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x10 - Advanced Advanced Dungeons &amp; Dragons
+          </div>
+          <div class="plot">To help Hickey be a more involved grandfather, which means patching up a bad relationship with his son, the gang creates an epic role-playing game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S05E11%20-%20G.I.%20Jeff-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x11 - G.I. Jeff
+          </div>
+          <div class="plot">Jeff's depression over turning 40 leads him to drink himself unconscious. In his dreams, he and the gang are part of the &quot;G. I. Joe&quot; cartoon team.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S05E12%20-%20Basic%20Story-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x12 - Basic Story
+          </div>
+          <div class="plot">The Save Greendale Committee's success is short-lived when the board votes for a corporate sellout, but Pelton, Annie and Abed might find a solution.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S05E13%20-%20Basic%20Sandwich-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x13 - Basic Sandwich
+          </div>
+          <div class="plot">To save Greendale from being sold, the gang searches for an eccentric computer science professor's legendary treasure hidden beneath the school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S06E01%20-%20Ladders-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x1 - Ladders
+          </div>
+          <div class="plot">New administrative consultant Frankie's strict &mdash; and sobering &mdash; changes split the group when Abed goes rogue to side with the enemy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S06E02%20-%20Lawnmower%20Maintenance%20and%20Postnatal%20Care-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x2 - Lawnmower Maintenance and Postnatal Care
+          </div>
+          <div class="plot">When Dean Pelton loses himself &mdash; and a chunk of the college budget &mdash; in a virtual reality system, Jeff seeks help from its cantankerous inventor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S06E03%20-%20Basic%20Crisis%20Room%20Decorum-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x3 - Basic Crisis Room Decorum
+          </div>
+          <div class="plot">A rival's attack ad puts the group into defensive mode &mdash; and a moral quandary. Britta and Chang find new ways to gross everyone out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S06E04%20-%20Queer%20Studies%20%26%20Advanced%20Waxing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x4 - Queer Studies &amp; Advanced Waxing
+          </div>
+          <div class="plot">Dean Pelton's sexuality gives him an uncomfortable edge for a school board seat. Chang scores a surprise win in a stage adaptation of &quot;The Karate Kid.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S06E05%20-%20Laws%20of%20Robotics%20and%20Party%20Rights-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x5 - Laws of Robotics and Party Rights
+          </div>
+          <div class="plot">When prisoners roll into Greendale via telerobot, Jeff meets his match in a clever convict. Britta's plans for a raging house party backfire.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S06E06%20-%20Basic%20Email%20Security-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x6 - Basic Email Security
+          </div>
+          <div class="plot">A hacker angry over a racist comic's planned campus performance threatens to publish the activity committee's personal emails.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S06E07%20-%20Advanced%20Safety%20Features-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x7 - Advanced Safety Features
+          </div>
+          <div class="plot">Britta's ex-boyfriend, Rick, returns, reigniting her far-fetched dreams of a normal relationship. Annie goes to extremes to win Elroy over.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S06E08%20-%20Intro%20to%20Recycled%20Cinema-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x8 - Intro to Recycled Cinema
+          </div>
+          <div class="plot">A commercial catchphrase catapults Chang to viral fame and a life-changing move. The group bands together to make movie magic for Abed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S06E09%20-%20Grifting%20101-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x9 - Grifting 101
+          </div>
+          <div class="plot">Visiting Professor DeSalvo gives Jeff and his friends a master class in grifting and a bonus lesson on the art of revenge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S06E10%20-%20Basic%20RV%20Repair%20and%20Palmistry-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x10 - Basic RV Repair and Palmistry
+          </div>
+          <div class="plot">A 19-foot plaster hand guides the group on an emotional journey as they travel through mountains and flashbacks while aboard Elroy's RV.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S06E11%20-%20Modern%20Espionage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x11 - Modern Espionage
+          </div>
+          <div class="plot">Heroes are born, promises are broken and the stakes are raised when paintball makes an explosive return to Greendale's campus.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S06E12%20-%20Wedding%20Videography-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x12 - Wedding Videography
+          </div>
+          <div class="plot">When two Greendale students get married, the wedding reception takes a turn after Jeff unwittingly exposes an inconvenient truth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Community%20-%20S06E13%20-%20Emotional%20Consequences%20of%20Broadcast%20Television-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x13 - Emotional Consequences of Broadcast Television
+          </div>
+          <div class="plot">The former study group's future &mdash; and friendships &mdash; are put to a test when one chapter of their lives closes and a new one begins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

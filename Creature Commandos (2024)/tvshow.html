@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Creature Commandos
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Creature Commandos</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Creature%20Commandos%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Creature%20Commandos%20-%20S01E01%20-%20The%20Collywobbles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Collywobbles
+          </div>
+          <div class="plot">Amanda Waller assembles the Creature Commandos -- led by General Rick Flag Sr. -- and sends them to Pokolistan to protect Princess Ilana Rostovic.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Creature%20Commandos%20-%20S01E02%20-%20The%20Tourmaline%20Necklace-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Tourmaline Necklace
+          </div>
+          <div class="plot">As Ilana continues her pursuit of Flag, The Bride shows Nina where she was created -- and relives Frankenstein's rocky attempts to woo her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Creature%20Commandos%20-%20S01E03%20-%20Cheers%20to%20the%20Tin%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Cheers to the Tin Man
+          </div>
+          <div class="plot">As the Creature Commandos attempt to save The Bride and Nina, GI Robot relives his glory days -- and finally gets his wish.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Creature%20Commandos%20-%20S01E04%20-%20Chasing%20Squirrels-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Chasing Squirrels
+          </div>
+          <div class="plot">The Creature Commandos return home to understand Circe's motivation, while Weasel reflects on the events that landed him in Belle Reve.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Creature%20Commandos%20-%20S01E05%20-%20The%20Iron%20Pot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Iron Pot
+          </div>
+          <div class="plot">Frankenstein is nursed to health by a new friend. Later, Flag and Frankenstein team up to disprove Circe's visions about the Princess.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Creature%20Commandos%20-%20S01E06%20-%20Priyatel%20Skelet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Priyatel Skelet
+          </div>
+          <div class="plot">As Dr. Phosphorus is born of his own research, the Creature Commandos find themselves on the eve of destruction.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Creature%20Commandos%20-%20S01E07%20-%20A%20Very%20Funny%20Monster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - A Very Funny Monster
+          </div>
+          <div class="plot">Nina's birth proves unexpectedly complicated, while the Princess attempts to escape death at the hands of the Creature Commandos once and for all.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

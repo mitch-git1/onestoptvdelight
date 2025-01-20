@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Squid Game
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Squid Game</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Squid%20Game%20%282021%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S01E01%20-%20Red%20Light%2C%20Green%20Light-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Red Light, Green Light
+          </div>
+          <div class="plot">Hoping to win easy money, a broke and desperate Gi-hun agrees to take part in an enigmatic game. Not long into the first round, unforeseen horrors unfold.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S01E02%20-%20Hell-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Hell
+          </div>
+          <div class="plot">Split on whether to continue or quit, the group holds a vote. But their realities in the outside world may prove to be just as unforgiving as the game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S01E03%20-%20The%20Man%20with%20the%20Umbrella-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Man with the Umbrella
+          </div>
+          <div class="plot">A few players enter the next round &mdash; which promises equal doses of sweet and deadly &mdash; with hidden advantages. Meanwhile, Jun-ho sneaks his way inside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S01E04%20-%20Stick%20to%20the%20Team-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Stick to the Team
+          </div>
+          <div class="plot">As alliances form among the players, no one is safe in the dorm after lights-out. The third game challenges Gi-hun's team to think strategically.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S01E05%20-%20A%20Fair%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - A Fair World
+          </div>
+          <div class="plot">Gi-hun and his team take turns keeping guard through the night. The masked men encounter trouble with their co-conspirators.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S01E06%20-%20Gganbu-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Gganbu
+          </div>
+          <div class="plot">Players pair off for the fourth game. Gi-hun grapples with a moral dilemma, Sang-woo chooses self-preservation and Sae-byeok shares her untold story.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S01E07%20-%20VIPS-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - VIPS
+          </div>
+          <div class="plot">The Masked Leader welcomes VIP guests to the facility for a front-row viewing of the show. In the fifth game, some players crack under pressure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S01E08%20-%20Front%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Front Man
+          </div>
+          <div class="plot">Ahead of the last round, distrust and disgust run deep among the finalists. Jun-ho makes a getaway, determined to expose the game's dirty secrets.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S01E09%20-%20One%20Lucky%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - One Lucky Day
+          </div>
+          <div class="plot">The final round presents another cruel test &mdash; but this time, how it ends depends on just one player. The game's creator steps out of the shadows.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S02E01%20-%20Bread%20and%20Lottery-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Bread and Lottery
+          </div>
+          <div class="plot">A vengeful Gi-hun makes a U-turn at the airport. Later, in his hideout, he intensifies his search for the elusive recruiter who is seeking new players.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S02E02%20-%20Halloween%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Halloween Party
+          </div>
+          <div class="plot">Gi-hun finally gets hold of an invitation, marked for Halloween day. In a tense moment facing Jun-ho, they reveal their truths to each other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S02E03%20-%20001-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - 001
+          </div>
+          <div class="plot">New players gather for a chance to win 45.6 billion won. After an intense first round, the survivors' fates hang in the balance &mdash; down to one final vote.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S02E04%20-%20Six%20Legs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Six Legs
+          </div>
+          <div class="plot">The players prepare for the next game: a six-legged pentathlon, where each team member must clear a mini-game to survive &mdash; or face collective elimination.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S02E05%20-%20One%20More%20Game-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - One More Game
+          </div>
+          <div class="plot">Kang No-eul earns enemies for her unruly actions. Nerves fray to the breaking point as the remaining players vote on whether to move to the next round.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S02E06%20-%20O%20%EF%BB%BF%20X-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - O ﻿ X
+          </div>
+          <div class="plot">Jun-ho and his team prepare to infiltrate a suspicious island. As monetary stakes and tensions rise, players split into two opposing factions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Squid%20Game%20-%20S02E07%20-%20Friend%20or%20Foe-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Friend or Foe
+          </div>
+          <div class="plot">The remaining players strategize on how to survive the night. Gi-hun proposes a risky plan &mdash; but he will need trustworthy allies to carry it out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

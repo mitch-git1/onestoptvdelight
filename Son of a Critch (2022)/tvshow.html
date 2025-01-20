@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Son of a Critch
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Son of a Critch</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Son%20of%20a%20Critch%20%282022%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S01E01%20-%20Old%20Soul%2C%20New%20School-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Old Soul, New School
+          </div>
+          <div class="plot">Mark&rsquo;s first day of junior high is marred by a bully &mdash; a young girl named Fox. But when he stands up for himself, he learns that words can hurt more than fists.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S01E02%20-%20Lordy%2C%20Lordy%2C%20Look%20Who%E2%80%99s%20Dead-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Lordy, Lordy, Look Who&rsquo;s Dead
+          </div>
+          <div class="plot">A chance encounter at a funeral parlour leads to Mark&rsquo;s first date with a girl. As he risks life and limb in a race across town to meet her, Fox finds herself unexpectedly jealous. Meanwhile, Mary tries to convince Dick to sell her the old radio station truck.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S01E03%20-%20Cello%2C%20I%20Must%20Be%20Going-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Cello, I Must Be Going
+          </div>
+          <div class="plot">Mark fears being forced to play the cello will make him a social pariah. But when his cello is taken by a gang of bullies, Fox begrudgingly comes to his rescue. Meanwhile, Pop and Sister Rose take a stroll down memory lane when it&rsquo;s revealed they used to be an item.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S01E04%20-%20Cucumber%20Slumber-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Cucumber Slumber
+          </div>
+          <div class="plot">When Ritchie invites himself to a sleepover, Mark scrambles to hide his family&rsquo;s &ldquo;eccentric&rdquo; behaviour. Meanwhile, Mike Sr takes a staunch pro-cucumber stance when a grocer buys ad time on VOCM.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S01E05%20-%20Royal%20Visit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Royal Visit
+          </div>
+          <div class="plot">Mark fears he&rsquo;ll be outed as a Monarchist when he&rsquo;s chosen to give flowers to a visiting Lady Diana. Meanwhile, a gift from Dick comes between Mike Sr and Mary.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S01E06%20-%20Candyland-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Candyland
+          </div>
+          <div class="plot">Mark and Ritchie receive police protection after witnessing a grizzly crime on Halloween night. Fox grows tired of her brother&rsquo;s increasingly delinquent behaviour.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S01E07%20-%20Father%20Critch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Father Critch
+          </div>
+          <div class="plot">Mark is considering what life would be like as a priest. But as rumours of scandal amongst the clergy start to mount, Mark reassesses what his religion means to him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S01E08%20-%20Merry%20Critch-mas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Merry Critch-mas
+          </div>
+          <div class="plot">Mark collects Christmas toys for the needy, which leads to an uncomfortable discovery about one of his classmates. Meanwhile, Pop&rsquo;s prodigal son shows up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S01E09%20-%20Acting%20Normal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Acting Normal
+          </div>
+          <div class="plot">Mark and Mike Sr unexpectedly bond over Mark&rsquo;s role in the upcoming Easter play. But when Mark is fired from the production, he pretends otherwise to keep his father&rsquo;s affections. Meanwhile, Pop turns to Mary for help after the CRA learns he&rsquo;s been collecting his dead wife&rsquo;s pension checks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S01E10%20-%20Misty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Misty
+          </div>
+          <div class="plot">The Critch men are left to their own devices after Mary is hospitalized for a minor procedure. Mark has trouble balancing the household chores and accidently gives Pops the wrong pills.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S01E11%20-%20Particip-action-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Particip-action
+          </div>
+          <div class="plot">Parents and students take the field on Sports Day. Mark decides to treat the all-day gym class as a comedy stage, much to his teammate&rsquo;s annoyance. Meanwhile, Fox fights for her mother&rsquo;s attention and attempts to break the school record for gold medals.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S01E12%20-%20Circus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Circus
+          </div>
+          <div class="plot">When Ritche bails on their plans to go to the circus, Mark and Fox find themselves going together on a maybe-date. Meanwhile, Ritche&rsquo;s family hosts some new Filipino-Canadians who make him feel insecure about his heritage.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S01E13%20-%20Save%20the%20Last%20Dance%20for%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Save the Last Dance for Me
+          </div>
+          <div class="plot">Having realized his feelings for Fox, Mark is hurt to learn she&rsquo;s been spending time alone with Ritche. And, with the future of VOCM in doubt, Mike Sr attempts to learn how to DJ&hellip; at Mark&rsquo;s school-end dance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S02E01%20-%20Growing%20Apart-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Growing Apart
+          </div>
+          <div class="plot">Mark is devastated to learn Fox found a new boyfriend over the summer. Meanwhile, Mike Jr struggles to tell his dad he dropped out of school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S02E02%20-%20You%27re%20Dead%20After%20School-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - You're Dead After School
+          </div>
+          <div class="plot">Fox's boyfriend threatens to beat Mark up after school. Mary learns Mike Sr is making less money than their son, and pushes her husband to demand a raise.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S02E03%20-%20Feast%20or%20Famine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Feast or Famine
+          </div>
+          <div class="plot">Mark is determined to raise the most money for the 24-hour famine; the refrigerator breaks at the Critch house and forces the family to cook all its food at once.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S02E04%20-%20Beer%20Necessities-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Beer Necessities
+          </div>
+          <div class="plot">Desperate to seem more mature, Mark heads off school grounds for lunch, but things take a turn when the Fox boys offer Mark his first beer. Meanwhile, Mary takes a job selling Avon products.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S02E05%20-%20Family%20Tree-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Family Tree
+          </div>
+          <div class="plot">Mark uncovers dark family secrets when he researches the Critch family tree. Meanwhile, a death in the family causes Pop to reassess his relationship with his son.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S02E06%20-%20Who%20Dares%20Dare%20Hudaro-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Who Dares Dare Hudaro?
+          </div>
+          <div class="plot">Mark falls under the spell of a visiting hypnotist and lets his grades slip. Pop struggles to lose weight when he gets too fat for his pants.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S02E07%20-%20The%20Perfect%20Storm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - The Perfect Storm
+          </div>
+          <div class="plot">Mark learns things about his parents he never knew, after a historic storm knocks out power to the Critch house. Meanwhile, when his father&rsquo;s back goes out, Mike Jr has to broadcast all night alone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S02E08%20-%20Spirit%20Week-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Spirit Week
+          </div>
+          <div class="plot">The kids are allowed to wear jeans at school for Spirit Week. The only problem is that Mark doesn&rsquo;t own a pair. Meanwhile, Sister Rose picks Mary to join her choir.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S02E09%20-%20European%20Vaction-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - European Vaction
+          </div>
+          <div class="plot">Mark tries to win back Fox during a school trip to &ldquo;France.&rdquo; Meanwhile, Pop uses the trip to revisit his past life as a bootlegger with Al Capone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S02E10%20-%20Old%20Friends%2C%20New%20Friends-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Old Friends, New Friends
+          </div>
+          <div class="plot">Mark and Ritche pretend to be Protestant to fit in with a cool group of kids from another school. Pop meets up with an old flame at a retirement home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S02E11%20-%20Pope%20Visit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Pope Visit
+          </div>
+          <div class="plot">Mark tries to fake being healthy after falling ill the day he is supposed to meet the Pope; a rival radio station tries to tempt Mike Jr. away from VOCM, breaking Mike Sr.'s heart.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S02E12%20-%20Details%20are%20Scanty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Details are Scanty
+          </div>
+          <div class="plot">When Fox&rsquo;s father gets arrested, Mark lobbies his father not to report on the crime. Meanwhile, Pop and Mary steal cable with a descrambler.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Son%20of%20a%20Critch%20-%20S02E13%20-%20Halley%27s%20Comet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Halley's Comet
+          </div>
+          <div class="plot">Mark is excited for Halley's Comet, but the magic is lost when he learns Fox is moving. A new restaurant being built near the Critch house threatens to change the family forever.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
