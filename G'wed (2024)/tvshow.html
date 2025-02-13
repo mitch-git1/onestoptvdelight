@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - G'wed
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">G'wed</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/G%27wed%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/G%27wed%20-%20S01E01%20-%20Posh%20Muppet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Posh Muppet
+          </div>
+          <div class="plot">Recently-orphaned &quot;posh muppet&quot; Christopher goes to live with his nan on a council estate in Liverpool. There he forms an unlikely, unholy alliance with working-class Reece.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/G%27wed%20-%20S01E02%20-%20Cutthroat%20Mo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Cutthroat Mo
+          </div>
+          <div class="plot">It's Diversity and Inclusion Week. The pupils are set the task of pairing up with their polar opposite and presenting their differences and common ground in a presentation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/G%27wed%20-%20S01E03%20-%20Mardy%20Arse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Mardy Arse
+          </div>
+          <div class="plot">Ted is the envy of the school as he starts dating a popular sixth-former. Ted finds his talk of their spiritual connection beguiling but his date has a secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/G%27wed%20-%20S01E04%20-%20My%20Leonard%20Friend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - My Leonard Friend
+          </div>
+          <div class="plot">It's Careers Week. A local barrister conducts a mock trial. Reece goes up against Christopher as opposing barristers, while Aimee tries to impress the visiting casting director.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/G%27wed%20-%20S01E05%20-%20The%20Juliet%20OG-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Juliet OG
+          </div>
+          <div class="plot">It's Aimee's big night: the opening of the school play, but given the deepening problems at home and the school thinking that she posted defamatory Tik Toks, will she show up?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/G%27wed%20-%20S01E06%20-%20He%27s%20One%20of%20our%20Own-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - He's One of our Own
+          </div>
+          <div class="plot">Inspired by Christopher, Reece tries to track down a close family member that he has never met. Aimee and Mia-Louise have an altercation over their choice of boyfriend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x1 - Oh Mighty Gay One
+          </div>
+          <div class="plot">Oh Mighty Gay One: Comedy-drama series. When Ted is paired with 14-year-old Albie in a school mentoring scheme, the issue of Albie&rsquo;s struggles with anorexia becomes apparent to him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x2 - Mischief Night
+          </div>
+          <div class="plot">Mischief Night: Comedy-drama series. Reece wants revenge on a bus driver who he blames for sabotaging his football career, and Aimee accompanies her dad Wayne to a PIP assessment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x3 - Episode 3
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x4 - Episode 4
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x5 - Episode 5
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

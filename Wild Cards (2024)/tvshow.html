@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Wild Cards
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Wild Cards</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Wild%20Cards%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wild%20Cards%20-%20S01E01%20-%20The%20Infinity%20Thief-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Infinity Thief
+          </div>
+          <div class="plot">To regain his detective status, Cole Ellis, a demoted by-the-book cop, is assigned to work with Max Mitchell, a spirited con artist whose charismatic street smarts could help catch an elusive thief.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wild%20Cards%20-%20S01E02%20-%20Show%20Me%20the%20Murder-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Show Me the Murder
+          </div>
+          <div class="plot">A community outreach lecture on porch pirates turns into a murder investigation when Max and Ellis find an elite sports agent dead in his condo. Max&rsquo;s dad George gives her advice &ndash; from his jail cell.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wild%20Cards%20-%20S01E03%20-%20Howl%20to%20Get%20Away%20with%20Murder-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Howl to Get Away with Murder
+          </div>
+          <div class="plot">Things go from quaint to creepy when Max and Ellis look into the disappearance of a butcher in a small rural town. The duo gets a lesson in team building and Max quizzes Ellis on his personal life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wild%20Cards%20-%20S01E04%20-%20Strangers%20on%20a%20Wave-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Strangers on a Wave
+          </div>
+          <div class="plot">When a surfer is mysteriously killed, Detectives Simmons and Yates are assigned the case. But it&rsquo;s Ellis who grabs a board and goes undercover, taking a page out of Max&rsquo;s book of disguise.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wild%20Cards%20-%20S01E05%20-%20The%20Accountant%20of%20Monte%20Cristo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Accountant of Monte Cristo
+          </div>
+          <div class="plot">When Ellis&rsquo;s federal agent ex-girlfriend loses an accountant scheduled to testify against the mob, she enlists their help to find him before the accountant ends up sleeping with the fishes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wild%20Cards%20-%20S01E06%20-%20Dead%20of%20Night-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Dead of Night
+          </div>
+          <div class="plot">When the leads of THE most popular vampire show on TV become the target of a stalker, Max and Ellis enter the world of showbiz where the behind-the-scenes drama is even wilder than what&rsquo;s on screen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wild%20Cards%20-%20S01E07%20-%20Con%20With%20the%20Wind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Con With the Wind
+          </div>
+          <div class="plot">George gets a 3-day pass from jail to spend with Max but the urge to pull one more con is real. Ellis helps a troubled youth charged with a B&amp;E after he discovers it&rsquo;s a teen his brother used to know.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wild%20Cards%20-%20S01E08%20-%20Eternal%20Sunshine%20of%20the%20Therapized%20Mind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Eternal Sunshine of the Therapized Mind
+          </div>
+          <div class="plot">When a celebrated therapist and best-selling author is murdered, a bickering Max and Ellis go undercover as a married couple at her wellness retreat and discover more than their chakras.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wild%20Cards%20-%20S01E09%20-%20Inside%20%28Con%29Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Inside (Con)Man
+          </div>
+          <div class="plot">Max visits the bank to access her safe deposit box but instead becomes a hostage in a dangerous robbery. Ellis defies Chief Li's orders to wait for the Tactical Response Team, knowing Max is inside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wild%20Cards%20-%20S01E10%20-%20Romancing%20the%20Egg-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Romancing the Egg
+          </div>
+          <div class="plot">Ellis is drawn into a case involving Max, her ex, and a world-famous Imperial egg, where a cat-and-mouse heist tests their friendship, their partnership, and their trust in each other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

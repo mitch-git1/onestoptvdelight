@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Changing Ends
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Changing Ends</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Changing%20Ends%20%282023%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Changing%20Ends%20-%20S01E01%20-%20Kick%20Off-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Kick Off
+          </div>
+          <div class="plot">Between a Dad managing a 4th Division football club and friends ditching him for being camp, Alan wants to change. Should he go against his instincts and become a footballer?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Changing%20Ends%20-%20S01E02%20-%20Big%20League%20Player-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Big League Player
+          </div>
+          <div class="plot">Christine is desperate for a night out. At school, Alan struggles with bullies and wants to hide his Dad's identity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Changing%20Ends%20-%20S01E03%20-%20Man%20On-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Man On
+          </div>
+          <div class="plot">Alan gets the acting bug at the school Drama club but Christine becomes concerned when he comes home from school with a black eye. How did he get it and who gave it to him?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Changing%20Ends%20-%20S01E04%20-%20Stud-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Stud
+          </div>
+          <div class="plot">A brilliant but troubled striker gives the Cobblers a lifeline. While keen birdwatcher Alan becomes eagle eyed at news of a pelican on the loose.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Changing%20Ends%20-%20S01E05%20-%20Sick%20as%20a%20Parrot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Sick as a Parrot
+          </div>
+          <div class="plot">It's BCG day at Alan's school and he decides to pull a sickie. With Christine otherwise disposed it's up to a begrudging Graham to play nursemaid.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Changing%20Ends%20-%20S01E06%20-%20Fowl%20Play-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Fowl Play
+          </div>
+          <div class="plot">Things are looking up for the Carrs - the Cobblers are in the quarter finals, Alan's got a part in the play and Angela's marriage has taken a nosedive. Can the good times last?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Changing%20Ends%20-%20S02E01%20-%20Baby%20Face-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Baby Face
+          </div>
+          <div class="plot">It's 1987 and Northampton Town are leading Division 4, but the bullies are still making Alan's life a misery, while peer pressure forces him to accept a challenge, leading him into the murky world of fake IDs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Changing%20Ends%20-%20S02E02%20-%20The%20Party%20%26%20the%20Pervert-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - The Party &amp; the Pervert
+          </div>
+          <div class="plot">The Close has a problem with knickers being snatched from washing lines and windows being peeped into, so Alan eagerly decides to play detective, even if it clashes with his 12th birthday.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Changing%20Ends%20-%20S02E03%20-%20Mad%20Dogs%20and%20English%20Nans-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Mad Dogs and English Nans
+          </div>
+          <div class="plot">A vicious stray Alsatian in the close forces the Carrs to have some unexpected quality time together, but the front room starts to resemble a pressure cooker.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Changing%20Ends%20-%20S02E04%20-%20Kissing%20Presumed%20Dead-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Kissing Presumed Dead
+          </div>
+          <div class="plot">A sex education lesson strikes fear into Alan's heart while an impending testosterone-fuelled school disco gets him all hot and bothered - and not in a good way.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Changing%20Ends%20-%20S02E05%20-%20Better%20the%20Neville%20You%20Know-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Better the Neville You Know
+          </div>
+          <div class="plot">With the stress of the Cobblers trying to stay top of the league taking its toll, Christine strong-arms Graham into having a caravan mini-break in Great Yarmouth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Changing%20Ends%20-%20S02E06%20-%20He%20Thinks%20It%27s%20All%20Over-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - He Thinks It's All Over...
+          </div>
+          <div class="plot">It's the day of reckoning - Northampton Town are all abuzz and anticipation of a promotion to the Third Division is in the air, but Alan is completely miserable.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

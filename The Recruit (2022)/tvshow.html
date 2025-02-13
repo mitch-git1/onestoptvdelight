@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Recruit
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Recruit</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Recruit%20%282022%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S01E01%20-%20I.N.A.S.I.A.L-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - I.N.A.S.I.A.L.
+          </div>
+          <div class="plot">Thrown into the deep end during his first week at the CIA, rookie lawyer Owen Hendricks quickly gets in over his head when he uncovers a possible threat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S01E02%20-%20N.L.T.S.Y.P-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - N.L.T.S.Y.P.
+          </div>
+          <div class="plot">While scrambling to learn how to navigate the high-stakes world of international espionage, Owen attempts to track down classified information on Max.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S01E03%20-%20Y.D.E.K.W.Y.D-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Y.D.E.K.W.Y.D.
+          </div>
+          <div class="plot">Owen's crash course in CIA protocols continues as he negotiates with Max, goes on a date with a co-worker and contends with a hostile agency employee.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S01E04%20-%20I.Y.D.I.A.A.C-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - I.Y.D.I.A.A.C.
+          </div>
+          <div class="plot">When a major snag jeopardizes Max's case, Owen races to find a legal loophole &mdash; and urges her not to take matters into her own ruthless hands.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S01E05%20-%20T.S.L.A.Y.P-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - T.S.L.A.Y.P.
+          </div>
+          <div class="plot">Owen's plan to move on from Max suffers a setback when he's ordered back to Phoenix, where credit cards and prying eyes cause problems at work and home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S01E06%20-%20I.C.I.N.C-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - I.C.I.N.C.
+          </div>
+          <div class="plot">On the heels of his risky negotiations on Max's behalf, Owen faces uncomfortable questions from his colleagues &mdash; and friends &mdash; about their connection.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S01E07%20-%20I.M.F.T.B.S-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - I.M.F.T.B.S.
+          </div>
+          <div class="plot">A mission to Geneva to retrieve assets from a Swiss bank account spirals into chaos for Owen and Max, while Hannah's mom pressures her for information.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S01E08%20-%20W.T.F.I.O.H-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - W.T.F.I.O.H.
+          </div>
+          <div class="plot">The mission with Max takes a dangerous turn as complications arise, bullets fly &mdash; and Owen's personal and professional lives collide.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S02E01%20-%20Y.N.A.H.Y.A.L-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Y.N.A.H.Y.A.L.
+          </div>
+          <div class="plot">After the chaos in Prague, Owen gets benched. But it's not long before he stumbles on a new case &mdash; and into a new den of spies in South Korea.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S02E02%20-%20Y.A.R.A.C.O.T.D.O.P-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Y.A.R.A.C.O.T.D.O.P.
+          </div>
+          <div class="plot">Owen becomes a human target while digging deeper into the graymail case. Nichka has major intel on a kidnapping &mdash; but it won't come for free.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S02E03%20-%20H.H.I.I.T.K.A.L-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - H.H.I.I.T.K.A.L.
+          </div>
+          <div class="plot">An impromptu trip to the Middle East leads to danger. Jang Kyun takes extreme measures to get the answers he seeks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S02E04%20-%20A.T.N.W.H.Y.P.A.B.H-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - A.T.N.W.H.Y.P.A.B.H.
+          </div>
+          <div class="plot">With no one else to trust, Owen and Jang Kyun reluctantly team up. Hannah's new romance proves risky. Oliver arranges a meeting with the yakuza.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S02E05%20-%20W.S.T.W.T.P-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - W.S.T.W.T.P.
+          </div>
+          <div class="plot">Owen and his cohorts race to evade capture when the NIS orders their arrest. To save her own skin, Dawn agrees to lead a perilous mission.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Recruit%20-%20S02E06%20-%20I.D.N.W.T.B.D.I-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - I.D.N.W.T.B.D.I.
+          </div>
+          <div class="plot">Forced to pivot when an operation goes sideways, Owen must rely on new allies, old friends and his own resourcefulness to even the odds.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

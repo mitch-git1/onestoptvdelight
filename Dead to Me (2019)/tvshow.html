@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Dead to Me
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Dead to Me</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Dead%20to%20Me%20%282019%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">Overwhelmed by grief and anger after her husband's sudden death, acerbic real estate agent Jen meets tenderhearted Judy at a support group.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S01E02%20-%20Maybe%20I%27m%20Crazy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Maybe I'm Crazy
+          </div>
+          <div class="plot">Amid her escalating rage over the stalled investigation into her husband's death, Jen becomes more entangled in Judy's messy personal life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S01E03%20-%20It%27s%20All%20My%20Fault-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - It's All My Fault
+          </div>
+          <div class="plot">On what would have been her husband's 50th birthday, Jen clashes with her disapproving mother-in-law over the best way to mark the occasion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S01E04%20-%20I%20Can%27t%20Go%20Back-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - I Can't Go Back
+          </div>
+          <div class="plot">When Jen discovers that her late husband harbored a devastating secret, she enlists Judy's help in tracking down more information.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S01E05%20-%20I%27ve%20Gotta%20Get%20Away-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - I've Gotta Get Away
+          </div>
+          <div class="plot">A grief retreat in Palm Springs gives Jen a chance to move on and cut loose under the watchful eye of Judy, who soon follows her friend's lead.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S01E06%20-%20Oh%20My%20God-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Oh My God
+          </div>
+          <div class="plot">Jen realizes her sons aren't coping with their dad's death as well as she thought they were. Judy joins Nick as he investigates the hit-and-run.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S01E07%20-%20I%20Can%20Handle%20It-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - I Can Handle It
+          </div>
+          <div class="plot">A break in the case and a crushing business setback leave Jen shaken. Judy and Steve take care of unfinished business.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S01E08%20-%20Try%20to%20Stop%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Try to Stop Me
+          </div>
+          <div class="plot">Jen makes a reckless decision after Nick narrows down the list of potential suspects, and Judy feels renewed hope over her relationship with Steve.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S01E09%20-%20I%20Have%20to%20Be%20Honest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - I Have to Be Honest
+          </div>
+          <div class="plot">As Jen's life begins to crumble personally and professionally, she reveals her darkest secret to Judy, who does some confessing of her own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S01E10%20-%20You%20Have%20to%20Go-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - You Have to Go
+          </div>
+          <div class="plot">Armed with the truth about her husband's death, Jen demands justice. Meanwhile, Judy's attempt to make amends causes all sorts of problems for Steve.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S02E01%20-%20You%20Know%20What%20You%20Did-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - You Know What You Did
+          </div>
+          <div class="plot">As Jen and Judy grapple with the distressing events of the night before, Jen soon realizes that eyes &mdash; and ears &mdash; are everywhere in her neighborhood.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S02E02%20-%20Where%20Have%20You%20Been-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Where Have You Been
+          </div>
+          <div class="plot">Rattled when an old acquaintance of Judy's turns up asking questions about Steve, Jen prepares for the worst. Detective Perez's suspicions grow.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S02E03%20-%20You%20Can%27t%20Live%20Like%20This-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - You Can't Live Like This
+          </div>
+          <div class="plot">Jen and Judy disagree over how to handle the situation with Steve, but when the threat of being ratted out hits close to home, a risky plan takes shape.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S02E04%20-%20Between%20You%20and%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Between You and Me
+          </div>
+          <div class="plot">Jen and Judy try to dig their way out of trouble during a trip out of town, but their cathartic weekend away comes to an abrupt end over tragic news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S02E05%20-%20The%20Price%20You%20Pay-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - The Price You Pay
+          </div>
+          <div class="plot">A sore back, money worries and a busybody neighbor push Jen to seek relief from the last person she expects. Judy connects with a kindred spirit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S02E06%20-%20You%20Don%27t%20Have%20To-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - You Don't Have To
+          </div>
+          <div class="plot">Jen scrambles to contain the fallout from Charlie's vehicular hijinks, Judy faces questions about Steve, and Henry experiences a case of stage fright.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S02E07%20-%20If%20Only%20You%20Knew-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - If Only You Knew
+          </div>
+          <div class="plot">Judy receives a rude awakening after a romantic night, while Jen looks to make a positive contribution to the community &mdash; and a client.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S02E08%20-%20It%20Had%20to%20Be%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - It Had to Be You
+          </div>
+          <div class="plot">Jen feels conflicted over a real estate deal. The damage from Charlie's joyride piles up. Judy reaches out to Michelle and runs into Detective Perez.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S02E09%20-%20It%27s%20Not%20You%2C%20It%27s%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - It's Not You, It's Me
+          </div>
+          <div class="plot">Filled with guilt and regret, Jen finds a civic-minded way to unleash some pent-up feelings. Judy revisits her past. The police uncover a new lead.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S02E10%20-%20Where%20Do%20We%20Go%20from%20Here-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Where Do We Go from Here
+          </div>
+          <div class="plot">Determined to protect her family, Jen tries to come clean about Steve's whereabouts, but the situation veers in an unexpected direction thanks to Judy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S03E01%20-%20We%27ve%20Been%20Here%20Before-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - We've Been Here Before
+          </div>
+          <div class="plot">The painful aftermath of the hit-and-run brings up bad memories for Jen as Judy receives shocking news about Steve. Ben pieces his memory back together.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S03E02%20-%20We%20Need%20to%20Talk-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - We Need to Talk
+          </div>
+          <div class="plot">As Jen works up the nerve to tell Judy what the doctor found, Charlie demands answers, Ben's guilt eats away at him, and the cops turn up with questions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S03E03%20-%20Look%20at%20What%20We%20Have%20Here-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Look at What We Have Here
+          </div>
+          <div class="plot">While awaiting the test results, Jen and Judy learn more about the investigation into Steve's death, and a little bird prompts Nick to approach Ben.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S03E04%20-%20Where%20Do%20We%20Go%20Now-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Where Do We Go Now?
+          </div>
+          <div class="plot">A funeral sets the tone for a day that has Judy receiving bad news and reconnecting with a former friend, while Jen attempts to comfort a despondent Ben.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S03E05%20-%20We%20Didn%27t%20Think%20This%20Through-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - We Didn't Think This Through
+          </div>
+          <div class="plot">Jen deals with plumbing problems and an impromptu party. Judy keeps a life-changing decision to herself. Ben falls headlong into a grief spiral.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S03E06%20-%20We%27re%20Gonna%20Beat%20This%20Thing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - We're Gonna Beat This Thing
+          </div>
+          <div class="plot">Jen mobilizes to support Judy, drawing on everything she learned from her mother. Nick's tenacity over a piece of evidence raises concerns for Perez.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S03E07%20-%20Can%20We%20Be%20Honest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Can We Be Honest?
+          </div>
+          <div class="plot">Reeling from the doctor's visit, a poncho-clad Jen wrestles with how to tell Judy. Ben looks to make amends by coming clean, and Nick confronts Perez.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S03E08%20-%20We%27ll%20Find%20a%20Way-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - We'll Find a Way
+          </div>
+          <div class="plot">Jen juggles selling the house next door with anxiety over the FBI investigation as Judy tries to live in denial for a little while longer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S03E09%20-%20We%27re%20Almost%20Out%20of%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - We're Almost Out of Time
+          </div>
+          <div class="plot">Judy may be ready to face the future, but her BFF isn't. Hot on the heels of a tearful admission, Jen scrambles to secure a Hail Mary option.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20to%20Me%20-%20S03E10%20-%20We%27ve%20Reached%20the%20End-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - We've Reached the End
+          </div>
+          <div class="plot">On an escape to Mexico, Jen and Judy face the past and make decisions about the future as they forever cement their ride-or-die friendship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

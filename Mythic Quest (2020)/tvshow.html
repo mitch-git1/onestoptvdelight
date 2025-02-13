@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Mythic Quest
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Mythic Quest</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Mythic%20Quest%20%282020%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">As the hit video game Mythic Quest prepares to launch its newest update, creator Ian Grimm obsesses over a seemingly minor detail.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S01E02%20-%20The%20Casino-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Casino
+          </div>
+          <div class="plot">Brad takes the day off to prove a point, leaving Poppy and David to keep the game afloat. Dana and Rachel have a girls' night in.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S01E03%20-%20Dinner%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Dinner Party
+          </div>
+          <div class="plot">The development team must take decisive action when the internet discovers a dark group of gamers congregating in Mythic Quest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S01E04%20-%20The%20Convention-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Convention
+          </div>
+          <div class="plot">When Pootie_Shoe announces that he's no longer playing Mythic Quest, the team needs to find a new star streamer to promote it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S01E05%20-%20A%20Dark%20Quiet%20Death-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - A Dark Quiet Death
+          </div>
+          <div class="plot">From inception to demise, the life cycle of video game Dark Quiet Death.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S01E06%20-%20Non-Player%20Character-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Non-Player Character
+          </div>
+          <div class="plot">Poppy steps out for a meeting and Mythic Quest headquarters descends into chaos.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S01E07%20-%20Permadeath-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Permadeath
+          </div>
+          <div class="plot">Ian challenges a hacker to an epic in-game showdown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S01E08%20-%20Brendan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Brendan
+          </div>
+          <div class="plot">As Poppy weighs a difficult decision, Ian whisks her away on a mysterious road trip.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S01E09%20-%20Blood%20Ocean-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Blood Ocean
+          </div>
+          <div class="plot">With his workforce unionizing, Ian faces a looming departure, the game&rsquo;s future, and the meaning of two words: Blood Ocean.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S01E10%20-%20Quarantine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Quarantine
+          </div>
+          <div class="plot">As the MQ staff works from home, Poppy struggles with solitude while Brad and David start a charitable competition.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S01E11%20-%20Everlight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Everlight
+          </div>
+          <div class="plot">The team returns to the office for their annual Everlight party. Poppy and Ian rig a LARP tournament in an underdog's favor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S02E01%20-%20Titans%27%20Rift-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Titans' Rift
+          </div>
+          <div class="plot">With Ian on sabbatical, Poppy must come up with a title for the new expansion. Dana and Rachel take their relationship to new heights.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S02E02%20-%20Grouchy%20Goat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Grouchy Goat
+          </div>
+          <div class="plot">Brad wants to launch a mobile game. Poppy is pulled away from working on the expansion with Ian to speak at a luncheon for women in gaming.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S02E03%20-%20%23YumYum-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - #YumYum
+          </div>
+          <div class="plot">Ian and Poppy work separately on the expansion, Jo helps C.W. deal with his publisher, and Brad sets out to find a romantic partner for David.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S02E04%20-%20Breaking%20Brad-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Breaking Brad
+          </div>
+          <div class="plot">Brad attempts to convince the development team that his brother Zack is not the nice guy he's pretending to be. Rachel does Ian a favor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S02E05%20-%20Please%20Sign%20Here-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Please Sign Here
+          </div>
+          <div class="plot">Carol tries to wrangle Mythic Quest employees as they refuse to sign the results of a simple workplace assessment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S02E06%20-%20Backstory%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Backstory!
+          </div>
+          <div class="plot">A fresh-faced young man discovers what it takes to become one of the world's greatest science fiction writers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S02E07%20-%20Peter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Peter
+          </div>
+          <div class="plot">Rachel accompanies C.W. on an acrimonious visit to his former friend turned rival.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S02E08%20-%20Juice%20Box-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Juice Box
+          </div>
+          <div class="plot">Ian presents his half of the expansion and ends up in the hospital. David ponders his legacy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S02E09%20-%20TBD-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - TBD
+          </div>
+          <div class="plot">Ian and Poppy collaborate again, Rachel and Dana figure out their next move, and Brad looks to settle a feud once and for all. Season finale.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S03E01%20-%20Across%20the%20Universe-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Across the Universe
+          </div>
+          <div class="plot">As David stewards Mythic Quest, Ian and Poppy consider offers for their offshoot game. Jo assembles the entire team for C.W.'s celebration.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S03E02%20-%20Partners-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Partners
+          </div>
+          <div class="plot">Ian feels adrift in his new partnership with Poppy. David and Jo are suspicious of an employee's return. Dana and Rachel meet the new testers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S03E03%20-%20Crushing%20It-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Crushing It
+          </div>
+          <div class="plot">David uses exciting news about MQ to make Ian jealous. Poppy, Rachel, and Jo go to brunch.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S03E04%20-%20The%20Two%20Joes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - The Two Joes
+          </div>
+          <div class="plot">When David gets stuck in traffic, Jo takes his place to meet with a famous actor for the movie. Brad tries to help Carol raise money through NFTs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S03E05%20-%20Playpen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Playpen
+          </div>
+          <div class="plot">Poppy begrudgingly takes feedback from Dana about her work. Carol, Brad, and Rachel navigate the aftermath of their monetization gambit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S03E06%20-%20The%2012%20Hours%20of%20Christmas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - The 12 Hours of Christmas
+          </div>
+          <div class="plot">In the first holiday season since Ian and Poppy&rsquo;s departure, David grabs the reins and tries to infuse the team with Christmas spirit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S03E07%20-%20Sarian-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Sarian
+          </div>
+          <div class="plot">Two kids from across the globe find their passions in a world that doesn&rsquo;t understand them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S03E08%20-%20To%20Catch%20a%20Mouse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - To Catch a Mouse
+          </div>
+          <div class="plot">Ian&rsquo;s and Poppy&rsquo;s clashing office preferences put them at odds. Jo and Brad team up to get rid of a pest in David&rsquo;s office.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S03E09%20-%20The%20Year%20of%20Phil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - The Year of Phil
+          </div>
+          <div class="plot">David&rsquo;s motion-capture session with Joe Manganiello gets hijacked. Dana helps Poppy prepare her PlayPen VC pitch.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mythic%20Quest%20-%20S03E10%20-%20Buffalo%20Chicken%20Pizza-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Buffalo Chicken Pizza
+          </div>
+          <div class="plot">Ian tries to repair his partnership with Poppy. David hits an impasse with the movie. Dana has a realization about Grimpop.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

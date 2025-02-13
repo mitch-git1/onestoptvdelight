@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Silicon Valley
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Silicon Valley</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Silicon%20Valley%20%282014%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S01E01%20-%20Minimum%20Viable%20Product-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Minimum Viable Product
+          </div>
+          <div class="plot">Attending an elaborate launch party, Richard and his computer programmer friends - Big Head, Dinesh and Gilfoyle - dream of making it big. Instead, they're living in the communal Hacker Hostel owned by former programmer Erlich, who gets to claim ten percent of anything they invent there. When it becomes clear that Richard has developed a powerful compression algorithm for his website, Pied Piper, he finds himself courted by Gavin Belson, his egomaniacal corporate boss, who offers a $10 million buyout by his firm, Hooli. But Richard holds back when well-known investor Peter Gregory makes a counteroffer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S01E02%20-%20The%20Cap%20Table-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Cap Table
+          </div>
+          <div class="plot">After a celebratory party at the Hacker Hostel, Richard and Erlich learn that Peter Gregory won't pay up until they deliver a viable business plan that includes a slimmed-downed staff. A desperate Richard hires former Belson underling Jared, and they set about trying to trim the fat. While Gilfoyle and Dinesh prove essential, Big Head's place in the company is less certain.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S01E03%20-%20Articles%20of%20Incorporation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Articles of Incorporation
+          </div>
+          <div class="plot">While Gavin Belson begins to hype Nucleus, a competing compression platform, Richard learns that the name Pied Piper is already registered to a sprinkler company, forcing him to negotiate. Meanwhile, Erlich goes on a vision quest for a new company name, and Peter Gregory proves elusive when one of his companies asks for money.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S01E04%20-%20Fiduciary%20Duties-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Fiduciary Duties
+          </div>
+          <div class="plot">At Peter's toga party, Richard drunkenly promises to make Erlich a board member, which he regrets the next morning. After being unassigned at Hooli, Big Head finds others like him who have made careers out of doing nothing. Richard struggles to put Pied Piper's vision into words for a presentation without Erlich; later, he discovers an interesting connection between Peter and Gavin Belson.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S01E05%20-%20Signaling%20Risk-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Signaling Risk
+          </div>
+          <div class="plot">Erlich convinces a graffiti artist to create Pied Piper's logo; Jared works to make the company more efficient; Richard learns that he has eight weeks to prepare for a live demonstration.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S01E06%20-%20Third%20Party%20Insourcing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Third Party Insourcing
+          </div>
+          <div class="plot">Richard feels threatened when the team hires &ldquo;The Carver&rdquo; a hacker with a notorious reputation, to help with Pied Piper&rsquo;s cloud. Jared finds himself taken for a ride when he seeks out Peter Gregory&rsquo;s signature. Erlich and Dinesh compete for the attention of Tara, Gilfoyle&rsquo;s visiting girlfriend. Later, Dinesh faces a sexual dilemma.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S01E07%20-%20Proof%20of%20Concept-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Proof of Concept
+          </div>
+          <div class="plot">At TechCrunch Disrupt, Richard feels the pressure to finish his demo, but finds himself distracted by a girl he dated briefly, who&rsquo;s now spreading rumors about him. Jared worries that Monica is taking his place in the company. Dinesh develops a crush on a girl at a neighboring booth. Erlich&rsquo;s scandalous past connection to one of the judges threatens Pied Piper&rsquo;s chances.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S01E08%20-%20Optimal%20Tip-to-Tip%20Efficiency-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Optimal Tip-to-Tip Efficiency
+          </div>
+          <div class="plot">Poised to compete at TechCrunch Disrupt, the guys of Pied Piper become worried after an impressive presentation by Gavin Belson. As Jared tries to pivot the company, Richard is inspired to make big changes at the last minute.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S02E01%20-%20Sand%20Hill%20Shuffle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Sand Hill Shuffle
+          </div>
+          <div class="plot">The Pied Piper guys are wined and dined by every venture capitalist under the sun, while Monica adjusts to a new managing partner at Raviga as the company faces major changes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S02E02%20-%20Runaway%20Devaluation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Runaway Devaluation
+          </div>
+          <div class="plot">In the wake of Hooli&rsquo;s bombshell, Richard and the guys struggle to find a backer as they face legal and financial woes. Monica attempts to balance her interest in Pied Piper with her job. A cash-strapped Dinesh tries to put an end to the Kickstarter campaign for his cousin&rsquo;s new app, Bro. Richard gets a surprising offer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S02E03%20-%20Bad%20Money-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Bad Money
+          </div>
+          <div class="plot">While considering Gavin&rsquo;s proposal, Richard is approached by Russ Hanneman, an image-conscious billionaire who wants to back Pied Piper, but may not be as &ldquo;hands-off&rdquo; as he claims. Gilfoyle and Dinesh play hardball to get what they want; Gavin finds a new strategy in dealing with the enemy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S02E04%20-%20The%20Lady-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - The Lady
+          </div>
+          <div class="plot">Richard and Erlich disagree over a potential employee. Dinesh and Gilfoyle worry that someone they recommended for the company will be receiving more money than they make.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S02E05%20-%20Server%20Space-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Server Space
+          </div>
+          <div class="plot">Gavin continues to cause trouble for Pied Piper. Gilfoyle works on building servers. Jared becomes Richard's roommate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S02E06%20-%20Homicide-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Homicide
+          </div>
+          <div class="plot">Monica wants Pied Piper to participate in a livestream event. Erlich reconnects with Double-A, someone he used to mentor. Jared encourages Monica and Carla to be friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S02E07%20-%20Adult%20Content-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Adult Content
+          </div>
+          <div class="plot">Richard is faced with a tough decision, regarding the future of Pied Piper. Dinesh flirts with a woman online.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S02E08%20-%20White%20Hat%20Black%20Hat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - White Hat/Black Hat
+          </div>
+          <div class="plot">Richard causes trouble when he sympathizes with a competitor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S02E09%20-%20Binding%20Arbitration-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Binding Arbitration
+          </div>
+          <div class="plot">When Pied Piper and Hooli enter binding arbitration, Erlich demands to be put on the stand. Meanwhile, Big Head finds himself propped up, and Richard worries Hooli&rsquo;s claim could have legs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S02E10%20-%20Two%20Days%20of%20the%20Condor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Two Days of the Condor
+          </div>
+          <div class="plot">As the guys await the verdict on Pied Piper&rsquo;s fate, an unexpected real-life drama draws a spike in traffic to their livestream and leaves them fighting to hold things together &ndash; literally. While Erlich considers his future, Richard scrambles to save Pied Piper&rsquo;s.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S03E01%20-%20Founder%20Friendly-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Founder Friendly
+          </div>
+          <div class="plot">After being unceremoniously fired, an angry Richard faces a tough decision: accept the diminished role of CTO, or leave Pied Piper for good. Erlich takes a shine to Jack Barker, Laurie&rsquo;s new choice of CEO, while Dinesh and Gilfoyle weigh their options in Richard&rsquo;s absence. At Hooli, Gavin tries to improve his image by admitting failure, and Big Head gets wind of major changes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S03E02%20-%20Two%20in%20the%20Box-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Two in the Box
+          </div>
+          <div class="plot">The new and improved Pied Piper impresses Dinesh and Gilfoyle, but worries Richard. Jared and Erlich both face housing issues. Gavin suggests a controversial move.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S03E03%20-%20Meinertzhagen%27s%20Haversack-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Meinertzhagen's Haversack
+          </div>
+          <div class="plot">Richard searches for a way around Jack. Gilfoyle opens himself up to recruiters. Dinesh draws unwanted attention from a recent purchase.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S03E04%20-%20Maleant%20Data%20Systems%20Solutions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Maleant Data Systems Solutions
+          </div>
+          <div class="plot">Erlich has new competition. The Pied Piper staff has a hard time giving less than their all. Monica stands her ground. Gavin reaches a decision about Nucleus.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S03E05%20-%20The%20Empty%20Chair-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - The Empty Chair
+          </div>
+          <div class="plot">Richard's ego gets in the way during an interview. Erlich makes his pitch to Big Head. Dinesh, Gilfoyle and Jared lose track of some hardware.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S03E06%20-%20Bachmanity%20Insanity-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Bachmanity Insanity
+          </div>
+          <div class="plot">Richard's neuroses could ruin his new relationship. Big Head and Erlich's launch party goes awry. Dinesh is smitten with a foreign coworker.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S03E07%20-%20To%20Build%20a%20Better%20Beta-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - To Build a Better Beta
+          </div>
+          <div class="plot">A beta version of Pied Piper gets an unexpected reception as Dinesh's lack of friends worries him. Monica isn't sure she can dole out criticism. A strapped Erlich mulls a big decision. The Nucleus team tackles a difficult challenge from Gavin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S03E08%20-%20Bachman%27s%20Earnings%20Over-Ride-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Bachman's Earnings Over-Ride
+          </div>
+          <div class="plot">Erlich tries to be honest with Richard, who has mixed emotions about their friendship and the future of Pied Piper. Jared's new company apparel turns heads but fuels yet another clash between Dinesh and Gilfoyle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S03E09%20-%20Daily%20Active%20Users-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Daily Active Users
+          </div>
+          <div class="plot">Shocking stats are revealed and prompt Richard to bridge the gap between Pied Piper and its users, but Jared must go to extremes to keep everything intact. Gavin tries to recapture his former glory by bringing in new talent after discovering secrets about the competition.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S03E10%20-%20The%20Uptick-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - The Uptick
+          </div>
+          <div class="plot">With Pied Piper's future in question, Erlich's publicity success leaves Richard in a moral quandary just as Dinesh's video-chat app starts to pick up speed. While Laurie prepares to jump ship, Gavin's comeback at Hooli is threatened by his displays of grandeur.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S04E01%20-%20Success%20Failure-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Success Failure
+          </div>
+          <div class="plot">In the wake of Pied Piper&rsquo;s clickfarm scandal, the guys struggle to find funding for Pied Piper&rsquo;s video-chat app to keep up with their rapidly growing user base. Erlich faces resistance from Big Head&rsquo;s dad, while Gavin balks after Jack steps on his toes at Hooli. Having a hard time adjusting to his company&rsquo;s pivot, Richard gets sage advice from an unexpected source, leading him to a big idea that could change his future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S04E02%20-%20Terms%20of%20Service-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Terms of Service
+          </div>
+          <div class="plot">Richard butts heads with Dinesh, whose new position goes to his head. Richard discovers interesting data about PiperChat&rsquo;s users. Erlich makes a play to be involved in Jian-Yang&rsquo;s new app. Jared sets ground rules in his friendship with Richard. Gavin&rsquo;s paranoia over Jack&rsquo;s enthusiasm causes him to make a rash decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S04E03%20-%20Intellectual%20Property-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Intellectual Property
+          </div>
+          <div class="plot">An overtired Richard pushes himself to the brink of sanity while trying to move ahead with his next big idea. Eyeing a comeback, Erlich pressures an uncooperative Jian-Yang. Monica sets a trap at Raviga to improve her standing with Laurie. Dinesh goes on a date. Big Head enters the world of academia. Gavin faces an unknown future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S04E04%20-%20Teambuilding%20Exercise-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Teambuilding Exercise
+          </div>
+          <div class="plot">When Richard reaches out to an unlikely ally, Jared worries about the company he's keeping. Gilfoyle gets tough on security in the wake of Dinesh's latest dalliance; later, he considers whether to put his pride aside for a job. Concerned about Jian-Yang's commitment to his app, Erlich takes matters into his own hands.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S04E05%20-%20The%20Blood%20Boy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - The Blood Boy
+          </div>
+          <div class="plot">Cracks in Richard's latest partnership become more apparent when he's forced to deal with an unexpected interloper. Dinesh scrambles to find a way out of his new relationship as things get more serious. After learning of surprising developments afoot at Raviga, Monica has trouble deciding which horse to back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S04E06%20-%20Customer%20Service-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Customer Service
+          </div>
+          <div class="plot">On the hunt for financial support, Richard looks outside the tech bubble, and crosses paths with a contentious figure from Pied Piper's past. Erlich reaches out to Monica and Laurie in search of a new endeavor. A launch gone wrong finds Dinesh and Gilfoyle at war as Jared tries to keep the peace.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S04E07%20-%20The%20Patent%20Troll-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - The Patent Troll
+          </div>
+          <div class="plot">When Richard decides to stand up to a patent troll, his defiance ends up coming back to haunt him. Gilfoyle goes to desperate measures to battle Jian-Yang's new smart fridge. Jared embraces multiple identities in his quest to reduce costs. Erlich tries to hang with the alpha males.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S04E08%20-%20The%20Keenan%20Vortex-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - The Keenan Vortex
+          </div>
+          <div class="plot">An unexpected increase in data traffic leads Richard to turn to Erlich for help in garnering a deal with Keenan Feldspar, Silicon Valley's latest &ldquo;it&rdquo; boy--but when Keenan makes a too-good-to-resist offer, Richard must weigh Pied Piper's future against a potential mutiny. Jack faces setbacks while preparing for Hooli-Con.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S04E09%20-%20Hooli-Con-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Hooli-Con
+          </div>
+          <div class="plot">While Erlich goes on a trip to get his mojo back, the Pied Piper guys take to Hooli-Con to pull off a stealth operation. There, an ethically challenged Jared tries to keep himself in the dark, Gilfoyle and Dinesh get distracted by Keenan and Richard's obsession with an ex's new beau leads him to put their whole plan in jeopardy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S04E10%20-%20Server%20Error-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Server Error
+          </div>
+          <div class="plot">Richard finds himself in a web of lies. Jared plans his exit. Jack bets big. Gavin plots a comeback.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S05E01%20-%20Grow%20Fast%20or%20Die%20Slow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x1 - Grow Fast or Die Slow
+          </div>
+          <div class="plot">Now that Pied Piper has ample funding and new offices, the pressure to get things right stymies Richard and forces him to grow the company in a way he hadn't planned. A picky Dinesh and Gilfoyle question their ability to make good decisions. After returning to Hooli, Gavin worries about becoming antiquated.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S05E02%20-%20Reorientation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x2 - Reorientation
+          </div>
+          <div class="plot">Panicked by suddenly leading a much larger team, Richard finds himself managing a number of small conflicts in his efforts to unite his new employees. Dinesh celebrates a new purchase that Gilfoyle looks to spoil. Jian-Yang goes to court. Gavin meets pushback over his signature and what it says about him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S05E03%20-%20Chief%20Operating%20Officer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x3 - Chief Operating Officer
+          </div>
+          <div class="plot">Encouraged by Jared to strike up a friendship with Dana, a like-minded CEO, Richard instead finds himself charmed by Dana's COO, who challenges his loyalty to Gilfoyle. Facing limited housing options thanks to his impulse purchase, Dinesh searches for a new roommate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S05E04%20-%20Tech%20Evangelist-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x4 - Tech Evangelist
+          </div>
+          <div class="plot">Attempting to woo a gaming company to PiperNet, Richard inadvertently angers a prized ally. Dinesh deals with a betrayal. In preparation for a big launch, Gavin leaves his underlings with a cryptic message. Jared gets inside information from Big Head.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S05E05%20-%20Facial%20Recognition-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - Facial Recognition
+          </div>
+          <div class="plot">Overshadowed by Jared in an on-camera interview, Richard&rsquo;s confidence wavers further when Laurie and Monica force him to work with Eklow, a new artificial-intelligence company. Gilfoyle worries about the prospect of introducing AI into Pied Piper. Dinesh makes Jared self-conscious ahead of a second interview. Gavin questions his future beyond Hooli.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S05E06%20-%20Artificial%20Emotional%20Intelligence-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x6 - Artificial Emotional Intelligence
+          </div>
+          <div class="plot">Richard decides to help when Laurie gets in a jam, but his lack of emotional discipline threatens to backfire on Pied Piper. Gavin tries to make a deal with a stubborn partner while abroad. Dinesh relishes a rare win. Jared bonds with a surprising figure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S05E07%20-%20Initial%20Coin%20Offering-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x7 - Initial Coin Offering
+          </div>
+          <div class="plot">As the Pied Piper guys prepare to close on their Series B funding, Richard receives some unsettling news. Gilfoyle suggests a risky proposition and Monica gets blunt with Richard. Dinesh goes to great lengths to compete with a coworker, while Jared keeps close watch on Richard's new assistant. In search of a better deal, Gavin tries to charm small-town America.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S05E08%20-%20Fifty-One%20Percent-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x8 - Fifty-One Percent
+          </div>
+          <div class="plot">PiperNet launches, but an early success makes Monica suspicious; Richard makes a surprising move; the team races against the clock as its future is threatened.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S06E01%20-%20Artificial%20Lack%20of%20Intelligence-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x1 - Artificial Lack of Intelligence
+          </div>
+          <div class="plot">Richard discovers his promise that Pied Piper won&rsquo;t collect user data is under threat. Jared longs for the past. Gilfoyle gets creative in dealing with Dinesh.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S06E02%20-%20Blood%20Money-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x2 - Blood Money
+          </div>
+          <div class="plot">Richard meets a potential investor. Gilfoyle butts heads with HR. Gavin explores a leaner Hooli's future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S06E03%20-%20Hooli%20Smokes%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x3 - Hooli Smokes!
+          </div>
+          <div class="plot">The Pied Piper team races to close a major deal. Dinesh considers being a better person. An angry Jared reluctantly helps Richard.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S06E04%20-%20Maximizing%20Alphaness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x4 - Maximizing Alphaness
+          </div>
+          <div class="plot">When Richard&rsquo;s authority is threatened by his former Hooli manager, Dinesh has just the solution. Jared learns some hard truths about his birth parents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S06E05%20-%20Tethics-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x5 - Tethics
+          </div>
+          <div class="plot">Richard fumes at Gavin's new ethical stance. Dinesh's trip turns into a nightmare. Gilfoyle and Monica work on their peer review scores.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S06E06%20-%20RussFest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x6 - RussFest
+          </div>
+          <div class="plot">A major event puts PiperNet's capabilities to the test. Monica confronts Jian-Yang over his use of Pied Piper's name.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Silicon%20Valley%20-%20S06E07%20-%20Exit%20Event-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x7 - Exit Event
+          </div>
+          <div class="plot">Ahead of a career-defining moment, Richard makes a startling discovery that changes everything and sends the entire Pied Piper team racing to pull off the biggest bait-and-switch that Silicon Valley has ever seen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

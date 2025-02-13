@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Like a Dragon: Yakuza
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Like a Dragon: Yakuza</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Like%20a%20Dragon%20Yakuza%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x1 - Departure／Return
+          </div>
+          <div class="plot">In 1995, eager to escape their restrictive lives, Kiryu and his friends plan a heist at a local arcade. However, the arcade is under the control of the Doujima Family, a powerful yakuza organization that rules Kamurocho. Meanwhile, in 2005, with Kiryu set to be released from prison, he learns from Detective Date that his friends are in danger and he decides to return to Kamurocho to protect them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x2 - Ambition／Desire
+          </div>
+          <div class="plot">1995. Kazama, who runs the Sunflower orphanage, had hoped that Kiryu, Nishiki, Yumi, and Miho would lead honest lives. However, contrary to his wishes, the four are ultimately plunged into the underworld of the yakuza. Meanwhile, in 2005, tensions between the Omi Alliance and the Tojo Clan are at a boiling point over a 10 billion yen heist.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x3 - Brothers／Sisters
+          </div>
+          <div class="plot">1995. The Doujima Family closes in on Edgar's younger sister, who was entrusted with the official seal necessary for selling his land. Meanwhile, Yumi travels to Osaka in search of her estranged older sister. At the same time, the battle over Edgar's seal escalates. In 2005, Aiko disappears, leaving her daughter Haruka behind. Kiryu and Yumi decide to protect Haruka, but they soon make a discovery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x4 - Betrayal／Promise
+          </div>
+          <div class="plot">In 1995, an overworked Miho falls seriously ill. Nishiki, deeply concerned for his sister, finds himself at the mercy of Doujima's scheme that exploits his vulnerability. In 2005, while Kiryu and Yumi continue their search for Aiko in Osaka, they encounter Chairman Goda of the Omi Alliance, who forces them to promise to return the 10 billion yen by midnight the next day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x5 - Despair／Hope
+          </div>
+          <div class="plot">In 2005, Kazama meets with Chairman Goda of the Omi Alliance in an effort to prevent a war with the Tojo Clan. The unresolved conflict between Kiryu and Nishiki from ten years ago resurfaces, once again driving a wedge between them. In 1995, Kiryu, who had been on a winning streak in underground fighting to fund Miho's surgery, finally reaches the pinnacle with a high-stakes title fight.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x6 - Fate／Showdown
+          </div>
+          <div class="plot">1995. The bond between Kiryu, Nishiki, Yumi, and Miho, who had been there for each other like family, tragically falls apart. 2005. Can Kiryu prevent a war between the Tojo Clan and the Omi Alliance? How will Kiryu and Nishiki resolve their 10-year-old conflict? And what is the true identity of the Shinjuku Devil? With rising tensions, they face the final battle in Kamurocho.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
