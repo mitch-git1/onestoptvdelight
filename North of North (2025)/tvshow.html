@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - North of North
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">North of North</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/North%20of%20North%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/North%20of%20North%20-%20S01E01%20-%20Top%20of%20the%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Top of the World
+          </div>
+          <div class="plot">Feeling stuck in her life in her tiny Arctic community, Siaja decides it's time to shake things up during the annual Spring Festival, but her plans are derailed by personal upheavals.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/North%20of%20North%20-%20S01E02%20-%20No%20Freeloading-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - No Freeloading
+          </div>
+          <div class="plot">Siaja struggles to pick up the pieces and prove herself capable of handling more than just her messy personal life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/North%20of%20North%20-%20S01E03%20-%20Dumpcano-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Dumpcano
+          </div>
+          <div class="plot">Siaja&rsquo;s first day of work goes awry when she accidentally starts a fire at the dump and Alistair and Kuuk visit the community center to discuss Ice Cove's candidacy to host a polar research station.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/North%20of%20North%20-%20S01E04%20-%20Joy%20to%20the%20Effing%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Joy to the Effing World
+          </div>
+          <div class="plot">With Kuuk&rsquo;s help, Siaja forms a plan to shake up Elder&rsquo;s night by coaxing children to attend, hoping to raise the Elders&rsquo; spirits. Meanwhile, Neevee seems to run into Alistair everywhere she goes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/North%20of%20North%20-%20S01E05%20-%20Walrus%20Dck%20Baseball-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Walrus D*ck Baseball
+          </div>
+          <div class="plot">Ice Cove is shortlisted for the polar research station, so Siaja proposes they host a baseball fundraiser to afford upgrades to the community centre to better their chances. Helen is coerced into a winner-takes-all bet by the rival town&rsquo;s leader.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/North%20of%20North%20-%20S01E06%20-%20Carnivores-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Carnivores
+          </div>
+          <div class="plot">Love is not in the air in Ice Cove as Siaja re-enters the dating world in epic style, Neevee and Alistair reach a turning point, and Kuuk has a surprise visitor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/North%20of%20North%20-%20S01E08%20-%20Bad%20Influences-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Bad Influences
+          </div>
+          <div class="plot">Siaja and Helen put the final touches on their pitch for the polar research station, when Helen is pulled away. Siaja uses this opportunity to view the only available apartment in town with Kuuk&rsquo;s help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

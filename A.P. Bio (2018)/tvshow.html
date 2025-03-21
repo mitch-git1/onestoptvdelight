@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - A.P. Bio
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">A.P. Bio</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/A.P.%20Bio%20%282018%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S01E01%20-%20Pilot%20Catfish-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot: Catfish
+          </div>
+          <div class="plot">Jack Griffin is a Harvard philosophy scholar who loses out on his dream job and goes to work as a high school Advanced Placement biology teacher in his hometown of Toledo, Ohio. He quickly makes it clear he will not be teaching any biology, however, and, realizing he has a room full of overachieving honor roll students at his disposal, decides instead to use the kids to enact revenge on his rival and take the job that is rightfully his.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S01E02%20-%20Teacher%20Jail-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Teacher Jail
+          </div>
+          <div class="plot">When Jack  leaves his class unattended, a student injury sets off an official investigation and lands Jack in &quot;teacher jail.&quot; An aggressive teacher's union rep sets her sights on Principal Durbin. The students' excitement for a substitute teacher are dashed when they find out it's Helen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S01E03%20-%20Burning%20Miles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Burning Miles
+          </div>
+          <div class="plot">While Principal Durbin struggles with budget cuts, Jack discovers his students pity him - so he rallies, making a splash at the school bake sale and getting kicked out of the bookstore for life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S01E04%20-%20Overachieving%20Virgins-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Overachieving Virgins
+          </div>
+          <div class="plot">When Jack gets into a petty dispute with the student council president, the situation escalates much too far; Stef sells makeup at school as a side business.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S01E05%20-%20Dating%20Toledoans-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Dating Toledoans
+          </div>
+          <div class="plot">Jack reluctantly agrees to go out on the town with Mary, Stef, and Michelle; his superiority complex proves difficult for the women to overcome; principal Durbin feels threatened when Helen fills in for him on the school's morning announcements.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S01E06%20-%20Freakin%27%20Enamored-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Freakin' Enamored
+          </div>
+          <div class="plot">When Jack is attracted to a student's mother at a parent-teacher conference, he feigns interest in her son; a group of parents complain to principal Durbin when they notice a piece of controversial student art from Mary's class.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S01E07%20-%20Selling%20Out-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Selling Out
+          </div>
+          <div class="plot">Jack receives an offer from Miles' publisher to write a book of feel-good philosophy that could be his ticket out of Toledo. Durbin accidentally sets off an emotional firestorm when he reveals that while Stef chose Mary as her emergency contact, Mary chose Michelle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S01E08%20-%20We%20Don%27t%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - We Don't Party
+          </div>
+          <div class="plot">Jack finds out his ex-girlfriend Meredith needs a venue for a charity fundraiser and has the perfect place: his student Victor's house. Victor and the other kids are inspired by Jack to party for the first time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S01E09%20-%20Rosemary%27s%20Boyfriend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Rosemary's Boyfriend
+          </div>
+          <div class="plot">Jack is incensed when his dead mom's former lover shows up and suggests they commemorate her birthday. Jack taps his students to help him retaliate, but the students' hands are already full - of crying robot babies. Stef's kindness toward Dale the janitor sends the wrong signals.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S01E10%20-%20Durbin%20Crashes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Durbin Crashes
+          </div>
+          <div class="plot">When Jack casually gives Durbin some marriage advice, it backfires, gets Durbin kicked out of the house, and Jack takes him in. The A.P. Bio kids tell Jack if they can get Miles' DNA, they'll learn a little biology while pulling off the ultimate revenge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S01E11%20-%20Eight%20Pigs%20and%20a%20Rat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Eight Pigs and a Rat
+          </div>
+          <div class="plot">When one of Jack's students anonymously reports him for canceling their much-anticipated fetal pig dissection, he sets out to find the snitch. Durbin's chances at Principal of the Year are in jeopardy when the superintendent visits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S01E12%20-%20Walleye-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Walleye
+          </div>
+          <div class="plot">Jack successfully convinces Miles that Devin is his illegitimate son; Durbin, Mary, Stef and Michelle clash on the Sadie Hawkins dance theme.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S01E13%20-%20Drenching%20Dallas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Drenching Dallas
+          </div>
+          <div class="plot">Jack takes interest in a revenge mission on behalf of the kids; Mary, Stef and Michelle believe they've discovered an otherworldly presence.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S02E01%20-%20Happiness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Happiness
+          </div>
+          <div class="plot">With no archrival to combat, Jack sets his sights on a new mission: write the most brilliant philosophy book ever and get out of Toledo for good. Stef and Mary forget a special day for Michele. Helen forgets to order routine maintenance for the copier causing mass hysteria at Whitlock.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S02E02%20-%20Nuns-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Nuns
+          </div>
+          <div class="plot">As the newly minted driver's education teacher, Jack sets out to get revenge on his mother's church when he discovers the last of her money was used to buy a statue of the Virgin Mary.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S02E03%20-%20Wednesday%20Morning%2C%208AM-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Wednesday Morning, 8AM
+          </div>
+          <div class="plot">In the hectic thirty minutes that start every day at Whitlock, Jack tries to retrieve his massage chair from Whitlock's intriguing payroll accountant, Lynette. Durbin and Helen prepare for the morning announcements. Michelle gives a eulogy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S02E04%20-%20Toledo%27s%20Top%20100-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Toledo's Top 100
+          </div>
+          <div class="plot">Jack is aghast to learn he didn't make the Top 10 in Toledo's Top 100 Bachelors, and Durbin did. Victor and Eduardo decide it's time to reveal their feelings to their crushes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S02E05%20-%20J%27Accuse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - J'Accuse
+          </div>
+          <div class="plot">Jack uses Michelle's annual murder mystery party to impress Lynette. Meanwhile, in a moment of desperation, the students break into Whitlock High to steal the A.P. Bio practice exams.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S02E06%20-%20Melvin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Melvin
+          </div>
+          <div class="plot">Jack's war with his neighbor reaches a turning point when it threatens to ruin a date with Lynette. When the school photographer ups his rate, Durbin takes school pictures into his own hands.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S02E07%20-%20Personal%20Everest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Personal Everest
+          </div>
+          <div class="plot">Jack is outraged when his old high school bully is hired as a motivational speaker at Whitlock. Mary, Stef and Michelle set their own personal goals of female empowerment, unintentionally causing a rift between Helen and Durbin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S02E08%20-%20Sweet%20Low%20Road-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Sweet Low Road
+          </div>
+          <div class="plot">When budget cuts threaten to gut Whitlock and put his job in jeopardy, Jack recruits Mary, Stef, and Michelle to take down the Superintendent. Durbin plans an appeal to the heart, while the students plan an appeal to the soul.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S02E09%20-%20Dr.%20Whoopsie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Dr. Whoopsie
+          </div>
+          <div class="plot">After an embarrassing video of him falling off a stage goes viral, Jack plans a viral video of his own. Durbin, Helen and the teachers track down Whitlock's most notorious litterer: The Sugar Daddy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S02E10%20-%20Handcuffed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Handcuffed
+          </div>
+          <div class="plot">When he's kicked off his Harvard phone plan, Jack is offered a chance to leapfrog onto Mary's on one condition: He helps her break up with her scuzzy boyfriend. Meanwhile, Anthony becomes Durbin's right-hand man.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S02E11%20-%20Spectacle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Spectacle
+          </div>
+          <div class="plot">After his computer breaks, Jack rallies his class to win the annual Whitlock's Got Talent competition so the prize money can go towards a new laptop. Helen and Durbin put on their best tuxes to host while Mary, Stef and Michelle prepare a hand-bell routine.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S02E12%20-%20Ride%20the%20Ram-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Ride the Ram
+          </div>
+          <div class="plot">It's the most exciting time of the year at Whitlock: Durbin's birthday and Spirit Week. Jack does his best to steer clear of any school spirit as everyone else comes together to take down their hated rivals at Prairie High.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S02E13%20-%20Kinda%20Sorta-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Kinda Sorta
+          </div>
+          <div class="plot">The college fair comes to Whitlock, and Sarika has an offer to Jack: Get her into Harvard, and she&rsquo;ll get his book into the hands of her publisher aunt. Meanwhile, Stef prepares for a visit from a fling, Helen applies to college, and Durbin tries to cement his legacy. Season finale.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S03E01%20-%20Tiny%20Problems-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Tiny Problems
+          </div>
+          <div class="plot">When Jack is disappointed with the popcorn maker he orders, he and the students plot revenge. Helen goes back to school to get her high school degree and chaos ensues in Principal Durbin's office in her absence.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S03E02%20-%20Disgraced-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Disgraced
+          </div>
+          <div class="plot">Mr. Pugh plans a field trip for the Toledo chapter of the Ohio Naturalists. When Jack can't write his own book, he agrees to be ghostwrite for popular author Robin Shwank -- only to insert his own chapters into Shwank's book.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S03E03%20-%20Gary%20Meets%20Dave-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Gary Meets Dave
+          </div>
+          <div class="plot">Jack accidentally loses a significant amount of money and it falls in the hands of the students. As Principal Durbin and Helen investigate who stole the money, the students and teachers admit to other wrongdoings.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S03E04%20-%20Get%20Hoppy%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Get Hoppy!
+          </div>
+          <div class="plot">Principal Durbin takes it upon himself to help Jack advance his book with an appearance on Toledo's morning TV show but lets his five minutes of fame get the best of him. The other teachers lead a competition within the Young Entrepreneurs Club.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S03E05%20-%20Mr.%20Pistachio-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Mr. Pistachio
+          </div>
+          <div class="plot">Jack has Mary drive him to the doctor, but a prank results in him getting the same procedure twice. At school, Durbin and Helen embarrass themselves and the kids compete over class superlative titles.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S03E06%20-%20That%20That%20That-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - That That That
+          </div>
+          <div class="plot">As the school prepares for winter break, Jack tries to record a lecture on Thoreau's transcendentalism as a way into the University of Wisconsin's philosophy department. Frustrated and unable to finish the video, he falls asleep and has nightmares.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S03E07%20-%20Aces%20Wild-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Aces Wild
+          </div>
+          <div class="plot">Principal Durbin and Helen sweep lockers. Jack finds out that Anthony has been lying about his extracurricular activities. Jack and Lynette follow Anthony to find out what he's really been up to. The search for Stef's baby donor intensifies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S03E08%20-%20Katie%20Holmes%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Katie Holmes Day
+          </div>
+          <div class="plot">While the rest of the town prepares for the celebration of Toledo's annual Katie Holmes Day, Jack and Marissa plot to ruin the holiday pageant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S04E01%20-%20Tornado%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Tornado!
+          </div>
+          <div class="plot">A tornado puts the school on lockdown. The kids write fan fiction about faculty members.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S04E02%20-%20Sweatpants-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Sweatpants
+          </div>
+          <div class="plot">Jack has the students form a fake cult to sabotage Principal Durbin's new school uniforms.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S04E03%20-%20An%20Oath%20to%20Rusty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - An Oath to Rusty
+          </div>
+          <div class="plot">Jack attempts to get closer with the guys at work. Helen helps Principal Durbin grow a backbone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S04E04%20-%20Tons%20of%20Rue-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Tons of Rue
+          </div>
+          <div class="plot">Jack tries to expose his allegedly reformed deadbeat dad. A witch shakes up the Whitlock High staff.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S04E05%20-%20The%20Perfect%20Date%20From%20Hell-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - The Perfect Date From Hell
+          </div>
+          <div class="plot">Jack finds out he's his girlfriend's therapy homework. Principal Durbin goes undercover.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S04E06%20-%20Love%2C%20for%20Lack%20of%20a%20Better%20Term-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Love, for Lack of a Better Term
+          </div>
+          <div class="plot">Victor sends Ashlanda a risqu&eacute; photo. Grace and Anthony try to set up Mary and Principal Durbin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S04E07%20-%20Malachi-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Malachi
+          </div>
+          <div class="plot">A jealous Jack crashes his girlfriend's dinner with a male friend. Helen rebounds after a breakup.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A.P.%20Bio%20-%20S04E08%20-%20The%20Harvard%20Pen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - The Harvard Pen
+          </div>
+          <div class="plot">Jack's students steal his Harvard pen. Principal Durbin fails the superintendent's inspection.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

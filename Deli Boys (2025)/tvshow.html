@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Deli Boys
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Deli Boys</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Deli%20Boys%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Deli%20Boys%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">After their Baba&rsquo;s sudden death, brothers Raj and Mir realize their family&rsquo;s deli empire is actually a criminal front. Their survival depends on Lucky Auntie, who does something totally messed up but also kind of awesome.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Deli%20Boys%20-%20S01E02%20-%20Deadly%20Boys-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Deadly Boys
+          </div>
+          <div class="plot">Raj and Mir set out to find half-dead Hamza in the Forgotten Bottom, but they are idiots and nepo babies. Meanwhile, Lucky fights chauvinist Ahmad for Dark DarCo&rsquo;s throne, and Agent Mercer struggles to crack the FBI&rsquo;s boys&rsquo; club.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Deli%20Boys%20-%20S01E03%20-%20Delhi%20Boys-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Delhi Boys
+          </div>
+          <div class="plot">As Lucky, Mir, and Ahmad work to revive a smuggling operation, Ahmad&rsquo;s racism surfaces and Drexel&rsquo;s business program gets a bad rap. Raj learns professionalism from the &ldquo;Murderwalla,&rdquo; while Agent Mercer picks up an unexpected ally.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Deli%20Boys%20-%20S01E04%20-%20Delicate%20Boys-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Delicate Boys
+          </div>
+          <div class="plot">A Philly gangster gives the crew 24 hours to unload coke and pay his vig&mdash;but demands a hostage. Lucky screams disturbing things at Raj after he scares off the cocaine mixer, while Bushra holds Mir&rsquo;s nuts to the fire.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Deli%20Boys%20-%20S01E05%20-%20Lucky%20Boys-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Lucky Boys
+          </div>
+          <div class="plot">It&rsquo;s Chickie Lasagna&rsquo;s epic &ldquo;Big Game&rdquo; party, and the Pennsylvania &ldquo;Football Birds&rdquo; are playing. But the gang is too busy trying to expand their turf and discovering that Chickie&rsquo;s daughter Gigi is a hot psycho. Mercer witnesses a beatdown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Deli%20Boys%20-%20S01E06%20-%20Jersey%20Boys-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Jersey Boys
+          </div>
+          <div class="plot">Hamza&rsquo;s British cousins hop across the pond on a lark, drive on the wrong side of the road, and kidnap Lucky at GMT for a wee Brexit with tea and crumpets, Stonehenge, O levels, and a Jack Russell terrier. The boys follow Raj&rsquo;s third eye.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Deli%20Boys%20-%20S01E07%20-%20Delivery%20Boys-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Delivery Boys
+          </div>
+          <div class="plot">The boys learn the value of work-life balance. Raj and his shaman/lover smoke a fat rosin donut en route to deliver drugs to his fianc&eacute;/business partner at West Philly Pakora Palace. Meanwhile, Mercer and Simpson finally get on the same page.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Deli%20Boys%20-%20S01E08%20-%20Sweaty%20Boys-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Sweaty Boys
+          </div>
+          <div class="plot">Mercer and Simpson close in on the sticky, chewy, nutty center of the Dar crime ring. Raj rides a scooter. Mir channels his inner tech bro. Lucky pulls a fast one. Ahmad finally gets to pull down the pull-down gate outside the ABC
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Deli%20Boys%20-%20S01E09%20-%20Shaadi%20Boys-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Shaadi Boys
+          </div>
+          <div class="plot">On the first day of Mir and Bushra&rsquo;s pyari pyari shaadi, the Peruvians want their money&mdash;and it&rsquo;s threatening Mir&rsquo;s ability to be a fab dullah. Raj is acting super weird, the boys might tiff (no tiffin), and a mystery finally unravels.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Deli%20Boys%20-%20S01E10%20-%20Confetti%20Boys-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Confetti Boys
+          </div>
+          <div class="plot">Philly PD Sergeant Angelo F. Testicola fights to protect his very important crime scene despite interference from Mercer, Simpson, Raj, Mir, Lucky, Ahmad, Seema, Bushra, Chickie, Chickie&rsquo;s date, and Corey&mdash;the only white guy at the wedding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

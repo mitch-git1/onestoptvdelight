@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Lil Kev
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Lil Kev</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Lil%20Kev%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x1 - Take Your Kev to Work
+          </div>
+          <div class="plot">Kev uses Uncle Richard's jail ball antics at basketball tryouts and accidentally starts a riot, so Nancy decides to scare him straight with a visit to her job at the ER.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x2 - Kev the Babysitter
+          </div>
+          <div class="plot">Kev's plan to go to his crush Rhe Rhe's party is thwarted when he gets stuck babysitting Uncle Richard's two rowdy kids; Nancy goes to a spoken word poetry night with Marisol.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x3 - Laugh at My 'Paign
+          </div>
+          <div class="plot">When the community pool closes, smooth-talking city council candidate Coleman Bridges proves unhelpful, so Kev schemes for Henry to run against Coleman.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x4 - Mr. Uncle Mom Jr.
+          </div>
+          <div class="plot">Uncle Richard is put in charge of the boys while Nancy takes a risk visiting a new hair salon; when Kev and Robert's troublemaking plans go awry, Richard and Henry clean up the mess.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x5 - Driving Miss Nancy Crazy
+          </div>
+          <div class="plot">Inspired by Rev. Mooney's sermon, Kev and Nancy try to prove each other wrong as they help their racist elderly neighbor; Richard thinks Miss Green is avoiding him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x6 - Trial and Terror
+          </div>
+          <div class="plot">Kev's class completes a read-a-thon challenge, but with a logbook tracking their progress stolen and their pizza party at risk, the class holds a mock trial to catch the thief; Nancy and Marisol devise a plan to save their endangered hospital.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x7 - The King and Queen of Harts Play Spades
+          </div>
+          <div class="plot">Nancy and Henry head to Baltimore to reclaim their Spades glory from years past, and find their relationship spark reignited; nervous Kev gets the attention of a girl, and Richard's plans to spend a quiet weekend with Miss Green are crashed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x8 - This Isn't 39
+          </div>
+          <div class="plot">Nancy freaks on her birthday when she learns she's not turning 39, but 40; her friend Loretta arrives to take her out for one last crazy night; Kev and Henry trail them to keep Nancy away from other men; Richard helps Robert make a prison cake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x9 - Bittersweet Charity
+          </div>
+          <div class="plot">Nancy offers to watch Dirty Dante, and finds she enjoys mothering the grateful kid; Kev takes advantage of Nancy being distracted and gets into trouble staying out late; Richard suspects Miss Green is losing interest in him since he's gone straight.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x10 - Sink or Swim
+          </div>
+          <div class="plot">Kev starts a swim team with new kid Brian; Nancy hosts a dinner for Coleman to discuss the growing crime problems; surprising Nancy, Henry also arrives for dinner to win her back; more folks crash the dinner, leaving Nancy frantic as chaos ensues.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

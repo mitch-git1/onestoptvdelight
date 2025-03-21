@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Going Dutch
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Going Dutch</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Going%20Dutch%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Going%20Dutch%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">The colonel is reassigned to take emergency command of USAG Stroopsdorf in the Netherlands; Sgt. Conway provides the colonel and Shah with a tour of the things Stroopsdorf is known for... cheese, laundry, and bowling.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Going%20Dutch%20-%20S01E02%20-%20Tanks%20for%20Nothing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Tanks for Nothing
+          </div>
+          <div class="plot">General Davidson makes a visit to USAG Stroopsdorf and insults The Colonel by tasking him with commanding the unit of traffic during a Tank Maneuver. The Colonel devises a plan to steal a tank to prove he is still in his prime. Captain Quinn wants to earn her father's respect and organizes her own secret tank heist mission.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Going%20Dutch%20-%20S01E03%20-%20CIA-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - CIA
+          </div>
+          <div class="plot">The Colonel transforms into the over-protective father Captain Maggie never asked for (but might reluctantly admit she needs), when her on-off boyfriend, CIA Agent Rick, drops by the base for a weekend visit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Going%20Dutch%20-%20S01E04%20-%20Korfball-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Korfball
+          </div>
+          <div class="plot">Everyone in town is talking about the upcoming Korfball match between the Americans and the Dutch. The Colonel refuses to lose to the Dutch and Captain Quinn brings out her high school alter ego &quot;The Rocket&quot; to make her dad proud.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Going%20Dutch%20-%20S01E05%20-%20Nazi%20Hunters-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Nazi Hunters
+          </div>
+          <div class="plot">The troops of Stroopsdorf participate in their quarterly war games; when an unidentified drone hovers over the base, The Colonel recruits Captain Maggie, Major Shah and Sergeant Dana to take a trip to the owner's house to confirm he is not a spy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Going%20Dutch%20-%20S01E06%20-%20When%20You%20Wish%20Upon%20a%20Star-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - When You Wish Upon a Star
+          </div>
+          <div class="plot">Gen. Davidson arrives at Stroopsdorf to receive his second star; the colonel eagerly desires a promotion and needs Capt. Quinn's help to charm Gen. King; Maj. Shah dips his toes back into the dating pool.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Going%20Dutch%20-%20S01E07%20-%20Once%20Upon%20a%20Twice%20Christmas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Once Upon a Twice Christmas
+          </div>
+          <div class="plot">It's the middle of spring and the Dutch are celebrating Christmas -- again; the colonel and Katja are looking forward to celebrating their first Christmas dinner together as girlfriend and boyfriend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Going%20Dutch%20-%20S01E08%20-%20The%20Trial%20of%20Jan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Trial of Jan
+          </div>
+          <div class="plot">The colonel wants to fire Jan, but must abide by Dutch labor laws.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Going%20Dutch%20-%20S01E09%20-%20The%20Exes%20of%20Evil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Exes of Evil
+          </div>
+          <div class="plot">When the Colonel's three ex-wives show up on base, he's surprised and furious to learn they're all good friends; Major Shah and Captain Maggie work together to fix the base's electrical wiring.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Going%20Dutch%20-%20S01E10%20-%20Born%20on%20the%203rd%20of%20July-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Born on the 3rd of July
+          </div>
+          <div class="plot">After forgetting Capt. Maggie's birthday yet again, the colonel sets out to express his apology with a grand gesture, only to find that it may cost him the other person he loves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

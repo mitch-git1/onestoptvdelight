@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - School Spirits
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">School Spirits</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/School%20Spirits%20%282023%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S01E01%20-%20My%20So-Called%20Death-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - My So-Called Death
+          </div>
+          <div class="plot">While acclimating to purgatory at Split River High, Maddie becomes determined to solve the mystery of her disappearance. While observing those she left behind, Maddie begins to realize everyone is not as honest and loyal as she once thought.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S01E02%20-%20The%20Fault%20In%20Our%20Scars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Fault In Our Scars
+          </div>
+          <div class="plot">As she grows close to the spirits in the ghost world, a driven Maddie begins to unravel the events surrounding her death, only to discover someone other than Xavier may have been involved.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S01E03%20-%20Dead%20and%20Confused-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Dead and Confused
+          </div>
+          <div class="plot">With an unexpected suspect possibly involved in her death, Maddie's forced to reveal more about the depth of that relationship - leading to unexpected consequences.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S01E04%20-%20Ghoul%20Intentions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Ghoul Intentions
+          </div>
+          <div class="plot">When the search for Maddie's killer puts Simon in real jeopardy and exposes Maddie's connection to the living world, Maddie must navigate Split River High's spooky spectral underbelly - first alone, and then with the help of her fellow ghosts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S01E05%20-%20The%20Twilight%20End%20Zone-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Twilight End Zone
+          </div>
+          <div class="plot">As Homecoming unfolds at Split River, Maddie finds herself divided between accepting her fate in purgatory and a newly hatched plan to crack a new suspect.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S01E06%20-%20Grave%20the%20Last%20Dance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Grave the Last Dance
+          </div>
+          <div class="plot">Amongst the sparkly lights of Split River's Homecoming Dance, Operation Find Maddie's Killer goes into overdrive leading to surprising revelations.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S01E07%20-%20S%C3%A9ance%20Anything-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - S&eacute;ance Anything
+          </div>
+          <div class="plot">The spirits enlist Dawn to help Maddie recall her last living moments which takes a heartbreaking turn. Nicole desperately tries to keep a secret from being revealed. As the spirits begin to ask more questions, an unexpected turn of events takes place within their own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S01E08%20-%20Madison%27s%20Body-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Madison's Body
+          </div>
+          <div class="plot">Questioning their existence, the spirits seek Mr. Martin for answers. Maddie must confront the latest suspect which challenges everything she thought she knew before. Xavier, Claire and Nicole look for answers at an abandoned house. When the truth is finally revealed, Maddie must face unexpected and devastating consequences.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S02E01%20-%20Whatever%20Happened%20to%20Maddie%20Nears-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Whatever Happened to Maddie Nears?
+          </div>
+          <div class="plot">Maddie confronts Mr. Martin, who flees. Janet, in Maddie's body, returns to her family's now dilapidated farmhouse, triggering memories. A conflicted Simon struggles with his desire to help Maddie and protect his own grasp on reality.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S02E02%20-%20Field%20of%20Screams-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Field of Screams
+          </div>
+          <div class="plot">Fugitive Janet is haunted by her past as the ghost group continues searching for Mr. Martin inside Split River High. Simon tells the living kids about Janet's body-snatching. A fire at a dilapidated farmhouse leaves Maddie's fate unclear.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S02E03%20-%20Can%27t%20Hauntly%20Wait-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Can't Hauntly Wait
+          </div>
+          <div class="plot">A relentless Sandra is desperate to know her daughters fate, as Janet in Maddie's body wreaks havoc in the living world. Simon and friends search for Janet/Maddie in an unlikely place, as the ghosts decode Janet's past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S02E04%20-%20A%20Walk-In%20to%20Remember-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - A Walk-In to Remember
+          </div>
+          <div class="plot">Janet/Maddie returns home to a shocked and relieved Sandra. The ghosts discover the objects from their deaths unlock hidden spaces. A mandatory school event uncovers tension between the living kids who are more concerned about Janet's return.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S02E05%20-%20Ghost%20Who%27s%20Coming%20to%20Dinner-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Ghost Who's Coming to Dinner
+          </div>
+          <div class="plot">Janet/Maddie agrees to have Maddie's friends over for dinner and the tense meal ends with Janet realizing her cover is blown. Meanwhile, Maddie explores the school's &quot;scars&quot; and uncovers intel about Janet that shakes her resolve.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S02E06%20-%20Ghost%20Pointe%20Blank-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Ghost Pointe Blank
+          </div>
+          <div class="plot">Maddie and the ghosts find a link between their scars while Simon and team go on a mission where tensions rise with the arrival of an unexpected visitor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/School%20Spirits%20-%20S02E08%20-%20Fire%2C%20Talk%20to%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Fire, Talk to Me
+          </div>
+          <div class="plot">Maddie and the ghosts confront Mr. Martin, ultimately trapping him in the afterlife; new information leads to a chase through the school's scars, delaying Maddie's return to the living world and putting her body in jeopardy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
