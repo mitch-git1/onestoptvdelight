@@ -27,7 +27,13 @@
     <div id="overlay"></div>
     <div id="largeContainer">
       <div class="infoContainer">
-	      
+         <div id="searchContainer">
+        <input type="text" autocomplete="off" onfocus="this.value='';"
+        onblur="if(this.value==''){this.value='Search...'};"
+        onkeyup="searchOnPage(this.value.toLowerCase());" value="" name="search"
+        id="search_box" />
+        <input type="submit" id="search_button" value="Search" />
+        <div id="search_result"></div></div>
         <div class="infoBackTitleContainer">
           <span class="infoBackTitle">Full Library</span>
           <hr class="subTitleSeprator" />
