@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Side Quest
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Side Quest</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Side%20Quest%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Side%20Quest%20-%20S01E01%20-%20Song%20and%20Dance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Song and Dance
+          </div>
+          <div class="plot">Phil, the art director of MQ, attempts to enjoy a Hawaiian vacation with his girlfriend while dealing with increasingly invasive calls from Ian Grimm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Side%20Quest%20-%20S01E02%20-%20Pull%20List-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Pull List
+          </div>
+          <div class="plot">When a Black-owned comic book shop receives only one copy of the latest MQ comic, five superfans fight over who deserves it the most.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Side%20Quest%20-%20S01E03%20-%20Fugue-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Fugue
+          </div>
+          <div class="plot">A young cellist joins a touring video game orchestra, only to discover what happens when your dream job becomes a nightmare.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Side%20Quest%20-%20S01E04%20-%20The%20Last%20Raid-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Last Raid
+          </div>
+          <div class="plot">Five high school friends in a long-running MQ guild discover a glitch that might break the game&mdash;or their friendship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

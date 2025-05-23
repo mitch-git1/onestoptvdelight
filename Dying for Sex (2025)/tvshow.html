@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Dying for Sex
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Dying for Sex</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Dying%20for%20Sex%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dying%20for%20Sex%20-%20S01E01%20-%20Good%20Value%20Diet%20Soda-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Good Value Diet Soda
+          </div>
+          <div class="plot">Molly leans on her best friend Nikki after receiving a distressing diagnosis.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dying%20for%20Sex%20-%20S01E02%20-%20Masturbation%20Is%20Important-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Masturbation Is Important
+          </div>
+          <div class="plot">Molly dodges her treatment plan and follows her own desires. Nikki struggles in her new role as Molly's caretaker.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dying%20for%20Sex%20-%20S01E03%20-%20Feelings%20Can%20Become%20Amplified-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Feelings Can Become Amplified
+          </div>
+          <div class="plot">Molly tries to maintain a positive attitude despite disturbances from her new neighbor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dying%20for%20Sex%20-%20S01E04%20-%20Topping%20Is%20a%20Sacred%20Skill-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Topping Is a Sacred Skill
+          </div>
+          <div class="plot">Molly and Nikki attend a sex party, and Molly's desires lead her to unexpected places.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dying%20for%20Sex%20-%20S01E05%20-%20My%20Pet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - My Pet
+          </div>
+          <div class="plot">Molly's mother, Gail, comes for a visit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dying%20for%20Sex%20-%20S01E06%20-%20Happy%20Holidays-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Happy Holidays
+          </div>
+          <div class="plot">Molly confronts her past, as Nikki struggles to find balance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dying%20for%20Sex%20-%20S01E07%20-%20You%E2%80%99re%20Killing%20Me%2C%20Ernie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - You&rsquo;re Killing Me, Ernie
+          </div>
+          <div class="plot">Molly has a visitor at the hospital.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dying%20for%20Sex%20-%20S01E08%20-%20It%27s%20Not%20That%20Serious-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - It's Not That Serious
+          </div>
+          <div class="plot">Molly reflects on her life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Common Side Effects
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Common Side Effects</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Common%20Side%20Effects%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Common%20Side%20Effects%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">Marshall meets his old high school classmate Frances and lets her in on a world-changing secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Common%20Side%20Effects%20-%20S01E02%20-%20Lakeshore%20Limited-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Lakeshore Limited
+          </div>
+          <div class="plot">Marshall's forced on the run as the DEA pursues him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Common%20Side%20Effects%20-%20S01E03%20-%20Hildy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Hildy
+          </div>
+          <div class="plot">Marshall visits an old mentor as new pressures mount.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Common%20Side%20Effects%20-%20S01E04%20-%20Dumpsite-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Dumpsite
+          </div>
+          <div class="plot">Frances tracks down Marshall in an unlikely location.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Common%20Side%20Effects%20-%20S01E05%20-%20Star-Tel-Lite-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Star-Tel-Lite
+          </div>
+          <div class="plot">Marshall, Frances, and their crazy neighbors deal with the aftermath of a dangerous incident.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Common%20Side%20Effects%20-%20S01E06%20-%20In%20the%20System-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - In the System
+          </div>
+          <div class="plot">Stuck in jail, Marshall faces new threats.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Common%20Side%20Effects%20-%20S01E07%20-%20Blowfish-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Blowfish
+          </div>
+          <div class="plot">A chance encounter offers a risky opportunity for escape.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Common%20Side%20Effects%20-%20S01E08%20-%20Amelia%20%26%20Wyatt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Amelia &amp; Wyatt
+          </div>
+          <div class="plot">Marshall and his new ally make a bold move.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Common%20Side%20Effects%20-%20S01E09%20-%20Cliff%27s%20Edge-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Cliff's Edge
+          </div>
+          <div class="plot">Marshall's mushroom project grows out of hand.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Common%20Side%20Effects%20-%20S01E10%20-%20Raid-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Raid
+          </div>
+          <div class="plot">Dangerous forces converge on Marshall's camp.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

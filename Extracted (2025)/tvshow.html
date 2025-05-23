@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Extracted
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Extracted</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Extracted%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Extracted%20-%20S01E01%20-%20Survive%20the%20Night-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Survive the Night
+          </div>
+          <div class="plot">The survivalists arrive in Canada and spend their first night alone in the wilderness; as they attempt to build a shelter, their families watch from afar.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Extracted%20-%20S01E02%20-%20Gimme%20Shelter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Gimme Shelter
+          </div>
+          <div class="plot">Tensions mount as families compete for the power to send in life-saving supplies to their loved ones; several families are on the verge of extraction as their survivalist must figure out how to get across the lake to get the next drop of supplies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x3 - The Hunt
+          </div>
+          <div class="plot">Emotions between family members in HQ erupt when faced with another challenge; the starving survivalists compete for food, while family members draw maps to get their family members to a food source in the forest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x4 - Surviving the Storm
+          </div>
+          <div class="plot">The alliances at HQ are tested as families must anonymously provide critical supplies to one of the remaining survivalists; the survivalists face a decision that could affect both their fellow competitors in the wild and their families back at HQ.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x5 - Burn Before Reading
+          </div>
+          <div class="plot">The competition becomes more intense for both the survivalists and their family members. In the first challenge, the members in HQ must unanimously rank all the survivalists from strongest to weakest. The order of ranking will determine which family will be first to select a hunting weapon of their choice in the supply room which will then be dropped off to their loved one in the wilderness. Then, the family members get the chance to write a letter to their survivalist
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x6 - The Game Has Changed
+          </div>
+          <div class="plot">The survivalists attempt to hunt for food using the various weapons and tools their loved ones selected for them in the last supply drop; a family member at HQ must decide which of the remaining seven survivalists will receive critical supplies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x7 - Family vs. Family
+          </div>
+          <div class="plot">With limited energy left in them, the survivalists are put head-to-head in a swimming race to retrieve a bag of supplies located in the center of the lake; the battle continues in HQ as families are pitted against each other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

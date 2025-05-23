@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Poker Face
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Poker Face</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Poker%20Face%20%282023%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Poker%20Face%20-%20S01E01%20-%20Dead%20Man%27s%20Hand-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Dead Man's Hand
+          </div>
+          <div class="plot">When a close friend of hers meets an untimely end, Charlie Cale, a casino cocktail waitress with an uncanny knack for identifying lies, is determined to unravel these mysterious events &mdash; even if it endangers her own life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Poker%20Face%20-%20S01E02%20-%20The%20Night%20Shift-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Night Shift
+          </div>
+          <div class="plot">Wounded and on the run, Charlie is forced to make a pit stop in desolate New Mexico, where she tries to clear the name of a trucker framed for the murder of a local.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Poker%20Face%20-%20S01E03%20-%20The%20Stall-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Stall
+          </div>
+          <div class="plot">Charlie takes a job at a family-run Texas BBQ joint and must use her perception skills to sniff out the truth behind a shocking death.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Poker%20Face%20-%20S01E04%20-%20Rest%20in%20Metal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Rest in Metal
+          </div>
+          <div class="plot">Charlie goes on tour with has-been metal band Doxxxology, a motley crew of dejected rockers who&rsquo;ve spent decades trying to write a new hit; Charlie suspects foul play when one musician winds up dead.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Poker%20Face%20-%20S01E05%20-%20Time%20of%20the%20Monkey-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Time of the Monkey
+          </div>
+          <div class="plot">Charlie suspects her new besties at the retirement home played a role in another senior&rsquo;s death.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Poker%20Face%20-%20S01E06%20-%20Exit%20Stage%20Death-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Exit Stage Death
+          </div>
+          <div class="plot">Charlie's waitress job at a dinner theater is interrupted by a tragic death on stage during a performance by two washed-up television stars. When she starts to investigate, deadly motivations come to light.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Poker%20Face%20-%20S01E07%20-%20The%20Future%20of%20the%20Sport-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Future of the Sport
+          </div>
+          <div class="plot">While working at a go-kart complex, Charlie becomes involved in a bitter feud between an aging race car driver and a hotheaded young upstart, whose rivalry has explosive consequences.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Poker%20Face%20-%20S01E08%20-%20The%20Orpheus%20Syndrome-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Orpheus Syndrome
+          </div>
+          <div class="plot">A special effects artist unearths a past project to find closure from the guilt of a fatal on-set accident. When old demons resurface, Charlie is left to unravel a new deadly plot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Poker%20Face%20-%20S01E09%20-%20Escape%20from%20Shit%20Mountain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Escape from Shit Mountain
+          </div>
+          <div class="plot">Charlie finds herself stranded in a motel during a blizzard. In order to survive the night, Charlie must decipher the deadly tension between her questionable companions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Poker%20Face%20-%20S01E10%20-%20The%20Hook-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Hook
+          </div>
+          <div class="plot">Charlie faces her greatest challenge yet when she is caught in the crossfire of a deadly power play that puts her in the sights of two ruthless crime syndicates and the FBI.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

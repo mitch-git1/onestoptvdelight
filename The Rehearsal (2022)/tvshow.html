@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Rehearsal
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Rehearsal</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Rehearsal%20%282022%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rehearsal%20-%20S01E01%20-%20Orange%20Juice%2C%20No%20Pulp-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Orange Juice, No Pulp
+          </div>
+          <div class="plot">Nathan Fielder helps a Brooklyn-based trivia aficionado come clean to his teammate about a long-held lie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rehearsal%20-%20S01E02%20-%20Scion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Scion
+          </div>
+          <div class="plot">Nathan allows an Oregon woman to prepare for motherhood by simulating the experience of raising a child from zero to eighteen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rehearsal%20-%20S01E03%20-%20Gold%20Digger-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Gold Digger
+          </div>
+          <div class="plot">While Angela continues to raise her &ldquo;son,&rdquo; Nathan goes to new lengths to help a man prepare for a difficult conversation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rehearsal%20-%20S01E04%20-%20The%20Fielder%20Method-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Fielder Method
+          </div>
+          <div class="plot">Nathan travels to LA to train actors for his show.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rehearsal%20-%20S01E05%20-%20Apocalypto-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Apocalypto
+          </div>
+          <div class="plot">After a visit from his parents, Nathan struggles to stick up for his values.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rehearsal%20-%20S01E06%20-%20Pretend%20Daddy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Pretend Daddy
+          </div>
+          <div class="plot">The aftermath of a birthday party causes Nathan to re-evaluate his entire project.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

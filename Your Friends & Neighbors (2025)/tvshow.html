@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Your Friends &amp; Neighbors
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Your Friends &amp; Neighbors</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Your%20Friends%20%26%20Neighbors%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Your%20Friends%20%26%20Neighbors%20-%20S01E01%20-%20This%20Is%20What%20Happens-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - This Is What Happens
+          </div>
+          <div class="plot">After losing his high-powered job, Coop attends a neighbor's barbecue, where he faces his ex-wife Mel and makes a surprising choice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Your%20Friends%20%26%20Neighbors%20-%20S01E02%20-%20Deuce-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Deuce
+          </div>
+          <div class="plot">After an unsuccessful job interview, Coop pawns a stolen watch.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Your%20Friends%20%26%20Neighbors%20-%20S01E03%20-%20Theoretical%20Herpes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Theoretical Herpes
+          </div>
+          <div class="plot">Nick throws a party for the neighborhood men, leading to tension between Coop and Paul. The women take a self-defense class.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Your%20Friends%20%26%20Neighbors%20-%20S01E04%20-%20Literal%20Dragons-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Literal Dragons
+          </div>
+          <div class="plot">An unlikely alliance begins. Nick throws Mel a surprise birthday party, where she connects with Coop.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Your%20Friends%20%26%20Neighbors%20-%20S01E05%20-%20This%20Tourist%20Has%20Balls-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - This Tourist Has Balls
+          </div>
+          <div class="plot">Coop and Elena sell a stolen painting. Barney tries to hide his financial struggles from his in-laws. Coop makes a discovery at Sam's home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

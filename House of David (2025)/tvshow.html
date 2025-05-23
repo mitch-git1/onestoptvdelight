@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - House of David
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">House of David</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/House%20of%20David%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20David%20-%20S01E01%20-%20A%20Shepard%20and%20a%20King-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - A Shepard and a King
+          </div>
+          <div class="plot">One thousand years before Christ, Saul, the first King of Israel, loses God's grace and consequently also his own sanity. Meanwhile far away from the palace, the legendary seer Samuel becomes aware of a talented young shepherd named David. One of the greatest stories ever told is set in motion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20David%20-%20S01E02%20-%20Deep%20Calls%20to%20Deep-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Deep Calls to Deep
+          </div>
+          <div class="plot">Saul's family watches the King's deteriorating mental state with great concern, and is ready to do anything in their power to defend his reign. David is hungry for a life outside of his home, but what he finds beyond the hills of Bethlehem is danger beyond his wildest expectations.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20David%20-%20S01E03%20-%20The%20Anointing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Anointing
+          </div>
+          <div class="plot">The court must deal with the consequences of Saul's madness, Samuel is on the run from a sinister agent, and a nefarious shadow assembles a legendary ally in his plan to conquer Israel. Out in the fields of Bethlehem, David has an encounter that will change the course of history forever.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20David%20-%20S01E04%20-%20The%20Song%20of%20Moses-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Song of Moses
+          </div>
+          <div class="plot">A member of the palace faces serious allegations, that force the royal family to react. Samuel suffers a grave loss and sees himself confronted with the consequences of his prophecy. David discovers a new world where he finds secrets, dangers, but above all, love.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20David%20-%20S01E05%20-%20The%20Wolf%20and%20the%20Lion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Wolf and the Lion
+          </div>
+          <div class="plot">Queen Ahinoam hosts a feast to welcome an important group of guests in her home. The politics at court are full of deceit, and every player has their own secret mission. David learns to navigate his new life and comes one step closer to his destiny.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20David%20-%20S01E06%20-%20Giants%20Awakend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Giants Awakend
+          </div>
+          <div class="plot">Dark powers strengthen outside Saul's kingdom as Israel's enemies summon legendary warriors that were long deemed myth. A relationship at court complicates the lives of the heroes severely and Queen Ahinoam must take drastic actions to help the King.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20David%20-%20S01E07%20-%20David%20and%20Goliath%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - David and Goliath (1)
+          </div>
+          <div class="plot">Kings, heroes and villains grapple for the crown in a final face-off. War is inevitable and on the ancient battlegrounds the players prepare for a colossal fight that will decide the fate of Israel forever.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20David%20-%20S01E08%20-%20David%20and%20Goliath%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - David and Goliath (2)
+          </div>
+          <div class="plot">An epic clash of forces puts a prophecy to a test. One of the most legendary battles in the history of mankind impends and the heroes must face their deadliest and mightiest foes yet. How will the monumental story unfold? Who will be victorious in the struggle for the kingdom?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Running Point
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Running Point</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Running%20Point%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Running%20Point%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">Newly installed as the Waves' president, Isla faces her first dilemma: whether to trade a foul-mouthed player who's not living up to his potential.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Running%20Point%20-%20S01E02%20-%20Joe%20Pesci-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Joe Pesci
+          </div>
+          <div class="plot">With her brothers considering a coup, Isla must act fast to salvage a lost sponsorship. But an even bigger surprise awaits the entire Gordon family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Running%20Point%20-%20S01E03%20-%20The%20Travis%20Bugg%20Affair-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Travis Bugg Affair
+          </div>
+          <div class="plot">After Travis insults a sponsor, Isla does damage control &mdash; with catastrophic results. Ali helps a bewildered Jackie adjust to his new position.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Running%20Point%20-%20S01E04%20-%20Doljanchi-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Doljanchi
+          </div>
+          <div class="plot">At the league's owners' conference, Isla chases a game-changing deal. Ness and Sandy discover that sharing a home means sharing more than just space.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Running%20Point%20-%20S01E05%20-%20Beshert-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Beshert
+          </div>
+          <div class="plot">Isla and Lev's long-delayed engagement party raises big questions about religion and commitment. Jackie tries to shake up the Waves' halftime show.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Running%20Point%20-%20S01E06%20-%20The%20Yips-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Yips
+          </div>
+          <div class="plot">A false report that the Waves might trade Marcus puts Isla on the defensive. Dyson's free-throw woes call for an unusual intervention.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Running%20Point%20-%20S01E07%20-%20A%20Special%20Place%20in%20Hell-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - A Special Place in Hell
+          </div>
+          <div class="plot">To stop Travis' overbearing mom from disrupting practices, Isla takes her under her wing. Sandy and Jackie's messy love lives catch up with them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Running%20Point%20-%20S01E08%20-%20The%20Streak-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Streak
+          </div>
+          <div class="plot">The Waves are on a winning streak &mdash; until Jay disappears after an unexpected outburst, forcing Isla to go in search of him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Running%20Point%20-%20S01E09%20-%20The%20Playoffs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Playoffs
+          </div>
+          <div class="plot">It's been a Cinderella season for the Waves, but a player's secret could derail their playoff dreams. Sandy tries to stage a comeback of his own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Running%20Point%20-%20S01E10%20-%20Game%20Seven-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Game Seven
+          </div>
+          <div class="plot">The team has its best playoff chances in years, while Isla's personal life couldn't be worse. Can the Gordon family come through in the clutch?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

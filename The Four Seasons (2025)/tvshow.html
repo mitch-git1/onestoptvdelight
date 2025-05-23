@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Four Seasons
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Four Seasons</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Four%20Seasons%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Four%20Seasons%20-%20S01E01%20-%20Lake%20House-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Lake House
+          </div>
+          <div class="plot">Nick and Anne welcome longtime friends Kate, Jack, Danny and Claude for a weekend at their bucolic lake house &mdash; where some very unwelcome news awaits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Four%20Seasons%20-%20S01E02%20-%20Garden%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Garden Party
+          </div>
+          <div class="plot">Reeling from Nick's confession, the other couples must decide whether to reveal the truth to Anne before she suffers a public embarrassment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Four%20Seasons%20-%20S01E03%20-%20Eco%20Resort-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Eco Resort
+          </div>
+          <div class="plot">Months later, the friends reunite at a tropical resort, where a new addition complicates the group dynamic.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Four%20Seasons%20-%20S01E04%20-%20Beach%20Bar-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Beach Bar
+          </div>
+          <div class="plot">Hoping to warm up to Ginny, the gang hits a late-night beach party, where tequila-fueled conflict ensues. Anne is tempted by forbidden fruit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Four%20Seasons%20-%20S01E05%20-%20Family%20Weekend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Family Weekend
+          </div>
+          <div class="plot">Fall has arrived as the group reunites at Jack, Kate and Danny's alma mater. An attempt to spice things up leads to friction between Danny and Claude.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Four%20Seasons%20-%20S01E06%20-%20Ultimate%20Frisbee-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Ultimate Frisbee
+          </div>
+          <div class="plot">Jack and Kate try to rekindle the romance of their college years, with mixed results. Nick comes face-to-face with Lila's anger about the divorce.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Four%20Seasons%20-%20S01E07%20-%20Ski%20Trip-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Ski Trip
+          </div>
+          <div class="plot">It's Nick's turn to be on the outs as Anne joins the other couples for a New Year's ski vacation &mdash; and he struggles to fit in with Ginny's friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Four%20Seasons%20-%20S01E08%20-%20Fun-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Fun
+          </div>
+          <div class="plot">A twist of fate forces Anne and Ginny to confront their complicated feelings about one another. Jack and Kate's standoff comes to a head.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

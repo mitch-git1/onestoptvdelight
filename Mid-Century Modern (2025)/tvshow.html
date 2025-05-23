@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Mid-Century Modern
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Mid-Century Modern</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Mid-Century%20Modern%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mid-Century%20Modern%20-%20S01E01%20-%20Bye%2C%20George-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Bye, George
+          </div>
+          <div class="plot">Bunny, Jerry and Arthur reunite at the funeral of their longtime friend, George, which inspires Bunny to invite Jerry and Arthur to live with him and his mother, Sybil, in his Palm Springs home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mid-Century%20Modern%20-%20S01E02%20-%20Working%20Girls-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Working Girls
+          </div>
+          <div class="plot">Sybil helps Arthur get a job as a personal shopper, but his condescending boss reminds Arthur he&rsquo;s no longer in fashion; he&rsquo;s in sales. At a casino, Jerry tries to get tickets to a Donny Osmond concert, while Bunny negotiates with a pit boss when he feels he lost money unfairly.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mid-Century%20Modern%20-%20S01E03%20-%20Turbulence-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Turbulence
+          </div>
+          <div class="plot">On a flight, Arthur encourages Jerry to repair his relationship with his estranged daughter. When Bunny's sister, Mindy, visits, he tries to keep the peace between her and Sybil.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mid-Century%20Modern%20-%20S01E04%20-%20Never%20Have%20I%20Ever-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Never Have I Ever
+          </div>
+          <div class="plot">While quarantining during a bout of COVID, Bunny, Jerry and Arthur play &ldquo;Never Have I Ever,&rdquo; where secrets come out that could forever change the group dynamic.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mid-Century%20Modern%20-%20S01E05%20-%20Hello%2C%20Fisty%E2%80%99s-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Hello, Fisty&rsquo;s
+          </div>
+          <div class="plot">Bunny, Jerry and Arthur return to Fire Island with hopes of hooking up, but the connections they make are not what they expected. Back home, Sybil takes on a scam caller.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mid-Century%20Modern%20-%20S01E06%20-%20Maid%20Serviced-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Maid Serviced
+          </div>
+          <div class="plot">Going against Sybil&rsquo;s advice, Bunny, Jerry and Arthur hire a sexy but unqualified hunk as their new housekeeper.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mid-Century%20Modern%20-%20S01E07%20-%20Love%20Thy%20Neighbor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Love Thy Neighbor
+          </div>
+          <div class="plot">Bunny, Jerry and Arthur plan to confront their neighbor, a populist congresswoman by day, wild party girl by night. Meanwhile, old friends Sybil and Judy get to the bottom of why they've been annoying the hell out of each other lately.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mid-Century%20Modern%20-%20S01E08%20-%20Sour%20Pickleball-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Sour Pickleball
+          </div>
+          <div class="plot">Bunny asks Jerry and Arthur to let Mindy join their pickleball team. Meanwhile, Sybil reconnects with an old friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mid-Century%20Modern%20-%20S01E09%20-%20Here%27s%20to%20You%2C%20Mrs.%20Schneiderman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Here's to You, Mrs. Schneiderman
+          </div>
+          <div class="plot">Bunny, Jerry and Arthur deal with a sudden tragedy. Together, they try to figure out how to move on.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mid-Century%20Modern%20-%20S01E10%20-%20The%20Show%20Must%20Go%20On-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Show Must Go On
+          </div>
+          <div class="plot">Bunny, Jerry and Arthur decide to make a change in the house, but unexpected guests show up and alter their plans. Meanwhile, Mindy has trouble finding closure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
