@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Superstore
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Superstore</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Superstore%20%282015%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">Jonah begins his first day on the job at big-box store Cloud 9 and immediately starts a rocky relationship with floor supervisor Amy when he comes off as elitist and mistakenly marks appliances for only a quarter. He is also the romantic target of aggressive assistant manager Dina, whose bible is the employee code of conduct. Pregnant Cheyenne shares a memorable moment with her boyfriend, Bo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S01E02%20-%20Magazine%20Profile-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Magazine Profile
+          </div>
+          <div class="plot">Store manager Glenn gets overly excited when the Cloud 9 corporate magazine, Stratus, is interested in a story. The reporter, Cynthia, is more focused on Jonah, however, and the two develop a more-than-business relationship, which Amy had suspected. Garrett does his best to avoid be photographed for the magazine's cover. Cheyenne asks her boyfriend, Bo, to come up with a corporate jingle to help earn money to pay expenses for their upcoming baby.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S01E03%20-%20Shots%20and%20Salsa-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Shots and Salsa
+          </div>
+          <div class="plot">Amy fights racial stereotypes, while Jonah learns why you should never lend a helping hand.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S01E04%20-%20Mannequin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Mannequin
+          </div>
+          <div class="plot">When Jonah's coworkers discover a mannequin that looks exactly like him, it quickly becomes everyone's newest obsession. While doing his best to prove to Amy and everyone else that the teasing doesn't bother him, Jonah ends up doing the complete opposite. Elsewhere Cheyenne is thinking of putting her baby up for adoption, pitting Glenn and Dina against one another in a fight over who would make the better parent.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S01E05%20-%20Shoplifter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Shoplifter
+          </div>
+          <div class="plot">Amy's daughter Emma is without childcare and has to come to the store for the day. Unfortunately, this is against store policy, so when Glenn pulls Amy away to help him with a task, Jonah has to keep Amy's secret and an eye on Emma. Elsewhere Mateo and Cheyenne fight over a couch that is on sale because an elderly man passed away on it and Dina tries to catch a shoplifter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S01E06%20-%20Secret%20Shopper-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Secret Shopper
+          </div>
+          <div class="plot">When Glenn publicly congratulates Jonah for his superb test results, Amy becomes slightly annoyed and competitive, resulting in a chaotic battle of street smarts vs. book smarts. Meanwhile, the rest of the Cloud 9 team are on the lookout for a secret shopper, determined to be on their best behavior for him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S01E07%20-%20Color%20Wars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Color Wars
+          </div>
+          <div class="plot">Glenn pits the employees against each other in a contest to see who can sell more stuff.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S01E08%20-%20Wedding%20Day%20Sale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Wedding Day Sale
+          </div>
+          <div class="plot">Cheyenne shops Cloud 9's one-day wedding sale while Amy and Dina search for her missing fianc&eacute;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S01E09%20-%20All-Nighter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - All-Nighter
+          </div>
+          <div class="plot">Secrets come pouring out after the employees get locked in Cloud 9 overnight.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S01E10%20-%20Demotion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Demotion
+          </div>
+          <div class="plot">Jonah struggles to tell Dina he doesn't reciprocate her feelings, while Glenn chooses a new assistant manager.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S01E11%20-%20Labor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Labor
+          </div>
+          <div class="plot">After Amy calls corporate to talk about maternity leave for employees, everyone ends up in a frenzy when Jonah mentions unions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E01%20-%20Olympics-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Olympics
+          </div>
+          <div class="plot">A Cloud 9 Olympics promotion gives Amy the chance to meet her childhood hero, gold medal-winning gymnast Missy Jones. Meanwhile, storewide &quot;Olympic fever&quot; causes Glenn to have some difficulty balancing his extreme patriotism, Jonah to learn a secret about Mateo's past and Dina strives to create a &quot;closing ceremony&quot; her colleagues will never forget. This was released as a special during 2016 Olympics before season 2 premiere.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E02%20-%20Strike-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Strike
+          </div>
+          <div class="plot">The staffers go on strike, but Amy and Jonah make things worse by negotiating with corporate. The ambitious Mateo regrets going on strike and sneaks back into the store. Garrett meets a sightly woman on the picket line.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E03%20-%20Back%20to%20Work-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Back to Work
+          </div>
+          <div class="plot">Amy tries to wow corporate, but a workplace accident jeopardizes her efforts. Glenn attempts to impress the district manager by being a tough boss. Dina sets out to win over the employees. Mateo makes a discovery about Jeff.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E04%20-%20Guns%2C%20Pills%20and%20Birds-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Guns, Pills and Birds
+          </div>
+          <div class="plot">When Amy assigns an uncomfortable Jonah to the gun section of Cloud 9, Jonah abuses his right-to-refuse sale to anyone that causes concern, causing an open-carry protest to gather in the store. On principle, Glenn attempts to purchase all of the store's morning-after pills, but finds himself in a moral dilemma when he can't afford them. Dina, Garrett and Mateo hunt down a crow that has flown into the store.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E05%20-%20Spokesman%20Scandal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Spokesman Scandal
+          </div>
+          <div class="plot">When Cloud 9's spokesman is accused of a heinous crime, Glenn worries that he doesn't know enough about his employees and Dina exploits his concerns by carrying out storewide drug testing. Meanwhile, Amy and Jonah have a fun, flirty day avoiding work and daring each other with a series of pranks; Cheyenne can't stop talking about her baby, which annoys Garrett ; and Mateo continues to look for romance in his ambiguous relationship with Jeff.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E06%20-%20Dog%20Adoption%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Dog Adoption Day
+          </div>
+          <div class="plot">After new parents Cheyenne and Bo get into a fight, Amy and Glenn take vastly different approaches in giving them advice. Meanwhile, Mateo and Jonah get assigned to handle dog adoptions in the store and work feverishly to get all of the dogs adopted once they find out what will happen to the dogs if they don't. Dina refuses to adjust Garrett's timecard based on &quot;store rules,&quot; leaving Garrett happy to taunt Dina in revenge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E07%20-%20Halloween%20Theft-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Halloween Theft
+          </div>
+          <div class="plot">Dina throws a wrench in everyone's Halloween plans when something goes missing from the store and declares that no employee can leave until someone confesses to stealing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E08%20-%20Election%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Election Day
+          </div>
+          <div class="plot">When corporate sends out a voting guide that only benefits the company's interests, Amy and Jonah work together to put out a rival pamphlet until Jonah's personal life gets in the way. Dina and Glenn are stuck in an accidental cover up while Mateo goes to great lengths to hide his undocumented status.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E09%20-%20Seasonal%20Help-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Seasonal Help
+          </div>
+          <div class="plot">Much to Amy's dismay, Glenn hires Amy's husband, Adam, for some extra help, exposing her in ways in which she is not prepared. Frustrated with the lazy, noncommittal temps, Jonah and Garrett start an employee draft to place bets on who will quit first while Glenn tries to find the perfect person to play Santa at the store for Christmas.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E10%20-%20Black%20Friday-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Black Friday
+          </div>
+          <div class="plot">The employees come down with a case of food poisoning on Black Friday, but Amy is frantic when she thinks her nausea may be morning sickness. Meanwhile, Jonah annoys everyone by documenting the day with home video; Glenn's demeanor has changed after a trip to the pharmacy; Garrett continues to push Dina's buttons, with surprising results; and Mateo and Cheyenne find a way to turn Black Friday into a lucrative side business.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E11%20-%20Lost%20and%20Found-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Lost and Found
+          </div>
+          <div class="plot">At the beginning of every year, Cloud 9 employees hold a &quot;lost and found bin cleanout&quot; to get rid of all the unclaimed items. Amy unknowingly walks away with a huge wad of cash and Jonah is determined to help her find the best use for it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E12%20-%20Rebranding-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Rebranding
+          </div>
+          <div class="plot">Jeff lets the employees know that Rex, a vice president from corporate, will be coming by the store to help with the rollout for Cloud 9's store-wide rebranding, and it turns out Rex is someone from Jonah's past. Meanwhile, Mateo is stunned to learn of rumors that Jeff is in a relationship with an employee.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E13%20-%20Ladies%27%20Lunch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Ladies' Lunch
+          </div>
+          <div class="plot">During the morning meeting, Glenn accidentally tells the employees the real reason Amy has been late to work lately. Meanwhile, Dina tries to cheer up Amy by kidnapping her for a &quot;ladies' lunch.&quot; Jonah and Garrett invent a game to pass the time, tricking Glenn and Mateo in the process. Cheyenne helps Amy take a fearless step with a dramatic new look.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E14%20-%20Valentine%27s%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - Valentine's Day
+          </div>
+          <div class="plot">A well-intentioned Amy and Glenn get caught up in the Valentine's Day spirit, quickly learning what happens when you try and force love.  Meanwhile, Jonah goes undercover to try to catch a serial shoplifter and Mateo begins to unravel as Sandra's relationship with Jeff takes a new turn.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E15%20-%20Super%20Hot%20Store-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Super Hot Store
+          </div>
+          <div class="plot">The storewide heater malfunction magnifies angry tensions between Amy, Jonah and the back warehouse employees after both sides refuse to clean up a spill.  Meanwhile, Dina and Garrett find a way to pass the time and Cheyenne helps Glenn through an existential crisis as he tries to fix the heater himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E16%20-%20Wellness%20Fair-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - Wellness Fair
+          </div>
+          <div class="plot">When Amy sees Mateo out on a secret date with Jeff, she ignores Garrett's advice to stay out of it, and ends up throwing multiple relationships - both real and imagined - into chaos.  Meanwhile, Glenn resents Jonah for outshining him during Cloud 9's Wellness Fair, and Dina tries to prove that Amy faked an illness.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E17%20-%20Integrity%20Award-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Integrity Award
+          </div>
+          <div class="plot">Jonah accompanies Amy on a trip to help her mom and dad move out of her childhood home. Meanwhile, Glenn desperately wants to win the freshly minted Cloud 9 Integrity Award, but starts to worry that Garrett has a better chance of winning; Dina tries to take advantage of Mateo's relationship with Jeff to fix problems in the store - including a roach infestation; and Cheyenne gets caught up in Glenn's self-serving campaign.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E18%20-%20Mateo%27s%20Last%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - Mateo's Last Day
+          </div>
+          <div class="plot">When Mateo faces complications with his transfer to a Cloud 9 Signature store, he becomes desperate to resolve his undocumented status. Meanwhile, Amy helps Glenn battle an Internet troll, Jonah and Cheyenne try to give Mateo legal counsel, and Dina and Garrett take issue with corporate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E19%20-%20Glenn%27s%20Kids-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Glenn's Kids
+          </div>
+          <div class="plot">Glenn invites all of his kids to the store causing disorder among the employees. Jonah develops a romantic interest in Glenn's 25-year-old daughter, and Amy gets caught in the middle. Meanwhile, Garrett, Dina and Cheyenne struggle to keep track of one of the toddlers and Mateo tricks the kids into working for him as he grapples with life after Jeff.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E20%20-%20Spring%20Cleaning-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - Spring Cleaning
+          </div>
+          <div class="plot">Amy and Garrett embark on an investigation as they sift through abandoned photos during the store's spring cleaning. Meanwhile, Jonah goes out of his way to woo Glenn in hopes of gaining his approval and Cheyenne's fianc&eacute; starts working at Cloud 9 for some fast cash.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E21%20-%20Cheyenne%27s%20Wedding-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - Cheyenne's Wedding
+          </div>
+          <div class="plot">It's Cheyenne and Bo's dream wedding, but not everything goes according to plan. Meanwhile, relationships unravel as Amy and Jonah dodge relationship rumors. Glenn tries to change Jeff's mind after learning of upcoming layoffs, Dina talks her way into the wedding party and Mateo dodges Jeff.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S02E22%20-%20Tornado-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - Tornado
+          </div>
+          <div class="plot">Everyone in the store is on edge as Glenn tries to figure out which employees to lay off. Jonah struggles with the fallout of an admission he made to Amy, Garrett and Dina spar, and Mateo forms an alliance to keep his job. Meanwhile, a tornado warning goes into effect at the worst possible time, forcing the staff into uncomfortable pairings.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E01%20-%20Grand%20Re-Opening-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Grand Re-Opening
+          </div>
+          <div class="plot">The Cloud 9 employees are rushing to finish re-building the store in time for its &quot;Grand Re-Opening.&quot; Amy and Jonah confront their awkward kiss; Glenn discovers something about himself; Garrett avoids Jonah; Mateo worries about the voicemail he left on Jeff's phone; and Dina meets her match.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E02%20-%20Brett%27s%20Dead-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Brett's Dead
+          </div>
+          <div class="plot">Amy worries that Dina may be struggling with anxiety while Jonah tries to find out more about Garrett's past. Meanwhile, Mateo and Cheyenne avoid work by convincing Glenn that they were close with Brett.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E03%20-%20Part-Time%20Hires-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Part-Time Hires
+          </div>
+          <div class="plot">When Amy's daughter gets a job at Cloud 9, Amy turns to Jonah for advice on how to balance her parenting. Meanwhile, Garrett and Dina argue over who broke up with whom and Cheyenne tries to convince Mateo that the cute construction worker might just be flirting with him for store perks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E04%20-%20Workplace%20Bullying-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Workplace Bullying
+          </div>
+          <div class="plot">Tensions arise among the employees after an attempted robbery, pitting Dina against Jonah. Meanwhile, Glenn has a tough time firing the store security guard, and Amy discovers that her coworkers have been hanging out without her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E05%20-%20Sal%27s%20Dead-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Sal's Dead
+          </div>
+          <div class="plot">A dead body is discovered in the store on Halloween, throwing Glenn and Dina into a panic, and confusing the shoppers. Meanwhile, Amy and Garrett get into big trouble using a dating app on Jonah's phone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E06%20-%20Health%20Fund-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Health Fund
+          </div>
+          <div class="plot">As Mateo turns to stranger and stranger home remedies for an ear infection, Amy and Jonah decide to offer an alternative to Cloud 9's terrible health insurance plan. Meanwhile, Glenn enlists Dina to help him get medical attention for his own embarrassing condition.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E07%20-%20Christmas%20Eve-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Christmas Eve
+          </div>
+          <div class="plot">Trying to prove how &quot;wild&quot; she can be, Amy turns a boring Christmas Eve at Cloud 9 into a holiday adventure. Meanwhile, Jonah and Garrett's roommate issues boil over; and Glenn tries to prove to Mateo that Christmas is more than just &quot;fine.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E08%20-%20Viral%20Video-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Viral Video
+          </div>
+          <div class="plot">After a Cloud 9 employee posts a controversial video online, Dina enlists Cheyenne to help police the rest of the staff's social media accounts. Meanwhile, Amy learns something about Jonah that drives her to desperately pursue Instagram views, and Glenn suspects Mateo of rewards card fraud.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E09%20-%20Golden%20Globes%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Golden Globes Party
+          </div>
+          <div class="plot">When Amy throws a party to prove how great she's doing post-divorce, she's forced to enlist Dina and Jonah's help, and Dina ends up making the ultimate sacrifice. Meanwhile, Glenn and his wife Jerusha are forced to conduct some personal business at Amy's home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E10%20-%20High%20Volume%20Store-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - High Volume Store
+          </div>
+          <div class="plot">When corporate announces that the store is getting an upgrade, Amy, Jonah and Dina set out to discover the pros and cons. Meanwhile, Cheyenne accidentally volunteers to be Glenn's surrogate, and tries to get out of it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E11%20-%20Angels%20and%20Mermaids-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Angels and Mermaids
+          </div>
+          <div class="plot">Amy finds herself caught in the middle of a conflict between Cheyenne and her ex-convict mom, Brandi. Meanwhile, a personal agreement between Glenn and Dina gets heated when Glenn brings in a lawyer. And when Jonah finds out that Kelly believes in angels, Garrett's perfect weekend plans of having the apartment to himself are threatened.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E12%20-%20Groundhog%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Groundhog Day
+          </div>
+          <div class="plot">Still fresh from her divorce, Amy doesn't feel ready to start dating again; when Mateo tries to set her up with his loser cousin, she gets determined to show everyone she can do better; Dina takes advantage of a medical condition to scam Glenn.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E13%20-%20Video%20Game%20Release-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Video Game Release
+          </div>
+          <div class="plot">When gamers invade Cloud 9 for the release of a hot new video game, Jonah tries to help Amy secure herself a copy of the game, which takes them on an unexpected adventure. Mateo helps Garrett make a good impression on one of his heroes. Glenn and Sandra try to stand up for themselves with customers and end up instigating a breastfeeding &quot;nurse-in.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E14%20-%20Safety%20Training-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - Safety Training
+          </div>
+          <div class="plot">When Mateo gets injured, Jonah tries to help him avoid Cloud 9 compensation for fear of his immigration status being revealed. Meanwhile, Amy attempts to convince everyone that she likes Kelly.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E15%20-%20Amnesty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - Amnesty
+          </div>
+          <div class="plot">When Glenn and Dina offer amnesty to all the employees for any bad things they confess, Garrett and Cheyenne try to decide how to take advantage of it. Meanwhile, Jonah and Amy try to defuse an awkward situation that has the whole store gossiping.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E16%20-%20Target-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - Target
+          </div>
+          <div class="plot">When Jeff leaves Cloud 9 to work at Target, Garrett leads Glenn to believe that he's poaching other employees to go with him. In return Glenn tries to poach employees from Target. Amy goes on a double date with Dina, and Kelly and Jonah discuss moving in together.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E17%20-%20District%20Manager-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - District Manager
+          </div>
+          <div class="plot">Laurie, the new district manager, visits the store and decides to make some cuts to save money. Amy and Jonah plead with her to not fire anyone and search for other ways to make up the money. Meanwhile, Mateo struggles to prove his skills on the cash register.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E18%20-%20Local%20Vendors%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x18 - Local Vendors Day
+          </div>
+          <div class="plot">When local small businesses set up shop inside Cloud 9, Glenn tries to help his wife Jerusha sell her handmade needlepoint, despite Jonah's concerns that he's pressuring his employees. Meanwhile, Amy doesn't feel Latina enough when a guy flirts with her in Spanish, and Garrett tries to uncover the truth behind a beer vendor's product.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E19%20-%20Lottery-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x19 - Lottery
+          </div>
+          <div class="plot">As lottery mania sweeps the store, Dina encourages the employees to sell as many tickets as possible; Jonah helps Amy track down the new district manager to lobby for a raise.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E20%20-%20Gender%20Reveal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x20 - Gender Reveal
+          </div>
+          <div class="plot">The store hosts a gender reveal party for Glenn and his wife, Jerusha, just as Dina is freaking out at the realities of having to deliver a baby; Amy receives some unsettling news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E21%20-%20Aftermath-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x21 - Aftermath
+          </div>
+          <div class="plot">Amy and Jonah deal with the consequences of their recent interactions; Glenn and Dina enlist Garrett's help to win the store a visit from Cloud 9's CEO.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S03E22%20-%20Town%20Hall-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x22 - Town Hall
+          </div>
+          <div class="plot">As the store prepares to host a company-wide Town Hall meeting, Amy and Jonah are forced to put their conflicts aside and rally their co-workers to confront the CEO. Meanwhile Glenn struggles with the pressure of speaking to a global audience.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E01%20-%20Back%20to%20School-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Back to School
+          </div>
+          <div class="plot">On their first day back from suspension, Amy and Jonah steel themselves for a barrage of jokes and snide comments about their sex video, while Jeff goes to extreme lengths to win back Mateo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E02%20-%20Baby%20Shower-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Baby Shower
+          </div>
+          <div class="plot">Jonah helps Amy get creative to stock up on supplies for her new baby, while Glenn &amp; Jerusha take maternity pictures that inspire Dina to have her own photo shoot &ndash; art-directed by Mateo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E03%20-%20Toxic%20Workplace-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Toxic Workplace
+          </div>
+          <div class="plot">Amy and Jonah get combative to keep their new relationship hidden from their co-workers. Meanwhile, Glenn spirals when he learns Kelly wants to transfer to a new store, and Cheyenne struggles to organize a Cloud 9 carpool.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E04%20-%20Costume%20Competition-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Costume Competition
+          </div>
+          <div class="plot">Amy and Mateo play dirty to win the employee costume contest after learning first prize is a paid day off; Garrett is tormented by the store's repetitive Halloween music; and Glenn fears he's being followed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E05%20-%20Delivery%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Delivery Day
+          </div>
+          <div class="plot">Amy and Dina both head to the hospital to give birth, but Amy has a vastly different delivery experience after discovering her health insurance has limited coverage.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E06%20-%20Maternity%20Leave-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Maternity Leave
+          </div>
+          <div class="plot">Amy learns she has no maternity leave and must return to work two days after giving birth; Jonah and Garrett, convinced they can make a better pick than Glenn, interview applicants for seasonal work.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E07%20-%20New%20Initiative-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - New Initiative
+          </div>
+          <div class="plot">When a new Cloud 9 initiative forces employees to be friendlier to their customers, Amy ends up getting to know Jonah's parents - and learns he hasn't been completely truthful with them. The new policy also inspires Garrett and Dina to find out who can hold a smile longer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E08%20-%20Managers%27%20Conference-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Managers' Conference
+          </div>
+          <div class="plot">Amy and Jonah get a taste of how the other half lives when they attend a managers' conference; Mateo unwittingly reveals a secret about himself; Garrett and Dina face the trials and tribulations of the giftwrapping station.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E09%20-%20Shadowing%20Glenn-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Shadowing Glenn
+          </div>
+          <div class="plot">Glenn drives Amy crazy with a new, over the top training system. Cheyenne and Mateo brainstorm a new business, while Dina recruits Jonah to help her when she starts second-guessing her own future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E10%20-%20Cloud%209%20Academy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Cloud 9 Academy
+          </div>
+          <div class="plot">Amy and Cheyenne attend Cloud 9 Academy to advance their careers. Dina and Garrett get roped into babysitting Glenn's daughter while he childproofs his office, and Jonah and Mateo become political activists.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E11%20-%20Steps%20Challenge-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Steps Challenge
+          </div>
+          <div class="plot">Corporate introduces a friendly step-tracking challenge between Cloud 9 branches, and Amy, Jonah, and Dina create a fake rivalry to inspire Store #1217's laziest employees. But healthy competition gets increasingly chaotic when the fake rivalry becomes real.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E12%20-%20Blizzard-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - Blizzard
+          </div>
+          <div class="plot">With a massive snowstorm beating down on St. Louis and an unsympathetic home office, the Cloud 9 employees and customers get snowed in, leading to escalating tensions and infighting.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E13%20-%20Lovebirds-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - Lovebirds
+          </div>
+          <div class="plot">Jonah and Amy's first Valentine's Day together gets derailed when Dina brings her birds to work, which also causes trouble for Garrett. Cheyenne gives Marcus a tattoo. Glenn makes videos for his daughter to watch while he's at work.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E14%20-%20Minor%20Crimes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x14 - Minor Crimes
+          </div>
+          <div class="plot">Amy jumps at an amazing career opportunity, only to run up against an exec with a major grudge against her. Jonah and Mateo help Glenn with a financial problem, while Garrett and Cheyenne struggle to spend a day without cell phones.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E15%20-%20Salary-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x15 - Salary
+          </div>
+          <div class="plot">Amy finds herself at odds with her co-workers when some salary numbers get leaked. Dina worries that Jonah is coming between her and Amy. Mateo tries to give himself a promotion. Garrett attempts to sabotage Glenn's positive attitude.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E16%20-%20Easter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x16 - Easter
+          </div>
+          <div class="plot">Suspicious that people are making fun of her, Amy and Jonah spy on Cloud 9 employees through the security system. Dina tries to track down an unsanctioned Easter Bunny in the store. Glenn preps for his church's Passion play.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E17%20-%20Quincea%C3%B1era-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x17 - Quincea&ntilde;era
+          </div>
+          <div class="plot">Jonah struggles to find his place at Amy&rsquo;s daughter Emma&rsquo;s quincea&ntilde;era, while Dina proves very popular with some teenage boys. Cheyenne and Mateo are obsessed with seeing Amy cry.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E18%20-%20Cloud%20Green-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x18 - Cloud Green
+          </div>
+          <div class="plot">Despite Dina&rsquo;s protests, Amy lets Glenn&rsquo;s pastor host an Earth Day booth at the store, but things quickly unravel when Glenn won&rsquo;t recognize Amy&rsquo;s authority. Jonah spearheads Cloud 9&rsquo;s green initiative, but is met with apathy from his coworkers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E19%20-%20Scanners-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x19 - Scanners
+          </div>
+          <div class="plot">Dina agrees to play the bad guy when corporate forces Amy to cut everyone's hours. Meanwhile, Jonah and the other employees play an elaborate game of laser tag with the store's new scanners, and Mateo makes a startling discovery about Marcus.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E20%20-%20%23Cloud9Fail-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x20 - #Cloud9Fail
+          </div>
+          <div class="plot">When a photo of a mess at store 1217 goes viral, Amy and Jonah try to use it to their advantage, while Dina starts hunting for the anonymous tweeter. And with money tight now that their hours have been cut back, Mateo, Cheyenne, Garrett, and Glenn sell their personal items in the store.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E21%20-%20Sandra%27s%20Fight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x21 - Sandra's Fight
+          </div>
+          <div class="plot">Amy and Dina visit Cloud 9 corporate to fix problems caused by Sandra's misguided activism, while Jonah tries to sabotage an employee meeting and Garrett tries to prove to his co-workers that he's a good person.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S04E22%20-%20Employee%20Appreciation%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x22 - Employee Appreciation Day
+          </div>
+          <div class="plot">Amy and Jonah find themselves on opposing sides as corporate tries to win over employees by showering them with treats. But when the company's tactics grow more extreme, everyone must band together to save one of their own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E01%20-%20Cloud%209.0-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x1 - Cloud 9.0
+          </div>
+          <div class="plot">Amy tries to help her employees cope with Mateo's ICE detention - and with the introduction of a new robot co-worker that makes them fear they could be replaced.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E02%20-%20Testimonials-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x2 - Testimonials
+          </div>
+          <div class="plot">Amy attempts to gather glowing character testimony for Mateo's immigration lawyer, but comes up short. Jonah plans an engagement party for Sandra, infuriating Dina, while Glenn and Marcus compete for Mateo's old locker.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E03%20-%20Forced%20Hire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x3 - Forced Hire
+          </div>
+          <div class="plot">When Amy hires Dina's nemesis Colleen, Dina blackmails Garrett into making Colleen's life a living hell. Jonah is forced to befriend Marcus in order to unionize the warehouse guys.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E04%20-%20Mall%20Closing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x4 - Mall Closing
+          </div>
+          <div class="plot">The local mall has closed, and while Amy and Dina are excited about the influx of new customers, they quickly realize they're not all there to shop. Cheyenne learns she's not as cool as she thinks she is.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E05%20-%20Self-Care-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - Self-Care
+          </div>
+          <div class="plot">After Glenn has a health scare, Dina takes control of his nutrition and fitness. Jonah and Cheyenne try to get Amy to take a break from working too hard, while Mateo interviews for a new position in the store.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E06%20-%20Trick-or-Treat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x6 - Trick-or-Treat
+          </div>
+          <div class="plot">Amy amps up the store's Halloween spirit to impress the new district manager, even setting up a haunted house that terrifies Glenn. Jonah collects the last of the union cards. Cheyenne and Mateo wonder if any Cloud 9 employees are capable of murder.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E07%20-%20Shoplifter%20Rehab-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x7 - Shoplifter Rehab
+          </div>
+          <div class="plot">Amy, Jonah and Glenn hatch a plan to make Amy look like a tough boss after she loses face in front of the district manager. Dina recruits Mateo to help her run Cloud 9's shoplifter rehabilitation program -- with a few of Dina's personal tweaks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E08%20-%20Toy%20Drive-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x8 - Toy Drive
+          </div>
+          <div class="plot">Amy and Jonah help Mateo run a toy drive to make him look good for his immigration hearing, but they clash with a competing charity rep. Sandra and Jerry ask Glenn to officiate their wedding despite Dina's protests. Cheyenne gets real with Garrett.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E09%20-%20Curbside%20Pickup-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x9 - Curbside Pickup
+          </div>
+          <div class="plot">As part of a new corporate initiative Dina is spearheading, the employees have to rush items directly to shoppers' cars. Amy's brother, Eric, visits and Amy thinks she sees a spark with Mateo. Garrett is impressed by a customer's high-tech purchase.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E10%20-%20Negotiations-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x10 - Negotiations
+          </div>
+          <div class="plot">Jonah and Sandra represent the Cloud 9 employees at union contract negotiations with corporate. Worried about the union's fate, Amy, Dina and Cheyenne distract themselves by looking for the perfect Christmas tree. Mateo, Garrett and Glenn compete to see who can sell an unsellable item.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E11%20-%20Lady%20Boss-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x11 - Lady Boss
+          </div>
+          <div class="plot">After Cloud 9's acquisition, Amy struggles to contact the store's new parent company, Sandra enlists Garrett and Dina's help to stand up to Carol, and Glenn wrestles with a big career decision. Meanwhile, Jonah takes up the cause of gender equality.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E12%20-%20Myrtle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x12 - Myrtle
+          </div>
+          <div class="plot">Employees wrestle with the loss of beloved co-worker Myrtle&hellip; and the fact that she left a large sum of money to Jonah. Cheyenne recruits Mateo in a possible pyramid scheme, while Dina reconnects with a surprise visitor in the store: her father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E13%20-%20Favoritism-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x13 - Favoritism
+          </div>
+          <div class="plot">Amy tries to make Mateo her new assistant, leading to accusations of favoritism and a group competition in the store. Sandra gets caught in a power struggle between Glenn and Dina, and Jonah attempts to show Garrett that he's still one of the guys.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E14%20-%20Sandra%27s%20Wedding-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x14 - Sandra's Wedding
+          </div>
+          <div class="plot">Sandra and Jerry are getting married! When Jonah&rsquo;s attempt to help the caterers and Dina&rsquo;s obsession with wedding security threaten to derail it all, it falls to Amy to make sure Sandra&rsquo;s big day isn&rsquo;t ruined. Garrett struggles with what to say in his Best Man toast, while Mateo finds that starting a new relationship may be more complicated than he thought.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E15%20-%20Cereal%20Bar-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x15 - Cereal Bar
+          </div>
+          <div class="plot">After Cloud 9 receives a new cereal bar, Amy and Jonah speculate on Zephra&rsquo;s ulterior motives. Dina enlists Cheyenne&rsquo;s help in dealing with a scammer. Garrett tries to con Glenn into giving him paid time off.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E16%20-%20Employee%20App-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x16 - Employee App
+          </div>
+          <div class="plot">Cloud 9 employees experience unforeseen problems with the new Zephra app. Dina's texts lead to animosity, Glenn struggles to deal with a teen craze, and Jonah attempts to prank Garrett to teach him a lesson.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E17%20-%20Zephra%20Cares-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x17 - Zephra Cares
+          </div>
+          <div class="plot">Amy organizes a community service event, but it&rsquo;s jeopardized by Jeff's return and Glenn's desire to help his co-workers. Meanwhile, Sandra confronts Jonah about his strategy for soliciting donations, and Garrett tries to prove his intelligence to Dina.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E18%20-%20Playdate-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x18 - Playdate
+          </div>
+          <div class="plot">When Amy has to bring her baby to the store, she grows frustrated with people's criticisms of her parenting and Glenn enlists Jerusha to help. Garrett helps Dina plan her first birthday with her boyfriend. Sandra and Cheyenne hatch a conspiracy theory.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E19%20-%20Carol%27s%20Back-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x19 - Carol's Back
+          </div>
+          <div class="plot">When Carol returns to the store post-suspension, Amy struggles with employees who refuse to work with her. Garrett and Mateo take advantage of the gig economy. Jonah tries to convince Raise the Wage protesters that he's one of them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E20%20-%20Customer%20Safari-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x20 - Customer Safari
+          </div>
+          <div class="plot">Amy joins Jonah for lunch with his parents and brother, but she's caught off guard by their dynamic. Dina worries about being spontaneous when her new boyfriend surprises her at work. Garrett and the others create a game around the store's customers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S05E21%20-%20California%20Part%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x21 - California Part 1
+          </div>
+          <div class="plot">After Mateo and Cheyenne disagree on the best way to celebrate her 21st birthday, Cheyenne enlists Bo&rsquo;s help. Much to Garrett&rsquo;s chagrin, Glenn plays matchmaker to help Jerry and Sandra complete their family, and Dina attempts to help Amy keep a big secret from Jonah.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E01%20-%20Essential-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x1 - Essential
+          </div>
+          <div class="plot">During the coronavirus pandemic, Amy and Jonah try to bring order to the chaos in Cloud 9 while being pulled in multiple directions. The employees learn what it means to be &quot;heroes,&quot; while Amy and Jonah's impending move to California looms large.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E02%20-%20California%20Part%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x2 - California Part 2
+          </div>
+          <div class="plot">As the Cloud 9 employees prepare to send Amy and Jonah off, Mateo and Glenn attempt to organise a video tribute and Dina searches for a new best friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E03%20-%20Floor%20Supervisor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x3 - Floor Supervisor
+          </div>
+          <div class="plot">With the floor supervisor position available, Jonah decides to throw his hat in the ring, much to Dina's chagrin. Glenn and Mateo struggle to find the right balance in their working relationship. Garrett tries to prove he's been in love before.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E04%20-%20Prize%20Wheel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x4 - Prize Wheel
+          </div>
+          <div class="plot">On the day of Cloud 9's &quot;In-store-vaganza,&quot; Dina finally gets the chance to step up to the plate and run the store. Garrett and Cheyenne search for a mysterious smell. Jonah finds himself excited about a new opportunity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E05%20-%20Hair%20Care%20Products-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x5 - Hair Care Products
+          </div>
+          <div class="plot">After Cloud 9 changes their policy of locking up Black beauty products, the employees are forced to reckon with systemic racism in the store, with Garrett leading the charge. Glenn desperately tries to right the store's wrongs, in misguided ways.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E06%20-%20Biscuit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x6 - Biscuit
+          </div>
+          <div class="plot">After returning from quarantine, Glenn enlists Cheyenne and Bo's help to get Dina to relinquish control. Jonah and Mateo have second thoughts about helping Sandra with her cat's medical needs. Garrett struggles with customer returns.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E07%20-%20The%20Trough-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x7 - The Trough
+          </div>
+          <div class="plot">When the employees start to worry about Jonah's emotional state, Mateo, Glenn and Sandra try to help him move on after Amy. Cheyenne is forced to shadow Carol for the day. Garrett helps Dina search for a secret location in the store.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E08%20-%20Ground%20Rules-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x8 - Ground Rules
+          </div>
+          <div class="plot">Jonah finds himself in trouble with Sandra and Glenn when her son, Tony, starts working at Cloud 9. Mateo tries to help Cheyenne be a better floor supervisor. Garrett is unwittingly thrust in the middle of Dina's relationship with Brian the vet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E09%20-%20Conspiracy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x9 - Conspiracy
+          </div>
+          <div class="plot">Glenn is confused by Zephra's new store policies and enlists Sandra and Marcus to help figure out what's going on. A memory lapse causes Jonah to question his friendship with Garrett. Cheyenne and Mateo face an unexpected challenge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E10%20-%20Depositions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x10 - Depositions
+          </div>
+          <div class="plot">With Carol's lawyer at Cloud 9 to depose the employees, Jonah tries to ease Glenn's nerves. Mateo enlists Sandra's help hiding the details of his work arrangement while Dina grows concerned about Garrett's behaviour at customer service.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E11%20-%20Deep%20Cleaning-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x11 - Deep Cleaning
+          </div>
+          <div class="plot">On the day of Store 1217's first deep cleaning since the pandemic began, Glenn ropes Garrett into throwing a party to cheer up the employees. Dina needs Cheyenne's guidance when her ability to run the store is compromised. Jonah tries to help Mateo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E12%20-%20Customer%20Satisfaction-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x12 - Customer Satisfaction
+          </div>
+          <div class="plot">When Jeff returns to push customer satisfaction surveys, Mateo enlists Garrett's help to hide his relationship. Dina, Glenn and Cheyenne's plan to boost the scores creates new and bigger problems. Jonah tries to convince Sandra to value herself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E13%20-%20Lowell%20Anderson-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x13 - Lowell Anderson
+          </div>
+          <div class="plot">When the Cloud 9 founder's son makes a surprise visit, the employees struggle to accommodate his bold ideas. Garrett helps Dina navigate a tricky situation with Brian. Jonah and Sandra use social media to investigate some worrying news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E14%20-%20Perfect%20Store-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x14 - Perfect Store
+          </div>
+          <div class="plot">Some inside information leads the Cloud 9 employees to try to make the store seem perfect for one day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Superstore%20-%20S06E15%20-%20All%20Sales%20Final-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x15 - All Sales Final
+          </div>
+          <div class="plot">The employees celebrate the past, present and future of Cloud 9.  Series finale.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -976,4 +976,17 @@ a:active {
     background-color: #0967be; /* light blue on hover */
   }
 
- 
+  .no-results-message {
+      display: none; /* Hide by default */
+      font-size: 16px;
+      color: #37a70a;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border: 3px solid #d31212;
+      position: absolute; /* Position absolutely */
+      top: 50%; /* Move down by 50% of the parent's height */
+      left: 50%; /* Move right by 50% of the parent's width */
+      transform: translate(-50%, -50%); /* Move back up and left by 50% of its own width and height */
+      width: 50%; /* Set a width to make it visible */
+      text-align: center; /* Center the text */
+  }
