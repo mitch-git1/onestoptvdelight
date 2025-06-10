@@ -26,6 +26,17 @@
   <body>
     <div id="overlay"></div>
     <div id="largeContainer">
+            <!-- Add the menu button -->
+       <button id="menu-button">Menu</button>
+      <!-- Add the sidebar navigation -->
+       <div id="sidebar-nav">
+       <ul>
+       <li><a href="index.html"target="_blank">Full Library:Movies</a></li>
+       <li><a href="index2.html"target="_blank">Full Library:TV Shows</a></li>
+       <li><a href="https://mitch-git3.github.io/Newly-Added-TV-Show-and-Movie-List/"target="_blank">New Movies Added</a></li>
+       <li><a href="https://docs.google.com/document/d/1cz_h4pHc5I-BVyRTmsWmuPHh7j57maUC/edit?usp=sharing&ouid=107722713483068785243&rtpof=true&sd=true"target="_blank">Check List Link Page Full Movie List:</a></li>
+       </ul>
+       </div>
       <div class="infoContainer">
          <div id="searchContainer">
         <input type="text" autocomplete="off" onfocus="this.value='';"
@@ -47,21 +58,17 @@
             <span class="titleNoBlock">Total Movies:</span>
             <span>268</span>
           </div>
-          <div class="name">
-            <span class="titleNoBlock">Link Page Full Library:Movies</span>
-            <span><a href="index.html"target="_blank">Full Library:Movies</a></span>
+            <div class="name">
+            <span class="titleNoBlock">New Movies Added This Month:</span>
+            <span>40</span>
           </div>
           <div class="name">
-            <span class="titleNoBlock">Link Page Full Library:TV Shows</span>
-            <span><a href="index2.html"target="_blank">Full Library:TV Shows</a></span>
+            <span class="titleNoBlock">Request Link Page</span>
+            <span><a href="https://docs.google.com/document/d/1MHskr_RrHWGtjXsfzbfVeqdZJHSsIqf3/edit"target="_blank">Request File</a></span>
           </div>
-        <div class="name">
-            <span class="titleNoBlock">New Movies Added:</span>
-            <span><a href="https://mitch-git3.github.io/Newly-Added-TV-Show-and-Movie-List/"target="_blank">New Movies Added</a></span>
-          </div>
-	<div class="name">
-            <span class="titleNoBlock">Check List Link Page Movie List:</span>
-            <span><a href="https://docs.google.com/document/d/1cz_h4pHc5I-BVyRTmsWmuPHh7j57maUC/edit?usp=sharing&ouid=107722713483068785243&rtpof=true&sd=true"target="_blank">Check List</a></span>
+          <div class="name">
+            <span class="titleNoBlock">Top 10 Picked Movies This Month</span>
+            <span><a href="https://mitch-git5.github.io/homepage-one-stop-tv-delight-/index2.html"target="_blank">Top 10</a></span>
           </div>
         </div>
       </div>
@@ -15893,6 +15900,18 @@
         <div class="footerTextContainer">
       </div>
     </div>
+      <script>
+      const menuButton = document.getElementById('menu-button');
+      const sidebarNav = document.getElementById('sidebar-nav');
+    
+      menuButton.addEventListener('click', () => {
+        sidebarNav.classList.toggle('open');
+        menuButton.classList.toggle('menu-button-open');
+        
+        const infoContainer = document.querySelector('.infoContainerTextContainer');
+        infoContainer.classList.toggle('sidebar-nav-open');
+      });
+      </script>
 	  <script type="text/javascript">
                       $(document).ready(function() {
                                 $(&quot;.fancybox&quot;).fancybox({

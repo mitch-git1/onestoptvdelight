@@ -990,3 +990,74 @@ a:active {
       width: 50%; /* Set a width to make it visible */
       text-align: center; /* Center the text */
   }
+
+    #menu-button {
+    position: absolute;
+    left: 55px; /* moved to the right a bit */
+    top: 10px;
+    background-color: #0c0c0c;
+    color: #37a70a;
+    border-radius: 5px;
+    border-color: #37a70a;
+    border: 3px solid #37a70a;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: left 0.5s ease-in-out; /* added transition for smooth movement */
+    text-decoration: underline
+  }
+  
+  #menu-button.menu-button-open {
+    left: 250px; /* moved to the right to accommodate the sidebar nav */
+  }
+
+  #menu-button:hover {
+    color: #c51f1f;
+  }
+  
+  #sidebar-nav {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 35vh;
+    background-color: #000000;
+    transition: left 0.5s ease-in-out;
+  }
+  
+  #sidebar-nav.open {
+    left: 0;
+  }
+  
+  #sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #sidebar-nav ul li {
+    padding: 10px;
+    border-bottom: 3px solid #fffbfb;
+  }
+  
+  #sidebar-nav ul li a {
+    color: #37a70a;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  #sidebar-nav ul li a:hover {
+    color: #c51f1f;
+  }
+
+ .infoContainerTextContainer.sidebar-nav-open {
+   display: none;
+ }
+
+.star {
+  color: #ee1818; /* red color */
+  font-size: 18px; /* larger font size */
+}
