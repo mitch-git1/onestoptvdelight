@@ -38,15 +38,29 @@
        </ul>
        </div>
       <div class="infoContainer">
-         <div id="searchContainer">
-        <input type="text" autocomplete="off" onfocus="this.value='';"
-        onblur="if(this.value==''){this.value='Search...'};"
-        onkeyup="searchOnPage(this.value.toLowerCase());" value="" name="search"
-        id="search_box" />
+	 <div id="searchContainer">
+        <input type="text" autocomplete="off" onfocus="this.value=''; searchOnPage('');"
+        onblur="if(this.value==''){this.value='Search Movie Name'};"
+        onkeyup="searchOnPage(this.value.toLowerCase());"
+        id="search_box" value="Search TV Show Name" />
         <input type="submit" id="search_button" value="Search" />
         <div id="search_result"></div>
 	<!-- add home button -->
        <a href="https://mitch-git5.github.io/homepage-one-stop-tv-delight-/index.html" class="homepage-link">Home Button</a>
+         </div>
+
+
+         <div id="genre-select-container">
+         <label for="genre-select" class="genre-label">Search By Genre:</label>
+         <select id="genre-select">
+         <option value="all">All</option>
+         </select>
+         </div>
+         <div id="date-select-container">
+           <label for="date-select" class="date-label">Search By Year:</label>
+           <select id="date-select">
+             <option value="all">All</option>
+           </select>
          </div>
         <div class="infoBackTitleContainer">
           <span class="infoBackTitle">Full Library</span>
@@ -6783,15 +6797,15 @@
           </div>
           <div class="aniGenre name">
             <span class="titleBlock">Genre(s):</span>
-            <span class="value"></span>
+            <span class="value">Unknown</span>
           </div>
           <div class="aniStudio name">
             <span class="titleNoBlock">Studio:</span>
-            <span class="value"></span>
+            <span class="value">Unknown</span>
           </div>
           <div class="aniWriters name">
             <span class="titleNoBlock">Writer(s):</span>
-            <span class="value"></span>
+            <span class="value">Unknown</span>
           </div>
           <div class="aniDirector name">
             <span class="titleNoBlock">Director(s):</span>
@@ -11326,11 +11340,11 @@
           </div>
           <div class="aniGenre name">
             <span class="titleBlock">Genre(s):</span>
-            <span class="value"></span>
+            <span class="value">Unknown</span>
           </div>
           <div class="aniStudio name">
             <span class="titleNoBlock">Studio:</span>
-            <span class="value"></span>
+            <span class="value">Unknown</span>
           </div>
           <div class="aniWriters name">
             <span class="titleNoBlock">Writer(s):</span>
@@ -15900,7 +15914,10 @@
         <div class="footerTextContainer">
       </div>
     </div>
-      <script>
+
+    <script src="lib/genre list.js"></script>
+    <script src="lib/date list.js"></script>
+    <script>
       const menuButton = document.getElementById('menu-button');
       const sidebarNav = document.getElementById('sidebar-nav');
     
@@ -15911,7 +15928,7 @@
         const infoContainer = document.querySelector('.infoContainerTextContainer');
         infoContainer.classList.toggle('sidebar-nav-open');
       });
-      </script>
+    </script>
 	  <script type="text/javascript">
                       $(document).ready(function() {
                                 $(&quot;.fancybox&quot;).fancybox({

@@ -991,7 +991,7 @@ a:active {
       text-align: center; /* Center the text */
   }
 
-    #menu-button {
+  #menu-button {
     position: absolute;
     left: 55px; /* moved to the right a bit */
     top: 10px;
@@ -1061,3 +1061,60 @@ a:active {
   color: #ee1818; /* red color */
   font-size: 18px; /* larger font size */
 }
+
+ #genre-select {
+    width: 180px;
+    height: 50px;
+    font-size: 12px;
+    padding: 10px;
+    border: 3px solid #2eaf22;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #2eaf22;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+ #genre-select-container {
+  position: absolute;
+  top: 20%;
+  right: 60px; /* adjust this value to move the dropdown list to the left */ 
+  margin-top: 10px;
+} 
+
+.genre-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2cc418;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#date-select {
+  width: 180px;
+  height: 50px;
+  font-size: 12px;
+  padding: 10px;
+  border: 3px solid #2eaf22;
+  border-radius: 5px;
+  background-color: #000000;
+  color: #2eaf22;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#date-select-container {
+  position: absolute;
+  top: 50%;
+  right: 60px; /* adjust this value to move the dropdown list to the left */ 
+  margin-top: 10px;
+}
+
+.date-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2cc418;
+  cursor: pointer;
+  padding: 5px;
+}
+
