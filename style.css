@@ -178,7 +178,7 @@ a:hover {
 .aniEpsContainer .aniEpItemContainer .plot
 {
 	position:absolute;
-	font-size:12px;
+	font-size:15px;
 	width:600px;
 	height:80px;
 	overflow-y:auto;
@@ -249,7 +249,7 @@ a:hover {
 .copyrightInfo a
 {
 	text-decoration: none;
-	color: #d7d7d7!important;
+	color: #293134!important;
 	opacity: 1.0;
 }
 .aniContainer.aniOrder2
@@ -302,7 +302,7 @@ a:hover {
         width: auto;
         height: auto;
         display: block;
-        font-size: 11px;
+        font-size: 15px;
         padding: 5px;
         font-family: Arial;
         text-align: justify;
@@ -348,20 +348,8 @@ a:hover {
     min-width: 1244px;
     width: 1244px;
     text-align: center;
+    color: #293134!important;
 }
-
-.footerTextContainer
-{
-    width: 500px;
-    border-top: 1px solid rgba(255,255,255,0.2);
-    padding-left: 20px;
-    padding-top: 10px;
-    margin-right: auto;
-    padding-bottom: 10px;
-    text-align: center;
-    margin-left: auto;
-}
-
 
 .fanArtNoPoster,.fanArtNoPoster img
 {
@@ -818,18 +806,6 @@ a:hover {
     top: 10px;
     float: right;
 }
-.dateInfo
-{
-    position: absolute;
-    right: 5px;
-    bottom: 5px;
-}
-
-    .dateInfo span
-    {
-        font-weight: 700;
-    }
-
 .playIcon:hover,.playIconNoPoster:hover
 {
     opacity: 1.0;
@@ -887,8 +863,8 @@ a:hover {
     text-align: center;
 }
 
-
 <style>
+
 a:link {
   color: darkgreen;
   background-color: transparent;
@@ -912,68 +888,43 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
 </style>
 
-#home-button {
+.homepage-link-container {
   position: absolute;
   right: 5px;
   top: 5px;
-  background-color: #4CAF50; /* green background */
-  border: 2px solid #3e8e41; /* green border */
-  border-radius: 5px;
-  text-align: center;
-  padding: 10px 15px; /* increased padding to make button larger */
-  color: #0f0a53e0; /* white text color */
-  font-size: 20px !important;
-  font-weight: bold !important;
-  text-decoration: underline !important;
-  }
-  cursor: pointer; /* add pointer cursor on hover */
 }
 
-#home-button:hover {
-  background-color: #3e8e41; /* darker green on hover */
+.homepage-link {
+  background-color: #ffffff; /*  white  background */
+  color: #08630c; /* green text */
+  padding: 10px 20px;
+  border: 3px solid #000200; /* add a small border */
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px; /* increase text size */
 }
 
-#home-button {
-  font-size: 20px !important;
-  font-weight: bold !important;
-  text-decoration: underline !important;
-  color: #32CD32 !important; /* change the color to green */
+.homepage-link:hover {
+  background-color: #0967be; /* light blue on hover */
 }
 
-#home-button a {
+.homepage-link-container .homepage-link {
   font-size: 20px !important;
   font-weight: bold !important;
   text-decoration: underline !important;
   color: #32CD32 !important; /* change the color to green */
 }
 
-#home-button:hover, #home-button:active {
-    color: #FF3737 !important; /* change the color to highlight red on hover and active */
-  }
-  
-  #home-button a:hover, #home-button a:active {
-    color: #FF3737 !important; /* change the color to highlight red on hover and active */
-  }
+.homepage-link-container .homepage-link:hover, .homepage-link-container .homepage-link:active {
+  color: #FF3737 !important; /* change the color to highlight red on hover and active */
+}
 
-  a {
+ a {
     color: green;
-  }
-
-  .homepage-link {
-    background-color: #ffffff; /*  white  background */
-    color: #08630c; /* green text */
-    padding: 10px 20px;
-    border: 3px solid #000200; /* add a small border */
-    border-radius: 20px;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 18px; /* increase text size */
-  }
-  
-  .homepage-link:hover {
-    background-color: #0967be; /* light blue on hover */
   }
 
   .no-results-message {
@@ -984,7 +935,7 @@ a:active {
       background-color: #f9f9f9;
       border: 3px solid #d31212;
       position: absolute; /* Position absolutely */
-      top: 50%; /* Move down by 50% of the parent's height */
+      top: 60%; /* Move down by 50% of the parent's height */
       left: 50%; /* Move right by 50% of the parent's width */
       transform: translate(-50%, -50%); /* Move back up and left by 50% of its own width and height */
       width: 50%; /* Set a width to make it visible */
@@ -1057,64 +1008,146 @@ a:active {
    display: none;
  }
 
-.star {
-  color: #ee1818; /* red color */
-  font-size: 18px; /* larger font size */
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px;
+  margin-top: 40px; /* add this */
 }
 
- #genre-select {
-    width: 180px;
-    height: 50px;
-    font-size: 12px;
-    padding: 10px;
-    border: 3px solid #2eaf22;
-    border-radius: 5px;
-    background-color: #000000;
-    color: #2eaf22;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-
- #genre-select-container {
-  position: absolute;
-  top: 20%;
-  right: 60px; /* adjust this value to move the dropdown list to the left */ 
-  margin-top: 10px;
-} 
-
-.genre-label {
-  font-size: 16px;
-  font-weight: bold;
-  color: #2cc418;
-  cursor: pointer;
-  padding: 5px;
+.dropdown-container > div {
+  margin-bottom: 20px;
 }
 
-#date-select {
-  width: 180px;
-  height: 50px;
-  font-size: 12px;
+#genre-select-container,
+#date-select-container,
+#age-rating-select-container {
+  position: relative; /* change to relative */
+  margin-top: 0; /* remove margin-top */
+  font-size: 16px; /* added */
+  font-weight: bold; /* added */
+  color: #2cc418; /* added */
   padding: 10px;
-  border: 3px solid #2eaf22;
-  border-radius: 5px;
-  background-color: #000000;
-  color: #2eaf22;
-  margin-bottom: 10px;
+  border: 3px solid #2eaf22; /* added */
+  border-radius: 5px; /* added */
+  background-color: #000000; /* added */
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(196, 8, 8, 0.623); /* add box-shadow */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* add transition */
 }
 
-#date-select-container {
+#genre-select:focus,
+#date-select:focus,
+#age-rating-select:focus {
+  /* add these styles to the focused dropdown list */
+  box-shadow: 0 2px 4px rgba(6, 192, 161, 0.534); /* increase box-shadow on focus */
+  transform: translateY(-2px); /* add a slight translation on focus */
+}
+
+#genre-select option,
+#date-select option,
+#age-rating-select option {
+  /* add these styles to the option elements */
+  padding: 10px;
+  background-color: #000000; /* added */
+  color: #2cc418; /* added */
+  border-bottom: 3px solid #770d0d;
+  font-size: 14px; /* added */
+}
+
+#genre-select option:hover,
+#date-select option:hover,
+#age-rating-select option:hover {
+  /* add these styles to the option elements on hover */
+  background-color: #ffffff;
+  color: #be1515;
+}
+   
+
+/* Styles for the new YouTube player wrapper */
+.youtube-player-wrapper {
+  /* Initially hide the player wrapper */
+  display: none;
+
+  /* Apply styles that were on the old .movie-container */
+  position: absolute; /* Use absolute to overlay the original content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #2f720f; /* Keep the border style */
+  padding: 10px; /* Keep the padding style */
+  /* Ensure it's above the original content when displayed. */
+  /* Adjust z-index based on other elements in div#movie_N and its siblings */
+  z-index: 5;
+  background-color: white; /* Add a background color to hide content underneath */
+}
+
+/* Styles for the iframe inside the new player wrapper */
+.youtube-player-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Keep the border: none */
+}
+
+/* Styles for the close button inside the new player wrapper */
+.youtube-player-wrapper .close-button {
   position: absolute;
-  top: 50%;
-  right: 60px; /* adjust this value to move the dropdown list to the left */ 
-  margin-top: 10px;
-}
-
-.date-label {
-  font-size: 16px;
-  font-weight: bold;
-  color: #2cc418;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px;
   cursor: pointer;
-  padding: 5px;
+  z-index: 10; /* Ensure it's above the iframe and wrapper */
 }
 
+/* Hover effect for the close button */
+.youtube-player-wrapper .close-button:hover {
+  background-color: #ccc;
+}
+
+.youtube-player-wrapper {
+          padding: 0px;
+          /* Keep your original width and height if they are needed */
+          /* width: 400px; */
+          /* height: 282px; */
+          /* Consider box-sizing here too */
+          /* box-sizing: border-box; */
+          aspect-ratio: 16 / 9;
+        }
+
+        iframe#widget2 {
+          display: block;
+          width: 100%;
+          height: 100%;
+          /* You might want to add box-sizing as well, depending on your needs */
+          /* box-sizing: border-box; */
+        }
+
+        #date-select-container {
+        width: 210px; /* Or whatever width you need */
+         }
+
+        #date-select {
+        width: 90px; /* Or any value less than or equal to the parent's width (200px) considering padding/border */
+        }
+
+        select {
+        font-size: 16px; /* Choose your desired font size */
+        }
+
+       .star {
+        color: #ee1818; /* red color */
+        font-size: 18px; /* larger font size */
+       }
+
+    .homepage-link-container {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    /* add other styles to match the current layout */
+}

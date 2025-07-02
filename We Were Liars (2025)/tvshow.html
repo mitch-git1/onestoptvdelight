@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - We Were Liars
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">We Were Liars</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/We%20Were%20Liars%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/We%20Were%20Liars%20-%20S01E01%20-%20Tell%20Me%20Sweet%20Little%20Lies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Tell Me Sweet Little Lies
+          </div>
+          <div class="plot">Every summer, Cadence Sinclair cherishes her time with her cousins Mirren and Johnny and her best friend Gat on Beechwood Island. At sixteen, what begins as their usual summer of mischief transforms when Cadence and Gat fall in love, while adult tensions rise in her family. She doesn't know this fairy tale will end with her alone on the beach, injured and with no memory of how she got there.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/We%20Were%20Liars%20-%20S01E02%20-%20Wrap%20Her%20Up%20in%20a%20Package%20of%20Lies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Wrap Her Up in a Package of Lies
+          </div>
+          <div class="plot">Following her mysterious accident, Cadence has suffered a year of illness, amnesia, and loneliness, having had no contact with The Liars. Returning to Beechwood for answers, she finds even her closest friends won't discuss the summer she can't remember. But the island begins triggering memories of Summer 16, starting with a Father's Day celebration marred by rivalry, betrayal, and heartbreak.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/We%20Were%20Liars%20-%20S01E03%20-%20The%20Ties%20Were%20Black%2C%20the%20Lies%20Were%20White-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Ties Were Black, the Lies Were White
+          </div>
+          <div class="plot">Having remembered a family tragedy, Cadence presses The Liars for answers. Mirren reveals a crush gone awry, Johnny recalls an unwanted visitor, and Gat recounts their relationship's painful turn. Tension between the aunts continues to rise, and Cadence suspects at least one Liar is hiding something, questioning whether what happened last summer was an accident at all.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/We%20Were%20Liars%20-%20S01E04%20-%20The%20Fourth%20of%20You%20Lie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Fourth of You Lie
+          </div>
+          <div class="plot">As the Sinclairs prepare for a quiet Fourth of July, Cadence investigates one of The Liars, uncovering memories of last year's crowded celebration. While the Sinclair sisters vied for their father's approval, The Liars navigated their romantic lives and Ed surprised Carrie. In present day, Cadence discovers a shocking truth about one Liar, leading to a confrontation as explosive as the fireworks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/We%20Were%20Liars%20-%20S01E05%20-%20Lying%20Together%20in%20a%20Silver%20Lining-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Lying Together in a Silver Lining
+          </div>
+          <div class="plot">Unsettled by a series of painful memories, Cadence tries to enjoy what's left of her summer &ndash; even if it means distracting herself with a potentially dangerous stunt. Despite her best efforts, she remembers a stormy day from Summer 16 when rising seas and frustrations threatened every Sinclair, exposing the family's darker side and forcing Gat and Cadence to confront their unspoken feelings.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/We%20Were%20Liars%20-%20S01E06%20-%20When%20Lies%20Gives%20You%20Lemons-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - When Lies Gives You Lemons
+          </div>
+          <div class="plot">Unable to continue keeping secrets from her, Gat finally opens up to Cadence about his perspective on the island &ndash; one that doesn't always reflect the fairy-tale nostalgia of her own experience. While they head into town in search of answers, Gat recounts his memories of an honored Sinclair tradition &ndash; Tipper's Lemon Hunt &ndash; and the unplanned visit from his mother that made him question everything.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/We%20Were%20Liars%20-%20S01E07%20-%20Everybody%20Knows%20That%20the%20Captain%20Lied-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Everybody Knows That the Captain Lied
+          </div>
+          <div class="plot">More uncertain than ever, Cadence reluctantly joins Harris on an excursion, triggering memories of their final confrontation in Summer 16. During a tense family dinner, The Liars confront their mothers about family secrets. In the aftermath of shocking revelations, The Liars mourn their once-beloved childhood playground and unite in an attempt to save their fracturing family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/We%20Were%20Liars%20-%20S01E08%20-%20My%20Friends%20Are%20Lying%20in%20the%20Sun-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - My Friends Are Lying in the Sun
+          </div>
+          <div class="plot">Cadence devises a plan to trigger her latent memories of the final hours before her traumatic accident, but she can't do it alone &ndash; she must convince the reluctant Johnny, Mirren, and Gat to help her, even if it means risking everything. But as the truth begins to come back to her in fits and starts, Cadence realizes that she, herself, has been the biggest Liar of all.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

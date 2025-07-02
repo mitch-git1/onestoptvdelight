@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Better Sister
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Better Sister</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Better%20Sister%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Better%20Sister%20-%20S01E01%20-%20She%27s%20My%20Sister-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - She's My Sister
+          </div>
+          <div class="plot">Chloe Taylor has the biggest night of her career, and not a day later her husband winds up dead. Now cops are asking a lot of questions she doesn't want to answer, and even worse, they called her sister.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Better%20Sister%20-%20S01E02%20-%20Lotta%20Sky-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Lotta Sky
+          </div>
+          <div class="plot">Chloe and her sister Nicky are back together but things are bumpy, and not just because Detective Guidry seems too interested in Ethan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Better%20Sister%20-%20S01E03%20-%20Incoming%20Widow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Incoming Widow
+          </div>
+          <div class="plot">A day in court doesn't go as planned, and Chloe goes somewhere surprising for emotional support.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Better%20Sister%20-%20S01E04%20-%20Gazpacho-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Gazpacho
+          </div>
+          <div class="plot">Catherine throws a memorial for Adam that no one wants to go to. Chloe and Nicky have very different memories of just about everything.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Better%20Sister%20-%20S01E05%20-%20Just%20Ask-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Just Ask
+          </div>
+          <div class="plot">Nicky tries to shake off a bad night. Chloe tries to figure out what Adam was up to when he died. And the trial is starting.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Better%20Sister%20-%20S01E06%20-%20Steadying%20Hand-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Steadying Hand
+          </div>
+          <div class="plot">The sisters take the stand, but what truth will they tell? Guidry's temper flares.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Better%20Sister%20-%20S01E07%20-%20Back%20from%20Red-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Back from Red
+          </div>
+          <div class="plot">Adam's darkest secret finally comes out, and it changes everything for Chloe and Nicky. Guidry and Bowen go back to basics.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Better%20Sister%20-%20S01E08%20-%20They%27re%20in%20Their%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - They're in Their World
+          </div>
+          <div class="plot">Chloe enacts a plan, Guidry takes a trip, Nicky explains a few key details, and the sisters try to figure out if being in each other's lives is even possible.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

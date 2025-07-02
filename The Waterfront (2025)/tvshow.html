@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Waterfront
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Waterfront</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Waterfront%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Waterfront%20-%20S01E01%20-%20Almost%20Okay-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Almost Okay
+          </div>
+          <div class="plot">When a suspicious shipwreck draws the eyes of the law, the fractured Buckley family must put aside their grievances to cover their tracks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Waterfront%20-%20S01E02%20-%20Taking%20Control-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Taking Control
+          </div>
+          <div class="plot">Cane and Harlan take bigger risks to keep the business running. Bree seeks proof to confirm her suspicions about her family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Waterfront%20-%20S01E03%20-%20Playing%20with%20Fire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Playing with Fire
+          </div>
+          <div class="plot">As Harlan re-enters a risky alliance tied to the family's past, Belle makes quiet moves to protect what's left of their legacy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Waterfront%20-%20S01E04%20-%20You%20Can%27t%20Trust%20a%20Buckley-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - You Can't Trust a Buckley
+          </div>
+          <div class="plot">Cane works to contain the growing fallout at home. Harlan connects with a new player &mdash; and learns the rules of the game have changed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Waterfront%20-%20S01E05%20-%20I%27m%20a%20Hugger-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - I'm a Hugger
+          </div>
+          <div class="plot">As pressure mounts and operations get riskier, Belle and Harlan struggle to keep a low profile. Old wounds resurface between Cane and Bree.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Waterfront%20-%20S01E06%20-%20Hunting%20Season-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Hunting Season
+          </div>
+          <div class="plot">Belle receives upsetting news about the family's future. A hunting trip troubles the fragile alliance between Harlan and Grady. Bree makes a confession.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Waterfront%20-%20S01E07%20-%20Nice%20Try-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Nice Try
+          </div>
+          <div class="plot">Hoping to regain control of his operation, Harlan tries to outmaneuver an imminent threat. A violent warning shakes the Buckley family to its core.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Waterfront%20-%20S01E08%20-%20Lost%20at%20Sea-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Lost at Sea
+          </div>
+          <div class="plot">As tensions flare, a dangerous standoff at sea brings the Buckleys face-to-face with their enemies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
