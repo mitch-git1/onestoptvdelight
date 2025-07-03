@@ -39,8 +39,8 @@
 
      div[id^="plot_"].plotIcon {
         position: relative;
-        top: 20px;
-        left: -370px;
+        top: 25px;
+        left: -330px;
     }
 
     button#menu-button {
@@ -135,9 +135,9 @@
     min-width: 400px;
     max-width: 400px;
     /* max-height: 254px; */
-    height: 370px;
-    max-height: 370px;
-    min-height: 370px;
+    height: 390px;
+    max-height: 390px;
+    min-height: 390px;
     margin-right: 20px;
     margin-bottom: 20px;
     /* border-radius: 5px; */
@@ -148,8 +148,8 @@
     position: absolute;
     width: 210px;
     bottom: 2px;
-    height: 350px;
-    right: 215px;
+    height: 370px;
+    right: 180px;
     border-left: 2px solid #7A7A7A;
 }
 
@@ -166,7 +166,7 @@
        opacity: 0.7;
        width: 50px;
        height: 25px;
-       right: 220px;
+       right: 190px;
        bottom: 15px;
        float: right;
 }
@@ -233,8 +233,8 @@
 
      div[id^="plot_"].plotIcon {
         position: relative;
-        top: 20px;
-        left: -370px;
+        top: 25px;
+        left: -330px;
     }
 
     button#menu-button {
@@ -329,9 +329,9 @@
     min-width: 400px;
     max-width: 400px;
     /* max-height: 254px; */
-    height: 370px;
-    max-height: 370px;
-    min-height: 370px;
+    height: 390px;
+    max-height: 390px;
+    min-height: 390px;
     margin-right: 20px;
     margin-bottom: 20px;
     /* border-radius: 5px; */
@@ -342,8 +342,8 @@
     position: absolute;
     width: 210px;
     bottom: 2px;
-    height: 350px;
-    right: 215px;
+    height: 370px;
+    right: 180px;
     border-left: 2px solid #7A7A7A;
 }
 
@@ -360,7 +360,7 @@
        opacity: 0.7;
        width: 50px;
        height: 25px;
-       right: 220px;
+       right: 190px;
        bottom: 15px;
        float: right;
 }

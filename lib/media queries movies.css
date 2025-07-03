@@ -39,8 +39,8 @@
 
      div[id^="plot_"].plotIcon {
         position: relative;
-        top: 20px;
-        left: -360px;
+        top: 25px;
+        left: -340px;
     }
 
     button#menu-button {
@@ -135,9 +135,9 @@
     min-width: 400px;
     max-width: 400px;
     /* max-height: 254px; */
-    height: 370px;
-    max-height: 370px;
-    min-height: 370px;
+    height: 390px;
+    max-height: 390px;
+    min-height: 390px;
     margin-right: 20px;
     margin-bottom: 20px;
     /* border-radius: 5px; */
@@ -145,12 +145,12 @@
 }
 
   .aniContainer .posterImage {
-    position: absolute;
-    width: 210px;
-    bottom: 2px;
-    height: 350px;
-    right: 215px;
-    border-left: 2px solid #7A7A7A;
+        position: absolute;
+        width: 210px;
+        bottom: 2px;
+        height: 370px;
+        right: 190px;
+        border-left: 2px solid #7A7A7A;
 }
 
   .fancybox, .fancybox img {
@@ -232,8 +232,8 @@
 
      div[id^="plot_"].plotIcon {
         position: relative;
-        top: 20px;
-        left: -360px;
+        top: 25px;
+        left: -340px;
     }
 
     button#menu-button {
@@ -328,9 +328,9 @@
     min-width: 400px;
     max-width: 400px;
     /* max-height: 254px; */
-    height: 370px;
-    max-height: 370px;
-    min-height: 370px;
+    height: 390px;
+    max-height: 390px;
+    min-height: 390px;
     margin-right: 20px;
     margin-bottom: 20px;
     /* border-radius: 5px; */
@@ -338,12 +338,12 @@
 }
 
   .aniContainer .posterImage {
-    position: absolute;
-    width: 178px;
-    bottom: 30px;
-    height: auto;
-    right: 250px;
-    border-left: 2px solid #7A7A7A;
+        position: absolute;
+        width: 210px;
+        bottom: 2px;
+        height: 370px;
+        right: 190px;
+        border-left: 2px solid #7A7A7A;
 }
 
   .fancybox, .fancybox img {
