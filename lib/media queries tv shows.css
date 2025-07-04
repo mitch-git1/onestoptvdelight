@@ -47,6 +47,7 @@
         position: absolute;
         left: 25px;
         top: 10px;
+        z-index: 100;
     }
 
     .infoContainerTextContainer {
@@ -239,8 +240,9 @@
 
     button#menu-button {
         position: absolute;
-        left: 15px;
-        top: 8px;
+        left: 25px;
+        top: 10px;
+        z-index: 100;
     }
 
      .infoContainerTextContainer {
