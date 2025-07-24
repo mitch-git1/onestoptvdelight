@@ -197,6 +197,37 @@
     max-width: 150px; /* Or the desired max-width for two lines */
   }
 
+body.sidebar-open #largeContainer {
+  /* Adjust margin-left to make space for the sidebar */
+  margin-left: 250px; /* Assumes sidebar width is 250px */
+  /* Adjust width to fill the remaining space */
+  width: calc(100% - 250px);
+  /* Add a transition for a smooth effect */
+  transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+/* Optional: Add a transition for the default state when sidebar closes */
+#largeContainer {
+   transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+
+body.sidebar-open .infoContainer {
+  /* Adjust width to fit within the new #largeContainer width */
+  width: 100%; /* This will make it take the full width of the adjusted #largeContainer */
+  /* Add a transition if needed */
+  transition: width 0.3s ease;
+}
+
+/* Optional: Add a transition for the default state */
+.infoContainer {
+   transition: width 0.3s ease;
+}
+
+.infoBackTitleContainer.sidebar-nav-open {
+display: none;
+}
+
 }
 
 
@@ -390,5 +421,36 @@
     display: inline-block; /* Assuming you want inline-block within the flex container */
     max-width: 150px; /* Or the desired max-width for two lines */
   }
+
+body.sidebar-open #largeContainer {
+  /* Adjust margin-left to make space for the sidebar */
+  margin-left: 250px; /* Assumes sidebar width is 250px */
+  /* Adjust width to fill the remaining space */
+  width: calc(100% - 250px);
+  /* Add a transition for a smooth effect */
+  transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+/* Optional: Add a transition for the default state when sidebar closes */
+#largeContainer {
+   transition: margin-left 0.3s ease, width 0.3s ease;
+}
+
+
+body.sidebar-open .infoContainer {
+  /* Adjust width to fit within the new #largeContainer width */
+  width: 100%; /* This will make it take the full width of the adjusted #largeContainer */
+  /* Add a transition if needed */
+  transition: width 0.3s ease;
+}
+
+/* Optional: Add a transition for the default state */
+.infoContainer {
+   transition: width 0.3s ease;
+}
+
+.infoBackTitleContainer.sidebar-nav-open {
+display: none;
+}
 
 }
