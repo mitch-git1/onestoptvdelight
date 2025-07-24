@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Lucifer
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Lucifer</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Lucifer%20%282016%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">Upon leaving hell, Lucifer Morningstar retreats to Los Angeles for a more exciting life. When the murder of a friend connects him with LAPD detective Chloe Decker, Lucifer becomes intrigued with the idea of punishing criminals, sending the devil himself into a struggle between good and evil.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S01E02%20-%20Lucifer%2C%20Stay.%20Good%20Devil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Lucifer, Stay. Good Devil.
+          </div>
+          <div class="plot">When a movie star's son is killed after being chased by the paparazzi, Chloe takes a deep look into the case with a little help from Lucifer. Meanwhile, Maze and Amenadiel continue to encourage Lucifer to go back to hell.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S01E03%20-%20The%20Would-Be%20Prince%20of%20Darkness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Would-Be Prince of Darkness
+          </div>
+          <div class="plot">When a 22-year-old future superstar quarterback wakes up to find a dead girl floating in his swimming pool, he turns to his friend, Lucifer, for help. Lucifer enlists Chloe to investigate the case, which leads to the world of big money sports and people who will literally kill to be number one.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S01E04%20-%20Manly%20Whatnots-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Manly Whatnots
+          </div>
+          <div class="plot">In an effort to get over his infatuation with Chloe, Lucifer decides that he must seduce her. Meanwhile the two team up on a missing girl case and Amenadiel confronts Maze about his concerns about Lucifer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S01E05%20-%20Sweet%20Kicks-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Sweet Kicks
+          </div>
+          <div class="plot">After a shooting occurs at a fashion show and a young woman is killed, Lucifer becomes intrigued by the danger of the situation and begs Chloe to get in on the case. Meanwhile, when Maze admits to Amenadiel that she wants to go back to hell, he sets his sights on Dr. Linda.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S01E06%20-%20Favorite%20Son-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Favorite Son
+          </div>
+          <div class="plot">Lucifer bails on Chloe when he becomes bored with her investigation into a ruthless biker gang murder. However, when he discovers something was stolen during the crime that was very personal to him, he demands that Chloe let him rejoin the case.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S01E07%20-%20Wingman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Wingman
+          </div>
+          <div class="plot">In attempt to find the contents of his stolen container, Lucifer enlists the help of an unlikely ally. Meanwhile, Chloe digs deeper into the Palmetto case, uncovering a lead that might finally expose the truth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S01E08%20-%20Et%20Tu%2C%20Doctor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Et Tu, Doctor?
+          </div>
+          <div class="plot">When a therapist is murdered, Lucifer and Chloe enlist the help of Dr. Linda to look into possible suspects. Meanwhile, Malcolm confronts Chloe about the night he was shot, and Lucifer experiences his first bout of jealousy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S01E09%20-%20A%20Priest%20Walks%20Into%20A%20Bar-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - A Priest Walks Into A Bar
+          </div>
+          <div class="plot">A priest seeks out Lucifer's help when he suspects an underground drug operation has set up shop at a neighborhood youth center. Meanwhile, Malcolm manipulates a way to keep an eye on Dan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S01E10%20-%20Pops-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Pops
+          </div>
+          <div class="plot">Lucifer and Chloe are tasked with solving the murder of a prominent restaurateur. When they meet his son, they suspect he played a part in the death. Meanwhile, Chloe's mom returns home, sending Chloe's life into upheaval, as Lucifer learns his own dysfunctional family isn't nearly as unique as he thought.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S01E11%20-%20St.%20Lucifer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - St. Lucifer
+          </div>
+          <div class="plot">When philanthropist Tim Dunlear is found dead, Lucifer explores his good side by becoming a benefactor for Tim&rsquo;s glitzy Los Angeles charity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S01E12%20-%20%23TeamLucifer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - #TeamLucifer
+          </div>
+          <div class="plot">When a woman is found dead on the Hollywood Walk of Fame - with her body  twisted into the shape of a pentagram - the investigation leads Lucifer  and team into the world of Satanists, where they soon realize, evil  doesn't always live where we expect it to.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S01E13%20-%20Take%20Me%20Back%20To%20Hell-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Take Me Back To Hell
+          </div>
+          <div class="plot">When Lucifer is framed for murder, he and Chloe must work together to clear his name and prove the identity of the true killer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E01%20-%20Everything%27s%20Coming%20Up%20Lucifer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Everything's Coming Up Lucifer
+          </div>
+          <div class="plot">Lucifer is distracted by his mother&rsquo;s escape from hell, as he and Chloe investigate the murder of a stand-in actress. Meanwhile, Chloe&rsquo;s faith in Lucifer is tested by the new medical examiner, Ella. Also, Amenadiel hopes to rein in Lucifer&rsquo;s wild side, as they both deal with the absence of Maze.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E02%20-%20Liar%2C%20Liar%2C%20Slutty%20Dress%20on%20Fire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Liar, Liar, Slutty Dress on Fire
+          </div>
+          <div class="plot">When Lucifer&rsquo;s mother, Charlotte, turns up at the scene of a grizzly murder pleading innocence, Lucifer is hesitant to believe her tale. Not wanting to leave her on her own, he instructs Maze to babysit her &ndash; and not to torture her, allowing him to investigate the case with Chloe.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E03%20-%20Sin-Eater-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Sin-Eater
+          </div>
+          <div class="plot">Lucifer and Chloe investigate a gruesome murder after a video of the crime surfaces on social media. When a second video appears, they realize they have a serial killer on their hands. Meanwhile, Lucifer&rsquo;s mom returns as Charlotte Richards. Also, Amenadiel, struggling with his loss of power, has an appointment with Linda.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E04%20-%20Lady%20Parts-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Lady Parts
+          </div>
+          <div class="plot">After the bodies of two young L.A. transplants are found poisoned, Chloe and Lucifer hunt for the killer. Upon Maze convincing Chloe to go out for drinks, which the detective perceives as an act of friendship, but is actually part of a bet between Maze and Lucifer, the two make a shocking decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E05%20-%20Weaponizer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Weaponizer
+          </div>
+          <div class="plot">Lucifer is excited to investigate the murder of his favorite action movie hero, Wesley Cabot. Longtime rival Rolf Van Zandt initially is a suspect, but the investigation soon shifts. Meanwhile, Uriel shows up and Amenadiel is forced to come clean about his lost powers. Also, Lucifer and Uriel fight about Chloe and their mother.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E06%20-%20Monster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Monster
+          </div>
+          <div class="plot">Guilty and self-destructive, Lucifer clashes with Chloe during an investigation, leading her to team up with Dan instead. Meanwhile, Amenadiel bonds with Charlotte, and Maze takes Trixie trick-or-treating.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E07%20-%20My%20Little%20Monkey-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - My Little Monkey
+          </div>
+          <div class="plot">When the prisoner convicted of killing Chloe's father is murdered, new evidence suggests he was actually framed. Meanwhile, Maze tries to find a job and Lucifer shadows Dan in order to learn how to be &quot;normal&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E08%20-%20Trip%20to%20Stabby%20Town-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Trip to Stabby Town
+          </div>
+          <div class="plot">Lucifer links Azrael's stolen blade to a string of violent stabbings and enlists Ella's help in locating the sword.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E09%20-%20Homewrecker-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Homewrecker
+          </div>
+          <div class="plot">Following the murder of the owner of the building in which Lux is located, Lucifer and Chloe search for the killer, while Lucifer also deals with the fact that the new owner wants to evict him and demolish the place. Lucifer goes to great lengths to protect his home, and is entirely shocked when Chloe is supportive of him. Meanwhile, Maze and Amenadiel follow Charlotte around, as she comes up with a plan to upset Lucifer enough to want to leave earth and go back to Heaven.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E10%20-%20Quid%20Pro%20Ho-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Quid Pro Ho
+          </div>
+          <div class="plot">Charlotte is determined to get Lucifer to leave Earth by turning Chloe against him. Meanwhile, Amenadiel has begun working as Charlotte's soldier, which makes Maze question his loyalty.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E11%20-%20Stewardess%20Interruptus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Stewardess Interruptus
+          </div>
+          <div class="plot">Lucifer and Chloe investigate the murder of two victims, who happen to be Lucifer&rsquo;s ex-flames.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E12%20-%20Love%20Handles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Love Handles
+          </div>
+          <div class="plot">Lucifer and Chloe investigate a mysterious masked killer who is poisoning college students.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E13%20-%20A%20Good%20Day%20to%20Die-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - A Good Day to Die
+          </div>
+          <div class="plot">Lucifer must find the antidote to the Professor's poison before it kills Chloe. He travels to hell to find the Professor's soul and get him to turn over the antidote. While he's there, he is forced to confront his guilt about Uriel's death. Mom heads to hell to get Lucifer back, but Lucifer still feels betrayed by his parents because of something he discovers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E14%20-%20Candy%20Morningstar-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - Candy Morningstar
+          </div>
+          <div class="plot">Lucifer returns to the city with a new bride in tow, oblivious to the distress his absence has caused. Determined to restore his working relationship with Chloe, he inserts himself into the investigation of the murder of an up-and-coming band's lead singer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E15%20-%20Deceptive%20Little%20Parasite-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Deceptive Little Parasite
+          </div>
+          <div class="plot">When it is discovered that the flaming sword is the only hope for the family returning home safely, the pressure is on for Lucifer to control what he has never been able to control before &ndash; his emotions &ndash; in order to ignite it. Meanwhile, Chloe wants to air some emotions of her own, but when a therapist and head of admissions at a prestigious private school turns up dead, the team must get to the bottom of it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E16%20-%20God%20Johnson-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - God Johnson
+          </div>
+          <div class="plot">When a grisly murder takes place at an insane asylum, the prime suspect calls himself God. After realizing that this man could actually be his father, Lucifer struggles with his feelings towards him and tries to find the truth, all while trying to discover who the real killer is.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E17%20-%20Sympathy%20for%20the%20Goddess-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Sympathy for the Goddess
+          </div>
+          <div class="plot">When the man who had the final piece of the Flaming Sword is murdered and the piece goes missing, Mom joins Chloe and Lucifer on the case to track down the killer. But when Lucifer gets sidelined, Maze recruits him to help save Dr. Linda's endangered career and confronts him about the secrets he's been keeping.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S02E18%20-%20The%20Good%2C%20the%20Bad%20and%20the%20Crispy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - The Good, the Bad and the Crispy
+          </div>
+          <div class="plot">After Charlotte accidentally charbroils a man to death in self-defense, Lucifer must try and keep Chloe from figuring out the truth. Lucifer puts Maze in charge of finding Charlotte and Amenadiel, who have both gone missing in light of recent circumstances, while he finds a permanent solution for the ticking-time-bomb he calls Mom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E01%20-%20They%27re%20Back%2C%20Aren%27t%20They-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - They're Back, Aren't They?
+          </div>
+          <div class="plot">Lucifer enlists Chloe's help to determine why he woke up in the desert with his wings on his back again, which could be related to an active crime scene.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E02%20-%20The%20One%20with%20the%20Baby%20Carrot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - The One with the Baby Carrot
+          </div>
+          <div class="plot">After Lucifer removes his wings yet again, Linda becomes concerned that he is too focused on tracking down the Sinnerman and neglecting his own well-being. Tensions continue to rise between Lucifer and Chloe, but they realize they must put their differences aside to solve a case in which Lucifer takes a sudden interest. Once Detective Pierce's past is revealed though, everyone realizes that the Sinnerman is much more dangerous than they thought.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E03%20-%20Mr.%20and%20Mrs.%20Mazikeen%20Smith-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Mr. and Mrs. Mazikeen Smith
+          </div>
+          <div class="plot">After talking to Lucifer and Linda, Maze realizes that she is looking for more out of life and decides to head to Canada for a tricky case. Chloe however, becomes concerned when she feels that Maze is being deceived by a scheming conman. Upon further investigation, Lucifer and Chloe make a stunning realization when they find that their target may be much closer than they thought.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E04%20-%20What%20Would%20Lucifer%20Do-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - What Would Lucifer Do?
+          </div>
+          <div class="plot">When a youth counselor is found murdered, Lucifer and Chloe venture into the world of high-end reform programs to find the killer. Meanwhile, Amenadiel adjusts his lifestyle in an attempt to help Lucifer, and Chloe questions Lt. Pierce's feelings towards her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E05%20-%20Welcome%20Back%2C%20Charlotte%20Richards-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Welcome Back, Charlotte Richards
+          </div>
+          <div class="plot">When a food chemist is found dead, Lucifer and Chloe's investigation pits them against an unexpected face - criminal defense attorney Charlotte Richards. Everyone is caught off guard when they see her back in the precinct. As Lucifer tries to understand her return, he makes a shocking discovery that helps solve the case.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E06%20-%20Vegas%20with%20Some%20Radish-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Vegas with Some Radish
+          </div>
+          <div class="plot">When Lucifer discovers Candy has gone missing, he hightails it to Las Vegas with Ella in tow. They work to find her, but interesting secrets could compromise the investigation. Meanwhile, Chloe is upset that Lucifer left on her birthday.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E07%20-%20Off%20the%20Record-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Off the Record
+          </div>
+          <div class="plot">A reporter seeks revenge when he discovers Lucifer has been sleeping with his estranged wife; a serial killer from Lucifer's past resurfaces.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E08%20-%20Chloe%20Does%20Lucifer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Chloe Does Lucifer
+          </div>
+          <div class="plot">When a murder is connected to a celebrity dating app, Lucifer and Chloe question all they know about the world of social media in order to solve the case. Meanwhile, Ella tries to avoid Charlotte, and Amenadiel helps Linda deal with the death of her ex-husband.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E09%20-%20The%20Sinnerman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - The Sinnerman
+          </div>
+          <div class="plot">Lucifer is worried when he realizes that recipients of his favors start to turn up dead. After he and Chloe investigate, they are finally brought face-to-face with the Sinnerman. Meanwhile, Detective Pierce returns to work after taking a bullet, Charlotte finds a new career and Amenadiel has a new love interest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E10%20-%20The%20Sin%20Bin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - The Sin Bin
+          </div>
+          <div class="plot">With the Sinnerman in custody, Lucifer is prepared to go to any length to get his devil face back. Meanwhile, Trixie is introduced to Charlotte and questions the relationship she has with her father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E11%20-%20City%20of%20Angels-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - City of Angels?
+          </div>
+          <div class="plot">In a flashback episode that takes place when Lucifer first came to LA, Amenadiel comes to retrieve his fallen brother, but is shocked when he is mugged. Amenadiel enlists Lucifer's help to track down the mugger and Lucifer, in turn, offers his assistance - but only in exchange for a favor. Meanwhile, Chloe and Dan - who are still married - investigate the murder of an MMA fighter, Aidan Scott, at the hands of the same killer who mugged Amenadiel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E12%20-%20All%20About%20Her-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - All About Her
+          </div>
+          <div class="plot">After Lt. Pierce's true identity is revealed, Lucifer tries to figure out his motives. In order to earn Chloe's assistance in his investigation of Pierce, Lucifer goes above and beyond to help her solve the murder of a professional surfer. Meanwhile, Amenadiel deals with a personal health issue.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E13%20-%20Til%20Death%20Do%20Us%20Part-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Til Death Do Us Part
+          </div>
+          <div class="plot">When an ecstasy cook-turned-chemistry-teacher is found murdered in a cozy Los Angeles suburb, Lucifer and Pierce must go undercover to help track down the killer. Meanwhile, Maze has a newfound attraction for someone that she used to despise and Charlotte has a revelation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E14%20-%20My%20Brother%27s%20Keeper-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - My Brother's Keeper
+          </div>
+          <div class="plot">When Chloe and Lucifer's investigation into the murder of a diamond thief points to one of Ella's brothers as the main suspect, Ella is driven to prove her brother's innocence and recruits an unlikely ally. Meanwhile, Linda is upset when Charlotte comes to her for help and Detective Pierce hashes out his issues with Amenadiel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E15%20-%20High%20School%20Poppycock-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - High School Poppycock
+          </div>
+          <div class="plot">When a best-selling novelist is murdered, Lucifer and Chloe discover that her books are based on real people from her past, and must infiltrate her high school reunion in order to catch her killer. Meanwhile, Amenadiel and Linda struggle with making their relationship public.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E16%20-%20Infernal%20Guinea%20Pig-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - Infernal Guinea Pig
+          </div>
+          <div class="plot">When a murder investigation reveals the dark side of Hollywood, Chloe puts her life on the line to protect an innocent victim. Then, Lucifer comes up with a hell-raising scheme to help Cain, but when Amenadiel and Maze get involved, things don't quite go as planned.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E17%20-%20Let%20Pinhead%20Sing%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - Let Pinhead Sing!
+          </div>
+          <div class="plot">When a superstar singer's life is threatened, the team is thrust into the world of big-ticket stadium shows, crazed fans and divas, giving Lucifer a run for his money. Meanwhile, Charlotte tries to help Linda and Maze repair their friendship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E18%20-%20The%20Last%20Heartbreak-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x18 - The Last Heartbreak
+          </div>
+          <div class="plot">As Chloe and Lucifer go on the hunt for a serial killer targeting couples in love, Pierce realizes the case is connected to a murder he previously solved...in 1958. Then, Lucifer becomes upset when Pierce has a change of heart about an important decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E19%20-%20Orange%20Is%20the%20New%20Maze-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x19 - Orange Is the New Maze
+          </div>
+          <div class="plot">When Maze is the prime suspect in a murder, Lucifer and Chloe enter the world of bounty hunting to investigate. Maze decides she wants to go back to Hell, but after Lucifer refuses, she turns to Pierce for help. Meanwhile, Charlotte's sanity is questioned when she makes a big discovery and Chloe admits she's dating someone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E20%20-%20The%20Angel%20of%20San%20Bernardino-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x20 - The Angel of San Bernardino
+          </div>
+          <div class="plot">Lucifer and Chloe investigate a murder during which a witness claims a winged guardian angel saved her life, causing Lucifer to become paranoid about his own actions. Meanwhile, Pierce and Chloe's relationship takes an interesting turn and Lucifer discovers something that could change everything.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E21%20-%20Anything%20Pierce%20Can%20Do%20I%20Can%20Do%20Better-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x21 - Anything Pierce Can Do I Can Do Better
+          </div>
+          <div class="plot">When a prima ballerina is brutally murdered, Lucifer helps Chloe solve the case and attempts to keep her focus away from Pierce. Amenadiel begs Charlotte to help him with an important plan, and Maze remains devoted to a task from which Pierce asked her to back away. Then, Chloe confronts Lucifer about his meddling in her life, but as he's about to make a huge confession, he finds out something that changes everything.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E22%20-%20All%20Hands%20on%20Decker-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x22 - All Hands on Decker
+          </div>
+          <div class="plot">When Chloe takes some time off, Lucifer is forced to work with Dan on a murder case involving a dog show. Meanwhile, Charlotte and Maze have differing ideas for Chloe's party and after a wild night, Chloe rethinks a life-changing decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E23%20-%20Quintessential%20Deckerstar-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x23 - Quintessential Deckerstar
+          </div>
+          <div class="plot">When Lucifer and Chloe investigate the death of a woman, they discover that they may be pursuing the wrong suspect. Then, Charlotte risks her safety when she decides to take matters into her own hands.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E24%20-%20A%20Devil%20of%20My%20Word-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x24 - A Devil of My Word
+          </div>
+          <div class="plot">Shocked by someone's death, Chloe, Lucifer and the rest of the team work together to investigate and take down the killer. Then, Lucifer has an epiphany, Maze decides to mend a broken friendship and Chloe finally sees the truth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E25%20-%20Boo%20Normal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x25 - Boo Normal
+          </div>
+          <div class="plot">Lucifer and the team investigate the murder of a child psychiatrist, while Ella thinks about a big childhood secret that she&rsquo;s been hiding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S03E26%20-%20Once%20Upon%20a%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x26 - Once Upon a Time
+          </div>
+          <div class="plot">Lucifer's dad creates an alternate dimension in which Lucifer now lives in a world where he not only has never met Chloe, but is granted the freedom of choice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S04E01%20-%20Everything%27s%20Okay-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Everything's Okay
+          </div>
+          <div class="plot">While investigating a beekeeper's murder with Lucifer, Chloe insists that she's completely fine with his devilish revelation, thank you very much.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S04E02%20-%20Somebody%27s%20Been%20Reading%20Dante%27s%20Inferno-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Somebody's Been Reading Dante's Inferno
+          </div>
+          <div class="plot">Chloe and Lucifer look into a murder on the set of a reality show. Father Kinley presses forward with a plan. Amenadiel reconsiders his idea of home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S04E03%20-%20O%2C%20Ye%20of%20Little%20Faith%2C%20Father-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - O, Ye of Little Faith, Father
+          </div>
+          <div class="plot">An ex-gang member's murder may mask an even darker crime. Lucifer catches Chloe in a lie. Dan and Maze go rogue. Linda braces for looming motherhood.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S04E04%20-%20All%20About%20Eve-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - All About Eve
+          </div>
+          <div class="plot">When a jewelry designer is murdered, Lucifer and Chloe strive to solve the case without each other's help. Also, Lucifer reconnects with an old flame.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S04E05%20-%20Expire%20Erect-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Expire Erect
+          </div>
+          <div class="plot">After a collector of classic cars is killed, Lucifer and Chloe search for the culprit -- as well as some closure to their relationship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S04E06%20-%20Orgy%20Pants%20to%20Work-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Orgy Pants to Work
+          </div>
+          <div class="plot">While Lucifer and Chloe search for a connection between a murdered auditor and a nudist colony, Amenadiel plays host to an unexpected visitor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S04E07%20-%20Devil%20Is%20as%20Devil%20Does-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Devil Is as Devil Does
+          </div>
+          <div class="plot">Eve takes a more active role in her main man's professional life. Meanwhile, Lucifer gets back to basics and Amenadiel fights for his family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S04E08%20-%20Super%20Bad%20Boyfriend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Super Bad Boyfriend
+          </div>
+          <div class="plot">Lucifer and Chloe investigate a teacher's murder. Meanwhile, Lucifer goes to extremes to convince Eve to dump him, and Amenadiel mentors a teen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S04E09%20-%20Save%20Lucifer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Save Lucifer
+          </div>
+          <div class="plot">Lucifer's so-called epiphany has Chloe worried, but it's his physical transformation that's really freaking her out. Also, Maze gives Eve a pep talk.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S04E10%20-%20Who%27s%20da%20New%20King%20of%20Hell-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Who's da New King of Hell?
+          </div>
+          <div class="plot">With murderous demons on the loose in Los Angeles, it's up to Lucifer to reign in the chaos and protect the people he most cares about.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E01%20-%20Really%20Sad%20Devil%20Guy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x1 - Really Sad Devil Guy
+          </div>
+          <div class="plot">Lucifer toys with a murder victim while Chloe and Maze investigate the death. Meanwhile, Amenadiel cleans up the club, and Linda mothers a genius.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E02%20-%20Lucifer%21%20Lucifer%21%20Lucifer%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x2 - Lucifer! Lucifer! Lucifer!
+          </div>
+          <div class="plot">After spending an eternity in hell, Lucifer returns to the land of the living - but there's something a little different about this handsome devil.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E03%20-%20%C2%A1Diablo%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x3 - &iexcl;Diablo!
+          </div>
+          <div class="plot">Lucifer - the real one this time - helps Chloe investigate a murder committed on the set of a TV show inspired by his own life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E04%20-%20It%20Never%20Ends%20Well%20for%20the%20Chicken-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x4 - It Never Ends Well for the Chicken
+          </div>
+          <div class="plot">The year is 1946. The world is black and white. And Lucifer is the star of his own noir detective story featuring familiar characters in new roles.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E05%20-%20Detective%20Amenadiel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - Detective Amenadiel
+          </div>
+          <div class="plot">Amenadiel helps Chloe investigate a nun's untimely demise. Meanwhile, Lucifer lends Dan a hand, and Linda reveals a painful part of her history.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E06%20-%20BlueBallz-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x6 - BlueBallz
+          </div>
+          <div class="plot">After a popular DJ is electrocuted on stage, Chloe searches for the killer while Lucifer tries to keep his jealousy over an ex-flame in check.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E07%20-%20Our%20Mojo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x7 - Our Mojo
+          </div>
+          <div class="plot">As a shocking side effect of his romance with Chloe throws Lucifer for a loop, the new couple pursues a murderer with a most unusual M.O.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E08%20-%20Spoiler%20Alert-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x8 - Spoiler Alert
+          </div>
+          <div class="plot">Chloe learns a serial killer may have embellished his crimes. Amenadiel worries about his son's health. Pete opens up to Ella.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E09%20-%20Family%20Dinner-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x9 - Family Dinner
+          </div>
+          <div class="plot">Chloe and Ella investigate a mini-golf murder. Lucifer, Michael, Amenadiel and Linda prepare for the holiest of family dinners.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E10%20-%20Bloody%20Celestial%20Karaoke%20Jam-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x10 - Bloody Celestial Karaoke Jam
+          </div>
+          <div class="plot">It's a musical? Yep, it's a musical. Lucifer, Chloe and the gang sing and dance to a slew of popular tunes while investigating a referee's murder.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E11%20-%20Resting%20Devil%20Face-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x11 - Resting Devil Face
+          </div>
+          <div class="plot">Lucifer's father &mdash; you know, God &mdash; decides to experience life as a regular human. Meanwhile, a boxer dies under mysterious circumstances.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E12%20-%20Daniel%20Espinoza%20Naked%20and%20Afraid-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x12 - Daniel Espinoza: Naked and Afraid
+          </div>
+          <div class="plot">A straightforward prisoner transport job turns into an increasingly dangerous, yet oddly invigorating, odyssey for Dan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E13%20-%20A%20Little%20Harmless%20Stalking-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x13 - A Little Harmless Stalking
+          </div>
+          <div class="plot">Linda throws herself into a deeply personal mission. Maze unmasks a blast from the past. Amenadiel ponders a new job.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E14%20-%20Nothing%20Lasts%20Forever-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x14 - Nothing Lasts Forever
+          </div>
+          <div class="plot">Lucifer angles to be his father's successor. Ella makes a painful confession. Chloe investigates a murder at an aquarium.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E15%20-%20Is%20This%20Really%20How%20It%E2%80%99s%20Going%20to%20End%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x15 - Is This Really How It&rsquo;s Going to End?!
+          </div>
+          <div class="plot">Lucifer learns that not all of his siblings want him to land the big promotion. Also, Dan offers to set Ella up with an old friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S05E16%20-%20A%20Chance%20at%20a%20Happy%20Ending-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x16 - A Chance at a Happy Ending
+          </div>
+          <div class="plot">The end is nigh! Lucifer, Chloe, Maze and Amenadiel prepare for battle with Michael and his not-so-angelic army of supporters.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S06E01%20-%20Nothing%20Ever%20Changes%20Around%20Here-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x1 - Nothing Ever Changes Around Here
+          </div>
+          <div class="plot">Before Lucifer starts his new job, he and Chloe experience a magical night with a murderous end. Linda and Amenadiel host Maze and Eve for dinner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S06E02%20-%20Buckets%20of%20Baggage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x2 - Buckets of Baggage
+          </div>
+          <div class="plot">Desperate to be helpful, Lucifer assists an exasperated Carol investigate a drag queen's death. Ella and Chloe look into Carol&rsquo;s mysterious background.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S06E03%20-%20Yabba%20Dabba%20Do%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x3 - Yabba Dabba Do Me
+          </div>
+          <div class="plot">Loony Lucifer and cartoon Chloe find themselves trapped in an animated loop. Amenadiel prepares for his new job. Dan returns to the city of angels.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S06E04%20-%20Pin%20the%20Tail%20on%20the%20Daddy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x4 - Pin the Tail on the Daddy
+          </div>
+          <div class="plot">Lucifer reconnects with a few former flames in hopes of disproving Rory's claim. Dan tries to find someone &mdash; anyone &mdash; who can actually see him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S06E05%20-%20The%20Murder%20of%20Lucifer%20Morningstar-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x5 - The Murder of Lucifer Morningstar
+          </div>
+          <div class="plot">Not believing that he could have abandoned his future daughter, Lucifer sets out to prove an alternate theory: He must have been murdered.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S06E06%20-%20A%20Lot%20Dirtier%20Than%20That-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x6 - A Lot Dirtier Than That
+          </div>
+          <div class="plot">Wanting to do well on his first day with the LAPD, Amenadiel crosses paths with a racist detective from his past. Also, Lucifer tries to bond with Rory.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S06E07%20-%20My%20Best%20Fiend%27s%20Wedding-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x7 - My Best Fiend's Wedding
+          </div>
+          <div class="plot">Just as Eve and Maze's wedding day arrives, Eve's ex, Adam &mdash; yes, that Adam &mdash; shows up hoping to reconcile. Later, Ella delivers some distressing news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S06E08%20-%20Save%20the%20Devil%2C%20Save%20the%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x8 - Save the Devil, Save the World
+          </div>
+          <div class="plot">Lucifer says he's finally ready to be God, but his non-functioning wings would tend to disagree. Linda reluctantly shares the first draft of her book.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S06E09%20-%20Goodbye%2C%20Lucifer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x9 - Goodbye, Lucifer
+          </div>
+          <div class="plot">Lucifer tries to enjoy what may be his last day on Earth, Dan's killer escapes from prison, and Chloe drops a serious bombshell.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Lucifer%20-%20S06E10%20-%20Partners%20%27Til%20the%20End-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x10 - Partners 'Til the End
+          </div>
+          <div class="plot">Desperate to rescue Rory, Lucifer and Chloe confront her kidnapper with guns and wings blazing. Lucifer finally comes to terms with his purpose.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

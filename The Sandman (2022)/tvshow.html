@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Sandman
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Sandman</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Sandman%20%282022%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S01E01%20-%20Sleep%20of%20the%20Just-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Sleep of the Just
+          </div>
+          <div class="plot">While searching for an escaped nightmare in the waking world, Morpheus falls prey to Roderick Burgess, an occultist looking to summon and imprison Death.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S01E02%20-%20Imperfect%20Hosts-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Imperfect Hosts
+          </div>
+          <div class="plot">Morpheus begins his quest to find his tools of power &mdash; his sand, ruby and helm &mdash; by paying a visit to a pair of notoriously dysfunctional brothers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S01E03%20-%20Dream%20a%20Little%20Dream%20of%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Dream a Little Dream of Me
+          </div>
+          <div class="plot">Morpheus tracks down the last-known person in possession of his sand &mdash; and receives an unexpected lesson on humanity. Ethel pays a visit to her son.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S01E04%20-%20A%20Hope%20in%20Hell-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - A Hope in Hell
+          </div>
+          <div class="plot">A lead on the whereabouts of his helm compels Morpheus to seek an audience with Lucifer. A confused John receives a helping hand from a good Samaritan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S01E05%20-%2024%207-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - 24/7
+          </div>
+          <div class="plot">With Morpheus caught off guard, John settles in at a diner to watch the people around him &mdash; and put his theory about truth and lies to a terrifying test.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S01E06%20-%20The%20Sound%20of%20Her%20Wings-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Sound of Her Wings
+          </div>
+          <div class="plot">Feeling a bit rudderless, Morpheus shadows his hard-working big sister, who offers him advice and encourages him to reconnect with an old acquaintance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S01E07%20-%20The%20Doll%27s%20House-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Doll's House
+          </div>
+          <div class="plot">Lucienne comes to Morpheus with disturbing news. Rose Walker goes in search of family. Admirers of the Corinthian's work scheme to get his attention.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S01E08%20-%20Playing%20House-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Playing House
+          </div>
+          <div class="plot">As Morpheus closes in on one of his missing creations, Rose ramps up efforts to locate her brother &mdash; and unwittingly makes a friend's dream come true.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S01E09%20-%20Collectors-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Collectors
+          </div>
+          <div class="plot">Odd disturbances shake up The Dreaming, Rose sets out on a road trip with a new friend, and The Corinthian arrives with a guest at a creepy convention.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S01E10%20-%20Lost%20Hearts-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Lost Hearts
+          </div>
+          <div class="plot">As the Dream vortex grows more powerful and the walls between the realms weaken, Rose must make a difficult choice. Morpheus confronts The Corinthian.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S02E01%20-%20Season%20of%20Mists-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Season of Mists
+          </div>
+          <div class="plot">When a gathering of the Endless exposes deep-seated grievances, Morpheus embarks on a mission to Hell to free the soul of a condemned mortal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S02E02%20-%20The%20Ruler%20of%20Hell-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - The Ruler of Hell
+          </div>
+          <div class="plot">Bequeathed the key to Hell, Morpheus throws a lavish banquet to determine which god, demon or faerie can be entrusted with its dark power.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S02E03%20-%20More%20Devils%20Than%20Vast%20Hell%20Can%20Hold-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - More Devils Than Vast Hell Can Hold
+          </div>
+          <div class="plot">All the world's a stage as Morpheus summons history's greatest dramatist to perform an enchanting play for a supernatural audience.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S02E04%20-%20Brief%20Lives-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Brief Lives
+          </div>
+          <div class="plot">Morpheus grudgingly helps Delirium search for their vanished sibling in the waking world &mdash; where a deadly force lurks in the shadows.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S02E05%20-%20The%20Song%20of%20Orpheus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - The Song of Orpheus
+          </div>
+          <div class="plot">To honor a promise to one sibling, Morpheus must shatter a vow to another. In ancient Greece, a wedding-night tragedy turns a son against his father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sandman%20-%20S02E06%20-%20Family%20Blood-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Family Blood
+          </div>
+          <div class="plot">Morpheus enlists an expert in the occult to smuggle a deeply personal relic out of Paris &mdash; and help him and Delirium find the answers they seek.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - My Name Is Earl
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">My Name Is Earl</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/My%20Name%20Is%20Earl%20%282005%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">Today is the first day of the rest of Earl Hickey's life. After coming into a $100,000 scratch-off lottery ticket and losing it just as fast upon being hit by a car, Earl has an epiphany in the hospital--to make up for all the terrible things he's done in the past. With his brother Randy and a motel maid named Catalina, Earl writes up a list of every misdeed he was a part of. Earl sets out to do just that, starting with #64--Kenny James, a boy he picked on in elementary school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E02%20-%20Quit%20Smoking-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Quit Smoking
+          </div>
+          <div class="plot">Earl must make amends to Donny, an intimidating thug who spent two years in jail for a robbery Earl committed. Oddly enough, the only way he can do this is by helping Donny's mom quit smoking. Meanwhile, Joy discovers she's the beneficiary of Earl's will and decides to kill him!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E03%20-%20Randy%27s%20Touchdown-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Randy's Touchdown
+          </div>
+          <div class="plot">Back in their high school days, Earl ruined Randy's chance to score a touchdown during a key football game; now Earl must figure out a way to make things right.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E04%20-%20Faked%20My%20Own%20Death-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Faked My Own Death
+          </div>
+          <div class="plot">When Earl meets a tough biker chick at a Halloween party, it looks like a match made in heaven--but when the costumes come off, the mismatch becomes apparent and Earl takes drastic measures to get out of the relationship.  Now, years later, Earl must find a way to make amends for deceiving the girl.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E05%20-%20Teacher%20Earl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Teacher Earl
+          </div>
+          <div class="plot">Earl decides to teach English as a Second language to cross &quot;Made fun of people with accents&quot; off his karma list. While Ralph an old friend is released from prison, Earl tries to convince him in the ways of karma however Ralph ends up kidnapping Randy trying to get his hands on Earl&rsquo;s lotto winnings.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E06%20-%20Broke%20Joy%27s%20Fancy%20Figurine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Broke Joy's Fancy Figurine
+          </div>
+          <div class="plot">In order to replace a fancy figurine that he broke, Earl lends a hand to help Joy's former adversary and her daughter win a mother/daughter beauty pageant . However, Joy enters the pageant also with her &quot;dead&quot; mother trying to win that same figurine, hoping to trade it for a hot tub.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E07%20-%20Stole%20Beer%20From%20a%20Golfer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Stole Beer From a Golfer
+          </div>
+          <div class="plot">Earl attempts to help Scott get over his preoccupation with golf--an obsession caused when he and Randy started fixing Scott&rsquo;s golf game to get free beer. But after becoming so thoroughly entangled in Scott&rsquo;s personal life that he drives Randy away, Earl realizes that he may be the one with the obsession.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E08%20-%20Joy%27s%20Wedding-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Joy's Wedding
+          </div>
+          <div class="plot">Darnell and Joy decided to tie the knot while Earl learns thru Randy&rsquo;s invitation that he is not invited.  To make things worse Joy has scheduled the wedding on Earl&rsquo;s birthday so that all of their friends will be unable to celebrate with him. A drunken Earl crashes the party accidentally breaking Joy&rsquo;s nose and now is forced to add &ldquo;ruined Joy&rsquo;s wedding&rdquo; to his list.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E09%20-%20Cost%20Dad%20the%20Election-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Cost Dad the Election
+          </div>
+          <div class="plot">Earl tries to cross of number four off his list &ldquo;Blew dad&rsquo;s chance to be elected mayor&rdquo;. Four years earlier, Carl Hickey ran for mayor to redirect a proposed airplane traffic route over his house and away from the wealthy part of town. Earl unfortunately ruins any chances of his father winning when caught in on tape assaulting a police officer.  Earl must now help his father get elected and mend his relationship with his father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E10%20-%20White%20Lie%20Christmas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - White Lie Christmas
+          </div>
+          <div class="plot">As the holiday season comes under way a few secrets are exposed when Earl attempts to cross number seventy-four off of his list: &quot;always ruined Joy's Christmas.&quot; Earl, Randy, and Catalina enter a radio contest to win a brand new car for Joy to make up for all of the thoughtless Christmas presents Earl gave her while they were married. While Randy and Catalina vie over the car, Earl finds out that Joy's parents believe that he's still their son-in-law and that he's just returned from the war in Iraq. Joy is afraid to tell her father, an alleged racist, that she is now married to Darnell, so Earl plays the part, afraid of ruining another one of her Christmases.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E11%20-%20Barn%20Burner-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Barn Burner
+          </div>
+          <div class="plot">When trying to enroll her children into the Right Choice Ranch for troubled youth, Joy is denied enrollment because of a barn burning incident at the hands of a younger Earl. Earl, Randy and Catalina travel to the camp to make amends for the barn burning by building a pen for the camp&rsquo;s ostrich.  Earl learns the real reason behind the barn burning incident and decides that every incident on his list after the fire should be shared by Randy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E12%20-%20O%20Karma%2C%20Where%20Art%20Thou-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - O Karma, Where Art Thou?
+          </div>
+          <div class="plot">When Earl and Randy try to return a stolen wallet they find out taking the money had cost two newlyweds their honeymoon. In an attempt to make things right Earl takes over for the groom at his fast food restaurant. After time Earl finds out the boss is a jerk and Earl wonders how such a man with a luxurious house and beautiful wife could not be affected by the only thing he believes in, Karma.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E13%20-%20Stole%20P%27s%20HD%20Cart-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Stole P's HD Cart
+          </div>
+          <div class="plot">Earl crosses another number off the list when he returns Pops&rsquo; Weiner Hot Dog cart he and Ralph stole in his youth. The good deed does not last long as Ralph, who works for a competing franchise sets fire to Pops cart. Earl now must set things right with a bizarre plan while recruiting Randy, Joy, Catalina and Darnell to assist him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E14%20-%20Monkeys%20in%20Space-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Monkeys in Space
+          </div>
+          <div class="plot">Earl tackles number eighteen on his list when one of his old friends is arrested. Remebering that he told an inappropriate story at his birthday party he must give him one great day to make up the the terrible one before he was sent to prison.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E15%20-%20Something%20to%20Live%20For-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Something to Live For
+          </div>
+          <div class="plot">Earl takes his car troubles as a sign that it is time for him to redeem himself for a long run of stealing gas out of a complete stranger's car.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E16%20-%20The%20Professor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - The Professor
+          </div>
+          <div class="plot">Earl's nervous about returning a laptop computer he stole from a college professor, mostly because he's uncomfortable around smart people. When the professor turns out to be a beautiful woman, he feels even more ill at ease, until she flatters him and asks him to speak about his list in front of her class. Meanwhile, Randy experiences fraternity life---and absolutely loves it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E17%20-%20Didn%27t%20Pay%20Taxes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Didn't Pay Taxes
+          </div>
+          <div class="plot">Earl attempts to cross off another deed of his list. This time trying to repay the government after failing to pay his taxes in the past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E18%20-%20Dad%27s%20Car-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Dad's Car
+          </div>
+          <div class="plot">It's Mother's Day again when Earl  remembers that he has never given his mother a Mother's Day gift Just as he and Randy are about to finish carrying out his long overdue gift his mother decides her repayment should include Earl doing something for his father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E19%20-%20Y2K-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Y2K
+          </div>
+          <div class="plot">When Earl is attempting to cross number 24 (&quot;Stole a red 'Take-a-number' machine&rdquo; ) off his list, Randy tries to get Earl to back down by trying to make him remember, through a flashback, how they got the machine around New Year&rsquo;s Eve 1999. Darnell convinces the gang to believe that Y2K will signal the end of the world and they, happily, will be the last people on Earth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E20%20-%20Boogeyman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Boogeyman
+          </div>
+          <div class="plot">Earl decides to cross off &quot;made a kid scared of the boogeyman&quot; from his list. Earl soon discovers just what kind of lasting affect he had on the little boy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E21%20-%20The%20Bounty%20Hunter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - The Bounty Hunter
+          </div>
+          <div class="plot">Number forty-five &quot;Ditched Jessie to Marry Joy&quot; is next on the list when Jessie, Earl's ex-girlfriend returns to town seeking revenge. Earl must protect Joy in a lakeside retreat while Randy fights not to reveal their location to Jessie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E22%20-%20Stole%20a%20Badge-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Stole a Badge
+          </div>
+          <div class="plot">Earl tackles No. 127 on his list by making amends for pilfering a police officer's badge. When he discovers that the theft resulted in the cop's demotion, he tries to get the officer reinstated.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E23%20-%20BB-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - BB
+          </div>
+          <div class="plot">Earl attempts to cross out number 147 on his list &quot;Shot Gwen Waters with a BB Gun.&quot;  To make things right he must reunite Gwen with her estranged father which Earl finds increasingly difficult.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S01E24%20-%20Number%20One-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - Number One
+          </div>
+          <div class="plot">In the season finale, Earl decides to cross off the first number on his karma list, &ldquo;Stole ten dollars from a guy at the Camden Market.&rdquo; Earl to his dismay finds out that he owes much more than ten dollars, in fact he must surrender all his lotto winnings. Earl now ponders when karma is going to help him with his misfortunes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E01%20-%20Very%20Bad%20Things-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Very Bad Things
+          </div>
+          <div class="plot">When Joy and Darnell get into an argument over her surprise birthday, Earl jumps at the opportunity to cross off number 183 on his list &ldquo;Never took Joy&rsquo;s side&rdquo;. Meanwhile Joy runs into various problems after trying to return a television set she recently purchased.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E02%20-%20Jump%20For%20Joy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Jump For Joy
+          </div>
+          <div class="plot">In order to help a friend Earl has to raise a lot of money.  He goes to Richard Chubby (Burt Reynolds), owner of Club Chubby a local strip club.  He agrees to loan Earl the money if Earl can convince his most popular dancer to come back and work for him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E03%20-%20Sticks%20%26%20Stones-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Sticks &amp; Stones
+          </div>
+          <div class="plot">Earl decides to cross off number ninety-one on his list &quot;Made fun of Maggie Lester for having a moustache.&quot; Earl and Randy visit Maggie who is now working for a carnival as &quot;The Amazing Bearded Woman&quot; meanwhile Joy has a run in with the law.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E04%20-%20Larceny%20of%20a%20Kitty%20Cat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Larceny of a Kitty Cat
+          </div>
+          <div class="plot">Earl scratches number 56 off his list when he must return a prize winning cat back to its owner after sabotaging a cat show in Joy's favor. Meanwhile Randy forms an attraction with the cat&rsquo;s owner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E05%20-%20Van%20Hickey-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Van Hickey
+          </div>
+          <div class="plot">Earl tries to make amends with Tom (number 50), the older man they let be the lead singer in his band but then kicked out before their first performance.  While trying to arrange a reunion show Earl must also deal with Number 51, &quot;Slept with Ralph's mom.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E06%20-%20Made%20a%20Lady%20Think%20I%20Was%20God-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Made a Lady Think I Was God
+          </div>
+          <div class="plot">Earl takes on Number 12 on his list &quot;Made a lady think I was God.&quot;  Millie Banks, she was the manager of Earl's trailer park, he pretended to be the voice of God to get her to stop bothering them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E07%20-%20Mailbox-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Mailbox
+          </div>
+          <div class="plot">Catalina helps Earl cross off No. 75 on his list &quot;Used a mailbox as a trash can&quot; This leads to the discovery of two undelivered letters one is a declaration of a man's love the other reveals Darnell's secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E08%20-%20Robbed%20a%20Stoner%20Blind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Robbed a Stoner Blind
+          </div>
+          <div class="plot">In the middle of a heat wave, Earl decides to cross number 26 off his list &quot;Robbed a Stoner Blind.&quot; To accomplish this task Earl and Randy find Woody the stoner and must live an environmentally conscious life in the commune with Woody for a week.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E09%20-%20Born%20a%20Gamblin%27%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Born a Gamblin' Man
+          </div>
+          <div class="plot">Earl tackles number 146 on his list.  He decides to make 274 bologna sandwiches for Kenny because he stole them from him in school when they were kids. While delivering the sandwiches, Earl moves onto a new mission, to teach Kenny how to gamble but has trouble stopping. Joy goes to group therapy for her anger management issues.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E10%20-%20South%20of%20the%20Border%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - South of the Border (1)
+          </div>
+          <div class="plot">In the first half of this special one hour episode, Earl and Randy face problems in their quest to take Catalina off Earl's list and bring her home after she was deported because of Earl.  Joy's friendly attitude causes the neighbors to get closer and Darnell doesn't like it at all.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E11%20-%20South%20of%20the%20Border%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - South of the Border (2)
+          </div>
+          <div class="plot">In the second half of this special one hour episode, Earl and Randy face problems in their quest to take Catalina off Earl's list and bring her home after she was deported because of Earl. Joy's friendly attitude causes the neighbors to get closer and Darnell doesn't like it at all.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E12%20-%20Our%20%27Cops%27%20is%20On%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Our 'Cops' is On!
+          </div>
+          <div class="plot">It's a trip down memory lane for Earl, Randy, Joy, Darnell and the Crab Shack regulars when they remember their fifteen minutes of fame watching a 2003 repeat of the TV show &quot;Cops,&quot; which was filmed in Camden County.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E13%20-%20Buried%20Treasure-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Buried Treasure
+          </div>
+          <div class="plot">In classic whodunit fashion, Earl must determine who took his stolen &quot;treasure&quot; so he can cross it off his list. Joy, Darnell and Randy all give their own version of what happened to the buried treasure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E14%20-%20Kept%20a%20Guy%20Locked%20in%20a%20Truck-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - Kept a Guy Locked in a Truck
+          </div>
+          <div class="plot">Earl attempts to figure out how to make amends to a dead guy that he once locked in a truck.  Meanwhile, newlyweds Randy and Catalina go hunting for an apartment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E15%20-%20Foreign%20Exchange%20Student-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Foreign Exchange Student
+          </div>
+          <div class="plot">Earl goes for #44 on his list trying to help Pierre, a French foreign exchange student, he made fun of when they went to school together. Earl flies him back to the US and he tries to hook Pierre up with a girl he had a crush on as a child. Meanwhile, newlyweds Randy and Catalina find their marriage changes in ways they would never imagine.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E16%20-%20Blow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - Blow
+          </div>
+          <div class="plot">Earl takes on number 101 on his list, &quot;Stole a girl's identity.&quot;  The girl turns out to be Joy's half-sister that she never knew about and the one person that could possibly help her get sympathy from the jury.  The problem, Joy and Liberty are enemies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E17%20-%20The%20Birthday%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - The Birthday Party
+          </div>
+          <div class="plot">Earl wants to use his birthday to look back on all the good he's done over the past year, but at his party, everyone seems to want to talk about his past misdeeds instead.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E18%20-%20Guess%20Who%27s%20Coming%20Out%20of%20Joy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - Guess Who's Coming Out of Joy
+          </div>
+          <div class="plot">With Joy now pregnant again, Earl looks back on her pregnancy during their marriage, and how his father was responsible for one of his first truly good deeds.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E19%20-%20Harassed%20a%20Reporter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Harassed a Reporter
+          </div>
+          <div class="plot">As Earl and Randy work to cross No. 29 on the list &quot;Harassed A Reporter,&quot; Randy gets tired of being in his brother's shadow. In an attempt to distance himself from his brother, Randy realizes the true power of karma and the media.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E20%20-%20Two%20Balls%2C%20Two%20Strikes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - Two Balls, Two Strikes
+          </div>
+          <div class="plot">After Richard Chubby dies, Little Chubby comes to town to take over the family business. While Earl tries to cross an item off his list he learns the true meaning of sacrifice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E21%20-%20G.E.D-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - G.E.D.
+          </div>
+          <div class="plot">Earl tries to apply for a credit card but is declined because he doesn't have a job or a proper place to live, so he goes back to school to receive a diploma, where he realizes how hard it is for teachers to put up with badly behaved kids - just like the one he used to be.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E22%20-%20Get%20a%20Real%20Job-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - Get a Real Job
+          </div>
+          <div class="plot">When Earl decides to get his first real job at an appliance store, he experiences 'growing pains'. Meanwhile, Joy makes another irrational decision when the forthcoming trial continues to get to her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S02E23%20-%20The%20Trial-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x23 - The Trial
+          </div>
+          <div class="plot">Things are finally looking up for Earl with a GED, a job, a new apartment and love interest however it may all come crashing down during Joy's trial date. Earl's shocking testimony could help Joy but at what cost?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E01%20-%20My%20Name%20Is%20Inmate%20%2328301-016-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - My Name Is Inmate #28301-016
+          </div>
+          <div class="plot">Earl begins his prison sentence. Meanwhile, Joy tries to repay Earl by taking care of Randy (who is struggling to adjust) and a prison bully is looking for Earl.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E02%20-%20The%20Gangs%20of%20Camden%20County-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - The Gangs of Camden County
+          </div>
+          <div class="plot">Earl is offered a deal to receive a lesser sentence if he can resolve problems between rival gangs. But, he finds the task harder than he expected. Meanwhile, Randy looks for ways to join Earl in prison.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E03%20-%20The%20Frank%20Factor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - The Frank Factor
+          </div>
+          <div class="plot">Joy visits Earl in prison and they are surprised to meet an old friend who is also in prison. The three reminisce about their past and how they met.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E04%20-%20Creative%20Writing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Creative Writing
+          </div>
+          <div class="plot">Earl is given an assignment after attending a prison class which focuses on creative writing: to write a story. Soon Earl realises that writing is harder than he thought.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E05%20-%20Frank%27s%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Frank's Girl
+          </div>
+          <div class="plot">It's conjugal visiting day at the prison and since no one is visiting Earl, Frank wants Earl to explain to his girlfriend why he cannot see her today. Things don't go as planned and Frank's girlfriend dumps him because of Earl. Earl is blames himself and vows to get them back together.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E06%20-%20Our%20Other%20Cops%20is%20On%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Our Other Cops is On!
+          </div>
+          <div class="plot">Earl and Randy watch the filming of Cops in Camden County where the different situations are slightly related to Earl. Meanwhile, Kenny's hatred for Earl is caught on camera.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E07%20-%20Randy%20In%20Charge%20%28...Of%20Our%20Days%20and%20Our%20Nights%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Randy In Charge (...Of Our Days and Our Nights)
+          </div>
+          <div class="plot">The Warden ask Earl to make a skit called 'scared straight' that will stop kids from committing crimes and stay out of jail. Meanwhile, Randy uses his authority to make Earl's life difficult in prison.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E08%20-%20Midnight%20Bun-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Midnight Bun
+          </div>
+          <div class="plot">Joy enlists the help of Darnell to expediate the baby's birth. Meanwhile, Frank escapes from prison when Randy takes the convicts out for ice cream. Elsewhere, Catalina baby-sits Dodge and Earl Jr.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E09%20-%20Burn%20Victim-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Burn Victim
+          </div>
+          <div class="plot">Earl helps the Warden solve another jail house problem between an inmate and his victims. Later Earl realizes that planning a prom for the inmates might deplete his lottery winnings.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E10%20-%20Early%20Release-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Early Release
+          </div>
+          <div class="plot">When Earl finds out that the Warden has destroyed all the certificates that would grant him early release from prison, he seeks the help of his friends to escape.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E11%20-%20Bad%20Earl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Bad Earl
+          </div>
+          <div class="plot">Earl is having difficulty re-adjusting to life on the outside. He returns to his old ways after he encounters Ralph. Randy plans an intervention for Earl on Christmas morning.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E12%20-%20I%20Won%27t%20Die%20With%20a%20Little%20Help%20From%20My%20Friends-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - I Won't Die With a Little Help From My Friends
+          </div>
+          <div class="plot">After a car accident Earl is put in a coma and finds himself in an alternate world shown as a sitcom, while his friends try to keep him alive.
+
+Nothing can get Earl out of his coma, so Randy turns to a young faith healer from their past. However, the boy says that he no longer heals people because he discovered how Earl lived his life after he &quot;healed&quot; him the first time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E13%20-%20Stole%20a%20Motorcycle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Stole a Motorcycle
+          </div>
+          <div class="plot">While Earl is still in a coma, Randy starts to believe that he can help Earl get better by crossing things off the list.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E14%20-%20No%20Heads%20and%20a%20Duffel%20Bag-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - No Heads and a Duffel Bag
+          </div>
+          <div class="plot">When Randy visits his parents to make up for their ruined vacation, he realizes that he forgot to tell them about Earl's prison sentence and the following coma at all.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E15%20-%20Killerball-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - Killerball
+          </div>
+          <div class="plot">When the hospital wants to get rid of Earl, Randy decides to take care of his brother by himself. But instead of working on the list for Earl, he uses Earl's help to cross things off in order to help him get better.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E16%20-%20Love%20Octagon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - Love Octagon
+          </div>
+          <div class="plot">When Earl finally wakes up from his coma, he believes in Karma again and considers Billie his soul mate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E17%20-%20Girl%20Earl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - Girl Earl
+          </div>
+          <div class="plot">Inspired by Earl, Billie starts a list of her own and when Earl is getting annoyed by Billie's little habits, he decides to focus on working on the list instead. He picks a task that is on both of their lists, atones for the injury of a champion grocery-bagger and discovers a unique talent of his own. But Earl soon finds out that they have different ways of interpreting Karma.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S03E18%20-%20Camdenites-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x18 - Camdenites
+          </div>
+          <div class="plot">When Earl finds out that making up for all the bad things he did to women changes Billie's behavior to the good, he picks the worst thing he ever did to women on his list. Billie wants him to choose between her and his list. When he picks the list, she steals it and starts undoing the items he has already accomplished.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x19 - Love Octagon
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x20 - Girl Earl
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x21 - Camdenites
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x22 - Camdenites
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E01%20-%20The%20Magic%20Hour-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - The Magic Hour
+          </div>
+          <div class="plot">When Joy cons Make-A-Wish to send a celebrity to her trailer, Earl remembers a wish he stole from a dying child and decides it's time to cross him off the list. When he returns to the kid's home, he finds that little Buddy has exceeded all of the doctors' expectations and is still alive. Buddy asks Earl to produce his movie and suddenly all of Camden County find themselves starring in a high-octane action film. Randy surprises everyone when his acting skills get rave reviews.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E02%20-%20Monkeys%20Take%20a%20Bath-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Monkeys Take a Bath
+          </div>
+          <div class="plot">Earl and Randy decide it's time to make amends with their childhood neighbors, the Clarks. But when they discover more skeletons in the closet than they had expected, the brothers find themselves needing to sort out some family issues between their mom and dad. Meanwhile, Joy has duped one-eyed Willy out of his glass eye, and despite Darnell's efforts Willy may never &quot;see&quot; that eye again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E03%20-%20Joy%20in%20a%20Bubble-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Joy in a Bubble
+          </div>
+          <div class="plot">Earl's attempt to give Joy the hot tub she's always wanted backfires and she is forced to stay in a makeshift bubble because of a flesh eating toe infection. While she is out of commission, Earl must fill in as the new Joy. Between gossiping with the ladies at the salon and shopping for meat out of some guy's trunk, Earl learns about the Turner family. This includes the fact that Dodge and Earl Jr. might have a social disorder that causes them to have no friends. Can Earl fix this problem too?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E04%20-%20Stole%20an%20RV-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Stole an RV
+          </div>
+          <div class="plot">To cross Jerry off of his list, Earl can't just return the RV he stole, mostly because Randy blew it up. Earl and Randy set out to find what might make this grumpy war hero happy, and accidentally turn him into a 75-year-old killing machine. Elsewhere, Joy and Darnell attempt to turn the legend of a giant pig that lives near the trailer park into a one-of-a-kind, money making sideshow.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E05%20-%20Sweet%20Johnny-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Sweet Johnny
+          </div>
+          <div class="plot">Earl wants to make up for sleeping with local stuntman Sweet Johnny's girlfriend, while Joy feels the need to buy a gun.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E06%20-%20We%27ve%20Got%20Spirit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - We've Got Spirit
+          </div>
+          <div class="plot">To cross Randy off his list, Earl takes his brother to cheerleading camp. Once there, the tight cheer pants and their lack of flexibility are not their only problem. They also have to deal with Kimmi Himmler, the camp owner with a deeply scarred face and milky eye - both a result of a badger accident suffered while cheering in high school. When Himmler wants the brothers out of her camp, Earl goes to drastic measure to make sure that Randy's cheerleading dreams will come true. Elsewhere, Joy is hurt when her son Dodge indicates that Catalina is the most beautiful woman in Camden.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E07%20-%20Quit%20Your%20Snitchin%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Quit Your Snitchin'
+          </div>
+          <div class="plot">When Randy's birthday is coming up, Earl gets him a new car, but it is stolen before he can present it to Randy. Apparently, Earl no longer falls under the code of criminals, that no criminal steals from another one. Now that he is treated as a &quot;civilian&quot;, he needs to decide whether to take the matter to the police and become a snitch.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E08%20-%20Little%20Bad%20Voodoo%20Brother-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Little Bad Voodoo Brother
+          </div>
+          <div class="plot">Earl plans a Halloween party for Dodge and Earl Jr, while Catalina's nephew Oscar visits. This poses an opportunity for Randy to become the big brother he always wanted to be.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E09%20-%20Sold%20a%20Guy%20a%20Lemon%20Car-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Sold a Guy a Lemon Car
+          </div>
+          <div class="plot">Suddenly at the top of Earl's list a life-or-death item appears right after a new mysterious man moves in next door. Meanwhile, a science fair has Joy all worked up to the point of obsession. She' so fixated on winning the fair so she can buy something special with the prize money.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E10%20-%20Earl%20and%20Joy%27s%20Anniversary-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Earl and Joy's Anniversary
+          </div>
+          <div class="plot">Earl remembers his first wedding anniversary and the events that finally lead to their break up, involving Earl's cousin Blake and an invasion of killer bees.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E11%20-%20Nature%27s%20Game%20Show-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Nature's Game Show
+          </div>
+          <div class="plot">Earl loses his list while tornado's hit Camden County. Meanwhile, Randy thinks he's invincible after a wild boat ride and contemplates how he should use his new found power. Elsewhere, who's the smartest, Joy or Darnell? that's what this weeks argument is about and Catalina and Patty have a religious awakening.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E12%20-%20Reading%20Is%20a%20Fundamental%20Case-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - Reading Is a Fundamental Case
+          </div>
+          <div class="plot">Earl remembers a list item he crossed off while reading to the children of Camden County. While going down memory lane, Earl recalls that his old friend Raynard kept company with a raccoon while living in the great outdoors.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E13%20-%20Orphan%20Earl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - Orphan Earl
+          </div>
+          <div class="plot">Earl discovers that Joy has continued a holiday scam they started years before, and has expanded the scam to include her friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E14%20-%20Got%20the%20Babysitter%20Pregnant-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x14 - Got the Babysitter Pregnant
+          </div>
+          <div class="plot">A young Earl gets his heart broken by the babysitter and swears revenge on her and her boyfriend. Now, Earl is older and wiser, so he decides to cross them off his list, but it may have terrible repercussions for Randy. Meanwhile, Joy loses Darnell's pet turtle
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E15%20-%20Darnell%20Outed%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x15 - Darnell Outed (1)
+          </div>
+          <div class="plot">Joy steals Randy's audition for Erik Estrada's reality show &quot;Estrada or Nada&quot;, but her public appearance has consequences for Darnell.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E16%20-%20Darnell%20Outed%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x16 - Darnell Outed (2)
+          </div>
+          <div class="plot">In the aftermath of having his cover blown, Darnell must pack up and leave Camden. Meanwhile, Earl, Randy and Catalina discover a devastating truth within the post office.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E17%20-%20Randy%27s%20List%20Item-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x17 - Randy's List Item
+          </div>
+          <div class="plot">When Randy loses his winning lottery ticket, he assumes the event to be a message from Karma, so he starts a list of his own. Meanwhile, Joy is not happy with her cover identity of the witness protection program.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E18%20-%20Friends%20with%20Benefits-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x18 - Friends with Benefits
+          </div>
+          <div class="plot">When Mr. Turtle returns back to Earl, he wants to bring him back to Darnell. Meanwhile, Joy and Darnell have to adapt to a new lifestyle of their cover identities.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E19%20-%20My%20Name%20Is%20Alias-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x19 - My Name Is Alias
+          </div>
+          <div class="plot">Danny Glover guest stars as Darnell's father who comes looking for him in Camden only to raise Earl and Randy's suspicions. However, a family reunion leads to father and son partaking in one last undercover mission.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E20%20-%20Chaz%20Dalton%27s%20Space%20Academy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x20 - Chaz Dalton's Space Academy
+          </div>
+          <div class="plot">Earl works on a list item that has to do with Chaz Dalton, his childhood hero. Meanwhile, Darnell tries to help Joy make friends using the internet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E21%20-%20Witch%20Lady-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x21 - Witch Lady
+          </div>
+          <div class="plot">Earl works on a list item that deals with a crazy witch lady. Meanwhile, Joy wants to show Darnell her good side.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E22%20-%20Pinky-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x22 - Pinky
+          </div>
+          <div class="plot">Earl helps Randy find his first love, Pinky.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E23%20-%20Bullies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x23 - Bullies
+          </div>
+          <div class="plot">Randy busts into the motel room, demanding that Earl drive to Joy's and punch her in the face. Over time, Randy has invested lots of time and money in the Crab Shack's claw machine, but every time he wins a cute stuffed animal, Joy bullies him into giving it to her. This last time he won a fancy bird dressed up for a wedding and the loss has put Randy over the edge. Earl points out that Randy is 32 years old, and it's time he learned to stick up for himself - Earl's not going to protect him anymore.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E24%20-%20Gospel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x24 - Gospel
+          </div>
+          <div class="plot">Earl tests the faith of a former gangbanger-turned-born-again reverend, whom he's wronged many, many times.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E25%20-%20Inside%20Probe%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x25 - Inside Probe (1)
+          </div>
+          <div class="plot">News show &quot;Inside Probe&quot; investigates the disappearance of the Crab Shack owner. After eight years the show airs on TV, and several Camden residents become murder suspects.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E26%20-%20Inside%20Probe%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x26 - Inside Probe (2)
+          </div>
+          <div class="plot">The mystery of the disappearance of the former Crab Shack owner is finally resolved.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Name%20Is%20Earl%20-%20S04E27%20-%20Dodge%27s%20Dad-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x27 - Dodge's Dad
+          </div>
+          <div class="plot">When Dodge tells Joy he doesn't want Darnell to speak at career day, she enlists Earl to pretend to be his father. Things don't go well and Earl realizes Dodge needs to know his real dad. Despite Joy's protests, Earl enlists Randy and Catalina to help him hunt down the deadbeat dad, but what they discover is worse than they could have imagined.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

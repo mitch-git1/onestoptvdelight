@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Heroes
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Heroes</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Heroes%20%282006%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E01%20-%20Genesis-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Genesis
+          </div>
+          <div class="plot">As a total eclipse casts its shadow across the globe, a genetics professor in India is led by his father's disappearance to uncover a secret theory -- there are people with super powers living among us. A young dreamer tries to convince his politician brother that he can fly. A high school cheerleader learns that she is totally indestructible. A single mother struggles to make ends meet to support her young son and discovers that her mirror image has a secret. A gifted artist, whose drug addiction is destroying his life and relationship with his girlfriend, can paint the future. And in Japan, a young man develops a way to stop time through sheer will power. Yet, unbeknownst to them all, their ultimate destiny is nothing less than saving the world...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E02%20-%20Don%27t%20Look%20Back-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Don't Look Back
+          </div>
+          <div class="plot">Outside a bizarre, gruesome crime scene, Los Angeles beat cop Matt Parkman is the only one who can hear the cries of a missing little girl. Claire almost reveals her secret ability to the entire school after learning that her injury attempt tape has disappeared. Thinking she's going crazy, Niki loses another block of time after waking to find some brutally murdered thugs in her garage, only to be confronted by Social Services about son Micah. While office drone Hiro investigates New York, Nathan confronts Peter following his plunge off a building.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E03%20-%20One%20Giant%20Leap-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - One Giant Leap
+          </div>
+          <div class="plot">As the &quot;Heroes&quot; continue to test their newfound extraordinary abilities, Claire tries to maintain a normal social life when a romance with the football quarterback takes a tragic turn. While Hiro convinces his friend that they are destined to travel to America to save the world, a frightened Niki follows instructions from a mysterious, unknown source that directs her to the middle of the desert.
+
+Meanwhile, Nathan uses Peter's accident to propel his political campaign. The elusive Sylar is being hunted by both Matt and the FBI, as well as Suresh, whose father's journal leads to potential clues.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E04%20-%20Collision-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Collision
+          </div>
+          <div class="plot">Suresh finally tracks down one of his father's fabled genetically advanced &quot;supermen.&quot; In Las Vegas, Hiro's plan backfires when he cautiously turns time to his advantage at the gambling tables. Niki's mafia debtors use their leverage to their benefit in a more elaborate scheme, while Nathan pays a personal visit to a wealthy Vegas contributor to raise additional campaign funds. Following a tragic turn at a bonfire, Claire's uncanny healing abilities are put to the ultimate test, but according to Issac's paintings, her future could be fraught with even more peril
+
+Meanwhile, Matt's abilities are gauged by a pair of men who seem to know a great deal about people with special gifts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E05%20-%20Hiros-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Hiros
+          </div>
+          <div class="plot">Confused after losing track of another block of time, Niki finds the police on her doorstep, searching for her fugitive husband D.L. Hawkins. Claire confesses to her father. Hiro and his friend get jumped by some Vegas high-rollers. Peter receives a life-changing message from an unlikely source.
+
+Meanwhile, Matt secretly uses his mind-reading ability to anticipate his wife's needs. Dismayed by recent events, Suresh makes plans to return to India to lay both his father's remains and his research to rest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E06%20-%20Better%20Halves-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Better Halves
+          </div>
+          <div class="plot">Hiro and his buddy embark on their heroic journey to New York, when they are stopped by a Vegas high-roller who offers them a deal they can't refuse. As Noah Bennett sets up a meeting for his daughter Claire with her biological parents, she hopes that questions about her newfound indestructibility can be answered.
+
+Meanwhile, Isaac receives another confusing call from Hiro, but Peter is there this time to pick up the phone and relay a life-saving message. Suresh bids farewell to Eden as he heads back to India to bury his father. An unexpected visitor shows up at Niki's home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E07%20-%20Nothing%20to%20Hide-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Nothing to Hide
+          </div>
+          <div class="plot">Facing a crisis involving her son Micah, a distraught Niki reveals her recent personal struggles to a friend. Pushing aside his own issues at home, Matt assists Audrey's investigation into another bizarre murder, but their pursuit of mysterious serial killer Sylar takes an unexpected turn. After failing to act like a &quot;superhero&quot; when faced with danger, Hiro questions his heroism. Nathan and his wife Heidi strategize how to win the congressional election. Claire is shocked to learn where her missing tape wound up.
+
+Meanwhile, her father is disturbed by news from one of his associates.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E08%20-%20Seven%20Minutes%20to%20Midnight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Seven Minutes to Midnight
+          </div>
+          <div class="plot">Back in India to mourn the passing of his father, Suresh encounters mysterious dreams of the past that force him to question what path to take next. Continuing their journey to New York, Hiro and Ando stop at a diner and meet someone interesting. In crisis, Niki comes to a personal understanding. Determined to see one of Isaac's paintings that Simone recently sold, Peter asks Nathan for help in finding a key to the future. Intent on getting back to her normal life, Claire focuses on Homecoming preparations, unaware of what's to come.
+
+Meanwhile, Mr. Bennett and a surprising associate focus their attentions on another &quot;hero.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E09%20-%20Homecoming-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Homecoming
+          </div>
+          <div class="plot">As Mr. Bennet tries to protect his daughter by any means, Claire's high school Homecoming celebration turns into a frightening night for many. Nathan and Simone work together to find Isaac's painting for Peter, but this key to the future could lead to tragedy.
+
+Meanwhile, Hiro travels back in time to right an upsetting wrong. As Niki puts a goal in sight, Micah spends time with his dad. Still experiencing strange dreams while in India, Suresh learns of a boy that might pull him back into his father's research
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E10%20-%20Six%20Months%20Ago-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Six Months Ago
+          </div>
+          <div class="plot">As the clock turns back six months for all of the &quot;Heroes,&quot; Mohinder's father Chandra Suresh arrives in New York to begin his quest to find individuals with extraordinary abilities, and meets someone all to eager to be special. Peter celebrates his graduation from nursing school, and learns that Nathan plans to prosecute a case that could mean trouble for the entire Petrelli family. A surprise visit from her father brings out the worst in Niki. Hiro attempts to be a hero and change the future for someone important. Claire joins the cheerleading squad and makes a curious discovery. Mr. Bennet and the Haitian meet someone special.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E11%20-%20Fallout-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Fallout
+          </div>
+          <div class="plot">The tragic events in Texas have sad, serious repercussions for many of the &quot;heroes,&quot; their families and friends. Meanwhile, shocking details about the moments leading up to Isaac's predicted New York City nuclear bombing are revealed. Later, Issac's newest painting has fascinating future implications for a hero in crisis. Suresh takes the first steps along his new path. Matt and F.B.I. Agent Audrey Hanson pursue a break in the Sylar case. Horrified by Jessica's recent actions, Niki makes a tough decision to protect her family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E12%20-%20Godsend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Godsend
+          </div>
+          <div class="plot">Matt reveals his abilities to his wife. HRG confers with Mohinder. Now that she knows the truth, Claire tries to make sense of her life. Hiro seeks the sword that he is destined to own. Niki must face the consequences of her decision to turn herself in to the police. Simone and Nathan are worried about Peter, who has been in a coma for two weeks. Peter meets a new hero. Micah visits his mother.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E13%20-%20The%20Fix-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - The Fix
+          </div>
+          <div class="plot">Hiro continues to search for a sword while being chased by mysterious figures.  An invisible man named Claude has something to teach one of the heroes. D.L. takes on new family responsibilities, and Matt opens up to his wife. H.R.G. continues to focus on the captive Sylar. Claire seeks out the Haitian and then her birth parents. Mohinder looks for those on the list, and receives a surprise visitor.  A psychiatrist offers to help Niki.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E14%20-%20Distractions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Distractions
+          </div>
+          <div class="plot">Hiro deals with explaining his new heroic path in life to his ambitious sister and tycoon father. Niki has the chance to reunite with D.L and Micah. Claude's mentoring of Peter leads Peter to question those closest to him. Claire goes to a trailer park looking for her birth mother. Sylar wears a disguise and makes a move against HRG.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E15%20-%20Run%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Run!
+          </div>
+          <div class="plot">Matt enters the private security business and receives an objectionable client. Suresh finds another person on the list. As her home-life worsens, Claire strives to learn more about her birth parents. Hiro and Ando get sidetracked in Vegas again while searching for the sword. Nathan is forced to deal with a secret from his past. Still indebted to Mr. Linderman, Jessica resorts to unsavory methods that could spell doom for a fellow hero.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E16%20-%20Unexpected-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Unexpected
+          </div>
+          <div class="plot">Peter learns that he and Claude may have been betrayed. Matt's reunited with the radioactive Ted Sprague and Hana Gitelman a woman with &quot;wireless&quot; mental abilities. Hiro makes a tough choice about his mission. Claire can no longer hold back her anger towards HRG.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E17%20-%20Company%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Company Man
+          </div>
+          <div class="plot">H.R.G.'s past catches up to him as Matt and Ted Sprague come to Texas looking for answers, and take him, his wife, son and Claire hostage -- leading to a tragic, explosive showdown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E18%20-%20Parasite-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Parasite
+          </div>
+          <div class="plot">With the election and New York City's destruction looming, Nathan has a disturbing face-to-face meeting with the shadowy Linderman. Hiro's attempt to steal the sword steers him into a grim new direction. Suresh makes a breakthrough on the list&mdash;at great cost. D.L. begins to suspect all is not well at home. Isaac paints his most terrible painting yet. New hero Candice Wilmer makes an illusive debut.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E19%20-%20.07%25-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - .07%
+          </div>
+          <div class="plot">After &quot;helping&quot; Suresh search for more people with special abilities, Sylar's rampage continues with two &quot;heroes&quot; being confronted by the stronger-powered serial killer. Nathan must factor what he's learned from Linderman into difficult decisions that will shape the future, for him, his family, New York City and the world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E20%20-%20Five%20Years%20Gone-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Five Years Gone
+          </div>
+          <div class="plot">Hiro and Ando's trek into the future leads them to meet some of the heroes as they are five years later, after the nuclear fallout. This includes a darker side of Matt, a Jessica/Niki with a clear winner in their battle, a brown-haired Claire, and a man named Andy, who's a big hearted Texan. It also features an event at an upscale gentleman's club.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E21%20-%20The%20Hard%20Part-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - The Hard Part
+          </div>
+          <div class="plot">Hiro and Ando's determination is put to the test. Nathan wants to win the election and he's taking drastic measures to ensure that he will. This episode will feature Sylar, his home life, and where he came from. Jessica and D.L. discover some of the stuff that Linderman wants from them and Micah. Also there is a new hero who is supposed to be holding the key to stopping Sylar.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E22%20-%20Landslide-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Landslide
+          </div>
+          <div class="plot">Poised to become a member of Congress and maybe more, Nathan considers the cost to those he loves, along with his mother's advice and Linderman's prophecy. As he prepares to face Sylar to the death, Hiro learns of his lineage from his father. While various &quot;heroes&quot; fatefully arrive in New York City, Peter and Claire attempt to leave the city before the foretold explosion. H.R.G.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S01E23%20-%20How%20to%20Stop%20an%20Exploding%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - How to Stop an Exploding Man
+          </div>
+          <div class="plot">Can Sylar be stopped? Will Linderman's vision live on with Nathan? What will it take for Peter to save the world, what sacrifices will be made? With all the horrible predictions unfolding before them the heroes face moments of pain and peril in Kirby Plaza.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S02E01%20-%20Four%20Months%20Later-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Four Months Later...
+          </div>
+          <div class="plot">Four months after the events of the showdown between Sylar and Peter, new Heroes emerge. These include brother and sister Alejandro and Maya. Hiro remains in the past, but what will come of this? Someone dies and someone isn't dead. Claire and her father and the rest of their family get a new life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S02E02%20-%20Lizards-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Lizards
+          </div>
+          <div class="plot">Peter falls in with Irish gangsters who know about his past. Hiro works to contain the damage caused by his journey into the past. Kensei's power will be revealed. Suresh locates and cures the Haitian. Matt investigates the murder of Mr. Nakamura. West comes to know of Claire's powers. Maya and Alejandro enter Mexico and find their powers more of a hindrance than a help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S02E03%20-%20Kindred-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Kindred
+          </div>
+          <div class="plot">Suresh finds an undiscovered Isaac Mendez painting that shows someone's death; Maya frees Alejandro from a Mexican jail; in the past Hiro discovers something new about Kensei; and Niki and Micah leave Las Vegas to get away from their past. Claire and West take a little trip.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S02E04%20-%20The%20Kindness%20of%20Strangers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - The Kindness of Strangers
+          </div>
+          <div class="plot">Monica starts to exhibit new abilities while working with Micah, Nana, and Damon. Nana is the grandmother of Micah, Monica, and Damon. They all currently reside in New Orleans. Matt asks Molly to locate the man in her dreams. He may be the newest threat to the Heroes. Maya and Alejandro continue their trek to the U.S. Both Claire and her father are suspicious of one another. Angela reveals a lot of her secrets.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S02E05%20-%20Fight%20or%20Flight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Fight or Flight
+          </div>
+          <div class="plot">A woman named Elle is searching for Peter. Ando looks for Hiro in the past. Matt looks for the man in Molly's dreams. HRG takes another step in hopes of protecting his family and himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S02E06%20-%20The%20Line-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - The Line
+          </div>
+          <div class="plot">Peter goes on a search. West convinces Claire to stand up to someone. Hiro struggles with his feelings for Yaeko. Suresh has more problems with the Company. HRG tries to locate more of Isaac's paintings. Alejandro doesn't trust Sylar.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S02E07%20-%20Out%20of%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Out of Time
+          </div>
+          <div class="plot">Peter and Caitlin learn about the endstage effects of the Heroes virus. Many of the Heroes work together to fight the Nightmare Man.  West is shocked to the identity of Claire's father.  Hiro and Kensei's journey comes to an end.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S02E08%20-%20Four%20Months%20Ago-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Four Months Ago...
+          </div>
+          <div class="plot">The events of the &quot;missing four months&quot; are explored. Maya and Alejandro must go on the run, it is explained how Peter ended up in Ireland and what happened to Nathan, Nikki, and D.L.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S02E09%20-%20Cautionary%20Tales-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Cautionary Tales
+          </div>
+          <div class="plot">Mr. Bennet prepares to move his family when he thinks the Company has found them, but Claire doesn't like the idea. Hiro returns to the present and upon discovering his father's death, travels back in time to stop it. Meanwhile, Matt works to master his new mental abilities.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S02E10%20-%20Truth%20%26%20Consequences-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Truth &amp; Consequences
+          </div>
+          <div class="plot">Peter travels to Primatech in Texas to destroy the virus, but not everything is what it seems. Hiro continues the pursuit of his father's killer, while Matt pursues the last Company member in the photo. Nikki is reunited with Micah but has bad news, while Maya has to choose to remain with Alejandro, or go with Sylar.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S02E11%20-%20Powerless-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Powerless
+          </div>
+          <div class="plot">In Texas, Peter faces off against former friends due to Adam&rsquo;s misleading story about the Shanti virus. Micah enlists the help of his mother to rescue Monica. Maya is shocked when she learns the truth about her new friend Sylar. Elle tries to make her father proud.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E01%20-%20The%20Second%20Coming-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - The Second Coming
+          </div>
+          <div class="plot">After a look into the future, Nathan's shooter is revealed. Matt chases him and winds up in a desert. Hiro receives an important message from his father. Sylar visits Claire. Maya gives Mohinder an idea for his research. Nathan recovers and gets a visit from Linderman.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E02%20-%20The%20Butterfly%20Effect-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - The Butterfly Effect
+          </div>
+          <div class="plot">Sylar goes to the Company and inadvertently releases 12 super-powered criminals in a fight with Elle. Future Peter tries to fix his mistake. Angela takes over the company. Claire learns more about her powers. Hiro and Ando travel to Paris to track down the speedster who robbed them. Maya discovers that Mohinder's injection has changed him. Matt meats Usutu, an African with a familiar power.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E03%20-%20One%20of%20Us%2C%20One%20of%20Them-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - One of Us, One of Them
+          </div>
+          <div class="plot">HRG and his new partner go to a local bank heist with four villains; including Peter being trapped in one of them. Hiro and Ando track Daphne to Germany, and meet the Haitian. Tracy Strauss goes to New Orleans to find out more information about Niki. Meredith teaches Claire a lesson about fighting. Usutu shows Matt a series of paintings about him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E04%20-%20I%20Am%20Become%20Death-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - I Am Become Death
+          </div>
+          <div class="plot">Peter travels to the future and adopts a dangerous ability in order to try to save the world. Meanwhile, Mohinder struggles with his continuing evolution from the formula, and Hiro and Ando re-unite with an old enemy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E05%20-%20Angels%20and%20Monsters-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Angels and Monsters
+          </div>
+          <div class="plot">Claire decides to take on one of the villains herself, but she may not be as invulnerable as she believes. Nathan and Tracy search for the truth about their origins. Maya makes a shocking discovery. Hiro and Ando look for help in the most unlikely places.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E06%20-%20Dying%20of%20the%20Light-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Dying of the Light
+          </div>
+          <div class="plot">Villains Knox and Daphne are on a quest to recruit Hiro and others to the Pinehearst fold. Angela and the Company are paralyzed from recent events. Peter goes to Pinehearst searching for answers but is stunned to learn who the founder is. Claire and Sandra go on a mission to save Meredith from the clutches of Doyle, a villain with abilities to control people mentally and physically. Nathan and Tracy try to trace their origins with Mohinder's help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E07%20-%20Eris%20Quod%20Sum-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Eris Quod Sum
+          </div>
+          <div class="plot">Trapped, Nathan and Tracy must fight to save their lives against Suresh, who has changed dramatically. Elle returns with shocking news for Claire and her family. Meanwhile, Angela tries to convince Sylar to save Peter; Daphne is ordered to kill Matt or she will be killed herself; and Hiro questions Usutu's advice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E08%20-%20Villains-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Villains
+          </div>
+          <div class="plot">Hiro attempts to delve into Arthur Petrelli's past to uncover the mystery behind him creating a rival company Pinehearst and his hatred towards Angela. Sylar stricken by guilt tries to stop his murderous ways with HRG and Elle vying for his blood. Meredith's training goes up in smoke with the arrival of her brother.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E09%20-%20It%27s%20Coming-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - It's Coming
+          </div>
+          <div class="plot">Nathan learns of his father's plans, while Flint and Knox launch attacks on Hiro, Ando, Peter, and Claire. Meanwhile, Matt tries to revive Angela, Sylar meets with Elle, and Mohinder begins testing of his newest superpower formula.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E10%20-%20The%20Eclipse%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - The Eclipse (1)
+          </div>
+          <div class="plot">The eclipse plays havoc with the heroes' powers. Arthur orders Elle and Sylar to bring in Claire. Hiro, Ando, and Matt follow Daphne to her hometown to learn what hold Arthur has on her, and Peter and Nathan travel to the Haitian's hometown to recruit him for the war with Pinehearst.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E11%20-%20The%20Eclipse%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - The Eclipse (2)
+          </div>
+          <div class="plot">The eclipse continues to create chaos. Sylar and Elle face HRG's wrath. Peter, Nathan and the Haitian go up against Baron Samedi. Ando, Sam, and Frack try to help Hiro with his memory loss.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E12%20-%20Our%20Father-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Our Father
+          </div>
+          <div class="plot">In order to stop Arthur, Hiro and Clair team up and travel back in time to when Kaito gave Claire to H.R.G. Meanwhile, Peter and the Haitian head out to stop Arthur, but are stopped by Sylar and Suresh has a breakthrough with the formula.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E13%20-%20Dual-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Dual
+          </div>
+          <div class="plot">Following the showdown against Arthur, Nathan and Peter find themselves pitted against one another, and Nathan makes a decision that will have an effect on the entire world. Meanwhile, Sylar holds Claire, H.R.G., Meredith and Angela hostage at Primatech; Ando, Matt and Daphne try to rescue Hiro and find their only hope may lie in Suresh.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E14%20-%20A%20Clear%20and%20Present%20Danger-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - A Clear and Present Danger
+          </div>
+          <div class="plot">Three weeks after the destruction of both Primatech and Pinehearst, and the death of Arthur Petrelli, the now-villainous Nathan returns with a vengeance by persuading the U.S. President and the government to round up all people with abilities, leading to Claire, Ando, Hiro, Matt, Peter, as well as Tracy to become fugitives from the people who were their former allies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E15%20-%20Trust%20and%20Blood-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - Trust and Blood
+          </div>
+          <div class="plot">Following a chain of unexpected events, our Heroes are on the run from their latest adversary and one of their own, Nathan Petrelli. After Matt paints a series of prophetic images, the tragic fate of someone close to him is revealed. Elsewhere, Sylar continues his search for his father and encounters a young outcast with information and an ability of his own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E16%20-%20Building%2026-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - Building 26
+          </div>
+          <div class="plot">Nathan's plans face exposure as Homeland Security begins an investigation under direct orders from the President of the United States. Sylar and Luke embark on a road trip to find Sylar's father, but are secretly being hunted by Nathan's agents. Life gets complicated for the Bennet family as Claire goes into action to protect a young man with abilities from being captured by HRG. Elsewhere, Matt's prophetic images lead Hiro and Ando to India and a mysterious ally comes to the aid of our Heroes
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E17%20-%20Cold%20Wars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - Cold Wars
+          </div>
+          <div class="plot">While being held hostage, HRG is subjected to Matt Parkman's unique brand of interrogation, revealing how he became involved with Nathan's government plot to capture those with abilities. Meanwhile, Matt's discoveries bring Peter face-to-face with &quot;The Hunter&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E18%20-%20Exposed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x18 - Exposed
+          </div>
+          <div class="plot">After receiving a tip from &quot;Rebel&quot;, Matt and Peter race to Building 26 to rescue Daphne and recover files that will expose the government's plans for those with abilities. Claire finds help from an unlikely source in smuggling Alex out of the city. As Sylar and Luke continue their road trip, Sylar begins to have memories of his father that lead him to the truth about his mother. Meanwhile, &quot;The Hunter&quot; puts his own agenda into action with an explosive surprise for one of our heroes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E19%20-%20Shades%20of%20Gray-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x19 - Shades of Gray
+          </div>
+          <div class="plot">When Sylar comes face-to-face with his long lost father, the reunion proves to be what he least expected. Elsewhere, after receiving a tip from &quot;Rebel&quot;, Claire must decide if she will help her sworn enemy, Eric Doyle, evade capture. Meanwhile, as &quot;The Hunter&quot; plans to uncover the Petrelli family's secrets and take control of Nathan's operation, Matt finds himself in the spotlight and on the verge of leveling Capitol Hill.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E20%20-%20Cold%20Snap-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x20 - Cold Snap
+          </div>
+          <div class="plot">HRG convinces Emile Danko, a.k.a. &quot;The Hunter&quot;, to release Tracy from Building 26, in hopes that she will lead them to &quot;Rebel&quot;. As Angela evades capture, she turns to an old friend for help. In Los Angeles, Hiro and Ando continue on their latest mission from &quot;Rebel&quot; to protect the newest hero.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E21%20-%20Into%20Asylum-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x21 - Into Asylum
+          </div>
+          <div class="plot">Now that Nathan&rsquo;s ability has been revealed and he has lost control of his operation, he and Claire go into hiding in Mexico. With Emile Danko now in control of the government operation, his plan to destroy everyone with abilities is set into motion as he teams up with an unlikely partner. Meanwhile, Angela and Peter seek refuge in a church and begin to mend their broken relationship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E22%20-%20Turn%20and%20Face%20the%20Strange-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x22 - Turn and Face the Strange
+          </div>
+          <div class="plot">As Danko spearheads the government operation, someone close to him is put in the line of fire. HRG&rsquo;s life continues to spiral out of control and his marriage is dangerously close to the breaking point. Meanwhile, Hiro and Ando continue their road trip with a special delivery for Matt Parkman. Elsewhere, Angela Petrelli unearths the demons of her past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E23%20-%201961-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x23 - 1961
+          </div>
+          <div class="plot">As Nathan, Claire, Peter and H.R.G. help Angela uncover her past, she reveals the dark secrets that have haunted her for years. Meanwhile, Mohinder learns of his father&rsquo;s involvement in a long forgotten government operation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E24%20-%20I%20Am%20Sylar-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x24 - I Am Sylar
+          </div>
+          <div class="plot">Sylar continues his unusual partnership and begins to have an unexpected identity crisis. Hiro and Ando take measures toward bringing down Building 26. Meanwhile, Matt&rsquo;s new found fatherhood changes his priorities. Elsewhere, Nathan sets a plan in motion to right the wrongs of his government operation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S03E25%20-%20An%20Invisible%20Thread-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x25 - An Invisible Thread
+          </div>
+          <div class="plot">Nathan faces off against Sylar to keep him from meeting the President. Sylar has his own plans for his new partner. Meanwhile, Hiro learns that there are repercussions to regaining his ability. Elsewhere, Matt is forced to go to extraordinary lengths to protect his future with his family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E01%20-%20Orientation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Orientation
+          </div>
+          <div class="plot">Claire, back home in California, begins attending college, but is having difficulty adjusting when a mysterious death of a student during the orientation puts her back in the spotlight. In Japan, Hiro and Ando continue their quest to help people with abilities and go so much as to advertise themselves. Meanwhile, Angela fears Nathan/Syler will discover his true identity. Matt tries to settle down back in Los Angeles and raise his son and not worry about unexpected visitors. Elsewhere, Peter is using his ability for good when a mysterious carnival clan, led by Samuel Sullivan, arrives in town which could spell trouble for him and everyone else.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E03%20-%20Ink-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Ink
+          </div>
+          <div class="plot">Peter faces unexpected consequences for his heroic acts and encounters a reluctant new hero. As Claire continues to adjust to college life, she must figure out how to deal with her ability having been revealed. Meanwhile, Samuel moves heaven and earth to recapture the memories of his late brother Joseph. Elsewhere, Matt struggles with his internal demons as Sylar mysteriously resurfaces.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E04%20-%20Acceptance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Acceptance
+          </div>
+          <div class="plot">As &quot;Nathan&quot; starts displaying new powers, he has visions of an incident from his past involving a young girl and decides to investigate. Hiro tries to save a co-worker and learns a truth about himself. Tracy tries to regain her old life and job.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E05%20-%20Hysterical%20Blindness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Hysterical Blindness
+          </div>
+          <div class="plot">Samuel prepares for new additions to his family, while Lydia warns him of the consequences. Claire discovers that her roommate Gretchen may have a hidden agenda. Meanwhile, Peter finds an unexpected way to connect with Emma, who would prefer to stay distant. Elsewhere, a different side of Sylar emerges as he desperately tries to remember the person he used to be.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E06%20-%20Tabula%20Rasa-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Tabula Rasa
+          </div>
+          <div class="plot">Under Samuel&rsquo;s guidance, Sylar starts on a path to rediscover his true identity. Hiro helps Emma accept and understand the great possibilities that go along with having an ability. Meanwhile, Peter enlists HRG to help him find a healer who can save Hiro&rsquo;s life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E07%20-%20Strange%20Attractors-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Strange Attractors
+          </div>
+          <div class="plot">Matt goes to extreme measures to extinguish Sylar , who continues to torment him. Elsewhere, HRG calls in a favor from Tracy to save a troubled young boy whose misfortunes resemble her own. While Claire and Gretchen are being hazed by their new sorority sisters, they realize pledging might not be their biggest problem.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E08%20-%20Once%20Upon%20a%20Time%20in%20Texas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Once Upon a Time in Texas
+          </div>
+          <div class="plot">When Hiro travels three years into the past, he has a second chance to save Charlie from the hands of Sylar. However, Samuel&rsquo;s presence serves to complicate Hiro&rsquo;s mission even further. Elsewhere, H.R.G.&rsquo;s past with his Primatech partner is revealed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E09%20-%20Shadowboxing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Shadowboxing
+          </div>
+          <div class="plot">Claire is determined to get to the bottom of the Sorority Rush attacks on her own, until H.R.G. intervenes only to realize he may be the source of her troubles. Meanwhile, Peter's new ability is a perfect fit for his job and gives him the opportunity to help Emma accept her new life. Elsewhere, Sylar's battle at gaining full control over Matt's body escalates with potentially dangerous implications at stake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E10%20-%20Brother%27s%20Keeper-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Brother's Keeper
+          </div>
+          <div class="plot">Samuel learns just how powerful he can become and takes dangerous measures to reach his full potential. Meanwhile, as Tracy begins to lose control of her ability, one of her own comes in harms way. Elsewhere, Sylar continues his battle with Matt.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E11%20-%20Thanksgiving-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Thanksgiving
+          </div>
+          <div class="plot">H.R.G. hosts an untraditional Thanksgiving dinner. Elsewhere, the Petrelli family gets a surprise guest at their table. Meanwhile, Samuel continues to hold Hiro hostage, as Lydia goes in search for the truth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E12%20-%20The%20Fifth%20Stage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - The Fifth Stage
+          </div>
+          <div class="plot">Unexpected visitors greet H.R.G.; Samuel's plan starts to come to fruition; struggling to accept the truth, Peter takes extreme measures to get what he wants; Claire's journey leads her to an unexpected destination.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E13%20-%20Upon%20This%20Rock-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - Upon This Rock
+          </div>
+          <div class="plot">As Claire becomes immersed into the world of the Carnival, she becomes increasingly suspicious of Samuel's motives. Hiro is on a mission to rescue one of his own, but has difficulty communicating his intentions to Ando.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E14%20-%20Let%20It%20Bleed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x14 - Let It Bleed
+          </div>
+          <div class="plot">Sylar returns to the Carnival in search of answers, H.R.G. tries to forge an alliance with Edgar and Peter continues to struggle with the loss of his brother.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E15%20-%20Close%20to%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x15 - Close to You
+          </div>
+          <div class="plot">H.R.G. recruits Matt to help him take down Samuel, as they use his long-lost love, Vanessa, to lure him to them, but Samuel has his own plans for Vanessa in the works. Meanwhile, Hiro and Ando go to extreme lengths to save Dr. Suresh. Elsewhere, Peter's introduction of Emma to his mother brings forth visions of a very grim future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E16%20-%20Pass%20Fail-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x16 - Pass/Fail
+          </div>
+          <div class="plot">Hiros life hangs in the balance as his brain tumor worsens, prompting him to subconsciously deal with some of his past decisions. Meanwhile, Sylar pays Claire an unexpected visit to get answers as to why he isn't quite himself. Elsewhere, Samuels plan to impress his long-lost love, Vanessa, takes a terrifying turn.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E17%20-%20The%20Art%20of%20Deception-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x17 - The Art of Deception
+          </div>
+          <div class="plot">H.R.G. enacts his plan to take down the Carnival with the help of Lauren and Suresh. Sylar visits Matt looking to understand his desire to make a human connection, but Matt has a plan of his own. Meanwhile, Peter warns Emma of Samuel's intentions after his grim vision of the future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E18%20-%20The%20Wall-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x18 - The Wall
+          </div>
+          <div class="plot">Fueled by his vision of Emma in grave danger, Peter attempts to rescue Sylar from his worst nightmare. At the carnival, Samuel reveals H.R.G.s secret past in order to bring Claire to his side. Meanwhile, Lauren makes a bold move to put a stop to Samuel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20-%20S04E19%20-%20Brave%20New%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x19 - Brave New World
+          </div>
+          <div class="plot">Everyone bands together to try to stop Samuel from taking the lives of thousands. Peter joins forces with his most unexpected ally to save Emma. Meanwhile, H.R.G.'s life hangs in the balance as he and Claire find themselves trapped underground with oxygen quickly running out. Elsewhere, Hiro starts to come to grips with the decisions he has made and is called into action to help stop a disaster.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Heroes Reborn
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Heroes Reborn</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Heroes%20Reborn%20%282015%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20Reborn%20-%20S01E01%20S01E02%20-%20Brave%20New%20World%20-%20Odessa-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Brave New World
+          </div>
+          <div class="plot">In a new world order, people with extraordinary abilities are in hiding and are hunted by those with nefarious motives following a catastrophic terrorist attack in Odessa, Texas.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20Reborn%20-%20S01E01%20S01E02%20-%20Brave%20New%20World%20-%20Odessa-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Odessa
+          </div>
+          <div class="plot">Those with extraordinary skills continue to adapt to their discovered powers and a new world order in the wake of a terrorist attack in Odessa, Texas.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20Reborn%20-%20S01E03%20-%20Under%20the%20Mask-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Under the Mask
+          </div>
+          <div class="plot">Erica Kravid, the powerful woman behind the global conglomerate Renautas, reveals just how far she will go to protect the world from Evos. Tommy finds comfort in sharing his ability with Emily and a new-found popularity at school. In Japan, Miko's  rescue mission comes up against some unexpected obstacles. Elsewhere, Noah Bennet continues to work with Quentin in his search for the truth and Malina is guided by an unseen force. Meanwhile, Luke and Joanne continue on their deadly mission and Carlos' search for answers causes him to dig deep to find the hero within.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20Reborn%20-%20S01E04%20-%20The%20Needs%20of%20the%20Many-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Needs of the Many
+          </div>
+          <div class="plot">In search of someone from his past, Noah Bennet breaks in to Renautas for answers. Miko continues her rescue mission and travels in search of her sword. Elsewhere, Tommy must use his ability to save the life of someone close to him. Meanwhile, Luke comes up against unexpected obstacles in his relationship with his wife, Joanne, while Carlos takes major steps forward in his heroic journey.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20Reborn%20-%20S01E05%20-%20The%20Lion%27s%20Den-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Lion's Den
+          </div>
+          <div class="plot">Noah and Quentin take on Renautas. Miko's plan to retrieve her sword may land her in trouble. Malina's journey bring her closer to the truth. Luke returns home to confront his past. The authorities close in on Tommy. Carlos may have found an unexpected ally and Erica solidifies her plans.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20Reborn%20-%20S01E06%20-%20Game%20Over-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Game Over
+          </div>
+          <div class="plot">Noah Bennet takes matters into his own hands to get much-needed answers. After Tommy makes a startling discovery, he and Emily go on an unexpected journey. Elsewhere, Luke continues to come to grips with the fact that he has become what he has been hunting. Malina finds a surprising ally. Miko stays on the course to save her father, but Erica takes measures to interfere. Meanwhile, Carlos learns more about what is really going on with EVOS from an unlikely source.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20Reborn%20-%20S01E07%20-%20June%2013th%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - June 13th (1)
+          </div>
+          <div class="plot">In an effort to get answers, Noah Bennet joins forces with Hiro Nakamura to return to the day of the tragic events of June 13, 2014 that set everything in motion. On the verge of delivering a speech to commemorate the event, Mohinder Suresh receives a dire message from Angela Petrelli about Erica Kravid's true motives. In Japan, Hachiro Otomo makes a calculated move against Hiro Nakamura. Meanwhile, a much happier Luke and Joanne come to Odessa in hopes of finding a cure to their son's ailment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20Reborn%20-%20S01E08%20-%20June%2013th%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - June 13th (2)
+          </div>
+          <div class="plot">In the wake of an unspeakable tragedy, Erica Kravid puts her dark plan into motion with Renautas. Hiro and Angela are tasked with an important mission that could change the course of humanity. In Odessa, a distraught Luke and Joanne come to realize their tragic mission after the loss of their son. Meanwhile, Noah Bennet has an unexpected reunion with Matt Parkman. In Japan, the origins of Miko come to light. Elsewhere, the truth behind Carlos' military service is revealed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20Reborn%20-%20S01E09%20-%20Sundae%2C%20Bloody%20Sundae-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Sundae, Bloody Sundae
+          </div>
+          <div class="plot">Noah is on the hunt for Tommy to reveal his past to him and guide him on his destiny to stop a catastrophic event. Taylor's discoveries about her mother, Erica Kravid, leads to her capture by an underground group. Erica escalates her search for Tommy and Malina as the race to finalize her dangerous plans intensifies. Elsewhere, Emily has an unexpected reunion with Joanne. Meanwhile, Dearing leads Carlos closer to finding his kidnapped nephew and Luke and Malina are separated in a violent encounter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20Reborn%20-%20S01E10%20-%201153%20to%20Odessa-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - 11:53 to Odessa
+          </div>
+          <div class="plot">The destinies of Noah and Luke finally intersect as Malina unleashes her true power to save those around her. Tommy may need to join forces with his enemy, Erica Kravid, to complete his mission. Meanwhile, Carlos confronts his violent past while under the watchful eyes of Matt Parkman. Elsewhere, Ren is tasked with the impossible mission of finding Miko.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20Reborn%20-%20S01E11%20-%20Send%20in%20the%20Clones-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Send in the Clones
+          </div>
+          <div class="plot">Following Noah's mysterious disappearance, Luke and Malina unite to rescue Tommy and save mankind. At the mysterious Sunstone Manor, Carlos and Farah fight alongside The Haitian to take down Matt Parkman and free the prisoners under his control. Tommy and Miko join forces against Erica and her brutal plan for the future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20Reborn%20-%20S01E12%20-%20Company%20Woman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Company Woman
+          </div>
+          <div class="plot">Tommy helps Erica with her survival plan as the end of civilization approaches; Malina rushes to reunite with Tommy as a plot against them is formed; Matt Parkman's attempts to make sure he and his family are safe could jeopardize Taylor's safety.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Heroes%20Reborn%20-%20S01E13%20-%20Project%20Reborn-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Project Reborn
+          </div>
+          <div class="plot">As the clock counts down to the end of the world, Tommy finds himself up against his biggest challenge yet as Erica takes drastic measures to see her plan succeed. Malina tries to fulfill her great-grandmother's prophecy to save the world with the help of Luke and Quentin. Emily and Ren desperately search for Miko. Carlos is faced with a life and death choice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

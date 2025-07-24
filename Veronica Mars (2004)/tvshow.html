@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Veronica Mars
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Veronica Mars</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Veronica%20Mars%20%282004%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">While trying to navigate the everyday drama of high school, the smart, fearless, 17-year-old Veronica Mars also moonlights as an apprentice private investigator out to solve her wealthy town of Neptune's toughest mysteries. After coming to the aid of the new kid, sophomore Wallace Fennel, who's been duct-taped to the school's flagpole, Veronica ends up incurring the wrath of the thugs who put him there, Eli &quot;Weevil&quot; Navarro and his P.C.H. Biker Boyz. To get Weevil and his gang off her and Wallace's case, Veronica devises an intricate plan that helps some of Weevil's cronies avoid trouble with the law.
+
+Meanwhile, defying her father, Keith Mars, the disgraced former sheriff turned private eye, Veronica pursues a late-night case of adultery against billionaire Jake Kane, only to make an unsettling discovery about her mother, who abandoned Veronica and Keith a year ago.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E02%20-%20Credit%20Where%20Credit%27s%20Due-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Credit Where Credit's Due
+          </div>
+          <div class="plot">Veronica doesn't believe the evidence adds up against Weevil, who has confessed to stealing credit card applications from Logan's family, and launches an investigation to help her new ally.
+
+Meanwhile, after joining Ms. Mallory Dent's newspaper class, Veronica clashes with socialite Caitlin Ford, Logan's bombshell girlfriend, but is intrigued by the attention shown to her by another wealthy student, Troy Vandegraff, a friend of ex-boyfriend Duncan. Later, Veronica learns that Lilly got a ticket driving her car on the day she died -- two hours after her supposed time of death.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E03%20-%20Meet%20John%20Smith-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Meet John Smith
+          </div>
+          <div class="plot">With only a commonplace name, an old address and dim memories as leads, Veronica and Wallace attempt to help classmate Justin Smith find his father John, who disappeared 10 years earlier.
+
+Meanwhile, as Veronica faces some complicated feelings towards ex-boyfriend Duncan and new romantic interest Troy, guidance counselor Rebecca James calls Keith to the school to discuss the recent, dramatic changes in his daughter's life. Later, Duncan struggles with ways to cope with his sister's death as the anniversary of her murder approaches.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E04%20-%20The%20Wrath%20of%20Con-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Wrath of Con
+          </div>
+          <div class="plot">In an effort to help Wallace's new crush Georgia, who was duped out of her money in an internet scheme, Veronica must outwit a group of computer &quot;thugs,&quot; known as the Silicon Mafia.
+
+Meanwhile, Keith makes Veronica introduce him to her new boyfriend Troy before allowing her to go to the homecoming dance with him. Later, Logan helps Duncan edit together a memorial video for a school dedication ceremony marking the one-year anniversary of Lilly's death. The dance and the video bring back Veronica's memories of when the four of them were friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E05%20-%20You%20Think%20You%20Know%20Somebody-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - You Think You Know Somebody
+          </div>
+          <div class="plot">Veronica tries to help her new boyfriend Troy find his father's stolen car and turns to Weevil for assistance, but the situation becomes dangerous when she discovers that Logan and Troy's buddy Luke might have left more than a piata in the car after their night out in Tijuana.
+
+While Keith has accepted that his wife is gone and begins dating school guidance counselor Rebecca James, Veronica continues to secretly investigate her mother's whereabouts, leading her to stumble on a secret Lianne Mars was keeping.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E06%20-%20Return%20of%20the%20Kane-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Return of the Kane
+          </div>
+          <div class="plot">Veronica investigates possible fraud in the election of student council president at school after Duncan wins, beating a more popular, but less affluent student who promised to eliminate the wealthy students' on-campus perks.
+
+Meanwhile, Logan causes a public relations nightmare for his movie star parents Aaron and Lynn Echolls when footage of him organizing boxing matches between homeless men is posted on the internet and leaked to the media. Later, Veronica and Keith learn that the man who admitted to murdering Lilly is set to be executed, but a second look at crime scene photographs puts his confession in question.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E07%20-%20The%20Girl%20Next%20Door-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Girl Next Door
+          </div>
+          <div class="plot">Veronica becomes suspicious when a young pregnant woman who lives in their apartment complex with her volatile boyfriend suddenly disappears; fearing the worst, Keith steps in to help his daughter investigate this case for the girl's estranged parents.
+
+Meanwhile, Logan and Weevil get thrown into detention together after arguing with a teacher, leading the rivals to discover some surprising things in common. Later, while working on an alumni photo project in her journalism class, Veronica is shocked to discover in the '79 yearbook that her mother and Jake Kane were high-school sweethearts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E08%20-%20Like%20a%20Virgin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Like a Virgin
+          </div>
+          <div class="plot">To help restore a cheerleader's ruined reputation, Veronica turns to funky computer geek Mac to find the hacker responsible for leaking the embarrassing, private results of a popular online &quot;purity test&quot; to all of Neptune High. Meanwhile, Keith helps Wallace and his mom with an unruly tenant in their building. Later, to get answers about Lilly's murder, Veronica attempts to visit Lilly's confessed, condemned killer Abel Koontz in prison.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E09%20-%20Drinking%20the%20Kool-Aid-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Drinking the Kool-Aid
+          </div>
+          <div class="plot">The wealthy parents of a Neptune High senior hire Keith and Veronica to investigate a cult-like group and its charismatic leader after their son Casey moves out to live on the collective farm. Meanwhile, Veronica attempts to get to the bottom of Abel Koontz' claim that her real father is Jake Kane.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E10%20-%20An%20Echolls%20Family%20Christmas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - An Echolls Family Christmas
+          </div>
+          <div class="plot">When Weevil's poker winnings go missing after a game at Logan's place, Veronica questions each player to piece together the evening's events and catch the thief. Meanwhile, on the eve of the Echolls' annual Christmas party extravaganza, Keith is hired by Lynn Echolls to track down one of her husband Aaron's potential stalkers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E11%20-%20Silence%20of%20the%20Lamb-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Silence of the Lamb
+          </div>
+          <div class="plot">Veronica uncovers information that her fellow outcast Mac was switched at birth with a more affluent student, causing Veronica to examine her own questions about whom her real father may be. Meanwhile, a serial killer has resurfaced in Neptune forcing Sheriff Lamb to forge a reluctant, tense partnership with Keith. Later, Veronica flirts with a handsome young rookie at the sheriff's department to obtain more information on Lilly's murder.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E12%20-%20Clash%20of%20the%20Tritons-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Clash of the Tritons
+          </div>
+          <div class="plot">When a family accuses Veronica of providing a fake ID to their son, now in an alcohol-induced coma, and files suit, the search to find who's really responsible leads Veronica to a clandestine, exclusive organization operating on Neptune High's campus with a possible connection to Duncan.
+
+Meanwhile, Aaron Echolls hires Keith to find out who's been supplying pictures to the tabloids that have humiliated his wife Lynn. Later, Veronica bugs Ms. James' office to eavesdrop on grief counseling sessions, and learns some surprising information about her friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E13%20-%20Lord%20of%20the%20Bling-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Lord of the Bling
+          </div>
+          <div class="plot">After being hired by hip-hop heavyweight Percy &quot;Bone&quot; Hamilton to find his kidnapped daughter, Veronica and Keith look to the music mogul's long list of enemies, family members and the girl's Neptune High social circle for clues on her whereabouts. Meanwhile, following Lynn Echolls' apparent suicide, Logan cynically endures his father Aaron's effusive displays of grief as they prepare for her memorial ceremony.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E14%20-%20Mars%20vs.%20Mars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Mars vs. Mars
+          </div>
+          <div class="plot">When one of Neptune High's haughtier students brings a sexual harassment suit against a favorite teacher, Veronica finds herself pitted against her father when the girl's parents hire Keith to help in their case. Meanwhile, with the tabloids claiming his mom is still alive, Logan turns to Veronica to help him track down the truth. Later, Veronica discovers more unsettling information about Duncan's hidden medical condition.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E15%20-%20Ruskie%20Business-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Ruskie Business
+          </div>
+          <div class="plot">Veronica surprisingly finds herself working as a &quot;love detective&quot; when she's asked to track down her friend Meg's secret admirer and a Russian bride's estranged fianc&eacute;.
+
+Meanwhile, after discovering that one of Lynn Echolls' credit cards is in use, Veronica and Logan go to a Los Angeles hotel in hopes of finding her or a clue.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E16%20-%20Betty%20and%20Veronica-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Betty and Veronica
+          </div>
+          <div class="plot">Following an emotional reunion with her mother, Veronica is hired to track down Neptune High's beloved mascot, Polly the Parrot, which was apparently kidnapped by a rival school on the eve of a big basketball game.
+
+Meanwhile, with her suspicions about the Kane family rekindled, Veronica attempts to gain access to her father's original interrogation tapes. Later, Veronica's relationship with Deputy Leo heats up, as does Meg's relationship with Duncan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E17%20-%20Kanes%20and%20Abel%27s-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Kanes and Abel's
+          </div>
+          <div class="plot">Veronica investigates who at school is doing everything possible to distract Sabrina from studying and wreck her grades in an obvious attempt to sabotage her chances at becoming valedictorian.
+
+Meanwhile, an unsavory, rival private investigator makes Keith a business offer. Later, Veronica pursues a risky lead that could discredit Abel Koontz's confession, as Logan stumbles onto her detailed files on everyone connected to Lilly's murder.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E18%20-%20Weapons%20of%20Class%20Destruction-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Weapons of Class Destruction
+          </div>
+          <div class="plot">A series of fire drills leads Veronica to discover that Neptune High has been receiving bomb threats, so she enlists Wallace and Mac's help to investigate classmates who could pose a serious threat to the school, including new student Ben.
+
+Meanwhile, Keith stuns Veronica with the news of who he's been secretly dating. Later, Duncan confronts Veronica about her ongoing investigation into his sister's death.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E19%20-%20Hot%20Dogs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Hot Dogs
+          </div>
+          <div class="plot">While helping her classmate Mandy search for her missing Jack Russell terrier, Veronica stumbles onto a bigger mystery, which affects pets all over Neptune.
+
+Meanwhile, tensions mount in the Echolls family as Trina tries to convince the now-retired Aaron to take a part in her new boyfriend's independent movie. Later, Weevil is arrested for breaking into the Kane residence and taking something from Lilly's room.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E20%20-%20M.A.D-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - M.A.D.
+          </div>
+          <div class="plot">When a classmate's boyfriend threatens to post a humiliating video of the girl online if she dumps him, Veronica helps her concoct a scheme to ensure &quot;mutually assured destruction&quot; if he doesn't allow the relationship to end peacefully.
+
+Meanwhile, Keith begins to search for Duncan after his parents post a huge reward for information on his whereabouts. Later, as her secret new relationship heats up, Veronica learns a disturbing new fact about the night that she was drugged and assaulted.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E21%20-%20A%20Trip%20to%20the%20Dentist-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - A Trip to the Dentist
+          </div>
+          <div class="plot">Determined to get to the truth behind who drugged and assaulted her at a party the year before, Veronica questions her friends and many rivals about the chain of events that night at Shelley Pomroy's house. Meanwhile, when one of Veronica and Wallace's stunts affects her job at Kane Software, Alicia confronts Keith about his daughter's behavior. Later, in an attempt to get closer to his son, Aaron throws a birthday party for Logan that inadvertently surprises everyone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S01E22%20-%20Leave%20It%20to%20Beaver-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Leave It to Beaver
+          </div>
+          <div class="plot">In the shocking, action-packed season finale, a determined Veronica must betray someone she cares deeply about in order to solve the season-long mystery of who murdered her best friend Lilly Kane, but what she discovers puts her life in serious danger. Meanwhile, on the eve of a reception for the Governor of Calif., Jake Kane asks Duncan if he really wants to know what happened on the night Lilly died. Later, Keith awaits the results of a paternity test.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E01%20-%20Normal%20Is%20the%20Watchword-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Normal Is the Watchword
+          </div>
+          <div class="plot">After the summer fireworks caused by a dangerous confrontation with Lilly Kane's murderer and a surprising visitor at her door, Veronica attempts to settle into &quot;normal&quot; life, complete with a new after-school job and a return to the popular fold at Neptune High, but she gets pulled back into the investigation business when Wallace is kicked off the basketball team for testing positive for drugs.Meanwhile, Keith sits down with reporter Julie Chen to discuss his new book on the Lilly Kane murder, &quot;Big Murder, Small Town.&quot; Later, after seeing his father arrested for murder and being charged and tried for murder himself, Logan seeks refuge from the paparazzi and relaxes poolside at the Casablancas mansion with buddies Dick and &quot;Beaver&quot;  and their sexy stepmother Kendall.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E02%20-%20Driver%20Ed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Driver Ed
+          </div>
+          <div class="plot">After tragedy strikes Neptune, Calif. and the local sheriff rushes to judgment, an emotional Veronica attempts to help a grieving family member rule out suicide as a contributing cause in the calamity. Meanwhile, Wallace offers to help transfer student Jackie Cook, the fiery, flirty daughter of professional baseball player Terrence Cook, track down the person who damaged her car in the school lot. Later, mayoral candidate Woody Goodman asks Keith to consider running for sheriff.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E03%20-%20Cheatty%20Cheatty%20Bang%20Bang-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Cheatty Cheatty Bang Bang
+          </div>
+          <div class="plot">Beaver hires Veronica to investigate his stepmother, Kendall, who he believes is cheating on his dad and planning to clean him out, but both are shocked by what they discover. Meanwhile, Wallace begins dating Jackie, against Veronica's advice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E04%20-%20Green-Eyed%20Monster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Green-Eyed Monster
+          </div>
+          <div class="plot">While dealing with her own feelings of jealousy regarding Duncan, Veronica helps a young woman who believes that her new fianc&eacute;e is secretly after her fortune by sifting through his background and even posing as a sexy, available coed to entrap the guy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E05%20-%20Blast%20from%20the%20Past-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Blast from the Past
+          </div>
+          <div class="plot">Deciding to give Jackie the benefit of the doubt since she's dating Wallace, Veronica tries to help Jackie determine who stole her credit card, leading Veronica to appear on a psychic's community access show to pursue a lead. Meanwhile, Wallace confronts his mother Alicia about who his real father is. Later, Veronica learns of a voice mail recording from one of the students that died, made at the moment the bus crash.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E06%20-%20Rat%20Saw%20God-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Rat Saw God
+          </div>
+          <div class="plot">With Aaron Echolls facing trial for Lilly's murder, the previously accused Abel Koontz appears to enlist Veronica's help in finding his missing daughter Amelia, leading to a confrontation with Kane Software's head of security. Meanwhile, Logan is arrested
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E07%20-%20Nobody%20Puts%20Baby%20in%20a%20Corner-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Nobody Puts Baby in a Corner
+          </div>
+          <div class="plot">Veronica and Duncan discover that the still-comatose Meg had been babysitting an abused child, leading Veronica to take on an unfamiliar role as a babysitter to determine the kid's identity. Meanwhile, Kendall continues her affair with Logan as her stepso
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E08%20-%20Ahoy%2C%20Mateys%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Ahoy, Mateys!
+          </div>
+          <div class="plot">Veronica helps Keith determine who is haunting a school bus crash victim's parents, currently embroiled in a suit against the school district for negligence.Meanwhile, after Logan asks for help fighting the murder charge against him, Veronica stumbles
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E09%20-%20My%20Mother%2C%20the%20Fiend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - My Mother, the Fiend
+          </div>
+          <div class="plot">After finding her mother's old permanent record at school, Veronica wonders how well she knew her mother at all, and decides to investigate her mother's school friends. Meanwhile, Trina takes the role of director in the school play, and while she has a confrontation with Kendall, Veronica has one with Celeste.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E10%20-%20One%20Angry%20Veronica-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - One Angry Veronica
+          </div>
+          <div class="plot">Called to jury duty over Christmas break, Veronica must sit on a difficult, polarizing case against a pair of affluent 09'er defendants accused of assaulting a young Hispanic woman. Meanwhile, when the Aaron Echolls/Lilly Kane sex tapes go missing from th
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E11%20-%20Donut%20Run-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Donut Run
+          </div>
+          <div class="plot">When Duncan disappears with Meg's baby, Lamb must work with two FBI agents to extract as much information as possible from an uncooperative Veronica. Meanwhile, Wallace reveals the real reason he returned to Neptune, and Weevil and Logan make a breakthrough in their hunt for the rogue gang member.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E12%20-%20Rashard%20and%20Wallace%20Go%20to%20White%20Castle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Rashard and Wallace Go to White Castle
+          </div>
+          <div class="plot">Wallace's hopes of escaping his trouble in Chicago are dashed when Rashard's uncle accuses him in the press of a hit and run. Meanwhile, Weevil has Veronica bug a church confessional to smoke out the traitor in his bike gang.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E13%20-%20Ain%27t%20No%20Magic%20Mountain%20High%20Enough-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Ain't No Magic Mountain High Enough
+          </div>
+          <div class="plot">When the profits from the Neptune High Winter Carnival go missing, Veronica finds herself defending Jackie from the condemning teachers and students. Meanwhile, Keith meets with her father, Terrence Cook, after he is accused of playing a role in the bus crash, and Logan initiates a new relationship while Beaver continues an old one.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E14%20-%20Versatile%20Toppings-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - Versatile Toppings
+          </div>
+          <div class="plot">When a private website for Neptune High's gay students is hacked, and the members blackmailed, Veronica finds it difficult to track down the culprit when the victims want to remain anonymous. Meanwhile, Hannah finds out Logan's true intentions, and Keith believes he has found an alibi for Terrence.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E15%20-%20The%20Quick%20and%20the%20Wed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - The Quick and the Wed
+          </div>
+          <div class="plot">Wallace's new girlfriend Jane enlists Veronica's help when her older sister Heidi appears to be a &quot;runaway bride,&quot; but the clues suggest something possibly more disturbing happened on the way to the altar. Meanwhile, Keith and Veronica decide that they have no choice but to go to Sheriff Lamb with the evidence they've uncovered about the bus crash. Later, Kendall has a tempting offer for Aaron Echolls.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E16%20-%20The%20Rapes%20of%20Graff-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - The Rapes of Graff
+          </div>
+          <div class="plot">While accompanying Wallace to Hearst College, she runs into her ex, Troy Vandergraff, who enlists her help when he is accused of date rape. Meanwhile, Keith helps Cliff with a personal problem involving a prostitute, and Logan makes a decision regarding his relationship with Hannah.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E17%20-%20Plan%20B-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Plan B
+          </div>
+          <div class="plot">Overcome with guilt and frustration, Weevil asks Veronica for help to bring Felix's true killer to justice, but realizes he may have to take matters into his own hands.Meanwhile, Keith reviews a strange DVD that Woody receives in the mail, and relationship troubles brew between Wallace and Jane, and Mac and Cassidy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E18%20-%20I%20Am%20God-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - I Am God
+          </div>
+          <div class="plot">Veronica begins having dreams involving the dead students from the bus crash, who drop clues along the way. Meanwhile, Logan and Wallace become unlikely lab partners in Mr. Wu's class, and Keith helps Clemmons expose a doctor's scam.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E19%20-%20Nevermind%20the%20Buttocks-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Nevermind the Buttocks
+          </div>
+          <div class="plot">What promises to be a simple case of finding out who ran over a classmate's dog turns into a startling revelation when new secrets about the bus crash come pouring out and Veronica finds herself again revisiting Lilly's murder case. Meanwhile, Wallace and Jackie try to turn their relationship around the corner, and the PCHers turn to Weevil for protection from the Fitzpatricks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E20%20-%20Look%20Who%27s%20Stalking-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - Look Who's Stalking
+          </div>
+          <div class="plot">Gia enlists Veronica's help to find out who is stalking her, and Clemmons cancels the senior prom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E21%20-%20Happy%20Go%20Lucky-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - Happy Go Lucky
+          </div>
+          <div class="plot">Veronica takes the stand in Aaron Echolls's murder trial, and is distracted during final exams while waiting for the verdict. Meanwhile, Keith takes new evidence about the mayor to Lamb, and Weevil asks Mac and Cassidy for help to pass algebra.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S02E22%20-%20Not%20Pictured-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - Not Pictured
+          </div>
+          <div class="plot">After discovering the true perpetrator of the bus crash, Veronica is desperate to warn others before it's too late. However, she inadvertently puts herself and her loved ones at risk in the process.
+
+Meanwhile, Keith tracks down Woody in hiding, Wallace leaves for Paris to be with Jackie, and Weevil again runs into trouble with the law.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E01%20-%20Welcome%20Wagon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Welcome Wagon
+          </div>
+          <div class="plot">Veronica begins college with Logan, Wallace and Mac, but is immediately drawn back into old detective habits when Piz, Wallace's new roommate, gets all his stuff stolen. Meanwhile, Keith helps reunite Kendall with an old love, recently released from prison.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E02%20-%20My%20Big%20Fat%20Greek%20Rush%20Week-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - My Big Fat Greek Rush Week
+          </div>
+          <div class="plot">The campus newspaper hires Veronica for an undercover expose on the Zeta Theta sorority sisters during rush week to investigate Parker&rsquo;s rape. Veronica begins to realize though that not everything is as it appears in the sorority house. Logan and Wallace take part in a challenging Sociology class role-playing experiment as prisoner and prison guard, and Keith treks through the desert after escaping from the scene of a crime.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E03%20-%20Wichita%20Linebacker-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Wichita Linebacker
+          </div>
+          <div class="plot">Veronica's detective prowess is again used on campus when Piz's football friend loses the team playbook and Veronica must get it back before the game. The Dean threatens to expel Veronica if she doesn't reveal the source of her newspaper article. Meanwhile, Keith hires Weevil to work in the office, and Logan's antics catch up with him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E04%20-%20Charlie%20Don%E2%80%99t%20Surf-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Charlie Don&rsquo;t Surf
+          </div>
+          <div class="plot">Logan gets a big surprise when he hires Veronica to find the source of his missing inheritance, which escalates from weird to worse. Meanwhile, Dick's fraternity asks Veronica to prove their innocence in the campus rapes, and Keith helps an old acquaintance prove her husband is cheating.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E05%20-%20President%20Evil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - President Evil
+          </div>
+          <div class="plot">When the illegal casino Veronica frequents is robbed, she must track down the thief to recover the necklace Lilly gave her years before. Meanwhile, Dean O'Dell's stepson is dying of cancer and needs Keith to track down his biological father for a transplant (with Cliff's help), and Wallace fears he may flunk out of his most important class.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E06%20-%20Hi%2C%20Infidelity-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Hi, Infidelity
+          </div>
+          <div class="plot">When Veronica's term paper appears on the internet, she is accused of cheating by the TA and must prove her innocence. Meanwhile, Wallace has problems of his own when long basketball practices distract him from his studies, and Keith begins seeing Harmony Chase.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E07%20-%20Of%20Vice%20and%20Men-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Of Vice and Men
+          </div>
+          <div class="plot">Veronica helps a girl named Meryl who is certain that her boyfriend is in trouble, while a jaded Veronica tries to convince her that he is cheating. Meanwhile, Logan reluctantly tells Veronica why he is sure Mercer didn't commit the rapes, and Keith finds that there is a heavy price to pay for committing adultery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E08%20-%20Lord%20of%20the%20Pi%E2%80%99s-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Lord of the Pi&rsquo;s
+          </div>
+          <div class="plot">Keith and Veronica are hired to help find the missing grand-daughter of the founder of Hearst College, whose swing vote could spell the end of fraternities and sororities at Hearst. Meanwhile, Logan fears for Veronica's safety as she gets closer to the truth regarding the campus rapes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E09%20-%20Spit%20%26%20Eggs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Spit &amp; Eggs
+          </div>
+          <div class="plot">After the campus rapist anonymously announces the location of his next rape, Veronica hires her friends to help her track him down, but is shocked when she discovers the rapist's identity. Meanwhile, Logan makes a drastic decision about his future with Veronica, and Dean O'Dell hires Keith to prove that his wife is unfaithful.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E10%20-%20Show%20Me%20the%20Monkey-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Show Me the Monkey
+          </div>
+          <div class="plot">Veronica and Mac help campus researchers locate a missing monkey who was allegedly stolen by animal rights activists. Meanwhile, Keith is approached by Mindy O'Dell, who claims her husband's death was murder, not suicide. And in the aftermath of his breakup with Veronica, Logan turns to Dick for advice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E11%20-%20Poughkeepsie%2C%20Tramps%20and%20Thieves-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Poughkeepsie, Tramps and Thieves
+          </div>
+          <div class="plot">Veronica is hired to track down a one-night-stand, but the situation becomes more complicated when she turns out to be a hooker. Meanwhile, Keith continues his investigation in Dean O'Dell's death, and a visit by Madison Sinclair causes trouble for Veronica and Logan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E12%20-%20There%27s%20Got%20to%20be%20a%20Morning%20After%20Pill-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - There's Got to be a Morning After Pill
+          </div>
+          <div class="plot">Veronica is hired to find out who slipped a classmate a drug causing her to have a miscarriage against her will, but is distracted by Logan who admits to sleeping with Madison Sinclair. Meanwhile, Keith helps Mindy O'Dell when her ex-husband breaks into their house.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E13%20-%20Postgame%20Mortem-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Postgame Mortem
+          </div>
+          <div class="plot">Keith takes on a second concurrent murder case when the head of the Hearst basketball team turns up dead and his son is the prime suspect. Meanwhile, a depressed Logan refuses to leave his hotel room and ends up babysitting Dick's girlfriend's little sister for days.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E14%20-%20Mars%2C%20Bars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - Mars, Bars
+          </div>
+          <div class="plot">When Veronica is released from jail, she is contacted by Josh Barry who is desperate to prove his innocence in his father's murder. Meanwhile, Keith gets bittersweet news from the county commissioner, and Logan helps Mac and Parker on a scavenger hunt.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E15%20-%20Papa%27s%20Cabin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - Papa's Cabin
+          </div>
+          <div class="plot">When Veronica discovers Timothy Foyle breaking into Mars Investigations, she uses his help to track down Dean O'Dell's true killer. Meanwhile, Logan and Parker's relationship takes an unexpected turn, and acting Sheriff Mars brings another murderer to justice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E16%20-%20Un-American%20Graffiti-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - Un-American Graffiti
+          </div>
+          <div class="plot">With Keith acting-sheriff, Veronica goes solo on a case involving a local restaurant whose owners are the targets of hate crimes. Meanwhile, Keith is disturbed by the lack of professionalism in his deputies when he orders them to fine bars serving alcohol to underage patrons. Logan throws a birthday party for Parker, and Piz decides to finally confront Veronica about his feelings.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E17%20-%20Debasement%20Tapes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - Debasement Tapes
+          </div>
+          <div class="plot">Desmond Fellows, a singer/musician from a 1990's pop band arrives on the Hearst campus to perform at a benefit concert to keep the station from going out of business. Piz gets the job of his dreams when he is put in charge of hosting Fellows around campus and on air. However his dreams start to dissolve as things don't go quite how he imagined, in more ways then one. Keith is excited about the upcoming Sheriff's race unopposed until he unwittingly helps promote an unlikely candidate who throws his hat into the ring.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E18%20-%20I%20Know%20What%20You%27ll%20Do%20Next%20Summer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x18 - I Know What You'll Do Next Summer
+          </div>
+          <div class="plot">Apollo, a Hearst student who suffered hardships as a child soldier in Africa, appears on Piz's radio show, prompting a man to come forth claiming to be his father. But Veronica's investigation unearths some surprises. Meanwhile, Neptune is faced with a crime spree that could spell trouble for Keith's campaign, and Logan finds himself in a difficult situation when Parker wants to spend to summer with him. Veronica awaits the results of her FBI exam.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E19%20-%20Weevils%20Wobble%20But%20They%20Don%27t%20Go%20Down-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x19 - Weevils Wobble But They Don't Go Down
+          </div>
+          <div class="plot">Weevil asks Veronica to clear his name after he's arrested for selling fake debit cards to Hearst students, claiming he's being framed because of his criminal background.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S03E20%20-%20The%20Bitch%20Is%20Back-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x20 - The Bitch Is Back
+          </div>
+          <div class="plot">As the end of the first semester at Hearst College draws to an end, the election for sheriff in Neptune comes to a close and Veronica and Piz discuss the effect a summer apart will have on their relationship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S04E01%20-%20Spring%20Break%20Forever-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Spring Break Forever
+          </div>
+          <div class="plot">Panic spreads through Neptune when a bomb goes off during spring break. Veronica and Keith are hired by the wealthy family of one victim injured in the bombing to find out who is responsible.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S04E02%20-%20Chino%20and%20the%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Chino and the Man
+          </div>
+          <div class="plot">Veronica and Keith launch their investigation. Their involvement puts Police Chief Langdon on edge. Penn goes public with his theory on who the bomber is. Meanwhile, local teen Matty Ross begins her own search for her father&rsquo;s killer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S04E03%20-%20Keep%20Calm%20and%20Party%20On-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Keep Calm and Party On
+          </div>
+          <div class="plot">Veronica and Keith&rsquo;s client, Daniel Maloof, makes a shocking confession. Sheriff Langdon closes in on her top suspect. Veronica and Matty join forces, just as the whole investigation is flipped on its head.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S04E04%20-%20Heads%20You%20Lose-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Heads You Lose
+          </div>
+          <div class="plot">Convinced the bomber is still at large, Veronica visits Chino to learn more about Clyde and Big Dick. Mayor Dobbins&rsquo; request for help from the FBI brings an old flame to Neptune. Veronica confronts her mugger.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S04E05%20-%20Losing%20Streak-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Losing Streak
+          </div>
+          <div class="plot">Veronica discovers Keith has been hiding something scary from her. The real reason for Penn&rsquo;s latest theory on the bomber comes to light. Veronica loses confidence in new friend, Nicole, owner of Comrade Quacks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S04E06%20-%20Entering%20a%20World%20of%20Pain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Entering a World of Pain
+          </div>
+          <div class="plot">As Veronica learns more about Nicole's past, her suspicion deepens. A frantic phone call from Paris leads to a search for Matty. Veronica unwittingly does legwork for Leo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S04E07%20-%20Gods%20of%20War-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Gods of War
+          </div>
+          <div class="plot">Veronica debates coming clean to Nicole. Veronica&rsquo;s fidelity is tested. Veronica and Keith discover they aren&rsquo;t the only ones who believe they&rsquo;ve found the bomber. A surprising potential client tries to hire Mars Investigations.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Veronica%20Mars%20-%20S04E08%20-%20Years%2C%20Continents%2C%20Bloodshed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Years, Continents, Bloodshed
+          </div>
+          <div class="plot">Veronica and Keith follow a new lead, and discover another victim. Matty follows her own instincts, landing herself dangerously close to a killer. Veronica has a tragic epiphany as the clock is ticking.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
