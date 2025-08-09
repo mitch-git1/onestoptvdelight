@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Total Drama Island
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Total Drama Island</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Total%20Drama%20Island%20%282007%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E01%20-%20Not%20So%20Happy%20Campers%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Not So Happy Campers (1)
+          </div>
+          <div class="plot">The twenty two contestants arrive at the island, are divided into teams and learn the rules of the competition they will be taking part in.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E02%20-%20Not%20So%20Happy%20Campers%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Not So Happy Campers (2)
+          </div>
+          <div class="plot">The two teams face their first competition: jumping off a thousand foot cliff into shark infested waters and building a hot tub out of materials they find in crates at the base of the cliff. The first camper is voted off the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E03%20-%20The%20Big%20Sleep-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Big Sleep
+          </div>
+          <div class="plot">The two teams set out on a twenty mile race that they think is the contest on this occasion. However, the real winning team is the one who has the individual that goes to sleep last afterwards. Another camper is voted off the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E04%20-%20Dodge%20Brawl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Dodge Brawl
+          </div>
+          <div class="plot">The two teams participate in a grueling five round game of dodgeball with an unlikely hero determining the outcome. Another contestant leaves the island on the Boat of Losers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E05%20-%20Not%20Quite%20Famous-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Not Quite Famous
+          </div>
+          <div class="plot">The two teams participate in a talent competition and the rivalry between Gwen and Heather intensifies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E06%20-%20The%20Sucky%20Outdoors-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Sucky Outdoors
+          </div>
+          <div class="plot">The two teams must spend a night alone in the woods in the contest for this episode. Another contestant is voted off the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E07%20-%20Phobia%20Factor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Phobia Factor
+          </div>
+          <div class="plot">In this episode, each of the contestants face their worse fears. Another person is voted off the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E08%20-%20Up%20The%20Creek-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Up The Creek
+          </div>
+          <div class="plot">The two teams take canoes to a nearby island and build rescue fires on it in this week's contest. Another contestant is voted off the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E09%20-%20Paintball%20Deer%20Hunter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Paintball Deer Hunter
+          </div>
+          <div class="plot">The two teams compete in a paint ball contest with the teams divided into &quot;hunters&quot; and &quot;deer&quot;. Another person is voted off at the campfire ceremony.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E10%20-%20If%20You%20Can%27t%20Take%20The%20Heat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - If You Can't Take The Heat
+          </div>
+          <div class="plot">The teams compete in a cooking challenge but one person's attitude towards hygiene threatens to doom his team's chances and Heather and LeShawna's conflict reaches a boiling point. Another person is voted off the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E11%20-%20Who%20Can%20You%20Trust-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Who Can You Trust?
+          </div>
+          <div class="plot">The teams take part in a three part competition where trust in team mates could mean the difference between victory and defeat. Another contestant is voted off the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E12%20-%20Basic%20Straining-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Basic Straining
+          </div>
+          <div class="plot">Chef Hatchet makes the teams go through several difficult obstacles designed to make people quit. Another camper is voted off the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E13%20-%20X-Treme%20Torture-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - X-Treme Torture
+          </div>
+          <div class="plot">Chris has the contestants pair off in the next immunity contest. Another person is voted off the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E14%20-%20Brunch%20of%20Disgustingness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Brunch of Disgustingness
+          </div>
+          <div class="plot">The two teams are divided up with the guys on one team and the girls on the other. A surprise awaits the two teams for the next challenge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E15%20-%20No%20Pain%2C%20No%20Game-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - No Pain, No Game
+          </div>
+          <div class="plot">Two campers from the past return to the game as the two teams are dissolved and the campers face an excruciating challenge with individual immunity at stake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E16%20-%20Search%20And%20Do%20Not%20Destroy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Search And Do Not Destroy
+          </div>
+          <div class="plot">The campers are off on a scavenger hunt and Heather does something so horrible that it makes even Gwen cry. Another person is voted off.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E17%20-%20Hide%20and%20Be%20Sneaky-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Hide and Be Sneaky
+          </div>
+          <div class="plot">The campers play an extreme game of Hide and Seek with Chef Hatchet who hunts them down with a huge water gun. Another person is voted off.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E18%20-%20That%27s%20Off%20The%20Chain%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - That's Off The Chain!
+          </div>
+          <div class="plot">The campers are challenged to build their own bikes using supplies from the Arts and Crafts lodge and race them in a dangerous motor cross challenge with invincibility at stake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E19%20-%20Hook%2C%20Line%20And%20Screamer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Hook, Line And Screamer
+          </div>
+          <div class="plot">The campers go through a challenge where they are stalked by a psycho killer and see who can last the longest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E20%20-%20Wawanakwa%20Gone%20Wild%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Wawanakwa Gone Wild!
+          </div>
+          <div class="plot">The campers square off in a challenge where they must trap a certain animal and one person gets a delicious meal as a reward. Another person is voted off the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E21%20-%20Trial%20by%20Tri-Armed%20Triathlon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - Trial by Tri-Armed Triathlon
+          </div>
+          <div class="plot">The six remaining campers are split into three teams of two and must compete in various challenges based on teamwork. Another camper is voted off the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E22%20-%20Haut%20Camp-ture-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Haut Camp-ture
+          </div>
+          <div class="plot">In this episode, we are shown what happened to the campers who have been voted off so far and hear their thoughts of the final five. They also decide who gets to be voted off.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E23%20-%20Camp%20Castaways-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - Camp Castaways
+          </div>
+          <div class="plot">After a huge flood, the campers float away on a deserted island and try to fend for themseleves while dealing with the dangers on the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E24%20-%20Are%20We%20There%2C%20Yeti-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - Are We There, Yeti?
+          </div>
+          <div class="plot">The campers are stuck in the middle of the woods where they have to race back to the camp to win. Another camper is voted off the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E25%20-%20I%20Triple%20Dog%20Dare%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x25 - I Triple Dog Dare You
+          </div>
+          <div class="plot">The remaining three campers participate in a series of dares that were made up by the ones that have been voted off so far. Another camper leaves the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E26%20-%20The%20Very%20Last%20Episode%2C%20Really%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - The Very Last Episode, Really!
+          </div>
+          <div class="plot">Gwen and Owen participate in one last challenge for the grand prize, with all of the previously eliminated campers returning to watch a race filled with sabotage, heartbreak, and brownies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E26%20-%20The%20Very%20Last%20Episode%2C%20Really%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - The Very Last Episode, Really!
+          </div>
+          <div class="plot">Gwen and Owen participate in one last challenge for the grand prize, with all of the previously eliminated campers returning to watch a race filled with sabotage, heartbreak, and brownies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Island%20-%20S01E27%20-%20Total%20Drama%20Drama%20Drama%20Drama%20Island-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x27 - Total Drama Drama Drama Drama Island
+          </div>
+          <div class="plot">Chris has one final challenge for all of the contestants, forcing them to form their own respective teams, and participate in an all-out, no-rules hunt for one million dollars!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

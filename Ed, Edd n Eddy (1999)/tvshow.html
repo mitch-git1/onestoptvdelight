@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Ed, Edd n Eddy
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Ed, Edd n Eddy</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Ed%2C%20Edd%20n%20Eddy%20%281999%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S00E01%20-%20My%20Best%20Friend%20Plank-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - My Best Friend Plank
+          </div>
+          <div class="plot">A uniquely moony and &quot;retro&quot; music video that was created by the Swedish animation company FilmTecknarna.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S00E02%20-%20Ed%2C%20Edd%20n%20Eddy%27s%20Jingle%20Jingle%20Jangle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x2 - Ed, Edd n Eddy's Jingle Jingle Jangle
+          </div>
+          <div class="plot">Ed and Double D explain the true meaning of Christmas to Eddy, who's only in it for the presents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S00E03%20-%20Ed%2C%20Edd%20n%20Eddy%27s%20Hanky%20Panky%20Hullabaloo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x3 - Ed, Edd n Eddy's Hanky Panky Hullabaloo
+          </div>
+          <div class="plot">Love is in the air, as Valentine's Day begins at school.
+
+Each Ed displays his thoughts on the holiday:
+
+Eddy's kissing booth
+
+Edd's Valentine's Day cards
+
+Ed try's to hide from girls.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S00E04%20-%20Ed%2C%20Edd%20n%20Eddy%27s%20Boo%20Haw%20Haw-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x4 - Ed, Edd n Eddy's Boo Haw Haw
+          </div>
+          <div class="plot">The boys' trick-or-treating excursion goes awry when Ed's horror-movie watching catches up to him and he sees monsters everywhere he looks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S00E05%20-%20The%20Incredible%20Shrinking%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x5 - The Incredible Shrinking Day
+          </div>
+          <div class="plot">A music video where Sarah uses a potion to shrink the Eds to a size capable of playing in her dollhouse, with predictable results.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S00E06%20-%20The%20Eds%20are%20Coming-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x6 - The Eds are Coming
+          </div>
+          <div class="plot">Ravenous aliens have descended on Rolf's house, and the kids of the cul-de-sac must band together to defeat the invading scourge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x7 - Ed, Edd n' Eddy - How To Draw Ed
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x8 - Ed, Edd n' Eddy - How to Draw Eddy
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x14 - Ed, Edd n Eddy's Big Picture Show
+          </div>
+          <div class="plot">When a scam goes horribly wrong and leaves the neighborhood kids furious, the Eds embark on a journey to find Eddy's brother in the &quot;Ed, Edd, n Eddy&quot; series finale.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x1 - The Ed-Touchables
+          </div>
+          <div class="plot">Edd is miffed because someone has been in his room, &quot;touching things&quot;. So Eddy devises a plan to catch the mysterious &quot;toucher&quot; and make them all rich.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x2 - Nagged to Ed
+          </div>
+          <div class="plot">The Kanker Sisters find the Eds bug collecting and take them back to their mobile home. At first the Eds like it, but after a while things start to get rough.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x3 - Pop Goes the Ed
+          </div>
+          <div class="plot">The Eds find out that Nazz is having a sprinkler party. They try to show off in front of the kids and end up ripping off their skin-tight bathing suits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x4 - Over Your Ed
+          </div>
+          <div class="plot">Eddy decides that he and Edd are going to teach Ed some social graces and turn him into a &quot;swingin' dude&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x5 - Sir Ed-a-Lot
+          </div>
+          <div class="plot">Ed has to babysit his demanding and whiney sister Sarah. Edd and Eddy show up and reluctantly join &quot;her majesty's&quot; tea party.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x6 - A Pinch to Grow an Ed
+          </div>
+          <div class="plot">Eddy is unhappy because he thinks he's short. Edd makes him a pair of hydraulic, platform shoes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S01E07%20S01E08%20-%20Dawn%20of%20the%20Eds%20-%20Virt-Ed-Go-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Dawn of the Eds
+          </div>
+          <div class="plot">On their way to see a new sci-fi movie, the Eds' imaginations run amok. They crash land in the junkyard and think they're on another planet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S01E07%20S01E08%20-%20Dawn%20of%20the%20Eds%20-%20Virt-Ed-Go-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Virt-Ed-Go
+          </div>
+          <div class="plot">The Eds attempt to construct a club house in a neighborhood tree to solicit memberships from their friends, but not before the Kanker Sisters take it over.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x9 - Read All About Ed
+          </div>
+          <div class="plot">Edd takes on a paper route to save up for an electron microscope. Eddy is immediately lured by the prospect of big money.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x10 - Quick Shot Ed
+          </div>
+          <div class="plot">The Eds come across an old camera. They then decide to take pictures of all the cul-de-sac kids, put them in a calendar, and sell it back to them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x11 - An Ed Too Many
+          </div>
+          <div class="plot">When Sarah falls in love with Edd, the rest of the gang tries to sabotage their relationship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x12 - Ed-n-Seek
+          </div>
+          <div class="plot">The cul-de-sac kids are playing hide and go seek, and the Eds participate in the game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x13 - Look Into My Eds
+          </div>
+          <div class="plot">Edd receives a hypnotizing pinwheel in the mail. Eddy then hypnotizes the kids.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x14 - Tag Yer Ed
+          </div>
+          <div class="plot">Edd needs to gain respect by winning a wrestling match.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x15 - Fool on the Ed
+          </div>
+          <div class="plot">The Eds decide to play practical jokes on the neighborhood children.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x16 - A Boy and His Ed
+          </div>
+          <div class="plot">The Eds try to befriend Kevin in order to gain access to his jawbreaker stash.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x17 - It's Way Ed
+          </div>
+          <div class="plot">After missing a fad, Eddy decides to start a new one.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x18 - Laugh Ed Laugh
+          </div>
+          <div class="plot">The cul-de-sac children come down with chicken pox, leaving the Eds with nothing to do for the day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x19 - A Glass of Warm Ed
+          </div>
+          <div class="plot">Ed starts raiding neighbors' food while sleepwalking.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x20 - Flea-Bitten Ed
+          </div>
+          <div class="plot">The Eds open up a beauty salon for pets, convincing Rolf to let them clean his animals. Meanwhile, Ed learns he is allergic to rabbits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x21 - Who, What, Where, Ed
+          </div>
+          <div class="plot">The Eds want to hatch their own chicken egg, which can only be obtained by trading with Rolf.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x22 - Keeping Up With the Eds
+          </div>
+          <div class="plot">Edd's parents tell him to mow the lawn. Eddy then gets an idea for a potential scam and causes trouble.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x23 - Eds-Aggerate
+          </div>
+          <div class="plot">After a scam goes horribly wrong and damages Kevin's house, Eddy makes up a quick lie, telling Kevin the &quot;Mucky Boys&quot; did it. Kevin is convinced, and soon the whole cul-de-sac is searching for the Mucky Boys.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x24 - Oath to an Ed
+          </div>
+          <div class="plot">The Eds get new clothes, which are still stiff from the store. Ed and Eddy try to break them in but end up ruining them. The Eds hear about the &quot;Urban Rangers&quot; and decide to join in order to receive their awesome uniforms.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x25 - Button Yer Ed
+          </div>
+          <div class="plot">Ed and Edd cannot understand Eddy when he loses his voice. When Edd devises a method of communication, there ends up being a lot of mistranslation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x26 - Avast Ye Eds
+          </div>
+          <div class="plot">The Eds launch a cruise line on the local creek, getting Jonny 2x4 and Jimmy as customers. All goes well until the Kanker Sisters show up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x1 - Know it All Ed
+          </div>
+          <div class="plot">The Eds find a box of turkey basters. Eddy sells them to the kids as Imported Canadian Squirt Guns. The cul-de-sac turns into the Wild West.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x2 - Dear Ed
+          </div>
+          <div class="plot">When the Eds find out Jonny 2x4 and Plank had a falling out, they form a matchmaking service.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x3 - Knock Knock Who's Ed?
+          </div>
+          <div class="plot">Sarah locks the Eds out of the house as a movie marathon starts. They try to get into the other kids' houses to watch it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x4 - One + One = Ed
+          </div>
+          <div class="plot">Edd tells Eddy and Ed that to understand something, you have to take it apart so they take apart everything
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S02E05%20S02E06%20-%20Eeny%2C%20Meeny%2C%20Miney%2C%20Ed%20-%20Ready%2C%20Set%2C%20Ed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Eeny, Meeny, Miney, Ed
+          </div>
+          <div class="plot">Eddy plays a joke on Ed's imagination and convinces him that Edd is a creature from another world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S02E05%20S02E06%20-%20Eeny%2C%20Meeny%2C%20Miney%2C%20Ed%20-%20Ready%2C%20Set%2C%20Ed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Ready, Set, Ed
+          </div>
+          <div class="plot">Annoyed by Kevin's claims to setting world records, Eddy thinks he and his pals can do better and attempt to beat him at his own game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x7 - Hands Across Ed
+          </div>
+          <div class="plot">After watching Ed perform a song-and-dance routine, Eddy decides to put on a show. The Eds announce a telethon to raise money for Ed's eyebrow operation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x8 - Floss Your Ed
+          </div>
+          <div class="plot">Ed has a loose tooth. Edd and Eddy make attempts to pull it out but can't.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x9 - In Like Ed
+          </div>
+          <div class="plot">Eddy is convinced Kevin must be a spy so the Eds set up an agency to track Kevin's movements.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x10 - Who Let the Ed In?
+          </div>
+          <div class="plot">Lost in one of his moments, Ed introduces Eddy and Edd to his imaginary friend Jib.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x11 - Home Cooked Eds
+          </div>
+          <div class="plot">Eddy finds the Kanker sisters' trailer parked on his lawn for their vacation. The girls invade Ed, Edd and Eddy's lives, and Eddy resolves to find the Kankers a new spot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x12 - Rambling Ed
+          </div>
+          <div class="plot">Worn out by Sarah's demands, Ed to packs his room and moves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x13 - To Sir with Ed
+          </div>
+          <div class="plot">Eddy's parents are out for dinner and hired Nazz to baby-sit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x14 - Key to My Ed
+          </div>
+          <div class="plot">Ed finds a key in the street, and Eddy is determined to find out what it opens.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x15 - Urban Ed
+          </div>
+          <div class="plot">Eddy thinks the pace of life is too slow so he schemes to turn the neighborhood into a cityscape.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x16 - Stop, Look and Ed
+          </div>
+          <div class="plot">Everywhere the Eds look, there's a sign saying they can't do something. Eddy convinces Ed and Edd that those rules don't apply to them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x17 - Honor Thy Ed
+          </div>
+          <div class="plot">Ed, Edd and Eddy wander into a house and discover the Kankers have set it up for a wedding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x18 - Scrambled Ed
+          </div>
+          <div class="plot">Eddy has come up with a scam but Edd's sleep deprived. Eddy and Ed put Edd to work but Edd can't think straight so his plans grow bizarre.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x19 - Rent-a-Ed
+          </div>
+          <div class="plot">Eddy and Edd form a repair company using Ed as their multi-purpose tool. The Eds go into kids' homes to repair broken things. Ed breaks everything he touches.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x20 - Shoo Ed
+          </div>
+          <div class="plot">Jonny 2x4 irritates Kevin by hanging around him all the time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x21 - Ed in a Halfshell
+          </div>
+          <div class="plot">Sarah puts Ed in charge of Jimmy. When the guys attempt to play with Jimmy, Eddy decides to show him what it's like to be a grown-up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x22 - Mirror, Mirror, on the Ed
+          </div>
+          <div class="plot">The Eds join the neighborhood kids in a game of Truth or Dare.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x23 - Hot Buttered Ed
+          </div>
+          <div class="plot">Ed, Edd and Eddy wake up early so they can be the first ones at the swimming hole. When they arrive, they find all the good spots are taken.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x24 - High Heeled Ed
+          </div>
+          <div class="plot">Ed, Edd and Eddy discover all the boys in the neighborhood are away at the go-cart races.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x25 - Fa, La, La, La, Ed
+          </div>
+          <div class="plot">Ed becomes convinced Santa is watching his every move so he avoids doing anything that could be interpreted as naughty.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x26 - Cry Ed
+          </div>
+          <div class="plot">Eddy is desperate for attention. When he sees the kids rescue Jimmy, Eddy decides to have accidents of his own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S03E01%20S03E02%20-%20Wish%20You%20Were%20Ed%20-%20Momma%27s%20Little%20Ed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Wish You Were Ed
+          </div>
+          <div class="plot">After losing a cul-de-sac race, Rolf mopes about how he is homesick and misses his old country. Eddy comes up with the scam of a lifetime. He pretends that Ed's shoe is a magic wishgiver. When Rolf asks to use it, Eddy declines until Rolf gives up some change. Rolf wishes to return to his home country, and the stench from Ed's shoe causes him to pass out. He wakes up in an old-world-style village created by the Eds. Edd's Encyclopedia of Old World Culture helped them to create a perfect replica. Eddy is satisfied, but Edd feels bad for Rolf and makes the Eds play along with their scam, so now they have to succumb to Rolf's odd culture. All goes well until a curious Jonny wrecks the whole thing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S03E01%20S03E02%20-%20Wish%20You%20Were%20Ed%20-%20Momma%27s%20Little%20Ed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Momma's Little Ed
+          </div>
+          <div class="plot">Eddy wants to get on with yet another summer day of scams, but Edd refuses to leave the house until he's done his chores. Eddy gets and idea and makes Ed forge some ridiculous sticky notes. Ed's a human Xerox machine, so Edd has no idea. Ed and Eddy spend the rest of the day watching Edd humiliate himself miserably. Edd begins to fear his parents, and decides to move in with Eddy. Eddy doesn't like it, but he has no choice against Edd's guilt routine, and now he's Edd's slave for life (until the next episode).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x3 - Once Upon an Ed
+          </div>
+          <div class="plot">Jonny and Plank are ready for bed, when suddenly he finds the Eds stuck in his bedroom wall. Jonny won't let them lose until they tell him how it happened, so they each give a piece of their story on how they escaped the wrath of the Kankers from their own skewed perspective. In the end, Jonny falls asleep before he pulls the Eds loose, and the Kankers show up to finish off the Eds.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x4 - For Your Ed Only
+          </div>
+          <div class="plot">A scam gone horribly, horribly wrong crash-lands the Eds in Sarah's bedroom. The Eds try to clean up the room before Sarah gets back, when Eddy uncovers her secret diary. Sarah chases after the Eds, while Ed and Edd try to persuade Eddy not to read the diary. In the end, the Eds and Jonny all get stuck together in a giant mess of ultra-powerful chewing gum.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x5 - It Came From Outer Ed
+          </div>
+          <div class="plot">Eddy and Edd come up with an idea to trick Ed for laughs. Eddy drags Ed from his room while he is reading his new comic, &quot;&quot;Evil Tim.&quot;&quot; After this idea bombs, Ed thinks of an idea for a scam. Throughout the episode, they follow through Ed's scam, doing some senseless things. We find out, Ed's scam has nothing to do with taking everyone's cash, but is ideal for a curse.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x6 - 3 Squares and an Ed
+          </div>
+          <div class="plot">Edd is showing Eddy his laundry chutes, bragging about how he laced them with silicon. Unimpressed Eddy questions Edd. After Edd explains how fast they get to the bottom, Eddy takes off down one without listening to Edd's safety precautions. In the basement, Eddy stumbles upon Edd's failed inventions. Again, ignoring Edd, Eddy finds himself helpless to one of the older ones, messing up his face. Edd finds this funny, sending Eddy chasing him to Ed's house. Guardsmen Jimmy and Sarah stand in front of Ed's window, informing Eddy and Edd on how Ed's been grounded. Distractions involving Jonny, give Edd and Eddy time to sneak Ed out of the house. Of course, they get caught, and all three of the Ed's are grounded.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x7 - Dueling Eds
+          </div>
+          <div class="plot">The Ed's have a scam for Jonny. No one can resist karate! This scam is a failure, but is soon dropped when everyone's attention is directed to Rolf's house. Rolf is modeling his sea cucumber suit for everyone, and offering them some for eating. Eddy shames &quot;&quot;the son of a shepherd&quot;&quot; once he takes one of the sea cucumber balls, and tosses it at a hole in the fence. Edd gives Eddy a potted plant to give to Rolf for forgiveness. Turns out, this plant is the &quot;&quot;potted plant of ridicule&quot;&quot; and Rolf and Eddy ensue in a duel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x8 - Dim Lit Ed
+          </div>
+          <div class="plot">After an encounter with Jimmy, Jonny, Ed and Eddy, Edd has come to the conclusion that the whole cul - de - sac lacks good judgment. Edd gathers everyone together, and encourages their education with a scavenger hunt. Rolf yells out that the prize is a jawbreaker, and everyone gets so excited, that Edd doesn't have time to tell them what the prize really is. Once everyone finds out the prize isn't what they expected, they all turn against Edd. To no surprise, the Eds get back together, and go back to scams.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x9 - Will Work for Ed
+          </div>
+          <div class="plot">The Ed's stumble upon a 3 for 1 Jawbreaker sale. Just so happens, they are all &quot;&quot;flat broke.&quot;&quot; Rolf is nailing papers to light posts, just as the Ed's find him. He is looking for a hired hand, and Ed takes on this task, hoping to earn some cash. The day goes on, Ed messing up, getting continuous pay deductions from Rolf. After Eddy has had enough of this, Edd and he take on to help Ed with the job of peeling potatoes. Of course, they mess up, but Rolf and Edd come up with an agreement.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x10 - Ed, Ed and Away
+          </div>
+          <div class="plot">The Eds come up with a plan to scam Kevin into a new &quot;&quot;Custom Hot Bike.&quot;&quot; After Kevin finds out that it's just for looks, he promises he'll get the dorks. The Eds spot an abandoned balloon floating freely, as Edd yells about all his hard work. Ed and Eddy have plans to pop it, while Edd is sure to stop them. The chase goes on, the Eds hopelessly trying to get the balloon. After the second time they interrupt Sarah and Jimmy's &quot;&quot;flight,&quot;&quot; they declare revenge on the Eds, and easily capture the balloon. Eddy takes back the balloon, but sadly doesn't get to pop it himself. In the end, it was Kevin who is letting free the balloons.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x11 - X Marks the Ed
+          </div>
+          <div class="plot">Eddy discovers that he has a pimple, and Rolf might be able to make it go away.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x12 - From Here to Ed
+          </div>
+          <div class="plot">After a scam gone wrong, Eddy declares war on Kevin, much to Edd's disgust. Kevin insists he was completely uninvolved in the scam's failure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x13 - Boys Will Be Eds
+          </div>
+          <div class="plot">Most of the boys develop a crush on Nazz, and follow her everywhere. They all try to win her over.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x14 - Ed or Tails
+          </div>
+          <div class="plot">Ed ordered a pack of two jawbreakers, and now Edd tries to share the jawbreakers between three people.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x15 - Gimme, Gimme Never Ed
+          </div>
+          <div class="plot">The Eds' spend the whole day making rides for Plank.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x16 - My Fair Ed
+          </div>
+          <div class="plot">Ed and Eddy are rummaging through Edd's groceries, Eddy pulls out some brocoli and Ed runs away scared destroying everything in his path. The kids are upset by this and tell Edd to set them straight or they'll twist his legs into a pretzel. He tries to reform them by ripping a bandaid of their head every time they fail.
+
+He believes it to have worked, the two go out and start to &quot;&quot;help people&quot;&quot; but are screwing everything up and turn out to be worse than before. The next day Edd is ashamed and wants his old friends back and Ed and Eddy reveal the were playing and that they fooled him, Edd takes some brocoli and begins to chase them for &quot;&quot;toying with his emotions.&quot;&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x17 - Rock-a-Bye Ed
+          </div>
+          <div class="plot">After Ed has a nightmare, he develops a phobia to Jonny.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x18 - O-Ed Eleven
+          </div>
+          <div class="plot">While going through his brother's old stuff, Eddy and his friends stumble upon a map to Eddy's brother's &quot;secret stash&quot; and decipher it, only to find it lies underneath the Kankers' trailer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x19 - The Luck of the Ed
+          </div>
+          <div class="plot">Ed forgot where he hid Eddy's magazines, and they spend the day finding them. But he starts to think that Edd knows something that Eddy doesn't know.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x20 - Ed, Pass it On
+          </div>
+          <div class="plot">After Eddy's restaurant scam fails, Eddy decides to start a rumor about his big brother coming home that eventually gets out of hand.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x21 - Brother, Can You Spare an Ed?
+          </div>
+          <div class="plot">Sarah wants Ed to buy her fudge with her money, but Eddy has other ideas.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x22 - The Day the Ed Stood Still
+          </div>
+          <div class="plot">To attract customers to their arcade, Edd puts Ed in a monster costume. Now, Ed thinks he is a monster, and starts eating all of the kids.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S03E23%20-%20If%20It%20Smells%20Like%20an%20Ed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x23 - If It Smells Like an Ed
+          </div>
+          <div class="plot">The Eds' are the ones being blamed for ruining friendship day, and they now must prove they did not.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x24 - Don't Rain on My Ed
+          </div>
+          <div class="plot">The Eds' are the ones being blamed for ruining friendship day, and they now must prove they did not.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x25 - Once Bitten, Twice Ed
+          </div>
+          <div class="plot">Eddy keeps tweaking a scam and tries to keep business running.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x1 - An Ed in the Bush
+          </div>
+          <div class="plot">Rolf readies The Urban Rangers for their hike into the nearby woods, but it's near dark. Eddy attempts to scare The Urban Rangers to prove they are big phonies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x2 - See No Ed
+          </div>
+          <div class="plot">Kevin and the rest of the kids are in the lane when the kids realize they haven't seen the Eds all day. Kevin thinks they are up to something, while the others celebrate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x3 - Is There an Ed in the House?
+          </div>
+          <div class="plot">Sarah gets sick, and both Ed and Jimmy try to help her, which strikes a rivalry between them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x4 - An Ed is Born
+          </div>
+          <div class="plot">Eddy proves to his brother that he is a big shot by making a home movie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x5 - One Size Fits Ed
+          </div>
+          <div class="plot">After Jimmy makes a wish at the Ed's fake wishing well to become a star, the Eds attempt to make Jimmy's wish come true into a sumo wrestling star, thanks to the inspiration of Ed's new sumo hobby.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x6 - Pain in the Ed
+          </div>
+          <div class="plot">When Ed begins to take violin lessons which annoy the heck out of Eddy, he makes several attempts to destroy the violin while Double-D tries to keep Eddy from smashing it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x7 - Ed Overboard
+          </div>
+          <div class="plot">Eddy and Ed must turn to the Urban Rangers for help after the Kanker Sisters kidnap Ed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x8 - One of Those Eds
+          </div>
+          <div class="plot">Everyone in the neighborhood competes to be the first to remove a quarter that's stuck to the sidewalk.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x9 - They Call Him Mr. Ed
+          </div>
+          <div class="plot">Ed, Edd and Eddy spend the day attempting to move up in the world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x10 - For the Ed, by the Ed
+          </div>
+          <div class="plot">When Jimmy nominates Plank to be King of the Cul-de-sac, Eddy decides to run an election campaign against him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x11 - Little Ed Blue
+          </div>
+          <div class="plot">Ed is in a bad mood, and Edd and Eddy try to cheer him up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x12 - A Twist of Ed
+          </div>
+          <div class="plot">Edd gives the Kankers some tough love with his reverse psychology.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x13 - Your Ed Here
+          </div>
+          <div class="plot">Eddy is horrified when Kevin finds out that Eddy's middle name is Skipper.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x14 - The Good Ol' Ed
+          </div>
+          <div class="plot">Ed, Edd and Eddy reminisce about past exploits when Edd asks them to contribute to his new time capsule.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x15 - Thick as an Ed
+          </div>
+          <div class="plot">Eddy is caught in the middle when Edd and Ed fight over Ed's stinky jacket.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x16 - Sorry, Wrong Ed
+          </div>
+          <div class="plot">Ed, Edd and Eddy run afoul of Rolf's cursed phone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x17 - Robbin' Ed
+          </div>
+          <div class="plot">A hero is foiling Eddy's scams, and he becomes a villian to take down this hero
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x18 - A Case of Ed
+          </div>
+          <div class="plot">After reading a medical textbook, Edd becomes convinced that he has symptoms of a terminal disease.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x19 - Run for your Ed
+          </div>
+          <div class="plot">The Kanker sisters are combing the cul-de-sac for a missing heirloom when Edd and Eddy discover that it's stuck on Ed's finger.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x20 - Hand Me Down Ed
+          </div>
+          <div class="plot">A mysterious neighborhood toy is passed from one person to another, changing everyone who touches it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x21 - Stiff Upper Ed
+          </div>
+          <div class="plot">When Ed, Edd and Eddy are refused entry into Sarah and Jimmy's exclusive club, Eddy attempts to &quot;&quot;out-rich&quot;&quot; the snobby membership.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x22 - Here's Mud in Your Ed
+          </div>
+          <div class="plot">After Eddy creates a scam called Smileyville, which makes Jimmy's bad day worse by scamming him out of his last quarter, Rolf and Jimmy team up to turn the tables on Eddy by pulling his leg and ripping him off.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x23 - Stuck in Ed
+          </div>
+          <div class="plot">Eddy can't think of a scam, and hires Jimmy to make a scam.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x24 - Postcards from the Ed
+          </div>
+          <div class="plot">When Plank's &quot;parents&quot; come to town, Ed irritates Eddy by offering to show them around the cul-de-sac. But then Eddy gets the idea to take them on his own tour.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S04E25%20-%20Take%20This%20Ed%20and%20Shove%20It-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x25 - Take This Ed and Shove It
+          </div>
+          <div class="plot">Eddy gives jobs to the growing up kids, and Eddy gets injured and falls into a deep sleep. He then wakes up... 90 years in the future!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x1 - Mission Ed-Possible
+          </div>
+          <div class="plot">Ed, Edd and Eddy get lost in flashbacks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x2 - Every Which Way But Ed
+          </div>
+          <div class="plot">Edd wants to deliver Ed and Eddy's report cards to their parents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x3 - Boom Boom Out Goes the Ed
+          </div>
+          <div class="plot">The cul-de-sac has a power outage.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x4 - Cleanliness Is Next to Edness
+          </div>
+          <div class="plot">Edd's parents renovate the bathroom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S05E05%20-%20Out%20with%20the%20Old%2C%20In%20with%20the%20Ed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - Out with the Old, In with the Ed
+          </div>
+          <div class="plot">Ed, Edd and Eddy endure the last day of summer vacation and the first day of school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x6 - I Am Curious Ed
+          </div>
+          <div class="plot">Jimmy and Sarah try to learn where babies come from.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x7 - No Speak Da Ed
+          </div>
+          <div class="plot">Ed's communications with his pen pal make Rolf angry.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x8 - Cool-Hand Ed
+          </div>
+          <div class="plot">The Eds, Jonny and Plank plan a great escape from Peach Creek Junior High.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x9 - Too Smart for His Own Ed
+          </div>
+          <div class="plot">Double-D swaps places with Ed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x10 - Who's Minding the Ed?
+          </div>
+          <div class="plot">Ed convinces Edd and Eddy to take care of Rolf's animals.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x11 - Pick an Ed
+          </div>
+          <div class="plot">Eddy poses as a new student.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x12 - Truth or Ed
+          </div>
+          <div class="plot">Eddy turns the Peach Creek Junior High Tattler newspaper into a scandal-seeking tabloid.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x13 - This Won't Hurt an Ed
+          </div>
+          <div class="plot">Eddy teases Kevin over his fear of needles.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x14 - Tinker Ed
+          </div>
+          <div class="plot">The Eds shatter Jimmy's love for enchanting things.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x15 - The Good, the Bad and the Ed
+          </div>
+          <div class="plot">Eddy challenges Urban Ranger Rolf.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x16 - Tight End Ed
+          </div>
+          <div class="plot">Nazz decides to bring the mascot out of retirement.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x17 - 'Tween a Rock and an Ed Place
+          </div>
+          <div class="plot">Eddy is disappointed with the Arbor Day bash.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x18 - All Eds Are Off
+          </div>
+          <div class="plot">The Eds make a bet about their annoying habits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x19 - Smile for the Ed
+          </div>
+          <div class="plot">Eddy determines to get a good school-photo for his mother.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x20 - Run Ed Run
+          </div>
+          <div class="plot">Jimmy and Sarah have Ed believing the sky is falling, putting Edd and Eddy's trip to the jawbreaker factory in jeopardy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x21 - A Town Called Ed
+          </div>
+          <div class="plot">The Eds aren't invited to Kevin's monster truck marathon party and Eddy learns that he's a member of the founding family of Peach Creek and sets out to earn the respect and cash that he deserves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ed%2C%20Edd%20n%20Eddy%20-%20S05E22%20-%20A%20Fistful%20of%20Ed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x22 - A Fistful of Ed
+          </div>
+          <div class="plot">Edd becomes the school tough kid after a scuffle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            5x23 - Ed Edd n Eddy The Eds Are Coming The Eds Are Coming HMax Web
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            6x1 - May I Have This Ed?
+          </div>
+          <div class="plot">The Eds attend their first school dance. Edd isn't too excited about going, but naturally, Eddy is stoked.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            6x2 - Look Before You Ed
+          </div>
+          <div class="plot">Edd and Jimmy make a safety club to make winter safer, but it backfires when Jimmy thinks it's going awry.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

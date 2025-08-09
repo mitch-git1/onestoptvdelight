@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Total Drama: Revenge of the Island
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Total Drama: Revenge of the Island</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Total%20Drama%20Revenge%20of%20the%20Island%20%282012%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E01%20-%20Bigger%21%20Badder%21%20Brutal-er%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Bigger! Badder! Brutal-er!
+          </div>
+          <div class="plot">The fourth season finally begins, introducing a whole new cast, set at Camp Wawanakwa, which has turned into a bio-hazardous waste dump. The thirteen contestants are divided into two teams, the Toxic Rats and the Mutant Maggots. Two contestants build a close bond, and one contestant manages to annoy her entire team into eliminating her that night.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E02%20-%20Truth%20Or%20Lazer%20Shark-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Truth Or Lazer Shark
+          </div>
+          <div class="plot">As the competition narrows down to twelve, the campers must compete in the first part of their challenge; a tell-all trivia game which ends up embarrassing several contestants. Due to the problems in round one, the host makes the second round miserable for both teams. Ironically, a nonathletic camper ends up winning the physical-oriented challenge for his team, sending the other team to the elimination ceremony. In the end, someone becomes too focused on her image and is quickly voted off.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E03%20-%20Ice%20Ice%20Baby-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Ice Ice Baby
+          </div>
+          <div class="plot">The remaining contestants take part in a frigid challenge including climbing a mountain and a snowy capture the flag game. One of the Maggots asserts themselves further as team leader as a Rat continues to ruin their team's chances regardless of other's abilities. Someone gets fearful of their secret being discovered, but it comes through with another victory for their team. Ultimately, through a cruel trick, a camper is thrown off the island while someone else returns in a fame-desperate move.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E04%20-%20Finders%20Keepers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Finders Keepers
+          </div>
+          <div class="plot">The two teams are sent into the the woods on a scavenger hunt, where one camper's alternate personality hooks up with someone else, despite their true self being in love with a different camper. Meanwhile, someone continues to sabotage their team's chances, but fails in the end due to someone else persisting towards a victory. The losing team attends their first elimination ceremony, where someone volunteers for elimination, but ends up on the winner team, while an intern is eliminated again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E05%20-%20Backstabbers%20Ahoy%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Backstabbers Ahoy!
+          </div>
+          <div class="plot">As one team deals with their newest member, the other is severely divided by one contestant, who shares feelings for two girls at once. When the contestants' most prized possessions start vanishing, one player initially accuses their teammate, but then places the blame on someone else. Although they figure out the true scheme, it is not enough to prevent elimination.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E06%20-%20Runaway%20Model-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Runaway Model
+          </div>
+          <div class="plot">As one team suffers dysfunction after a particular gamer feels as if they are lacking in the macho department, the other team shows problems with the over-macho nature of another and a persistent conflict of two others. In the end, a contestant suffering from withdrawal loses the game, but wins the heart of the girl of his dreams. Later, in a shocking surprise twist, the host forces two contestants to switch teams.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E07%20-%20A%20Mine%20is%20a%20Terrible%20Thing%20to%20Waste-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - A Mine is a Terrible Thing to Waste
+          </div>
+          <div class="plot">The two teams are sent into an abandoned mine, where one teammate takes charge of their team, and someone's disorder gets more out of hand. Someone throws the challenge to save his old team, leading to his elimination. Meanwhile, an old contestant falls in love with a new contestant and gives her a special reward, which leads to her quitting the competition and a former intern returning to their former team in their place as a contestant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E08%20-%20The%20Treasure%20Island%20of%20Dr.%20McLean-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Treasure Island of Dr. McLean
+          </div>
+          <div class="plot">The teams wake up in the middle of the lake and are ordered by Chris to get back to the island, with the last team arriving set for punishment. During this part of the challenge, Mike purposely places Scott in a position for another encounter with Fang, who attacks him near, and then on, the Maggots' raft. Dakota fends off the shark as she begins a mutant transformation into a monster and then seeks friendship from Zoey. Meanwhile, Cameron tries to help Mike keep his secret under control. Scott reveals to have found the Chris Head of Invincibility, and asks Zoey to keep it a secret. At the end, after the Maggots lose the second challenge, finding a buried chest containing a past contestant and an eliminated contestant from the current season, Scott receives the votes to be sent home, but uses the Chris Head of Invincibility to stay in the game, and Dakota is eliminated instead. Gwen cameos, and Sam temporarily returns as part of the challenge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E09%20-%20Grand%20Chef%20Auto-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Grand Chef Auto
+          </div>
+          <div class="plot">The Maggots cabin is destroyed because the teams merge. The contestants must search the kitchen for keys to the go-karts. Then they use the go-karts to go to different locations around the island and spray paint their symbol on each location. There were originally three but chef tricked the contestants into going to a fourth one which was the Chris Monument called Mount Chrismore. Zoey's was a heart, Scott's was an X, Mike's was a check, Cameron's was picture of Chris giving him the money, Jo put a circle with a line through it on top of Cameron's, then Cameron switched to the pi symbol and Lightning's was a lightning bolt. Jo and Lightning briefly get detained by Chef, with Fang ordered to guard them. Jo escapes by using Lightning as a distraction for Fang, but Lightning gets away himself by offering up Scott to Fang. Scott used Mike's MPD to his advantage, by threatening to tell Zoey about it if Mike didn't do what he said. In the end it is revealed to Zoey but not by Scott. Mike overcomes his personalities, thus curing him of his MPD and he and Zoey offically become a couple. Scott wins invincibility and got to decide who should leave. Mike gets voted off by Scott. Mike gives Zoey a pendant necklace to remember him by and they almost kiss until Mike is catapulted. Duncan, a former contestant, makes brief cameos throughout the episode. On Cartoon Network, the title of this episode was changed to &quot;Extreme Chef Auto&quot;, presumably to avoid copyright infringement of Rockstar Games, makers of the Grand Theft Auto series of video games.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E10%20-%20Up%2C%20Up%20%26%20Away%20in%20My%20Pitiful%20Balloon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Up, Up &amp; Away in My Pitiful Balloon
+          </div>
+          <div class="plot">The remaining five contestants now have to fly through rings of fire by each using a specific flying object given by Chris, but first they must go to the waste dump to find the pieces in order build to their flying object. Jo has to build a flying balloon, Lightning must build a helicopter, Zoey must build a plane, Cameron must build a rocket ship and Scott gets to build a bird. To test the rings of fire if they are safe to fly through, Chris uses Heather as a test dummy to see if she survives the flight. Heather uses a jet pack and she does survive. While the contestants are finding and building their flying objects, Zoey is mad that Scott eliminated Mike so Zoey steals Scott's parts to build her plane, causing Scott to get nothing, just a pair of wings he got from birds. At the challenge, the five are ready to fly their objects through the rings of fire, but suddenly Heather gets mad and steals the million dollar case from Chris and then takes off on a blimp. The challenge is now to chase the blimp and capture Heather to take back the money. Everyone is now chasing the blimp and during flight Zoey gets to fly on radioactive flying goats that breathe fire, so then she gets to take her revenge on Scott by shooting fire at him. Scott also has to deal with more attempts from Fang to eat him, both on land and in the air. Lightning manages to get on the blimp, and then retrieves back the money case from Heather. The blimp then loses control when Cameron crashes his rocket into it and falls for a crash landing while Lightning hops out with the case, and then gives it back to Chris. The blimp now crashes into the ocean and sinks, and even though Lightning got the million dollars, it was Cameron who won immunity for crashing the ship and taking out Heather. In the elimination ceremony, Jo is eliminated. The final four are now Scott, Zoey, Lightning, and Cameron.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E11%20-%20Eat%2C%20Puke%20%26%20Be%20Wary-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Eat, Puke &amp; Be Wary
+          </div>
+          <div class="plot">In this episode, Chris gets injured by one of Scott's shark traps and crashes into the restrooms, so Chef temporary becomes the host and makes the contestants do a cooking challenge. Cameron made some quiche pie with radioactive mushrooms, Scott made a more toxic quiche, Zoey made a living salad and Lightning cooked a mutated maggot. They were supposed to feed their meals to classic competitor DJ, but he ran out at the last minute and they were thus forced to eat what they had cooked. Scott switched his quiche with Cameron, and ended up winning the challenge, with the others puking. Soon after, Chef put them through a hunting challenge with them as the prey. They were to make it to a flagpole before Chef catches them with a spaghetti bazooka. After Chef injured Zoey and broke her pendant with Mike, she became bent on revenge against Scott and Chef. However, in the end, Scott got to the flagpole first and almost won the challenge, but suddenly, Fang appeared, chased him, and revealed that he'd only been chasing him because he'd taken his tooth, which Scott refused to give back to him. Fang then ended up in one of Zoey's traps, while another ended up hitting Scott, and putting him in a full-body cast. In the end, Cameron won immunity after riding on Lightning's back to the flagpole. Lightning swore revenge on Cameron for stealing his immunity, igniting a rivalry between the two boys. With two votes against, Scott was eliminated. Chris returned as host and got payback on Scott by making him ride the Hurl of Shame with Fang, who got his tooth back from him, but was still determined to eat him, anyway. Cameron, Zoey, and Lightning are now the final three.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E12%20-%20The%20Enchanted%20Franken-Forest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Enchanted Franken-Forest
+          </div>
+          <div class="plot">In this episode, Zoey and Cameron agree to team up against Lightning to eliminate him before the final two. Cameron is especially interested in doing so because he knows Lightning is targeting him over &quot;stealing&quot; invincibility from him. Then, Chris sends the final three campers into the enchanted forest to retrieve a flower from a Venus Flytrap. Inside the forest, the campers encounter mutated animals, including Ezekiel. Throughout the challenge, Zoey starts to be rude to Cameron while Lighting gets lost. Cameron then begins to realize that Zoey is changing, but Zoey then gives up winning the challenge to save Cameron from dying, so Lightning wins the challenge. In the end, Cameron is certain that Lightning will eliminate him due to their rivalry, but he is shocked when Lightning chooses Zoey to get eliminated instead, because Zoey is a bigger threat, and since it will be easier for him to beat Cameron in the finals. This final two marks the first time ever when two members of the same gender and ethnicity compete against each other in the finale. Cameron is the second &quot;geek&quot; to appear in the final two in Total Drama history; Beth was the first when she went up against Duncan in Total Drama Action. Mike temporarily returns as part of a flashback.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E13%20-%20Brain%20vs.%20Brawn%20The%20Ultimate%20Showdown-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Brain vs. Brawn The Ultimate Showdown
+          </div>
+          <div class="plot">Lightning and Cameron, the final two, are told to vent all of their feelings in the confessional at the beginning of the episode. They then both watch video messages on a television from their relatives at home: Cameron's mother and Lightning's father. Lightning's father bets his championship rings that Lightning can win. They then arrive at a massive arena where Chris, Chef, two interns, and the eleven previously-eliminated contestants are watching them from the stands. A pile of junk is then dropped into the middle of the arena, and the two finalists must find a way to use some of the junk as either armor or weapons for the duel that will follow between them. Lightning creates a rather crude set of armor with ankle plates, a chest plate, a pan as his helmet, and a plastic mannequin's leg with nails sticking out of the top. Cameron at first appears to have nothing, but then reveals a mechanical suitcase that he created that turns him into Iron Man. The battle then begins, and over time, the two battle for so long with no clear winner that Chris later decides to make it interesting and drops every mutated creature from the island into the arena, only for the creatures (including Ezekiel) to start attacking everyone. During the attack, Cameron tries to save the other contestants from the monsters, while Lightning keeps attacking Cameron only. Eventually, one of Cameron's iron suit's abilities causes many of the barrels of toxic waste to magnetize to Lightning's body armor, giving Lightning white hair and causing him to get tired and black out. Cameron then gets tired too and falls down on top of Lightning, making Cameron win the final challenge. Chris then comes and crowns Cameron as the winner of Total Drama: Revenge of the Island and the new recipient of the million dollars. As Chef and the thirteen contestants sail away on a boat, Chris attempts to detonate a bomb placed on the underside of the boat, only for the bomb to go off on the dock directly beneath Chris, as Chef switched the bomb. The RCMP then descends on the island saying the island is under government protection. Chris is ordered to be quarantined, while Chef and the rest of the cast flee away and cheer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Revenge%20of%20the%20Island%20-%20S01E13%20-%20Brain%20vs.%20Brawn%20The%20Ultimate%20Showdown-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Brain vs. Brawn The Ultimate Showdown
+          </div>
+          <div class="plot">Lightning and Cameron, the final two, are told to vent all of their feelings in the confessional at the beginning of the episode. They then both watch video messages on a television from their relatives at home: Cameron's mother and Lightning's father. Lightning's father bets his championship rings that Lightning can win. They then arrive at a massive arena where Chris, Chef, two interns, and the eleven previously-eliminated contestants are watching them from the stands. A pile of junk is then dropped into the middle of the arena, and the two finalists must find a way to use some of the junk as either armor or weapons for the duel that will follow between them. Lightning creates a rather crude set of armor with ankle plates, a chest plate, a pan as his helmet, and a plastic mannequin's leg with nails sticking out of the top. Cameron at first appears to have nothing, but then reveals a mechanical suitcase that he created that turns him into Iron Man. The battle then begins, and over time, the two battle for so long with no clear winner that Chris later decides to make it interesting and drops every mutated creature from the island into the arena, only for the creatures (including Ezekiel) to start attacking everyone. During the attack, Cameron tries to save the other contestants from the monsters, while Lightning keeps attacking Cameron only. Eventually, one of Cameron's iron suit's abilities causes many of the barrels of toxic waste to magnetize to Lightning's body armor, giving Lightning white hair and causing him to get tired and black out. Cameron then gets tired too and falls down on top of Lightning, making Cameron win the final challenge. Chris then comes and crowns Cameron as the winner of Total Drama: Revenge of the Island and the new recipient of the million dollars. As Chef and the thirteen contestants sail away on a boat, Chris attempts to detonate a bomb placed on the underside of the boat, only for the bomb to go off on the dock directly beneath Chris, as Chef switched the bomb. The RCMP then descends on the island saying the island is under government protection. Chris is ordered to be quarantined, while Chef and the rest of the cast flee away and cheer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

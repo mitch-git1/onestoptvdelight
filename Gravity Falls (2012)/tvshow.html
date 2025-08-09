@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Gravity Falls
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Gravity Falls</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Gravity%20Falls%20%282012%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E01%20-%20Dipper%27s%20Guide%20to%20the%20Unexplained%20-%20Candy%20Monster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - Dipper's Guide to the Unexplained - Candy Monster
+          </div>
+          <div class="plot">Dipper and Mabel must battle a monster who takes their Summerween candy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E02%20-%20Dipper%27s%20Guide%20to%20the%20Unexplained%20-%20Stan%27s%20Tattoo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x2 - Dipper's Guide to the Unexplained - Stan's Tattoo
+          </div>
+          <div class="plot">Dipper devises a plan to unravel the enigma that is Stan&rsquo;s tattoo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E03%20-%20Dipper%27s%20Guide%20to%20the%20Unexplained%20-%20Mailbox-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x3 - Dipper's Guide to the Unexplained - Mailbox
+          </div>
+          <div class="plot">Dipper and Soos stumble upon a mailbox in the middle of the forest and make it their mission to discover who (or what) picks up the mail left inside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E04%20-%20Dipper%27s%20Guide%20to%20the%20Unexplained%20-%20Lefty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x4 - Dipper's Guide to the Unexplained - Lefty
+          </div>
+          <div class="plot">Dipper sets out to discover why a certain Gravity Falls resident always faces left.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E05%20-%20Dipper%27s%20Guide%20to%20the%20Unexplained%20-%20The%20Tooth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x5 - Dipper's Guide to the Unexplained - The Tooth
+          </div>
+          <div class="plot">Dipper and Mabel find a gigantic tooth on the shores of the lake, and set out in a rowboat to find out where it came from.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E06%20-%20Dipper%27s%20Guide%20to%20the%20Unexplained%20-%20The%20Hide-Behind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x6 - Dipper's Guide to the Unexplained - The Hide-Behind
+          </div>
+          <div class="plot">After hearing rumors of a local lumberjack legend, Dipper investigates a mysterious creature that has been heard, but never seen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E07%20-%20Mabel%27s%20Guide%20to%20Life%20-%20Dating-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x7 - Mabel's Guide to Life - Dating
+          </div>
+          <div class="plot">Mabel gives her thoughts on dating and puts her dating quiz to the test with three of Gravity Falls&rsquo; most eligible bachelors &mdash; Grunkle Stan, Dipper and Soos.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E08%20-%20Mabel%27s%20Guide%20to%20Life%20-%20Stickers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x8 - Mabel's Guide to Life - Stickers
+          </div>
+          <div class="plot">Mabel gives her unique perspective on the history of stickers, their many styles and uses.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E09%20-%20Mabel%27s%20Guide%20to%20Life%20-%20Fashion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x9 - Mabel's Guide to Life - Fashion
+          </div>
+          <div class="plot">Mabel reveals her fashion secrets to the world, including FLASH MAKEOVERS!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E10%20-%20Mabel%27s%20Guide%20to%20Life%20-%20Colors-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x10 - Mabel's Guide to Life - Colors
+          </div>
+          <div class="plot">Mabel&rsquo;s survey into everyone&rsquo;s favorite colors causes a color emergency when she learns Grunkle Stan has never seen a rainbow.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E11%20-%20Mabel%27s%20Guide%20to%20Life%20-%20Art-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x11 - Mabel's Guide to Life - Art
+          </div>
+          <div class="plot">Mabel reveals that her gift of art has driven her to genius level with the creation of her own personal art movement &mdash; the &ldquo;Caticature.&rdquo;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E12%20-%20Fixin%27%20It%20with%20Soos%20-%20Golf%20Cart-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x12 - Fixin' It with Soos - Golf Cart
+          </div>
+          <div class="plot">Soos fixes up the golf cart so that Dipper and Wendy can perform a stunt.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E13%20-%20Fixin%27%20It%20with%20Soos%20-%20Cuckoo%20Clock-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x13 - Fixin' It with Soos - Cuckoo Clock
+          </div>
+          <div class="plot">Soos fixes up a Cuckoo Clock and gives it an ultra-awesome remodel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E16%20-%20Mabel%27s%20Scrapbook%20-%20Heist%20Movie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x16 - Mabel's Scrapbook - Heist Movie
+          </div>
+          <div class="plot">Mabel recalls the Pines' eleborate plan to break into a movie theatre.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E17%20-%20Mabel%27s%20Scrapbook%20-%20Petting%20Zoo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x17 - Mabel's Scrapbook - Petting Zoo
+          </div>
+          <div class="plot">Mabel remembers when the family visited a petting zoo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x18 - Creepy Letters from Lil Gideon - Cease and Desist
+          </div>
+          <div class="plot">Lil Gideon writes to Mabel and things get weird.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E19%20-%20Old%20Man%20McGucket%27s%20Conspiracy%20Corner%20-%206-18-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x19 - Old Man McGucket's Conspiracy Corner - 6-18
+          </div>
+          <div class="plot">It's a clue from a creature from another dimension...right?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E20%20-%20Old%20Man%20McGucket%27s%20Conspiracy%20Corner%20-%20Cryptograms-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x20 - Old Man McGucket's Conspiracy Corner - Cryptograms
+          </div>
+          <div class="plot">Have you seen this mixed up gobbly gook?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E21%20-%20Old%20Man%20McGucket%27s%20Conspiracy%20Corner%20-%20Eyes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x21 - Old Man McGucket's Conspiracy Corner - Eyes
+          </div>
+          <div class="plot">You ever notice how many people in Gravity Falls have only one eye?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E22%20-%20Old%20Man%20McGucket%27s%20Conspiracy%20Corner%20-%20Government%20Agency-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x22 - Old Man McGucket's Conspiracy Corner - Government Agency
+          </div>
+          <div class="plot">The city-slicker Government Agents are watching all of us!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x23 - Old Man McGucket's Conspiracy Corner - The Ice Man
+          </div>
+          <div class="plot">Who is the ice bag?!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x24 - Old Man McGucket's Conspiracy Corner - Laptop Code
+          </div>
+          <div class="plot">The number on the computer box is the coordinates to Possum town!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E25%20-%20Old%20Man%20McGucket%27s%20Conspiracy%20Corner%20-%20Medallions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x25 - Old Man McGucket's Conspiracy Corner - Medallions
+          </div>
+          <div class="plot">The Gold Medallions are for a Secret Society!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E26%20-%20Old%20Man%20McGucket%27s%20Conspiracy%20Corner%20-%20Relation%20Shipping-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x26 - Old Man McGucket's Conspiracy Corner - Relation Shipping
+          </div>
+          <div class="plot">Who is Relation Shipping up with who? It's a bunch of hog wash!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E27%20-%20Old%20Man%20McGucket%27s%20Conspiracy%20Corner%20-%20Stan%27s%20Brother-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x27 - Old Man McGucket's Conspiracy Corner - Stan's Brother
+          </div>
+          <div class="plot">Does Stan have a twin brother...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E28%20-%20Old%20Man%20McGucket%27s%20Conspiracy%20Corner%20-%20Triangles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x28 - Old Man McGucket's Conspiracy Corner - Triangles
+          </div>
+          <div class="plot">All Old Man McGucket can think about is those lousy triangles.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E29%20-%20Creepy%20Letters%20from%20Lil%20Gideon%20-%20Devoted-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x29 - Creepy Letters from Lil Gideon - Devoted
+          </div>
+          <div class="plot">Lil Gideon writes Mabel once again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x30 - Creepy Letters from Lil Gideon - Revenge
+          </div>
+          <div class="plot">Lil Gideon writes to the people of Gravity Falls wishing the love and forgiveness.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x31 - Creepy Letters from Lil Gideon - Pine-Scented
+          </div>
+          <div class="plot">Lil Gideon writes the Pines family letting them know they are always in his thoughts, and other places.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x31 - Creepy Letters from Lil Gideon - Pine-Scented
+          </div>
+          <div class="plot">Lil Gideon writes the Pines family letting them know they are always in his thoughts, and other places.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x32 - Creepy Letters from Lil Gideon - Dipper Tickle
+          </div>
+          <div class="plot">Lil Gideon writes to Dipper to offer up an apology...or not.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E33%20-%20%27Pocalypse%20Preppin%27%20-%20Ready%20for%20Anything-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x33 - 'Pocalypse Preppin' - Ready for Anything
+          </div>
+          <div class="plot">Ice age? World War 3? Toothache? McGucket is ready for anything.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E34%20-%20%27Pocalypse%20Preppin%27%20-%20Hunkered%20Down-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x34 - 'Pocalypse Preppin' - Hunkered Down
+          </div>
+          <div class="plot">Mesopotamians were the forerunners of modern graham cracker technology.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E35%20-%20%27Pocalypse%20Preppin%27%20-%20Hillbilly%20Shelter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x35 - 'Pocalypse Preppin' - Hillbilly Shelter
+          </div>
+          <div class="plot">There's pliers for everyone!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E36%20-%20%27Pocalypse%20Preppin%27%20-%20Food%20Stockpile-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x36 - 'Pocalypse Preppin' - Food Stockpile
+          </div>
+          <div class="plot">I hate split pea.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E37%20-%20%27Pocalypse%20Preppin%27%20-%20How%27d%20It%20Happen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x37 - 'Pocalypse Preppin' - How'd It Happen?
+          </div>
+          <div class="plot">One thing's for sure, I'm lovin' this beef stew in a bag!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E38%20-%20%27Pocalypse%20Preppin%27%20-%20Checkmate-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x38 - 'Pocalypse Preppin' - Checkmate
+          </div>
+          <div class="plot">I never said we were playing for money!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E39%20-%20%27Pocalypse%20Preppin%27%20-%20Governor%20of%20America-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x39 - 'Pocalypse Preppin' - Governor of America
+          </div>
+          <div class="plot">My fellow Americans, we will get through this crisis together.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E40%20-%20%27Pocalypse%20Preppin%27%20-%20Rememberance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x40 - 'Pocalypse Preppin' - Rememberance
+          </div>
+          <div class="plot">I'm going to miss those kids something awful.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x41 - Shop at Home with Mr. Mystery - Jar of Eyes
+          </div>
+          <div class="plot">Grunkle Stan has a jar of eyeballs to sell, but what are they looking at?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x42 - Shop at Home with Mr. Mystery - Aztec Calendar
+          </div>
+          <div class="plot">Grunkle Stan can help put ancient wisdom to work for YOU!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x43 - Shop at Home with Mr. Mystery - Fez
+          </div>
+          <div class="plot">Why not wear a Fez like Grunkle Stan? Perfect for all occasions!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E44%20-%20Shop%20at%20Home%20with%20Mr.%20Mystery%20-%20Deer%20Teeth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x44 - Shop at Home with Mr. Mystery - Deer Teeth
+          </div>
+          <div class="plot">For centuries, internet scholars have debated the significance of Deer teeth. Now you can join the fun with your very own collection!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x45 - Shop at Home with Mr. Mystery - Mystery Box
+          </div>
+          <div class="plot">Mr. Mystery has a mystery box for sale...so what's in it?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x46 - Shop at Home with Mr. Mystery - UFO on a String
+          </div>
+          <div class="plot">THE MYSTERY SHACK IS BEING INVADED&hellip;BY SAVINGS!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x47 - Shop at Home with Mr. Mystery - Nacho Necklace
+          </div>
+          <div class="plot">Grunkle Stan has a Nacho Necklace for sale. Perfect for you, or your significant other!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x48 - Shop at Home with Mr. Mystery - Outtakes
+          </div>
+          <div class="plot">We'll do it live!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x49 - Shop at Home with Mr. Mystery - Diving Helmet
+          </div>
+          <div class="plot">This is an exclusive, folks!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E50%20-%20Between%20the%20Pines-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x50 - Between the Pines
+          </div>
+          <div class="plot">Hosted by creator Alex Hirsch and Gravity Falls character Time Baby. The special elaborates on the production of the show, giving fans an inside look behind the scenes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E54%20-%20Soos%27%20Stan%20Fiction%20-%20The%20Stan%20Bros-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x54 - Soos' Stan Fiction - The Stan Bros.
+          </div>
+          <div class="plot">Wondering what the Stan Bros. have been up to since saving the world? Well, Soos has some ideas...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E55%20-%20Soos%27%20Stan%20Fiction%20-%20New%20York%20Ghost%20Detectives-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x55 - Soos' Stan Fiction - New York Ghost Detectives
+          </div>
+          <div class="plot">Here's some more Stan Fiction written by Soos! In today's episode, Stan Bros. in &quot;Ghost Detectives.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E56%20-%20Soos%27%20Stan%20Fiction%20-%20Axolotl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x56 - Soos' Stan Fiction - Axolotl
+          </div>
+          <div class="plot">Soos explains what the creature living in the tank at the Mystery Shack came from, and how it got there.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E59%20-%20Soos%27%20Stan%20Fiction%20-%20Behind%20The%20Scenes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x59 - Soos' Stan Fiction - Behind The Scenes
+          </div>
+          <div class="plot">A look behind the scenes of the Soos' Stan Fiction shorts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E60%20-%20Grunkle%20Stan%27s%20Lost%20Mystery%20Shack%20Interview%20-%20Billy%20Unger%20from%20Lab%20Rats-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x60 - Grunkle Stan's Lost Mystery Shack Interview - Billy Unger from Lab Rats
+          </div>
+          <div class="plot">Grunkle Stan's Lost Mystery Shack Interviews was a series of promotional ads aired during showings of Gravity Falls on Disney XD. The ads aired as part of a Gravity Falls marathon on June 28th, 2015 and were comprised of short, 30-second segments where a puppet version of Stan Pines, desperate for summer workers at the Mystery Shack, would give job interviews to stars from some of the channel's live-action sitcoms whose bus had broken down outside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E61%20-%20Grunkle%20Stan%27s%20Lost%20Mystery%20Shack%20Interview%20-%20Bradley%20Steven%20Perry%20from%20Mighty%20Med-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x61 - Grunkle Stan's Lost Mystery Shack Interview - Bradley Steven Perry from Mighty Med
+          </div>
+          <div class="plot">Grunkle Stan's Lost Mystery Shack Interviews was a series of promotional ads aired during showings of Gravity Falls on Disney XD. The ads aired as part of a Gravity Falls marathon on June 28th, 2015 and were comprised of short, 30-second segments where a puppet version of Stan Pines, desperate for summer workers at the Mystery Shack, would give job interviews to stars from some of the channel's live-action sitcoms whose bus had broken down outside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E62%20-%20Grunkle%20Stan%27s%20Lost%20Mystery%20Shack%20Interview%20-%20Cade%20Sutton%20from%20Kirby%20Buckets-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x62 - Grunkle Stan's Lost Mystery Shack Interview - Cade Sutton from Kirby Buckets
+          </div>
+          <div class="plot">Grunkle Stan's Lost Mystery Shack Interviews was a series of promotional ads aired during showings of Gravity Falls on Disney XD. The ads aired as part of a Gravity Falls marathon on June 28th, 2015 and were comprised of short, 30-second segments where a puppet version of Stan Pines, desperate for summer workers at the Mystery Shack, would give job interviews to stars from some of the channel's live-action sitcoms whose bus had broken down outside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E63%20-%20Grunkle%20Stan%27s%20Lost%20Mystery%20Shack%20Interview%20-%20Cameron%20Boyce-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x63 - Grunkle Stan's Lost Mystery Shack Interview - Cameron Boyce
+          </div>
+          <div class="plot">Grunkle Stan's Lost Mystery Shack Interviews was a series of promotional ads aired during showings of Gravity Falls on Disney XD. The ads aired as part of a Gravity Falls marathon on June 28th, 2015 and were comprised of short, 30-second segments where a puppet version of Stan Pines, desperate for summer workers at the Mystery Shack, would give job interviews to stars from some of the channel's live-action sitcoms whose bus had broken down outside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E64%20-%20Grunkle%20Stan%27s%20Lost%20Mystery%20Shack%20Interview%20-%20Jacob%20Bertrand%20from%20Kirby%20Buckets-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x64 - Grunkle Stan's Lost Mystery Shack Interview - Jacob Bertrand from Kirby Buckets
+          </div>
+          <div class="plot">Grunkle Stan's Lost Mystery Shack Interviews was a series of promotional ads aired during showings of Gravity Falls on Disney XD. The ads aired as part of a Gravity Falls marathon on June 28th, 2015 and were comprised of short, 30-second segments where a puppet version of Stan Pines, desperate for summer workers at the Mystery Shack, would give job interviews to stars from some of the channel's live-action sitcoms whose bus had broken down outside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E65%20-%20Grunkle%20Stan%27s%20Lost%20Mystery%20Shack%20Interview%20-%20Jake%20Short%20from%20Mighty%20Med-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x65 - Grunkle Stan's Lost Mystery Shack Interview - Jake Short from Mighty Med
+          </div>
+          <div class="plot">Grunkle Stan's Lost Mystery Shack Interviews was a series of promotional ads aired during showings of Gravity Falls on Disney XD. The ads aired as part of a Gravity Falls marathon on June 28th, 2015 and were comprised of short, 30-second segments where a puppet version of Stan Pines, desperate for summer workers at the Mystery Shack, would give job interviews to stars from some of the channel's live-action sitcoms whose bus had broken down outside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E66%20-%20Grunkle%20Stan%27s%20Lost%20Mystery%20Shack%20Interview%20-%20Joey%20Bragg%20from%20Liv%20and%20Maddie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x66 - Grunkle Stan's Lost Mystery Shack Interview - Joey Bragg from Liv and Maddie
+          </div>
+          <div class="plot">Grunkle Stan's Lost Mystery Shack Interviews was a series of promotional ads aired during showings of Gravity Falls on Disney XD. The ads aired as part of a Gravity Falls marathon on June 28th, 2015 and were comprised of short, 30-second segments where a puppet version of Stan Pines, desperate for summer workers at the Mystery Shack, would give job interviews to stars from some of the channel's live-action sitcoms whose bus had broken down outside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E67%20-%20Grunkle%20Stan%27s%20Lost%20Mystery%20Shack%20Interview%20-%20Kelli%20Berglund%20from%20Lab%20Rats-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x67 - Grunkle Stan's Lost Mystery Shack Interview - Kelli Berglund from Lab Rats
+          </div>
+          <div class="plot">Grunkle Stan's Lost Mystery Shack Interviews was a series of promotional ads aired during showings of Gravity Falls on Disney XD. The ads aired as part of a Gravity Falls marathon on June 28th, 2015 and were comprised of short, 30-second segments where a puppet version of Stan Pines, desperate for summer workers at the Mystery Shack, would give job interviews to stars from some of the channel's live-action sitcoms whose bus had broken down outside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E68%20-%20Grunkle%20Stan%27s%20Lost%20Mystery%20Shack%20Interview%20-%20Mekai%20Curtis%20from%20Kirby%20Buckets-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x68 - Grunkle Stan's Lost Mystery Shack Interview - Mekai Curtis from Kirby Buckets
+          </div>
+          <div class="plot">Grunkle Stan's Lost Mystery Shack Interviews was a series of promotional ads aired during showings of Gravity Falls on Disney XD. The ads aired as part of a Gravity Falls marathon on June 28th, 2015 and were comprised of short, 30-second segments where a puppet version of Stan Pines, desperate for summer workers at the Mystery Shack, would give job interviews to stars from some of the channel's live-action sitcoms whose bus had broken down outside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E69%20-%20Grunkle%20Stan%27s%20Lost%20Mystery%20Shack%20Interview%20-%20Spencer%20Boldman%20from%20Lab%20Rats-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x69 - Grunkle Stan's Lost Mystery Shack Interview - Spencer Boldman from Lab Rats
+          </div>
+          <div class="plot">Grunkle Stan's Lost Mystery Shack Interviews was a series of promotional ads aired during showings of Gravity Falls on Disney XD. The ads aired as part of a Gravity Falls marathon on June 28th, 2015 and were comprised of short, 30-second segments where a puppet version of Stan Pines, desperate for summer workers at the Mystery Shack, would give job interviews to stars from some of the channel's live-action sitcoms whose bus had broken down outside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E70%20-%20Grunkle%20Stan%27s%20Lost%20Mystery%20Shack%20Interview%20-%20Tenzing%20N.%20Trainor%20from%20Liv%20and%20Maddie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x70 - Grunkle Stan's Lost Mystery Shack Interview - Tenzing N. Trainor from Liv and Maddie
+          </div>
+          <div class="plot">Grunkle Stan's Lost Mystery Shack Interviews was a series of promotional ads aired during showings of Gravity Falls on Disney XD. The ads aired as part of a Gravity Falls marathon on June 28th, 2015 and were comprised of short, 30-second segments where a puppet version of Stan Pines, desperate for summer workers at the Mystery Shack, would give job interviews to stars from some of the channel's live-action sitcoms whose bus had broken down outside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E71%20-%20Grunkle%20Stan%27s%20Lost%20Mystery%20Shack%20Interview%20-%20Tyrel%20Jackson%20Williams%20from%20Lab%20Rats-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x71 - Grunkle Stan's Lost Mystery Shack Interview - Tyrel Jackson Williams from Lab Rats
+          </div>
+          <div class="plot">Grunkle Stan's Lost Mystery Shack Interviews was a series of promotional ads aired during showings of Gravity Falls on Disney XD. The ads aired as part of a Gravity Falls marathon on June 28th, 2015 and were comprised of short, 30-second segments where a puppet version of Stan Pines, desperate for summer workers at the Mystery Shack, would give job interviews to stars from some of the channel's live-action sitcoms whose bus had broken down outside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E72%20-%20Grunkle%20Stan%27s%20Lost%20Mystery%20Shack%20Interview%20-%20Zendaya%20from%20K.C.%20Undercover-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x72 - Grunkle Stan's Lost Mystery Shack Interview - Zendaya from K.C. Undercover
+          </div>
+          <div class="plot">Grunkle Stan's Lost Mystery Shack Interviews was a series of promotional ads aired during showings of Gravity Falls on Disney XD. The ads aired as part of a Gravity Falls marathon on June 28th, 2015 and were comprised of short, 30-second segments where a puppet version of Stan Pines, desperate for summer workers at the Mystery Shack, would give job interviews to stars from some of the channel's live-action sitcoms whose bus had broken down outside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E73%20-%20Journal%203%20Infomercial-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x73 - Journal 3 Infomercial
+          </div>
+          <div class="plot">Gravity Falls Journal 3 Infomercial is a special infomercial promoting the real-life edition of Journal 3 and its special edition, that was released online by Disney's Oh My Disney YouTube channel on March 28, 2017.
+
+The commercial brought back voice actors Kristen Schaal (Mabel Pines) and Jason Ritter (Dipper Pines), who try to sell their Journal 3 accessories.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S00E81%20-%20The%20Hirsch%20Twins-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x81 - The Hirsch Twins
+          </div>
+          <div class="plot">Alex &amp; Ariel Hirsch remember their own summers growing up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E01%20-%20Tourist%20Trapped-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Tourist Trapped
+          </div>
+          <div class="plot">Twins Dipper and Mabel Pines visit their eccentric great-uncle for a summer in Gravity Falls, Oregon, where he operates the world's most bizarre museum. As soon as the twins arrive in Gravity Falls, they discover something amiss in the remote town.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E02%20-%20The%20Legend%20of%20the%20Gobblewonker-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Legend of the Gobblewonker
+          </div>
+          <div class="plot">When Dipper and Mabel hear rumors of a sea monster that lives at the bottom of the local lake, they enlist Soos to take them on a boating expedition to prove it really does exist.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E03%20-%20Headhunters-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Headhunters
+          </div>
+          <div class="plot">When someone tampers with Mabel's life-size wax statue of Grunkle Stan, she and Dipper set out to find the culprit. Meanwhile, Grunkle Stan mourns over the loss of his wax doppelganger.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E04%20-%20The%20Hand%20That%20Rocks%20the%20Mabel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Hand That Rocks the Mabel
+          </div>
+          <div class="plot">Dipper and Mabel discover that their seemingly cherubic new neighbor, Lil' Gideon, happens to be the town's adored psychic. But when Lil' Gideon guilts her into dating him, she and Dipper soon learn that his cuteness can fade all too quickly.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E05%20-%20The%20Inconveniencing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Inconveniencing
+          </div>
+          <div class="plot">Dipper is invited by Wendy and her teen friends on a trek that leads to an abandoned convenience store that may be haunted.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E06%20-%20Dipper%20vs.%20Manliness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Dipper vs. Manliness
+          </div>
+          <div class="plot">In a quest to attain manliness, Dipper ventures into the forest to battle the notorious Multi-Bear. Meanwhile, Mabel tries to teach Grunkle Stan how to be attractive to women, particularly the waitress in the local diner, Lazy Susan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E07%20-%20Double%20Dipper-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Double Dipper
+          </div>
+          <div class="plot">Stan throws a big weekend party to promote the Mystery Shack. Dipper makes clones of himself to impress Wendy. Mabel fights for the Party Queen title in honor of her two friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E08%20-%20Irrational%20Treasure-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Irrational Treasure
+          </div>
+          <div class="plot">When Dipper and Mabel discover evidence that the reported town founder is a hoax, they set out to expose the historical cover-up and prove that Mabel's silliness is not a bad thing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E09%20-%20The%20Time%20Traveler%27s%20Pig-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Time Traveler's Pig
+          </div>
+          <div class="plot">Dipper wants to correct a mistake he made in the past with assistance from a time machine. Mabel is overjoyed when she wins a pet pig at a fair.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E10%20-%20Fight%20Fighters-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Fight Fighters
+          </div>
+          <div class="plot">After being challenged to a video game battle by Robbie, Dipper is shocked when his favorite playable fighter, Rumble McSkirmish, comes to life to defend him. But Dipper soon loses control over Rumble McSkirmish and has to find a way to stop him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E11%20-%20Little%20Dipper-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Little Dipper
+          </div>
+          <div class="plot">Dipper is self-conscious that Mabel is taller than him and seeks a magic solution. Meanwhile Lil' Gideon takes advantage of Dipper's and Mabel's height discrepancy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E12%20-%20Summerween-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Summerween
+          </div>
+          <div class="plot">Dipper and Mabel go trick-or-treating in the summer and encounter a candy-loving monster who threatens to devour them if they don't bring him sweet things to eat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E13%20-%20Boss%20Mabel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Boss Mabel
+          </div>
+          <div class="plot">Stan leaves Mabel in charge of the Mystery Shack while he is gone and the power goes to her head.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E14%20-%20Bottomless%20Pit%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Bottomless Pit!
+          </div>
+          <div class="plot">While Stan, Dipper, Mabel and Soos are falling in a bottomless pit, they tell stories to pass the time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E15%20-%20The%20Deep%20End-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - The Deep End
+          </div>
+          <div class="plot">When Mabel befriends a cute merman trapped in the public pool, she's determined to help him out. Meanwhile, Dipper decides to volunteer as a lifeguard to see Wendy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E16%20-%20Carpet%20Diem-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Carpet Diem
+          </div>
+          <div class="plot">The twins discover a hidden room inside the Mystery Shack and compete over who should have it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E17%20-%20Boyz%20Crazy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Boyz Crazy
+          </div>
+          <div class="plot">When Mabel discovers that her favorite boy band is actually a bunch of imprisoned clones, she sets them free, only to decide on keeping them for herself. Meanwhile, Dipper is convinced that Robbie plans to brainwash Wendy with a secret message hidden inside one of his songs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E18%20-%20Land%20Before%20Swine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Land Before Swine
+          </div>
+          <div class="plot">When Waddles is snatched by a prehistoric beast, Dipper, Mabel, Stan, Soos, and Old Man McGucket must journey to a mysterious land trapped in time to rescue him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E19%20-%20Dreamscaperers%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Dreamscaperers (1)
+          </div>
+          <div class="plot">Dipper, Mabel, and Soos must travel through Grunkle Stan's mind to defeat a tricky dream demon summoned by Lil Gideon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S01E20%20-%20Gideon%20Rises%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Gideon Rises (2)
+          </div>
+          <div class="plot">Li'l Gideon swindles the Mystery Shack away, forcing Grunkle Stan and the kids to move in with Soos. While Stan weighs how he can still care for his grandniece and nephew, they decide to take on Gideon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E01%20-%20Scary-oke-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Scary-oke
+          </div>
+          <div class="plot">The Pines family is starting to get everything back to normal after the Lil' Gideon incident. They throw a &ldquo;Mystery Shack Is Back&rdquo; party, but some unwelcome guests intend to crash it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E02%20-%20Into%20the%20Bunker-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Into the Bunker
+          </div>
+          <div class="plot">Dipper&rsquo;s secret journal pages lead him and the gang to the author&rsquo;s hidden bunker where they find themselves face-to-face with a mysterious figure from Gravity Falls&rsquo; lore.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E03%20-%20The%20Golf%20War-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - The Golf War
+          </div>
+          <div class="plot">After being belittled by Pacifica one too many times, Mabel challenges her to a miniature golf-off which gets a tad out of control when some local residents offer their help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E04%20-%20Sock%20Opera-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Sock Opera
+          </div>
+          <div class="plot">Mabel decides to put on a sock puppet rock opera to impress a local puppeteer, but her show goes awry when Dipper's drive to uncover more of the journal's secrets leads to a supernatural disaster.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E05%20-%20Soos%20and%20the%20Real%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Soos and the Real Girl
+          </div>
+          <div class="plot">Soos needs a date for his cousin Reggie's engagement party and looks to a dating simulator game to help him talk to girls.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E06%20-%20Little%20Gift%20Shop%20of%20Horrors-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Little Gift Shop of Horrors
+          </div>
+          <div class="plot">In three separate mysterious tales, Stan is cursed by a Witch, Waddles accidentally eats a bowl of brain-enhancing jelly and builds a machine that allows him to speak, and Mabel faces her fear of claymation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E07%20-%20Society%20of%20the%20Blind%20Eye-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Society of the Blind Eye
+          </div>
+          <div class="plot">The kids, along with Old Man McGucket's help, discover there is a secret society in Gravity Falls.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E08%20-%20Blendin%27s%20Game-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Blendin's Game
+          </div>
+          <div class="plot">Blendin returns to face off with Dipper and Mabel in a futuristic battle that could trap them forever in time jail.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E09%20-%20The%20Love%20God-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - The Love God
+          </div>
+          <div class="plot">Mabel takes matchmaking too far when she steals a love potion from a real Love God.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E10%20-%20Northwest%20Mansion%20Noir-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Northwest Mansion Noir
+          </div>
+          <div class="plot">Pacifica enlists Dipper&rsquo;s help to rid the Northwest Mansion of a ghost before he wreaks havoc on her fancy party.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E11%20-%20Not%20What%20He%20Seems-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Not What He Seems
+          </div>
+          <div class="plot">After agents Powers and Trigger take Stan into custody, Dipper and Mabel begin to wonder how much they actually know about their Grunkle Stan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E12%20-%20A%20Tale%20of%20Two%20Stans-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - A Tale of Two Stans
+          </div>
+          <div class="plot">Cornered underneath the Mystery Shack, Stan must finally reveal the secrets of his past and his mysterious portal to Dipper and Mabel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E13%20-%20Dungeons%2C%20Dungeons%2C%20%26%20More%20Dungeons-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Dungeons, Dungeons, &amp; More Dungeons
+          </div>
+          <div class="plot">Dipper finds an unlikely friend to join him with his newest obsession, a board game called &ldquo;Dungeons, Dungeons &amp; More Dungeons.&rdquo;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E14%20-%20The%20Stanchurian%20Candidate-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - The Stanchurian Candidate
+          </div>
+          <div class="plot">When Grunkle Stan decides to run for mayor, Dipper and Mabel have their work cut out for them trying to turn their gaffe-prone uncle into the perfect candidate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E15%20-%20The%20Last%20Mabelcorn-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - The Last Mabelcorn
+          </div>
+          <div class="plot">A new threat leads Mabel to venture into the enchanted realm of the unicorns. Meanwhile, Dipper learns an unexpected twist about the enigmatic Bill Cipher.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E16%20-%20Roadside%20Attraction-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - Roadside Attraction
+          </div>
+          <div class="plot">Grunkle Stan takes the kids with him on a road-trip to sabotage all the other tourist traps in Oregon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E17%20-%20Dipper%20and%20Mabel%20vs.%20the%20Future-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Dipper and Mabel vs. the Future
+          </div>
+          <div class="plot">Mabel makes plans for her and Dipper's 13th birthday party; Dipper ventures below the town and discovers its most shocking secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E18%20-%20Weirdmageddon%20Part%20I-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - Weirdmageddon Part I
+          </div>
+          <div class="plot">Bill has returned to take down the Pines family. But this time he has brought some of his friends with him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E19%20-%20Weirdmageddon%202%20Escape%20from%20Reality-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Weirdmageddon 2: Escape from Reality
+          </div>
+          <div class="plot">Dipper, Soos and Wendy must save Mabel from a strange new world, while Bill's forces plan their next move.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gravity%20Falls%20-%20S02E20%20-%20Weirdmageddon%203%20Take%20Back%20the%20Falls-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - Weirdmageddon 3: Take Back the Falls
+          </div>
+          <div class="plot">Ford discovers Bill&rsquo;s true motives and a final confrontation with Bill leads to the Pines family&rsquo;s ultimate fate and greatest sacrifice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

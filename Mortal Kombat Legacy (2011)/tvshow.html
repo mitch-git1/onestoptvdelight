@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Mortal Kombat: Legacy
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Mortal Kombat: Legacy</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Mortal%20Kombat%20Legacy%20%282011%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mortal%20Kombat%20Legacy%20-%20S01E01%20-%20Jax%2C%20Sonya%20and%20Kano%20Part%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Jax, Sonya and Kano: Part 1
+          </div>
+          <div class="plot">When Lt. Sonya Blade calls in a report that she has tracked down Kano, &quot;Jax&quot; Briggs convinces his superior, Kurtis Stryker, to take in a squad of men, only to discover that it's a trap.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mortal%20Kombat%20Legacy%20-%20S01E02%20-%20Jax%2C%20Sonya%20and%20Kano%20Part%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Jax, Sonya and Kano: Part 2
+          </div>
+          <div class="plot">While Jax and Kano fight to the death, Sonya manages to escape her bonds. However, Jax is forced to protect her from an explosion, injuring both of them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mortal%20Kombat%20Legacy%20-%20S01E03%20-%20Johnny%20Cage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Johnny Cage
+          </div>
+          <div class="plot">Johnny Cage, former Power Ranger, tries to restart his career as an action star only to find that no one wants a washed-up teenage actor. But when TV executives push him too far, Johnny goes berserk... and gets an offer he can't refuse.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mortal%20Kombat%20Legacy%20-%20S01E04%20-%20Kitana%20%26%20Mileena%20Part%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Kitana &amp; Mileena Part 1
+          </div>
+          <div class="plot">Beautiful, athletic, and trained as highly skilled assassins, Kitana and Mileena have grown up thinking that they are sisters. Shao Kahn, Emperor of the Outworld, has tricked Shang Tsung into becoming his servant for Mortal Kombat by making him clone Mileena as a Tarkatan clone of Kitana, out of Shao Kahn's fear that Kitana wouldn't love him enough if she ever found out the truth about her Mother and Father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mortal%20Kombat%20Legacy%20-%20S01E05%20-%20Kitana%20%26%20Mileena%20Part%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Kitana &amp; Mileena Part 2
+          </div>
+          <div class="plot">The rivalry between Kitana and Mileena grows, while Kitana attempts to learn the truth behind her childhood and the real identity of her parents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mortal%20Kombat%20Legacy%20-%20S01E06%20-%20Raiden-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Raiden
+          </div>
+          <div class="plot">Raiden falls to earth and is confined to a mental hospital. With time running out before the beginning of the Mortal Kombat tournament, his only hope for escape lies with a fellow patient, Anna Blue.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mortal%20Kombat%20Legacy%20-%20S01E07%20-%20Scorpion%20and%20Sub-Zero%20Part%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Scorpion and Sub-Zero: Part 1
+          </div>
+          <div class="plot">In feudal Japan, the greatest warrior, General Hanzo Hasashi of the Shirai Ryu, reluctantly trains his son in the ways of battle. However, when the Shogun arrives, Hanzo discovers that his Ryu's enemies have set a trap.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mortal%20Kombat%20Legacy%20-%20S01E08%20-%20Scorpion%20and%20Sub-Zero%20Part%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Scorpion and Sub-Zero: Part 2
+          </div>
+          <div class="plot">With the Shirai Ryu clan murdered by the hands of Sub-Zero and the Lin Kuei, Hanzo Hasashi has failed to protect his village. With his eternal soul destined to rot in the depths of hell, he is visited by a mysterious sorcerer. Will vengeance be enough to get Scorpion to enter the Mortal Kombat Tournament?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mortal%20Kombat%20Legacy%20-%20S01E09%20-%20Cyrax%20and%20Sektor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Cyrax and Sektor
+          </div>
+          <div class="plot">Cyrax and Sektor are chosen to be the future of the Lin Kuei by the Grand Master, but Cyrax is less than enthusiastic about giving his life over to a cybernetic transformation that will erase his memories and turn him into the ultimate fighting machine. When he discovers that the cyborg he is fighting seems closely familiar, Sektor must keep Cyrax focused on destroying Hydro, and not himself or their future...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x1 - Reunited in Macau
+          </div>
+          <div class="plot">In a karaoke bar in Macau, two old friends renew their acquaintance... even though one doesn't want to.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x2 - The Fall of Liu Kang
+          </div>
+          <div class="plot">The tournament begins as Raiden summons his allies, and Shang Tsung arrives with his.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x3 - Kenshi's Origin
+          </div>
+          <div class="plot">As Raiden informs the Earthrealm warriors what to expect, Kenshi remembers his battle for the Sword of Sento against the demon Ermac.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x4 - Kenshi encounters Ermac
+          </div>
+          <div class="plot">In the first fight of the Mortal Kombat tournament, Kenshi battles his old foe Ermac to the death.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x5 - Kitana and Mileena
+          </div>
+          <div class="plot">Kitana questions everything she knows after she discovers her true father. However, Shao Khan orders her and her sister to the tournament to compete for Outworld, and they encounter Johnny Cage.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x6 - Johnny Cage
+          </div>
+          <div class="plot">Kitana must choose who she will serve when Mileena fights Johnny Cage to the death.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x7 - Scorpion and Sub-Zero II: Part 1
+          </div>
+          <div class="plot">In Feudal Japan, Hanzo and Bi Han try to settle the age-old feud between their two clans, despite the efforts of Bi Han's resentful brother Kuai Lang.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x8 - Scorpion and Sub-Zero II: Part 2
+          </div>
+          <div class="plot">Sub Zero discovers too late that his childhood friend Hanzo holds him responsible for the death of his family and his village.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x9 - Liu Kang
+          </div>
+          <div class="plot">After the death of Liu Kang's fianc&eacute;e, the sorcerer Shang Tsung approaches the martial artist and offers him revenge on all the criminals of Earthrealm... if Liu will fight for Outworld in the Mortal Kombat tournament.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x10 - Liu Kang and Kung Lao
+          </div>
+          <div class="plot">Kung Lao discovers that Liu is now working for Shang Tsung and Outworld, and refuses to fight his friend... who has already defeated Johnny and Stryker.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

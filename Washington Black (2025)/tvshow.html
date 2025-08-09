@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Washington Black
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Washington Black</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Washington%20Black%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Washington%20Black%20-%20S01E01%20-%20The%20Flying%20Man%20%26%20the%20Musician-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Flying Man &amp; the Musician
+          </div>
+          <div class="plot">In 1837 Halifax, inventor Washington Black chases flight while haunted by his past. He meets Tanna, a bold, independent woman. Together, they face trials and learn that daring to dream can defy the limits of their world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Washington%20Black%20-%20S01E02%20-%20Movements%20of%20Jah%20People-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Movements of Jah People
+          </div>
+          <div class="plot">Young Wash and Titch flee a plantation in the Cloud Cutter but crash onto a pirate ship. In Halifax, Wash battles his past as his bond with Tanna deepens&mdash;a fight for survival and belonging amid growing tensions on land and sea.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Washington%20Black%20-%20S01E03%20-%20Of%20Love%20%26%20Caribbean%20Rum-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Of Love &amp; Caribbean Rum
+          </div>
+          <div class="plot">As Wash confronts his past, his bond with Tanna grows&mdash;but is tested by her engagement to McGee. Betrayed and ambushed by bounty hunters, Medwin must act fast. As secrets surface, loyalty and survival hang in the balance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Washington%20Black%20-%20S01E04%20-%20The%20Souls%20%26%20Science%20of%20Black%20Folk-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Souls &amp; Science of Black Folk
+          </div>
+          <div class="plot">Young Wash, Titch, and Theo head to Virginia to confront truths about Titch's father. In Halifax, Tanna's plan to sabotage her engagement backfires. Wash's daring dive to impress Goff brings both danger and a chance for something greater.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Washington%20Black%20-%20S01E05%20-%20St.%20George%20and%20the%20Dragon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - St. George and the Dragon
+          </div>
+          <div class="plot">Young Wash and Titch dodge capture, uncovering allies, threats, and shocking truths about Titch's family. In Halifax, Tanna's plan backfires, straining ties with Wash and Goff. As Wash's aquarium impresses, danger tests loyalty and ambition.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Washington%20Black%20-%20S01E06%20-%20Selamiut-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Selamiut
+          </div>
+          <div class="plot">Pursued by Willard, Wash faces a life-changing decision. As tensions rise between Tanna and McGee, Young Wash must carve his own path on a perilous Arctic journey.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Washington%20Black%20-%20S01E07%20-%20J%27ouvert%20Morning-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - J'ouvert Morning
+          </div>
+          <div class="plot">Wash urges Medwin to fight for love, then joins Tanna and Goff in London. At the Royal Science League, betrayals surface, and a reunion at the Wilde estate unveils a powerful truth about Wash's past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Washington%20Black%20-%20S01E08%20-%20If%20You%20See%20My%20Mama%2C%20Whisper%20Her%20This-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - If You See My Mama, Whisper Her This...
+          </div>
+          <div class="plot">In Morocco, Wash reunites with Titch and discovers his father's true legacy. He and Tanna journey home on the Wind Sailer. A dreamlike reunion brings answers from the past as Wash's family sets sail toward a new future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

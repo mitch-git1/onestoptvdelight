@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Magic School Bus
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Magic School Bus</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Magic%20School%20Bus%20%281994%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S01E01%20-%20Gets%20Lost%20in%20Space-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Gets Lost in Space
+          </div>
+          <div class="plot">Arnold's know-it-all cousin Janet drives the kids crazy when she joins Ms. Frizzle's class on a field trip and gets them lost in outer space!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S01E02%20-%20For%20Lunch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - For Lunch
+          </div>
+          <div class="plot">Arnold's so excited he doesn't have to go on a field trip! But when he accidentally swallows his miniaturised class, he becomes the field trip!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S01E03%20-%20Inside%20Ralphie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Inside Ralphie
+          </div>
+          <div class="plot">Ralphie is crushed when a fever keeps him home from school the day he's scheduled to host a FNN (Frizzle News Network) television broadcast on health. With Tyne Daly as Ralphie&rsquo;s mom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S01E04%20-%20Gets%20Eaten-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Gets Eaten
+          </div>
+          <div class="plot">Arnold and Keesha are in trouble when they forget to bring in their assignment on &quot;two things that go together.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S01E05%20-%20Hops%20Home-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Hops Home
+          </div>
+          <div class="plot">When Wanda's pet frog, Bella, jumps out an open window, Ms. Frizzle shrinks the bus into a mechanical frog and takes her now tiny class on a hop-along adventure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S01E06%20-%20Meets%20the%20Rot%20Squad-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Meets the Rot Squad
+          </div>
+          <div class="plot">It's &quot;Accidental Science Project&quot; day and the class has brought in marvelously rotten entries from the back of their refrigerators. With Ed Begley, Jr. as Larry Log-Away.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S01E07%20-%20All%20Dried%20Up-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - All Dried Up
+          </div>
+          <div class="plot">Always the caring soul, Phoebe goes on a crusade to save the animals and plants of the desert -- and discovers how well they take care of themselves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S01E08%20-%20In%20the%20Haunted%20House-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - In the Haunted House
+          </div>
+          <div class="plot">The class is thrilled about its upcoming concert at the Sound Museum -- until they discover the spooky mansion is more of a thrill than they bargained for. With Carol Channing as Cornelia C. Contralto.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S01E09%20-%20Gets%20Ready%2C%20Set%2C%20Dough-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Gets Ready, Set, Dough
+          </div>
+          <div class="plot">It's Ms. Frizzle's birthday, and a field trip to the bakery seems perfect -- until the bus's shrinker-scope goes on the fritz and the class gets baked in a cake! With Dom DeLuise as the Baker.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S01E10%20-%20Plays%20Ball-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Plays Ball
+          </div>
+          <div class="plot">Ms. Frizzle combines Dorothy Ann's physics and Ralphie's baseball into a &quot;Frictionless Baseball Game.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S01E11%20-%20Goes%20to%20Seed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Goes to Seed
+          </div>
+          <div class="plot">The class' garden is going to be featured on the cover of PLANT IT! magazine. But Phoebe's garden plot is glaringly empty. With Robby Benson as Mr. Seedplot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S01E12%20-%20Gets%20Ants%20in%20Its%20Pants-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Gets Ants in Its Pants
+          </div>
+          <div class="plot">The Magic School Bus goes into show business when Keesha directs a movie about social animals for the school science fair.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S01E13%20-%20Kicks%20Up%20a%20Storm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Kicks Up a Storm
+          </div>
+          <div class="plot">The Friz transforms the bus into a Weathermobile and -- in a wild ride through the skies -- Ralphie becomes the meteorological superhero of his dreams.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S02E01%20-%20Blows%20Its%20Top-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Blows Its Top
+          </div>
+          <div class="plot">To help them understand how the Earth makes islands, Ms. Frizzle presents the kids with an island that hasn&rsquo;t been discovered yet!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S02E02%20-%20Flexes%20Its%20Muscles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Flexes Its Muscles
+          </div>
+          <div class="plot">Ms. Frizzle takes the class on a field trip to R.U. Humerus's Body Shop. They learn how bones, muscles and joints all work together to help us move.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S02E03%20-%20The%20Busasaurus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - The Busasaurus
+          </div>
+          <div class="plot">Ms. Frizzle takes the class on a dinosaur dig, courtesy of her old school chum, paleontologist Dr. Carmina Skeledon, and travels 67 million years back in time!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S02E04%20-%20Going%20Batty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Going Batty
+          </div>
+          <div class="plot">When Ms. Frizzle invites the class&rsquo; parents in to see that their kids are learning about bats, Ralphie and the gang are convinced The Friz is a vampire! With Tyne Daly as Ralphie&rsquo;s mom; Eartha Kitt as Keesha&rsquo;s grandmother; Elliot Gould as Arnold&rsquo;s dad; Dana Elcar as Phoebe&rsquo;s dad; and Edward James Olmos as Carlos&rsquo;s dad.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S02E05%20-%20Butterfly%20and%20the%20Bog%20Beast-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Butterfly and the Bog Beast
+          </div>
+          <div class="plot">The class needs a new mascot for its soccer team. Phoebe suggests butterflies, but everyone thinks they&rsquo;re wimpy&mdash;until The Friz flutters in!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S02E06%20-%20Wet%20All%20Over-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Wet All Over
+          </div>
+          <div class="plot">Arnold and Wanda are due to give a report on the town waterworks. But Ms. Frizzle thinks it's field DRIP time! She turns the bus and class into water drops and the kids evaporate, condense, become rain and rush by river into the ocean. After several trips through the water cycle, they're ready to turn back into regular kids. But the magic key that will get them out of the cycle is locked in the school bathroom! Trying to work their watery way into the bathroom, the kids go through the town waterworks and see how water is purified. Can they get to school through bathroom pipes? Or are they stuck in the water cycle forever?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S02E07%20-%20In%20a%20Pickle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - In a Pickle
+          </div>
+          <div class="plot">Keesha and the class return from vacation to find her prize cucumber has turned into a pickle! Could the Mike Robe gang be to blame?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S02E08%20-%20Revving%20Up-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Revving Up
+          </div>
+          <div class="plot">The school district&rsquo;s Vehicle Maintenance Inspector, Junkett is about to condemn the Magic School Bus!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S02E09%20-%20Taking%20Flight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Taking Flight
+          </div>
+          <div class="plot">Shrunk inside Tim&rsquo;s model airplane, the class goes on a high-flying field trip to find out how things fly.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S02E10%20-%20Getting%20Energized-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Getting Energized
+          </div>
+          <div class="plot">The class is ready to plug in their &ldquo;Double-Trouble Wheel of Wonder&rdquo; at the town carnival, when they discover all the electrical outlets are taken.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S02E11%20-%20Out%20of%20This%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Out of This World
+          </div>
+          <div class="plot">When Dorothy Ann warns the kids there&rsquo;s an asteroid headed straight for their school, Ms. Frizzle arranges a field trip into space.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S02E12%20-%20Cold%20Feet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Cold Feet
+          </div>
+          <div class="plot">Liz has gone off to a mysterious place called &ldquo;Herp Haven.&rdquo; Thinking she&rsquo;s in trouble, the class rushes to Herp Haven, where they turn into reptiles. With Michael York as Herpst.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S02E13%20-%20Ups%20and%20Downs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Ups and Downs
+          </div>
+          <div class="plot">There&rsquo;s a monster in Walkerville Lake! Wanda competes with Gerri Poveri, a TV reporter whose ratings are sinking, to be the first one underwater.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S03E01%20-%20In%20a%20Beehive-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - In a Beehive
+          </div>
+          <div class="plot">Tim&rsquo;s beekeeper Grandfather has the sweetest honey in town. Ms. Frizzle turns her class into bees so they can visit a hive and learn how raw honey is processed firsthand.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S03E02%20-%20In%20the%20Arctic-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - In the Arctic
+          </div>
+          <div class="plot">&ldquo;Where did the hot go?&rdquo; wonders Arnold when his hot cocoa cools off. So, Ms. Frizzle whisks the class to the Arctic!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S03E03%20-%20Spins%20a%20Web-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Spins a Web
+          </div>
+          <div class="plot">Ms. Frizzle transports the class into a 1950s horror movie, where a 50-foot praying mantis is wreaking havoc on the town. Ed Asner stars as the film&rsquo;s power-mad protagonist, General Araneus.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S03E04%20-%20Under%20Construction-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Under Construction
+          </div>
+          <div class="plot">Two inches tall and trapped in a bathroom at Wanda&rsquo;s house, the kids must use what they&rsquo;ve learned about structures to escape before Wanda&rsquo;s mother discovers them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S03E05%20-%20Gets%20a%20Bright%20Idea-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Gets a Bright Idea
+          </div>
+          <div class="plot">The light show at Walkerville&rsquo;s old theater is illuminating, but Arnold&rsquo;s bossy cousin Janet claims she could put on a much better show&mdash;if there wasn&rsquo;t a ghost living in the theater!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S03E06%20-%20Shows%20and%20Tells-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Shows and Tells
+          </div>
+          <div class="plot">Arnold brings in a webbed hoop for the International Show-and-Tell Competition, left behind by his great-aunt, a famous archaeologist, but he has no idea what it is! Can the kids find out what it is before he takes the stage? With Alex Trebek as the &ldquo;Sportscaster.&rdquo;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S03E07%20-%20Makes%20a%20Rainbow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Makes a Rainbow
+          </div>
+          <div class="plot">The class finds Ms. Frizzle inside her closet&mdash;playing a pinball machine she created with light pulses instead of steel balls. With time and the light pulses running out, the kids must discover the secrets of color&mdash;before the principal, Mr. Ruhle, discovers them!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S03E08%20-%20Goes%20Upstream-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Goes Upstream
+          </div>
+          <div class="plot">Ralphie wants to serve salmon at the annual school picnic, but he can&rsquo;t find any at his favorite fishing spot. But when the kids are &ldquo;Frizzled&rdquo; inside a salmon-bus they have an uncontrollable urge to head upriver.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S03E09%20-%20Works%20Out-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Works Out
+          </div>
+          <div class="plot">Is Mr. Sinew any match for the Friz? At this year&rsquo;s &ldquo;Teacher-athlon,&rdquo; the kids fear Ms. Frizzle doesn&rsquo;t stand a chance against the muscle-bound gym teacher from another school, so the class travels inside her body for a closer look.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S03E10%20-%20Gets%20Planted-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Gets Planted
+          </div>
+          <div class="plot">Phoebe tries to grow a vine for the school play, Jack and the Beanstalk. But her plant is more like a beansprout than a beanstalk! With the opening curtain only moments away, Ms. Frizzle turns Phoebe into a bean plant so she&rsquo;ll grow into the star of the show!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S03E11%20-%20In%20the%20Rainforest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - In the Rainforest
+          </div>
+          <div class="plot">The kids rent a rainforest cocoa tree as an Earth Day present for Ms. Frizzle. But when the harvest arrives, there&rsquo;s only one shrivelled cocoa bean! Ms. Frizzle takes the class to the rainforest to meet the impeccable Inspector 47 who keeps a tidy, mud-free cocoa grove. What has he done to the rainforest's intricate ecology web?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S03E12%20-%20Rocks%20and%20Rolls-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Rocks and Rolls
+          </div>
+          <div class="plot">To celebrate the founding of Walkerville, Ms. Frizzle&rsquo;s class sculpts a stone likeness of its founding father, Captain Walker. As they add the finishing touches, the statue tumbles down the mountain. Ms. Frizzle turns the Bus into a huge boulder and the kids into rocks while bumping down the mountain in a desperate attempt to save the statue.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S03E13%20-%20Holiday%20Special-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Holiday Special
+          </div>
+          <div class="plot">Wanda plans to see The Nutcracker ballet, but during a trip to Murph&rsquo;s recycling plant, the toy soldier she needs to get into the theater accidentally becomes a plastic pellet! Ms. Frizzle activates the Bus&rsquo;s Un-Recycler, taking the class and Murph on a song-filled field trip, where they learn how everyday items are made from recycled trash.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S04E01%20-%20Meets%20Molly%20Cule-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Meets Molly Cule
+          </div>
+          <div class="plot">When Wanda&rsquo;s favorite singer, Molly Cule comes to town and she chooses Ms. Frizzle&rsquo;s class to wash her famous car, the kids discover how to clean the car down to the very last bit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S04E02%20-%20Cracks%20a%20Yolk-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Cracks a Yolk
+          </div>
+          <div class="plot">The principal, Mr. Ruhle, has to go away for a few days and leaves his beloved chicken, Giblets, in Dorothy Ann&rsquo;s care. The Friz takes the class on a field trip to see how eggs are made - from the inside out!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S04E03%20-%20Goes%20to%20Mussel%20Beach-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Goes to Mussel Beach
+          </div>
+          <div class="plot">Ms. Frizzle&rsquo;s &ldquo;Uncle Shelby&rdquo; wants the class to look after his beachfront property. The kids soon discover that this &ldquo;luxurious&rdquo; accommodation is only a tiny spot on the shoreline.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S04E04%20-%20Goes%20on%20Air-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Goes on Air
+          </div>
+          <div class="plot">The only contribution the kids in Ms. Frizzle&rsquo;s class have made to the Walkerville Space Capsule is an empty jar. &ldquo;It&rsquo;s not empty,&rdquo; argues Keesha. &ldquo;It&rsquo;s filled with air!&rdquo; Ralphie thinks that air doesn&rsquo;t do anything, but when the bus shrinks and gets stuck inside the jar&mdash;the class finds that their only hope for escape is... air!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S04E05%20-%20Gets%20Swamped-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Gets Swamped
+          </div>
+          <div class="plot">Should Walkerville get rid of the swamp and replace it with a great new shopping mall or build the mall somewhere else? The class learns that the swamp is an important habitat and natural water filter, but the town council&rsquo;s not convinced until... FLOOD!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S04E06%20-%20Goes%20Cellular-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Goes Cellular
+          </div>
+          <div class="plot">It&rsquo;s the night of the rock lovers&rsquo; annual Granite Awards, and Arnold is about to become the first kid to win the Rocky Award. He&rsquo;s so excited, all he&rsquo;s been able to eat for weeks are &ldquo;Seaweedies.&rdquo; When he arrives for the big event, he&rsquo;s totally nervous and totally... orange!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S04E07%20-%20Sees%20Stars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Sees Stars
+          </div>
+          <div class="plot">When the kids see Horace Scope (Dabney Coleman) on the Star Shopping Network, they decide to buy Dorothy Ann a real twinkling star for her birthday.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S04E08%20-%20Gains%20Weight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Gains Weight
+          </div>
+          <div class="plot">Phoebe is chosen to give a slam-dunk exhibition during the big basketball game. When she finds she can&rsquo;t jump high enough because gravity is &ldquo;pulling on&rdquo; her, Ms. Frizzle takes the class into space and turns the Bus into a planet&mdash;with adjustable gravity!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S04E09%20-%20Makes%20a%20Stink-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Makes a Stink
+          </div>
+          <div class="plot">Flora Whiff, the famous expert on smell&mdash;whose &ldquo;nose knows&rdquo;&mdash; comes to school to judge the First Annual Smell Search. Ms. Frizzle&rsquo;s class creates a unique smell that is bound to take first prize.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S04E10%20-%20Gets%20Charged-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Gets Charged
+          </div>
+          <div class="plot">It&rsquo;s Valentine&rsquo;s Day and the class is selling lightbulbs. When they stop at Ms. Frizzle&rsquo;s house to sell her one, they find that her battery-operated doorbell doesn&rsquo;t work.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S04E11%20-%20Gets%20Programmed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Gets Programmed
+          </div>
+          <div class="plot">Ms. Frizzle&rsquo;s class opens the school for Mr. Ruhle. But there&rsquo;s so much to do! &ldquo;There must be a way to do these chores without actually doing them,&rdquo; says Carlos. Enter Mr. Ruhle&rsquo;s new computer and Mikey, Carlos&rsquo; whiz kid brother!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S04E12%20-%20In%20the%20City-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - In the City
+          </div>
+          <div class="plot">City Critters: Ms. Frizzle&rsquo;s class is visiting the zoo, which is, according to Tim, the only place in the city where wild animals can survive. To test this idea&mdash;ZAP!&mdash;Ms. Frizzle turns the class into possums, foxes, and falcons!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Magic%20School%20Bus%20-%20S04E13%20-%20Takes%20a%20Dive-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - Takes a Dive
+          </div>
+          <div class="plot">When Wanda discovers that one of Ms. Frizzle&rsquo;s ancestors was Redbeard the Pirate, she naturally wants to follow the treasure map he left. The map leads the class to a coral reef, where they learn firsthand that life there is risky.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

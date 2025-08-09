@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Black Dynamite
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Black Dynamite</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Black%20Dynamite%20%282012%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S00E01%20-%20Trouble%20on%20Puppet%20Street-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - Trouble on Puppet Street
+          </div>
+          <div class="plot">In this unaired pilot for the upcoming Black Dynamite series, our ass-kickin-friend-of-the-community Black Dynamite takes on his childhood mentor and surrogate father: That Frog Kurtis, a Puppet TV educator turned super villain!
+
+Black Dynamite is assigned to stop a rogue educational show puppet from executing his diabolical plan on national television.
+
+Note: This pilot episode was released on Adult Swim Video on August 8, 2011, and has yet to air on television.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S01E01%20-%20Just%20Beat%20It%20or%20Jackson%20Five%20Across%20Yo%27%20Eyes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Just Beat It or Jackson Five Across Yo' Eyes
+          </div>
+          <div class="plot">Pint-sized pop star Michael Jackson finds a best friend in Cream Corn after he is saved from an assassination attempt. But Black Dynamite is soon to discover that the teen idol is actually a vicious alien force who has been torturing his own family. Cream Corn and Dynamite team up to take down the evil star together!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S01E02%20-%20Bullhorn%20Nights%20or%20Murder%20She%20Throats-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Bullhorn Nights or Murder She Throats
+          </div>
+          <div class="plot">Bullhorn falls into the world of adult films while working on a case. Soon he adopts the stage name &quot;Sweet Throat&quot; and gives up crime fighting altogether. Now it's up to Black Dynamite to rescue his sidekick from the pleasures of the porn industry!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S01E03%20-%20Taxes%20and%20Death%20or%20Get%20Him%20to%20The%20Sunset%20Strip-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Taxes and Death or Get Him to The Sunset Strip
+          </div>
+          <div class="plot">Black Dynamite and his crew face their most challenging mission to date as they try and raise $60K before tax day. This situation has forced them into escorting drug-addled comedy icon Richard Pryor to the most important performance of his career.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S01E04%20-%20A%20Crisis%20For%20Christmas%20or%20The%20Dark%20Side%20of%20The%20Dark%20Side%20of%20The%20Moon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - A Crisis For Christmas or The Dark Side of The Dark Side of The Moon
+          </div>
+          <div class="plot">In an effort to be more likeable to the orphans, Black Dynamite agrees to go with O.J. Simpson to the moon to get moon rocks on Christmas. However, O.J. bails and leaves Dynamite on a doomed space rocket, leaving everyone to believe that Black Dynamite is dead. O.J. takes over the whorephanage and now Black Dynamite must find a way to get the moon rocks and return to Earth to stop O.J. Simpson.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S01E05%20-%20Panic%20on%20the%20Player%27s%20Ball%20Express%20or%20That%27s%20Influenza%20Sucka%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Panic on the Player's Ball Express or That's Influenza Sucka!
+          </div>
+          <div class="plot">While Black Dynamite is down with the flu, the rest of the crew handles an investigation at the Players Ball, only to end up caught in a hijacking. It's up to Black Dynamite to handle his sinuses and the villains of the day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S01E06%20-%20The%20Sht%20That%20Killed%20the%20King%21%20or%20Weekend%20at%20Presley%27s-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Sh*t That Killed the King! or Weekend at Presley's
+          </div>
+          <div class="plot">President Nixon plans to destroy Black Dynamite by flooding the black community with drugs. However the plan backfires when the blacks begin selling them to whites instead of using them, ridding the community of drugs and using the money to drastically improve things. His original plan a failure, Nixon devises an even more sinister plan, and sends Elvis Presley to stop the flow of drugs from the black community.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S01E07%20-%20Apocalypse%2C%20This%21%20or%20For%20the%20Pity%20of%20Fools%20%28AKA%20Flashbacks%20Are%20Forever%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Apocalypse, This! or For the Pity of Fools (AKA Flashbacks Are Forever)
+          </div>
+          <div class="plot">Black Dynamite returns to Vietnam with his crew to find his friend Mr.T who was left for dead.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S01E08%20-%20Honky%20Kong%20or%20White%20Apes%20Can%27t%20Hump-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Honky Kong or White Apes Can't Hump
+          </div>
+          <div class="plot">A circus ape falls for Honeybee and kidnaps her. Black Dynamite launches a rescue attempt but encounters his own problems during the mission.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S01E09%20-%20The%20Race%20War%21%20or%20Big%20Black%20Cannon%20Balls%20Run%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Race War! or Big Black Cannon Balls Run!
+          </div>
+          <div class="plot">Dynamite enters a car race but realizes he's being used to transport a mind-controlling substance to tobacco companies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S01E10%20-%20That%20Seed%20of%20Kurtis%20AKA%20Father%20is%20Just%20Another%20Word%20for%20Motherfucker%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - That Seed of Kurtis AKA Father is Just Another Word for Motherfucker!
+          </div>
+          <div class="plot">Weeks after the events of &quot;Trouble on Puppet Street&quot;, the son of That Frog Kurtis, That Bastard Kurtis, enacts his revenge plan on Black Dynamite for killing his daddy on national television. Meanwhile, Black Dynamite finally finds his long-lost father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S02E01%20-%20%27Roots%20The%20White%20Album%27%20or%20%27The%20Blacker%20the%20Community%20the%20Deeper%20the%20Roots%21%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - 'Roots: The White Album' or 'The Blacker the Community the Deeper the Roots!'
+          </div>
+          <div class="plot">When ROOTS hits the air and the Community finally sees just how bad slavery was, Al Sharpton whips everyone into a reparation frenzy and they storm Beverly Hills, enslaving every white honky cracker they can find! But BD sees that since you can't even keep white slaves alive without caviar and arugula, being slave masters is actually bringing the Community down. Is Black Dynamite actually going to fight for the White Man's freedom?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S02E02%20-%20%27Black%20Jaws%21%27%20or%20%27Finger%20Lickin%27%20Chicken%20of%20the%20Sea%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - 'Black Jaws!' or 'Finger Lickin' Chicken of the Sea'
+          </div>
+          <div class="plot">A soul-food-eating contest is interrupted by a man-eating shark.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S02E03%20-%20%27Warriors%20Come%20Out%27%20or%20%27Mean%20Queens%20of%20Halloween%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - 'Warriors Come Out' or 'Mean Queens of Halloween'
+          </div>
+          <div class="plot">It's Halloween in LA and Cream Corn convinces BD and the Crew to go to a street party where, let's just say, ain't nobody in the closet. Everything's gay (as in happy) and gay (as in gay) until the Emcee is assassinated in front of everyone! The unseen shooter frames BD and the Crew, and now they're on a run for their lives, trying to clear their name, pursued by every gay gang south of West Hollywood!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S02E04%20-%20%27How%20Honeybee%20Got%20Her%20Groove%20Back%27%20or%20%27Sexodus%27%20or%20%27Night%20of%20the%20Living%20Dickheads%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - 'How Honeybee Got Her Groove Back' or 'Sexodus' or 'Night of the Living Dickheads'
+          </div>
+          <div class="plot">Honey Bee meets Bob Marley and the hoes turn into zombies while vacationing in Jamaica.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S02E05%20-%20%27Sweet%20Bill%27s%20Badass%20Singalong%20Song%27%20or%20%27Bill%20Cosby%20Ain%27t%20Himself%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - 'Sweet Bill's Badass Singalong Song' or 'Bill Cosby Ain't Himself'
+          </div>
+          <div class="plot">Thinking he was financing a film with positive images, Bill Cosby unwittingly helps Melvin Van Peebles make an x-rated &quot;Blaxploitation&quot; film.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S02E06%20-%20%27Mister%20Rogers%27%20Revenge%27%20or%20%27Please%20Don%27t%20You%20Be%20His%20Neighbor%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - 'Mister Rogers' Revenge' or 'Please Don't You Be His Neighbor'
+          </div>
+          <div class="plot">Black Dynamite brings the orphans to a taping of &quot;Mister Rogers' Neighborhood&quot; for their collective birthdays.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S02E07%20-%20%27American%20Band%20Standoff%27%20or%20%27The%20Godfather%20of%20Soooul%20Train%27%20or%20%27Get%20On%20Your%20Goodfellas%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - 'American Band Standoff' or 'The Godfather of Soooul Train' or 'Get On Your Goodfellas'
+          </div>
+          <div class="plot">Cream Corn is excited for the chance to dance on &quot;Soul Train,&quot; but BD knows the show is a battle between Don Cornelius and Dick Clark.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S02E08%20-%20%27Diff%27rent%20Folks%2C%20Same%20Strokes%27%20or%20%27The%20Hunger%20Pang%20Games%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - 'Diff'rent Folks, Same Strokes' or 'The Hunger Pang Games'
+          </div>
+          <div class="plot">The Whorephanage is shut down, leaving the orphans to be adopted by a group of rich white friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Dynamite%20-%20S02E09%20-%20%27The%20Wizard%20of%20Watts%27%20or%20%27Oz%20Ain%27t%20Got%20S%26%40%23%20On%20The%20Wiz%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - 'The Wizard of Watts' or 'Oz Ain't Got S&amp;@# On The Wiz'
+          </div>
+          <div class="plot">Black Dynamite, during a riot in the neighborhood, gets hit in the head with a brick and goes to the land of Oz-Watts, where everybody is needing his help. But between getting Scarecorn some game, Lionhorn a muzzle and Tin Bee a set of balls, he has to bring down the Pig Chief, The Wicked Bitch of the West Side and reach the Great and Powerful Motherf@$%er&rsquo;s palace, or he&rsquo;ll never get home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Courage the Cowardly Dog
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Courage the Cowardly Dog</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Courage%20the%20Cowardly%20Dog%20%281999%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S00E01%20-%20The%20Chicken%20from%20Outer%20Space-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - The Chicken from Outer Space
+          </div>
+          <div class="plot">A chicken from outer space fights Courage, while Muriel cooks Eustace some strange eggs for breakfast that she got from the outerspace chicken. Eustace turns into a chicken, and Courage shoots both the alien chicken and the Eustace chicken with a laser gun.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S00E02%20-%20The%20Wind%20Whispers%20Courage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x2 - The Wind Whispers Courage
+          </div>
+          <div class="plot">Two music video promos aired during Cartoon Cartoon Weekend Summerfest. One was called &quot;The Wind Whispers Courage,&quot; which was about a lady named Kitten (a singer), who comes to Courage's house and sings about him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x3 - They Might Be Giants
+          </div>
+          <div class="plot">Two teddy bears in a spaceship land on Earth to look for a worm. One is quite handy with a laser gun. Courage plays the horn and it attracts a worm, which just happens to be the worm that the teddy bears are after. When Muriel won't tell them where it is, and the teddy bears blow up part of their house. The worm comes and it turns out he is a giant blue worm from outer space that eats the teddy bears as well as Muriel. The worm belongs to a giant...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x4 - The Fog of Courage
+          </div>
+          <div class="plot">When Courage finds a mysterious amulet while digging through the yard, a Ghostly Fog covers the farmhouse. Eustace, however, refuses to return the amulet that apparently belongs to the Fog Ghost's long lost love. Now Courage must protect his family from the vengeful fog spirit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x1 - A Night at the Katz Motel
+          </div>
+          <div class="plot">Courage, Muriel and Eustace check into a motel run by a sinister cat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x2 - Cajun Granny Stew
+          </div>
+          <div class="plot">A fox searches for the missing ingredient for his Cajun Granny Stew.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x3 - The Shadow of Courage
+          </div>
+          <div class="plot">A shadow escapes from an evil, rich old man and descends on the farm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x4 - Dr. Le Quack, Amnesia Specialist
+          </div>
+          <div class="plot">When Muriel gets amnesia, Courage hires a French duck to help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x5 - Courage Meets Bigfoot
+          </div>
+          <div class="plot">A hungry bigfoot shows up at the farm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x6 - Hothead
+          </div>
+          <div class="plot">Eustace drags Courage to an institute that promises hair growth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x7 - The Demon in the Mattress
+          </div>
+          <div class="plot">Muriel's mattress has a demon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x8 - Freaky Fred
+          </div>
+          <div class="plot">Muriel's nephew visits the farm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E09%20S01E10%20-%20Night%20of%20the%20Weremole%20-%20Mother%27s%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Night of the Weremole
+          </div>
+          <div class="plot">Courage must find an antidote when Muriel is bitten.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E09%20S01E10%20-%20Night%20of%20the%20Weremole%20-%20Mother%27s%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Mother's Day
+          </div>
+          <div class="plot">Eustace takes Courage with him when he visits his mother on Mother's Day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E11%20S01E12%20-%20The%20Duck%20Brothers%20-%20Shirley%20the%20Medium-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Duck Brothers
+          </div>
+          <div class="plot">Duck brothers from outer space kidnap Muriel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E11%20S01E12%20-%20The%20Duck%20Brothers%20-%20Shirley%20the%20Medium-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Shirley the Medium
+          </div>
+          <div class="plot">Eustace hires a medium to channel his brother's spirit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E13%20S01E14%20-%20King%20Ramses%27%20Curse%20-%20The%20Clutching%20Foot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - King Ramses' Curse
+          </div>
+          <div class="plot">Courage discovers an ancient artifact that was stolen from a museum.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E13%20S01E14%20-%20King%20Ramses%27%20Curse%20-%20The%20Clutching%20Foot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - The Clutching Foot
+          </div>
+          <div class="plot">Eustace's foot is infected with a fungus.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E15%20S01E16%20-%20The%20Hunchback%20of%20Nowhere%20-%20The%20Gods%20Must%20Be%20Goosey-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - The Hunchback of Nowhere
+          </div>
+          <div class="plot">Much to Eustace's chagrin, Courage befriends a hunchback.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E15%20S01E16%20-%20The%20Hunchback%20of%20Nowhere%20-%20The%20Gods%20Must%20Be%20Goosey-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - The Gods Must Be Goosey
+          </div>
+          <div class="plot">A lonely goose god wants Muriel for his queen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E17%20S01E18%20-%20Queen%20of%20the%20Black%20Puddle%20-%20Everyone%20Wants%20to%20Direct-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Queen of the Black Puddle
+          </div>
+          <div class="plot">A puddle queen woos Eustace into her puddle world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E17%20S01E18%20-%20Queen%20of%20the%20Black%20Puddle%20-%20Everyone%20Wants%20to%20Direct-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Everyone Wants to Direct
+          </div>
+          <div class="plot">Eustace unwittingly agrees to allow a zombie director to film at the farm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E19%20S01E20%20-%20The%20Snowman%20Cometh%20-%20The%20Precious%2C%20Wonderful%2C%20Adorable%2C%20Lovable%20Duckling-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - The Snowman Cometh
+          </div>
+          <div class="plot">While vacationing in the Arctic, the trio encounters an evil snowman.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E19%20S01E20%20-%20The%20Snowman%20Cometh%20-%20The%20Precious%2C%20Wonderful%2C%20Adorable%2C%20Lovable%20Duckling-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - The Precious, Wonderful, Adorable, Lovable Duckling
+          </div>
+          <div class="plot">A little duckling claims Eustace as its mother.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x21 - Heads of Beef
+          </div>
+          <div class="plot">Eustace and Courage go into town for hamburgers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x22 - Klub Katz
+          </div>
+          <div class="plot">When Courage, Eustace and Muriel are on an island, they encounter Katz.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E23%20S01E24%20-%20The%20Revenge%20of%20the%20Chicken%20from%20Outer%20Space%20-%20Journey%20to%20the%20Center%20of%20Nowhere-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - The Revenge of the Chicken from Outer Space
+          </div>
+          <div class="plot">The chicken from outer space returns to seek revenge on Courage.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E23%20S01E24%20-%20The%20Revenge%20of%20the%20Chicken%20from%20Outer%20Space%20-%20Journey%20to%20the%20Center%20of%20Nowhere-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - Journey to the Center of Nowhere
+          </div>
+          <div class="plot">An army of angry eggplants plan to attack Muriel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E25%20S01E26%20-%20Little%20Muriel%20-%20The%20Great%20Fusilli-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x25 - Little Muriel
+          </div>
+          <div class="plot">A tornado destroys the farmhouse and turns Muriel into a 3-year-old girl.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S01E25%20S01E26%20-%20Little%20Muriel%20-%20The%20Great%20Fusilli-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - The Great Fusilli
+          </div>
+          <div class="plot">An evil stage-master turns Muriel and Eustace into puppets.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E01%20S02E02%20-%20The%20Magic%20Tree%20of%20Nowhere%20-%20Robot%20Randy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - The Magic Tree of Nowhere
+          </div>
+          <div class="plot">Muriel plants a magic tree that makes wishes come true.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E01%20S02E02%20-%20The%20Magic%20Tree%20of%20Nowhere%20-%20Robot%20Randy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Robot Randy
+          </div>
+          <div class="plot">Robot Randy is sent to Earth to conquer it and prove his merit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E03%20S02E04%20-%20The%20Curse%20of%20Shirley%20-%20Courage%20in%20the%20Big%20Stinkin%27%20City-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - The Curse of Shirley
+          </div>
+          <div class="plot">Shirley's curse on Eustace can only be undone if he learns to give of himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E03%20S02E04%20-%20The%20Curse%20of%20Shirley%20-%20Courage%20in%20the%20Big%20Stinkin%27%20City-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Courage in the Big Stinkin' City
+          </div>
+          <div class="plot">Muriel is invited to play her sitar at Radio City Music Hall.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E05%20S02E06%20-%20Family%20Business%20-%201000%20Years%20of%20Courage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Family Business
+          </div>
+          <div class="plot">A burglar mistakes the family for his relatives and decides they should pull a heist.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E05%20S02E06%20-%20Family%20Business%20-%201000%20Years%20of%20Courage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - 1000 Years of Courage
+          </div>
+          <div class="plot">The family is buried under a thousand years of sediment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E07%20S02E08%20-%20Courage%20Meets%20the%20Mummy%20-%20Invisible%20Muriel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Courage Meets the Mummy
+          </div>
+          <div class="plot">A mummy seeks revenge on the two people who wrongfully entombed him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E07%20S02E08%20-%20Courage%20Meets%20the%20Mummy%20-%20Invisible%20Muriel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Invisible Muriel
+          </div>
+          <div class="plot">Muriel whips up her secret recipe dog food for the County Dog Food Contest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E09%20S02E10%20-%20Human%20Habitrail%20-%20Mission%20to%20the%20Sun-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Human Habitrail
+          </div>
+          <div class="plot">A vacuum salesman shrinks Muriel and Eustace and sucks them up into his vacuum.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E09%20S02E10%20-%20Human%20Habitrail%20-%20Mission%20to%20the%20Sun-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Mission to the Sun
+          </div>
+          <div class="plot">The family goes on a dangerous space mission to save the Sun.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x11 - Courage the Fly
+          </div>
+          <div class="plot">After being turned into a fly, Courage overhears military personnel discussing a satellite plunging to Earth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x12 - Katz Kandy
+          </div>
+          <div class="plot">Katz returns to eliminate Muriel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x13 - Nowhere TV
+          </div>
+          <div class="plot">The lottery is about to be announced, and Le Quack arrives.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x14 - Mega Muriel the Magnificent
+          </div>
+          <div class="plot">The Computer decides to take over Muriel's body to show the world what it can do.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x15 - Bad Hair Day
+          </div>
+          <div class="plot">Muriel is kidnapped and taken to a hair farm to be used for growing hair.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x16 - The Forbidden Hat of Gold
+          </div>
+          <div class="plot">Eustace takes the family on an adventure to find a hat worth millions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E17%20S02E18%20-%20Serpent%20of%20Evil%20River%20-%20The%20Transplant-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Serpent of Evil River
+          </div>
+          <div class="plot">The family signs up for a free vacation but ends up having to serve as the ship's crew.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E17%20S02E18%20-%20Serpent%20of%20Evil%20River%20-%20The%20Transplant-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - The Transplant
+          </div>
+          <div class="plot">Courage unearths a bone from a giant kangaroo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E19%20S02E20%20-%20Car%20Broke%2C%20Phone%20Yes%20-%20Cowboy%20Courage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Car Broke, Phone Yes
+          </div>
+          <div class="plot">A visitor on an alien mission extracts Muriel's kindness.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E19%20S02E20%20-%20Car%20Broke%2C%20Phone%20Yes%20-%20Cowboy%20Courage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - Cowboy Courage
+          </div>
+          <div class="plot">Courage dreams of being a brave lawman.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E21%20S02E22%20-%20Evil%20Weevil%20-%20McPhearson%20Phantom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - Evil Weevil
+          </div>
+          <div class="plot">Muriel invites a weevil to the farmhouse to recover from his injuries.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Courage%20the%20Cowardly%20Dog%20-%20S02E21%20S02E22%20-%20Evil%20Weevil%20-%20McPhearson%20Phantom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - McPhearson Phantom
+          </div>
+          <div class="plot">A ghost harasses Muriel by sabotaging everything she does for Eustace.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x23 - The House of Discontent
+          </div>
+          <div class="plot">Eustace doesn't exchange crops for luck, and the house terrorizes the family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x24 - The Sand Whale Strikes
+          </div>
+          <div class="plot">A sand whale arrives at the farm demanding his accordion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x25 - The Tower of Dr. Zalost
+          </div>
+          <div class="plot">The miserable Dr. Zalost rains pink cannonballs down on the people of Nowhere, turning them gray and depressed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x1 - Muriel Meets Her Match
+          </div>
+          <div class="plot">New neighbor Maria disguises herself as Muriel in order to steal a diamond.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x2 - Courage vs. Mecha-Courage
+          </div>
+          <div class="plot">Eustace replaces Courage with a technologically superior dog.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x3 - Campsite of Terror
+          </div>
+          <div class="plot">Muriel is kidnapped by two raccoons.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x4 - Record Deal
+          </div>
+          <div class="plot">Muriel becomes trapped in a record album.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x5 - Stormy Weather
+          </div>
+          <div class="plot">Muriel tries to stop a storm goddess from adopting Courage as her own dog.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x6 - The Sandman Sleeps
+          </div>
+          <div class="plot">The Sandman tries to use Muriel's sleep to cure his own insomnia.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x7 - Hard Drive Courage
+          </div>
+          <div class="plot">A computer virus captures Muriel while on the Internet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x8 - The Ride of the Valkyries
+          </div>
+          <div class="plot">Muriel is mistaken for the leader of the Valkyries.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x9 - Scuba-Scuba Doo
+          </div>
+          <div class="plot">Muriel discovers tiny people while scuba diving.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x10 - Conway the Contaminationist
+          </div>
+          <div class="plot">A man with a filthy lifestyle contaminates the farmhouse.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x11 - Katz Under the Sea
+          </div>
+          <div class="plot">Muriel becomes the cook on a nuclear submarine.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x12 - Curtain of Cruelty
+          </div>
+          <div class="plot">A luminous curtain instills cruel behavior in Nowhere citizens.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x13 - Feast of the Bullfrogs
+          </div>
+          <div class="plot">Bullfrogs take over the farm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x14 - Tulip's Worm
+          </div>
+          <div class="plot">A giant worm swallows Muriel and Eustace.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x15 - So In Louvre Are We Two
+          </div>
+          <div class="plot">Courage, Muriel and Eustace get locked into a French art museum at closing time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x16 - Night of the Scarecrow
+          </div>
+          <div class="plot">A scarecrow appoints himself as Muriel's bodyguard.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x17 - Mondo Magic
+          </div>
+          <div class="plot">A monster-in-disguise wants to transform Muriel into his beastly bride.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x18 - Watch the Birdies
+          </div>
+          <div class="plot">A giant bird insists that Muriel baby-sit while she goes on vacation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x19 - Fishy Business
+          </div>
+          <div class="plot">When the family is deemed uncivilized, they are forced to live underwater as fish.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x20 - Angry Nasty People
+          </div>
+          <div class="plot">Tarantella offers the family roles on his new show.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x21 - Dome of Doom
+          </div>
+          <div class="plot">Eustace signs up for a science experiment that covers the farm with a dome.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x22 - Snowman's Revenge
+          </div>
+          <div class="plot">The Snowman decides to make a West Pole, forcing the family to live in blistering cold.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x23 - The Quilt Club
+          </div>
+          <div class="plot">Muriel joins a mysterious quilt club.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x24 - Swindlin' Wind
+          </div>
+          <div class="plot">Angry at Eustace for cheating her, Shirley curses Eustace and Muriel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x25 - King of Flan
+          </div>
+          <div class="plot">A flan infomercial hypnotizes the people of Nowhere.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x26 - Courage Under the Volcano
+          </div>
+          <div class="plot">Muriel is abducted by a tribe to become their human sacrifice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x1 - A Beaver's Tale
+          </div>
+          <div class="plot">A beaver's huge dam forces water into the farmhouse.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x2 - The Nutcracker
+          </div>
+          <div class="plot">Rats capture Muriel and Eustace, preparing to cook them for a feast.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x3 - Rumpledkiltskin
+          </div>
+          <div class="plot">Muriel is summoned to Scotland to weave the family tartan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x4 - House Calls
+          </div>
+          <div class="plot">A lonely scientist moves the farmhouse next to his mansion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x5 - Le Quack Balloon
+          </div>
+          <div class="plot">Le Quack wants to use Muriel to rob the Piggy Bank of Sweden.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x6 - Windmill Vandals
+          </div>
+          <div class="plot">Courage tries to repair the farm's jammed windmill.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x7 - The Uncommon Cold
+          </div>
+          <div class="plot">Courage notices a strange creature in Muriel's sneezes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x8 - Farmer-Hunter, Farmer-Hunted
+          </div>
+          <div class="plot">Eustace takes Courage on a deer-hunting trip.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x9 - Bride of the Swamp Monster
+          </div>
+          <div class="plot">A swamp monster believes Muriel is his long-lost-love.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x10 - Goat Pain
+          </div>
+          <div class="plot">In order to treat Muriel's back pain, the family must travel to a mountain spring.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x11 - Muriel Blows Up
+          </div>
+          <div class="plot">When Muriel eats a carrot covered in a mysterious residue, she begins to grow.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x12 - Profiles in Courage
+          </div>
+          <div class="plot">Cameo silhouettes steal Muriel and Eustace's souls.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x13 - The Mask
+          </div>
+          <div class="plot">A masked stranger who hates dogs arrives at the farm, beating Courage whenever possible.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x14 - Squatting Tiger, Hidden Dog
+          </div>
+          <div class="plot">Muriel is abducted during a tour of the Great Wall of China.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x15 - Muted Muriel
+          </div>
+          <div class="plot">Courage seeks Shirley's help when Muriel decides to stop talking.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x16 - Aqua-Farmer
+          </div>
+          <div class="plot">Eustace boasts that he can swim better than a dolphin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x17 - Food of the Dragon
+          </div>
+          <div class="plot">A human-eating dragon arrives at the farmhouse and eats Eustace.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x18 - The Last of the Starmakers
+          </div>
+          <div class="plot">Muriel bonds with a star-making alien.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x19 - Son of the Chicken from Outer Space
+          </div>
+          <div class="plot">The three-headed son of the Chicken from Outer Space wants to avenge his father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x20 - Courageous Cure
+          </div>
+          <div class="plot">Desperate to cure a disease, alien naturalists abduct Courage.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x21 - Ball of Revenge
+          </div>
+          <div class="plot">Courage is challenged to a game of dodgeball.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x22 - Cabaret Courage
+          </div>
+          <div class="plot">The family is offered great prizes to perform in an underground cabaret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x23 - Wrath of the Librarian
+          </div>
+          <div class="plot">Courage returns a library book that is two years overdue.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x24 - Remembrance of Courage Past
+          </div>
+          <div class="plot">Courage becomes depressed after thinking of his parents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x25 - Perfect
+          </div>
+          <div class="plot">Fed up with Courage's incompetence, Eustace seeks a professional dog trainer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

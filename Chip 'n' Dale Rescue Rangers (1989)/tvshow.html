@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Chip 'n' Dale Rescue Rangers
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Chip 'n' Dale Rescue Rangers</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20%281989%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x1 - Piratsy Under the Seas
+          </div>
+          <div class="plot">Dale is being hassled with chores so much that he joins a group of pirate rats.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S01E02%20-%20Catteries%20Not%20Included-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Catteries Not Included
+          </div>
+          <div class="plot">A little girl is looking for her beloved cat Spunky, and the Rescue Rangers are on the case. It seems that all of the cats have been kidnapped by mechanical dogs under the power of Professor Nimnul. The Professor is using the cats for static electricity to power his device to take over the city. The Rangers find Spunky and free him along with all of the other cats, and the Professor's plan is foiled.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x3 - Dale Beside Himself
+          </div>
+          <div class="plot">In order to get out of doing his regular chores, Dale switches places with a visiting space alien who has a penchant for shape-shifting.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S01E04%20-%20Flash%20the%20Wonder%20Dog-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Flash the Wonder Dog
+          </div>
+          <div class="plot">Dale's television hero, Flash, is kidnapped and framed by Fat Cat, in a ploy to discredit dogs everywhere.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S01E05%20-%20Out%20to%20Launch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Out to Launch
+          </div>
+          <div class="plot">Unforseen circumstances cause the Rangers to take off in the Space Plane and be stranded in space!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S01E06%20-%20Kiwi%27s%20Big%20Adventure-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Kiwi's Big Adventure
+          </div>
+          <div class="plot">The Ranger plane is swiped by a primitive tribe of flightless Kiwis, who worship it in the hope that it will allow them to fly once again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S01E07%20-%20Adventures%20in%20Squirrelsitting-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Adventures in Squirrelsitting
+          </div>
+          <div class="plot">The Rescue Rangers try to recover the Maltese Mouse from Fat Cat, and end up with the unlikely task of babysitting a mother squirrel's two rambunctious daughters.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S01E08%20-%20Pound%20of%20the%20Baskervilles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Pound of the Baskervilles
+          </div>
+          <div class="plot">Chip thinks he's famed literary detective, Sureluck Jones, as the Rangers try to find a hidden will in an old mansion before time runs out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S01E09%20-%20Risky%20Beesness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Risky Beesness
+          </div>
+          <div class="plot">A queen bee enlists the Rangers' help (and Zipper's affections) when her hive gets mesmerized by a rock star wannabe.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S01E10%20-%20Three%20Men%20and%20a%20Booby-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Three Men and a Booby
+          </div>
+          <div class="plot">A mother Booby's egg is eggnapped and she asks for the Rangers' aid in recovering it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S01E11%20-%20The%20Carpetsnaggers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Carpetsnaggers
+          </div>
+          <div class="plot">The Rangers are met with a supernatural mystery when they catch flying carpets in the act of burglarizing houses.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S01E12%20-%20Bearing%20Up%20Baby-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Bearing Up Baby
+          </div>
+          <div class="plot">Humphrey the bear adopts a stray human child, and the Rangers have to figure out how to get him back to his gun-happy parents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S01E13%20-%20Parental%20Discretion%20Retired-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Parental Discretion Retired
+          </div>
+          <div class="plot">Monty's father, Cheddarhead Charlie, comes for a visit and takes over, much to the Rescue Rangers' chagrin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E01%20-%20Rescue%20Rangers%20to%20the%20Rescue%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Rescue Rangers to the Rescue (1)
+          </div>
+          <div class="plot">When an old detective friend is falsely accused of stealing a priceless ruby, Chip and Dale decide to take on the task of solving the crime themselves, in this introduction to the series.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E02%20-%20Rescue%20Rangers%20to%20the%20Rescue%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Rescue Rangers to the Rescue (2)
+          </div>
+          <div class="plot">Chip and Dale are hot on Fat Cat's trail, who leads them to a Chinese laundry and then to a fishing vessel where they meet Monty and Zipper for the very first time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E03%20-%20Rescue%20Rangers%20to%20the%20Rescue%20%283%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Rescue Rangers to the Rescue (3)
+          </div>
+          <div class="plot">Monty suggests they visit his old friend, Geegaw Hackwrench, but instead find Geegaw's daughter, Gadget, who flies the group to Glacier Bay as they continue their investigation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E04%20-%20Rescue%20Rangers%20to%20the%20Rescue%20%284%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Rescue Rangers to the Rescue (4)
+          </div>
+          <div class="plot">The investigative trail leads Chip, Dale, Monty, Gadget and Zipper from Glacier Bay to a dog pound and then to the subway where they find Claudaine, who masterminded this whole thing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E05%20-%20Rescue%20Rangers%20to%20the%20Rescue%20%285%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Rescue Rangers to the Rescue (5)
+          </div>
+          <div class="plot">Claudaine and Nimnul plot together and build a huge jello mold, which they plan to use to cause an earthquake to crack open a Reserve Building vault so they can steal all the gold inside it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E06%20-%20A%20Lad%20in%20a%20Lamp-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - A Lad in a Lamp
+          </div>
+          <div class="plot">Monty's greed backfires when a genie in lamp tricks Monty into changing places with him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E07%20-%20The%20Luck%20Stops%20Here-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - The Luck Stops Here
+          </div>
+          <div class="plot">Gadget takes pity on a hapless inventor who's had a streak of bad luck.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E08%20-%20Battle%20of%20the%20Bulge-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Battle of the Bulge
+          </div>
+          <div class="plot">Monty's exercise regimen turns into a major disadvantage as the Rangers try to capture some flying jewel thieves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E09%20-%20Ghost%20of%20a%20Chance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Ghost of a Chance
+          </div>
+          <div class="plot">While trying to foil Fat Cat's plan to steal the Crown Jewels, Monty unearths one of his ghostly ancestors.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E10%20-%20An%20Elephant%20Never%20Suspects-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - An Elephant Never Suspects
+          </div>
+          <div class="plot">Some elephants at the zoo accept the Rangers assistance to help them find out who's been stealing all their peanuts but the Rangers have to go undercover when they become the main suspects!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E11%20-%20Fake%20Me%20to%20Your%20Leader-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Fake Me to Your Leader
+          </div>
+          <div class="plot">Zipper gets zapped by one of Nimnul's inventions -- a ray gun that causes him to grow at an alarming rate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E12%20-%20Last%20Train%20to%20Cashville-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Last Train to Cashville
+          </div>
+          <div class="plot">The Rangers investigate a case of a missing toy train and end up tracking Fat Cat to a pet store where they find him plotting to rob a bank.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E13%20-%20A%20Case%20of%20Stage%20Blight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - A Case of Stage Blight
+          </div>
+          <div class="plot">A night at the Opera proves to be more than just culturally enriching for the Rescue Rangers, when they go underground into the sewers and run into an insane alligator with a yen for acting.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E14%20-%20The%20Case%20of%20the%20Cola%20Cult-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - The Case of the Cola Cult
+          </div>
+          <div class="plot">While out test driving the Rangermobile, the Rangers stumble across an entire cult of rats that worship a soft drink known as 'Kookoo Cola.'
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E15%20-%20Throw%20Mummy%20From%20the%20Train-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Throw Mummy From the Train
+          </div>
+          <div class="plot">A crooked archaeologist steals a mummy's ring and the Rangers agree to help the mummy get the ring back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E16%20-%20A%20Wolf%20in%20Cheap%20Clothing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - A Wolf in Cheap Clothing
+          </div>
+          <div class="plot">Werewolf sightings are explained when the Rangers discover Nimnul has invented a device that allows him to swap bodies with other animals.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E17%20-%20Robocat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Robocat
+          </div>
+          <div class="plot">The Rangers befriend a mechanical cat, until Fat Cat rewrites its program and turns it into a killing machine.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E18%20-%20Does%20Pavlov%20Ring%20a%20Bell-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - Does Pavlov Ring a Bell
+          </div>
+          <div class="plot">Chip and Dale are jealous of the attentions bestowed upon Gadget by a lab rat named Sparky.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E19%20-%20Prehysterical%20Pet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Prehysterical Pet
+          </div>
+          <div class="plot">Dale adopts a pet, only to find out it's an intelligent dinosaur alien from a distant planet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E20%20-%20A%20Creep%20in%20the%20Deep-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - A Creep in the Deep
+          </div>
+          <div class="plot">Captain Fin, self-appointed crusader for rights of fishes everywhere, uses a converted submarine to terrorize the land dwellers and the Rangers must find a way to stop him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E21%20-%20Normie%27s%20Science%20Project-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - Normie's Science Project
+          </div>
+          <div class="plot">Nimnul's nephew, Normie, 'borrows' one of Nimnul's inventions and enters it as his exhibit in a science fair.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E22%20-%20Seer%20No%20Evil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - Seer No Evil
+          </div>
+          <div class="plot">The Rangers visit a gypsy fortune teller at a local carnival and are shocked when she predicts that Chip will become the victim of a horrible accident.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E23%20-%20Chipwrecked%20Shipmunks-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x23 - Chipwrecked Shipmunks
+          </div>
+          <div class="plot">The Rangers are shipwrecked on a deserted island and once again encounter the PiRats searching for buried treasure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E24%20-%20When%20Mice%20Were%20Men-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x24 - When Mice Were Men
+          </div>
+          <div class="plot">The Rangers are summoned to Tramplonia to find the mouse village being trampled on by an old enemy of Monty's -- a bull named El Emenopio.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E25%20-%20Chocolate%20Chips-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x25 - Chocolate Chips
+          </div>
+          <div class="plot">During a trip to South America, the Rangers try to unveil the mystery behind who is uprooting the cacao trees, and why.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E26%20-%20The%20Last%20Leprechaun-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x26 - The Last Leprechaun
+          </div>
+          <div class="plot">Dale's greed gets the best of him when he switches places with a leprechaun to get the pot of magic gold.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E27%20-%20Weather%20or%20Not-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x27 - Weather or Not
+          </div>
+          <div class="plot">The Rangers think Monty has lost his marbles when he insists that there's going to be a blizzard in the middle of a heat wave.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E28%20-%20One-Upsman-Chip-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x28 - One-Upsman-Chip
+          </div>
+          <div class="plot">Chip plays a dirty trick on Dale that backfires, causing Dale to fall into Fat Cat's clutches!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E29%20-%20Shell%20Shocked-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x29 - Shell Shocked
+          </div>
+          <div class="plot">A vacation at the beach is interrupted by a bunch of crabs who have had their shells stolen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E30%20-%20Love%20is%20a%20Many%20Splintered%20Thing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x30 - Love is a Many Splintered Thing
+          </div>
+          <div class="plot">Monty is torn between an old flame and his loyalty to the Rescue Rangers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E31%20-%20Song%20of%20the%20Night%20%27n%20Dale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x31 - Song of the Night 'n Dale
+          </div>
+          <div class="plot">The maiden voyage of the Ranger Wing turns into an adventure when Dale flies into the jet stream which takes them halfway across the world to a beautiful valley in the Himalayas.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E32%20-%20Double%20%27O%20Chipmunk-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x32 - Double 'O Chipmunk
+          </div>
+          <div class="plot">Dale emulates his favorite spy hero while playing spy games with Chip, Monty &amp; Gadget.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E33%20-%20Gadget%20Goes%20Hawaiian-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x33 - Gadget Goes Hawaiian
+          </div>
+          <div class="plot">During their vacation in Hawaii, Gadget runs into an exact double of herself who gets her into some sticky situations!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E34%20-%20It%27s%20a%20Bird%2C%20It%27s%20Insane%2C%20It%27s%20Dale%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x34 - It's a Bird, It's Insane, It's Dale!
+          </div>
+          <div class="plot">Dale finds a meteorite that gives him amazing powers and decides to use it to his advantage by becoming a superhero dedicated to doing good.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E35%20-%20Short%20Order%20Crooks-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x35 - Short Order Crooks
+          </div>
+          <div class="plot">Monty tries to make some cheese chowder and instead encounters a couple of cut-rate crooks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E36%20-%20Mind%20Your%20Cheese%20and%20Q%27s-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x36 - Mind Your Cheese and Q's
+          </div>
+          <div class="plot">A cheese shortage leads Monty and the Rangers to Rat Capone's secret hideout under a dairy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E37%20-%20Out%20of%20Scale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x37 - Out of Scale
+          </div>
+          <div class="plot">It's Nimnul's ray gun again -- this time being used to shrink objects. When Chip and Dale investigate, they're captured and given as pets to amuse a gangster's daughter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E38%20-%20Dirty%20Rotten%20Diapers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x38 - Dirty Rotten Diapers
+          </div>
+          <div class="plot">Gadget decides the Rangers' method of crime solving involves too much violence, so she adopts a kinder, gentler way for getting things done.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E39%20-%20Good%20Times%2C%20Bat%20Times-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x39 - Good Times, Bat Times
+          </div>
+          <div class="plot">Foxglove the bat develops a huge crush on Dale, who is unaware that she is a witch's familiar.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E40%20-%20Pie%20in%20the%20Sky-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x40 - Pie in the Sky
+          </div>
+          <div class="plot">The Rangers offer to help a lost sparrow find her way to Capistrano, only to be thrown off course by a powerful supermagnet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E41%20-%20Le%20Purrfect%20Crime-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x41 - Le Purrfect Crime
+          </div>
+          <div class="plot">The Rangers travel to France to find out what's been driving all the dogs out of Paris and run into Fat Cat's equally evil cousin, Maltese de Sade.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E42%20-%20When%20You%20Fish%20Upon%20a%20Star-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x42 - When You Fish Upon a Star
+          </div>
+          <div class="plot">Monty takes the Rangers to visit Canine Island, who find it isn't exactly the wondrous place that Monty has been describing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E43%20-%20Rest%20Home%20Rangers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x43 - Rest Home Rangers
+          </div>
+          <div class="plot">Monty gets caught in another one of Nimnul's inventions -- this time, an aging gun that causes him to grow old before his time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E44%20-%20A%20Lean%20on%20the%20Property-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x44 - A Lean on the Property
+          </div>
+          <div class="plot">Monty's mother shows up for a visit and makes things miserable for him while the Rangers try to figure out why all the buildings are falling over.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E45%20-%20The%20Pied%20Piper%20Power%20Play-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x45 - The Pied Piper Power Play
+          </div>
+          <div class="plot">Professor Nimnul hypnotizes and captures all the mice so he can use them to generate electricity for yet another one of his vile schemes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E46%20-%20Gorilla%20My%20Dreams-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x46 - Gorilla My Dreams
+          </div>
+          <div class="plot">Kookoo the gorilla's pet kitten has been kidnapped by Fat Cat, and it is up to the Rangers to rescue him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S02E47%20-%20The%20S.S.%20Drainpipe-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x47 - The S.S. Drainpipe
+          </div>
+          <div class="plot">It's reunion time for the Rangers when they once again meet up with Rat Capone and his cronies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S03E01%20-%20Zipper%20Come%20Home-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Zipper Come Home
+          </div>
+          <div class="plot">Zipper runs away from home and is taken in by a tribe of beetles who plan on fattening him up and sacrificing him to The Great Ribbit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S03E02%20-%20Puffed%20Rangers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Puffed Rangers
+          </div>
+          <div class="plot">In their neverending quest for truth, the Rangers travel to Hong Kong to find out who has been stealing the toys out of Dale's favorite brand of cereal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S03E03%20-%20A%20Fly%20in%20the%20Ointment-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - A Fly in the Ointment
+          </div>
+          <div class="plot">Zipper gets caught in the 'modemizer' and ends up switching heads with Professor Nimnul, in this horror movie spoof!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S03E04%20-%20A%20Chorus%20Crime-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - A Chorus Crime
+          </div>
+          <div class="plot">Chip, Dale and Gadget offer to help famous screen star Canina LeFur recover some stolen dancing shoes, while Monty journeys to the Arctic Circle to try to find out what's been sinking the cheese ships.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chip%20%27n%27%20Dale%20Rescue%20Rangers%20-%20S03E05%20-%20They%20Shoot%20Dogs%2C%20Don%27t%20They-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - They Shoot Dogs, Don't They?
+          </div>
+          <div class="plot">The Rangers once again go to Canina LeFur's aid -- this time in Taxadermia where Canina fears her stand-in is trying to bump her off and take her place.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Total Drama Presents: The Ridonculous Race
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Total Drama Presents: The Ridonculous Race</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20%282015%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E01%20-%20None%20Down%2C%20Eighteen%20to%20Go%20Part%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - None Down, Eighteen to Go: Part 1
+          </div>
+          <div class="plot">Total Drama returns with a new host. Four characters return while 32 new characters join them. They are paired off into 18 teams and must start the race around the world to win C$1 million.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E02%20-%20None%20Down%2C%20Eighteen%20to%20Go%20Part%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - None Down, Eighteen to Go: Part 2
+          </div>
+          <div class="plot">The ridonculous race continues now to Morocco and this time one of 18 teams will be heading home first.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E03%20-%20French%20is%20an%20Eiffel%20Language-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - French is an Eiffel Language
+          </div>
+          <div class="plot">Seventeen teams travel to Paris, France, where they all go to the Eiffel Tower to draw pictures of their partners, explore the catacombs rowing down the river with cheese wheels and then make their way to the Louvre where the chill zone is located. The police cadets arrive first while Tennis Rivals Gerry &amp; Pete get last place due to their slow pace and become the second team eliminated, barely saving Noah and Owen from a 20 minute penalty after Owen ate the cheese wheel they rode on.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E04%20-%20Mediterranean%20Homesick%20Blues-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Mediterranean Homesick Blues
+          </div>
+          <div class="plot">Sixteen teams now travel south to the Mediterranean Sea. Their challenge is to swim with sharks, build sandcastles and then make their way to Iceland on speedboats. The Ice Dancers take first place while Surfer Dudes Geoff and Brody manage to stay in the race after struggling in the challenge. The Geniuses are the third team eliminated from the race after taking too long with their castle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E05%20-%20Bjorken%20Telephone-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Bjorken Telephone
+          </div>
+          <div class="plot">Fifteen teams are now in Iceland where they first must repeat an Icelandic phrase and then either eat an Icelandic feast or look for fossils in a cave. Mother and daughter team Kelly &amp; Taylor receive a one-hour penalty, The Goths are the first team to finish, and the Vegans come in last after reluctantly eating meat. However, it is a non-elimination leg, so they are spared.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E06%20-%20Brazilian%20Pain%20Forest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Brazilian Pain Forest
+          </div>
+          <div class="plot">Fifteen teams still remain and they all travel to Rio de Janeiro, Brazil where they must face a glove full of bullet ants and prepare a costume to participate in Carnival. The Ice Dancers take first place once again and while despite being the first to the Chill Zone, the Vegans end up with a penalty that gets them eliminated from the race.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E07%20-%20A%20Tisket%2C%20a%20Casket%2C%20I%27m%20Gonna%20Blow%20a%20Gasket-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - A Tisket, a Casket, I'm Gonna Blow a Gasket
+          </div>
+          <div class="plot">Fourteen teams now travel to Transylvania. Their challenge is to transport themselves in coffins and then perform gymnastics. The ice dancers came in first once again. Noah forms a crush on competitor Emma. The Goths are penalized so they come in 12th instead. Daters Stephanie and Ryan begin to argue and are second-last to arrive while Fashion Bloggers Tom and Jen are eliminated after reconciling from a fight over their blog.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E08%20-%20Hawaiian%20Honeyruin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Hawaiian Honeyruin
+          </div>
+          <div class="plot">The remaining thirteen teams travel to Hawaii where they surf dive for wedding rings and perform the traditional Hawaiian marriage of walking over hot coals. The Ice Dancers find a lucky charm while Kelly tells her spoiled daughter off for her attitude. While Geoff and Brody come in first, the Daters fight throughout the challenge and come in last. They break up with one another before Don reveals it is another non-elimination leg.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E09%20-%20Hello%20and%20Dubai-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Hello and Dubai
+          </div>
+          <div class="plot">The thirteen remaining teams travel to the Burj Al Arab hotel in Dubai to either clean windows or to play tennis. Owen &amp; Noah form an alliance with sisters Emma &amp; Kitty while Kelly's attempts to discipline her daughter end up getting them eliminated from the race.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E10%20-%20New%20Beijinging-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - New Beijinging
+          </div>
+          <div class="plot">The twelve remaining teams now travel to China to see the Beijing National Stadium, eat local delicacies and finally make their way to the chill zone located in the Great Wall. Stephanie &amp; Ryan who are now known as the Haters win this leg, the Ice Dancers bad luck continues, Noah and Emma grow closer while Rockers Rock and Spud come in last but are safe because of another non-elimination leg.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E11%20-%20I%20Love%20Ridonc%20and%20Roll-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - I Love Ridonc and Roll
+          </div>
+          <div class="plot">The twelve remaining teams now travel to Finland where they first must enter a sauna chamber and then play air guitar on stage. The Rockers manage to bounce into first place, goths Crimson and Ennui lose their makeup, Josee finds out her lucky charm is cursed, and Noah nearly comes in last before being motivated by Owen. In the end, the Adversity Twins Jay and Mickey come in last after suffering from stage fright.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E12%20-%20My%20Way%20or%20Zimbabwe-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - My Way or Zimbabwe
+          </div>
+          <div class="plot">The eleven remaining teams now travel to Zimbabwe to take on a waterfall selfie and photographic rhinos. Meanwhile, the ice dancers travel back to Hawaii to break the curse, while Dwayne &amp; Dwayne Jr become separated from each other. Sanders and MacArthur win the leg. In the end, Dwayne reunites with his son and the ice dancers end up coming in last after they arrived in Zimbabwe last. However, they are saved by a non-elimination leg, and they vow to take down the other teams.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E13%20-%20The%20Shawshank%20Ridonc-tion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - The Shawshank Ridonc-tion
+          </div>
+          <div class="plot">The eleven remaining teams go to Australia where they first enter Geelong Prison and must escape by using various methods possible. Both the ice dancers and the police cadets get a Boomerang (which sends back a team to repeat the previous challenge) and use it on each other. The Stepbrothers finally begin to get along while Carrie tries to reveal her feelings for Devin, who later finds out his girlfriend has broken up with him. In the end the Ice Dancers beat out the Cadets for last place, but another non-elimination round saves them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E14%20-%20Down%20and%20Outback-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Down and Outback
+          </div>
+          <div class="plot">The eleven remaining teams stay in Australia for a bunny hunt challenge. The ice dancers paint a bunny to fool the police cadets. They then fly their own gliders to New Zealand. The goths adopt a bunny named &quot;Loki&quot; for their team. The ice dancers finally come back on top, while both the stepbrothers and the rockers end up in a double elimination and are both cut from the race.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E15%20-%20Maori%20or%20Less-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Maori or Less
+          </div>
+          <div class="plot">The nine remaining teams start off in New Zealand and they all catch a train to either jump off a bridge to catch a fish or do a Māori Warrior dance. The ice dancers swiftly zoom into first place while Emma and Noah become too distracted by each other, making the reality TV pros lose the game. Emma breaks off her relationship with Noah, much to Noah's shock. However, it was another non-elimination leg so they are still in the race.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E16%20-%20Little%20Bull%20on%20the%20Prairie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Little Bull on the Prairie
+          </div>
+          <div class="plot">The remaining nine teams travel to Alberta, Canada to consume a pot of pork and beans as well as riding a mechanical bull. The Cadets delay the Ice Dancers, Stephanie slows Ryan down due to her hatred of beans, and Brody is unable to stay on the mechanical bull. In the end, The Surfer Dudes win the leg and Dwayne and Junior are last to arrive and are eliminated.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E17%20-%20Lord%20of%20the%20Ring%20Toss-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Lord of the Ring Toss
+          </div>
+          <div class="plot">The eight remaining teams now travel to the Arctic Circle where they must play ring toss on narwhal horns and then build an igloo. The surfer dudes overcame the ice dancers' mind games and come in first once again, while Ryan &amp; Stephanie come in last once again after using a Boomerang on themselves, but it was another non elimination leg so they stay in the race.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E18%20-%20Got%20Venom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Got Venom
+          </div>
+          <div class="plot">The eight remaining teams now travel to Indonesia where they will all collect Komodo dragon venom and then find a quilt with the series logo on it. The goths came in first while Noah &amp; Owen spent too long trying to find a quilt and are eliminated. Emma kisses Noah before their departure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E19%20-%20Dude%20Buggie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Dude Buggie
+          </div>
+          <div class="plot">The seven remaining teams now travel to Las Vegas where they either ride Dune Buggies and collect three flags or perform a magic trick right in front of a magician. The surfer dudes keep on completing the challenge so the goths come in first once again, angering the Ice Dancers. After the five stages of heartbreak, Devin suddenly realizes he likes Carrie, but almost at the same time she stops liking him, However, they are saved because of another non elimination leg.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E20%20-%20El%20Bunny%20Supremo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - El Bunny Supremo
+          </div>
+          <div class="plot">The seven remaining teams fly to Mexico where they must eat spicy peppers in order to determine which height they will jump from on a cliff to get the next travel tip. They then must ride their burros to the chill zone. Devin is unable to eat the pepper and is blinded when he rubs pepper juice in his eyes. The Cadets win the leg, and the Goths are eliminated after the Ice Dancers kidnap Loki.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E21%20-%20Ca-Noodling-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - Ca-Noodling
+          </div>
+          <div class="plot">The six remaining teams now travel to Vietnam and are being merged into two temporarily super-teams. The team consisting of the ice dancers, the police cadets, and Ryan &amp; Stephanie called the Axis of Evil win while the other team gets separated again. In the end, the surfer dudes are eliminated after sacrificing their win for Carrie and Devin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E22%20-%20How%20Deep%20is%20Your%20Love-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - How Deep is Your Love
+          </div>
+          <div class="plot">The final five teams now travel to Russia where they must traverse down the deepest hole in the world to collect a ball. The ice dancers cheat for the lead, and even with a major penalty, they still win the leg. MacArthur accidentally breaks Sanders arm and they come in last, however they are saved by the non-elimination after Sanders decides to keep going.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E23%20-%20Darjeel%20With%20It-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - Darjeel With It
+          </div>
+          <div class="plot">The final 5 teams now travel to India to harvest tea crops and then ride a train. The ice dancers cheat once again by derailing the train, they came in first once again but got a one-hour penalty that most of the teams are able to overcome as Emma &amp; Kitty win the leg. However, The ice dancers are still in the race due to Ryan &amp; Stephanie stopping before the chill zone to declare that they have now made up for each other and becoming daters again, eliminating both of them from the race.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E24%20-%20Last%20Tango%20in%20Buenos%20Aires-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - Last Tango in Buenos Aires
+          </div>
+          <div class="plot">The final four teams now travel to Buenos Aires for a tango dancing challenge. The ice dancers apply legal sabotage to help them win the leg. Later on, Best friends Carrie &amp; Devin finally confess their true feelings for each other, but it all does not end so well as Devin is then pushed off a cliff by the Sisters' emu and becomes seriously injured. Therefore, Carrie &amp; Devin are forced to withdraw from the race but they get to choose one of the previously eliminated teams to come back to the race, so they choose the surfer dudes to take their place.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E25%20-%20Bahamarama-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x25 - Bahamarama
+          </div>
+          <div class="plot">The new final four teams now travel to the Bahamas where they first must find a secret map that leads to an underwater treasure. Josee's claustrophobia makes her run out of oxygen really fast but MacArthur reluctantly rescues her. Meanwhile, Sisters Emma &amp; Kitty are delayed when Kitty gets stuck in a rock. Geoff &amp; Brody came in first despite returning to the race. Once the rest of the teams escaped, it's a close race to the finish. In the end, Emma &amp; Kitty end up coming in last so they are the last team eliminated from the race. The new final 3 teams now make their way to the finale in New York City.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E26%20-%20A%20Million%20Ways%20to%20Lose%20a%20Million%20Dollars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - A Million Ways to Lose a Million Dollars
+          </div>
+          <div class="plot">The final three teams are now in New York City and are getting ready for the finale. Their first challenge is to go to the Empire State Building and climb up all the way to the top in order to grab a case and then take the case to Central Park. Since Geoff &amp; Brody's taxi was damaged by the ice dancer's taxi, they take the subway and get a huge lead so they reach Central Park first with the case. The police cadets reach the chill zone first by a few seconds while the ice dancers are finally eliminated from the race. The final challenge is to take the case to the lake and then try to figure out the combination that is being written on one of several buoys, and then open the case that will reveal a map that leads to the finish line.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20Presents%20The%20Ridonculous%20Race%20-%20S01E26%20-%20A%20Million%20Ways%20to%20Lose%20a%20Million%20Dollars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - A Million Ways to Lose a Million Dollars
+          </div>
+          <div class="plot">The final three teams are now in New York City and are getting ready for the finale. Their first challenge is to go to the Empire State Building and climb up all the way to the top in order to grab a case and then take the case to Central Park. Since Geoff &amp; Brody's taxi was damaged by the ice dancer's taxi, they take the subway and get a huge lead so they reach Central Park first with the case. The police cadets reach the chill zone first by a few seconds while the ice dancers are finally eliminated from the race. The final challenge is to take the case to the lake and then try to figure out the combination that is being written on one of several buoys, and then open the case that will reveal a map that leads to the finish line.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

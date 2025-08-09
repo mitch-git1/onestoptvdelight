@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Gumball Chronicles
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Gumball Chronicles</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Gumball%20Chronicles%20%282020%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gumball%20Chronicles%20-%20S01E01%20-%20The%20Curse%20of%20Elmore-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Curse of Elmore
+          </div>
+          <div class="plot">When Gumball's schoolfriend Leslie finds an old videotape, the creepy mystery of Elmore's ghostly past unfolds. Featuring spooky and hilarious clips from the first six seasons of &quot;The Amazing World of Gumball.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gumball%20Chronicles%20-%20S01E02%20-%20Vote%20Gumball%E2%80%A6and%20Penny-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Vote Gumball&hellip;and Penny?
+          </div>
+          <div class="plot">Gumball asks his girlfriend, Penny, to be his running mate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gumball%20Chronicles%20-%20S01E03%20-%20Vote%20Gumball%E2%80%A6and%20Leslie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Vote Gumball&hellip;and Leslie?
+          </div>
+          <div class="plot">Gumball hopes Leslie's newfound cheer fame will help his campaign.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gumball%20Chronicles%20-%20S01E04%20-%20Vote%20Gumball%E2%80%A6and%20Bobert-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Vote Gumball&hellip;and Bobert?
+          </div>
+          <div class="plot">Gumball considers Bobert for a running mate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gumball%20Chronicles%20-%20S01E05%20-%20Vote%20Gumball%E2%80%A6and%20Anyone-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Vote Gumball&hellip;and Anyone?
+          </div>
+          <div class="plot">Gumball is running for school president and needs a worthy running mate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gumball%20Chronicles%20-%20S01E06%20-%20Ancestor%20Act-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Ancestor Act
+          </div>
+          <div class="plot">When Gumball's sister Anais researches the Watterson family tree, she uncovers a long history of nonsense. Featuring hilarious clips from the first six seasons of 'The Amazing World of Gumball'.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gumball%20Chronicles%20-%20S01E07%20-%20Mother%27s%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Mother's Day
+          </div>
+          <div class="plot">Gumball, Darwin and Anais need to find the perfect Mother's Day gift. Will it be a cute card, a thoughtful painting or something entirely different?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gumball%20Chronicles%20-%20S01E08%20-%20Elmore%27s%20Most%20Wanted-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Elmore's Most Wanted
+          </div>
+          <div class="plot">Gumball's dad has been revealed as &quot;Elmore's Most Wanted&quot; - but when the Chief of Police tries to investigate, things do not go according to plan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

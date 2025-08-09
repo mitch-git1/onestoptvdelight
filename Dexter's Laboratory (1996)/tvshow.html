@@ -1,0 +1,3031 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Dexter's Laboratory
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Dexter's Laboratory</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Dexter%27s%20Laboratory%20%281996%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x1 - Dexter's Laboratory
+          </div>
+          <div class="plot">Dexter and Dee Dee test his latest invention: a device that turns people into animals, which yields crazy results.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x5 - Ego Trip
+          </div>
+          <div class="plot">When Dexter is attacked by Robots hunting &quot;The one who saved the future&quot;, he becomes fascinated by the possibility of what he will be in several years time, taking the Time Machine. Dexter arrives in the future where he finds many things have changed...and that his greatest invention holds the key to total tranquility around the world, but in the hands of evil, also holds the key to total domination of the world
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x6 - Rude Removal
+          </div>
+          <div class="plot">Dexter invents the Rude Removal System, a machine to remove the rudeness from Dee Dee.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x8 - Secret Formula
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E01%20-%20DeeDeemensional-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - DeeDeemensional
+          </div>
+          <div class="plot">In &quot;Deedeemensional&quot;, Dee Dee time-travels to save Dexter from a monster. In &quot;Magmanamus&quot;, Monkey goes up against a lava being that dislikes human-caused noise. In &quot;Maternal Combat&quot;, when his mother falls, Dexter creates a robot mom to substitute for her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E02%20-%20Dial%20M%20for%20Monkey%20Magmanamus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Dial M for Monkey: Magmanamus
+          </div>
+          <div class="plot">Monkey must defend the city from a giant underground lava monster, Magmanamus, who cannot sleep because of the noise created by its residents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E03%20-%20Maternal%20Combat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Maternal Combat
+          </div>
+          <div class="plot">When his mother falls ill, Dexter creates a robot to do her chores. Dee Dee gets hold of its remote control and wreaks havoc, forcing Dexter to create a second robot to counter Dee Dee's.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E04%20-%20Dexter%20Dodgeball-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Dexter Dodgeball
+          </div>
+          <div class="plot">Dexter is forced to play dodgeball by his P. E. teacher. Constantly failing, Dexter builds a robotic exoskeleton to defend himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E05%20-%20Dial%20M%20for%20Monkey%20Rasslor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Dial M for Monkey: Rasslor
+          </div>
+          <div class="plot">Intergalactic wrestling champion Rasslor challenges Earth's superheroes, including Monkey, with the planet's fate at stake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E06%20-%20Dexter%27s%20Assistant-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Dexter's Assistant
+          </div>
+          <div class="plot">In need of an assistant to operate his latest invention, Dexter performs a brain transplant on Dee Dee to make her smart enough to fulfill the role. With her new brain, Dee Dee proves to be more intelligent than Dexter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E07%20-%20Dexter%27s%20Rival-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Dexter's Rival
+          </div>
+          <div class="plot">Mandark Astronomanov, a new student at Dexter's school, seems to be superior to Dexter academically. Mandark forces Dexter to shut down his lab so that Mandark's lab can gain more power. However, with the help of Dee Dee, Dexter manages to destroy Mandark's lab.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E08%20-%20Dial%20M%20for%20Monkey%20Simion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Dial M for Monkey: Simion
+          </div>
+          <div class="plot">Monkey encounters Simion, an intelligent anthropomorphic chimpanzee who seeks vengeance on humans for turning him into his current state.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E09%20-%20Old%20Man%20Dexter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Old Man Dexter
+          </div>
+          <div class="plot">Banned from watching a late-night movie due to his young age, Dexter uses his technology to artificially grow into adulthood, but Dee Dee tampers with his machine, causing Dexter to turn into an old man.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E09%20-%20Old%20Man%20Dexter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Old Man Dexter
+          </div>
+          <div class="plot">Banned from watching a late-night movie due to his young age, Dexter uses his technology to artificially grow into adulthood, but Dee Dee tampers with his machine, causing Dexter to turn into an old man.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E10%20-%20Double%20Trouble-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Double Trouble
+          </div>
+          <div class="plot">Dee Dee and her friends, Lee Lee and Mee Mee, enter Dexter's lab and wreak havoc. Dexter clones himself to stop them, but the girls too make clones of themselves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E10%20-%20Double%20Trouble-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Double Trouble
+          </div>
+          <div class="plot">Dee Dee and her friends, Lee Lee and Mee Mee, enter Dexter's lab and wreak havoc. Dexter clones himself to stop them, but the girls too make clones of themselves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E11%20-%20Dial%20M%20for%20Monkey%20Barbequor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Dial M for Monkey: Barbequor
+          </div>
+          <div class="plot">Monkey's birthday party is interrupted by Barbequor an intergalactic villain who plans to eat the planets, and his sidekick, the Silver Spooner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E11%20-%20Dial%20M%20for%20Monkey%20Barbequor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Dial M for Monkey: Barbequor
+          </div>
+          <div class="plot">Monkey's birthday party is interrupted by Barbequor an intergalactic villain who plans to eat the planets, and his sidekick, the Silver Spooner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E12%20-%20Changes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Changes
+          </div>
+          <div class="plot">Rerun of &quot;Dexter's Laboratory&quot;, the first &quot;What a Cartoon!&quot; pilot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E13%20-%20Jurassic%20Pooch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Jurassic Pooch
+          </div>
+          <div class="plot">To clone a dinosaur with an incomplete DNA sequence, Dexter uses his dog's genetic code to fill in the gaps.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E14%20-%20Dial%20M%20For%20Monkey%20Orgon%20Grindor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Dial M For Monkey: Orgon Grindor
+          </div>
+          <div class="plot">While on a date with Agent Honeydew, Monkey gets hypnotized by the music of the Organ Grindor who commands him to rob Fort Knox.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E15%20-%20Dimwit%20Dexter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Dimwit Dexter
+          </div>
+          <div class="plot">Due to overworking his brain, Dexter's mind shuts down, making him act idiotic.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E16%20-%20Dee%20Dee%27s%20Room-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Dee Dee's Room
+          </div>
+          <div class="plot">After Dee Dee steals his critical invention, Dexter ventures into her room to find it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E17%20-%20Dial%20M%20For%20Monkey%20Huntor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Dial M For Monkey: Huntor
+          </div>
+          <div class="plot">Monkey encounters an alien hunter named Huntor and must fight him to save Agent Honeydew and Commander Chief.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E18%20-%20The%20Big%20Sister-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - The Big Sister
+          </div>
+          <div class="plot">Rerun of the second &quot;What a Cartoon!&quot; pilot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E19%20-%20Star%20Spangled%20Sidekicks-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Star Spangled Sidekicks
+          </div>
+          <div class="plot">Dexter and Dee Dee enter tryouts to become Major Glory's sidekick. When Dee Dee wins, Dexter realizes that fancy costumes are not the only criterion to become a superhero.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E20%20-%20The%20Justice%20Friends%20TV%20Super%20Pals-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - The Justice Friends: TV Super Pals
+          </div>
+          <div class="plot">With only one television in their apartment, Major Glory, Krunk, and Valhallen disagree on what to watch: Major Glory's televised capture of the Disgruntled Postman, TV Puppet Pals, or the monster truck pull.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E21%20-%20Game%20Over-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - Game Over
+          </div>
+          <div class="plot">Dexter and Dee Dee's father buys a video game for them to play, but the game sucks Dexter inside when he plugs in the cartridge, and it is up to Dee Dee to bring him out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E22%20-%20Babysitter%20Blues-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Babysitter Blues
+          </div>
+          <div class="plot">Dexter has a crush on his teenage babysitter Lisa. When he finds out that she has a boyfriend, he sabotages their relationship and accelerates his age by ten years in an attempt to win her heart.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E23%20-%20The%20Justice%20Friends%20Valhallen%27s%20Room-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - The Justice Friends: Valhallen's Room
+          </div>
+          <div class="plot">Valhallen loses his magic ax and starts turning into a nerd, forcing Major Glory and Krunk to enter his room to find it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E24%20-%20Dream%20Machine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - Dream Machine
+          </div>
+          <div class="plot">When Dexter's nightmares become frequent and problematic, he invents a machine that allows him to have nice dreams, as long as Dee Dee can operate it properly while she is awake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E25%20-%20Dollhouse%20Drama-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x25 - Dollhouse Drama
+          </div>
+          <div class="plot">Suspicious that Dee Dee has not entered his lab even once on a particular day, Dexter shrinks himself and enters her room to spy on her. He soon becomes an unwilling character in Dee Dee's doll story, but he believes the story to be real.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E26%20-%20The%20Justice%20Friends%20Krunk%27s%20Date-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - The Justice Friends: Krunk's Date
+          </div>
+          <div class="plot">While fighting Comrade Red and his gang, Krunk falls in love with his equivalent in their gang, She-Thing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E27%20-%20The%20Big%20Cheese-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x27 - The Big Cheese
+          </div>
+          <div class="plot">Dexter's new device allows him to study for the next day's French test while sleeping. It malfunctions, causing a single phrase -omelette du fromage- to repeat throughout the night, causing Dexter to wake up the next morning speaking nothing else except &quot;omelette du fromage&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E28%20-%20Way%20of%20the%20Dee%20Dee-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x28 - Way of the Dee Dee
+          </div>
+          <div class="plot">Dee Dee teaches Dexter how to live life her way instead of being lonely and purely focused on science.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E29%20-%20The%20Justice%20Friends%20Say%20Uncle%20Sam-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x29 - The Justice Friends: Say Uncle Sam
+          </div>
+          <div class="plot">Major Glory forces Krunk and Valhallen to tidy up their apartment for his Uncle Sam, who is coming over for a visit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E30%20-%20Tribe%20Called%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x30 - Tribe Called Girl
+          </div>
+          <div class="plot">To learn more about girls, Dexter camouflages himself and enters Dee Dee's room, where she is having a sleepover with her friends Lee Lee and Mee Mee. He gets caught by the girls, who force him to take part in their activities.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E31%20-%20Spacecase-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x31 - Spacecase
+          </div>
+          <div class="plot">To prevent himself from being taken away by aliens for experimentation, Dexter tricks Dee Dee into going instead, but he regrets his decision after realizing how much he cares for her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E32%20-%20The%20Justice%20Friends%20Ratman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x32 - The Justice Friends: Ratman
+          </div>
+          <div class="plot">To fix their apartment's plumbing, Krunk and Valhallen go to the basement, where they meet Ratman, a diminutive vigilante raised by rats (a parody of Batman).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E33%20-%20Dexter%27s%20Debt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x33 - Dexter's Debt
+          </div>
+          <div class="plot">Dexter's lab is threatened with repossession unless he can repay his debt to NASA. When Dee Dee wins the same amount in a lottery, he decides to steal her money out of desperation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E34%20-%20The%20Justice%20Friends%20Bee%20Where-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x34 - The Justice Friends: Bee Where?
+          </div>
+          <div class="plot">Major Glory, Krunk, and Valhallen try to rid their apartment of a bee.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E35%20-%20Mandarker-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x35 - Mandarker
+          </div>
+          <div class="plot">Following the destruction of his lab by Dexter and Dee Dee (in the episode Dexter's Rival), Mandark turns to magic to beat Dexter at the science fair.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E36%20-%20Inflata%20Dee%20Dee-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x36 - Inflata Dee Dee
+          </div>
+          <div class="plot">Dee Dee inflates Dexter's hydro-plasmatic suit and constantly floats in the air, prompting Dexter to bring her down.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E37%20-%20The%20Justice%20Friends%20Can%27t%20Nap-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x37 - The Justice Friends: Can't Nap
+          </div>
+          <div class="plot">After fellow Justice Friend White Tiger helps Valhallen stop a super-villain, the latter invites him to spend the night in his apartment, forgetting that Major Glory is allergic to cats.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S01E38%20-%20Monstory-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x38 - Monstory
+          </div>
+          <div class="plot">Not interested in hearing Dee Dee's long-winded story, Dexter gives her a silencing formula to keep her quiet, but it instead turns her into a giant monster still bent on telling her story. When he realizes that nothing can make her quiet, he becomes a giant monster himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x39 - Monstory RCVR
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E01%20-%20Beard%20To%20Be%20Feared-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Beard To Be Feared
+          </div>
+          <div class="plot">After a fright from Dee Dee, Dexter lays down in the beard growing machine and tries to grow a beard like his hero, Action Hank. Unfortunately, everyone thinks he's a hero.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E02%20-%20Quackor%20The%20Fowl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Quackor The Fowl
+          </div>
+          <div class="plot">Mandark doesn't know that his pet duck is really Quackor the Fowl, Monkey's rival. Quackor overhears Mandark talking in his sleep about destroying Dexter's lab and tries to do it, unaware that Monkey is Dexter's pet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E03%20-%20Ant%20Pants-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Ant Pants
+          </div>
+          <div class="plot">Dexter prevents Dee Dee from destroying some ants. In order to teach her about ants, Dexter and Dee enter Dexter's ant farm. The ants think Dexter is a criminal and has him fight to the death with a stronger ant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E04%20-%20Mom%20and%20Jerry-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Mom and Jerry
+          </div>
+          <div class="plot">Dexter switches his brain with a mouse, and must avoid his mother when she decides to exterminate him. A Parody of Tom and Jerry.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E05%20-%20Chubby%20Cheese-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Chubby Cheese
+          </div>
+          <div class="plot">At the Chubby Cheese pizza restaurant, Dexter wears a Chubby Cheese hat and tries to slow down the Whack The Weasel machine to win a stuffed Monkey doll before Dee Dee does.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E06%20-%20That%20Crazy%20Robot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - That Crazy Robot
+          </div>
+          <div class="plot">One of Dexter's robots becomes Dee Dee's servant when she removes a wrench that froze him up, but the robot is willing to destroy anyone who is mean to her or scolds her, including Dexter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E07%20-%20D%20%26%20DD-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - D &amp; DD
+          </div>
+          <div class="plot">When Dexter's friends tire of the complicated traps he sets up as Dungeon Master (he has their character's killed every time), they put Dee Dee in charge for a change of pace.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E08%20-%20Hamhocks%20and%20Armlocks-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Hamhocks and Armlocks
+          </div>
+          <div class="plot">Dexter's father gets challenged to an arm wrestling match against a local champion at a truck stop, when he causes the champion to lose for the first time, but refuses to do so even when he trashes the family car. He finally accepts the challenge when he slams the door in Mom's face. Dee Dee knows he'll get creamed, so Dexter builds him a robotic arm to help him win the match.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E09%20-%20Hunger%20Strikes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Hunger Strikes
+          </div>
+          <div class="plot">Dexter uses radiation therapy so he can like vegetables, it actually causes him to only eat vegetables, also, the therapy has consequences if Dexter goes too long without them. He turns into a Parody of The Incredible Hulk without vegetables.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E10%20-%20The%20Koos%20is%20Loose-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - The Koos is Loose
+          </div>
+          <div class="plot">Dee Dee's imaginary friend comes to life and annoys Dexter. Dexter ends up wishing him away, then he realizes he made a terrible mistake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E11%20-%20Morning%20Stretch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Morning Stretch
+          </div>
+          <div class="plot">Dexter oversleeps and still has to finish his homework along with getting ready for school and eating breakfast, so he creates a helmet that expands thirty seconds into thirty minutes, but realizes that slowing down time is more detrimental than helpful. When he gets everything done, the helmet shuts off. But Dee Dee blocks his door causing him to miss the bus. When Dexter asks Dee Dee why, she replies &quot;Snow Day, school's canceled!&quot;. Dexter realizes he did all that rushing around for nothing!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E12%20-%20Dee%20Dee%20Locks%20and%20the%20Ness%20Monster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Dee Dee Locks and the Ness Monster
+          </div>
+          <div class="plot">Dee Dee Locks and the Ness Monster&mdash;Dexter's mother forces Dexter to read to Dee Dee when she's sick, but she makes up her own story after being bored by Dexter's story (which was actually a science article). The story is completely mixed up and makes no sense. Dexter ends up catching Dee Dee's illness.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E13%20-%20Backfire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Backfire
+          </div>
+          <div class="plot">Dexter fuses Dee Dee with the family car by accident, causing mayhem. A Parody of Herbie the Love Bug.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E14%20-%20Book%20%27Em-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - Book 'Em
+          </div>
+          <div class="plot">Dexter accidentally takes a library book without checking it out, so he and Dee Dee try to put it back without being caught.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E15%20-%20Sister%27s%20Got%20a%20Brand%20New%20Bag-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Sister's Got a Brand New Bag
+          </div>
+          <div class="plot">Dee Dee's new dance annoys Dexter to no end.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E17%20-%20Lab%20of%20The%20Lost-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Lab of The Lost
+          </div>
+          <div class="plot">Dexter ends up in the &quot;old part of the lab&quot; where his earliest inventions, long since forgotten, are not too happy to see him. They are mad at him for saying they were his greatest inventions, then moved on to another great invention.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E18%20-%20Labels-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - Labels
+          </div>
+          <div class="plot">Dexter and Dee Dee label everything in the house. When their parents get home, they mistake Dexter for Dee Dee (he had a Dee Dee label on his forehead), but he already blamed Dee Dee for the chaos.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E19%20-%20Game%20Show-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Game Show
+          </div>
+          <div class="plot">Dexter and Dee Dee compete against each other on a game show. Where Dexter can't seem to win.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x20 - Fantastic Boyage
+          </div>
+          <div class="plot">Dexter tries to inject himself into Dee Dee to find a cure to the common cold, but ends up inside his dog. He believes Dee Dee has been infected with a dog virus. He is then mistaken for the first human virus to infect a dog by the vet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E21%20-%20Filet%20of%20Soul-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - Filet of Soul
+          </div>
+          <div class="plot">When Dee Dee refuses to flush their gold fish down the toilet, the ghost of the fish haunts them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E22%20-%20Golden%20Diskette-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - Golden Diskette
+          </div>
+          <div class="plot">Dee Dee and Dexter win a free pass to Professor Hawk's magic factory after finding the golden diskette.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E23%20-%20Snowdown-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x23 - Snowdown
+          </div>
+          <div class="plot">Dad encourages Dexter to become the king of snow, as he was in his early days, until someone beated him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E24%20-%20Figure%20Not%20Included-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x24 - *Figure Not Included
+          </div>
+          <div class="plot">In an attempt to be popular with his &quot;&quot;friends&quot;&quot;, Dexter makes his own Mayor Glory Action Figure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x25 - Mock 5
+          </div>
+          <div class="plot">In a whole parody of &quot;&quot;Speed Racer&quot;&quot;, Dexter and Mandark compete on a race.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E26%20-%20Ewww%20That%27s%20Growth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x26 - Ewww That's Growth
+          </div>
+          <div class="plot">Dexter can't get into a roller coaster because he's too small so he makes himself taller.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E27%20-%20Nuclear%20Confusion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x27 - Nuclear Confusion
+          </div>
+          <div class="plot">Dee Dee steals the nuclear atom that Dexter needs to make his invention work, but she doesn't know that it will explode if Dexter doesn't find it on time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E28%20-%20Germ%20Warfare-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x28 - Germ Warfare
+          </div>
+          <div class="plot">Everybody except Dexter gets sick, so he makes himself a plastic bubble to get germ protection.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E29%20-%20A%20Hard%20Day%27s%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x29 - A Hard Day's Day
+          </div>
+          <div class="plot">It's not a great day for science when Dexter has bad luck due to the position of the stars.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E30%20-%20Road%20Rash-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x30 - Road Rash
+          </div>
+          <div class="plot">Mom makes Dexter go outside and ride a bike, thing that turns into a Dexter-Dee Dee chase.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E31%20-%20Ocean%20Commotion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x31 - Ocean Commotion
+          </div>
+          <div class="plot">While at the beach, Dee Dee (who's wearing a mermaid swimsuit) gets captured by a maniac sailor so Dexter must rescue her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E32%20-%20The%20Bus%20Boy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x32 - The Bus Boy
+          </div>
+          <div class="plot">Dexter must go to the back of the school bus to retrieve his pencil, where another kid got lost years ago.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E33%20-%20The%20Justice%20Friends%20Things%20That%20Go%20Bonk%20in%20the%20Night-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x33 - The Justice Friends: Things That Go Bonk in the Night
+          </div>
+          <div class="plot">Krunk stays awake all night watching The Puppet Pals Show Marathon, so his brain starts playing him tricks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E34%20-%20Ol%27%20McDexter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x34 - Ol' McDexter
+          </div>
+          <div class="plot">Dexter is sent to summer camp, in a place far away from civilization.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E35%20-%20Sassy%20Come%20Home-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x35 - Sassy Come Home
+          </div>
+          <div class="plot">While the family is at the woods, Dexter goes searching for the Mighty Bigfoot, if Dee Dee doesn't find him first.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E36%20-%20Photo%20Finish-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x36 - Photo Finish
+          </div>
+          <div class="plot">Dee Dee photographs Dexter's secret lab.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E37%20-%20Star%20Check%20Unconventional-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x37 - Star Check Unconventional
+          </div>
+          <div class="plot">Dexter and two friends go to the Star Check Convention, but certain confusion might send them to a different one.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E38%20-%20Dexter%20is%20Dirty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x38 - Dexter is Dirty
+          </div>
+          <div class="plot">To avoid the bath, Dexter decides to laminate himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E39%20-%20Ice%20Cream%20Scream-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x39 - Ice Cream Scream
+          </div>
+          <div class="plot">Dexter will do anything to make the ice cream vendor stop to get some ice cream.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E40%20-%20Decode%20of%20Honor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x40 - Decode of Honor
+          </div>
+          <div class="plot">Dexter and Dee Dee get their Action Hank and Pony Puff Secret Codes mixed up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E41%20-%20World%27s%20Greatest%20Mom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x41 - World's Greatest Mom
+          </div>
+          <div class="plot">Dexter newest creation gives Mom super powers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E42%20-%20Ultrajerk%202000-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x42 - Ultrajerk 2000
+          </div>
+          <div class="plot">Dexter's robot takes over his lab.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E43%20-%20Techno%20Turtle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x43 - Techno Turtle
+          </div>
+          <div class="plot">Dexter heals a turtle by giving him loads of modern, techno stuff.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E44%20-%20Surprise%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x44 - Surprise!
+          </div>
+          <div class="plot">Dexter makes himself invisible to make sure Mom and Dad give him what he wants for his birthday, the Ultimate Mayor Glory Action Figure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E45%20-%20Got%20Your%20Goat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x45 - Got Your Goat
+          </div>
+          <div class="plot">Dexter and Dee Dee go to South America in order to find the chupacabras, an animal that Dexter created.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E46%20-%20Dee%20Dee%20Be%20Deep-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x46 - Dee Dee Be Deep
+          </div>
+          <div class="plot">Dee Dee, who's not exactly good at singing, gets Dexter's help on getting a better voice, but not the voice Dexter was expecting.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E47%20-%20911-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x47 - 911
+          </div>
+          <div class="plot">When Dexter's favorite show gets interrupted by an emergency, he searches all town trying to find it and solve so regular broadcast returns.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E48%20-%20Down%20in%20the%20Dumps-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x48 - Down in the Dumps
+          </div>
+          <div class="plot">Dexter and Dee Dee go to the dumps to retrieve Dee Dee's lost teddy bear.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E49%20-%20Unfortunate%20Cookie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x49 - Unfortunate Cookie
+          </div>
+          <div class="plot">Dexter and Dee Dee get trapped with a Finger trap.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E50%20-%20The%20Muffin%20King-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x50 - The Muffin King
+          </div>
+          <div class="plot">Dexter and Dee Dee must stop Dad from eating Mom's muffins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E51%20-%20Picture%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x51 - Picture Day
+          </div>
+          <div class="plot">Dexter finds out he's ugly, so he transforms his face to look better for the school photo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E52%20-%20Now%20That%27s%20a%20Stretch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x52 - Now That's a Stretch
+          </div>
+          <div class="plot">Dexter combines himself with bubble gum to become more stretchable.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E53%20-%20Dexter%20Detention-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x53 - Dexter Detention
+          </div>
+          <div class="plot">Dexter is send to detention after a confusion during a test.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E54%20-%20Don%27t%20Be%20a%20Baby-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x54 - Don't Be a Baby
+          </div>
+          <div class="plot">Dexter and Dee Dee want to become older, but instead they make everyone else a baby.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E55%20-%20Dial%20M%20For%20Monkey%20Peltra-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x55 - Dial M For Monkey: Peltra
+          </div>
+          <div class="plot">A new female villian named Peltra wants Monkey's Coat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x56 - G.I.R.L. Squad
+          </div>
+          <div class="plot">Dee Dee, LeeLee and MeeMee become crimefighters, but of course they will not actually fight crime.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E57%20-%20Sports%20a%20Poppin%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x57 - Sports a Poppin'
+          </div>
+          <div class="plot">Dad wants to show Dexter the joy of sports.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E58%20-%20Koos%20a%20la%20Goop%20a%20Goop-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x58 - Koos a la Goop a Goop
+          </div>
+          <div class="plot">Koosy tells Dee Dee that he is the king of the land of Koos, but when Dee Dee goes there...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E59%20-%20Project%20Dee%20Dee-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x59 - Project Dee Dee
+          </div>
+          <div class="plot">Dee-Dee refuses any kind of help from Dexter on her science project, when Dee-Dee shows Dexter her show-and-tell product, he criticises it heavily and offers his own..contributions
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E60%20-%20Topped%20Off-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x60 - Topped Off
+          </div>
+          <div class="plot">Surprised of the results coffee causes on Mom and Dad, Dexter and Dee Dee decide to try it themselves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E61%20-%20Dee%20Dee%27s%20Tail-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x61 - Dee Dee's Tail
+          </div>
+          <div class="plot">Dexter uses his science to turn Dee Dee into a horse.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E62%20-%20No%20Power%20Trip-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x62 - No Power Trip
+          </div>
+          <div class="plot">Dexter overloads the energy of the laboratory, so he makes numerous tries to reload it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E63%20-%20Sister%20Mom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x63 - Sister Mom
+          </div>
+          <div class="plot">After Dexter did something really bad at school, he gets her mother called, so to not ruin his reputation, he turns Dee Dee into Mom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E64%20-%20The%20Laughing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x64 - The Laughing
+          </div>
+          <div class="plot">After Dexter gets bitten by a clown, he turns into one every night.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E65%20-%20Dexter%27s%20Lab%20A%20Story-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x65 - Dexter's Lab: A Story
+          </div>
+          <div class="plot">On his way home, Dexter gets followed by a labrador, when he teaches him to speak, the dog becomes even more annoying.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E66%20-%20Coupon%20For%20Craziness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x66 - Coupon For Craziness
+          </div>
+          <div class="plot">A confusion at the supermarket makes Dexter go home with a different, yet extremely scientific, family; but who is home with his real family?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E67%20-%20Better%20Off%20Wet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x67 - Better Off Wet
+          </div>
+          <div class="plot">Dexter is afraid of taking a dive at the pool because Dad always pushes him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E68%20-%20Critical%20Gas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x68 - Critical Gas
+          </div>
+          <div class="plot">After Dexter eats a giant burrito he believes he's going to die, so he makes a list of everything he must do before that time comes. (Including, make Mom and Dad happy, do dishes, free Robots, make World Peace, end World's hunger, learn to dance, make Dee Dee happy, shut down the Main System... and tell Mom and Dad about the secret laboratory).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E69%20-%20Let%27s%20Save%20the%20World%20You%20Jerk%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x69 - Let's Save the World You Jerk!
+          </div>
+          <div class="plot">Dexter and Mandark must team up in order to save the Earth from a meteor rain.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E70%20-%20Average%20Joe-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x70 - Average Joe
+          </div>
+          <div class="plot">After an I.Q. test defines Dexter as &quot;&quot;average&quot;&quot;, he decides to live an average life hanging out with an average boy of last name Smith.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E71%20-%20Rushmore%20Rumble-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x71 - Rushmore Rumble
+          </div>
+          <div class="plot">Dexter and Mandark mechanize the giant figures of Lincoln and Washington from the Mount Rushmore statues and wreak havoc with them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E72%20-%20A%20Boy%20and%20His%20Bug-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x72 - A Boy and His Bug
+          </div>
+          <div class="plot">Dexter creates a small bug that eats all the scrap metal caused by Dee Dee's destruction.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E73%20-%20You%20Vegetabelieve%20It%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x73 - You Vegetabelieve It!
+          </div>
+          <div class="plot">Dexter's untested formula causes all plants in the garden to become dangerous.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E74%20-%20Aye%20Aye%20Eyes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x74 - Aye Aye Eyes
+          </div>
+          <div class="plot">After Dexter returns a bunny to a little girl with big round eyes, she starts following Dexter everywhere.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E75%20-%20Dee%20Dee%20and%20the%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x75 - Dee Dee and the Man
+          </div>
+          <div class="plot">After Dexter &quot;&quot;fires&quot;&quot; Dee Dee, he realizes that his lab needs chaos.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E76%20-%20Old%20Flame-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x76 - Old Flame
+          </div>
+          <div class="plot">Dexter travels to the past to meet the caveman that discovered fire.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E77%20-%20Don%27t%20Be%20a%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x77 - Don't Be a Hero
+          </div>
+          <div class="plot">Dexter attempts to make numerous accidents to get super powers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E78%20-%20My%20Favorite%20Martian-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x78 - My Favorite Martian
+          </div>
+          <div class="plot">Dexter goes to Mars to find alien life forms.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E79%20-%20Paper%20Route%20Bout-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x79 - Paper Route Bout
+          </div>
+          <div class="plot">Dee Dee and the Ninja Clan battle for who delivers the newspapers in the neighborhood.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E80%20-%20The%20Old%20Switcharooms-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x80 - The Old Switcharooms
+          </div>
+          <div class="plot">After Dexter and Dee Dee destroy Dad's bowling trophy, they are sent to each other's room.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E81%20-%20Trick%20or%20Treehouse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x81 - Trick or Treehouse
+          </div>
+          <div class="plot">Dee Dee builds a treehouse in the garden and Dexter can't stop wondering what's up there.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E82%20-%20Quiet%20Riot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x82 - Quiet Riot
+          </div>
+          <div class="plot">Dexter worked all night on his inventions so all he wants is some sleep, but Dee Dee will make sure that that doesn't happen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E83%20-%20Accent%20You%20Hate-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x83 - Accent You Hate
+          </div>
+          <div class="plot">Dexter and his friends Lucky and Pierre(&iquest;?) are victims of a bully that hates kids with funny accents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E84%20-%20Catch%20of%20the%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x84 - Catch of the Day
+          </div>
+          <div class="plot">Numerous factors like getting up early, being the first ones there, fishing clothes and other accesories, will not allow Dexter and his Dad to go on a fishing trip.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E85%20-%20Dad%20is%20Disturbed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x85 - Dad is Disturbed
+          </div>
+          <div class="plot">Constant interruptions by Dexter, Dee Dee and Mom will not let Dad watch his golf game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E86%20-%20Framed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x86 - Framed
+          </div>
+          <div class="plot">After Dexter breaks his glasses, he starts a new fashion at school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E87%20-%20That%27s%20Using%20Your%20Head-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x87 - That's Using Your Head
+          </div>
+          <div class="plot">Dexter meets a bum at an appliance store with a strange device on his head.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E88%20-%20DiM-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x88 - DiM
+          </div>
+          <div class="plot">Dexter goes to the appliance store to buy a lightbulb for his lab.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E89%20-%20Just%20an%20Old%20Fashioned%20Lab%20Song-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x89 - Just an Old Fashioned Lab Song...
+          </div>
+          <div class="plot">Dexter takes piano classes from a man that looks a lot like Paul Williams.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E90%20-%20Repairanoid-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x90 - Repairanoid
+          </div>
+          <div class="plot">When an electricist comes to repair the house, Dexter discovers that if he repairs the lab it will function perfectly.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E91%20-%20Sdrawkcab-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x91 - Sdrawkcab
+          </div>
+          <div class="plot">Dexter creates a belt that can have its wearer do everything backwards, only to get in trouble when Dee Dee manages to get control of the time directional switch.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E92%20-%20The%20Continuum%20of%20Cartoon%20Fools-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x92 - The Continuum of Cartoon Fools
+          </div>
+          <div class="plot">Dee Dee keeps getting into Dexter's lab even though Dexter keeps throwing her out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E93%20-%20Sun%2C%20Surf%2C%20and%20Science-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x93 - Sun, Surf, and Science
+          </div>
+          <div class="plot">Mandark tries to impress Dee Dee by getting into a surfing contest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E94%20-%20Big%20Bots-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x94 - Big Bots
+          </div>
+          <div class="plot">Dexter makes Dee Dee a robot for herself, at the same time a volcano is going to burst on an island in the middle of the ocean.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E95%20-%20Gooey%20Aliens%20That%20Control%20Your%20Mind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x95 - Gooey Aliens That Control Your Mind
+          </div>
+          <div class="plot">Dexter must save his family after they get possesed by aliens.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E96%20-%20Misplaced%20in%20Space-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x96 - Misplaced in Space
+          </div>
+          <div class="plot">Dee Dee must save Dexter who is a slave in a distant galaxy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E97%20-%20Dee%20Dee%27s%20Rival-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x97 - Dee Dee's Rival
+          </div>
+          <div class="plot">Dee Dee and Lalavava (Mandark's sister), compete on a ballet contest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E98%20-%20Pslyghtly%20Psycho-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x98 - Pslyghtly Psycho
+          </div>
+          <div class="plot">It's Mother's Day and Mom can't take that Dad, Dee Dee and Dexter do all the housework.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E99%20-%20Game%20For%20a%20Game-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x99 - Game For a Game
+          </div>
+          <div class="plot">Dexter and Dee Dee compete in various games chosen by Dexter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E100%20-%20Blackfoot%20and%20Slim-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x100 - Blackfoot and Slim
+          </div>
+          <div class="plot">A documentary shows the secret lives of Dexter and Dee Dee, also known as Blackfoot and Slim.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E101%20-%20Trapped%20With%20a%20Vengeance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x101 - Trapped With a Vengeance
+          </div>
+          <div class="plot">Dexter stays at school too much, forcing the janitor to stay as well, so he waits for a day in which Dexter has to leave early for an emergency, as he plans his revenge...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E102%20-%20The%20Parrot%20Trap-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x102 - The Parrot Trap
+          </div>
+          <div class="plot">Dexter must stop his mechanical parrot before his imitations reveal the secret of his lab.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E103%20-%20Dexter%20and%20Computress%20Get%20Mandark%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x103 - Dexter and Computress Get Mandark!
+          </div>
+          <div class="plot">Dexter and Computress team up in order to shrink Mandark's head.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E104%20-%20The%20Justice%20Friends%20Pain%20in%20the%20Mouth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x104 - The Justice Friends: Pain in the Mouth
+          </div>
+          <div class="plot">Krunk gets a nacho stuck in his tooth and Mayor Glory wants to take it out himself while Valhallens insists on taking Krunk to the dentist.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E105%20-%20Dexter%20Vs.%20Santa%27s%20Claws-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x105 - Dexter Vs. Santa's Claws
+          </div>
+          <div class="plot">Dexter must prove to Dee Dee that Santa Claus doesn't exist.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x106 - Dyno-Might
+          </div>
+          <div class="plot">When Blue Falcon appears with a destroyed Dynomutt, Dexter decides to build a new one.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E107%20-%20LABretto-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x107 - LABretto
+          </div>
+          <div class="plot">The story of how Dexter was born and how he built his lab, in the style of a musical.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S02E108%20-%20Last%20But%20Not%20Beast-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x108 - Last But Not Beast
+          </div>
+          <div class="plot">Dexter must save Japan from being destroyed by a monster, but his robot must be controlled by four people to function correctly, so Dexter must tell Dee Dee... and his parents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E01%20-%20Streaky%20Clean-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Streaky Clean
+          </div>
+          <div class="plot">Dexter creates a device to keep his clothes clean.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E02%20-%20A%20Dad%20Cartoon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - A Dad Cartoon
+          </div>
+          <div class="plot">Dad decides to give the car a retouch.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E03%20-%20Sole%20Brother-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Sole Brother
+          </div>
+          <div class="plot">After a failed mutation experiment, Dexter becomes Dee Dee's foot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E04%20-%20Mind%20Over%20Chatter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Mind Over Chatter
+          </div>
+          <div class="plot">Dexter uses a device to listen to what Dad is thinking, but the experiment backfires and everyone else can hear what Dexter is thinking.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E05%20-%20A%20Quackor%20Cartoon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - A Quackor Cartoon
+          </div>
+          <div class="plot">Quackor returns to battle Monkey in Dexter's Lab.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E06%20-%20Momdark-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Momdark
+          </div>
+          <div class="plot">Mandark disguises as Mom in order to get into Dexter's Lab.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E07%20-%20Copping%20an%20Attitude-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Copping an Attitude
+          </div>
+          <div class="plot">Because of his exceptional grades Dexter's school and parents have decided that he can go to college. At first Dexter is happy to be there so he can fill his mind with college knowledge, but in the end the students influence on Dexter allows him to do college pranks sending him a one way ticket back to Huber Elementary School.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E08%20-%20A%20Failed%20Lab%20Experiment-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - A Failed Lab Experiment
+          </div>
+          <div class="plot">Dexter creates a device taht doesn't work the way he wanted.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E09%20-%20The%20Grand%20Daddy%20of%20All%20Inventions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - The Grand Daddy of All Inventions
+          </div>
+          <div class="plot">Dexter's mom takes him to his grandpa's house. At first he thinks it's going to be a boring day until he discovers that his grandpa has a secret lab!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E10%20-%20Poppa%20Wheely-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Poppa Wheely
+          </div>
+          <div class="plot">It's career day and Dexter is ashamed of his Dad so he creates a Dad that looks more like him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E11%20-%20A%20Mom%20Cartoon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - A Mom Cartoon
+          </div>
+          <div class="plot">Mom spends a day at the supermarket.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E12%20-%20The%20Mock%20Side%20of%20the%20Moon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - The Mock Side of the Moon
+          </div>
+          <div class="plot">Dexter travels to the moon and finds aliens that are planning to come to Earth to take everything.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E13%20-%20If%20Memory%20Serves-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - If Memory Serves
+          </div>
+          <div class="plot">Fearing that his memory might be limited, Dexter uses a device to save all his memories.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E14%20-%20A%20Mandark%20Cartoon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - A Mandark Cartoon
+          </div>
+          <div class="plot">Mandark plans another scheme to get rid of Dexter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E15%20-%20Tele%20Trauma-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - Tele Trauma
+          </div>
+          <div class="plot">Tired of missing his favorite TV shows because of studying, Dexter creates a special helmet that absorbs all the TV info.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E16%20-%20A%20Boy%20Named%20Sue-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - A Boy Named Sue
+          </div>
+          <div class="plot">How did a young child called Susan became the being now known as Mandark? Born to free spirits, and with a passionate determination to harness the forces of science for his own ends, this is his story...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E17%20-%20Lab%20on%20the%20Run-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - Lab on the Run
+          </div>
+          <div class="plot">Two robots escape from Dexter's lab in order to have a better life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E18%20-%20Dos%20Boot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x18 - Dos Boot
+          </div>
+          <div class="plot">Mandark gets in Dexters computer raving havok, so Dexter must stop him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E19%20-%20A%20Dee%20Dee%20Cartoon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x19 - A Dee Dee Cartoon
+          </div>
+          <div class="plot">After being kicked out of Dexter's Lab (AGAIN) She goes and plays in her &quot;&quot;lab&quot;&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E20%20-%20Would%20You%20Like%20That%20In%20The%20Can-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x20 - Would You Like That In The Can
+          </div>
+          <div class="plot">A girl accidentally takes Dexter's lunchbox, so Dexter and his friend must go into the girls bathroom to get it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E21%20-%20That%20Magic%20Moment-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x21 - That Magic Moment
+          </div>
+          <div class="plot">Dexter's Magic Uncle Ferger 'O Reiley pays a visit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E22%20-%20A%20Silent%20Cartoon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x22 - A Silent Cartoon
+          </div>
+          <div class="plot">Dexter is trying to build his lab blue, but Dee Dee keeps making it pink.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E23%20-%20Opposites%20Attract-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x23 - Opposites Attract
+          </div>
+          <div class="plot">Dexter creates a magnetic field to keep Dee Dee away from him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E24%20-%20Comic%20Relief-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x24 - Comic Relief
+          </div>
+          <div class="plot">Dexter creates a special device that lets him create his own life-like superhero comic... along with his sister villian &quot;&quot;Deestructa&quot;&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E25%20-%20A%20Third%20Dad%20Cartoon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x25 - A Third Dad Cartoon
+          </div>
+          <div class="plot">Dad goes with the kids to play some golf.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E26%20-%20RoboDexo%203000-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x26 - RoboDexo 3000
+          </div>
+          <div class="plot">Dexter creates the ultimate robot (RoboDexo 3000) to replace his previous 200 model.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E27%20-%20Glove%20at%20First%20Sight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x27 - Glove at First Sight
+          </div>
+          <div class="plot">Mom and Dad recall the moments that got them together.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x28 - A Mom &amp; Dad Cartoon
+          </div>
+          <div class="plot">Mom and Dad are having a discussion while playing scrabble, a discussion that Dexter and Dee Dee don't interpretate the right way.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E29%20-%20Smells%20Like%20Victory-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x29 - Smells Like Victory
+          </div>
+          <div class="plot">The U.S. army invades Dexter's lab and Dexter fights them, each side thinking the other is a troop of aliens.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E30%20-%20Oh%2C%20Brother-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x30 - Oh, Brother
+          </div>
+          <div class="plot">Dexter uses his newest creation to turn Dee Dee into a boy, but the male version of Dee Dee (Doo Dee) is not as cool as Dexter it would.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x31 - Another Dad Cartoon
+          </div>
+          <div class="plot">While Mom, Dexter and Dee Dee are out shopping, Dad decides to spend the afternoon dancing... like Tom Cruise in Risky Business.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E32%20-%20Bar%20Exam-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x32 - Bar Exam
+          </div>
+          <div class="plot">Dexter must pass a physical bar exam if he wants to pass P.E.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E33%20-%20Jeepers%2C%20Creepers%2C%20Where%20is%20Peepers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x33 - Jeepers, Creepers, Where is Peepers?
+          </div>
+          <div class="plot">Dexter and Koosy must save Peepers, otherwise the whole land of Koz will disappear.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E34%20-%20Go%2C%20Dexter%20Family%2C%20Go%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x34 - Go, Dexter Family, Go!
+          </div>
+          <div class="plot">Dexter and his family are kidnapped by aliens, Dexter leads his family in an escape attempt, but when Dexter is captured once more, Mom, Dad, and Dee-Dee attempt to save him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S03E35%20-%20Scare%20Tactics-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x35 - Scare Tactics
+          </div>
+          <div class="plot">Dexter and Dad watch a late night horror movie and spend a scary night in their house.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x36 - My Dad vs. Your Dad
+          </div>
+          <div class="plot">Both Dexter and Mandark's fathers intercede during another of Dexter and Mandark's petty squabbles, but their effort to get along with one another backfire, and the two also soon engage in a heated fight.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x37 - My Dad vs Your Dad RCVR
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E01%20-%20Beau%20Tie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Beau Tie
+          </div>
+          <div class="plot">Dee-Dee has a new boyfriend who also likes science and Einstein, and soon the boy finds himself caught in a vicious tug of war...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E02%20-%20Remember%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Remember Me?
+          </div>
+          <div class="plot">Dexter is hit by a wrench while working on a device, and suffers amnesia, Dee Dee decides to mess with his head
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E03%20-%20Overlabbing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Overlabbing
+          </div>
+          <div class="plot">Dexter and Mandark drill underground to expand their labs, but end up overlapping each other's work. They secretly devise a plan to destroy each other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E04%20-%20Sis-Tem%20Error-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Sis-Tem Error
+          </div>
+          <div class="plot">Dee Dee accidentally breaks down Dexter's lab, and she tries to not and let him know its broken.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E05%20-%20Bad%20Cable%20Manners-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Bad Cable Manners
+          </div>
+          <div class="plot">Dad wants cable really bad, so Dexter illegally pirates cable for him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E06%20-%20Dexter%27s%20Library-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Dexter's Library
+          </div>
+          <div class="plot">When Dexter becomes the head of a library, he inforces the rules really hard, driving everyone crazy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E07%20-%20The%20Scrying%20Game-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - The Scrying Game
+          </div>
+          <div class="plot">Dee Dee learns a new game that can &quot;&quot;predict peoples futures&quot;&quot;.  She uses it on Dexter, and finds out that the game REALLY DOES predict peoples futures...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E08%20-%20Monstrosi-Dee%20Dee-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Monstrosi-Dee Dee
+          </div>
+          <div class="plot">A Monster starts roaming Dexter's lab, although Dexter doesnt know its just Dee Dee, who ate an apple in a failed lab experiment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E09%20-%20Dad%20Man%20Walking-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Dad Man Walking
+          </div>
+          <div class="plot">Dexte'rs father begins to sleepwalk, and accidently stumbles into Dexter's Lab
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E10%20-%20Dexter%27s%20Little%20Dilemma-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Dexter's Little Dilemma
+          </div>
+          <div class="plot">Dexter accidentally shrinks his parents, and puts them into a model of there house.  Although the house isnt completed, so Dexter must find a way to reverse it before they know the truth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E11%20-%20Faux%20Chapeau-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Faux Chapeau
+          </div>
+          <div class="plot">Dexter creates a new invention and wears it on his head. It suddenly becomes the latest fashion craze at Huber elementry.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E12%20-%20D%C2%B2-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - D&sup2;
+          </div>
+          <div class="plot">Dexter and Dee Dee realise when they work together, they make a pretty good team.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E13%20-%20Head%20Band-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - Head Band
+          </div>
+          <div class="plot">Dee Dee has a song stuck in her head.  Literally.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E14%20-%20Stuffed%20Animal%20House-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x14 - Stuffed Animal House
+          </div>
+          <div class="plot">Dee Dee's stuffed animals come to life and roam the house. Dee Dee and Dexter must get them before Mom and Dad find out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E15%20-%20Used%20Ink-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x15 - Used Ink
+          </div>
+          <div class="plot">Dexter creates an ink in which lets him command them to do whatever he wants them to do. Although when Mandark gets a hold of it, Dexter is the one being the slave.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E16%20-%20School%20Girl%20Crushed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x16 - School Girl Crushed
+          </div>
+          <div class="plot">Decxter and Mandark are both outperformed by a new girl attending the school, jealous, they become allies to deal with her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E17%20-%20Chess%20Mom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x17 - Chess Mom
+          </div>
+          <div class="plot">Mom thinks she should spend quality time and watch Dexter in his chess comatition.  Although, she really embarasses Dexter while hes there...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E18%20-%20Father%20Knows%20Least-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x18 - Father Knows Least
+          </div>
+          <div class="plot">Dad gets fired from his job, and has to do the same job Mom does. He realises it isnt as easy as it looks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E19%20-%20Dexter%20the%20Barbarian-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x19 - Dexter the Barbarian
+          </div>
+          <div class="plot">Dexter goes on a quest.  His quest is to reach the bathroom before he explodes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E20%20-%20Tuber%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x20 - Tuber Time
+          </div>
+          <div class="plot">When Dexter realises the power of the potato, he redesigns his lab to work on it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E21%20-%20Sore%20Eyes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x21 - Sore Eyes
+          </div>
+          <div class="plot">Dexter is tired of wearing glasses, so he uses laser surgery on his eyes to make him have 1/20 vision.  Although, he learns than no human should be able to see THIS well...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E22%20-%20Babe%20Sitter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x22 - Babe Sitter
+          </div>
+          <div class="plot">Dee Dee goes over to Mandark's house to baby sit him, and Mandark likes that idea.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E23%20-%20Mountain%20Mandark-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x23 - Mountain Mandark
+          </div>
+          <div class="plot">Mandark drops technology and starts being more in touch with nature.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E24%20-%202Geniuses%202Gether%204Ever-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x24 - 2Geniuses 2Gether 4Ever
+          </div>
+          <div class="plot">Dexter decides its better if him and Mandark work together, although in the end Dexter does all the work while Mandark does nothing
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E25%20-%20Height%20Unseen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x25 - Height Unseen
+          </div>
+          <div class="plot">Dexter is tired of being short, since his old plan of growing himself didnt work, he decides to make everyone shorter than him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E26%20-%20Bygone%20Errors-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x26 - Bygone Errors
+          </div>
+          <div class="plot">This takes place in the future, where Old Man Dexter tells about his &quot;&quot;glory days&quot;&quot;.  And Old lady Dee Dee keeps on adding her opinions as well...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E27%20-%20Folly%20Calls-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x27 - Folly Calls
+          </div>
+          <div class="plot">When Dee Dee accidentally chops off her pigtail, Dexter gives her some hair growth potion. Although when she uses it, her hair floods the entire house.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E28%20-%20Voice%20Over-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x28 - Voice Over
+          </div>
+          <div class="plot">When Dexter's Computer gets Laryngitus, Dexter must find a replacement voice for her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E29%20-%20The%20Blonde%20Leading%20the%20Blonde-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x29 - The Blonde Leading the Blonde
+          </div>
+          <div class="plot">Dexter refuses to see that blonde's have more fun, so he dyes Dee Dee's hair to prove it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E30%20-%20Comic%20Stripper-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x30 - Comic Stripper
+          </div>
+          <div class="plot">Dexter finds out that all of Mandark's plans are taken from a comic book.  This way, he can get ready.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E31%20-%20Tee%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x31 - Tee Party
+          </div>
+          <div class="plot">Dexter and his dad enter a Golf tournament, with Dad eager to get his hands on the Trophy, but there is one problem: he is hopeless at Golf, so Dexter decides to help with a remote controlled Golf ball
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E32%20-%20Dexter%27s%20Wacky%20Races-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x32 - Dexter's Wacky Races
+          </div>
+          <div class="plot">Dexter, Monkey, The Justice Freinds, Dee-Dee, her imaginary freind Coosie, Mandark, his parents, and Dexter's Parents participate in a cross-country race
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E33%20-%20The%20Lab%20of%20Tomorrow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x33 - The Lab of Tomorrow
+          </div>
+          <div class="plot">Monkey narrates a documentry of the future of Laboratories and sciences.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E34%20-%20Chicken%20Scratch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x34 - Chicken Scratch
+          </div>
+          <div class="plot">Dexter catches the chicken pox, and Dee Dee tells him a ridiculous tale that if he keeps scratching them, he will turn into an evil chicken. His nonstop scratching eventually does just that.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E35%20-%20Garage%20Sale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x35 - Garage Sale
+          </div>
+          <div class="plot">Dexters parents accidentally sell Dexter's latest invention, and it is bought by Mandark.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x36 - They Got Chops
+          </div>
+          <div class="plot">Dee Dee starts layin' down the Judo on Dexter, then Dexter learns how to fight back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E37%20-%20Poetic%20Injustice-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x37 - Poetic Injustice
+          </div>
+          <div class="plot">Dexter falls in love with a new girl at his school, but decides to impress her with poetry rather than science.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dexter%27s%20Laboratory%20-%20S04E38%20-%20Comedy%20of%20Feathers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x38 - Comedy of Feathers
+          </div>
+          <div class="plot">When Dee Dee sees an Ostrage at the Zoo, she wants one of her own as a pet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

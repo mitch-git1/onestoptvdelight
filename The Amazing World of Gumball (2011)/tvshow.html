@@ -1,0 +1,3213 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Amazing World of Gumball
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Amazing World of Gumball</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Amazing%20World%20of%20Gumball%20%282011%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x1 - The DVD
+          </div>
+          <div class="plot">An overdue DVD causes chaos (and a hefty fee) for Gumball and Darwin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x2 - The Responsible
+          </div>
+          <div class="plot">Gumball and Darwin get to babysit Anais whilst their parents go to a PTA meeting but being &quot;responsible&quot; has a different meaning when you don't know what it means.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x3 - The Third
+          </div>
+          <div class="plot">Gumball and Darwin grow bored of one another and seek out a third friend to make their lives more exciting.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x4 - The Debt
+          </div>
+          <div class="plot">Believing that his life had been saved, Gumball vows to repay his debt by saving Mr. Robinson's life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x5 - The End
+          </div>
+          <div class="plot">Gumball and Darwin, thinking that the world will end in 24 hours, decide to make the most out of their remaining time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x6 - The Dress
+          </div>
+          <div class="plot">When his clothes are shrunk in the washing machine by his father, Gumball is forced to wear his mother's wedding dress to school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x7 - The Quest
+          </div>
+          <div class="plot">Gumball and Darwin help Anais get her beloved doll back after it is lost on the way to school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x8 - The Spoon
+          </div>
+          <div class="plot">Gumball and Darwin become unwitting accomplices in a stick-up at a gas station.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E09%20-%20The%20Pressure-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Pressure
+          </div>
+          <div class="plot">When Masami claims that Darwin is her boyfriend, Gumball vows to help his friend before he gets kissed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E10%20-%20The%20Painting-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Painting
+          </div>
+          <div class="plot">After seeing a picture that Anais drew, Principal Brown assumes that Anais finds her family dysfunctional, so he begins to meddle in their family life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E11%20-%20The%20Laziest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Laziest
+          </div>
+          <div class="plot">Gumball and Darwin challenge their father to a laziness competition, with the loser having to do the winner's chores.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E12%20-%20The%20Ghost-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Ghost
+          </div>
+          <div class="plot">When a ghost named Carrie possesses Gumball's body in order to feel earthly experiences and to eat, he must learn to say &quot;no&quot; to her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E13%20-%20The%20Mystery-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - The Mystery
+          </div>
+          <div class="plot">Gumball decides to investigate when his class finds Principal Brown wrapped up in toilet paper, shaved and, covered in green paint, or else face detention.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E14%20-%20The%20Prank-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - The Prank
+          </div>
+          <div class="plot">Gumball and Darwin's pranks on their father get out of hand.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E15%20-%20The%20Gi-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - The Gi
+          </div>
+          <div class="plot">Gumball and Darwin are ridiculed for their martial-arts outfits by their schoolmates, and their mom tries to convince them to take them off.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E16%20-%20The%20Kiss-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - The Kiss
+          </div>
+          <div class="plot">A kiss from Grandma JoJo traumatizes Gumball, and Darwin attempts to help him forget.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E17%20-%20The%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - The Party
+          </div>
+          <div class="plot">Gumball and his friends are invited to a high-school party hosted by Tobias's sister Rachel, but they must find dates in order to attend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E18%20-%20The%20Refund-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - The Refund
+          </div>
+          <div class="plot">Gumball and Darwin go to great lengths to get their money back from an incompatible video game, but the rental store's policy prevents them from getting it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E19%20-%20The%20Robot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - The Robot
+          </div>
+          <div class="plot">Gumball decides to help Bobert act like a real boy. However, it soon becomes a battle for his very identity when the robot plots to take over his life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E20%20-%20The%20Picnic-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - The Picnic
+          </div>
+          <div class="plot">A school picnic in the Forest of Doom poses a hazard for Gumball and Darwin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E21%20-%20The%20Goons-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - The Goons
+          </div>
+          <div class="plot">Gumball competes in a race in order to win Dad back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E22%20-%20The%20Secret-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - The Secret
+          </div>
+          <div class="plot">Gumball tries desperately to find out Darwin's secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E23%20-%20The%20Sock-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - The Sock
+          </div>
+          <div class="plot">Mr. Small teaches Gumball and Darwin various ways of becoming more honest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E24%20-%20The%20Genius-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - The Genius
+          </div>
+          <div class="plot">Darwin goes to an institute for geniuses.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E25%20-%20The%20Poltergeist-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x25 - The Poltergeist
+          </div>
+          <div class="plot">Richard believes there's a ghost in the attic but is actually Mr. Robinson who Gumball moved up there after entering a catatonic state due to being kicked out by his wife. Gumball and Darwin work on trying to restore Mr. Robinson whilst Richard, unaware of this, sets traps for the ghost.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E26%20-%20The%20Mustache-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - The Mustache
+          </div>
+          <div class="plot">Gumball and Darwin want to become adults, Richard wants to lose weight. After accidentally having their cereal switched with supplements Richard ordered, Gumball, Darwin and Anais find themselves having very unusual growth spurts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E27%20-%20The%20Date-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x27 - The Date
+          </div>
+          <div class="plot">Gumball learns how to date, so he can go out on a date with Penny. Later on it turns out that he is going to a funeral, not a date.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E28%20-%20The%20Club-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x28 - The Club
+          </div>
+          <div class="plot">When Gumball turns down an offer to join the Rejects Club, they seek to enact revenge against him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E29%20-%20The%20Wand-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x29 - The Wand
+          </div>
+          <div class="plot">The guys share the power of magic with Dad.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E30%20-%20The%20Ape-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x30 - The Ape
+          </div>
+          <div class="plot">Ms. Simian cozies up to Gumball in order to win an award.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E31%20-%20The%20Car-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x31 - The Car
+          </div>
+          <div class="plot">Gumball and Darwin are eager enough to do numerous chores at Mr. Robinson's house, until they accidentally destroy his car.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E32%20-%20The%20Curse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x32 - The Curse
+          </div>
+          <div class="plot">Gumball's good day turns bad to worse throughout his school day, much to the point where he believes he is &quot;cursed&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E33%20-%20The%20Microwave-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x33 - The Microwave
+          </div>
+          <div class="plot">Gumball creates a creature, made of every gross thing he could find, with a cannibalistic appetite.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E34%20-%20The%20Meddler-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x34 - The Meddler
+          </div>
+          <div class="plot">Seeing Gumball in need of attention, Nicole hangs out with him at school, which becomes increasingly embarrassing for her son.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E35%20-%20The%20Helmet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x35 - The Helmet
+          </div>
+          <div class="plot">Gumball wears a lucky helmet, but it tears his family apart.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S01E36%20-%20The%20Fight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x36 - The Fight
+          </div>
+          <div class="plot">After Gumball's bullying problem, Tina Rex demands to have a fight with him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E01%20-%20The%20Remote-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - The Remote
+          </div>
+          <div class="plot">The Watterson family fights over the remote when they realize everything they want to watch comes on at the same time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E02%20-%20The%20Colossus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - The Colossus
+          </div>
+          <div class="plot">Gumball and Darwin upset a giant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E03%20-%20The%20Knights-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - The Knights
+          </div>
+          <div class="plot">Gumball and Tobias compete for Penny's affection by putting on the lamest duel in history.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E04%20-%20The%20Fridge-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - The Fridge
+          </div>
+          <div class="plot">Mom tries to inspire Gumball to develop ambition.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x5 - The Flower
+          </div>
+          <div class="plot">Gumball is jealous when he sees Leslie with Penny.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x6 - The Banana
+          </div>
+          <div class="plot">Gumball seeks justice when Banana Joe chews Darwin's pen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x7 - The Phone
+          </div>
+          <div class="plot">Darwin develops a texting addiction when he and Gumball get their first cell phone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x8 - The Job
+          </div>
+          <div class="plot">Richard gets a job as a pizza delivery man, which worries Nicole when strange things begin to occur around the neighborhood.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E09%20-%20Halloween-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Halloween
+          </div>
+          <div class="plot">Gumball, Darwin and Anais go to a haunted-house party.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E10%20-%20The%20Treasure-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - The Treasure
+          </div>
+          <div class="plot">Anais hunts for hidden treasure after uncovering a secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E11%20-%20The%20Apology-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - The Apology
+          </div>
+          <div class="plot">Miss Simian owes Gumball an apology.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E12%20-%20The%20Words-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - The Words
+          </div>
+          <div class="plot">Darwin tries to be more direct with Gumball as his teacher.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E13%20-%20The%20Skull-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - The Skull
+          </div>
+          <div class="plot">The guys befriend a compulsive liar.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E14%20-%20The%20Bet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - The Bet
+          </div>
+          <div class="plot">Bobert becomes Gumball's servant and obeys every command he receives.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E15%20-%20Christmas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Christmas
+          </div>
+          <div class="plot">Santa Claus is coming to town. Unfortunately he gets run over by the Wattersons, so it's up to them to save Christmas.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E16%20-%20The%20Watch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - The Watch
+          </div>
+          <div class="plot">The guys try to retrieve a family heirloom from an old man.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E17%20-%20The%20Bumpkin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - The Bumpkin
+          </div>
+          <div class="plot">Gumball envies rural life and asks Idaho to teach his family to live like potatoes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E18%20-%20The%20Flakers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - The Flakers
+          </div>
+          <div class="plot">Darwin abandons Gumball when faced with a beating by Tina, so Gumball plots revenge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E19%20-%20The%20Authority-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - The Authority
+          </div>
+          <div class="plot">After Richard is hospitalized from an accident, Granny JoJo is overprotective and puts the family in danger, which leads Nicole to disagree with her parenting style.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E20%20-%20The%20Virus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - The Virus
+          </div>
+          <div class="plot">An evil virus seeks vengeance on Gumball, Darwin, and Teri after they wipe out his army of bacteria.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E21%20-%20The%20Pony-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - The Pony
+          </div>
+          <div class="plot">Gumball and Darwin rent a film to watch with Anais, but they keep getting distracted on their way home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E22%20-%20The%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - The Hero
+          </div>
+          <div class="plot">Richard gets upset when he realizes Gumball and Darwin think of him as a laughing stock.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E23%20-%20The%20Dream-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x23 - The Dream
+          </div>
+          <div class="plot">Darwin kisses Penny in one of Gumball's dreams and he gets mad about it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E24%20-%20The%20Sidekick-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x24 - The Sidekick
+          </div>
+          <div class="plot">Gumball and Darwin try to get a game back from Tobias, but Darwin begins to feel like he is just a sidekick to Gumball.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E25%20-%20The%20Photo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x25 - The Photo
+          </div>
+          <div class="plot">Gumball tries to look good in the school photos.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E26%20-%20The%20Tag-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x26 - The Tag
+          </div>
+          <div class="plot">Gumball and Darwin get caught in the middle of a trash can feud between Richard and Mr. Robinson.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E27%20-%20The%20Storm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x27 - The Storm
+          </div>
+          <div class="plot">A plot to improve Alan and Carmen's relationship backfires, and Gumball has to reunite them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E28%20-%20The%20Lesson-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x28 - The Lesson
+          </div>
+          <div class="plot">The guys have detention and try to escape; Granny JoJo is overprotective and puts the family in danger.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E29%20-%20The%20Game-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x29 - The Game
+          </div>
+          <div class="plot">The Wattersons play Dodge or Dare (Dodj or Daar).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E30%20-%20The%20Limit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x30 - The Limit
+          </div>
+          <div class="plot">Mom lets the Wattersons have it in a supermarket.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E31%20-%20The%20Voice-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x31 - The Voice
+          </div>
+          <div class="plot">When Gumball and Darwin receive a scary email, everyone is a suspect...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E32%20-%20The%20Promise-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x32 - The Promise
+          </div>
+          <div class="plot">Darwin has promised to play video games with Gumball, but there is a Banana Joe-shaped problem...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E33%20-%20The%20Castle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x33 - The Castle
+          </div>
+          <div class="plot">When Nicole is away &quot;anything goes&quot; and Richard's lack of rules soon attracts unwelcome house guests.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E34%20-%20The%20Boombox-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x34 - The Boombox
+          </div>
+          <div class="plot">Gumball and Darwin try to understand Juke's urgent beatbox message.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E35%20-%20The%20Tape-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x35 - The Tape
+          </div>
+          <div class="plot">Gumball and Darwin fail to make instant home movie classics.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E36%20-%20The%20Sweaters-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x36 - The Sweaters
+          </div>
+          <div class="plot">Gumball and Darwin's reputation is challenged and they really couldn't care less...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E37%20-%20The%20Internet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x37 - The Internet
+          </div>
+          <div class="plot">Gumball decides to take down the Internet after he accidentally creates an embarrasing viral web video.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E38%20-%20The%20Plan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x38 - The Plan
+          </div>
+          <div class="plot">The Watterson kids come up with a fool-proof plan to save Nicole, but is it Gumball-proof?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E39%20-%20The%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x39 - The World
+          </div>
+          <div class="plot">The life of the &quot;inanimate&quot; objects of Elmore are shown in a series of short skits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S02E40%20-%20The%20Finale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x40 - The Finale
+          </div>
+          <div class="plot">The Wattersons are surprised to discover that their past actions have consequences.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x1 - The Kids
+          </div>
+          <div class="plot">Gumball and Darwin's voices may be breaking, but they're showing no signs of growing up. Whilst Gumball and Darwin make fun of Mom and Dad for being old, their voices start to break. They try to ignore it, but everybody they meet reacts to their new and unpredictable voices.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x2 - The Fan
+          </div>
+          <div class="plot">New Elmore Junior High student Sarah becomes Gumball and Darwin's obsessive number-one fan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x3 - The Coach
+          </div>
+          <div class="plot">The new coach at Elmore High stands up to Jamie. The new Coach witnesses Jamie bullying the other kids at lunch and steps in. Jamie is made to apologize, much to the amazement of the other kids. Gumball and Darwin worry about Jamie seeking revenge, especially when they see her sneaking into the back of Coach's car.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x4 - The Joy
+          </div>
+          <div class="plot">When Miss Simian sees Gumball and Darwin joyful on Monday, she knows that something is wrong with them. She performs tests on them, but the nurse disapproves what she's doing. But suddenly, Gumball and Darwin start to infect the school with the 'Joy Virus', and it's up to Miss Simian and her tape player to cure the students.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x5 - The Puppy
+          </div>
+          <div class="plot">The Watterson children's long-awaited pet puppy turns out to be a turtle which hates them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x6 - The Recipe
+          </div>
+          <div class="plot">Gumball and Darwin discover the secret behind their classmate Anton's immortality.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x7 - The Name
+          </div>
+          <div class="plot">When Mom reveals that Gumball's real name is &quot;Zach,&quot; Gumball adopts a cheesy, annoying persona to match the name. His family tries to make him remember the old Gumball, as this new Zach persona is progressively taking over Gumball's life and erasing his memories.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x8 - The Extras
+          </div>
+          <div class="plot">Skits about the random extra characters seen throughout the series.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x9 - The Gripes
+          </div>
+          <div class="plot">When Gumball and Darwin begin to complain about every little thing in their lives, the people of Elmore City mistakenly assumes charity cases and put together a benefit to raise money for them, leaving them having to fix the mix-up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x10 - The Vacation
+          </div>
+          <div class="plot">While driving to a campground, Nicole tells a horror story, which slowly starts to come true as their car breaks down and a stranger comes to help them out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x11 - The Fraud
+          </div>
+          <div class="plot">Gumball and Darwin discover Principal Brown's diploma is fake, and Principal Brown is determined to keep their discovery a secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x12 - The Void
+          </div>
+          <div class="plot">When Gumball and Darwin investigate a missing classmate, they discover a far greater mystery... about Elmore.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x13 - The Boss
+          </div>
+          <div class="plot">Mr. Robinson has a stress attack and needs a  stuffing transfusion from his son Rocky the janitor. He won't take it unless Rocky gets a better job in life. Rocky gets one with Chanax, where he becomes a work drone. Gumball and Darwin now need to get Rocky's soul back from his boss in order to get him to surgery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x14 - The Move
+          </div>
+          <div class="plot">Clayton, a compulsive liar tells Gumball and Darwin about his awesome martial arts move, and discover that he wasn't lying.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x15 - The Law
+          </div>
+          <div class="plot">Doughnut Cop shows Gumball and Darwin that the smallest misdemeanor can lead to a breakdown in law.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x16 - The Allergy
+          </div>
+          <div class="plot">Gumball needs to find a cure for Darwin's allergy before he sneezes Elmore off the map.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x17 - The Mothers
+          </div>
+          <div class="plot">It's Mother's Day and kids put their moms through a series of tests to determine who has the World's Greatest Mom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x18 - The Password
+          </div>
+          <div class="plot">Gumball and Darwin are shocked to discover that Anais is Dad's favorite child.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x19 - The Procrastinators
+          </div>
+          <div class="plot">Gumball and Darwin spend the day doing other things instead of taking out the trash like their mother told them to do before she got back home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x20 - The Shell
+          </div>
+          <div class="plot">Gumball inadvertently cracks open Penny's shell, and discovers who she really is inside...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x21 - The Burden
+          </div>
+          <div class="plot">Gumball and Darwin are left in charge of the class pet hamster, Chris Morris, but they end up leaving it at school over the weekend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x22 - The Bros
+          </div>
+          <div class="plot">Darwin becomes jealous of Gumball and Penny's new relationship and sets out to find information that will break them up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x23 - The Mirror
+          </div>
+          <div class="plot">Gumball refuses to forward an e-mail purportedly sent by a ghost, against Darwin's advice. When a curse begins to take effect and their family is dragged into another dimension, Gumball and Darwin seek Carrie's help to save them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x24 - The Man
+          </div>
+          <div class="plot">After Granny Jojo brings her new boyfriend to dinner at the Watterson household, Richard forbids her from seeing the boyfriend again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x25 - The Pizza
+          </div>
+          <div class="plot">The Wattersons have had a bad day, but it turns out Larry has too and it's about to get worse... for everyone!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x26 - The Lie
+          </div>
+          <div class="plot">Noticing that everyone is in the doldrums of January, Gumball and Anais invent a new holiday to spark excitement.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x27 - The Butterfly
+          </div>
+          <div class="plot">When a Butterfly emerges from its chrysalis Gumball and Darwin want to release it. Miss Simian warns them about the butterfly effect. Gumball releases it anyways, and a domino effect causes chaos throughout the city.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x28 - The Question
+          </div>
+          <div class="plot">Gumball and Darwin try to figure out the meaning of life after coming down from a sugar rush.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x29 - The Saint
+          </div>
+          <div class="plot">After failing at making Alan lose his temper, Gumball and Darwin decide to adopt Alan's positive attitude.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x30 - The Friend
+          </div>
+          <div class="plot">Gumball and Darwin help Anais make up an imaginary friend who turns out to be all too real.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x31 - The Oracle
+          </div>
+          <div class="plot">After discovering a prophetic painting depicting Gumball's naked run through the mall, he is determined to avoid that outcome.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x32 - The Safety
+          </div>
+          <div class="plot">Darwin becomes obsessed with safety after seeing a video in class.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x33 - The Society
+          </div>
+          <div class="plot">Gumball is convinced there is a Secret Society in school, and he wants in.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x34 - The Spoiler
+          </div>
+          <div class="plot">When Gumball and Darwin have to wait to see a movie, they must go an entire week without someone spoiling the plot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x35 - The Countdown
+          </div>
+          <div class="plot">Miss Simian threatens to expel the boys if they are late for school, so they race a clock in order to arrive on time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x36 - The Nobody
+          </div>
+          <div class="plot">Gumball and Darwin investigate the disappearance  of the family's stuff only to find out some stranger is living in the house with them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x37 - The Downer
+          </div>
+          <div class="plot">When Gumball's family tries to cheer him out of an inexplicable lousy mood, he wishes they would all disappear.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x38 - The Egg
+          </div>
+          <div class="plot">Nicole wants to show to Felicity that the Wattersons are a normal family, while her son, Billy, meets Anais.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x39 - The Triangle
+          </div>
+          <div class="plot">Gumball grows jealous of Darwin's new talent.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x40 - The Money
+          </div>
+          <div class="plot">The Wattersons become poor when Richard loses all their money.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x1 - The Return
+          </div>
+          <div class="plot">Richard tries to find the kids before Nicole realizes they're gone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x2 - The Nemesis
+          </div>
+          <div class="plot">Gumball and Darwin discover that Rob, who once swore to wreak vengeance on them, has been trying to destroy them for some time&hellip; but his traps never work.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x3 - The Crew
+          </div>
+          <div class="plot">When Gumball and Darwin decide to join a crew, they are determined to prove their worth to senior citizens.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x4 - The Others
+          </div>
+          <div class="plot">After learning what grade Anais is in, Gumball and Darwin learn that there is a whole new world of students.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x5 - The Signature
+          </div>
+          <div class="plot">When Richard learns of Granny Jojo's plans to marry, he sets out to adopt Louie so he can forbid the wedding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x6 - The Check
+          </div>
+          <div class="plot">Gumball, Darwin and Anais are delighted when Grandpa Louie gives them a check for $5000, but the family soon fights over how to spend it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x7 - The Pest
+          </div>
+          <div class="plot">When they find Anais training herself for a brutal showdown, Gumball and Darwin realise that their sister is being pestered at school by an annoying kid: Billy. They try to teach her how to resolve the problem peacefully, but Billy has other ideas.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x8 - The Sale
+          </div>
+          <div class="plot">Gumball and Darwin are crushed to learn that Mr. Robinson is selling his house and moving away, and when trying to make their final moments together last doesn't work, the duo decide to sabotage the sale.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x9 - The Gift
+          </div>
+          <div class="plot">After they receive an extravagant invitation to Masami's birthday party, Gumball and Darwin are anxious to find just the right gift for her. However, they're not the only ones: it turns out every kid in Elmore is competing to get Masami the perfect present.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x10 - The Parking
+          </div>
+          <div class="plot">When the Wattersons arrive at the mall for a day of shopping, they struggle to find a space in the parking lot. They search for a space everywhere -- using all their intelligence, cunning and trickery -- but as the day goes on, the desperate hunt for a space becomes more important than the trip to the mall itself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x11 - The Routine
+          </div>
+          <div class="plot">Richard's trip to the store to find mayonnaise for the family's burger night turns into a Neverending Story-meets-Conan the Barbarian-style quest where he squares off against Tina Rex's father, Mr. Rex.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x12 - The Upgrade
+          </div>
+          <div class="plot">Gumball and Darwin upgrade Bobert the robot &ndash; and discover that his new operating system is full of buggy and useless applications and is prone to crashing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x13 - The Comic
+          </div>
+          <div class="plot">Sarah creates a comic of Gumball as a superhero named LaserHeart, prompting Gumball to act like one in real life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x14 - The Romantic
+          </div>
+          <div class="plot">Fearing that she may be sick of him due to a missing emoji on her message to him, Gumball sends Penny on a romantic quest to rekindle their love, which turns into a disaster when Penny gets lost in the woods.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x15 - The Uploads
+          </div>
+          <div class="plot">Gumball and Darwin get hooked on watching Elmore Stream (the show's version of YouTube) and viewers get a look at the different online videos the residents of Elmore have uploaded on the Internet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x16 - The Apprentice
+          </div>
+          <div class="plot">Gumball tags along with Patrick Fitzgerald (Penny's father) as Patrick prepares to pitch plans for a new hospital to the CEO of Chanax -- and ends up roping him into a golf game with the CEO.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x17 - The Hug
+          </div>
+          <div class="plot">To prove to Darwin that he can be unpredictable, Gumball decides to hug the first person he sees -- an anthropomorphic hot dog -- and Gumball ends up in over his head when he and the Hot Dog Guy can't stop bumping into each other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x18 - The Wicked
+          </div>
+          <div class="plot">After being framed for feeding coffee- and prune juice-laced nuts to the squirrels, Darwin tries to prove to Gumball that Mr. Robinson's wife, Margaret, is a good person underneath her destructive, sociopathic tendencies, but when Darwin sees just how evil Margaret is, the duo decide to catch her committing grand theft auto.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x19 - The Traitor
+          </div>
+          <div class="plot">When Alan allegedly ditches Gumball's dinner date with him, Gumball is desperate to track him down and make him pay for his betrayal, only to learn that Alan is taking his mother, Jessica, to the hospital for an organ transplant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x20 - The Origins (1)
+          </div>
+          <div class="plot">In this, the first half-hour episode, a four-year-old Gumball becomes too much for young parents, Nicole and Richard, to handle, so they buy him a goldfish, but after the first six die from neglect, stupidity, and unfortunate incidents, Richard finds a special one in a shady red van who bonds with Gumball on a spiritual level. This gets put to the test when Darwin gets flushed down the toilet and must traverse a scary, new world to return home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x21 - The Origins (2)
+          </div>
+          <div class="plot">In this, the first half-hour episode, a four-year-old Gumball becomes too much for young parents, Nicole and Richard, to handle, so they buy him a goldfish, but after the first six die from neglect, stupidity, and unfortunate incidents, Richard finds a special one in a shady red van who bonds with Gumball on a spiritual level. This gets put to the test when Darwin gets flushed down the toilet and must traverse a scary, new world to return home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x22 - The Girlfriend
+          </div>
+          <div class="plot">After seeing Alan and Carmen bond during her lunchtime bullying, Jamie decides that she needs a sweetheart... and has her eyes on Darwin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x23 - The Advice
+          </div>
+          <div class="plot">Mr. Small feels that he hasn't inspired the children of Elmore Junior High, so Gumball and Darwin try to lift his spirits... and end up causing chaos and putting most of the students (and faculty) in the school infirmary (and others in the hospital) after following Mr. Small's useless advice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x24 - The Signal
+          </div>
+          <div class="plot">Gumball develops a strange stutter, and it makes him accidentally offend Darwin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x25 - The Parasite
+          </div>
+          <div class="plot">Gumball and Darwin read Anais' diary and discover her relationship with a new friend is one-sided.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x26 - The Love
+          </div>
+          <div class="plot">The people of Elmore search for the meaning of love.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x27 - The Awkwardness
+          </div>
+          <div class="plot">Gumball is walking in the same direction as Hot Dog Guy, and with each step it becomes increasingly awkward.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x28 - The Nest
+          </div>
+          <div class="plot">A neighbor disappears and the Wattersons investigate, but discover the culprit may be their Evil Turtle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x29 - The Points
+          </div>
+          <div class="plot">In order for Tobias to let them use his points in a video game, Gumball and Darwin must do his chores for him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x30 - The Bus
+          </div>
+          <div class="plot">Rocky convinces the kids that they do not have to go to school. However, unbeknownst to the kids, some adults are trying to teach them about skipping school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x31 - The Night
+          </div>
+          <div class="plot">The Moon examines dreams and nightmares of Elmore residents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x32 - The Misunderstandings
+          </div>
+          <div class="plot">On his way to a date with Penny, Gumball finds himself dealing with people at their most oblivious.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x33 - The Roots
+          </div>
+          <div class="plot">The family tries to make Darwin connect with his fish roots.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x34 - The Blame
+          </div>
+          <div class="plot">After Felicity bans video games in Elmore, Gumball and his friends try to have books banned instead.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x35 - The Slap
+          </div>
+          <div class="plot">Tobias offends Gumball when he doesn't slap him on the butt.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x36 - The Detective
+          </div>
+          <div class="plot">When Daisy goes missing, Anais suspects Gumball and Darwin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x37 - The Fury
+          </div>
+          <div class="plot">A strange figure arrives and insults Nicole, but the kids are surprised when Nicole doesn't fight back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x38 - The Compilation
+          </div>
+          <div class="plot">Odd internet clips are recalled by the people of Elmore.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x39 - The Scam
+          </div>
+          <div class="plot">Gumball scares the school into thinking a monster named Gargaroth is haunting the place, then recruits Carrie and Darwin (who has a crush on Carrie) as ghost exterminators in order to scam everyone in Elmore of their candy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x40 - The Disaster
+          </div>
+          <div class="plot">Rob gets new powers through a remote control and tries to destroy Gumball's world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x41 - The Amazing World of Gumball Web
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x42 - The Amazing World of Gumball Web
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E01%20-%20The%20Stories-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x1 - The Stories
+          </div>
+          <div class="plot">Fed up with having to listen to Molly's long, tedious anecdotes, Gumball and Darwin try to teach her how to make them sound more exciting. When this doesn't work, they decide their only option is to give Molly a story worth telling.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E02%20-%20The%20Re-Run-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x2 - The Re-Run
+          </div>
+          <div class="plot">In this sequel to last season's &quot;The Disaster&quot;, Gumball travels back to the events of the previous episode to prevent Rob from ruining his life, but everything he does makes things worse.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E03%20-%20The%20Guy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x3 - The Guy
+          </div>
+          <div class="plot">Gumball and Darwin are wary of Anais' new friend, Josh, making her question his motives as well.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E04%20-%20The%20Boredom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x4 - The Boredom
+          </div>
+          <div class="plot">Gumball and Darwin search for adventure during a walk around Elmore.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E05%20-%20The%20Vision-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - The Vision
+          </div>
+          <div class="plot">After finding a secret manifesto on Alan's memory stick, Gumball and Darwin decide to foil his plan for world domination.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E06%20-%20The%20Choices-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x6 - The Choices
+          </div>
+          <div class="plot">Nicole reminisces about how she met Richard during a disastrous family dinner, and how things could have turned out for her if she had not.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E07%20-%20The%20Code-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x7 - The Code
+          </div>
+          <div class="plot">The family goes without wi-fi after Mr. Robinson changes the passcode, so Gumball tries to recover it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E08%20-%20The%20Test-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x8 - The Test
+          </div>
+          <div class="plot">When he is labeled a &quot;loser&quot; in an online test, Gumball believes he must do the opposite of everything he would normally do. Meanwhile, Darwin and Sarah notice Tobias is stealing Gumball's life and role in the series in the form of a cheesy sitcom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E09%20-%20The%20Slide-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x9 - The Slide
+          </div>
+          <div class="plot">Rocky decides to stop living life online, and find love on a dating app, and Gumball and Darwin try to help him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E10%20-%20The%20Loophole-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x10 - The Loophole
+          </div>
+          <div class="plot">Gumball and Darwin give Bobert instructions so he will behave in a safe and responsible manner, but he applies his logic to their rules.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E11%20-%20The%20Potato-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x11 - The Potato
+          </div>
+          <div class="plot">When Darwin has lunch with Idaho, he decides to stop eating potatoes in solidarity with his brotato, but he finds his obsession with his favorite food harder to kick than he ever imagined, so Gumball decides to help his friend curb his carb cravings.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E12%20-%20The%20Fuss-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x12 - The Fuss
+          </div>
+          <div class="plot">Nicole tries, and fails, to hide her disappointment when Richard and the kids fail to remember her special day. Richard has to figure out what special day he has actually forgotten and then make it a day to remember or else.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E13%20-%20The%20Copycats-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x13 - The Copycats
+          </div>
+          <div class="plot">Gumball and Darwin are confused when they meet Chi Chi and Ribbit, a pair of siblings that copy everything they do and say. Then they find out this copycat family is making money online from imitating the Watterson family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E14%20-%20The%20Outside-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x14 - The Outside
+          </div>
+          <div class="plot">The family goes to visit Richard's dad. Based on his basic living standards and extended absence from Richard's life, they assume Frankie must have done a stretch in the slammer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E15%20-%20The%20Vase-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x15 - The Vase
+          </div>
+          <div class="plot">Sick of Granny Jojo's ugly gifts, Nicole encourages the kids to take matters into their own hands and &quot;accidentally&quot; break her latest hideous vase. But when Gumball, Darwin, and Anais try to destroy it, they discover it is more robust than it seems.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E16%20-%20The%20Matchmaker-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x16 - The Matchmaker
+          </div>
+          <div class="plot">Gumball enlists Carrie to help bring Darwin and Teri together, but when they can't make Darwin and Teri's love blossom naturally, they decide to make it happen supernaturally.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E17%20-%20The%20Box-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x17 - The Box
+          </div>
+          <div class="plot">The Wattersons receive an unmarked package in the mail. To distract themselves from the urge to open it they all take turns to imagine what it might contain.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E18%20-%20The%20Console-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x18 - The Console
+          </div>
+          <div class="plot">When Gumball is given a cursed video game console, Elmore becomes trapped inside a fantasy RPG world. Gumball, Darwin and Anais have to battle their way through town, unraveling the secrets of their new virtual reality.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E19%20-%20The%20Ollie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x19 - The Ollie
+          </div>
+          <div class="plot">Gumball teaches Darwin everything he knows about the world of skateboarding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E20%20-%20The%20Catfish-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x20 - The Catfish
+          </div>
+          <div class="plot">When Gumball and Darwin realize Grandpa Louie has no friends, they create one called Muriel, when Granny Jojo finds out Louie has been spending time online with another woman, Muriel not existing is not going to stop her from being destroyed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E21%20-%20The%20Cycle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x21 - The Cycle
+          </div>
+          <div class="plot">Gumball, Darwin and Anais discover that Mr. Wilson has been picking on Richard for most of his life; ever since he humiliated Richard with a high school prank. The kids try to work their dad through it, but when their efforts fail they realize that getting back at Mr. Wilson is the only way to break the cycle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E22%20-%20The%20Stars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x22 - The Stars
+          </div>
+          <div class="plot">When Richard gives Larry&rsquo;s hairdresser a bad review for saying he&rsquo;s bald, he gets offered a free haircut. This inspires Gumball and Darwin to go on a reviewing spree across town, forcing Larry to give them stuff with the threat of a bad review. But, just because the customer is always right doesn&rsquo;t mean that what they&rsquo;re doing isn&rsquo;t wrong.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E23%20-%20The%20Grades-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x23 - The Grades
+          </div>
+          <div class="plot">When a failed test grade brings down Gumball&rsquo;s grade point average, he is forced to return to kindergarten.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E24%20-%20The%20Diet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x24 - The Diet
+          </div>
+          <div class="plot">Gumball and Darwin find out why Richard's diet wasn't working, and after they help him lose weight, he becomes more obnoxious.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E25%20-%20The%20Ex-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x25 - The Ex
+          </div>
+          <div class="plot">When Gumball learns that his nemesis, Rob, has found a new nemesis, he tries to sabotage Rob's new &quot;enemy-ship&quot;, much to the frustration of Penny.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E26%20-%20The%20Sorcerer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x26 - The Sorcerer
+          </div>
+          <div class="plot">Gumball refuses to accept he is the only kid at school that does not have special powers. He convinces Mrs. J&ouml;tunheim, Hector's mom, to take him on as her apprentice but she soon learns leaving Gumball unsupervised around magic is a big mistake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E27%20-%20The%20Menu-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x27 - The Menu
+          </div>
+          <div class="plot">The prize jewel on the Secret Joyful Burger menu is a mysterious burger, but to order it you need to know its name. When Larry refuses to tell Richard, Gumball, and Darwin what it is called, they go to super-sized lengths to discover it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E28%20-%20The%20Uncle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x28 - The Uncle
+          </div>
+          <div class="plot">When Gumball finds out that Ocho has an uncle named Mario, he becomes desperate to meet him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E29%20-%20The%20Weirdo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x29 - The Weirdo
+          </div>
+          <div class="plot">When they see the school bullies making fun of Sussie, Gumball and Darwin decide to try and help her act less weird. They carefully observe her behavior and decide that the only thing they have to change is absolutely everything.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E30%20-%20The%20Heist-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x30 - The Heist
+          </div>
+          <div class="plot">Richard discovers that going into a bank whilst wearing a motorcycle helmet can lead to trouble.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E31%20-%20The%20Singing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x31 - The Singing
+          </div>
+          <div class="plot">Join the citizens of Elmore for a song and dance spectacular that will have people covering their ears with joy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E32%20-%20The%20Best-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x32 - The Best
+          </div>
+          <div class="plot">No matter what Gumball does, Carmen thinks she knows better; when Gumball attempts to gain the moral high ground, but fails, his only option left is to bring Carmen down to his level.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E33%20-%20The%20Worst-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x33 - The Worst
+          </div>
+          <div class="plot">The Wattersons compete over who has the worst life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E34%20-%20The%20Deal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x34 - The Deal
+          </div>
+          <div class="plot">Richard goes on strike to prove that his work around the house is under appreciated by Nicole.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E35%20-%20The%20Petals-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x35 - The Petals
+          </div>
+          <div class="plot">When Leslie's petals begin falling off, he feels like his good looks are fading, so Gumball and Darwin use everything they know about style and beauty to try and help him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E36%20-%20The%20Puppets-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x36 - The Puppets
+          </div>
+          <div class="plot">Darwin is delighted when they discover their old childhood toys, but soon realizes that some things are best left in the past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E37%20-%20The%20Nuisance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x37 - The Nuisance
+          </div>
+          <div class="plot">The Wattersons fear the worst when they are summoned to a Town Hall meeting, but are surprised when they're offered a new house - until they discover it's in a different state.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E38%20-%20The%20Line-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x38 - The Line
+          </div>
+          <div class="plot">The Wattersons will do whatever it takes to get into the first screening of the latest Stellar Odyssey sequel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E39%20-%20The%20List-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x39 - The List
+          </div>
+          <div class="plot">When the kids find out that Mom's life hasn't panned out as she'd hoped, they start taking on her chores, but they accidentally grab her bucket list instead of her to-do list.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S05E40%20-%20The%20News-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x40 - The News
+          </div>
+          <div class="plot">From police chases to the inside scoop on Daisy the Donkey, Channel 6 Elmore News has all the top local stories. Experienced newscaster Kip Schlezinger brings the latest news, sports and weather, even when there is absolutely nothing to report.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            6x1 - The Rival
+          </div>
+          <div class="plot">When Anais is a newborn baby, Gumball and Darwin become jealous of their new sibling, and spark a baby war.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E02%20-%20The%20Lady-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x2 - The Lady
+          </div>
+          <div class="plot">Gumball and Darwin find out that Dad has been dressing as a woman to make friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E03%20-%20The%20Sucker-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x3 - The Sucker
+          </div>
+          <div class="plot">Darwin ends up in detention with Julius, who decides to make Darwin his new target. However, it backfires when Darwin ruins his life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E04%20-%20The%20Vegging-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x4 - The Vegging
+          </div>
+          <div class="plot">Gumball and Darwin want to veg out all day, but their plans go awry and they have to save the rest of the family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E05%20-%20The%20One-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x5 - The One
+          </div>
+          <div class="plot">Tobias tries to be Gumball&rsquo;s best friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E06%20-%20The%20Father-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x6 - The Father
+          </div>
+          <div class="plot">The kids try to help Richard bond with Frankie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E07%20-%20The%20Cringe-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x7 - The Cringe
+          </div>
+          <div class="plot">Gumball and Hot Dog Guy discover why they're so awkward with each other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E08%20-%20The%20Cage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x8 - The Cage
+          </div>
+          <div class="plot">The kids convince Mr. Corneille to become a cage fighter and set up a fight against a fearsome Russian fighter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E09%20-%20The%20Faith-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x9 - The Faith
+          </div>
+          <div class="plot">Alan has lost faith in humanity and turns the world black and white. Gumball must get over his hatred of Alan to bring the color back by singing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E10%20-%20The%20Candidate-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x10 - The Candidate
+          </div>
+          <div class="plot">A group of kids get locked in the school after their parents have a charity gala. They appoint Gumball as leader to get them out but it leads to chaos.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E11%20-%20The%20Anybody-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x11 - The Anybody
+          </div>
+          <div class="plot">When Clayton shapeshifts into Gumball to take his detention, he starts framing others for misdemeanors so Gumball and Darwin must track Clayton down to stop him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E12%20-%20The%20Pact-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x12 - The Pact
+          </div>
+          <div class="plot">Gumball and Principal Brown make a pact to tell each other what problems their girlfriends have.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E13%20-%20The%20Neighbor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x13 - The Neighbor
+          </div>
+          <div class="plot">Gumball and Darwin try to find out the name of their neighbor, Antlers Guy, but accidentally blow his witness protection cover.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E14%20-%20The%20Shippening-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x14 - The Shippening
+          </div>
+          <div class="plot">Sarah finds a notebook from the Awesome Store which magically makes what she draws happen. Unfortunately, she draws bizarre love stories throughout Elmore.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E15%20-%20The%20Brain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x15 - The Brain
+          </div>
+          <div class="plot">The Wattersons have to stop doing stupid things in order to prevent Anais from falling into a coma from facepalming too much.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E16%20-%20The%20Parents-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x16 - The Parents
+          </div>
+          <div class="plot">Nicole and her parents reconnect after a long forced absence.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E17%20-%20The%20Founder-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x17 - The Founder
+          </div>
+          <div class="plot">Richard creates chaos in the Chanax building when he is mistaken for the long lost CEO. Nicole and a disgruntled employee must save everyone from Richard's dangerous ideas.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E18%20-%20The%20Schooling-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x18 - The Schooling
+          </div>
+          <div class="plot">Gumball and Darwin take on Larry's jobs for 5 minutes and realize how bad it is.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E19%20-%20The%20Intelligence-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x19 - The Intelligence
+          </div>
+          <div class="plot">Technology reaches human intelligence then becomes dysfunctional as it picks up human flaws.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E20%20-%20The%20Potion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x20 - The Potion
+          </div>
+          <div class="plot">Gumball and Darwin use a magic potion to shrink Hector.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E21%20-%20The%20Spinoffs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x21 - The Spinoffs
+          </div>
+          <div class="plot">Rob creates a variety of spinoff Elmore shows and formats to replace Gumball.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E22%20-%20The%20Transformation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x22 - The Transformation
+          </div>
+          <div class="plot">Gumball is asked to settle a dispute between Penny and her family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E23%20-%20The%20Understanding-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x23 - The Understanding
+          </div>
+          <div class="plot">Gumball and Darwin get into trouble misunderstanding a new kid in school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E24%20-%20The%20Ad-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x24 - The Ad
+          </div>
+          <div class="plot">The Wattersons are forced to rent their house to a pair of elderly fainting goats.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E25%20-%20The%20Ghouls-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x25 - The Ghouls
+          </div>
+          <div class="plot">Halloween isn't what it used to be. Can Gumball and Darwin help the ghouls get their scare back?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E26%20-%20The%20Stink-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x26 - The Stink
+          </div>
+          <div class="plot">Mr. Small goes feral after Gumball and Darwin expose his hypocrisy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E27%20-%20The%20Awareness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x27 - The Awareness
+          </div>
+          <div class="plot">Gumball decides to engross himself in plant culture to appease Leslie after making an offensive comment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E28%20-%20The%20Slip-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x28 - The Slip
+          </div>
+          <div class="plot">Richard misses a package and is forced into an escalating feud with the delivery guy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E29%20-%20The%20Drama-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x29 - The Drama
+          </div>
+          <div class="plot">Gumball tries to protect Darwin from his unsuitable undead girlfriend Carrie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E30%20-%20The%20Buddy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x30 - The Buddy
+          </div>
+          <div class="plot">Anais and Jamie form an unlikely partnership when they're accused of a crime they didn't commit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E31%20-%20The%20Possession-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x31 - The Possession
+          </div>
+          <div class="plot">Richard becomes supernaturally attached to his old refrigerator.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E32%20-%20The%20Master-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x32 - The Master
+          </div>
+          <div class="plot">The Wattersons play a fantasy role-playing board game to resolve their differences.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E33%20-%20The%20Silence-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x33 - The Silence
+          </div>
+          <div class="plot">Have Gumball and Darwin finally run out of things to say to each other?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E34%20-%20The%20Future-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x34 - The Future
+          </div>
+          <div class="plot">Banana Joe's Mom can predict the future, but she can't predict her own disappearance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E35%20-%20The%20Wish-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x35 - The Wish
+          </div>
+          <div class="plot">Gumball and Darwin believe they've turned Miss Simian into a neck-cushion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E36%20-%20The%20Factory-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x36 - The Factory
+          </div>
+          <div class="plot">Gumball and Darwin save the day at the Rainbow Factory.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E37%20-%20The%20Agent-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x37 - The Agent
+          </div>
+          <div class="plot">Gumball and Darwin's clothes go missing after a swimming lesson; when Gumball is forced to wear a tuxedo from the lost and found office, he believes it makes him look like a certain dapper British secret agent.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E38%20-%20The%20Web-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x38 - The Web
+          </div>
+          <div class="plot">Gumball and Darwin realize that the adult residents of Elmore are dangerously naive when it comes to being safe online, and in fact are in serious need of the boys' help with even the simplest of tasks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E39%20-%20The%20Mess-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x39 - The Mess
+          </div>
+          <div class="plot">After staying up all night, the boys baby-sit Penny's little sister and manage to lose her in the blink of an eye.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E40%20-%20The%20Heart-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x40 - The Heart
+          </div>
+          <div class="plot">Mr. Robinson tries and repeatedly fails to win back Gumball and Darwin's friendship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E41%20-%20The%20Revolt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x41 - The Revolt
+          </div>
+          <div class="plot">Darwin tries to highlight the plight of all the household objects he feels are being oppressed and maltreated by the uncaring residents of Elmore, then decides to lead those objects in a revolt against the townspeople.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E42%20-%20The%20Decisions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x42 - The Decisions
+          </div>
+          <div class="plot">When everything goes wrong in Darwin's life, he begins to suspect that Gumball's bad influence might be to blame; Darwin decides to go elsewhere for guidance and finds a new mentor in Alan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E43%20-%20The%20BFFs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x43 - The BFFs
+          </div>
+          <div class="plot">When Gumball's old BFF Fuzzy turns up on his doorstep, Darwin struggles to accept that there was someone before him and fails to contain his jealousy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Amazing%20World%20of%20Gumball%20-%20S06E44%20-%20The%20Inquisition-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x44 - The Inquisition
+          </div>
+          <div class="plot">The students of Elmore Junior High find their world turned upside down when the mysterious school superintendent comes to stamp out their cartoonish ways.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Total Drama All-Stars
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Total Drama All-Stars</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Total%20Drama%20All-Stars%20%282014%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E01%20-%20Heroes%20vs.%20Villains-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Heroes vs. Villains
+          </div>
+          <div class="plot">Chris brings back players from both casts for an All-Star season, and the Heroic Hamsters battle the Villainous Vultures for a night in the luxurious new Spa Hotel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E02%20-%20Evil%20Dread-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Evil Dread
+          </div>
+          <div class="plot">The players gather on the beach to dig up 3D puzzle pieces and use them to assemble an international landmark.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E03%20-%20Saving%20Private%20Leechball-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Saving Private Leechball
+          </div>
+          <div class="plot">The Heroic Hamsters and the Villainous Vultures race into the forest to collect unusual paintball weaponry and use it to pick off the other team - last team standing wins!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E04%20-%20Food%20Fright-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Food Fright
+          </div>
+          <div class="plot">Chris combines a pancake eating contest with an obstacle course in the ultimate tummy twister.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E05%20-%20Moon%20Madness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Moon Madness
+          </div>
+          <div class="plot">During a race across the island, the local wildlife is radically altered by the rare blue harvest moon and even the littlest bunny becomes a blood-thirsty predator.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E06%20-%20No%20One%20Eggspects%20The%20Spanish%20Opposition-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - No One Eggspects The Spanish Opposition
+          </div>
+          <div class="plot">The teams travel to Boney Island for an egg hunt inside The Fun Zone, which is anything but fun!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E07%20-%20Suckers%20Punched-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Suckers Punched
+          </div>
+          <div class="plot">Chris orchestrates a brutal boxing free-for-all that pits the All-Stars against their biggest, baddest enemies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E08%20-%20You%20Regatta%20Be%20Kidding%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - You Regatta Be Kidding Me
+          </div>
+          <div class="plot">The challenge is a simple life-or-death boat race around the island, but things get complicated when Chris messes with the team dynamics.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E09%20-%20Zeek%20and%20Ye%20Shall%20Find-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Zeek and Ye Shall Find
+          </div>
+          <div class="plot">The 100th episode celebrations are cut short when Ezekiel kidnaps Chris and the All-Stars head out in search of their host.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E10%20-%20The%20Obsta-Kill%20Kourse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Obsta-Kill Kourse
+          </div>
+          <div class="plot">The All-Stars face the Boot Camp from Hell as they struggle to survive the harshest obstacle course ever.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E11%20-%20Sundae%20Muddy%20Sundae-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Sundae Muddy Sundae
+          </div>
+          <div class="plot">The final five All-Stars race to the most dangerous regions of the island to find ingredients for the ultimate sundae.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E12%20-%20The%20Bold%20and%20the%20Booty-ful-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Bold and the Booty-ful
+          </div>
+          <div class="plot">The Final Four hunt for Pirate Booty and a spot in the Grand Finale in a challenge that becomes truly life-threatening.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E13%20-%20The%20Final%20Wreck-ening-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - The Final Wreck-ening
+          </div>
+          <div class="plot">Zoey gives up on seeing Mike again and faces off with Mal in the Circles of Doom challenge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20All-Stars%20-%20S01E13%20-%20The%20Final%20Wreck-ening-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - The Final Wreck-ening
+          </div>
+          <div class="plot">Zoey gives up on seeing Mike again and faces off with Mal in the Circles of Doom challenge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Grim Adventures of Billy and Mandy
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Grim Adventures of Billy and Mandy</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20%282001%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E01%20-%20Billy%20%26%20Mandy%27s%20Big%20Boogey%20Adventure-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - Billy &amp; Mandy's Big Boogey Adventure
+          </div>
+          <div class="plot">A scene of Endsville two weeks into the future shows a dystopian world ruled by the &quot;Lord of Horror&quot;, who wields the all-powerful artifact known as &quot;Horror's Hand&quot;. At the same time, two robotic replicas of Billy and Mandy are sent into the past, to stop the real Billy and Mandy from interfering with the current events.orror's Hand to rule the world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E01%20-%20Billy%20%26%20Mandy%27s%20Big%20Boogey%20Adventure-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - Billy &amp; Mandy's Big Boogey Adventure
+          </div>
+          <div class="plot">A scene of Endsville two weeks into the future shows a dystopian world ruled by the &quot;Lord of Horror&quot;, who wields the all-powerful artifact known as &quot;Horror's Hand&quot;. At the same time, two robotic replicas of Billy and Mandy are sent into the past, to stop the real Billy and Mandy from interfering with the current events.orror's Hand to rule the world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E02%20-%20Billy%20%26%20Mandy%20Wrath%20of%20the%20Spider%20Queen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x2 - Billy &amp; Mandy: Wrath of the Spider Queen
+          </div>
+          <div class="plot">On a rainy day, giant spiders appear in Billy and Mandy's school and start kidnapping the children one by one. Grim presumes this is somehow related to his past, but does not figure it out until he receives a message saying that Velma, the Spider Queen, an old good friend from high school, is responsible for it. Meanwhile, Billy meets with Jeff the Spider, who informs him that he is precisely marrying Velma. After trying to recover a talking carton of chocolate milk from Jeff, Billy and Jeff get into a fight, and Jeff looks angrier than ever before.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E03%20-%20Underfist%20Halloween%20Bash-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x3 - Underfist: Halloween Bash
+          </div>
+          <div class="plot">Billy, Irwin and Mandy go trick-or-treating on Halloween, and an evil marshmallow bunny attacks children with chocolate beasts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E04%20-%20The%20Grim%20Adventures%20of%20the%20Kids%20Next%20Door-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x4 - The Grim Adventures of the Kids Next Door
+          </div>
+          <div class="plot">While Billy's Dad is underwear shopping, Billy wears his dad's lucky pants, and accidently rips them with Grim's scythe. He calls Ed, Edd n Eddy, and they recommend Kids Next Door for charity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E05%20-%20Super%20Myron%20Brothers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x5 - Super Myron Brothers
+          </div>
+          <div class="plot">Billy looks into Grim's trunk and sees a monster and names it Myron. But when Billy brings Myron outside to his backyard, he gets eaten.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E06%20-%20Macaroni%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x6 - Macaroni Man
+          </div>
+          <div class="plot">Billy's Dad forgot to buy Billy's present for his birthday again! Everytime Billy's Dad buys a present for Billy, he will get distracted by a &quot;Rocket&quot; Kiddie Ride. He found a way to give Billy a present that will be &quot;The greatest gift ever, made by the hands of Man&quot; Billy's Dad gave Billy a macaroni bike, but the macaroni Billy's Dad used are the ones supposed to be used for the macaroni salad. The short ends with everyone eating macaroni salad while Grim vomits upon learning the truth of the secret of the macaroni salad (Motor Oil).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E07%20-%20Cake%20It%20to%20the%20Limit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x7 - Cake It to the Limit
+          </div>
+          <div class="plot">Grim decides to make a cake for Billy's birthday, but he and Mandy end up making a Devil's Food cake that comes alive and began wrecking the kitchen. The cake hops on Grim's face but Mandy smashes it and splatters it all over the kitchen. Grim and Mandy give Billy a cake covered kitchen, much to Billy's delight.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E08%20-%20Makeover%20the%20Top-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x8 - Makeover the Top
+          </div>
+          <div class="plot">Irwin finishes wrapping Billy's present and buys a huge present for Mandy as well. He decides it is not big enough so his dad decides to teach him how to dance. Irwin writes her a rap and Irwin's dad ends up teaching him how to work out instead of dancing. Irwin shows his moves to Mandy, but Mandy rejects him; Irwin also gets a wedgie from Sperg.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E09%20-%20The%20Uninvited-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x9 - The Uninvited
+          </div>
+          <div class="plot">Dracula was heading for the bingo hall when he ran into Pud'n who was on his way to Billy's party. Dracula was insulted he was not invited to the party and decides to crash it. Harold will not let him in and accidentally calls him old. Dracula starts dancing and breaks all his bones, much to Harold's disgust. Harold lets him in so he will stop.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E10%20-%20Death%20of%20the%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x10 - Death of the Party
+          </div>
+          <div class="plot">Billy blows out the candles off his cake and Dracula turns to leave, but Billy stops him and forces him to stay for games. They play Pictionary as he draws Abraham Lincoln but no one guesses it. Everyone turns to leave but Billy stops him and forces them to party all night. Billy decides to get a pinata but the stores are closed so Billy forces them to stay all night until Grim and the others decide to use Billy as a pi&ntilde;ata.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E11%20-%20Dream%20Date-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x11 - Dream Date
+          </div>
+          <div class="plot">Irwin has a dream sequence of taking Mandy out for the time of her life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E12%20-%20Dracula%20De%20Bergerac-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x12 - Dracula De Bergerac
+          </div>
+          <div class="plot">Dracula tries to help Irwin win over Mandy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E13%20-%20Hate%20in%20an%20Elevator-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x13 - Hate in an Elevator
+          </div>
+          <div class="plot">Irwin's grandmother, Tanya, embarrasses Irwin in an elevator ride with Mandy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E14%20-%20Future%20Nerd-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x14 - Future Nerd
+          </div>
+          <div class="plot">Irwin's future grandchild travels back in time to motivate modern-day Irwin to give Mandy a box of chocolates, but bully Sperg stands in the way.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E15%20-%20Date%20With%20Death-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x15 - Date With Death
+          </div>
+          <div class="plot">Grim and Dracula go on a double date.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E16%20-%20Irwin%20Live-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x16 - Irwin Live
+          </div>
+          <div class="plot">Irwin tries to win over Mandy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E17%20-%20Fit%20to%20be%20Tied-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x17 - Fit to be Tied
+          </div>
+          <div class="plot">Grim has difficulty teaching Billy how to tie his shoes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E18%20-%20Dentally%20Disturbed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x18 - Dentally Disturbed
+          </div>
+          <div class="plot">Irwin wants to take Mandy out to dinner, and schemes to get money from the tooth fairy to pay for it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E19%20-%20Room%20Gloom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x19 - Room Gloom
+          </div>
+          <div class="plot">Billy battles his messy room.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E20%20-%20Senior%20Power-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x20 - Senior Power
+          </div>
+          <div class="plot">Dracula participates in his senior home's self-defense course by role-playing as a &quot;victim.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E21%20-%20Frozey%20the%20Snowman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x21 - Frozey the Snowman
+          </div>
+          <div class="plot">Billy builds a snowman that comes to life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E22%20-%20Matinee%20Mandy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x22 - Matinee Mandy
+          </div>
+          <div class="plot">Irwin wants to impress Mandy and goes to Grim for help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E23%20-%20Wish%20Unfulfillment-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x23 - Wish Unfulfillment
+          </div>
+          <div class="plot">When the gang frees Thromnambular, the wish-granting skull, from a lamp, Grim and Mandy bicker over who gets to make the first wish.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E24%20-%20Meet%20the%20Reaper-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x24 - Meet the Reaper
+          </div>
+          <div class="plot">When the Grim Reaper tries to take Billy's pet hamster, Mandy and Billy make a deal to save his life. So the Grim Reaper challenges the kids to a limbo competition.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S00E25%20-%20Billy%20%26%20Mandy%20Save%20Christmas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x25 - Billy &amp; Mandy Save Christmas
+          </div>
+          <div class="plot">The day before Christmas, Billy, Mandy and Grim go to the shopping mall, where Mandy complains that Santa Claus is just an invention from corporations. Grim assures Mandy that Santa is real, and they even went to college together. They decide to travel to the North Pole and meet Santa, but when they arrive Mrs. Claus tells them that Santa Claus has been transformed into a vicious vampire.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S01E01%20-%20Meet%20the%20Reaper-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Meet the Reaper
+          </div>
+          <div class="plot">Billy's pet hamster, Mr. Snuggles, celebrates his 10th birthday, so the Grim Reaper comes for him. However, Mandy, Billy's friend, is reluctant in allowing it, so she proposes a deal to the Grim Reaper: if he beats the kids in a game, he can take the hamster, but if he loses, he will spare the hamster's life and become their &quot;best friend forever&quot;. The Grim Reaper transports the kids to limbo, where he challenges them to a game of limbo. Despite his best effort, Grim ends up losing because he is attacked by Mr. Snuggles at Mandy&rsquo;s command.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S01E02%20-%20Skeletons%20in%20the%20Water%20Closet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Skeletons in the Water Closet
+          </div>
+          <div class="plot">Billy's mother, Gladys, first notices Grim in Billy's bed, then in the shower and subsequently starts to get panic surges thinking that Billy is in danger. Meanwhile, Harold, Billy's dad, just thinks that Gladys is imagining things. In the end, Gladys ends up going living with Billy's aunt, Sis to try and calm herself down.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S01E03%20-%20Opposite%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Opposite Day
+          </div>
+          <div class="plot">Billy and Mandy tell Grim it is &quot;Opposite Day&quot; and that, when they say something, they really mean the opposite. Due to his difficulty understanding the concept of Opposite Day, Grim has to do Mandy's chores. Finally, Grim thinks he understands when Billy and Mandy say they &quot;want&quot; pie, meaning they &quot;do not want&quot; pie. However, Mandy then says that when she said it was Opposite Day, it really was not.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S01E04%20-%20Get%20Out%20of%20My%20Head%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Get Out of My Head!
+          </div>
+          <div class="plot">After watching a movie, Grim teaches Billy to possess people by jumping into their heads. Billy possesses Mandy and makes her do assorted things like flirting with Irwin, kissing Mandy's mother, going into both men's and women's restrooms and eating earthworms. In the end, Billy leaves Mandy's head, but later that night, Mandy possesses Billy's cat, Milkshakes, to maul him as a form of revenge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S01E05%20-%20Look%20Alive%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Look Alive!
+          </div>
+          <div class="plot">Grim is bored of being left alone while Billy and Mandy are not with him. Grim decides to fulfill his dream by working as a swimsuit model, but, as he is a corpse, he is not hired. Subsequently, Billy and Mandy give him a makeover to look more human. In the end, Grim gets the job in a TV ad, but he is only in the commercial for a few seconds and is portrayed as an ugly person.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S01E06%20-%20Mortal%20Dilemma-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Mortal Dilemma
+          </div>
+          <div class="plot">Grim misses his life as the reaper of souls and, due to his bet, he cannot return to the Underworld, much to the hilarity of his Underworld co-workers. Having a sudden epiphany, Grim decides to be good and help people rather than try to take their souls. However, Grim's attempts at being good are faced with resistance from people, who are scared off by his appearance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S01E07%20-%20Fiend%20Is%20Like%20Friend%20Without%20the%20%27R%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Fiend Is Like Friend Without the 'R'
+          </div>
+          <div class="plot">Billy wanders into a junkyard, where a massive hole in the earth opens up and pulls him down in. Later, Mandy and Grim get pulled in as well. They land at the center of the Earth, which is home of Nergal, a devilish creature. The lonely Nergal, who has been watching Billy and Mandy for some time, wants Grim to hand over the kids to him so they can be his friends forever. Grim happily leaves the kids behind as he returns to the surface; however, he later goes back for them because he can't handle the guilt of abandoning his friends. In the end, Grim is defeated by Nergal's electrified tentacles, but Mandy defeats Nergal merely by kicking him in the shin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S01E08%20-%20Recipe%20for%20Disaster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Recipe for Disaster
+          </div>
+          <div class="plot">Billy, Mandy, Grim and Pud'n are part of the &quot;Person Scouts&quot; (a Boy Scouts-esque organization) and need to sell cookies in order to win a badge. However, as Billy eats all of the cookies, Grim proposes to bake their own cookies using his aunt Kali's secret recipe. The cookies are a success and the troupe wins the contest. In the end, at the Person Scouts awards ceremony, aunt Kali reveals that the secret recipe contains insects, but everyone continues eating the cookies anyway.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S02E01%20-%20Toadblatt%27s%20School%20of%20Sorcery-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Toadblatt's School of Sorcery
+          </div>
+          <div class="plot">Grim gets Billy and Mandy into sorcery school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S02E02%20-%20Educating%20Grim-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Educating Grim
+          </div>
+          <div class="plot">Mindy befriends Grim.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S02E03%20-%20It%27s%20Hokey%20Mon%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - It's Hokey Mon!
+          </div>
+          <div class="plot">Grim brings monster cards to life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S02E04%20-%20Night%20of%20the%20Living%20Grim-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Night of the Living Grim
+          </div>
+          <div class="plot">Grim gets sick.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S02E05%20-%20Brown%20Evil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Brown Evil
+          </div>
+          <div class="plot">Zombies crave the brownies Billy makes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S02E06%20-%20Brown%20Evil%2C%20Part%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Brown Evil, Part 2
+          </div>
+          <div class="plot">Zombies crave the brownies Billy makes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S02E07%20-%20Mandy%20the%20Merciless-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Mandy the Merciless
+          </div>
+          <div class="plot">In the future, Mandy rules the world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S02E08%20-%20Creating%20Chaos-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Creating Chaos
+          </div>
+          <div class="plot">Billy helps Eris spread chaos.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S02E09%20-%20The%20Really%20Odd%20Couple-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - The Really Odd Couple
+          </div>
+          <div class="plot">Mandy and Billy are forced to share a room.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E01%20-%20Spider%27s%20Little%20Daddy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Spider's Little Daddy
+          </div>
+          <div class="plot">At a father-and-son picnic, Billy re-encounters with his spider &quot;son&quot;, Jeff, in a dirty bathroom. Once again, Jeff tries to make Billy love him as a true father does, but Billy remains terrified of all bugs. Mandy tells Jeff he is being too nice, and to get Billy's attention he needs to be meaner. After being coached by Mandy, Jeff finally snaps and ensnares Billy in his spider web, forcing Billy to say he loves him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E02%20-%20Tricycle%20of%20Terror-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Tricycle of Terror
+          </div>
+          <div class="plot">When Billy crashes his bicycle, he obtains a free tricycle from a mysterious boy in a supernatural porta-potty. While Billy loves his tricycle, which he calls Trykie, he is also mocked because of it by Irwin, Pud'n, and Sperg. Trykie moves on its own and attacks the three of them. Mandy realizes the problem with Trykie, and Grim confirms that he is cursed. Billy realizes that Trykie is indeed evil as well, and he lets Mandy destroy it once and for all.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E03%20-%20Dumb%20Luck-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Dumb Luck
+          </div>
+          <div class="plot">After spilling salt in a restaurant, and not throwing salt over his left shoulder, Billy starts having an unusual amount of extremely bad luck. The next day, Grim analyzes Billy and finds out he has a &quot;Catastrophe Snail&quot; attached to his brain, which is causing him the bad luck.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E04%20-%20No%20Body%20Loves%20Grim-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - No Body Loves Grim
+          </div>
+          <div class="plot">Billy, Mandy and Grim go to the beach where Grim falls asleep and Billy buries him in sand. When they leave, Billy only takes Grim's skull, leaving Grim's body to be found by a rich family that take it with them. With his adoptive family, Grim's body becomes a celebrity and refuses to go back with Billy and Mandy. Eventually, Grim's skeleton is reunited with his skull, but instants later it is shattered by dogs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E05%20-%20Lil%27%20Porkchop-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Lil' Porkchop
+          </div>
+          <div class="plot">After he turns down his dad's invitation to go fishing, Billy gets a tiny, weakling, pet fish, which he names Little Porkchop. To make Billy happier, Grim makes the fish grow overnight to become a giant. Billy takes Porkchop to play under the Sun, and never gives him water again. He burns to ashes and is flushed down the toilet. Billy's dad returns form his fishing trip having caught Porkchop, now back to his normal size, but plans to cook him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E06%20-%20Skarred%20for%20Life-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Skarred for Life
+          </div>
+          <div class="plot">General Skarr buys a home in Endsville and becomes Billy's neighbor. After Skarr invites Billy into his new house, Billy mentions Grim's scythe as ,he strongest and most powerful weapon in the entire universe, and Skarr tries to battle his desire to be evil again. Eventually Skarr steals the scythe but Mandy proves to be even scarier than he is, and takes it back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E07%20-%20House%20of%20Pain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - House of Pain
+          </div>
+          <div class="plot">Lord Pain, a fearsome warrior from the Plain of Eternal Suffering, appears in Billy's house looking to serve his master, Grim. Lord Pain is put to clean the bathroom, and is confused as to why Billy and Mandy treat Grim the way they do. Eventually, Lord Pain realizes that Mandy is to be his real master, and prepares mashed potatoes for her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E08%20-%20A%20Grim%20Prophecy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - A Grim Prophecy
+          </div>
+          <div class="plot">In this short, set in the Stone Age, a child version of Grim undertakes his first assignments as the Grim Reaper. When he goes to visit a cave witch, she shows him his terrible future being abused by Billy and Mandy
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E09%20-%20Mandy%20Bites%20Dog-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Mandy Bites Dog
+          </div>
+          <div class="plot">When Mindy mocks Mandy's dumb and coward dog, Saliva, Mandy decides to train her dog to be meaner. After Grim keeps mentioning his own dog, Cerberus, Mandy decides to use Grim's special whistle to call the gigantic, three-headed, fire-breathing hound. Cerberus marries Mindy's chihuahua, Little Delicious, and Saliva snaps against Mindy for a brief moment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E10%20-%20Nursery%20Crimes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Nursery Crimes
+          </div>
+          <div class="plot">After Billy eats 19 creme-filled Atomic Frenzy Cakes he cannot sleep and wants Mandy to read him a bedtime story. Mandy, Billy and Grim each tell a story. For his story, Grim uses a supernatural storybook from the Underworld, which makes Billy and Mandy enter the book and reprise the tale of Hansel and Gretel. Billy departs from the story and follows Pinocchio, who wants to devour Billy to become a real boy. Mandy saves Billy from Pinocchio, but she and Billy remain trapped in the book as Grim, the storyteller, falls asleep.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E11%20-%20My%20Peeps-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - My Peeps
+          </div>
+          <div class="plot">When Billy ruins his eyes by playing too many video games and looking directly into the Sun, Mandy and Grim suggest he see an ophthalmologist. When Billy refuses wearing glasses or having laser surgery, Grim uses his own scythe to zap his eyes. Although Billy has sharp and clean eyesight, he can also see glimpses of the future, specially horrific accidents that occur to his best friends. Grim zaps Billy's eyes multiple times to restore them to normal. Billy ends up with weird-looking eyes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E12%20-%20Nigel%20Planter%20and%20the%20Chamber%20Pot%20of%20Secrets-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Nigel Planter and the Chamber Pot of Secrets
+          </div>
+          <div class="plot">When Billy, Mandy and Grim go playing golf, they encounter boy wizard Nigel Planter again, who is there hiding from the dark wizard Lord Moldybutt. They head back to the School of Sorcery, where they keep on running into Moldybutt, who warns them to stay away from the &quot;Chamber Pot of Secrets&quot; hidden in Dean Toadblatt's office. It is revealed that Lord Moldybutt is actually Toadblatt, who was disguising himself to scare off Planter. Note: The title is a spoof of Harry Potter and the Chamber of Secrets.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E13%20-%20Circus%20of%20Fear-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Circus of Fear
+          </div>
+          <div class="plot">When Billy and Mandy are utterly bored, Grim takes them to Underworld's &quot;Circus of Fear&quot;. The ringleader, Dr. Fear, notices Billy and Mandy, and tries to recruit them into the circus to attract customers, who would pay to see real, live humans. After they go back home, Dr. Fear captures the two kids, and Grim has to get them back. During the show, Mandy breaks free and in a strange twist of the story, she reveals that the beastmaster, Clortho, is actually Dr. Fear, who in turn is just an earthworm, leaving Billy confused.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E14%20-%20Bully%20Boogie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - Bully Boogie
+          </div>
+          <div class="plot">After failing to scare a fifteen-year-old, the Boogeyman decides to visit his old middle-school victim, Grim. Grim remembers how Boogie used to be a bully, and demands an apology from him. Boogie disappears to the Underworld, taking Billy with him. Mandy and Grim follow Boogie, and to settle their differences Mandy suggests having a scaring contest, in which whoever can scare a kid the most wins. Boogie's transformation as a werewolf is not enough to scare the kid, but Grim's transformation into a giant, horrific rubber duck is.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E15%20-%20Here%20Thar%20Be%20Dwarves%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - Here Thar Be Dwarves!
+          </div>
+          <div class="plot">As Billy walks into the woods to have a picnic, Yogi and a giant, feral version of Boo-Boo (from The Yogi Bear Show) come to steal his basket, and he escapes by hiding in a cave. Billy is taken to the mushroom lair of the dwarfs where King Beardbottom tells him the story on how the different races split the food-services industry, after the conference of Rivendell. The king sends Billy to infiltrate the elves' cookie factory to deactivate their force field, so the dwarves can assault the factory. After a fierce battle (censored out &quot;for younger viewers&quot;, by a single clip of a pink koala continuously licking a eucalyptus leaf) and Billy's words, the elves and dwarves decide to work together and split the profits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S03E16%20-%20Which%20Came%20First-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - Which Came First?
+          </div>
+          <div class="plot">While going to a science museum, Billy and Mandy's school bus breaks down in the middle of the desert. After digging for fossils, Billy, Mandy and Grim wander around and find an abandoned mine, where Billy is captured by a giant, mutant chicken. When Mandy and Grim go to rescue him, they find an underground laboratory from the days of the Cold War where mutant chickens were created. The mountain makes eruption, the chickens are roasted by lava, and the whole class obtains food so they do not have to resort to cannibalism.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S04E01%20-%20The%20Secret%20Snake%20Club-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - The Secret Snake Club
+          </div>
+          <div class="plot">At school, Billy, Mandy, and Irwin look for a club to join. Irwin plans to join the Macrame club to meet girls; Billy inquires on the Junior CIA club, which forcefully recruits him; Mandy joins the &quot;Secret Snake Club&quot;, a snake-themed club consisting of three geeks. The nerds reveal that their &quot;secret agenda&quot; is to resurrect Shnissugah, a giant snake which lived hundreds of years ago in Canada, to take revenge against the popular kids, but they lack the power of the Underworld to do so. Mandy calls for Grim, who proceeds to revive Shnissugah through the internet. Billy, as a junior agent of the CIA, stops a criminal plan by Irwin, who was using the Macrame club for personal gain; and Shnissugah turns out to be a tiny, 8-cm (3.14-in) long, harmless snake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S04E02%20-%20He%27s%20Not%20Dead%2C%20He%27s%20My%20Mascot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - He's Not Dead, He's My Mascot
+          </div>
+          <div class="plot">When Billy and Mandy's school is preparing for a big game, Mindy entrusts the care of the school's mascot, Fluffy Cat, to Billy, to protect him from being kidnapped by the rival team, the Booty Heads. At Billy's house, Fluffy Cat is a disaster, so Billy's mom throws him into the basement, where the cat gets inside Grim's trunk, absorbing its powers. A giant Fluffy Cat appears just before the game wreaking havoc.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S04E03%20-%20Hog%20Wild-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Hog Wild
+          </div>
+          <div class="plot">As Billy is tired of all the rules in his house, he cannot resist the urge to try his father's new motorcycle. The motorcycle breaks down, and Billy asks Grim to repair it. Grim's scythe turns the motorcycle into a wild, supernatural vehicle, which transforms Billy's parents and everyone around it into undead creatures and motorized monsters. Mandy makes Billy tell the truth about breaking the motorcycle in the first place, at which point his parents and everyone else return to normal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S04E04%20-%20The%20Bad%20News%20Ghouls-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - The Bad News Ghouls
+          </div>
+          <div class="plot">After Billy's baseball team loses badly against Mindy's, Grim decides to coach them. Mandy is not allowed on the team, as Billy is reluctant to let girls play, although he does not realize Mindy is a girl too. Mandy puts on a baseball cap and, assuming the role of &quot;Manfred&quot;, pitches for Billy's team anyway. With additional help from ghoulish players which played in the Underworld Little Leagues alongside Grim, Billy's team wins when Pud'n hits a home run.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S04E05%20-%20The%20House%20of%20No%20Tomorrow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - The House of No Tomorrow
+          </div>
+          <div class="plot">While at Sassy Cat Land, the theme park dedicated to Sassy Cat (and to ridiculously long lines), Billy, Mandy, and Grim stumble upon a closed attraction, a futuristic &quot;house of tomorrow&quot;. Inside, they find Master-Control, a sentient and autonomous, thinking, feeling artificial intelligence computer program claiming to know everything (and wishing death upon the trio when Billy angers him), and Tom Smith, a tour guide that became trapped in the house when it closed forty years ago. Tom explains that the attraction closed when a kid, actually Billy's dad, annoyed Master-Control with his dumb questions, and the robots started attacking the humans. Billy, Mandy and Grim exit the house unharmed, but Tom misses his opportunity to escape and is left behind again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S04E06%20-%20Happy%20Huggy%20Stuffy%20Bears-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Happy Huggy Stuffy Bears
+          </div>
+          <div class="plot">After a trip to the mall, Mandy becomes the spokesperson for Happy Huggy Stuffy Bears, a new stuffed toy in town. After the success of her commercial, Mandy gives away stuffed bears to other children, who start wreaking havoc in the city. Eris, the goddess of chaos, is behind the toys, which mind-control the children into creating chaos. Mandy decides not to share control of the world with Eris, and orders Grim to destroy the toys.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S04E07%20-%20The%20Secret%20Decoder%20Ring-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - The Secret Decoder Ring
+          </div>
+          <div class="plot">When Billy finally gets a &quot;secret decoder ring&quot; in his Blasto Bits cereal, he receives a holographic message from a strange creature who speaks about finding the &quot;Secret of the Universe&quot; in an abandoned mine shaft. All the other children of Endsville, also with decoder rings, race to the mine to be the first one to get the Secret. The entire effort is revealed to be a trap laid by Lubbermouth, a worm-like creature from Grim's past, who wishes to free herself from the curse of guarding the Secret. When Mindy looks down at the pit, she becomes the new guardian of the Secret and has to stay there forever.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S04E08%20-%20Wild%20Parts-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Wild Parts
+          </div>
+          <div class="plot">One night a strange odor travels through the city, prompting the noses of all the people, including Billy's, to follow it. The next night, Mandy, who is noseless, and Grim decide to wait outside Billy's house for the event to repeat. When the odor reappears, the nose parade leads them to the shopping mall, where they meet a &quot;Nasalmancer&quot;, a nose wizard who is trying to take over other people's noses since he lost his own. Billy recovers his nose, but slices it in two, and gives one half to the Nasalmancer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S04E09%20-%20The%20Problem%20with%20Billy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - The Problem with Billy
+          </div>
+          <div class="plot">When Billy goes into the mud for the fifth time in the day while wearing his white tuxedo before a wedding, Grim tries to figure out why Billy is so stupid. Billy's dad recounts Billy's life from his birth until he met Mandy and explains that Billy is not dumb, but actually a genius with a certified &quot;Honorary Genius Degree&quot;. It is quite evident to Grim that Billy's problem is his equally dumb father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S04E10%20-%20Wishbones-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Wishbones
+          </div>
+          <div class="plot">After Grim's robe comes out of the washing machine, Billy and Mandy find Thromnambular, a talking skull with ruby eyes and a number nine imprinted on his forehead. Grim tells them that the skull is a magical artifact imprisoned on Earth that must grant his nine wishes to be free. When Mandy asks Grim why he has not used any of the wishes, Grim tells her that the skull will corrupt the wishes and end up affecting the wisher.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S04E11%20-%20Dream%20Mutt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Dream Mutt
+          </div>
+          <div class="plot">When Billy gets the opportunity to adopt one of four dogs, he says he wants them all. Grim uses his scythe to magically combine the dogs and create Billy's dream dog, who calls himself Wiggy Jiggy Jed. Although initially Billy and Jed are best friends, their relationship falls apart when Billy tells Jed to sleep outside. Jed uses the powers of Grim's trunk to build a giant machine to capture the beds of all people. Billy throws Jed a dish of primordial ooze and he dissolves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S04E12%20-%20Scythe%20for%20Sale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - Scythe for Sale
+          </div>
+          <div class="plot">To raise money to buy Sea-Critters (similar to Sea-Monkeys), Billy has a garage sale where he sells Grim's scythe to Irwin for less than two cents. With the great mystical strength and power of the scythe, Irwin hypnotizes Mandy and takes her on a romantic date. Billy and Grim try to recover the scythe, and when they do Mandy gets out of the trance. Irwin is punished by being transformed into a tiny sea-critter and placed in Billy's fish bowl.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S04E13%20-%20Jeffy%27s%20Web-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - Jeffy's Web
+          </div>
+          <div class="plot">When Billy gets under his house's foundation, he encounters again his &quot;son&quot;, Jeff the Spider, who has just laid eggs. Jeff tries to make things right with Billy so he can take care of the baby spiders, as he is going to die after the eggs hatch. Naturally terrified of seeing Jeff, Billy runs away and a wild car chase ensues. The eggs hatch, and Grim decides to refill Jeff's hourglass that represents his lifetime so he does not die and can continue to scare Billy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S05E01%20-%20My%20Fair%20Mandy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x1 - My Fair Mandy
+          </div>
+          <div class="plot">When it's scurvy-prevention day at school, Mindy parades in her float in anticipation for the Little Miss Scurvy beauty pageant, and she insults Mandy, telling her she is ugly. To prove her otherwise, and with Principal Goodvibes' encouragement, Mandy considers entering the pageant. Naturally, Billy and Grim cannot believe Mandy when she tells them about the idea, but finally they decide to help her. Grim calls for Crabina, the Underworld's greatest makeup artist, to give Mandy a complete makeover. Crabina is shocked by Mandy's sour attitude, so she sets up principally to make her smile. At the pageant, Mandy has a real chance at winning the contest, but she still refuses to smile during her heart-warming musical number. Ultimately she smiles, but this event is so powerful that it alters the laws of the universe, and The Grim Adventures universe transforms into the The Powerpuff Girls universe, with Billy, Mandy and Grim turning into the Powerpuff Girls, Irwin turning into Mojo Jojo, and Professor Utonium guest starring as himself in a brief speaking cameo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S05E02%20-%20One%20Crazy%20Summoner-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x2 - One Crazy Summoner
+          </div>
+          <div class="plot">When Billy's parents are attacked by an anaconda, Billy suggest visiting boy wizard Nigel Planter, because he can talk to snakes. Planter in fact does not speak to snakes, but to snacks, and instead he asks for Billy, Mandy and Grim's help to win the affections of Huffefnie Pfefferpfeffer, a beautiful witch in the School of Sorcery (and having a striking resemblance to Gladys). Planter tries using a romantic love potion and enchanted chocolates, but they do not work. The guys end up completely forgetting about Billy's parents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S05E03%20-%20Guess%20What%27s%20Coming%20to%20Dinner-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x3 - Guess What's Coming to Dinner?
+          </div>
+          <div class="plot">When Billy's parents leave for their second honeymoon, Billy is left alone at the worst possible moment, since he has invited Principal Goodvibes over to dinner so he can recommend him into Rollington Academy for the Gifted. Billy's dad suggest Billy to use Eris, the goddess of chaos, and Hoss Delgado, spectral exterminator, as his substitute parents during the dinner. The dinner is a disaster with Delgado terrorizing Goodvibes, and Eris unleashing giant alien zombie lobsters. Goodvibes forcefully recommends Billy into Rollington Academy, which, as it turns out, is actually a military school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S05E04%20-%20Mommy%20Fiercest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x4 - Mommy Fiercest
+          </div>
+          <div class="plot">Then Billy's mom, discovers crow's feet on her face, she panics and does not want to leave the bathroom. As Grim needs to use the bathroom, he uses his scythe to make Gladys a young girl again. Gladys goes to see Billy, but neither he nor Mandy nor Irwin recognize her, and instead, Billy calls her &quot;Corn&quot;, because of the white bread she gave him. When Corn tells Billy to do his homework, Mandy tells him to go to the movie theater instead. Corn and Mandy struggle over who gets to control Billy. Billy's father plays with Grim's scythe and also becomes a child; he then goes to the movies and gets together with Gladys (Corn) again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S05E05%20-%20The%20Taking%20Tree-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - The Taking Tree
+          </div>
+          <div class="plot">When Billy, Mandy and Grim notice things have been disappearing in the house, they set out to investigate using a supernatural detector. They find the culprit is a talking &quot;taking tree&quot; in Billy's yard, who has been stealing objects since Billy's dad was a child. To make the tree happy, Mandy and Grim set out to trade the stolen belongings for a highly-valued Mickey Munchle baseball card, which is worth eleventy million dollars. Mandy and Grim return from the baseball shop with the real Mickey Munchle. The tree returns all of the stolen things, but keeps the player.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S05E06%20-%20Reap%20Walking-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x6 - Reap Walking
+          </div>
+          <div class="plot">When the mall's surveillance cameras capture Grim's silhouette attacking endangered owls, a naturalist named Corey Nebraska blames Grim for the attacks, while Mandy suspects Grim is sleepwalking again. Billy, Mandy and Nebraska follow Grim while he sleepwalks, but they realize it is actually Billy's mom, the one attacking the owls. When discovered, Gladys reveals her hatred toward the owls as she recounts the story on how an owl ate her pet rat, Sniffles, years ago. Billy's dad reveals that he was in fact the one who ate Sniffles merely to survive until lunch time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S06E01%20-%20Billy%20Ocean-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x1 - Billy Ocean
+          </div>
+          <div class="plot">When Billy, Mandy and Grim go to the beach, Billy is swallowed by a whale known as Blubbery Joe, which also houses in her stomach Mister Geppetto and Pinocchio. Tired of not having a real son, Geppetto convinces Billy to be his &quot;real son&quot;, while Pinocchio becomes increasingly jealous and is set on eating Billy's flesh to become a real boy and gain Geppetto's fatherly love and affection. Mandy and Grim search for Billy on board Captain Deadwood's ship, who is made of wood and who has been hunting Blubbery Joe for years. Billy, Geppetto and Pinocchio are expelled from Blubbery Joe's stomach, and as Billy needs to go home, Blubbery Joe accepts to be Geppetto's son.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S06E02%20-%20Hill%20Billy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x2 - Hill Billy
+          </div>
+          <div class="plot">When Mandy and Grim tell Billy to quit watching TV and follow his life dreams, Billy gets into a chicken costume and decides to become a world famous &quot;chicken juggler&quot;. When Billy's mom tries to convince him to be a chiropractor instead, Billy runs away to Uncle Chokey's farm to pursue his dream. Billy and Uncle Chokey juggle chickens at the rhythm of an old phonograph, whose music turns the farm into a 1920s black and white rubber hose cartoon. Due to a shortage of eggs in the city, Mandy and Grim go to the farm to investigate. They destroy the phonograph and things return to normal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S06E03%20-%20Keeper%20of%20the%20Reaper-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x3 - Keeper of the Reaper
+          </div>
+          <div class="plot">When Billy's dad gets a promotion at his job, he tells his family they are going to move to another town, starting a dispute between Billy and Mandy over who gets custody of Grim. Grim suggests they settle this in court, and hours later Billy, Mandy and Grim find themselves in the Underworld court, presided by Judge Roy Spleen, and which has Fred Fredburger, an incorrigible dumb character, as a juror.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S06E04%20-%20The%20Love%20That%20Dare%20Not%20Speak%20Its%20Name-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x4 - The Love That Dare Not Speak Its Name
+          </div>
+          <div class="plot">When Billy decides he wants to grow up to be like Grim, he says nothing will stand in the way of their friendship. They meet a girl named Blandy, who looks very much like Billy, and Billy falls completely head-over-heels in love with her. When Blandy shows romantic interest in Grim, Billy is struck with mad jealousy and wants Grim out of the picture. Mandy consults Grim's encyclopaedia of monsters and realizes Blandy is actually a creature from another dimension. Despite Blandy showing her true form and leaving, Billy remains madly romantically infatuated with her; but only up until the following episode.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S06E05%20-%20Major%20Cheese-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x5 - Major Cheese
+          </div>
+          <div class="plot">Billy, Mandy and Grim visit Mighty Moe, an old man who has discovered the secret to add extra years to his lifespan: a good diet and exercise. Mighty Moe decides to publish his secret in a book, and Grim needs to stop him by offering junk food.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S06E06%20-%20Modern%20Primitives-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x6 - Modern Primitives
+          </div>
+          <div class="plot">When Billy digs his front yard he finds a frozen caveman, who is actually Fred Flintstone (from The Flintstones), but whom Billy names Jake Steele. Billy tries to acclimate Fred to the modern life but the job is not easy. When Fred is taken to school, he predictably goes out of control, kidnapping Miss Butterbean and running away in Principal Goodvibes' car. The ensuing chase results in Fred crashing into an ice cream truck, becoming frozen again. Instead of reaping him, Billy decides to bury Fred in the yard again. A future is shown where both Billy and Fred are defrosted by brain-eating creatures.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S06E07%20-%20Giant%20Billy%20and%20Mandy%20All%20Out%20Attack-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x7 - Giant Billy and Mandy All Out Attack
+          </div>
+          <div class="plot">When Billy and Irwin want to watch classic giant monsters movies, Grim decides to take them to Japan to see real monsters. They meet the turtle-like Cragorah (a parody of Gamera) who engages in a fierce battle with the three-headed Kittirah (a cat version of Ghidorah). To help Cragorah, Grim transforms Billy into a giant monster too (a parody of Ultraman). Mandy soon arrives with the intent of punishing them all for organizing this expedition without her permission. Controlling Mecha-Gorillasaur (a giant gorilla robot) she defeats Kittirah and beats Billy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S06E08%20-%20The%20Wrongest%20Yard-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x8 - The Wrongest Yard
+          </div>
+          <div class="plot">When Billy and Irwin are yet again bullied by Sperg, they decide to play for the school's football team so they are not bullied anymore. During practice, Irwin shows a powerful arm and he becomes the starting quarterback, while Billy is relegated to being a punching bag. During their first game, Mandy directs the team into scoring their first ever touchdown, so Coach Kilgore gives her the job of captain cheerleader, taking it away from Mindy. With Irwin's arm and Mandy's cheerleading the team reaches the finals. Mindy tries different ways to get back at Mandy and recover her job, but she ends up affecting her own team, which eventually loses the game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S06E09%20-%20Druid%2C%20Where%27s%20My%20Car-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x9 - Druid, Where's My Car?
+          </div>
+          <div class="plot">When Billy gets his kite stuck in a tree, he starts throwing objects at it to knock it down, including Mandy and a group of three boy scouts, but all objects get stuck too. Frustrated, Billy and Grim call a druid for help, who in turn trains them to become druids, so the three of them can perform a ritual. Meanwhile, inside the tree, Mandy battles a group of squirrels, and leads the scouts back to the ground. Since the druidic chants did not work against the tree, the druid goes ahead and uses a chainsaw to bring the tree down, but this gets him arrested.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S06E10%20-%20Herbicidal%20Maniac-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x10 - Herbicidal Maniac
+          </div>
+          <div class="plot">When General Skarr tries to get rid of a weed in his otherwise perfect garden, he asks Grim to use his scythe to do the job. Billy drives a lawnmower and ruins the garden; also, the scythe's magic accidentally shoots Skarr, transforming him into a plant-like creature. Using his new plant powers, Skarr rebuilds his garden, and tries to exact revenge on Billy by throwing a party, and attacking him. Skarr gets mulched by a helicopter rotor, but he is reborn as a small weed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S06E11%20-%20Chaos%20Theory-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x11 - Chaos Theory
+          </div>
+          <div class="plot">When Mandy and Grim go to the warehouse store, Mandy notices that everything seems to be in order, lacking any presence of chaos. Hoss Delgado, spectral exterminator, arrives saying that everything has been that way since he started dating Eris, the goddess of chaos. Mandy assures Delgado he must break up with Eris to restore chaos, but fearing her temper, he is reluctant to do so. After failed attempts by Grim, Mandy, Billy, and Irwin to break their relationship, Delgado finally tells Eris the truth about he wanting to break up, and she complies by turning into a giant insect and devouring him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S06E12%20-%20A%20Grim%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x12 - A Grim Day
+          </div>
+          <div class="plot">When Billy goes to visit his maternal grandmother and Mandy decides to have the day for herself, Grim finds himself free of the kids to do whatever he wants to do. Since Grim quickly gets bored he goes to visit General Skarr, and lets him take his magical scythe, which Skarr uses to build an army of giant lawn gnomes. Since Grim is so used to having two kids with him when they go on an adventure, he enlists Mindy and Pud'n to help him combat Skarr and retrieve his scythe. Mindy and Pud'n prove to be worthy substitutes but they are scared away by Mandy when she notices the unusual trio
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S06E13%20-%20Pandora%27s%20Lunch%20Box-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x13 - Pandora's Lunch Box
+          </div>
+          <div class="plot">There is a new student in the school, named Dora (parodying Dora the Explorer), who insists on getting people to open her lunch box. Mandy befriends Dora once she gets into a fight with the snobby Mindy. While noting something strange with Dora, Grim does not recognize her as Pandora until it's too late and she tricks Mandy into opening Pandora's box, releasing all kinds of plagues upon humanity. Mandy restores everything to normal, and captures Pandora inside the box, saying that nobody tricks her, and that when the time is right it will be Mandy herself who will unleash humanity's doom and destruction.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S07E01%20-%20Everything%20Breaks-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x1 - Everything Breaks
+          </div>
+          <div class="plot">As Billy behaves more reckless than ever and cannot stop breaking everything in sight, Mandy thinks he should go some place where he can release all his urge to destroy until he gets tired of it. Mandy, Grim, and Irwin go to Level 9, home of the fearsome warrior Lord Pain, to convince him to take Billy. Billy receives psychological treatment and it is revealed that his desire to destroy stems from lack of attention when he was younger. Lord Pain abducts him, and together they start destroying everything in Level 9, which seems to be is uninhabited. Billy is still not satisfied, so he and Lord Pain return to Endsville and carry on breaking everything.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S07E02%20-%20The%20Show%20that%20Dare%20Not%20Speak%20Its%20Name-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x2 - The Show that Dare Not Speak Its Name
+          </div>
+          <div class="plot">When Grim leaves the house to meet someone he met on the internet, Billy looks inside Grim's trunk for something to entertain himself. Billy finds a magical talking Rubik's Cube, which releases the demon Pinface, who has bowling pins in his head. Pinface proceeds to call his minions to conquer Earth, but the minions are more interested in throwing a house party. It is revealed that Grim and Pinface already know each other, and Grim even broke up with Pinface's sister. Billy's father ends up cheating and solves the magical cube by rearranging the stickers, trapping Pinface and his minions inside it again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S07E03%20-%20The%20Secret%20Snake%20Club%20vs%20P.E-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x3 - The Secret Snake Club vs P.E.
+          </div>
+          <div class="plot">As Billy realizes the three geeks of the Secret Snake Club get doctor's notes to avoid Physical Education (P.E.) class, he wants to know their secret to avoid the class too. All the boys in the class join the club and all, except Billy, get doctor's notes from Billy's dad, who poses as a doctor. While Billy is the only one exercising in the class, the Snake Club summons a snake to destroy the gym. Since the invoked snake is tiny, Sperg uses Grim's scythe to make it a giant. Mandy and the other girls beat the boys and their snake because they did appreciate the P.E. class as an outlet for their aggression.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S07E04%20-%20King%20Tooten%20Pooten-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x4 - King Tooten Pooten
+          </div>
+          <div class="plot">When Billy, Mandy and Grim attend an Ancient Egypt exhibit at the museum, they meet with Irwin who explains that, as his mother is a mummy, they are visiting Irwin's grandfather, the great Pharaoh King Popen Locken. Later that night, Irwin's grandfather visits Irwin in his room and offers him the Pharaoh's crown and the possibility of building his own pyramid to attract women; Irwin accepts, calling himself King Tooten Pooten, and soon they turn the citizens into slaves to build the pyramid. Against his mother's wishes, Irwin decides to finish the pyramid; however, there is something he did not anticipate, as he, the Pharaoh, needs to remain entombed inside it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S07E05%20-%20Billy%20Gets%20an%20A-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x5 - Billy Gets an &quot;A&quot;
+          </div>
+          <div class="plot">When Billy fails an important test, the result of which will go into his permanent record, he asks Grim to magically alter his grade from an &quot;F&quot; to an &quot;A&quot;; as Grim reluctantly changes the grade, Billy becomes a genius, but reality is thrown completely off balance. Mandy and Grim go back in time to stop the past Grim from helping Billy, but it does not work. They keep going back in time to different epochs, each time meeting another Grim, eventually trying to stop Billy's ancestors from conceiving him, but nothing works. After meeting Billy's distant dinosaur relative, the episode ends abruptly as Grim wonders what the end of this could be.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S07E06%20-%20Yeti%20or%20Not%2C%20Here%20I%20Come-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x6 - Yeti or Not, Here I Come
+          </div>
+          <div class="plot">After watching the Unsolvable Mysteries TV show, Grim realizes he forgot a million years ago to reap the Abominable Snowman living in the Himalayas. Billy, Mandy and Grim go there to finish the job and also to obtain videographic proof of the snowman's existence. The Yeti, who likes to be called Abom, manages to escape Grim more than once before finally being trapped by the moving glacier. Grim watches the TV show again, but he may have forgotten to reap the Loch Ness monster too.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S07E07%20-%20Nergal%27s%20Pizza-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x7 - Nergal's Pizza
+          </div>
+          <div class="plot">When Nergal comes to tell the guys about his new pizza joint, Grim thinks he can do better by using his Granny's recipe. A pizza war ensues between Nergal's Pizza and Grim's Pizza, with each pizzeria launching TV ads and discrediting each other. Nergal Jr. uses his shape-shifting abilities to infiltrate Grim's pizza and replace Granny Grim's hot sauce with a &quot;ghastly elixir&quot;. The result is pizzas becoming monsters and attacking the city, and the citizens developing parasites similar to Nergal. Nergal and his family leave the city just as Grim's sauce explodes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S07E08%20-%20Hey%2C%20Water%20You%20Doing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x8 - Hey, Water You Doing?
+          </div>
+          <div class="plot">After Billy, Mandy and Grim are disappointed with the Sassy Cat amusement park submarine attraction, Grim uses his powers to take them to the bottom of the ocean to have a real magical adventure. They are sentenced to death for trespassing into the Googen Kingdom by King Triceps, a wrestling merman. The king's daughter, Hariel, also a mermaid, stops the sacrifice and tries to marry Billy to inherit the kingdom. It is revealed that King Triceps is actually Hariel's sister, the sea witch Uvula, who also tries inherit the kingdom. A cat fight ensues between the two ladies, which ends when Billy agrees to marry both of them. The plot is revealed to be a story Billy is telling to Miss Butterbean, who initially asked him what happened to his report.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S07E09%20-%20Company%20Halt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x9 - Company Halt
+          </div>
+          <div class="plot">As General Skarr is once again annoyed by Billy, Hector Con Carne and Major Dr. Ghastly arrive in his house with the intention of luring him back to the recently relaunched Evil Con Carne world domination organization. Although initially refusing to rejoin, Skarr later accepts with the condition that Billy and the other neighbors be destroyed. After a few weeks of living together and preparations, Evil Con Carne's ultimate weapon is revealed to be an army of tanks that shoot giant rubber bands. Skarr's all-out attack over the neighborhood is foiled when Billy tricks Hector into shooting Skarr's garden and they get into a fight.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S07E10%20-%20Anger%20Mismanagement-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x10 - Anger Mismanagement
+          </div>
+          <div class="plot">As General Skarr has trouble finding a job, the recruiter tells him to attend anger management classes if he wants to work again. Skarr finds out Mandy and Grim are attending too, Mandy for staring at the school monitor, and Grim for enjoying his job too much. The instructor of the class, Larry, turns out to be a peace-loving, short man riding a tricycle, who teaches the trio ways to calm down when angered, including counting to ten, and using harmless weapons to let go of their anger. Larry invites Billy to the class, and Mandy, Grim, and Skarr all manage to contain themselves; however, Larry himself suffers an episode of rage over a parking space and he is arrested.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Grim%20Adventures%20of%20Billy%20and%20Mandy%20-%20S07E11%20-%20Waking%20Nightmare-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x11 - Waking Nightmare
+          </div>
+          <div class="plot">When Mandy finds Billy playing with Grim's gigantic dog, Cerberus, she tells Grim to keep Billy under tight control because she needs a good night of sleep to be ready for the next day's test. With a little persuasion from his own dad, Billy tries to wake up Mandy at night, so she will fail the test and he can score higher than her for the first time. After Grim spends the night guarding Mandy's house from Billy, the latter succeeds in waking up Mandy. It is revealed that this Mandy is in fact Irwin, used as a decoy by the real Mandy, who slept in her dog's house. Mandy passes the test, and Grim is punished for not guarding her properly.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Avatar: The Last Airbender
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Avatar: The Last Airbender</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Avatar%20The%20Last%20Airbender%20%282005%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Bending Battle
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Creating The Legend Of Airbending
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Creating The Legend Of Earthbending
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Creating The Legend Of Firebending
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Creating The Legend Of Waterbending
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Escape From The Spirit World Animated Graphic Novel
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - School Time Shipping
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Swamp Skiin' Throwdown
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - The Crossroads Of Destiny Commentary By Creators Cast and Crew
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - The Essence Of Bending With Bryan Konietzko And Sifu Kisu
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - The Serpent's Pass Commentary By Creators Cast and Crew
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x15 - Behind the Scenes with the Avatar Cast &amp; Crew
+          </div>
+          <div class="plot">A behind the scenes look at the development for Avatar: The Last Airbender.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x21 - Avatar Finale Pencil Tests
+          </div>
+          <div class="plot">Book 3 Finale Pencil Test Animation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E01%20-%20The%20Boy%20in%20the%20Iceberg-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Boy in the Iceberg
+          </div>
+          <div class="plot">Two teenage siblings (Sokka and Katara) living in the South Pole discover a very strange boy (Aang), along with his pet flying bison Appa, in an iceberg. But can they trust him when he accidentally draws the war to their village's doorstep?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E02%20-%20The%20Avatar%20Returns-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Avatar Returns
+          </div>
+          <div class="plot">Katara and Sokka discover that Aang is the long-lost Avatar and must rescue him when a firebending prince named Zuko kidnaps him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E03%20-%20The%20Southern%20Air%20Temple-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Southern Air Temple
+          </div>
+          <div class="plot">Aang is excited about going home for the first time in one hundred years, but he is shocked to find out that the temple is deserted. Aang tells Sokka and Katara about his childhood as they explore the temple, but they soon discover something that Aang never expected. Meanwhile, Zuko must make repairs to his ship and the only way he can do it is to dock his ship at his rival's naval base.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E04%20-%20The%20Warriors%20of%20Kyoshi-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Warriors of Kyoshi
+          </div>
+          <div class="plot">The gang arrives at Kyoshi Island and are captured by some Kyoshi warriors. When Aang reveals that he is the avatar, news quickly spreads out, eventually reaching Zuko, who then goes to Kyoshi Island to capture him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E05%20-%20The%20King%20of%20Omashu-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The King of Omashu
+          </div>
+          <div class="plot">Aang's abilities as an airbender are challenged by a strange king.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E06%20-%20Imprisoned-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Imprisoned
+          </div>
+          <div class="plot">In a nearby Earth Village, the gang meets a teenage earthbender named Haru. This village lives in fear of the Fire Nation, for soldiers there capture any earthbenders they can find. After Haru is captured for earthbending, Katara is compelled to rescue him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E07%20-%20The%20Spirit%20World%20Winter%20Solstice%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Spirit World: Winter Solstice (1)
+          </div>
+          <div class="plot">Aang and friends visit a village being terrorized by an angry spirit. Iroh is captured by Earth Kingdom soldiers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E08%20-%20Avatar%20Roku%20Winter%20Solstice%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Avatar Roku: Winter Solstice (2)
+          </div>
+          <div class="plot">To contact the spirit of the previous Avatar, Aang must reach a temple in the Fire Nation before the sun sets on the following day. There he will learn what he must do to restore balance to the world. Zuko must defy his banishment to follow Aang.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E09%20-%20The%20Waterbending%20Scroll-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Waterbending Scroll
+          </div>
+          <div class="plot">After Katara attempts to teach Aang waterbending, but realizes that he is learning it much faster than she is, she is desperate to improve her abilities.  When Katara inadvertently stumbles across a waterbending scroll that can help improve her abilities at a pirate&rsquo;s store, she decides to steal it, realizing that she couldn&rsquo;t hope to afford it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E10%20-%20Jet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Jet
+          </div>
+          <div class="plot">While traveling towards the North Pole, the group almost gets captured by the Fire Nation.  However, when a charismatic young man and his band of rebels attack the Fire Nation camp and rescue them, they learn that they are trying to resist the Fire Nation&rsquo;s motives to expand their territory.  Katara and Aang really enjoy their time with the band of rebels, but Sokka soon discovers that they aren&rsquo;t as noble as meets the eye.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E11%20-%20The%20Great%20Divide-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Great Divide
+          </div>
+          <div class="plot">While on their way to the North Pole, Aang and his friends arrive at a giant canyon where two groups of refugees are bickering over who should get to go across.  Aang decides to walk across with the two groups to ensure they don&rsquo;t fight one another.  However, he soon learns that the two tribes have been feuding for one hundred years and they both believe their actions are justified.  But when the predators inside the canyon start to come out, Aang is stuck trying to defend both tribes from each other and the vicious wildlife.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E12%20-%20The%20Storm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Storm
+          </div>
+          <div class="plot">Sokka accepts a job for a fisherman who is looking for someone to help him out with his fishing. After the fisherman finds out Aang is the Avatar, Aang runs away in response to the fisherman's hostile reaction. When Katara finds Aang, he begins to reveal his life before he was frozen in the iceberg. Meanwhile, after Zuko gets into a fight with his crew, Iroh tells them about Zuko's complicated past, attempting to make both sides understand each other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E13%20-%20The%20Blue%20Spirit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - The Blue Spirit
+          </div>
+          <div class="plot">While Aang, Katara and Sokka are traveling, Sokka gets a fever. Katara and Aang try to help Sokka, when Katara also catches the fever. It's up to Aang to go up on his own to save his two friends. But before he can get the medicine he is captured by the newly promoted Admiral Zhao and put in Zhao's fortress.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E14%20-%20The%20Fortuneteller-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - The Fortuneteller
+          </div>
+          <div class="plot">When the group tries to help a man who is being attacked by a platypus-bear, they discover that the local town has a fortuneteller named Aunt Wu in it, who has been forecasting the town's fate for years. But when Sokka and Aang discover one of the fortuneteller's most vital predictions is dead wrong, they have to develop a plan to convince the stubborn townspeople that their beloved Aunt Wu was wrong.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E15%20-%20Bato%20of%20the%20Water%20Tribe-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Bato of the Water Tribe
+          </div>
+          <div class="plot">Aang feels neglected as Katara and Sokka reunite with Bato, an old friend of their father&rsquo;s from the South Pole. They begin to reminisce on their times in the past while they wait for a message to arrive from their father. Aang believes Katara and Sokka will abandon him and go out to find their father should the message arrive. However, when the messenger gives Aang the message to give to Bato, Aang betrays his friends in a way Katara or Sokka could never imagine. However, when Zuko recruits a bounty hunter named June to track Aang down, his friendship is put to the test as he must deal with the fact that he betrayed his friends while defending himself from yet another fight.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E16%20-%20The%20Deserter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - The Deserter
+          </div>
+          <div class="plot">Aang and his friends go to a Fire Nation town so that Aang can witness some firebending, but their plan soon goes awry when it&rsquo;s discovered that he is the Avatar. Fortunately, he's rescued by an individual who serves a firebending master named Jeong Jeong who has abandoned the Fire Nation, so Aang decides to use this time to attempt to learn firebending. The firebending master, however, seems reluctant to teach Aang.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E17%20-%20The%20Northern%20Air%20Temple-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - The Northern Air Temple
+          </div>
+          <div class="plot">When Aang and his friends hear rumors about surviving airbenders, they decide to stop by the Northern Air Temple on their way to the North Pole to see for themselves. What they find is a bunch of people who are not airbenders, but have mastered the art of gliding; though this upsets Aang because they have been defacing the temple. However, there was one part of the temple where nobody has been able to enter, and what Aang and his friends discover inside spells oncoming conflict.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E18%20-%20The%20Waterbending%20Master-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - The Waterbending Master
+          </div>
+          <div class="plot">When Aang tries to find the north pole, he is found by the north pole instead. As they are taken there, Aang and Katara are eager to find a waterbending master, only to discover that girls are not allowed to learn waterbending.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E19%20-%20The%20Siege%20of%20the%20North%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - The Siege of the North (1)
+          </div>
+          <div class="plot">Zhao begins to launch his attack against the Northern Water Tribe. As the walls of the prestiged city begin to fall, the Avatar taps into the spirit world and seeks the help of one of the oldest spirits, in hopes of saving one of the most prominent areas of the world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S01E20%20-%20The%20Siege%20of%20the%20North%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - The Siege of the North (2)
+          </div>
+          <div class="plot">Aang returns from the spirit world to a big surprise. Meanwhile, Zhao and his forces continue to press deeper into the Northern Water Tribe. Iroh makes a powerful stand and Zuko struggles to keep his plan intact.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E01%20-%20The%20Avatar%20State-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - The Avatar State
+          </div>
+          <div class="plot">Plagued with nightmares featuring the devastating power of his Avatar State, Aang and the gang meet an Earth Kingdom general who has big plans for defeating the Fire Nation. Meanwhile, Zuko and Iroh, having survived the failed attack on the North Water Tribe, have a surprise visit from Zuko's sister with seemingly good news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E02%20-%20The%20Cave%20of%20Two%20Lovers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - The Cave of Two Lovers
+          </div>
+          <div class="plot">On their way to Omashu, Aang, Katara, and Sokka meet a group of nomads who show them a shortcut through the &quot;Cave of Two Lovers&quot;. But when the group becomes trapped in the cave, it's up to Aang and Katara to save the group by trusting in love, possibly questioning their relationship. Meanwhile, Iroh gets a lethal rash so Zuko and Iroh head to a small Earth Kingdom town for help, hoping their real identities will not be discovered.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E03%20-%20Return%20to%20Omashu-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Return to Omashu
+          </div>
+          <div class="plot">Despite the shocking news the gang have just discovered, Aang insists on trying to find Bumi within Omashu's borders, even with the dangers that will await him and his friends if his real identity is discovered.  Meanwhile Azula goes in search of old friends to help her with her mission.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E04%20-%20The%20Swamp-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - The Swamp
+          </div>
+          <div class="plot">A mysterious tornado pulls the kids into a supernatural swamp where Katara, Sokka and Aang have mysterious visions. Meanwhile, Momo and Appa are chased by rogue swamp dwellers and only Aang and the gang can save them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E05%20-%20Avatar%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Avatar Day
+          </div>
+          <div class="plot">Aang and the gang discover an Earth town that celebrates something called &quot;Avatar Day.&quot; But when they get there and learn the festival is of &quot;anti-Avatar&quot; sentiment and Aang is put on trial for a crime a past incarnation allegedly committed. Looking to clear the Avatar's good name, Katara and Sokka venture back to a familiar  place to gather evidence and discover the truth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E06%20-%20The%20Blind%20Bandit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - The Blind Bandit
+          </div>
+          <div class="plot">In search for an Earthbending teacher for Aang, the kids go to an underground Earthbending tournament called Earth Rumble 6, where they encounter Toph, a blind but powerful Earthbending girl. After seeing her unique style of Earthbending, Aang wants Toph to become his teacher, but there are complications with Toph's family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E07%20-%20Zuko%20Alone-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Zuko Alone
+          </div>
+          <div class="plot">Zuko travels by himself to an Earth Kingdom town where he meets a local boy. The two almost become friends, while Zuko suffers from flashbacks of his past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E08%20-%20The%20Chase-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - The Chase
+          </div>
+          <div class="plot">Tired from trying to escape a machine that shows up every time they try to sleep, Aang and the gang have to escape Azula and her team, but their exhaustion leads to a tight situation. Meanwhile, Zuko must deal with something personal, and Iroh bonds with an unlikely individual.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E09%20-%20Bitter%20Work-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Bitter Work
+          </div>
+          <div class="plot">Toph's instructing abilities come into question when Aang cannot seem to overcome a block that keeps him from earthbending. Sokka gets himself in a jam, while befriending what was, moments before, his next meal, and Iroh and Zuko begin training utilizing new philosophies and methods that originate from the other elements.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E10%20-%20The%20Library-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - The Library
+          </div>
+          <div class="plot">When Aang and his friends find a professor who knows of a library that contains information about the world, Sokka decides to go there to hopefully find some information to use against the Fire Nation. The library is guarded by the knowledge spirit, Wan Shi Tong, who unfortunately doesn't welcome humans into his library, because he believes they only seek information for evil purposes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E11%20-%20The%20Desert-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - The Desert
+          </div>
+          <div class="plot">Aang searches for Appa while Katara struggles to keep everyone together to survive in the vast desert. Meanwhile, Iroh and Zuko seek help from an ancient secret society.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x12 - The Serpent's Pass
+          </div>
+          <div class="plot">When Aang and the gang meet up with a group of refugees, they tell the gang where they can get on a ferry to Ba Sing Se. But after a series of events they have to take a deadly route called the serpent's pass with the help of an old friend, Suki. Meanwhile, Zuko and Iroh meet up with a boy named Jet and his freedom fighters.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x13 - The Drill
+          </div>
+          <div class="plot">Having made it to the outer wall of Ba Sing Se, the kids confront a Fire Nation army that is driving a massive Fire Nation drill, which poses an imminent threat to the last Earth Kingdom stronghold. Meanwhile, Zuko and Iroh make crucial mistakes which begin to attract Jet's suspicions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E14%20-%20City%20of%20Walls%20and%20Secrets-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - City of Walls and Secrets
+          </div>
+          <div class="plot">Having finally made it into Ba Sing Se, the kids are given a house in the upper ring. The kids are anxious to tell the Earth King their plan but there are complications. Meanwhile, still convinced that Iroh and Zuko may be Fire Nation, Jet decides to take matters into his own hands and do whatever it takes to get the refugees to reveal their true nature.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E15%20-%20The%20Tales%20of%20Ba%20Sing%20Se-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - The Tales of Ba Sing Se
+          </div>
+          <div class="plot">A series of short stories, highlighting different characters and their individual adventures in the city. Tales of Katara and Toph, Iroh, Sokka, Aang, Zuko, and Momo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E16%20-%20Appa%27s%20Lost%20Days-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - Appa's Lost Days
+          </div>
+          <div class="plot">Appa's journey from being abducted in the desert to the present is explored.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E17%20-%20Lake%20Laogai-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Lake Laogai
+          </div>
+          <div class="plot">Aang and his friends continue to search for Appa and, unbeknownst to them, they aren't the only ones looking for him. During their search, the kids meet up with Jet, whom they are understandably reluctant to trust. The kids soon realize that the Dai Li are doing their best to thwart the kids' efforts to find Appa. Meanwhile, Iroh is offered his own tea shop in the upper ring, and Zuko discovers the avatar is in the city.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S02E18%20-%20The%20Earth%20King-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - The Earth King
+          </div>
+          <div class="plot">The kids battle Long Feng and the Dai Li when they attempt to show the Earth King the vast conspiracy taking place in his city. Zuko becomes seriously ill and has feverish dreams as he faces a spiritual crisis.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x19 - The Guru
+          </div>
+          <div class="plot">Aang travels to the Eastern Air temple to receive guidance from Guru Pathik while Sokka is reunited with his long-lost father. Meanwhile, Azula has something diabolical in store for her enemies in the Earth Kingdom, including Zuko and Iroh.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x20 - The Crossroads of Destiny
+          </div>
+          <div class="plot">Everyone races against time to stop Azula's sinister plan. Zuko finds companionship in an unlikely source. Aang's destiny hangs in the balance&mdash;and so does Zuko's, as Iroh tells him it's time to make a choice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E01%20-%20The%20Awakening-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - The Awakening
+          </div>
+          <div class="plot">Aang awakens to find himself aboard a captured Fire Nation ship with a full head of hair and sustaining serious injuries from the previous battle for Ba Sing Se. At his side are Katara, Sokka, and their father Hakoda who recount the events that led the four to the ship and contemplate their next move. Aang struggles to fight his own desire to face the Fire Lord before he is ready. Meanwhile, Zuko deals with his own issues as he makes his long-awaited journey home, with the fear of his father's rejection hanging over his head.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E02%20-%20The%20Headband-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - The Headband
+          </div>
+          <div class="plot">To better blend in as Fire Nation citizens, Aang enrolls in a Fire Nation school, giving himself an opportunity to learn more about the Nation and to enjoy life as a normal kid for the first time since he discovered he was the Avatar. Meanwhile Zuko, growing more and more paranoid about the Avatar's false demise, brings himself to confront the imprisoned Iroh.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E03%20-%20The%20Painted%20Lady-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - The Painted Lady
+          </div>
+          <div class="plot">When the gang arrives at a suffering fishing village, a mysterious spirit appears to help the villagers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E04%20-%20Sokka%27s%20Master-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Sokka's Master
+          </div>
+          <div class="plot">Feeling as though he isn't contributing enough to the group, Sokka seeks out an elusive swordsmaster from whom he can learn the ways of the blade.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E05%20-%20The%20Beach-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - The Beach
+          </div>
+          <div class="plot">Zuko, Azula, Mai and Ty Lee take a vacation to Ember Island. In the process, they come to learn more about themselves and each other as well as their desires for the future. Elsewhere, Aang and the others face off against a new adversary.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E06%20-%20The%20Avatar%20and%20the%20Firelord-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - The Avatar and the Firelord
+          </div>
+          <div class="plot">The tale of Avatar Roku and Fire Lord Sozin is revealed to Aang and Zuko by different sources.  Both learn about themselves and are shown the origins of the war.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E07%20-%20The%20Runaway-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - The Runaway
+          </div>
+          <div class="plot">When Katara expresses her disapproval of Toph's new way to make quick cash, the group finds her too motherly and tension grows between Katara and Toph. When Katara finally decides to participate in this scam to disprove Toph's accusations, they are left vulnerable and are forced to face the dire consequences.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E08%20-%20The%20Puppetmaster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - The Puppetmaster
+          </div>
+          <div class="plot">The gang investigates the bizarre disappearances taking place within an eerie town.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E09%20-%20Nightmares%20and%20Daydreams-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Nightmares and Daydreams
+          </div>
+          <div class="plot">Four days prior the invasion, Aang becomes nervous over his soon-to-come confrontation with the Fire Lord. His anxiety gets the better of him as he begins to suffer from outrageous nightmares and hallucinations. Meanwhile, Zuko becomes upset to learn that he was not informed about a war meeting.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x10 - The Day of Black Sun: The Invasion (1)
+          </div>
+          <div class="plot">The day of the eclipse has arrived, and the invasion force gathers together to make last preparations. They infiltrate the island and the battle begins. Meanwhile, Aang searches for the Fire Lord.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x11 - The Day of Black Sun: The Eclipse (2)
+          </div>
+          <div class="plot">As the invasion force fights their way to the Fire Nation capital, the kids help Aang find the Fire Lord in time for the eclipse. Zuko confronts his father with shocking news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E12%20-%20The%20Western%20Air%20Temple-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - The Western Air Temple
+          </div>
+          <div class="plot">Aang and the group arrive at the Western Air Temple, with Zuko in pursuit. Zuko wishes to help the Avatar end the war by teaching him firebending.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E13%20-%20The%20Firebending%20Masters-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - The Firebending Masters
+          </div>
+          <div class="plot">While teaching Aang firebending, Zuko realizes that he has lost all his firebending skills. To regain his powers, Zuko and Aang must seek the original source of firebending within the ruins of a lost civilization.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x14 - The Boiling Rock (1)
+          </div>
+          <div class="plot">Sokka wants to break his father out of jail and asks Zuko for information on Fire Nation prisons. Sokka and Zuko head for the Boiling Rock, a prison located in the middle of a volcano, to rescue Sokka's father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x15 - The Boiling Rock (2)
+          </div>
+          <div class="plot">Zuko and Sokka make new plans to break out of the prison with Suki, Sokka's father and some others while a shocking twist leaves Azula none too happy with her two closest friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E16%20-%20The%20Southern%20Raiders-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - The Southern Raiders
+          </div>
+          <div class="plot">Katara decides to confront the Fire Nation soldier responsible for her mother's death. Aang tries to talk her out of it, but she doesn't listen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E17%20-%20The%20Ember%20Island%20Players-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - The Ember Island Players
+          </div>
+          <div class="plot">A play recounting the gang's adventures does not sit well with Aang and his friends, except for Toph who enjoys it very much. Meanwhile, Aang confesses his love to Katara, but the response is ambiguous.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x18 - Sozin's Comet: The Phoenix King (1)
+          </div>
+          <div class="plot">Aang struggles to decide whether or not he has to kill the Fire Lord and, during the night, is drawn toward an island which disappears before morning. Zuko leads the rest of the group to the Earth Kingdom to meet a tracker whom they hope can find Aang. The Fire Lord crowns himself Phoenix King and Aang awakens on the island not knowing where he is.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E19%20-%20Sozin%27s%20Comet%20The%20Old%20Masters%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x19 - Sozin's Comet: The Old Masters (2)
+          </div>
+          <div class="plot">While on the island, Aang seeks guidance from his past lives, but is not pleased with what he is told. The island, in fact, turns out to be a lion turtle from which Aang is given the guidance he had been seeking. Meanwhile, after the tracker is unable to track Aang, the rest of the group decide they must find Iroh. While tracking him down, the group meets up with The Order of the White Lotus, a group that transcends the division of the four nations.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E20%20-%20Sozin%27s%20Comet%20Into%20the%20Inferno%20%283%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x20 - Sozin's Comet: Into the Inferno (3)
+          </div>
+          <div class="plot">Sokka, Suki, and Toph try to stop the Fire Nation's air fleet. Meanwhile, Zuko and Azula duel in an Agni Kai and Aang confronts the Fire Lord.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x21 - Sozin's Comet: Avatar Aang (4)
+          </div>
+          <div class="plot">Aang is on the offensive after getting hit in the back of his scar and triggering the Avatar State. Meanwhile, after Zuko seems to have the upper hand against Azula, Katara is forced to join the fight when Azula resorts to desperate measures.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Avatar%20The%20Last%20Airbender%20-%20S03E21%20-%20Sozin%27s%20Comet%20Avatar%20Aang%20%284%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x21 - Sozin's Comet: Avatar Aang (4)
+          </div>
+          <div class="plot">Aang is on the offensive after getting hit in the back of his scar and triggering the Avatar State. Meanwhile, after Zuko seems to have the upper hand against Azula, Katara is forced to join the fight when Azula resorts to desperate measures.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

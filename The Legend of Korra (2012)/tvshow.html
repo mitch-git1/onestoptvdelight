@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Legend of Korra
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Legend of Korra</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Legend%20of%20Korra%20%282012%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - A Breath Of Fresh Air
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - A New Spiritual Age
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Darkness Falls
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Enter The Void
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Feuding Spirts Korra&rsquo;s Family
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Harmonic Convergence
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - In Harm&rsquo;s Way
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Inside The Book Of Spirts
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Kindred Spirts Tenzin&rsquo;s Family
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Kuvira Vs Prince Wu 1080p
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Light In The Dark
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Long Live The Queen
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Night Of A Thousand Stars
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Old Wounds
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Original Airbenders
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Peacekeepers Scene
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Rebirth
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - The Earth Queen
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - The Guide
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - The Making Of A Legend The Untold Story
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - The Metal Clan
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - The Re Telling Of Korra&rsquo;s Journey
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - The Stakeout
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - The Terror Within
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - The Ultimatum
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - The Women Of Avatar The Last Airbender
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - Venom Of The Red Lotus
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E01%20-%20Welcome%20to%20Republic%20City-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Welcome to Republic City
+          </div>
+          <div class="plot">Korra, the new Avatar, travels to Republic city to start her Airbending training.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E01%20-%20Welcome%20to%20Republic%20City-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Welcome to Republic City
+          </div>
+          <div class="plot">Korra, the new Avatar, travels to Republic city to start her Airbending training.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E01%20-%20Welcome%20to%20Republic%20City-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Welcome to Republic City
+          </div>
+          <div class="plot">Korra, the new Avatar, travels to Republic city to start her Airbending training.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E01%20-%20Welcome%20to%20Republic%20City-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Welcome to Republic City
+          </div>
+          <div class="plot">Korra, the new Avatar, travels to Republic city to start her Airbending training.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x1 - Welcome to Republic City
+          </div>
+          <div class="plot">Korra, the new Avatar, travels to Republic city to start her Airbending training.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E01%20-%20Welcome%20to%20Republic%20City-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Welcome to Republic City
+          </div>
+          <div class="plot">Korra, the new Avatar, travels to Republic city to start her Airbending training.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E02%20-%20A%20Leaf%20in%20the%20Wind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - A Leaf in the Wind
+          </div>
+          <div class="plot">Against Tenzin's prohibition, a frustrated Korra sneaks out to visit the pro-bending sports arena.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E02%20-%20A%20Leaf%20in%20the%20Wind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - A Leaf in the Wind
+          </div>
+          <div class="plot">Against Tenzin's prohibition, a frustrated Korra sneaks out to visit the pro-bending sports arena.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E02%20-%20A%20Leaf%20in%20the%20Wind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - A Leaf in the Wind
+          </div>
+          <div class="plot">Against Tenzin's prohibition, a frustrated Korra sneaks out to visit the pro-bending sports arena.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E02%20-%20A%20Leaf%20in%20the%20Wind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - A Leaf in the Wind
+          </div>
+          <div class="plot">Against Tenzin's prohibition, a frustrated Korra sneaks out to visit the pro-bending sports arena.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E02%20-%20A%20Leaf%20in%20the%20Wind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - A Leaf in the Wind
+          </div>
+          <div class="plot">Against Tenzin's prohibition, a frustrated Korra sneaks out to visit the pro-bending sports arena.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E02%20-%20A%20Leaf%20in%20the%20Wind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - A Leaf in the Wind
+          </div>
+          <div class="plot">Against Tenzin's prohibition, a frustrated Korra sneaks out to visit the pro-bending sports arena.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x3 - The Revelation
+          </div>
+          <div class="plot">Korra attempts to infiltrate the Equalist movement and learn more about its mysterious leader.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E03%20-%20The%20Revelation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Revelation
+          </div>
+          <div class="plot">Korra attempts to infiltrate the Equalist movement and learn more about its mysterious leader.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E04%20-%20The%20Voice%20in%20the%20Night-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Voice in the Night
+          </div>
+          <div class="plot">Korra becomes part of Councilman Tarrlok's task force which aims to rid Republic City of the Equalists.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E05%20-%20The%20Spirit%20of%20Competition-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Spirit of Competition
+          </div>
+          <div class="plot">As Asami steals Mako's heart, Korra struggles to express her feelings for Mako and also at the same time Bolin tries to win Korra's heart by being brave enough to ask Korra to go out with him. The tension gets higher as the Pro bending tournament starts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E06%20-%20And%20the%20Winner%20Is-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - And the Winner Is...
+          </div>
+          <div class="plot">Korra and the Fire Ferrets are in the pro-bending championship, but will the Equalists allow the game to go on?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E07%20-%20The%20Aftermath-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Aftermath
+          </div>
+          <div class="plot">Korra suspects that an ally is working with the Equalists.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E08%20-%20When%20Extremes%20Meet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - When Extremes Meet
+          </div>
+          <div class="plot">Korra faces off with Councilman Tarrlok as Equalist activity continues to rise in Republic City.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E09%20-%20Out%20of%20the%20Past-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Out of the Past
+          </div>
+          <div class="plot">After being imprisoned by Tarrlok, Korra attempts to analyze the mysterious visions she has been having. Meanwhile, Tenzin, Lin, Mako, Bolin and Asami search for Korra, having been given false information by Tarrlok.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E10%20-%20Turning%20the%20Tides-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Turning the Tides
+          </div>
+          <div class="plot">The Equalists begin their attack on Republic City.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E11%20-%20Skeletons%20in%20the%20Closet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Skeletons in the Closet
+          </div>
+          <div class="plot">Korra goes undercover as the war between benders and non-benders intensifies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S01E12%20-%20Endgame-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Endgame
+          </div>
+          <div class="plot">The duel between Amon and Korra - will Korra be powerful enough to beat Amon?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E01%20-%20Rebel%20Spirit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Rebel Spirit
+          </div>
+          <div class="plot">Korra struggles to find a deeper connection with the Spirit World as she and the gang attend a Southern Water Tribe festival.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E02%20-%20The%20Southern%20Lights-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - The Southern Lights
+          </div>
+          <div class="plot">Korra and Chief Unalaq journey into a dangerous maelstrom and find a source of great spiritual power.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E03%20-%20Civil%20Wars%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Civil Wars (1)
+          </div>
+          <div class="plot">While tensions flare between the Northern and Southern Water Tribes, Korra struggles to remain neutral.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E04%20-%20Civil%20Wars%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Civil Wars (2)
+          </div>
+          <div class="plot">When Korra's parents are wrongfully arrested, Korra fights for their freedom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E05%20-%20Peacekeepers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Peacekeepers
+          </div>
+          <div class="plot">When the President of the United Republic refuses to help Korra, she decides to take matters into her own hands.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E06%20-%20The%20Sting-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - The Sting
+          </div>
+          <div class="plot">When Triad activity threatens to put Future Industries out of business, Mako performs an investigation and discovers a much bigger conspiracy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E07%20-%20Beginnings%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Beginnings (1)
+          </div>
+          <div class="plot">Korra learns about the epic and mythic origins of the first Avatar.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E08%20-%20Beginnings%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Beginnings (2)
+          </div>
+          <div class="plot">Korra delves deeper into the Avatar's past and realizes what she must do in order to restore balance between the physical and spirit worlds.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E09%20-%20The%20Guide-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - The Guide
+          </div>
+          <div class="plot">Korra seeks Tenzin's help to enter the Spirit World for the first time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E10%20-%20A%20New%20Spiritual%20Age-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - A New Spiritual Age
+          </div>
+          <div class="plot">Korra enters the Spirit World and struggles with the Avatar's relationship with the spirits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E11%20-%20Night%20of%20a%20Thousand%20Stars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Night of a Thousand Stars
+          </div>
+          <div class="plot">When President Raiko is attacked, Bolin saves the day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E12%20-%20Harmonic%20Convergence-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Harmonic Convergence
+          </div>
+          <div class="plot">Korra and company attempt to close the spirit portals before Harmonic Convergence.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E13%20-%20Darkness%20Falls-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Darkness Falls
+          </div>
+          <div class="plot">Korra discovers a new twist in Unalaq's evil plan. Meanwhile, Tenzin realizes he must face his own demons in order to save his daughter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S02E14%20-%20Light%20in%20the%20Dark-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - Light in the Dark
+          </div>
+          <div class="plot">Korra discovers a way she may be able to defeat the ultimate dark spirit and save the world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S03E01%20-%20A%20Breath%20of%20Fresh%20Air-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - A Breath of Fresh Air
+          </div>
+          <div class="plot">After the events of Harmonic Convergence, Korra has her hands full with trying to remove all the spirit vines that have overgrown Republic City. Her lack of success strains her relationship with President Raiko and brings down her approval rate among the city's populace. When airbenders are suddenly popping up across the world and causing more trouble for the city, President Raiko demands Korra to leave the city, which she takes as an opportunity to travel the world to find the new airbenders. Meanwhile, a dangerous criminal uses his newfound airbending abilities to escape.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S03E02%20-%20Rebirth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Rebirth
+          </div>
+          <div class="plot">Tenzin, Jinora, and Team Avatar travel toward Ba Sing Se in order to find the new airbenders. Stopping at various villages along the way, they hope to recruit them in order to rebuild the Air Nation, though with little success as they were only able to convince a young boy named Kai to join them. Meanwhile, Zaheer travels the four nations to free his fellow criminals from their prison. After freeing Ghazan and Ming-Hua, they set course for the Northern Water Tribe to free their last member, P'Li. Upon learning of their escape, Lord Zuko sets course for the Northern Water Tribe himself in an attempt to stop them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S03E03%20-%20The%20Earth%20Queen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - The Earth Queen
+          </div>
+          <div class="plot">Team Avatar arrives in Ba Sing Se. While Korra has an audience with the Earth Queen, the others notice that Kai has gone missing, prompting Mako and Bolin to go look for him. They track him down, but he manages to shake them in the monorail, which takes the brothers to the Lower Ring, where they eventually run into their family from their father's side. Meanwhile, Korra and Asami set course for a small village to collect taxes as a favor to the Queen. After getting her money, the Queen brushes off Korra's request for help in tracking down the airbenders, leaving the Avatar to storm out of the palace. In the city, Kai found himself arrested by the Dai Li and subsequently conscripted in the Earth Queen's first airbending regiment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S03E04%20-%20In%20Harm%27s%20Way-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - In Harm's Way
+          </div>
+          <div class="plot">Lord Zuko, Tonraq, Desna, and Eska try to prevent Zaheer from freeing the last prisoner, P'Li, while Korra discovers that the Earth Queen is forcing all the airbenders in Ba Sing Se to join her army. Team Avatar thus devises a plan to free them from the monarch's captivity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S03E05%20-%20The%20Metal%20Clan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - The Metal Clan
+          </div>
+          <div class="plot">Korra's quest leads her and her friends to the metal city of Zaofu.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S03E06%20-%20Old%20Wounds-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Old Wounds
+          </div>
+          <div class="plot">Per Su's suggestion, Korra begins to learn metalbending. Opal admits her reluctance to leave Zaofu due to her obligations to her family while Bolin deals with his fear of learning how to bend metal. Meanwhile, Lin faces her past during an acupuncture sessions, forcing her to relive the circumstances which led to her and Su's strained relationship. After a cathartic release of her repressed emotions, Lin makes amends with her sister as well as Opal, who she convinces to travel to the Northern Air Temple to train with Tenzin. Elsewhere, Zaheer and his group determine Korra's whereabouts shortly after escaping Republic City, deducing that she was under the Metal Clan's protection in Zaofu.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S03E07%20-%20Original%20Airbenders-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Original Airbenders
+          </div>
+          <div class="plot">Despite Bumi's bad attitude, Tenzin attempts to train the new members of the Air Nation with little success. Things become more complicated for the airbending master as Jinora, with Kai's influence, begins to exert her independence and demand her airbending tattoos. The new airbenders are tested when they are forced to face a group of bison rustlers who have taken Jinora and Kai along with several bison calves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S03E08%20-%20The%20Terror%20Within-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - The Terror Within
+          </div>
+          <div class="plot">Zaheer and his gang try to kidnap Korra.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S03E09%20-%20The%20Stakeout-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - The Stakeout
+          </div>
+          <div class="plot">Korra learns the truth about the group that is planning to destroy her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S03E10%20-%20Long%20Live%20the%20Queen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Long Live the Queen
+          </div>
+          <div class="plot">Korra and Asami are stranded in the desert. The members of The Red Lotus negotiate with the Earth Queen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S03E11%20-%20The%20Ultimatum-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - The Ultimatum
+          </div>
+          <div class="plot">Mako and Bolin deliver an ominous message from Zaheer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S03E12%20-%20Enter%20the%20Void-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Enter the Void
+          </div>
+          <div class="plot">When other plans fail, Korra suggests a brave idea to take on the Red Lotus and save the Air Nation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S03E13%20-%20Venom%20of%20the%20Red%20Lotus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Venom of the Red Lotus
+          </div>
+          <div class="plot">Korra battles Zaheer, while Bolin and Mako duel Ghazan and Ming-Hua. The captive members of the Air Nation escape and band together to help Korra.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S04E01%20-%20After%20All%20These%20Years-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - After All These Years
+          </div>
+          <div class="plot">It's been three years since Zaheer poisoned Korra and the members of Team Avatar have moved on with their lives; Kai and Opal help a struggling Earth Kingdom town.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S04E02%20-%20Korra%20Alone-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Korra Alone
+          </div>
+          <div class="plot">Korra's three-year journey of healing takes her to unexpected places.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S04E03%20-%20The%20Coronation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - The Coronation
+          </div>
+          <div class="plot">Prince Wu's big day is ruined by Kuvira; Korra thinks she may have found the key to a full recovery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S04E04%20-%20The%20Calling-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - The Calling
+          </div>
+          <div class="plot">While the young airbenders look far and wide for Korra, Ikki is briefly captured by two Earth Empire soldiers. Based on what they say, Ikki leads the trio to the swamp. There, Korra is still haunted by visions of being hurt by her past enemies, but manages to connect to the siblings through the great banyan-grove tree's roots. After they beg her to resume her Avatar duties to face Kuvira, Toph's advice helps Korra to let go of her fears, bend the rest of the poison out of herself and re-enter the Avatar State.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S04E05%20-%20Enemy%20at%20the%20Gates-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Enemy at the Gates
+          </div>
+          <div class="plot">Kuvira threatens Zaofu; Bolin is caught in the middle of the bad blood between Su Beifong and Kuvira.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S04E06%20-%20The%20Battle%20of%20Zaofu-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - The Battle of Zaofu
+          </div>
+          <div class="plot">Korra returns to her role as the Avatar, but is she really ready for action? Bolin and Varrick break from Kuvira's army.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S04E07%20-%20Reunion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Reunion
+          </div>
+          <div class="plot">Korra returns to Republic City and Team Avatar faces their first mission together in three years when Prince Wu goes missing; Bolin and Varrick are on the lam.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S04E08%20-%20Remembrances-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Remembrances
+          </div>
+          <div class="plot">In a clip show episode, Mako, Korra, and Bolin recollect their past. Mako tells Wu about his romantic entanglements and eventual breakup with Asami and Korra. Korra talks to Asami about her confrontations with Amon, Unalaq, Vaatu, and Zaheer. Varrick presents Bolin's life to the Earth Empire refugees in the style of an action film in which Bolin defeats all of Korra's previous enemies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S04E09%20-%20Beyond%20the%20Wilds-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Beyond the Wilds
+          </div>
+          <div class="plot">The spirit vines in Republic City start abducting people and it's up to Korra to figure out why.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S04E10%20-%20Operation%20Beifong-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Operation Beifong
+          </div>
+          <div class="plot">Bolin helps Opal and Lin save the Beifongs from Kuvira. Korra visits the Spirit World looking for help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S04E11%20-%20Kuvira%27s%20Gambit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Kuvira's Gambit
+          </div>
+          <div class="plot">Korra and Team Avatar try to stop Kuvira from moving against Republic City; Kuvira unveils a deadly new weapon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S04E12%20-%20Day%20of%20the%20Colossus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - Day of the Colossus
+          </div>
+          <div class="plot">Team Avatar clashes with Kuvira on the streets of Republic City; Pema and Prince Wu help evacuate innocent citizens.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Legend%20of%20Korra%20-%20S04E13%20-%20The%20Last%20Stand-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - The Last Stand
+          </div>
+          <div class="plot">The fate of the Earth Kingdom and the Avatar's life is at stake, when Korra comes face to face with Kuvira.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

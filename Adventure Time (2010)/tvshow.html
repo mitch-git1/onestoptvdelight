@@ -1,0 +1,3852 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Adventure Time
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Adventure Time</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Adventure%20Time%20%282010%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S00E01%20-%20Adventure%20Time%20%28Pilot%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - Adventure Time (Pilot)
+          </div>
+          <div class="plot">Princess Bubblegum is imprisoned by the Ice King. Jake and Finn battle their way past the Iceclops, Snow Golem, and other monsters that inhabit the Ice Kingdom to rescue her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S00E02%20-%20The%20Wand-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x2 - The Wand
+          </div>
+          <div class="plot">Finn and Jake come across a magic wand, but when the wand becomes uncontrollable, they must team up with the Ice King to stop it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S00E03%20-%20How%20an%20Idea%20Becomes%20Adventure%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x3 - How an Idea Becomes Adventure Time
+          </div>
+          <div class="plot">Pen Ward, Adam Muto and Kent Osborne discuss their experiences working on Adventure Time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S00E04%20-%20All%27s%20Well%20That%20Rats%20Swell-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x4 - All's Well That Rats Swell
+          </div>
+          <div class="plot">BMO discovers a rogue rat in the tree house's flour and attempts to drive off the creature.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S00E05%20-%20Have%20You%20Seen%20the%20Muffin%20Mess-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x5 - Have You Seen the Muffin Mess
+          </div>
+          <div class="plot">Jake and Finn assist Princess Bubblegum in attempting to stop a muffin-based plague.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S00E06%20-%20Sow%2C%20Do%20You%20Like%20Them%20Apples-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x6 - Sow, Do You Like Them Apples
+          </div>
+          <div class="plot">Ice King and Marceline are hungry for a snack.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S00E07%20-%20The%20Gift%20That%20Reaps%20Giving-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x7 - The Gift That Reaps Giving
+          </div>
+          <div class="plot">Death tries to make a mixtape for his girlfriend, Life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S00E08%20-%20Good%20Jubies%20The%20Making%20of%20Bad%20Jubies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x8 - Good Jubies: The Making of Bad Jubies
+          </div>
+          <div class="plot">A behind-the-scenes look at the making of Season 7, Episode 20 &quot;Bad Jubies&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S00E09%20-%20Frog%20Seasons%20Spring-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x9 - Frog Seasons: Spring
+          </div>
+          <div class="plot">Finn and Jake are compelled to follow a frog carrying a crown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S00E10%20-%20Frog%20Seasons%20Summer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x10 - Frog Seasons: Summer
+          </div>
+          <div class="plot">Finn and Jake are in for a surprise when they force the hand of fate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S00E11%20-%20Frog%20Seasons%20Autumn-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x11 - Frog Seasons: Autumn
+          </div>
+          <div class="plot">Finn and Jake discover the power held by the crown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S00E12%20-%20Frog%20Seasons%20Winter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x12 - Frog Seasons: Winter
+          </div>
+          <div class="plot">Finn and Jake follow the frog into the Ice Kingdom. Will they finally bear witness to the purpose of the crown?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S00E14%20-%20Diamonds%20and%20Lemons-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x14 - Diamonds and Lemons
+          </div>
+          <div class="plot">Finn and his friends experience setbacks and creative triumphs in a fantastic new vision of Ooo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x1 - Slumber Party Panic
+          </div>
+          <div class="plot">Finn and Princess Bubblegum must protect the Candy Kingdom from a horde of candy zombies they accidentally created.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x2 - Trouble in Lumpy Space
+          </div>
+          <div class="plot">Finn must travel to Lumpy Space to find a cure that will save Jake, who was accidentally bitten by Lumpy Space Princess at a tea party.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x3 - Prisoners of Love
+          </div>
+          <div class="plot">When the Ice King kidnaps a number of princesses he sees as potential brides, Finn and Jake team with the prisoners to set everybody free.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x4 - Tree Trunks
+          </div>
+          <div class="plot">Finn and Jake join Tree Trunks in search for the rare Crystal Gem Apple, but question whether Tree Trunks has what it takes to adventure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x5 - The Enchiridion!
+          </div>
+          <div class="plot">Finn and Jake go on a quest for a magical book that would prove them worthy of being righteous heroes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x6 - The Jiggler
+          </div>
+          <div class="plot">A jiggly creature attracted by Finn's auto-tuned singing follows Finn and Jake home but soon feels ill effects of separation from its family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x7 - Ricardio the Heart Guy
+          </div>
+          <div class="plot">When a Heart Guy named Ricardio comes to Candy Kingdom, Finn gets really jealous and finds a way to get him out of the Land of Ooo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x8 - Business Time
+          </div>
+          <div class="plot">When Finn and Jake discover a group of businessmen frozen in an iceberg, the duo thaws them and hires them to help with their adventures.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x9 - My Two Favorite People
+          </div>
+          <div class="plot">Jake's plan to spend time with both Lady Rainicorn and Finn backfires.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x10 - Memories of Boom Boom Mountain
+          </div>
+          <div class="plot">Finn reflects on an upsetting experience in his past and pledges to help everyone in town, but this proves more difficult than imagined.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x11 - Wizard
+          </div>
+          <div class="plot">Finn and Jake temporarily get magic powers from an evil wizard, but are tricked into helping stop a comet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x12 - Evicted!
+          </div>
+          <div class="plot">Finn and Jake search the land of Ooo for a new home after Marceline claims the duo's treehouse as her own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x13 - City of Thieves
+          </div>
+          <div class="plot">Finn and Jake go off to face a thief king who has been stealing from little girls.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S01E14%20-%20The%20Witch%27s%20Garden-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - The Witch's Garden
+          </div>
+          <div class="plot">Finn and Jake consider breaking up after a witch strips Jake of his powers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S01E15%20-%20What%20Is%20Life-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - What Is Life?
+          </div>
+          <div class="plot">Finn brings a pie-throwing robot to life, but the machine begins to long for a more fulfilling existence.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S01E16%20-%20Ocean%20of%20Fear-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Ocean of Fear
+          </div>
+          <div class="plot">Finn struggles to overcome his fear of the ocean.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S01E17%20-%20When%20Wedding%20Bells%20Thaw-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - When Wedding Bells Thaw
+          </div>
+          <div class="plot">The Ice King gets married but not before he convinces Finn and Jake to throw him a manlorette party.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S01E18%20-%20Dungeon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Dungeon
+          </div>
+          <div class="plot">Finn's headstrong decision to explore a dungeon in defiance of Jake's warnings leads to a dangerous escapade.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S01E19%20-%20The%20Duke-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - The Duke
+          </div>
+          <div class="plot">Finn must tell the truth when he accidentally turns Princess Bubblegum bald and green and blames the Duke of Nuts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S01E20%20-%20Freak%20City-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Freak City
+          </div>
+          <div class="plot">After being transformed into a foot, Finn joins forces with a band of misfits to make things right.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S01E21%20-%20Donny-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - Donny
+          </div>
+          <div class="plot">Finn and Jake try to help an obnoxious grass ogre named Donny develop better social skills, only to find out Donny's jerky behavior protects the house people from the why-wolves, which eat the house people.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S01E22%20-%20Henchman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Henchman
+          </div>
+          <div class="plot">After seeing Marceline the vampire queen torment an elderly henchman, Finn steps in to be her new henchman, doing whatever he is told to do.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S01E23%20-%20Rainy%20Day%20Daydream-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - Rainy Day Daydream
+          </div>
+          <div class="plot">Stuck inside the treehouse due to a knife storm, Finn and Jake use their imagination to pass the time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S01E24%20-%20What%20Have%20You%20Done-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - What Have You Done?
+          </div>
+          <div class="plot">Finn and Jake capture the Ice King as their prisoner, but feel guilty when unable to explain the wrongs he committed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S01E25%20-%20His%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x25 - His Hero
+          </div>
+          <div class="plot">The great warrior Billy inspires Finn and Jake to practice nonviolence, but the duo finds it difficult to resist old ways.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S01E26%20-%20Gut%20Grinder-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - Gut Grinder
+          </div>
+          <div class="plot">When the Fluffy People's gold has been devoured by a culprit only known as &quot;The Gut Grinder&quot;, Finn and Jake team up to find him with his tracks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x1 - It Came from the Nightosphere
+          </div>
+          <div class="plot">Marceline's evil father goes on a soul-sucking rampage after Finn and Marceline accidentally release him from the Nightosphere.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x2 - The Eyes
+          </div>
+          <div class="plot">Finn and Jake try to rid themselves of a weird horse that creeps them out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x3 - Loyalty to the King
+          </div>
+          <div class="plot">Finn and Jake are excited to meet the Nice King who has come to Ooo. They soon realize that he looks suspiciously like someone else they know; the Ice King.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x4 - Blood Under the Skin
+          </div>
+          <div class="plot">When Finn gets a splinter on his finger, he wants to get the best armor. In order to receive it, he must go on a quest to get the Magical Armor of Zelderon and survive one embarrassing situation after another.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x5 - Storytelling
+          </div>
+          <div class="plot">Jake is sick and demands to hear a good story full of romance, fighting and suspense.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x6 - Slow Love
+          </div>
+          <div class="plot">Finn and Jake agree to help a snail named Snorlock find a girlfriend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x7 - Power Animal
+          </div>
+          <div class="plot">Finn is captured by gnomes who want to use his energy to power their infernal machines, and it's up to Jake to stay focused and rescue him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x8 - Crystals Have Power
+          </div>
+          <div class="plot">Jake takes a pledge of nonviolence just before Finn is kidnapped by outlaws from the crystalline dimension.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x9 - The Other Tarts
+          </div>
+          <div class="plot">Finn choses to cross the Desert of Doom to deliver the royal tarts to the annual back rubbing ceremony.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x10 - To Cut a Woman's Hair
+          </div>
+          <div class="plot">A tree witch demands a lock of princess hair or else Jake will be sucked into her bottomless bottom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x11 - The Chamber of Frozen Blades
+          </div>
+          <div class="plot">Whilst the Ice King goes out to take Gunther to the hospital, Finn and Jake decide to sneak inside his lair and flex their ninja skills.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x12 - Her Parents
+          </div>
+          <div class="plot">Jake's relationship with Lady Rainicorn is in danger when he promises to meet with her parents, as both species had a long history of war with each other. However, thanks to Jake's shape-shifting powers, they mistake the dog as one of their own, but for how long?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x13 - The Pods
+          </div>
+          <div class="plot">Finn and Jake discover a box containing three beans. Planting them causes three pods to grow. Two of them are good and one is evil, but which is which?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S02E14%20-%20The%20Silent%20King-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - The Silent King
+          </div>
+          <div class="plot">After defeating a evil king of goblins, Finn finds himself crowned as their new king. Unfortunately, he's unable to do anything for them due to the rules of the previous king including defending the goblins from the previous king.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S02E15%20-%20The%20Real%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - The Real You
+          </div>
+          <div class="plot">Finn has to give a speech at Princess Bubblegum's science barbecue and seeks a quick fix to make himself smarter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S02E16%20-%20Guardians%20of%20Sunshine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - Guardians of Sunshine
+          </div>
+          <div class="plot">Finn and Jake get sucked into one of BMO's games and they have to defeat all three of his bosses.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S02E17%20-%20Death%20in%20Bloom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Death in Bloom
+          </div>
+          <div class="plot">After killing Princess Bubblegum's plant when left to take care of it, Finn and Jake make a trip to the Land of the Dead in order to get it's soul back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S02E18%20-%20Susan%20Strong-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - Susan Strong
+          </div>
+          <div class="plot">Finn is excited to discover what appears to be a tribe of humans living underground near the Candy Kingdom, but gets more than he expected when he tries to teach one of them about the surface world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S02E19%20-%20Mystery%20Train-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Mystery Train
+          </div>
+          <div class="plot">Wanting to surprise Finn on his birthday, Jake takes Finn on a train, where they get wrapped up in a murder mystery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S02E20%20-%20Go%20with%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - Go with Me
+          </div>
+          <div class="plot">Marceline and Jake give Finn advice so he can ask Princess Bubblegum to see a movie with him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S02E21%20-%20Belly%20of%20the%20Beast-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - Belly of the Beast
+          </div>
+          <div class="plot">In order to cure the stomach ache of a giant, Finn and Jake must break up a party happening in his belly.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S02E22%20-%20The%20Limit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - The Limit
+          </div>
+          <div class="plot">On a mission to save soldiers of the Hot Dog Princess, Finn and Jake go inside a massive maze where wishes can be granted and where Jake's stretching powers are pushed to their limits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S02E23%20-%20Video%20Makers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x23 - Video Makers
+          </div>
+          <div class="plot">After discovering government warnings prior to movies for their film club, Finn and Jake decide to make their own, but get into a fight over the direction of their film.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S02E24%20-%20Mortal%20Folly-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x24 - Mortal Folly
+          </div>
+          <div class="plot">When the Lich is accidentally freed from its amber prison in Princess Bubblegum's Castle, Finn and Jake must head forth to stop it from regaining its full power, all while being pestered by the Ice King to give him their blessing to marry Princess Bubblegum.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S02E25%20-%20Mortal%20Recoil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x25 - Mortal Recoil
+          </div>
+          <div class="plot">Princess Bubblegum recovers from being dropped in the Well of Power by the Ice King; however, she is altered and her condition leads to an unlikely final showdown with one of the greatest evils in order to save all life in Ooo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E01%20-%20Conquest%20of%20Cuteness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Conquest of Cuteness
+          </div>
+          <div class="plot">Finn and Jake must defend their home from the Cuties, a tiny race who believe themselves to be evil, destructive invaders.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E02%20-%20Morituri%20te%20Salutamus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Morituri te Salutamus
+          </div>
+          <div class="plot">The duo choose to partake in gladiatorial combat against the Fight King's ghost warriors, but Finn succumbs to bloodlust while Jake becomes obsessed in keeping a cool morale.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E03%20-%20Memory%20of%20a%20Memory-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Memory of a Memory
+          </div>
+          <div class="plot">Finn and Jake enter Marceline's mind to awaken her from a sleep spell she had cast on herself, without knowing that they are being tricked by a person from her past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E04%20-%20Hitman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Hitman
+          </div>
+          <div class="plot">The grounded Ice King hires a fire-manipulating hitman to attack Finn and Jake, without realizing the potentially deadly consequences.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E05%20-%20Too%20Young-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Too Young
+          </div>
+          <div class="plot">The Earl of Lemongrab takes over the Candy Kingdom due to Princess Bubblegum's age regression, forcing her and Finn to try and get rid of him even if it means a life-altering decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E06%20-%20The%20Monster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - The Monster
+          </div>
+          <div class="plot">The king and queen of Lumpy Space ask Finn and Jake to bring their daughter back home. At the same time, they attempt to stop a &quot;monster&quot; from destroying a village.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E07%20-%20Still-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Still
+          </div>
+          <div class="plot">Finn and Jake are literally unable to move and are at the mercy of the Ice King.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E08%20-%20Wizard%20Battle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Wizard Battle
+          </div>
+          <div class="plot">Finn and Jake enter a competition for wizards in disguise so they can prevent Ice King from winning the grand prize: a kiss from Princess Bubblegum.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E09%20-%20Fionna%20and%20Cake-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Fionna and Cake
+          </div>
+          <div class="plot">In this gender-swapped episode, Fionna and Cake must battle the evil Ice Queen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E10%20-%20What%20Was%20Missing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - What Was Missing
+          </div>
+          <div class="plot">Finn and his friends must come together as a genuine band in order to open the gate of the Door Lord and get back their taken items.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E11%20-%20Apple%20Thief-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Apple Thief
+          </div>
+          <div class="plot">When Tree Trunks's apples go missing, she, Finn and Jake descend into the dark side of the Candy Kingdom in order to find the thief.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E12%20-%20The%20Creeps-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - The Creeps
+          </div>
+          <div class="plot">Finn and Jake receive an invitation to a masquerade dinner. It turns into a whodunit as guests start to meet their demise.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E13%20-%20From%20Bad%20to%20Worse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - From Bad to Worse
+          </div>
+          <div class="plot">When another plague of Candy Zombies arises and Princess Bubblegum is among the undead, Finn and his friends are in a race against time to figure out how to stop it...without making things even worse!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E14%20-%20Beautopia-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - Beautopia
+          </div>
+          <div class="plot">Susan Strong asks Finn and Jake to help fight off the Glub Glubs in the sewers below to regain her people's home in Beautopia.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E15%20-%20No%20One%20Can%20Hear%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - No One Can Hear You
+          </div>
+          <div class="plot">Finn awakens after an accident to find the Candy Kingdom citizens mysteriously gone and Jake acting crazier than usual.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E16%20-%20Jake%20vs.%20Me-Mow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - Jake vs. Me-Mow
+          </div>
+          <div class="plot">Finn and Jake take on a request to protect Wildberry Princess from an unknown assassin. The assassin turns out to be a tiny cat assassin called Me-Mow, who ends up bribing Jake by poisoning him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E17%20-%20Thank%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - Thank You
+          </div>
+          <div class="plot">The Snow Golem visits the Fire Kingdom and finds an unlikely follower.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E18%20-%20The%20New%20Frontier-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x18 - The New Frontier
+          </div>
+          <div class="plot">Jake dreams about his death, and Finn takes action when events from the dream start to come true.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E19%20-%20Holly%20Jolly%20Secrets%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x19 - Holly Jolly Secrets (1)
+          </div>
+          <div class="plot">Finn and Jake find the Ice King's video diary and have a chance to unearth his secrets.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E20%20-%20Holly%20Jolly%20Secrets%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x20 - Holly Jolly Secrets (2)
+          </div>
+          <div class="plot">The Ice King summons an army of snowmen to recover the secret tapes Finn and Jake are watching. They must work against the clock to find out the secrets enclosed within.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E21%20-%20Marceline%27s%20Closet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x21 - Marceline's Closet
+          </div>
+          <div class="plot">Finn and Jake play Cloud Hunt in Marceline's house, but they get trapped in her closet after she comes home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E22%20-%20Paper%20Pete-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x22 - Paper Pete
+          </div>
+          <div class="plot">Library books seek help from Finn and Jake to save them from the evil Moldari.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E23%20-%20Another%20Way-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x23 - Another Way
+          </div>
+          <div class="plot">Cyclops tears may heal Finn and Jake's broken toes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E24%20-%20Ghost%20Princess-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x24 - Ghost Princess
+          </div>
+          <div class="plot">Finn and Jake play detective and try to solve Ghost Princess' murder.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E25%20-%20Dad%27s%20Dungeon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x25 - Dad's Dungeon
+          </div>
+          <div class="plot">Jake's dad presents a strange challenge to the guys when he appears to them in a holographic message, telling them about a dungeon he made for them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S03E26%20-%20Incendium-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x26 - Incendium
+          </div>
+          <div class="plot">Jake embarks on a solo mission to help a broken-hearted Finn.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E01%20-%20Hot%20to%20the%20Touch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Hot to the Touch
+          </div>
+          <div class="plot">Finn develops a crush on Flame Princess and tries to get to know her, which proves difficult due to her destructive power.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E02%20-%20Five%20Short%20Graybles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Five Short Graybles
+          </div>
+          <div class="plot">Follow as 5 stories intertwine together, can you find the connection?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E03%20-%20Web%20Weirdos-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Web Weirdos
+          </div>
+          <div class="plot">When Finn gets trapped in a giant spider web, he ends up playing marriage counselor to a couple of grumpy arachnids.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E04%20-%20Dream%20of%20Love-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Dream of Love
+          </div>
+          <div class="plot">Tree Trunks is courted by an oinking suitor, but much to Jake&rsquo;s dismay, this interferes with her baking habits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E05%20-%20Return%20to%20the%20Nightosphere-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Return to the Nightosphere
+          </div>
+          <div class="plot">Marceline&rsquo;s dad banishes Finn and Jake to the Nightosphere, and it stinks. Literally.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E06%20-%20Daddy%27s%20Little%20Monster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Daddy's Little Monster
+          </div>
+          <div class="plot">Finn and Jake attempt to rescue Marceline and find out what's making her behave so strangely.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E07%20-%20In%20Your%20Footsteps-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - In Your Footsteps
+          </div>
+          <div class="plot">A bear cozies up to the guys, but his true intentions may be hidden.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E08%20-%20Hug%20Wolf-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Hug Wolf
+          </div>
+          <div class="plot">Finn goes through a transformation after a run-in with a hug wolf.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E09%20-%20Princess%20Monster%20Wife-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Princess Monster Wife
+          </div>
+          <div class="plot">Princesses lose body parts under mysterious circumstances.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E10%20-%20Goliad-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Goliad
+          </div>
+          <div class="plot">Battling with her new realization of her own mortality, in a sleep deprived state Princess bubblegum creates her own heir to the throne. After meeting the heir, Finn and Jake decide to teach her the ways of the world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E11%20-%20Beyond%20This%20Earthly%20Realm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Beyond This Earthly Realm
+          </div>
+          <div class="plot">When Finn finds a porcelain lamb, it transports him into the spirit world and only the Ice King can help get him out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E12%20-%20Gotcha%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - Gotcha!
+          </div>
+          <div class="plot">In order to do research for her tell-all memoir about men, Lumpy Space Princess goes undercover working for Finn and Jake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E13%20-%20Princess%20Cookie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - Princess Cookie
+          </div>
+          <div class="plot">Finn and Jake are called to solve a Candy Kingdom hostage crisis when a rogue cookie takes over.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E14%20-%20Card%20Wars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x14 - Card Wars
+          </div>
+          <div class="plot">Finn and Jake play Card Quest, an epic game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E15%20-%20Sons%20of%20Mars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x15 - Sons of Mars
+          </div>
+          <div class="plot">Magic man has most of his power taken from him by his brother, in a fit of desperation, he swaps the way Jake and Himself look.
+
+Magic Mans brother takes Jake to Mars for punishment,
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E16%20-%20Burning%20Low-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x16 - Burning Low
+          </div>
+          <div class="plot">Princess Bubblegum may be jealous when Finn start hanging out with Flame Princess.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E17%20-%20BMO%20Noire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x17 - BMO Noire
+          </div>
+          <div class="plot">BMO tries to find Finn's sock.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E18%20-%20King%20Worm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x18 - King Worm
+          </div>
+          <div class="plot">Finn has a vivid dream that may be more than it seems.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E19%20-%20Lady%20%26%20Peebles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x19 - Lady &amp; Peebles
+          </div>
+          <div class="plot">Princess Bubblegum and Lady Rainicorn look for Finn and Jake, who are missing after a run-in with the Ice King.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E20%20-%20You%20Made%20Me%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x20 - You Made Me!
+          </div>
+          <div class="plot">When a creepy sleep-peeping Lemongrab upsets Princess Bubblegum with his creepy ways, Finn and Jake need to tend to some issues in the Outer Realm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E21%20-%20Who%20Would%20Win-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x21 - Who Would Win?
+          </div>
+          <div class="plot">The guys challenge a monster to a fight but end up battling each other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E22%20-%20Ignition%20Point-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x22 - Ignition Point
+          </div>
+          <div class="plot">Finn and Jake sneak into the Fire Kingdom to retrieve Fire Princess' scented candles and overhear a plot to assassinate the king.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E23%20-%20The%20Hard%20Easy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x23 - The Hard Easy
+          </div>
+          <div class="plot">Frog People seek protection from an evil lizard who's attacking their swamp.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E24%20-%20Reign%20of%20Gunters-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x24 - Reign of Gunters
+          </div>
+          <div class="plot">The Gunters cause chaos in Ooo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E25%20-%20I%20Remember%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x25 - I Remember You
+          </div>
+          <div class="plot">The Ice King and Marceline bond over song and memories.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S04E26%20-%20The%20Lich-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x26 - The Lich
+          </div>
+          <div class="plot">A visit from the Lich King sheds light on Ooo's secrets.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E01%20-%20Finn%20the%20Human-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x1 - Finn the Human
+          </div>
+          <div class="plot">Part 2 of a three-part episode. Finn and Jake chase the Lich through a dimensional portal and meet a wishmaster. After the Lich wishes that humanity never existed, Finn wishes that the Lich never existed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E02%20-%20Jake%20the%20Dog-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x2 - Jake the Dog
+          </div>
+          <div class="plot">Part 3 of a three-part episode. Finn and Jake chase the Lich through a dimensional portal and meet a wishmaster. After the Lich wishes that humanity never existed, Finn wishes that the Lich never existed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E03%20-%20Five%20More%20Short%20Graybles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x3 - Five More Short Graybles
+          </div>
+          <div class="plot">A series of short stories all centered around a common theme, hosted by a mysterious man named Cuber from the future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E04%20-%20Up%20a%20Tree-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x4 - Up a Tree
+          </div>
+          <div class="plot">The guys' game of catch goes awry when their throwing disc is lodged in a large tree.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E05%20-%20All%20the%20Little%20People-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - All the Little People
+          </div>
+          <div class="plot">Finn receives a bag full of miniature versions of his friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E06%20-%20Jake%20the%20Dad-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x6 - Jake the Dad
+          </div>
+          <div class="plot">Jake's a daddy, but being a father and keeping his rainicorn pups from killing themselves or each other is a lot harder than he imagined.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E07%20-%20Davey-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x7 - Davey
+          </div>
+          <div class="plot">Finn creates an alter ego, Davey. Davey soon begins to take over, and Jake is forced into action to get his old friend back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E08%20-%20Mystery%20Dungeon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x8 - Mystery Dungeon
+          </div>
+          <div class="plot">Ice King, NEPTR, Tree Trunks, Shelby, and Lemongrab are trapped inside a mysterious dungeon and must work together to free themselves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E09%20-%20All%20Your%20Fault-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x9 - All Your Fault
+          </div>
+          <div class="plot">Princess Bubblegum sends Finn and Jake to investigate a message of distress from the Earls of Lemongrab.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E10%20-%20Little%20Dude-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x10 - Little Dude
+          </div>
+          <div class="plot">Finn's hat comes to life and becomes evil after it is touched by a wizard. Finn, Jake, and the wizard track the hat down, and manage to turn the hat good.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E11%20-%20Bad%20Little%20Boy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x11 - Bad Little Boy
+          </div>
+          <div class="plot">The princesses tire of Ice King&rsquo;s crazy Fionna-and-Cake fan-fiction stories, so Marceline stops by the Ice Kingdom to show him how to properly write a story.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E12%20-%20Vault%20of%20Bones-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x12 - Vault of Bones
+          </div>
+          <div class="plot">When Flame Princess begins to doubt her evilness, Finn insists she is not evil and takes her on a journey into a dungeon to help her sort out her thoughts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E13%20-%20The%20Great%20Bird%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x13 - The Great Bird Man
+          </div>
+          <div class="plot">Xergiok, the former Goblin king who was deposed by Finn and Jake claims to have turned over a new leaf.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E14%20-%20Simon%20%26%20Marcy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x14 - Simon &amp; Marcy
+          </div>
+          <div class="plot">A look at what Ice King and Marceline were like 996 years ago.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E15%20-%20A%20Glitch%20Is%20a%20Glitch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x15 - A Glitch Is a Glitch
+          </div>
+          <div class="plot">The Ice King creates a computer virus that will delete everyone in Ooo except for him and Princess Bubblegum. Finn and Jake hack into the universal source code to destroy the virus.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E16%20-%20Puhoy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x16 - Puhoy
+          </div>
+          <div class="plot">While dwelling on a joke he told to Flame Princess, Finn finds himself trapped in a strange pillow world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E17%20-%20BMO%20Lost-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x17 - BMO Lost
+          </div>
+          <div class="plot">BMO makes his way home after being snatched by an eagle. On its way, BMO meets Bubble and a baby, and the three decide to journey home together.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E18%20-%20Princess%20Potluck-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x18 - Princess Potluck
+          </div>
+          <div class="plot">Ice King gets super jealous when he finds out that he wasn't invited to the Princess Potluck.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E19%20-%20James%20Baxter%20the%20Horse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x19 - James Baxter the Horse
+          </div>
+          <div class="plot">Finn and Jake stumble across a horse named James Baxter who has the ability to make sad people feel better.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E20%20-%20Shh%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x20 - Shh!
+          </div>
+          <div class="plot">Finn and Jake make a bet to see who can not talk the longest, and the two use signs to communicate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E21%20-%20The%20Suitor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x21 - The Suitor
+          </div>
+          <div class="plot">Peppermint Butler thinks that Bubblegum is working too hard in her lab, so he tries to get her a suitor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E22%20-%20The%20Party%27s%20Over%2C%20Isla%20de%20Se%C3%B1orita-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x22 - The Party's Over, Isla de Se&ntilde;orita
+          </div>
+          <div class="plot">After another one of his schemes fails, the Ice King decides to give up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E23%20-%20One%20Last%20Job-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x23 - One Last Job
+          </div>
+          <div class="plot">Jake Jr. gets involved with a group of troublemakers, and Jake is forced to reunite his old gang&mdash;which includes Tiffany who first appeared in the first season episode &quot;My Two Favorite People&quot;&mdash;to rescue his daughter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E24%20-%20Another%20Five%20More%20Short%20Graybles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x24 - Another Five More Short Graybles
+          </div>
+          <div class="plot">A series of short stories with a common theme, hosted by a mysterious man named Cuber from the future. In this entry, Finn and Jake build a time machine. Meanwhile, Princess Bubblegum helps Cinnamon Bun overcome his fear of the dark.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E25%20-%20Candy%20Streets-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x25 - Candy Streets
+          </div>
+          <div class="plot">Lumpy Space Princess is robbed, but before she is able to explain the details to Finn and Jake, she faints.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E26%20-%20Wizards%20Only%2C%20Fools-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x26 - Wizards Only, Fools
+          </div>
+          <div class="plot">After Starchy comes down with a cold and needs a magic cure, Finn, Jake, and Princess Bubblegum disguise themselves as wizards and sneak into Wizard City.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E27%20-%20Jake%20Suit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x27 - Jake Suit
+          </div>
+          <div class="plot">Jake gets upset with the amount of times that Finn uses his body as a suit of armor, so he convinces Finn to trade places with him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E28%20-%20Be%20More-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x28 - Be More
+          </div>
+          <div class="plot">BMO accidentally deletes his core system files. Finn and Jake disguise themselves as MOs to infiltrate the MO factory and save BMO from a memory wipe.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E29%20-%20Sky%20Witch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x29 - Sky Witch
+          </div>
+          <div class="plot">Marceline tracks the Sky Witch, but finds out that she may need Princess Bubblegum's help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E30%20-%20Frost%20%26%20Fire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x30 - Frost &amp; Fire
+          </div>
+          <div class="plot">Flame Princess and the Ice King fight each other, prompting Finn to have an interesting dream.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E31%20-%20Too%20Old-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x31 - Too Old
+          </div>
+          <div class="plot">Finn, Jake and Princess Bubblegum discover a talented mutant named Lemonhope at The Pageant of Mutants. Now they must find a way to free him from the lemongrabs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E32%20-%20Earth%20%26%20Water-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x32 - Earth &amp; Water
+          </div>
+          <div class="plot">Princess Bubblegum subjects Flame Princess to a series of tests to gauge Flame Princess' fiery tendencies. But when there's an emergency at the treehouse, and Princess Bubblegum leaves Cinnamon Bun to watch Flame Princess, her experiment might literally backfire in her face.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E33%20-%20Time%20Sandwich-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x33 - Time Sandwich
+          </div>
+          <div class="plot">Jake crafts the most delicious sandwich ever, but when Magic Man steals it, Finn must defy the laws of space and time to win back Jake's creation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E34%20-%20The%20Vault-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x34 - The Vault
+          </div>
+          <div class="plot">When Finn starts sleepwalking and dreaming about the Green Lady he filed away in his memory vault, Jake and BMO help him tap into his repressed memories to uncover a secret past. Who is the Green Lady? And how is she connected to Finn?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E35%20-%20Love%20Games-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x35 - Love Games
+          </div>
+          <div class="plot">Slime Princess needs a husband or else she'll lose the Slime Kingdom to her obnoxious sis. Finn steps in to save the day, but first they will need to win a series of Love Games to prove to Slime Princess's dad that they are really in love. This is definitely not what Finn signed up for!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E36%20-%20Dungeon%20Train-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x36 - Dungeon Train
+          </div>
+          <div class="plot">All aboard! Finn and Jake discover a train where every car is a dungeon filled with a new foe for Finn to fight. Jake quickly gets bored and wants to leave, but Finn is having the best time and doesn't want to leave... ever!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E37%20-%20Box%20Prince-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x37 - Box Prince
+          </div>
+          <div class="plot">Finn meets the Box Prince&mdash;a cat with a box on its back&mdash;and learns that the Box Kingdom has been taken over by an imposter. Finn must therefore help the real Box Prince reclaim the throne.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E38%20-%20Red%20Starved-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x38 - Red Starved
+          </div>
+          <div class="plot">Finn, Jake and Marceline are trapped in an underground cavern with no red in sight. If Marceline doesn't feed, like ASAP, she will turn into a vampiric beast and suck out all of Jake's blood! So, Finn heads off to explore the cave and find something red to satiate her until they can be rescued. But time is running out!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E39%20-%20We%20Fixed%20a%20Truck-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x39 - We Fixed a Truck
+          </div>
+          <div class="plot">Finn finds an old truck, and Jake calls Banana Man to help with the repairs. But when BMO stays up all night working on the truck, he hears on a spooky radio talk show that Princess Bubblegum is a reptilian replicant. Is it just another one of Starchy's crazy conspiracy theories, or a fact?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E40%20-%20Play%20Date-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x40 - Play Date
+          </div>
+          <div class="plot">Sick and tired of babysitting Ice King while the Ice Kingdom is being rebuilt, Finn and Jake call up an old friend to hang out with their annoying houseguest: Abracadaniel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E41%20-%20The%20Pit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x41 - The Pit
+          </div>
+          <div class="plot">Finn needs Lady Rainicorn's help to rescue Jake when he is kidnapped by Kee-Oth the Blood Demon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E42%20-%20James-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x42 - James
+          </div>
+          <div class="plot">Finn, Jake, and Princess Bubblegum are attacked by nasty goo monsters in the Desert of Wonders.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E43%20-%20Root%20Beer%20Guy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x43 - Root Beer Guy
+          </div>
+          <div class="plot">Root Beer Guy works a boring job during the day and tries to write mystery stories at night. But his life is about to change when he witnesses Finn and Jake kidnapping Princess Bubblegum! There's only one problem: no one believes Root Beer Guy...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E44%20-%20Apple%20Wedding-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x44 - Apple Wedding
+          </div>
+          <div class="plot">Tree Trunks and Mr. Pig are celebrating the wedding of the year.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E45%20-%20Blade%20of%20Grass-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x45 - Blade of Grass
+          </div>
+          <div class="plot">Finn and Jake decide it's time for Finn to get a new sword. Finn reluctantly buys a grass sword from a mysterious old man, but the sword turns out to be cursed! And unfortunately for our hero, all sales are final.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E46%20-%20Rattleballs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x46 - Rattleballs
+          </div>
+          <div class="plot">Finn practices his sword fighting skills at the candy junkyard, where he meets an old gumball robot named Rattleballs. To Finn's shock, he finds out he's not the master swordsman he thinks he is. What the what?! Finn begs Rattleballs to train him, but he soon discovers his mentor's deep, dark secret... a secret that will ultimately test Finn's loyalty to Princess Bubblegum.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E47%20-%20The%20Red%20Throne-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x47 - The Red Throne
+          </div>
+          <div class="plot">When Flame King breaks out of his prison and takes over the Flame Kingdom again, Flame Princess turns to the one person she believes she can trust... Finn! But will Finn be able to put his feelings for Flame Princess aside long enough to help her reclaim her throne?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E48%20-%20Betty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x48 - Betty
+          </div>
+          <div class="plot">After a magic spell backfires, the Ice King reverts back to Simon, and seeks help from Finn, Jake, and Marceline in order to get Betty, his former fianc&eacute;e, back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E49%20-%20Bad%20Timing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x49 - Bad Timing
+          </div>
+          <div class="plot">Love is in the air when Lumpy Space Princess reconnects with an old classmate, but will her jealousy get in the way of finding true love?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E50%20-%20Lemonhope%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x50 - Lemonhope (1)
+          </div>
+          <div class="plot">Tired of all of Princess Bubblegum's talk about &quot;responsibility,&quot; Lemonhope yearns for true freedom. So he sets off on the greatest adventure of his lemony life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E51%20-%20Lemonhope%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x51 - Lemonhope (2)
+          </div>
+          <div class="plot">Though Lemonhope finds refuge from the desert with monster hunter Phlannel Boxingday, he might not be able to escape the ghosts of his past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S05E52%20-%20Billy%27s%20Bucket%20List-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x52 - Billy's Bucket List
+          </div>
+          <div class="plot">Finn finds the hero Billy's bucket list and decides to complete the unfinished items as a final tribute.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E01%20-%20Wake%20Up-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x1 - Wake Up
+          </div>
+          <div class="plot">In order to find Finn's father, Finn and Jake must commit a cosmic crime...unless the Lich beats them to it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E02%20-%20Escape%20from%20the%20Citadel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x2 - Escape from the Citadel
+          </div>
+          <div class="plot">Finn and Jake follow the Lich to the Citadel, where Finn meets his long lost dad. But just how far does the apple fall from the tree?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E03%20-%20James%20II-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x3 - James II
+          </div>
+          <div class="plot">Finn and Jake discover that Clone James has been faking his own death to collect medals. Now there are 25 Jameses running amok!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E04%20-%20The%20Tower-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x4 - The Tower
+          </div>
+          <div class="plot">Finn doesn't like any of the new arms the princesses give him, so he builds a tower into space to find his dad and get his old arm back. But are his hopes up a little too high?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E05%20-%20Sad%20Face-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x5 - Sad Face
+          </div>
+          <div class="plot">Once a month, while Jake's asleep, his tail stretches out of the tree house to go work as a clown in a traveling bug circus.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E06%20-%20Breezy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x6 - Breezy
+          </div>
+          <div class="plot">With a friendly bee named &quot;Breezy&quot; as his wingman, Finn decides to get back into the dating game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E07%20-%20Food%20Chain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x7 - Food Chain
+          </div>
+          <div class="plot">On a field trip to the Candy Kingdom Museum of Natural History, Finn and Jake learn about the food chain by becoming the food chain!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E08%20-%20Furniture%20%26%20Meat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x8 - Furniture &amp; Meat
+          </div>
+          <div class="plot">Big money problems send Finn and Jake to Wildberry Kingdom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E09%20-%20The%20Prince%20Who%20Wanted%20Everything-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x9 - The Prince Who Wanted Everything
+          </div>
+          <div class="plot">The beautiful and sensitive Lumpy Space Prince flees his cruel parents to start a new life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E10%20-%20Something%20Big-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x10 - Something Big
+          </div>
+          <div class="plot">Princess Bubblegum must rally her forces when the Candy Kingdom is rocked by a massive assault.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E11%20-%20Little%20Brother-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x11 - Little Brother
+          </div>
+          <div class="plot">Shelby the worm discovers that he has a little brother who is bound for adventure in the nooks of Marceline's tree house.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E12%20-%20Ocarina-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x12 - Ocarina
+          </div>
+          <div class="plot">Fed up with Jake's antics, his son Kim Kil Whan takes action.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E13%20-%20Thanks%20for%20the%20Crabapples%2C%20Giuseppe%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x13 - Thanks for the Crabapples, Giuseppe!
+          </div>
+          <div class="plot">Ice King and a band of misfit wizards go on a mystical road trip.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E14%20-%20Princess%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x14 - Princess Day
+          </div>
+          <div class="plot">It's Princess Day in Ooo! You know what that means? Yep, LSP and Marceline team up to prank Breakfast Princess!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E15%20-%20Nemesis-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x15 - Nemesis
+          </div>
+          <div class="plot">A shadowy figure named Peace Master targets the Candy Kingdom elite.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E16%20-%20Joshua%20%26%20Margaret%20Investigations-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x16 - Joshua &amp; Margaret Investigations
+          </div>
+          <div class="plot">Finn and Jake's parents hunt an unearthly menace in the woods.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E17%20-%20Ghost%20Fly-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x17 - Ghost Fly
+          </div>
+          <div class="plot">Jake and the tree house are haunted by a vengeful specter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E18%20-%20Everything%27s%20Jake-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x18 - Everything's Jake
+          </div>
+          <div class="plot">Jake finds himself trapped in a world made of himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E19%20-%20Is%20That%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x19 - Is That You?
+          </div>
+          <div class="plot">Following an ally's memorial service, Jake begins acting strangely.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E20%20-%20Jake%20the%20Brick-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x20 - Jake the Brick
+          </div>
+          <div class="plot">Jake wants to fulfill a bizarre lifelong ambition.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E21%20-%20Dentist-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x21 - Dentist
+          </div>
+          <div class="plot">When Finn's toothache gets too much to take, he has no choice but to go see dentist.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E22%20-%20The%20Cooler-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x22 - The Cooler
+          </div>
+          <div class="plot">When the Fire Kingdom is struck by a natural disaster, Flame Princess turns to an unlikely ally.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E23%20-%20The%20Pajama%20War-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x23 - The Pajama War
+          </div>
+          <div class="plot">A Candy Kingdom slumber party devolves into panic when Finn and Princess Bubblegum vanish.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E24%20-%20Evergreen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x24 - Evergreen
+          </div>
+          <div class="plot">In a distant age, the wizard Evergreen quests to save the world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E25%20-%20Astral%20Plane-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x25 - Astral Plane
+          </div>
+          <div class="plot">Finn's spirit is drawn into the astral plane by the power of the mysterious comet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E26%20-%20Gold%20Stars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x26 - Gold Stars
+          </div>
+          <div class="plot">Tree Trunks and Mr. Pig's child, Sweet P, runs into trouble on his first day of school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E27%20-%20The%20Visitor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x27 - The Visitor
+          </div>
+          <div class="plot">Finn meets a friendly civilization and a sees a mysterious crash site in a vision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E28%20-%20The%20Mountain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x28 - The Mountain
+          </div>
+          <div class="plot">Lemongrab and Finn go on an expedition through the Mountain of Matthew.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E29%20-%20Dark%20Purple-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x29 - Dark Purple
+          </div>
+          <div class="plot">Susan Strong and her allies infiltrate the mysterious Super Porp factory.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E30%20-%20The%20Diary-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x30 - The Diary
+          </div>
+          <div class="plot">Jake's son TV discovers a lost diary and sets out to solve a decades-old mystery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E31%20-%20Walnuts%20%26%20Rain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x31 - Walnuts &amp; Rain
+          </div>
+          <div class="plot">When Finn and Jake stumble into two different holes, they meet two different fates.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E32%20-%20Friends%20Forever-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x32 - Friends Forever
+          </div>
+          <div class="plot">Ice King has a plan to form a perfect circle of confidants.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E33%20-%20Jermaine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x33 - Jermaine
+          </div>
+          <div class="plot">After a chilling dream encounter, Finn &amp; Jake are determined to reconnect with their reclusive brother.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E34%20-%20Chips%20%26%20Ice%20Cream-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x34 - Chips &amp; Ice Cream
+          </div>
+          <div class="plot">BMO'S favorite artists find a new home in the treehouse.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E35%20-%20Graybles%201000%2B-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x35 - Graybles 1000+
+          </div>
+          <div class="plot">Marooned on an alien world, Cuber must rely on his bag of Graybles to survive.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E36%20-%20Hoots-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x36 - Hoots
+          </div>
+          <div class="plot">A charismatic stranger in Finn's dream leads Cosmic Owl to shirk his duties.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E37%20-%20Water%20Park%20Prank-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x37 - Water Park Prank
+          </div>
+          <div class="plot">After rescuing Princess Orangutan from Daddy-sad-heads, Finn and Jake head to a post-apocalyptic water park for a day of fun.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E38%20-%20You%20Forgot%20Your%20Floaties-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x38 - You Forgot Your Floaties
+          </div>
+          <div class="plot">Finn and Jake storm Magic Man's house to rescue his new apprentice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E39%20-%20Be%20Sweet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x39 - Be Sweet
+          </div>
+          <div class="plot">A fed up Lumpy Space Princess leaves the woods for a glamorous career in babysitting.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E40%20-%20Orgalorg-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x40 - Orgalorg
+          </div>
+          <div class="plot">After a walrus race accident, Gunther starts to experience strange visions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E41%20-%20On%20the%20Lam-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x41 - On the Lam
+          </div>
+          <div class="plot">Finn's dad Martin the Human fights for freedom on a strange new planet!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E42%20-%20Hot%20Diggity%20Doom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x42 - Hot Diggity Doom
+          </div>
+          <div class="plot">It's election day in the Candy Kingdom but Princess Bubblegum's attention is diverted by a mysterious presence in the sky.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S06E43%20-%20The%20Comet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x43 - The Comet
+          </div>
+          <div class="plot">Finn, Jake and Orgalorg converge with the comet and meet their destiny.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E01%20-%20Bonnie%20and%20Neddy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x1 - Bonnie and Neddy
+          </div>
+          <div class="plot">The greed of the King of Ooo leads to a crisis in the Candy Kingdom, and (ex-) Princess Bubblegum has to return briefly from exile to deal with it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E02%20-%20Varmints-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x2 - Varmints
+          </div>
+          <div class="plot">Bubblegum turns to Marceline's help when something threatens the citizens of her homestead.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E03%20-%20Cherry%20Cream%20Soda-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x3 - Cherry Cream Soda
+          </div>
+          <div class="plot">The arrival of a visitor causes Cherry Cream Soda's life to fall flat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E04%20-%20Mama%20Said-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x4 - Mama Said
+          </div>
+          <div class="plot">The loyalty of Finn and Jake comes into question when the King of Ooo orders them to intercept a flying mushroom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E05%20-%20Football-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x5 - Football
+          </div>
+          <div class="plot">BMO and Football decide upon a deal, but one of them cannot keep up their end of the bargain.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E06%20-%20Stakes%20Marceline%20the%20Vampire%20Queen%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x6 - Stakes: Marceline the Vampire Queen (1)
+          </div>
+          <div class="plot">Finn and Jake hunt a shadowy predator and Marceline asks Princess Bubblegum for a favor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E07%20-%20Stakes%20Everything%20Stays%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x7 - Stakes: Everything Stays (2)
+          </div>
+          <div class="plot">As the sun rises on her last day, Marceline recalls her long extraordinary life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E08%20-%20Stakes%20Vamps%20About%20%283%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x8 - Stakes: Vamps About (3)
+          </div>
+          <div class="plot">Five foes from Marceline's past come back to cause trouble for the Land of Ooo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E09%20-%20Stakes%20The%20Empress%20Eyes%20%284%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x9 - Stakes: The Empress Eyes (4)
+          </div>
+          <div class="plot">When one of her oldest adversaries targets the Ice Kingdom, Marceline rushes to Simon's rescue.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E10%20-%20Stakes%20May%20I%20Come%20In%20%285%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x10 - Stakes: May I Come In? (5)
+          </div>
+          <div class="plot">Finn, Jake, Marceline, and PB set out to hunt down the Vamps. But who is hunting them?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E11%20-%20Stakes%20Take%20Her%20Back%20%286%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x11 - Stakes: Take Her Back (6)
+          </div>
+          <div class="plot">While Princess Bubblegum searches for a cure for Marceline, Finn and Jake take on one of the Vamps themselves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E12%20-%20Stakes%20Checkmate%20%287%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x12 - Stakes: Checkmate (7)
+          </div>
+          <div class="plot">On the eve of battle, Marceline's archenemy comes to her with a strange proposal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E13%20-%20Stakes%20The%20Dark%20Cloud%20%288%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x13 - Stakes: The Dark Cloud (8)
+          </div>
+          <div class="plot">The final confrontation begins. Who will survive?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            7x14 - The More You Moe, The Moe You Know (1)
+          </div>
+          <div class="plot">On BMO's birthday, Moe comes to visit and give BMO a special birthday mission. But while BMO is away, Moe begins to overstay his welcome at the tree house.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            7x15 - The More You Moe, The Moe You Know (2)
+          </div>
+          <div class="plot">BMO continues its quest to adulthood. It'll discover that something went wrong in the factory where all the MOs where created.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E16%20-%20Summer%20Showers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x16 - Summer Showers
+          </div>
+          <div class="plot">Viola tries to get a part in LSP's play, but gets made into LSP's personal assistant instead.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E17%20-%20Angel%20Face-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x17 - Angel Face
+          </div>
+          <div class="plot">BMO convinces his friends to join him in a live action cowboy role-playing game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            7x18 - President Porpoise Is Missing!
+          </div>
+          <div class="plot">Finn and Jake attempt to track down President Porpoise before Vice President Blowfish takes over.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E19%20-%20Blank%20Eyed%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x19 - Blank Eyed Girl
+          </div>
+          <div class="plot">One very spooky night, Finn and Jake come face-to-face with an urban myth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E20%20-%20Bad%20Jubies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x20 - Bad Jubies
+          </div>
+          <div class="plot">Finn, Jake, LSP and BMO seek shelter as they contend with some deadly weather.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E21%20-%20King%27s%20Ransom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x21 - King's Ransom
+          </div>
+          <div class="plot">Ice King suffers a heartbreaking loss and it's up to Finn and Jake to find the culprit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E22%20-%20Scamps-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x22 - Scamps
+          </div>
+          <div class="plot">Finn takes a group of at-risk Candy Kingdom youth on a camping trip they&rsquo;ll never forget.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E23%20-%20Crossover-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x23 - Crossover
+          </div>
+          <div class="plot">Finn and Jake crossover into Farmworld Finn's dimension.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E24%20-%20The%20Hall%20of%20Egress-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x24 - The Hall of Egress
+          </div>
+          <div class="plot">Trapped and alone, Finn must unravel the riddle of the weird cave with no exit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E25%20-%20Flute%20Spell-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x25 - Flute Spell
+          </div>
+          <div class="plot">Finn has secret meetings with a powerful wizard.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S07E26%20-%20The%20Thin%20Yellow%20Line-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x26 - The Thin Yellow Line
+          </div>
+          <div class="plot">Finn and Jake infiltrate the Banana Guard ranks and stumble upon a conspiracy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E01%20-%20Broke%20His%20Crown-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x1 - Broke His Crown
+          </div>
+          <div class="plot">When Ice King's magic crown goes haywire, Marceline and Princess Bubblegum resort to extreme measures to help him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E02%20-%20Don%27t%20Look-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x2 - Don't Look
+          </div>
+          <div class="plot">Finn unearths a treasure with a terrible price at the top of Dead Mountain.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E03%20-%20Beyond%20the%20Grotto-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x3 - Beyond the Grotto
+          </div>
+          <div class="plot">Finn and Jake follow their Sea Lard into the pond in front of their home, and in doing so, are led to a strange new world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E04%20-%20Lady%20Rainicorn%20of%20the%20Crystal%20Dimension-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x4 - Lady Rainicorn of the Crystal Dimension
+          </div>
+          <div class="plot">Jake's son finds a hidden box and draws attention from a Rainicorn.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E05%20-%20I%20am%20a%20Sword-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x5 - I am a Sword
+          </div>
+          <div class="plot">When Finn begins having nightmares about his missing Finn Sword, he wonders if they are real.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E06%20-%20Bun%20Bun-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x6 - Bun Bun
+          </div>
+          <div class="plot">Finn brings a special delivery for Cinnamon Bun to the Fire Kingdom but it may come with a dangerous cost.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E07%20-%20Normal%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x7 - Normal Man
+          </div>
+          <div class="plot">Normal Man asks for Finn and Jake's help to rescue his brother.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E08%20-%20Elemental-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x8 - Elemental
+          </div>
+          <div class="plot">Ice King digs up an item buried underneath the Ice Kingdom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E09%20-%20Five%20Short%20Tables-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x9 - Five Short Tables
+          </div>
+          <div class="plot">Fionna and Cake go on a cooking adventure to push Cake's art to an all-new level.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E10%20-%20The%20Music%20Hole-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x10 - The Music Hole
+          </div>
+          <div class="plot">Finn hears a mysterious song while judging a Battle of the Bands.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E11%20-%20Daddy-Daughter%20Card%20Wars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x11 - Daddy-Daughter Card Wars
+          </div>
+          <div class="plot">Jake and his daughter Charlie fight to restore Jake's honor and win a super-secret underground Card Wars tourney.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E12%20-%20Preboot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x12 - Preboot
+          </div>
+          <div class="plot">While searching for old human artifacts, Jake, Finn, and Susan Strong meet Tiffany, who is employed by a mysterious Doctor Gross.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E13%20-%20Reboot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x13 - Reboot
+          </div>
+          <div class="plot">After Susan Strong's chip is activated, she goes rogue and attacks Finn.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E14%20-%20Two%20Swords-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x14 - Two Swords
+          </div>
+          <div class="plot">Finn and Jake puzzle over the nature of a mysterious newcomer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E15%20-%20Do%20No%20Harm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x15 - Do No Harm
+          </div>
+          <div class="plot">Doctor Princess thrusts a great responsibility upon Finn. Jake goes adventuring with a new friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E16%20-%20Wheels-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x16 - Wheels
+          </div>
+          <div class="plot">Kim Kil Whan is worried about his daughter's future and asks Jake for some parental advice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E17%20-%20High%20Strangeness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x17 - High Strangeness
+          </div>
+          <div class="plot">An otherworldly encounter puts Tree Trunks on the trail of a conspiracy in the Candy Kingdom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E18%20-%20Horse%20and%20Ball-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x18 - Horse and Ball
+          </div>
+          <div class="plot">When disaster befalls James Baxter, it&rsquo;s up to Finn and Jake to help him pick up the pieces.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E19%20-%20Jelly%20Beans%20Have%20Power-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x19 - Jelly Beans Have Power
+          </div>
+          <div class="plot">Princess Bubblegum's scientific mind must wrestle with her Elemental magic potential when she's faced with a Crystal Entity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E20%20-%20Islands%20The%20Invitation%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x20 - Islands: The Invitation (1)
+          </div>
+          <div class="plot">A mysterious craft invades Ooo and Finn believes it may hold the secrets to his past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E21%20-%20Islands%20Whipple%20the%20Happy%20Dragon%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x21 - Islands: Whipple the Happy Dragon (2)
+          </div>
+          <div class="plot">Finn, Jake, and Susan set sail on a ocean voyage full of wonders and danger.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E22%20-%20Islands%20Mysterious%20Island%20%283%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x22 - Islands: Mysterious Island (3)
+          </div>
+          <div class="plot">After waking up alone and shipwrecked, Finn investigates a bizarre island in search of his friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E23%20-%20Islands%20Imaginary%20Resources%20%284%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x23 - Islands: Imaginary Resources (4)
+          </div>
+          <div class="plot">Finn and Jake travel to a land where reality has been redesigned and improved.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E24%20-%20Islands%20Hide%20and%20Seek%20%285%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x24 - Islands: Hide and Seek (5)
+          </div>
+          <div class="plot">While exploring some futuristic ruins, Susan sees glimpses of a familiar girl.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E25%20-%20Islands%20Min%20%26%20Marty%20%286%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x25 - Islands: Min &amp; Marty (6)
+          </div>
+          <div class="plot">An unexpected revelation from Susan leads Finn closer to answers about his past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E26%20-%20Islands%20Helpers%20%287%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x26 - Islands: Helpers (7)
+          </div>
+          <div class="plot">Finn and his friends journey to a last refuge called Founders Island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S08E27%20-%20Islands%20The%20Light%20Cloud%20%288%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x27 - Islands: The Light Cloud (8)
+          </div>
+          <div class="plot">Finn confronts the power behind Founders Island, but will he ever return home to Ooo?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E01%20-%20Orb-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x1 - Orb
+          </div>
+          <div class="plot">During the journey home from their sea-faring adventure; Finn, Jake, and BMO encounter a mysterious force that enters their dreams.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E02%20-%20Elements%20Skyhooks%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x2 - Elements: Skyhooks (1)
+          </div>
+          <div class="plot">Finn, Jake, and BMO return from their voyage to a radically changed Ooo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E03%20-%20Elements%20Bespoken%20For%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x3 - Elements: Bespoken For (2)
+          </div>
+          <div class="plot">The friends learn the story of what happened to Ooo, while Betty continues her attempt to reach Simon, but she's interrupted by someone out to steal her magic.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E04%20-%20Elements%20Winter%20Light%20%283%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x4 - Elements: Winter Light (3)
+          </div>
+          <div class="plot">Finn, Jake and Ice King break into the Ice World to confront the power-hungry evildoer responsible for the chaos in Ooo and try to rescue Betty.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E05%20-%20Elements%20Cloudy%20%284%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x5 - Elements: Cloudy (4)
+          </div>
+          <div class="plot">After taking a nap, Finn and Jake get separated from Betty and the Ice King. They need to get back and Jake needs to go pee.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E06%20-%20Elements%20Slime%20Central%20%285%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x6 - Elements: Slime Central (5)
+          </div>
+          <div class="plot">In order to save Ooo, Finn and Jake must gather the four elemental gems. They go to the Slime Kingdom and have to gather Slime Princess's gem.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E07%20-%20Elements%20Happy%20Warrior%20%286%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x7 - Elements: Happy Warrior (6)
+          </div>
+          <div class="plot">After gathering the Slime jewel, Finn and LSP go to the Fire Kingdom, to gather the Flame Jewel. Everything has turned even hotter than before.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E08%20-%20Elements%20Hero%20Heart%20%287%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x8 - Elements: Hero Heart (7)
+          </div>
+          <div class="plot">After going to the Fire Kingdom, Finn becomes taken over by fire. LSP has to save him before he destroys the candy kingdom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E09%20-%20Elements%20Skyhooks%20II%20%288%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x9 - Elements: Skyhooks II (8)
+          </div>
+          <div class="plot">After saving Finn the human during a battle between the candy kingdom and the fire kingdom it is discovered that LSP is made of anti-elemental magic and restores Ooo to it's former state.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E10%20-%20Abstract-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x10 - Abstract
+          </div>
+          <div class="plot">Jake struggles through the personal changes happening to him as a mysterious encounter in a dream with his brother Jermaine begins to haunt him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E11%20-%20Ketchup-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x11 - Ketchup
+          </div>
+          <div class="plot">BMO and Marceline play catch up on recent events.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E12%20-%20Fionna%20and%20Cake%20and%20Fionna-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x12 - Fionna and Cake and Fionna
+          </div>
+          <div class="plot">While performing a reading of 'Fiona and Cake', Ice King is confronted by a familiar figure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E13%20-%20Whispers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x13 - Whispers
+          </div>
+          <div class="plot">While safeguarding a frightened Sweet P, Finn is led into a confrontation with an old foe.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S09E14%20-%20Three%20Buckets-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x14 - Three Buckets
+          </div>
+          <div class="plot">Finn and Fern's carefree visit to some old ruins turns disastrous.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S10E01%20-%20The%20Wild%20Hunt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            10x1 - The Wild Hunt
+          </div>
+          <div class="plot">A fierce creature is terrorizing the Candy Kingdom but before Finn can slay the beast, he must first overcome a guilty conscience.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S10E02%20-%20Always%20BMO%20Closing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            10x2 - Always BMO Closing
+          </div>
+          <div class="plot">BMO and Ice King hit the road as door to door salesmen and stumble upon an irresistible opportunity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S10E03%20-%20Son%20of%20Rap%20Bear-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            10x3 - Son of Rap Bear
+          </div>
+          <div class="plot">When Flame Princess is coaxed into a high stakes battle against the indomitable Son of Rap Bear, Finn must help her search for a new strategy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S10E04%20-%20Bonnibel%20Bubblegum-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            10x4 - Bonnibel Bubblegum
+          </div>
+          <div class="plot">A long lost artifact causes Princess Bubblegum to harken back to the creation of the Candy Kingdom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S10E05%20-%20Seventeen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            10x5 - Seventeen
+          </div>
+          <div class="plot">A mysterious knight crashes Finn's birthday bash and presents him with a dangerous gift.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S10E06%20-%20Ring%20of%20Fire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            10x6 - Ring of Fire
+          </div>
+          <div class="plot">When an old flame comes calling on urgent business, Tree Trunks reconsiders both her wild past and her tranquil present.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S10E07%20-%20Marcy%20%26%20Hunson-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            10x7 - Marcy &amp; Hunson
+          </div>
+          <div class="plot">After helping with the creation of a new sword, Hunson Abadeer comes back to try and regain his daughter's love.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S10E08%20-%20The%20First%20Investigation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            10x8 - The First Investigation
+          </div>
+          <div class="plot">Kim Kil Whan tasks Jake and Finn to investigate reports of a haunting in one of Kim Kil Whan's properties &quot;Joshua and Margaret Investigations&quot; since something in there traumatized his top employee Renny Hamlond and does not pay any rent for inhabiting the place.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S10E09%20-%20Blenanas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            10x9 - Blenanas
+          </div>
+          <div class="plot">Finn's latest literary work meets with only derision, so he sets out to prove all the naysayers wrong.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S10E10%20-%20Jake%20the%20Starchild-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            10x10 - Jake the Starchild
+          </div>
+          <div class="plot">In order to fulfill his grand destiny, Jake is spirited away by a strangely familiar shape-shifting alien.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S10E11%20-%20Temple%20of%20Mars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            10x11 - Temple of Mars
+          </div>
+          <div class="plot">Searching for answers on Mars, Finn and Jermaine discover that they must first survive a cunning Martian mental trap.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S10E12%20-%20Gumbaldia-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            10x12 - Gumbaldia
+          </div>
+          <div class="plot">Finn and Jake, as ambassadors of the Candy Kingdom, travel to a powerful new city-state in a last ditch effort to stave off war.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Adventure%20Time%20-%20S10E13%20-%20Come%20Along%20With%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            10x13 - Come Along With Me
+          </div>
+          <div class="plot">In the distant future, many years after the outcome of the Gum War, two friends named Beth and Shermy recover a rusty old mechanical arm that once belonged to Finn after it is dropped by a Prize Ball Guardian.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

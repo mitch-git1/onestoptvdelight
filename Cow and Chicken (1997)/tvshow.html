@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Cow and Chicken
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Cow and Chicken</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Cow%20and%20Chicken%20%281997%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S00E01%20-%20No%20Smoking-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - No Smoking
+          </div>
+          <div class="plot">Chicken thinks about smoking seeing everybody else doing it even slows down his process and the devil (which is actually the red guy hes just called the devil in this episode because its the pirate episode)takes chicken down to hell.
+
+Chicken says that he will never do it again but the devil (the red guy) says that its to late and supercow finally comes to save the day and take chicken from hell back to there home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E01%20-%20Field%20Trip%20to%20Folsom%20Prison-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Field Trip to Folsom Prison
+          </div>
+          <div class="plot">On a field trip to the penitentiary, Chicken switches places with a hardened criminal named Red.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E02%20-%20The%20Girl%27s%20Bathroom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Girl's Bathroom
+          </div>
+          <div class="plot">Chicken, Flem and Earl are fascinated by the girls' bathroom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E03%20-%20This%20Bridge%2C%20Not%20Weasel%20Bridge-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - This Bridge, Not Weasel Bridge
+          </div>
+          <div class="plot">I.M. Weasel must complete the trans Atlantic Bridge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E04%20-%20Supermodel%20Cow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Supermodel Cow
+          </div>
+          <div class="plot">At the mall, Cow gets noticed by a fashion photographer from Vague Magazine. Her bovine looks become the latest fad.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E05%20-%20Part-Time%20Job-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Part-Time Job
+          </div>
+          <div class="plot">Cow wants to earn money to buy the new Crabs the Warthog Doll. So she gets a part-time job at the milk farm, where her milk is superb. Chicken decides to get a part-time job too, and is refered to the Chicken farm as a &quot;&quot;temporary employee&quot;&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E06%20-%20I.R.%20on%20Sun-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - I.R. on Sun
+          </div>
+          <div class="plot">I.R. is jealous of I.M. Weasel being the first on Mars, Jupiter and Uranus. But then NASA tells I.R. that he can become the first on the sun, and I.R. readily accepts the job. This creates quite the challenge for I.M...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E07%20-%20Alive%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Alive!
+          </div>
+          <div class="plot">Cow and her babysitter accidentally get stuck up on the roof.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E08%20-%20Who%20is%20Super%20Cow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Who is Super Cow?
+          </div>
+          <div class="plot">Red Guy is trying to know the secret identity of Supercow.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x9 - Deep Sea Tour
+          </div>
+          <div class="plot">Bathysphere operator I.R. Baboon takes children on a deep sea tour.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x10 - Confused
+          </div>
+          <div class="plot">Mom and Dad send Cow and Chicken to military school to teach them discipline, but are appalled when they return as iron-minded machines.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E11%20-%20The%20Molting%20Fairy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Molting Fairy
+          </div>
+          <div class="plot">Chicken starts molting, and is convinced that he'll get a dollar for every feather by the molting fairy. Chicken adds it up to $700, and decides to start an I.O.U. system at the carnival.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E12%20-%20I.R.%20Gentlemans-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - I.R. Gentlemans
+          </div>
+          <div class="plot">It's discovered that I.R. is the king of the kingdom of Yurp, so Weasel must turn him into a gentleman.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E13%20-%20The%20Ugliest%20Weenie%20-%20Part%20One-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - The Ugliest Weenie - Part One
+          </div>
+          <div class="plot">Cow writes a play called The Ugliest Weenie, -- a sad tale about an ugly, deformed weenie in a pack of otherwise beautiful weenies (hotdogs).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E14%20-%20I%20Are%20Big%20Star-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - I Are Big Star
+          </div>
+          <div class="plot">I.R. will do anything to get Weasel's role on his last movie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E15%20-%20The%20Ugliest%20Weenie%20-%20Epilogue-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - The Ugliest Weenie - Epilogue
+          </div>
+          <div class="plot">Picking up where the last episode left off, the night the play begins, the cast and crew learn that Flem has been struck with chicken-pocks, so Chicken gets the role, while Cow is the new leading lady, since Wee Wee caught the pocks too. The play goes on, and all the weenies cast out the Ugliest Weenie, but soon learn that ugly is good, because it means that he won't get bar-b-qued, and eaten.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E16%20-%20Crash%20Dive%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Crash Dive!
+          </div>
+          <div class="plot">Chicken builds a submarine out of odd pieces of wood he finds lying around.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E17%20-%20Happy%20Meat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Happy Meat
+          </div>
+          <div class="plot">Chicken is sick of the cafeteria's food, which is nothing but a steady diet of ketchup. Since Chicken is against it, he has been banned from eating anything from the cafeteria. After a halusination of seeing his great grandpa and grandma, Cow and Chicken decide to open up their own little meat cafe, which turns out to be quite popular.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E18%20-%20Power%20of%20Odor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Power of Odor
+          </div>
+          <div class="plot">I.R. starts his own pig farm, covering the whole town with an awful stench.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E19%20-%20School%20Bully-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - School Bully
+          </div>
+          <div class="plot">When a new bully comes to town, Chicken and his friends become nostalgic for their old school bully.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E20%20-%20Time%20Machine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Time Machine
+          </div>
+          <div class="plot">Cow and Chicken go to the arcade, and play the time machine. They find themselves back in a deserted time, where The Red Guy introduces them to the primortial soup. But when Cow accidentally drops her quarter into it, everyone in the present time has quarters for heads. Cow and Chicken must go back into time again to stop her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E21%20-%20Ping%20Pong%20at%20Sea-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - Ping Pong at Sea
+          </div>
+          <div class="plot">Weasel is going to face a human in a ping-pong duel. A jealous I.R. tells the human that he's won a trip, so I.R. can duel Weasel himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E22%20-%20Orthodontic%20Police-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Orthodontic Police
+          </div>
+          <div class="plot">Dad is pulled over by a cop, who discovers Cow and Chicken have crooked teeth and slaps braces on them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E23%20-%20The%20Cow%20with%20Four%20Eyes%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - The Cow with Four Eyes!
+          </div>
+          <div class="plot">Chicken misreads the eye chart and gets a thick pair of glasses.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E24%20-%20Disease%20Fiesta-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - Disease Fiesta
+          </div>
+          <div class="plot">I.M. Weasel is searching for the cure of Athlete's Face.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E25%20-%20Cow%27s%20Instincts...%20Don%27t%20It-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x25 - Cow's Instincts... Don't It?
+          </div>
+          <div class="plot">Cow learns that she has a herding instinct, and soon starts to fit in with other crowds such as flocks of ducks, schools of fish, and the military. She soon learns that she is supposed to herd with other cows, so she does, but soon dislikes it when all the other cows do nothing but stand and eat grass.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S01E26%20-%20Ballerina%20Cow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - Ballerina Cow
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E01%20-%20Fluffy%20the%20Anaconda-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Fluffy the Anaconda
+          </div>
+          <div class="plot">Mom and Dad decide to let Cow have a pet. She choose an anaconda, after it eats Chicken, and she hears his voice from inside the snake, and assumes the snake can sound just like Chicken. Cow names the anaconda, Fluffy, and Fluffy soon grows attached to Chicken, as its full-coarse dinner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E02%20-%20The%20Laughing%20Puddle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - The Laughing Puddle
+          </div>
+          <div class="plot">Chicken, Flem, and Earl play a game of kickball. Cow's udders kick the ball into the bushes, where Chicken, Flem and Earl discover a laughing puddle. After Flem and Chicken run back out, they forget the ball, and go back to discover that Earl is in the puddle. Chicken sends Flem after him, and he is stuck too. Chicken then gets Mom and Dad, who jump into the puddle, and Chicken drops Cow in there to save everyone. Chicken is then the only one left, until he discovers the puddle is a doorway to Boneless Chicken's nightclub.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x3 - I.R. Mommy
+          </div>
+          <div class="plot">I.R. finds an abandoned baby and adopts him as his son.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E04%20-%20Pirate%20Lessons-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Pirate Lessons
+          </div>
+          <div class="plot">The Red Guy is now Captain Butz Pirate, and wants to give Cow and Chicken pirate lessons. He takes them aboard his pirate ship in the middle of the duck pond, and teaches them how to say &quot;&quot;argh&quot;&quot;, carve peglegs, hold worms for ransom, and sink Flem and Earl's boat. But after that incident, Cow, Chicken, and their flag/man Jolly Roger declare mutiny.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E05%20-%20Halloween%20with%20Dead%20Ghost%2C%20Coast%20to%20Coast-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Halloween with Dead Ghost, Coast to Coast
+          </div>
+          <div class="plot">The Red Guy hosts a new late night talk show called &quot;&quot;Dead Ghost, Coast to Coast&quot;&quot;, and reminds the viewers that tonight's Halloween. Chicken calls in, and is instructed to dress as a human being. So, Cow and Chicken go trick or treating as Mom and Dad, only to find that the neighbors assume that a grown man and woman are trick or treating. With that, Super Cow and Chicken teach The Red Guy a lesson.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x6 - I Am Deity
+          </div>
+          <div class="plot">Weasel and I.R. create their forms of life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E07%20-%20Tongue%20Sandwich-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Tongue Sandwich
+          </div>
+          <div class="plot">Cow's tongue rips out of her mouth and runs away. He then causes havock all over town, by hi-jacking someone of their motor-scooter, rolling around in someone's gravy, and licking the candy store dry. Soon, Tongue finds himself on the lam, and runs back to Cow. Everything is back to normal, until Chicken's wattle decides to run away to.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E08%20-%20Dream%20Date%20Chicken-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Dream Date Chicken
+          </div>
+          <div class="plot">Chicken is tired of always having to do chores, so he chews Mom and Dad out, and runs away to be a bachelor with Cousin Boneless Chicken. One at Boneless's Chicken attracts the attention on Boneless's blind-date, Linda. Linda falls head over heals for Chicken, which makes Boneless disgusted.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x9 - I Am Crybaby
+          </div>
+          <div class="plot">Weasel must relocate the people who suffer from the cronic crybaby syndrome, not knowing that they are the main source of water on the planet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x12 - I.R.'s Phantom Foot
+          </div>
+          <div class="plot">I.R. hurts himself while walking up to Weasel's house! Weasel discovers that I.R. has broken his phantom foot! When I.R. goes to see Dr Clearbottom on phantom limbs, this doc's services are at a very high price! Weasel later reveals that it was Clearbottom who dug the hole which injured I.R.'s phantom foot so he can take all his money!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E13%20-%20Dirty%20Laundry-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Dirty Laundry
+          </div>
+          <div class="plot">The school's newspaper editor has been fired. Teacher then brings in The Red Guy, as reporter Geraldo Rearviewa to advise. He decides to produce a new school-news show, and makes Chicken the anchorman, and Cow the editor. But soon, Red Guy's false stories makes Chicken loses friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E14%20-%20Grizzly%20Beaver%20Safari-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - Grizzly Beaver Safari
+          </div>
+          <div class="plot">Cow, Chicken, Mom, and Dad go on a safari in Africa, where they run out of gas. Cow and Chicken then find themselves at the mercy of laughing hyenas, and man-eating giraffes. Super Cow comes to the rescue, only to find that she has actually been defeated by the Grizzly Beaver, who has eaten the giraffe, who has eaten Chicken.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x15 - Queen of DeNile
+          </div>
+          <div class="plot">In ancient Egypt, Weasel and I.R. must save the queen from a huge group of snakes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E16%20-%20Which%20Came%20First-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - Which Came First?
+          </div>
+          <div class="plot">The Red Guy sneaks a crow egg under Chicken's covers while he sleeps. The next morning, Cow and Chicken find the egg, and Chicken comes to the conclusion that he is actually a girl. So, it's egg sitting for Cow and Chicken, until the egg hatches and a baby crow comes out. Now Chicken comes to the conclusion that he isn't even a chicken.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E17%20-%20Boneless%20Kite-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Boneless Kite
+          </div>
+          <div class="plot">Boneless Chicken teaches Cow and Chicken how to properly fly kites at Lava Park. When Cow's kite tangles with The Red Guy's Kite, he then uses Boneless as his new kite, and has a kite tug-of-war against the tribe, over the hot-boiling-molten-lava river. Cow and Chicken come to Boneless's rescue, and the tribe wins, while Red Guy takes a dip in the lava river.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x18 - I Are Music Man
+          </div>
+          <div class="plot">I.R. competes against Weasel in a music concert.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E19%20-%20Buffalo%20Gals-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Buffalo Gals
+          </div>
+          <div class="plot">A group of female bikers break into Cow and Chicken's house, and start gnawing on their carpet. One of the bikers has a crush on Cow, and invites her to join the Buffalo Gals. It's up to Chicken to save his sister.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E20%20-%20Cow%20and%20Chicken%20Reclining-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - Cow and Chicken Reclining
+          </div>
+          <div class="plot">Dad is sick of his high-tech reecliner always malfunctioning, so he decides to dump it. Before he does, Cow and Chicken decide to see what it's like to sit in &quot;&quot;The Chair&quot;&quot;. They, and they get stuck, and are taken away to museums, and in stolen vans, and finally back at home, where Dad waits for his &quot;&quot;new chair&quot;&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x21 - I Am My Lifetime
+          </div>
+          <div class="plot">Now retired and living in asylums, Weasel and I.R. recall the days when they were young.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E22%20-%20Free%20Inside%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - Free Inside!
+          </div>
+          <div class="plot">Chicken finds a credit card as his &quot;&quot;free inside prize&quot;&quot;. Dad tells him that with the credit card, he can buy all the neat stuff he wants. So Cow and Chicken run down to the weenie emporium, where he learns he can only buy products with the value of 25 cents or less. With that, he buys a stick of weenie bubblegum for 20 cents, then The Red Guy shows up to collect his 5 cent interest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E23%20-%20Journey%20to%20the%20Center%20of%20Cow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x23 - Journey to the Center of Cow
+          </div>
+          <div class="plot">Chicken turns 11, and is allowed to operate the food catapault. So he feeds Cow with pork butts, but when his sleeve gets caught in the catapault, he ends up getting swallowed by Cow. With that, Mom and Dad take her to The Red Guy, who tries to get Chicken out of Cow's cavernous abdimen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x24 - I.R. Pixie Fairie
+          </div>
+          <div class="plot">The Red Guy tells us a story about a small group of Baboon Fairies and how they all work together as presidents, with I.R. Baboon as their slave.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E25%20-%20The%20Karate%20Chick-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x25 - The Karate Chick
+          </div>
+          <div class="plot">After Chicken's beak is bruised by Dick, his school bully, Mom and Dad send him to karate lessons. Chicken takes up butt-fu from The Red Guy, but when Chicken still is unable to beat up Dick, Chicken decides to force a refund (with help from an invisible Super Cow).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S02E26%20-%20Yard%20Sale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x26 - Yard Sale
+          </div>
+          <div class="plot">Chicken holds a yard sale, but when one of the price tags accidentally falls off the table and onto the yard, The Red Guy literally buys the yard. Mom and Dad expect Chicken to get the yard back, in which he does by having Cow play a game of one-shot battleship with The Red Guy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E01%20-%20Can%20Cow%20Come%20Out%20and%20Play-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Can Cow Come Out and Play?
+          </div>
+          <div class="plot">The Red Guy is depressed because no one will play with him. After seeing Cow has Crabs the Warthog, he wants to play with her because he has Crabs's doll house. When he askes to play with Cow, she tells him not if he was the last man on earth. With that he locks the entire world in a trailer, and is the last man standing: but Cow still won't play with him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E02%20-%20Horn%20Envy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Horn Envy
+          </div>
+          <div class="plot">Cow has a crush on Crag, the smartest kid in school, but is ignored by him. Her friends try to convince her that her horns are too small, so she tries every way to make them bigger by decorating them with coat hangers, paper masche, and even chocolate chip weenies. Cow later learns that Crag wasn't interest in Cow, because he had a crush on one of her friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x3 - Time Weasel
+          </div>
+          <div class="plot">Weasel creates a time machine that I.R. uses to go back in time, but Weasel discovers that I.R. is destined to solve all kind of problems at certain periods.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E04%20-%20Goin%27%20My%20Way-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Goin' My Way?
+          </div>
+          <div class="plot">While driving in the snow, Mom and Dad find The Red Guy who says he's heading &quot;&quot;home&quot;&quot;; so Mom and Dad take him home with him, and immediately think of him has their new favorite son. Cow and Chicken work together to try to prove The Red Guy's a fraud.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E05%20-%20The%20Babysitter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - The Babysitter
+          </div>
+          <div class="plot">Mom and Dad go out of town, leaving Cow as the babysitter, because she's the biggest, and not the oldest. Pretty soon, Chicken is at the mercy of his sister's babysitting technique: eating marshmallow soup for supper, doing homework with Crabs the Warthog doll, Piles the Beaver doll, and Manure the Bear doll, taking a bath and being scrubbed with dishsoap, and wearing diapers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x6 - The Hole
+          </div>
+          <div class="plot">Weasel comes to investigate the world's largest hole, same hole I.R. tries to fill with cement.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E07%20-%20Cow%20Fly-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Cow Fly
+          </div>
+          <div class="plot">Cow is depressed because she has no friends: until she finds a fly in her room and befriends it. Pretty soon she and the fly are inseperable: until Chicken, Mom and Dad call in the fly exterminator.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E08%20-%20Where%20Am%20I-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Where Am I?
+          </div>
+          <div class="plot">Cow stays outside too late, and pretty soon finds herself lost in the woods, and tries to survive. She pretty soon comes to the conclusion that it's eat, or be eaten, so she puts on war paint, and finds a squirrel in a bush, she quickly eats. It turns out she was in the backyard all the time, and her imagination got the better of her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x9 - I Stand Corrected
+          </div>
+          <div class="plot">Weasel and I.R. are sent to a correctional institute were everyone is forced to wear stupid corrective devices.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E10%20-%20Sergeant%20Weenie%20Arms-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Sergeant Weenie Arms
+          </div>
+          <div class="plot">After Earl gets the new Sergeant Weenie Arms action figure, he, Flem and Chicken go to Dead Skull Cave to meet the soldier himself, and become full-fledge weenie marines. After they do so, they learn that weenie marines are sissies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E11%20-%20Sow%20%26%20Chicken-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Sow &amp; Chicken
+          </div>
+          <div class="plot">Cow and Chicken get an unexpected visit from Cow's twin cousin, Sow (a pig with 8 teets). After Sow's first day at school, she causes chaos, and puts the blame on Cow. It's up to Cow to pull the plug on Sow's evil ways.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x12 - I Am Bush Pilot
+          </div>
+          <div class="plot">Weasel is the captain of his own comercial plane, and must take a bunch of people up a river with I.R. as his co-pilot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E13%20-%20Me%20an%27%20My%20Dog-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Me an' My Dog
+          </div>
+          <div class="plot">Cow brings home an &quot;&quot;invisible&quot;&quot; dog, whom she dubs, Kevin. Pretty soon, she and Kevin are inseperable, but causes trouble with school and friends. After she enters Kevin in a dog show, and wins, Kevin &quot;&quot;runs away&quot;&quot;. Afterwards, Cow finds Kevin, befriended an &quot;&quot;invisible&quot;&quot; homeless man.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E14%20-%20Cow%27s%20Dream%20Catcher-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - Cow's Dream Catcher
+          </div>
+          <div class="plot">Cow tags along with Chicken, Flem, and Earl on their camping trip in the tree fort. Cow says that if Chicken, Flem, or Earl touch her dream catcher that they'll die. Chicken accidentally breaks her dream catcher, and soon, he, Flem and Earl are at the mercy of Cow's worst nightmare: The Milkman.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x15 - Dessert Island
+          </div>
+          <div class="plot">Weasel and I.R. end up stranded on an island made entirely of confectionaries.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E16%20-%20Grandma%20at%20the%20Mall-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - Grandma at the Mall
+          </div>
+          <div class="plot">Grandma pays at visit to Cow and Chicken's house to take them to the mall with her. Her purpose for being at the mall: to look for a new grandpa, because she lost the old one. Chicken gives her the slip while he, Flem and Earl hang out at the concession stands.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E17%20-%20Chicken%20in%20the%20Bathroom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - Chicken in the Bathroom
+          </div>
+          <div class="plot">Chicken refuses to take bath, so he just sits there in the empty tub, while Cow, Mom, and Dad try to make him take a bath so they can use the toilet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x18 - Unsinkable I.R.
+          </div>
+          <div class="plot">I.R. is captain of his own ship, until it bumps an iceberg and it starts sinking.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E19%20-%20Chickens%20Don%27t%20Fly-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x19 - Chickens Don't Fly
+          </div>
+          <div class="plot">Cow and Chicken are taking a trip all by themselves. Their taking an airplane. Once Chicken sees the actual plain, he starts to have anxiety attacks and believes that flying is a dangerous way to travel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E20%20-%20P.E-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x20 - P.E.
+          </div>
+          <div class="plot">P.E. Chicken, Flem, and Earl are finally 6th graders, and are ready for their first day at junior high. Once in their gym class they find it difficult to put up with a strict P.E. teacher, and bully twins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x21 - I Am Vampire
+          </div>
+          <div class="plot">Weasel and Baboon are a pair of friendly vampires who drink only canned blood and are just looking for a fun little night on the town in Pantsylvania. But someone should try telling that to the vampire hunter Dr. von Smellstein, who's out to get our heroes!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E22%20-%20Playin%27%20Hookie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x22 - Playin' Hookie
+          </div>
+          <div class="plot">Cow and Chicken have a big test the next day at school but when Chicken forgets to study, he tries to fake all kinds of illnesses to avoid going to school. After holding his thermometer over the grill, Mom and Dad call the doctor who makes housecalls: The Red Guy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E23%20-%20Chicken%20Lips-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x23 - Chicken Lips
+          </div>
+          <div class="plot">Chicken is upset because he can't whistle, and everybody else can. The Red Guy tries to tutor Chicken, but he finds out that Chicken can't whistle because he has no lips. The Red Guy then immedietaly sends Chicken to surgery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x24 - Honey I Are Home
+          </div>
+          <div class="plot">I.R. is jealous of his neighbor Weasel because he has a better wife, kids job and house than him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E25%20-%20The%20Day%20I%20Was%20Born-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x25 - The Day I Was Born
+          </div>
+          <div class="plot">Cow wonders about the day she was born. Chicken tells her she was adopted, Mom tells her that the stork delivered her, Dad said they found her in a cabbage, Teacher says she hatched from an egg, and Red Guy says he delivered her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S03E26%20-%20Factory%20Follies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x26 - Factory Follies
+          </div>
+          <div class="plot">Red Guy is CEO of a giant factory. He holds a birthday party for himself in the confrence room later that night, but none of the employees show up. But it doesn't matter, he has enough fun by himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E01%20-%20Chachi%2C%20the%20Chewing%20Gum%20Seal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Chachi, the Chewing Gum Seal
+          </div>
+          <div class="plot">Chicken tells Cow that she's not artistic, so she in return, sculpts a seal out of a stick of chewing gum, and an entire machine full of bubblegum balls. Cow wishes that her chewing gum seal, whom she names Chachi, was real. Suddenly, a wishing star grants her wish, and Chachi is a real, miserable, ho-hum seal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E02%20-%20Black%20Sheep%20of%20the%20Family-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Black Sheep of the Family
+          </div>
+          <div class="plot">Cow and Chicken get a visit from their cousin, Black Sheep (who really is in both terms). While Mom and Dad run away, Cow and Chicken try to make Black Sheep feel at home, but when he compliments Flem and Earl in scientific terms, they assume that Black Sheep is a dangerous criminal. Cow tries to help Black Sheep, who everyone changes their minds about, after he saves a woman's life from a heart attack.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x3 - Enemy Camp
+          </div>
+          <div class="plot">Weasel and I.R. remember the days in which they were good friends, until they were sent to Enemy Camp.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E04%20-%20The%20Full%20Mounty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - The Full Mounty
+          </div>
+          <div class="plot">It's &quot;&quot;Bring Your Kids to Work Day&quot;&quot;, so Dad does just that. Dad's job is guarding the government's money. When he has to appear at a sudden confernce, he leaves Cow and Chicken in his office. Red Guy, who is now a Canadian Mounty Police, finds them, and begins to stalk them, until they surrender.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E05%20-%20Mall%20Cop-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Mall Cop
+          </div>
+          <div class="plot">Dad loves shopping for Mom's stuff. He runs off to get a manicure for her, while Cow and Chicken pay for the other items. The censors go off when Cow passes through, so Red Guy, as a mall cop, chases Cow and Chicken all over the store. Cow learns that the censors have been broken for weeks. Red Guy walks through, and is arrest by the REAL mall cops.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x6 - I Am Clich&eacute;d
+          </div>
+          <div class="plot">The director of Weasel and I.R.'s cartoons does nothing but stealing old clich&eacute;s from classic cartoons.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E07%20-%20Cow%27s%20Toys-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Cow's Toys
+          </div>
+          <div class="plot">Sick of their everyday life of being squirted with milk, Cow's favorite toys: Crabs the Warthog Doll, Piles the Beaver Doll, and Manure the Bear decide to run away to find their original owner. After reading Manure's tag that says &quot;&quot;Made In Hong Kong&quot;&quot;, they assume their original owner is a maiden named Hong Kong, and set out on a quest to find her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E08%20-%20I%20Scream%2C%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - I Scream, Man
+          </div>
+          <div class="plot">It's almost arbor day, and Mom and Dad are feeding their pet piggy pennies so they can crack him open on arbor day. Meanwhile, Cow and Chicken are craving ice cream, and try to chase down the ice cream man (Red Guy).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x9 - I Are Gladiator
+          </div>
+          <div class="plot">Back in Roman times, Weasel and I.R. battle each other as gladiators.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E10%20-%20Cloud%20Nine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Cloud Nine
+          </div>
+          <div class="plot">Cow and Chicken wait outside the hardware store while Dad shops. Chicken is dying to ride the fighter jet plane ride. When Cow finally lends Chicken a quarter, The Red Guy takes the ride away. Chicken then stows-away on his truck, to ride the plane, but has to plug it up. Once at the gas station, he buys 20 extension cords, but the owner unplugs them. In the end, Chicken discovers that Dad actually collects those kind of rides.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E11%20-%20Send%20in%20the%20Clowns-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Send in the Clowns
+          </div>
+          <div class="plot">Dad isn't friendly terms with the new neighbors, who happen to be clowns. Cow falls in love with the clown son, who in return falls in love with Cow. They play hooky to spend the day together. Dad finds out, and Cow in grounded, while he kicks the clown son out, and chews clown dad out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x12 - Revolutionary Weasel
+          </div>
+          <div class="plot">Weasel and I.R. tell their grandsons how they influenced U.S. history.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E13%20-%20The%20Big%20Move-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - The Big Move
+          </div>
+          <div class="plot">Cow and Chicken are devastated when Mom and Dad suddenly announce that their moving. Cow and Chicken start reminising about their favorite memories from the only home they ever lived in, from their first puppy, to their first Christmas. The Red Guy, Flem and Earl are also devastated when Cow and Chicken are moving. Once the truck is loaded, Cow and Chicken discover that they are only moving to an identical house next door. When asked why, Dad replies &quot;&quot;our old house was infested with ants.&quot;&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E14%20-%20Cow%27s%20Magic%20Blanket-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x14 - Cow's Magic Blanket
+          </div>
+          <div class="plot">Everyone makes fun of Cow because she still has her old security blanket. She then tosses it out the school bus window, but is depressed for the rest of the day. Chicken tries the cheer her up by playing the bad guy in a game of Super Cow. Cow confesses that her blanket was also Super Cow's magic cape, and that Super Cow was never coming back. Red Guy then sees the perfect opportunity to torture Flem and Earl. Chicken decides it's &quot;&quot;Wonder Wattle&quot;&quot; to the rescue.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x15 - I Are Ghost
+          </div>
+          <div class="plot">Weasel and Baboon are ghosts, assigned to haunt the house of a washed-up movie starlet (played by the Red Guy). But Baboon keeps goofing up, and even Weasel is finding the starlet a hard scare.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E16%20-%20Snail%20Boy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x16 - Snail Boy
+          </div>
+          <div class="plot">Cow and Chicken visit their cousin, Snail Boy for Sunday Dinner. Later that night, Mom's Sis announces that Snail Boy has been transformed to Cow and Chicken's school. During his first day of school, Chicken becomes the laughing-stock when every finds out that Chicken is the cousin of a snail. Snail Boy then becomes the target of the eyes of the bullying track team.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E17%20-%20Penalty%20Wheel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x17 - Penalty Wheel
+          </div>
+          <div class="plot">Cow, Chicken, Flem, and Earl are contestants on the gameshow &quot;&quot;You've Been Panced?&quot;&quot;. Where the contestants have three seconds to perform three complicated tasks, or they have to spin the penalty. Chicken, Flem, and Earl all fail, but thanks to Super Cow, they win the grand prize: Red Guy's life savings. They discovered that they've been swindled, and Super Cow takes out Red Guy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x18 - The Magnificent Motorbikini
+          </div>
+          <div class="plot">Weasel &amp; Baboon try out Weasel's latest invention: The Magnifi- cient Motorbikini!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E19%20-%20Invisible%20Cow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x19 - Invisible Cow
+          </div>
+          <div class="plot">Red Guy pops by Cow and Chicken's house selling &quot;&quot;invisible sauce&quot;&quot;. Cow unwittingly buys it, and claims she's invisible, so she runs around town performing feats of &quot;&quot;invisibiltiness&quot;&quot;. Red Guy sees this, and has Cow steal &quot;&quot;withdrawl slips&quot;&quot; from the bank with her &quot;&quot;invisibleness&quot;&quot;. Cow steal fill-out forms instead of cash. Cow then tries to help lousy golfers, but she realizes she never was really invisible at all.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E20%20-%20Monster%20in%20the%20Closet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x20 - Monster in the Closet
+          </div>
+          <div class="plot">Cow wakes up in the middle of the night and finds a monster in the closet. Mr. Monster is actually quite friendly, and the next day, Cow treats him to a grand day out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x21 - I Am Hairstylist
+          </div>
+          <div class="plot">Weasel is a talented hairstylist, while Baboon has an awful job doing toes. And thing's don't look really good when Red Guy the Hair-Police tries to book'em up!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E22%20-%20Chicken%27s%20Fairy%20Tale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x22 - Chicken's Fairy Tale
+          </div>
+          <div class="plot">Chicken trades Cow to a farmer for five Canadian jumping beans. Mom grounds Chicken, and has him throw the beans out. As you guessed, a beanstalk grew, Chicken, Frem, and Earl climbed it, and was captured by Red Guy who is the giant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E23%20-%20Magic%20Chicken-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x23 - Magic Chicken
+          </div>
+          <div class="plot">Dad isn't friendly terms with the new neighbors, who happen to be clowns. Cow falls in love with the clown son, who in return falls in love with Cow. They play hooky to spend the day together. Dad finds out, and Cow in grounded, while he kicks the clown son out, and chews clown dad out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x24 - I Am Whale Captain
+          </div>
+          <div class="plot">Weasel the Whale Captain is looking for the giant squid.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E25%20-%20Major%20Wedgie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x25 - Major Wedgie
+          </div>
+          <div class="plot">Dad tells the story of how he and Mom met to Cow and Chicken.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cow%20and%20Chicken%20-%20S04E26%20-%20The%20Loneliest%20Cow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x26 - The Loneliest Cow
+          </div>
+          <div class="plot">Cow is very lonely, that is until she befriends an orange she finds in her front yard.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

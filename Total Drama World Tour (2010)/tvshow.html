@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Total Drama World Tour
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Total Drama World Tour</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Total%20Drama%20World%20Tour%20%282010%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E01%20-%20Walk%20Like%20An%20Egyptian%2C%20Part%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Walk Like An Egyptian, Part 1
+          </div>
+          <div class="plot">The 17 contestants see the plane and all of the accommodations. They then compete in a challenge where they have to navigate around a pyramid to reach the finish line. They can choose to either climb on top of the pyramid, or go under the pyramid (a majority of the cast chose the latter). Duncan quits mainly due to refusing to sing and having to listen to Gwen and Courtney argue the whole way up the pyramid. Three teams are made (names chosen by the teams themselves) according to who finished the challenge first. They are also given a reward. DJ, LeShawna, Harold, Lindsay, and Bridgette are on Team Victory and are given a stick. Owen, Alejandro, Noah, Sierra, and Tyler are on Team Chris is Really Really Really Really Hot, and are given a goat. Courtney, Heather, Izzy, Cody, and Gwen are on Team Amazon and are given a camel. Ezekiel is the last to finish the race, but is not eliminated because of Duncan quitting, so Chris places him on Team Victory.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E02%20-%20Walk%20Like%20An%20Egyptian%2C%20Part%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Walk Like An Egyptian, Part 2
+          </div>
+          <div class="plot">The remaining contestants are forced to compete in a camel race to the Nile, bringing their rewards to the finish line. Chris tells them that each reward has a &quot;special surprise&quot; (the stick being a divining rod, the camel being a camel, and the goat being small). Izzy and Sierra switch teams because of Sierra's interest in Cody and Izzy's interest in Owen. Chris catches Duncan humming the song from the previous episode while lounging in the plane, but Duncan denies it. Alejandro tries to win everybody over with compliments and remarks, but Heather doesn't buy it, though she admits he's a good manipulator. In the second challenge, the contestants must weave a basket and row across The Nile to the finish line. Ezekiel is eliminated due to accidentally feeding the team's reward to a crocodile. Even though he was voted off, he holds onto one of the plane's tail wings, refusing to give up, and hinting a possible return to the game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E03%20-%20Super%20Crazy%20Happy%20Fun%20Time%20Japan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Super Crazy Happy Fun Time Japan
+          </div>
+          <div class="plot">The contestants figure out they are in Japan after Chef slashes the door open and they fall in a giant bowl of rice. The first challenge was a game of giant pinball with each team having a pinball partner (Teams Victory and CRRRRH got a panda and Team Amazon had Cody and Sierra instead), Team Chris is Really Really Really Really Hot won thanks to Alejandro's care for the panda. The second challenge was writing and producing a Japanese commercial for the brand new Total Drama Yum Yum Happy Go Time Candy Fish Tails. Team CRRRRH chose to do a Japanese monster mash style commercial, Team Victory chose to do a samurai style commercial, and Team Amazon did a commercial with the leftovers. In the end, Team Amazon won because of Chef's love for exploding donuts. Overall, Harold quit because the samurai style was his idea. Instead of being pushed out of the plane, he &quot;kills&quot; himself with a toy lightsaber and falls out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E04%20-%20Anything%20Yukon%20Do%2C%20I%20Can%20Do%20Better-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Anything Yukon Do, I Can Do Better
+          </div>
+          <div class="plot">The episode opens up with Team Amazon relaxing in the first-class area of the plane. Cody's relaxation is interrupted when Sierra starts rubbing his foot and ends up paralyzing him. In the loser area, LeShawna is playing with the num-yos Harold gave her. Chris walks in, and the contestants begin to complain about Japan. The plane begins to land, terrifying Owen. The plane lands in Yukon. Chris explains that the contestants won't be getting coats, causing them to huddle together for warmth. The first challenge involves team crossing the cassum by jumping from shard to shard. Once at the sleds, the first one there must climb up the mountain while carrying their team on the sled. Team Victory won the first challenge thanks to DJ mysteriously getting there. During the challenge, DJ accidentally got his eyes frozen by crying too much and ended up getting his team lost and hitting a baby seal. Alejandro continues to manipulate the contestants on Team Victory to his pleasure and their elimination, as he starts to flirt with Bridgette, causing her to get distracted. Bridgette starts to kiss Alejandro, but gets tricked and stuck to a pole. Team Chris is Really Really Really Really Hot won thanks to Owen's weight causing a rapid speed which accelerated the sled. In the end, Bridgette got eliminated for kissing a pole and not crossing the finish line with her team. Before being eliminated, she tries to warn her teammates about Alejandro being evil, but gets pushed off the plane.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E05%20-%20Broadway%2C%20Baby%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Broadway, Baby!
+          </div>
+          <div class="plot">The episode starts off with Team Chris is Really Really Really Really Hot relaxing in the winners cabin. Team Amazon's female members (except for Sierra) complain about the loosers section. Heather tries to manipulate Sierra and Cody into obeying her, which fails to work, as they both know of Heather's villainous personality. Alejandro continues to manipulate Team Victory by smuggling them food and trying to win them over. The contestants figure out their in New York after falling in a boat and landing on water. The first challenge involves the contestants climbing to the top of the Statue of Liberty getting the baby carriges on top of Lady Liberty's crown, then racing down to the boats, and finally driving to Central Park. The contestants figure out the ropes are made of wool when trying to climb them. Alejandro manipulates Sierra into revealing humiliating things about Chris's past, such as him having his own cooking show that got cancelled after one episode, making terrible movies about talking cats, and being a boyband. Eventually, Chris has enough of Sierra and tells her to zip it. Team Amazon wins the first part, later discovering the only way to go down is to slide down a fireman's pole. During the second part, the contestants race to Central Park, New York going through a sewer and end up being chased by a giant alligator who tries to eat them. Team Victory won the second part giving them the shortest path. The second challenge involved the teams pushing their carriges along a pre-deterimied path to turtle pond and bobbing for giant apples with only their heads and loading the carriges. Afterwards, teams have to race to the heart of New York. During the challenge, one member of each team had to stay in the carrige (Cody, Lindsy, and Noah) and sing during while racing. DJ this time hurts a turtle. During the challenge, Heather switches Team CRRRH's carriage with a real carriage. They got to the heart first but lost because of Heather. In the end Team Amazon won once again. The prizes were candy (which Cody greedily started taking), apples (which Sierra wanted to thank Chris for), and an electric meat grinder (which Heather threw out of the plane).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E06%20-%20Aftermath%20Bridgette%20Over%20Troubled%20Water-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Aftermath: Bridgette Over Troubled Water
+          </div>
+          <div class="plot">The episode starts off with the hosts, Geoff and Blaineley introducing the show. They begin to talk to the contestants that could not compete in season three, only to find that they do not mind not being able to participate. Blaineley is upset, as she had hoped that they would be filled with jealousy and anger. Instead, no one seems to mind not participating in the season and are enjoying their time away from Chris and Chef. Then, Geoff and Blaineley reveal that two eliminated contestants that are missing. Duncan and Ezekiel seem to have vanished after their eliminations. The host's tell the audience Chris is looking for Duncan, where as Ezekiel is stalking the current cast. Blaineley then goes into the other two contestants who were eliminated, and attempts to introduce Bridgette. Geoff, upset with Bridgette over her relations with Alejandro brings out Harold instead. They sing Baby, dedicated to LeShawna.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E07%20-%20Slap%20Slap%20Revolution-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Slap Slap Revolution
+          </div>
+          <div class="plot">The episode stars off with Teams Victory and CiRRRRH in the losers cabin, to their dismay a hole opens up and begins to suck up everything. Team Amazon (except for Cody) is relaxing in the winners cabin. Cody tries to protect himself from Sierra by hanging string with bells tied but it ends up not working. The contestants discover that they're in the German Alps when they see them from the window and Chris begins to speak German. After falling from the plane, Chris tells them that they have to sing softly or risk a &lsquo;song-alanche.&rsquo; Tyler causes an avalanche after being overjoyed that Lindsy finally remembers him. Also Alejandro continues his tactics by distracting and flirting with LeShawna. When they make it up the hill, their challenge awaits: grind meat into a giant sausage, and then ride the sausage down to the bottom of a deadly hill. Team Amazon yells and gets mad at Heather for tossing out their electric meat grinder reward &ndash; they could have used it here and won for sure! Team Victory makes a great big sausage, and Team Chris Is Really Really Really Really Hot is forced to make Owen their sausage after he eats all the meat, while Team Amazon is forced to turn their sausage into a snowboard after Sierra uses most of their meat to make a &quot;meat Cody&quot;. During the first challenge's second part ravage goats try to attack the contestants. Team Chris is Really Really Really Really Hot won. The rewards were hats(Metal, Fur, and Regular). At the bottom of the hill teams get their second challenge &ndash; a dance competition that turns violent when they start slapping each other off the platform! Each team had to have 2-3 dancers per team ( LeShawna &amp; DJ, Sierra, Cody &amp; Heather, Al, Owen, and Noah) The coordinator was Chef to the contestants' dismay. The challenge begun when it became a survival of the fittest. Team Amazon won when Alejandro gave up. In the end, LeShawna was eliminated and thrown off by Alejandro.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E08%20-%20The%20Am-AH-zon%20Race-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Am-AH-zon Race
+          </div>
+          <div class="plot">The three teams are taken to the Amazon, where their eighteen-hour challenge awaits. One team ends up in deep trouble due to a teammate's poor judgment, giving them their first loss and giving another team their first win. Meanwhile, one contestant begins to realize someone might not return their friendship, but brushes it off after being rescued. After the host reveals the votes, causing someone's heartbreak, he then reveals that the episode was actually a reward challenge, sparing a contestant from elimination.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E09%20-%20Can%27t%20Help%20Falling%20in%20Louvre-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Can't Help Falling in Louvre
+          </div>
+          <div class="plot">The contestants arrive in Paris, France and everything but love is in the air for these teens. As the three teams struggle to complete their challenge, Sierra is having trouble coping with Cody revealing he voted for her. DJ tries his hardest to either throw the challenge or get rid of a &quot;curse&quot; he believes he has, but an unexpected twist ultimately gets Lindsay eliminated instead, much to Tyler's dismay.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E10%20-%20Newf%20Kids%20On%20The%20Rock-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Newf Kids On The Rock
+          </div>
+          <div class="plot">The host's hometown in Newfoundland is visited as the eleven teens compete in their next challenge. With Team Victory down to its last member (DJ), who desperately wants to be eliminated, Heather and Alejandro try to align him on their side as an ally by all means possible. In the end, Team Victory and Team Chris share the reward and no one is sent home due to Chris's good mood.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E11%20-%20Jamaica%20Me%20Sweat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Jamaica Me Sweat
+          </div>
+          <div class="plot">After the plane runs out of gas, the final eleven are stranded in Jamaica. Owen is starting to have second thoughts about his romantic relationship with Izzy and tries to break up with her. As a result, both end up severely injured, with Izzy removed from the competition due to the severity of her injury, but not before she officially breaks up with him. Meanwhile, Alejandro's actions from the previous episode are intentionally revealed and because of this, DJ is finally eliminated, ending Team Victory.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E12%20-%20Aftermath%20Revenge%20Of%20The%20Telethon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Aftermath: Revenge Of The Telethon
+          </div>
+          <div class="plot">The second installment of the aftermath includes a fund-raiser in order to pay for the plane's fuel. The four eliminated contestants are interviewed, while trying to convince the viewers to donate five hundred thousand dollars. After a rampage thanks to Blaineley, the goal is increased to one million dollars. Will they reach the enormous goal in a mere thirty minutes or will Total Drama be gone for good?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E13%20-%20I%20See%20London-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - I See London...
+          </div>
+          <div class="plot">With only two teams remaining, the host takes the remaining contestants to London, England, where their goal is to capture &quot;Jack the Ripper&quot; (who is really Ezekiel in a costume) before he catches them. In the end, Duncan is caught by Courtney and Gwen with Jack being caught by Team Chris, giving Duncan a return on the latter team as a consolation for losing. Noah attempts to reveal Alejandro's true intentions, yet he is too late and instead gets eliminated as a result. In the end, Gwen and Duncan kiss, to which Tyler walks in on.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E14%20-%20Greece%27s%20Pieces-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Greece's Pieces
+          </div>
+          <div class="plot">The final nine go to Greece to compete in an Olympics challenge. Duncan and Gwen are nervous about their kiss last episode. Tyler reveals the secret, thanks to Alejandro, and a fight breaks out and tension between Gwen and Courtney grows. After Team Amazon wins, Chris decides not to eliminate anybody just because of the growing drama.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E15%20-%20The%20Ex-Files-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - The Ex-Files
+          </div>
+          <div class="plot">After breaking up with Duncan, Courtney decides to get revenge by flirting with Tyler after being encouraged by Alejandro. The two teams must search Area 51 for intact alien artifacts and bring them back to the Total Drama Jumbo Jet. During the challenge, Duncan and Gwen bump into each other and have their second kiss, thus officially starting a relationship with each other. In the end, Team Amazon wins again and Tyler is voted off due to a mistake that costs his team the challenge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E16%20-%20Picnic%20at%20Hanging%20Dork-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Picnic at Hanging Dork
+          </div>
+          <div class="plot">The remaining eight contestants travel to Australia, where tension really flares after a previous kiss. Alejandro and Duncan's strategy to weaken Courtney proves to work well, while the other team is divided into two alliances. In the end, Team Amazon loses, and a tiebreaker occurs between Courtney and Gwen. Courtney manages to win, and Gwen is eliminated resulting in Team Amazon's first elimination.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E17%20-%20Sweden%20Sour-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Sweden Sour
+          </div>
+          <div class="plot">The two teams land in Sweden to compete in a &quot;Viking&quot; capture the flag game. Courtney still tries to flirt with Alejandro, while Cody misses Gwen. Owen becomes aware of Alejandro's true nature thanks to Noah and warns Duncan, much to his surprise. Alejandro starts to reveal his true feelings for Heather. In the end, Chris reveals that there will be no elimination again, sparing Courtney, while leaving the rest of her team upset and disappointed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E18%20-%20Aftermath%20Aftermayhem-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Aftermath Aftermayhem
+          </div>
+          <div class="plot">After Blaineley forces Bridgette into doing a world tour of Total Drama fan countries, Geoff becomes fed up. The three new guests join the peanut gallery, where five of them get the opportunity to re-join the competition. However, Blaineley ends up winning instead.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E19%20-%20Niagara%20Brawls-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Niagara Brawls
+          </div>
+          <div class="plot">The remaining seven are dumped in Niagara Falls for their next challenge, where it is revealed that Blaineley is debuting onto the show and that the teams have merged. The challenges have a wedding theme, leading to added tension for three particular couples. Alejandro tries his hardest to convince Duncan, Heather and Sierra to vote off Owen, ultimately causing Owen to take the Drop of Shame.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E20%20-%20Chinese%20Fake-Out-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Chinese Fake-Out
+          </div>
+          <div class="plot">The final seven go to China for a visit to the Great Wall. Tension continues between Heather, Courtney, Duncan and Alejandro and Cody plans to establish the connection between him and Sierra. Blaineley allies with Chef, but in the end, she is voted off along with Courtney due to another tie in votes and the show's budget problems.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E21%20-%20African%20Lying%20Society-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - African Lying Society
+          </div>
+          <div class="plot">The final five arrive in Tanzania for their next challenge; hunting down Ezekiel, now feral due to hiding out in the plane all this season. Sierra's obsession with Cody peaks and Heather and Alejandro continue to doubt their attraction towards each other. In the end, Alejandro wins the challenge and Duncan is sent home for the second time after a close vote.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E22%20-%20Rapa-Phooey%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Rapa-Phooey!
+          </div>
+          <div class="plot">The final four contestants are on their way to Easter Island to compete in a egg hunt themed challenge as Heather and Alejandro maneuver to become closer to the end through manipulating others. In the end, Heather won the challenge, but when Sierra was spared due to it being a reward, Heather gets frustrated and picks Alejandro to stay in first class with her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E23%20-%20Awww%2C%20Drumheller-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - Awww, Drumheller
+          </div>
+          <div class="plot">The final four head to Alberta, Canada to participate in an archeology-themed challenge. Alejandro frames Heather to anger Sierra. However, when Heather becomes trapped, he decide to save her. Afterwards, Sierra is eliminated despite winning the challenge due to destroying the plane on accident, sparing Alejandro from elimination.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E24%20-%20Hawaiian%20Style-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - Hawaiian Style
+          </div>
+          <div class="plot">The Total Drama Aftermath show reveals the location of the finale is Hawaii. The four most recently eliminated contestants are brought out before the peanut gallery is split into three teams and a final challenge is revealed; a representative of each team competes in a surfing competition to win the finalists a possible advantage for the finale. Geoff regains Bridgette, but with Blaineley joining as well.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E25%20-%20Planes%2C%20Trains%20and%20Hot%20Air%20Mobiles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x25 - Planes, Trains and Hot Air Mobiles
+          </div>
+          <div class="plot">With the Total Drama Jumbo Jet destroyed, the three remaining contestants (plus a tag-along Sierra) must engage in a full-out, no-rules race to Hawaii. Alejandro confronts Heather about attempting to vote him off earlier, enlisting the help of a stowaway in defeating her. Meanwhile, Cody works with Sierra to reach the finish line and in the process, develops a strong bond with her. In the end, Heather guarantees herself a spot in the final two, while Cody and Alejandro tie for second place.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E26%20-%20Hawaiian%20Punch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - Hawaiian Punch
+          </div>
+          <div class="plot">Total Drama World Tour has reached its final episode, where one of the final three will win a million dollars. Alejandro and Cody engage in a tie-breaker to determine a spot in the final two, and with one last manipulation from Alejandro, Cody gets eliminated. Chris then announces the final challenge with Heather against Alejandro which involves climbing Hawaii's active volcano with a wooden dummy of your opponent. During the challenge, Cody and Harold volunteer to help Heather, while Lindsay and Courtney choose to help Alejandro. In the end, Heather manages to trick Alejandro (by saying that she loves him), which distracts Alejandro, giving Heather the opportunity to bring Alejandro to his ultimate downfall in the game. However, after a misunderstanding, Alejandro still gets the win, after Heather throws Alejandro's dummy into the volcano. Later on, Ezekiel reemerges and steals the million dollar case from Chris, but then falls into the volcano (similar to the death of Gollum from The Lord of the Rings), and nobody gets the million dollars. The volcano then erupts, potentially harming everyone present, and Alejandro is the only one who suffers major injuries caused by the volcano's lava. Alejandro is then put inside a robot by Chef and Chris due to his extensive injuries, an obvious parody of the creation of Darth Vader from Star Wars: Revenge of the Sith.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Total%20Drama%20World%20Tour%20-%20S01E26%20-%20Hawaiian%20Punch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - Hawaiian Punch
+          </div>
+          <div class="plot">Total Drama World Tour has reached its final episode, where one of the final three will win a million dollars. Alejandro and Cody engage in a tie-breaker to determine a spot in the final two, and with one last manipulation from Alejandro, Cody gets eliminated. Chris then announces the final challenge with Heather against Alejandro which involves climbing Hawaii's active volcano with a wooden dummy of your opponent. During the challenge, Cody and Harold volunteer to help Heather, while Lindsay and Courtney choose to help Alejandro. In the end, Heather manages to trick Alejandro (by saying that she loves him), which distracts Alejandro, giving Heather the opportunity to bring Alejandro to his ultimate downfall in the game. However, after a misunderstanding, Alejandro still gets the win, after Heather throws Alejandro's dummy into the volcano. Later on, Ezekiel reemerges and steals the million dollar case from Chris, but then falls into the volcano (similar to the death of Gollum from The Lord of the Rings), and nobody gets the million dollars. The volcano then erupts, potentially harming everyone present, and Alejandro is the only one who suffers major injuries caused by the volcano's lava. Alejandro is then put inside a robot by Chef and Chris due to his extensive injuries, an obvious parody of the creation of Darth Vader from Star Wars: Revenge of the Sith.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Marvelous Misadventures of Flapjack
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Marvelous Misadventures of Flapjack</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Marvelous%20Misadventures%20of%20Flapjack%20%282008%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E01%20-%20Several%20Leagues%20Under%20the%20Sea-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Several Leagues Under the Sea
+          </div>
+          <div class="plot">After Flapjack brags about Bubbie's speed, he ends up involving himself, K'nuckles, and Bubbie in a race through the Sea of Teeth against an evil inventor and his mechanical Alpha-Whale.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E02%20-%20Eye%20Sea%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Eye Sea You
+          </div>
+          <div class="plot">While doing their laundry K'nuckles and Flapjack decide to spy on Bubbie, to find out what she does all day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E03%20-%20Kid%20Nickels-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Kid Nickels
+          </div>
+          <div class="plot">K'nuckles bets Flapjack in a poker game, resulting in the two having a falling-out. K'nuckles replaces Flapjack with a young boy named Kid Nickels, while Flapjack becomes a banker's apprentice. K'nuckles ends up missing Flapjack and challenges the banker to win him back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E04%20-%20The%20Sweet%20Life-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Sweet Life
+          </div>
+          <div class="plot">Flapjack and K'nuckles befriend the richest lady in Stormalong, Lady Nickelbottoms, to steal from her mansion (which is made from candy). When their plans go awry, K'nuckles finds himself challenging Lord Nickelbottoms in a candy-based duel to the death.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E05%20-%20Several%20Leagues%20Above%20the%20Sea-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Several Leagues Above the Sea
+          </div>
+          <div class="plot">The evil inventor's twin brother builds a &quot;Grand Flying Contraption&quot; to impress Bubbie, on whom he has a crush. However, when Bubbie does not return the same feelings (she sees him as a friend, rather than a love interest) he becomes very sad. Because of this, Flapjack and crew are inadvertently led into danger.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E06%20-%20That%27s%20a%20Wrap-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - That's a Wrap
+          </div>
+          <div class="plot">In a scheme to trade wrappers with Peppermint Larry in exchange for candy, K'nuckles and Flapjack search for a &quot;+&quot; because Peppermint Larry says he will give them 100 pieces of candy in exchange for it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E07%20-%20Cammie%20Island-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Cammie Island
+          </div>
+          <div class="plot">Captain K'nuckles and Flapjack stow away on a ship that they believe will take them to Candied Island. Instead, they end up on the mysterious Cammie Island; Flapjack befriends the misunderstood (and lonely) monster of the island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E08%20-%20Shave%20and%20a%20Haircut%2C%20Two%20Friends-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Shave and a Haircut, Two Friends
+          </div>
+          <div class="plot">When Captain K'nuckles believes he has found a map to Candied Island, he wants Flapjack to read it to reach their destination. However, Flapjack (in dire need of a haircut) cannot. They go to Doctor Barber for a haircut, only to find that the barber has stolen the map.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E09%20-%20Skooled-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Skooled
+          </div>
+          <div class="plot">When Flapjack thinks he's unable to tell directions, he and K'nuckles decide to go to school. But K'nuckles finds himself unable to keep up with the other students and later plans to steal the candy rewards that the teacher gives out. However, he finds out something strange about the school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E10%20-%20Snarked%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Snarked!
+          </div>
+          <div class="plot">When they assume that Bubbie has been kidnapped by a group of foreign sailors known as the Snarks, Flapjack and K'nuckles sneak aboard their ship to locate her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x11 - Foot Burn
+          </div>
+          <div class="plot">Flapjack and Captain K'nuckles suffer from a severe case of foot burn (sunburned feet) after sleeping in the sun. On their quest to treat it, they discover a hideous trolley driver whom K'nuckles knew from his past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E12%20-%20Hand%20It%20Over-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Hand It Over
+          </div>
+          <div class="plot">Captain K'nuckles is accused by a pirate captain of stealing his hand, leading Flapjack to believe that K'nuckles is nothing but a liar. This puts a strain on their friendship, causing everyone else believes that K'nuckles stole from them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E13%20-%20How%20the%20West%20Was%20Fun%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - How the West Was Fun!
+          </div>
+          <div class="plot">For Flapjack's birthday K'nuckles, Bubbie, and Flapjack sail west in search of Candied Island.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E14%20-%20K%27nuckles%20Is%20a%20Filthy%20Rat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - K'nuckles Is a Filthy Rat
+          </div>
+          <div class="plot">Flapjack adopts a rat he rescues from a flood and names it K'nuckles II, but his new pet ends up infecting everyone in Stormalong with the plague.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E15%20-%20Sittin%27%20Muscle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Sittin' Muscle
+          </div>
+          <div class="plot">Flapjack, Captain K'nuckles, and Bubbie journey to the Bottom of the World to reclaim K'nuckles' long-lost &quot;sittin' muscle&quot; (his buttocks).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E16%20-%20Knot%20Funny-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Knot Funny
+          </div>
+          <div class="plot">When Captain K'nuckles believes he has accidentally cursed Flapjack with the inability to speak he tries to find a cure, only to discover it to be a ruse by Flapjack to attend the local Knot Festival.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E17%20-%20Lookin%27%20for%20Love%20in%20All%20the%20Wrong%20Barrels-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Lookin' for Love in All the Wrong Barrels
+          </div>
+          <div class="plot">After relating a tale that reveals why he doesn't trust women Captain K'nuckles ends up falling in love with his own reflection, believing it to be a beautiful woman.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E18%20-%20Beard%20Buddies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Beard Buddies
+          </div>
+          <div class="plot">When Peppermint Larry hosts his annual Adventure Beard-Off Contest Captain K'nuckles enters the contest, with Flapjack pretending to be his beard.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E19%20-%20Pun%20Times%20with%20Punsie%20McKale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Pun Times with Punsie McKale
+          </div>
+          <div class="plot">Flapjack finds out Peppermint Larry is preparing for the Stormalong Pun-Off, in which he will compete against comedy legend Punsie McKale. After Flapjack and Larry are knocked out by Punsie's puns, K'nuckles steals the show.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S01E20%20-%20Balance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Balance
+          </div>
+          <div class="plot">Flapjack learns to balance a board on the waves (surfing) and becomes Stormalong's biggest film star.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E01%20-%20Jar%20She%20Blows%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Jar She Blows!
+          </div>
+          <div class="plot">Captain K'nuckles accidentally gets Flapjack stuck in a jar when trying to get some Candied Island candy. This leads Flapjack on a long journey in an attempt to return home, after being washed out to sea.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E02%20-%20Behind%20the%20Curtain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Behind the Curtain
+          </div>
+          <div class="plot">Flapjack and Captain K'nuckles struggle to escape from the Dock Hag's house after a feeble attempt at sabotaging K'nuckles' dock tickets, only to discover that the Dock Hag has a crush on the old captain.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E03%20-%20SHUT%20iT-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - SHUT iT
+          </div>
+          <div class="plot">After an argument involving Bubbie's tooth door, Flapjack and Captain K'nuckles decide to disguise themselves as each other for the day to see whose life is more difficult.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E04%20-%20Who%27s%20Moochin%27%20Who-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Who's Moochin' Who?
+          </div>
+          <div class="plot">When the Dock Hag bans Flapjack and K'nuckles from setting foot on the main harbor until they pay off their tickets, they take in a rich stranger in the hope he will pay them for being such kind friends. However, they rethink their idea when the stranger begins to take advantage of their hospitality.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E05%20-%20Over%20the%20Moon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Over the Moon
+          </div>
+          <div class="plot">When Flapjack and Captain K'nuckles are stranded on the moon after getting chased by Eight-Armed Willy, they discover that it could lead them to Candied Island. All they need to do is trick the moon (who, they discovered, has a mind of its own) into taking them there.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E06%20-%20100%20Percensus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - 100 Percensus
+          </div>
+          <div class="plot">Captain K'nuckles refuses to take a census conducted by Flapjack, due to a misunderstanding. Unfortunately, the census takers who assigned this duty to Flapjack are actually a group of pirates wanting to take over Stormalong.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E07%20-%20Off%20With%20His%20Hat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Off With His Hat
+          </div>
+          <div class="plot">When Flapjack helps Captain K'nuckles look for his lost hat on an island filled with chimpanzees, they end up encountering a researcher living among them. With her help, they must reach the &quot;secret meeting place&quot;: an active volcano whose crater K'nuckles must cross so he can get his hat back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E08%20-%20K%27nuckles%20and%20His%20Hilarious%20Problem-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - K'nuckles and His Hilarious Problem
+          </div>
+          <div class="plot">Flapjack tries to break Captain K'nuckles' candy addiction after he develops a severe case of &quot;candy rot&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E09%20-%20Fancy%20Pants-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Fancy Pants
+          </div>
+          <div class="plot">K'nuckles needs to get fancy pants to get into the new VIP section of the Candy Barrel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E10%20-%20Cuddle%20Trouble-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Cuddle Trouble
+          </div>
+          <div class="plot">Flapjack finds he may have a problem with cuddling after a night sleeping outside, so he tries to find the cause and a cure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E11%20-%20Who%27s%20That%20Man%20in%20the%20Mirror-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Who's That Man in the Mirror?
+          </div>
+          <div class="plot">When K'nuckles refuses to lose weight, he risks losing Flapjack to a real adventurer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E12%20-%20Unhappy%20Endings-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Unhappy Endings
+          </div>
+          <div class="plot">Tired of stories with happy endings K'nuckles and Flapjack go off in search of a story without one, but their imaginations quickly run wild.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E13%20-%20S.S.%20K%27nuckies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - S.S. K'nuckies
+          </div>
+          <div class="plot">Bubbie becomes jealous of K'nuckles' new boat, while unbeknownst to the trio, the boat's original owner seeks to kill Flapjack and K'nuckles.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E14%20-%20Candy%20Casanova-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - Candy Casanova
+          </div>
+          <div class="plot">Flapjack keeps an eye on Candy Wife while Peppermint Larry is out of town, making Captain K'nuckles jealous.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E15%20-%20Down%20with%20the%20Ship-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Down with the Ship
+          </div>
+          <div class="plot">K'nuckles tries to prove he's a captain by visiting a sunken ship to collect his captain's papers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E16%20-%20Willy%21%20%28Or%20Won%27t%20He%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - Willy! (Or Won't He?)
+          </div>
+          <div class="plot">Flapjack has to capture Eight-Armed Willy to prove he is worthy of being a real adventurer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E17%20-%20Bubbie%27s%20Tummy%20Ache-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Bubbie's Tummy Ache
+          </div>
+          <div class="plot">When Bubbie gets a stomach ache, Flapjack must go on a dangerous journey into her stomach to fix it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E18%20-%20Mind%20the%20Store%2C%20Don%27t%20Look%20in%20the%20Drawer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - Mind the Store, Don't Look in the Drawer
+          </div>
+          <div class="plot">Dr. Barber leaves Flapjack and K'nuckles to look after his barbershop/clinic with one important rule: they must not open a drawer. As a result, they are very curious about what is in the drawer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E19%20-%20Please%20Retire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Please Retire
+          </div>
+          <div class="plot">K'nuckles and Flapjack visit a storytelling club, where K'nuckles finds out that his own stories may be outdated.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S02E20%20-%20Under%20the%20Sea%20Monster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - Under the Sea Monster
+          </div>
+          <div class="plot">When Flapjack pulls a sea monster-related prank on K'nuckles the citizens of Stormalong banish him from the harbor by throwing him into the ocean, leaving Flapjack to try to get him back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S03E01%20-%20Careful%20What%20You%20Fish%20For-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Careful What You Fish For
+          </div>
+          <div class="plot">When Peppermint Larry falls sick, Flapjack and K'nuckles are forced to go fishing for food.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S03E02%20-%20Mayor%20May%20Not-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Mayor May Not
+          </div>
+          <div class="plot">K'nuckles becomes the new mayor of Stormalong.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S03E03%20-%20I%27m%20a%20Believer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - I'm a Believer
+          </div>
+          <div class="plot">When K'nuckles continues to trick people and blame ghosts, Flapjack consults Jayde, the resident ghost expert of Stormalong, to see if ghosts really do exist.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S03E04%20-%20Liar%2C%20Liar%2C%20You%20For%20Hire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Liar, Liar, You For Hire?
+          </div>
+          <div class="plot">K'nuckles claims he knows where Candied Island is but gets caught up in his lie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S03E05%20-%20Candy%20Colleague-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Candy Colleague
+          </div>
+          <div class="plot">Flapjack makes Doctor Barber a friend out of candy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Marvelous%20Misadventures%20of%20Flapjack%20-%20S03E06%20-%20These%20Boots%20Were%20Made%20For%20Walking%20%28On%20Your%20Face%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - These Boots Were Made For Walking (On Your Face)
+          </div>
+          <div class="plot">K'nuckles gets a new face to avoid a mob after stealing boots but ends up caught in the mob.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

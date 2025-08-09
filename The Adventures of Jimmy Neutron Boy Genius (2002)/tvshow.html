@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Adventures of Jimmy Neutron: Boy Genius
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Adventures of Jimmy Neutron: Boy Genius</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20%282002%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S00E01%20-%20Pilot%20-%20Runaway%20Rocketboy%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - Pilot - Runaway Rocketboy!
+          </div>
+          <div class="plot">Jimmy, angry with his parents about grounding him for launching Carl off the roof, decides to run away.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S00E02%20-%20The%20Egg-pire%20Strikes%20Back-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x2 - The Egg-pire Strikes Back
+          </div>
+          <div class="plot">The Yolkians have come to earth, but this time they seek out only peace and brotherhood with the people of Retroville. While Jimmy Neutron suspects the worst, everyone in town is ready to forgive and forget.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S00E03%20-%20Operation%20Rescue%20Jet%20Fusion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x3 - Operation: Rescue Jet Fusion
+          </div>
+          <div class="plot">Jimmy is enlisted as a spy by the Big Top Secret Organization. His mission: find and rescue Agent X - who turns out to be Jimmy's movie hero, Jet Fusion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S00E04%20-%20The%20Jimmy%20Timmy%20Power%20Hour-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x4 - The Jimmy Timmy Power Hour
+          </div>
+          <div class="plot">Timmy Turner is magically sent to the secret lab of none other than Jimmy Neutron, the boy with the genius IQ. How will Timmy and Jimmy get back to each other's own worlds?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S00E05%20-%20Win%2C%20Lose%2C%20and%20Kaboom%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x5 - Win, Lose, and Kaboom!
+          </div>
+          <div class="plot">A strange meteor lands in Retroville, bearing a mysterious message in an alien language. When Jimmy is finally able to translate and answer the riddle, he, Cindy, Libby, Sheen, Carl, Bolbi, and Goddard are sucked into space - only to find that the message is an invitation to Intergalactic Showdown! Team Earth must learn to work together to win - or lose their home planet!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S00E06%20-%20Attack%20of%20the%20Twonkies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x6 - Attack of the Twonkies
+          </div>
+          <div class="plot">Jimmy returns from an excavation on the Twonkus-3 comet with a small furry creature burrowed in his soil samples that have a rather violent reaction to music.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S00E07%20-%20League%20of%20Villains-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x7 - League of Villains
+          </div>
+          <div class="plot">King Goobot has organized the most diabolical collection of bad guys to ever assemble on one space station. Their mission: Get Jimmy Neutron.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S00E08%20-%20Jimmy%20Timmy%20Power%20Hour%202%20-%20When%20Nerds%20Collide-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x8 - Jimmy Timmy Power Hour 2 - When Nerds Collide
+          </div>
+          <div class="plot">Jimmy Neutron and Timmy Turner vie against each other for Cindy's affections and Professor Calamitous employs Cosmo and Wanda in his evil plans.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S00E09%20-%20Jimmy%20Timmy%20Power%20Hour%203%20-%20The%20Jerkinators%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x9 - Jimmy Timmy Power Hour 3 - The Jerkinators!
+          </div>
+          <div class="plot">Jimmy and Timmy are at it again: bickering over the affections of Cindy, but somehow end up fighting off enemies together!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E01%20-%20When%20Pants%20Attack-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - When Pants Attack
+          </div>
+          <div class="plot">Since Jimmy's a scientist, he has more important things to do than pick up his pants - like invent a device that'll do that chore for him. But when the nanochip develops advanced brainial capacity, Jimmy's pants lead an attack on the city of Retroville!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E02%20-%20Normal%20Boy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Normal Boy
+          </div>
+          <div class="plot">Jimmy is tired of being a genius, so he decides to drain his brain to normal capacity. But when a big meteor heads straight for Retroville, who will save the day?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E03%20-%20Birth%20of%20a%20Salesman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Birth of a Salesman
+          </div>
+          <div class="plot">Miss Fowl's class has a candy-selling contest, with the grand prize being a trip to Retroland! To beat Cindy in the contest, Jimmy invents a robot programmed to sell candy no matter what.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E04%20-%20Brobot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Brobot
+          </div>
+          <div class="plot">In his lab, Jimmy constructs the perfect little brother he never had, &quot;Brobot&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E05%20-%20The%20Big%20Pinch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Big Pinch
+          </div>
+          <div class="plot">To settle an argument with Cindy, Jimmy brings Thomas Edison to school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E06%20-%20Granny%20Baby-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Granny Baby
+          </div>
+          <div class="plot">Jimmy's Granny comes to visit and he gives her his new youth tonic potion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E07%20-%20Time%20Is%20Money-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Time Is Money
+          </div>
+          <div class="plot">Jimmy goes 15 years into the past to a time when his parents were swinging sweethearts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E08%20-%20Raise%20the%20Oozy%20Scab-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Raise the Oozy Scab
+          </div>
+          <div class="plot">Jimmy and Cindy are forced to collaborate on a science project involving hidden treasure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E09%20-%20I%20Dream%20of%20Jimmy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - I Dream of Jimmy
+          </div>
+          <div class="plot">Jimmy invents the Dream Injector 5000 and enters Carl's dream to figure out what he is afraid of.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E10%20-%20Jimmy%20On%20Ice-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Jimmy On Ice
+          </div>
+          <div class="plot">Jimmy's attempt to cool off the summer heat wave results in a new Ice Age.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E11%20-%20Battle%20of%20the%20Band-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Battle of the Band
+          </div>
+          <div class="plot">Jimmy, Carl and Sheen form a band in order to beat out Cindy and Libby for the talent contest first prize.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E12%20-%20See%20Jimmy%20Run-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - See Jimmy Run
+          </div>
+          <div class="plot">To get revenge on Cindy for winning a race, Jimmy adapts his running shoes so he can move at lightning speed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E13%20-%20Trading%20Faces-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Trading Faces
+          </div>
+          <div class="plot">Jimmy comes up with an invention that allows him to read Cindy's mind.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E14%20-%20The%20Phantom%20of%20Retroland-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - The Phantom of Retroland
+          </div>
+          <div class="plot">Jimmy tries to disprove Nick's scary tale about the Phantom of Retroland.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E15%20-%20My%20Son%2C%20the%20Hamster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - My Son, the Hamster
+          </div>
+          <div class="plot">Jimmy's teleporting goof-up leads to him switching heads with Carl's pet hamster.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E16%20-%20Hall%20Monster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Hall Monster
+          </div>
+          <div class="plot">When the old tyrant of a hall monster leaves, Jimmy is picked as his replacement.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E17%20-%20Hypno-Birthday%20to%20You%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Hypno-Birthday to You!
+          </div>
+          <div class="plot">In order to get his new chemistry set right away, Jimmy hypnotizes his parents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E18%20-%20Krunch%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Krunch Time
+          </div>
+          <div class="plot">Jimmy comes up with a snack that is even tastier than everyone's favorite.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E19%20-%20Substitute%20Creature-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Substitute Creature
+          </div>
+          <div class="plot">Miss Fowl swallows a seed from Jimmy's DNA-accelerated spinach plant turning her into a 50-foot plant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E20%20-%20Safety%20First-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Safety First
+          </div>
+          <div class="plot">Jimmy creates an electronic bodyguard to protect him from a bully.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E21%20-%20Crime%20Sheen%20Investigation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - Crime Sheen Investigation
+          </div>
+          <div class="plot">Sheen's oldest and most prized UltraLord is missing! It's up to Jimmy, playing a high-tech Sherlock Holmes, to find it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E22%20-%20Journey%20to%20the%20Center%20of%20Carl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Journey to the Center of Carl
+          </div>
+          <div class="plot">Jimmy creates a &quot;get out of school sick&quot; patch.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E23%20-%20Aaughh%21%21%20Wilderness%21%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - Aaughh!! Wilderness!!
+          </div>
+          <div class="plot">Hugh takes Jimmy, Sheen, and Carl on a camping trip into the wilderness, allowing no technology whatsoever. So what will save them when a big problem comes along?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E24%20-%20Party%20at%20Neutron%27s-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - Party at Neutron's
+          </div>
+          <div class="plot">Sheen and Carl convince Jimmy to throw a party when his parents go out to watch Ducks. But when Hugh and Judy come home early, how can Jimmy convince his guests to leave?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E25%20-%20Ultra%20Sheen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x25 - Ultra Sheen
+          </div>
+          <div class="plot">Jimmy uses his Neutronic Game Cube to send Sheen into his favorite Ultra Lord video game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E26%20-%20Broadcast%20Blues-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - Broadcast Blues
+          </div>
+          <div class="plot">Jimmy lands the spot of host on Lindbergh Elementary's Public Access show! When the show fails miserably, Cindy and Libby are brought in as producer and co-star, changing informative Science With Jimmy to flashy Funky Jam Dance Party (with some science).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E27%20-%20Professor%20Calamitous%2C%20I%20Presume-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x27 - Professor Calamitous, I Presume
+          </div>
+          <div class="plot">The mad Professor Finbarr Calamitous schemes to make Jimmy his &quot;scientific slave.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E28%20-%20Maximum%20Hugh-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x28 - Maximum Hugh
+          </div>
+          <div class="plot">At the parent-child picnic, Jimmy gives his dad a bionic sweatband to help their team beat Cindy's.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E29%20-%20Sleepless%20in%20Retroville-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x29 - Sleepless in Retroville
+          </div>
+          <div class="plot">Jimmy is hosting a sleepover with Carl and Sheen! To make it the best slumber party in history, Jimmy invents a machine to make perfect pillows for pillow fights, create made-to-order pizzas, and tell scream-your-head-off scary stories. But what happens if the invention is overloaded and the programs mix up?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E30%20-%20Make%20Room%20for%20Daddy-O-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x30 - Make Room for Daddy-O
+          </div>
+          <div class="plot">The Father's Day talent show is a few days away so Jimmy invents a device that turns dorky Hugh into the coolest dad in Retroville.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E31%20-%20A%20Beautiful%20Mine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x31 - A Beautiful Mine
+          </div>
+          <div class="plot">Jimmy, Carl, Sheen, Cindy, Libby, and Goddard blast off into space in Jimmy's newly invented spaceship to mine for aster-rubies while fighting off space bandits and their own greed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S01E32%20-%20Sorry%2C%20Wrong%20Era-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x32 - Sorry, Wrong Era
+          </div>
+          <div class="plot">Jimmy invents the Quantum Replay 9000 which enables him to go back in time. Hugh accidentally sends Jimmy, Carl, and Sheen back 200 million years.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E01%20-%20Beach%20Party%20Mummy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Beach Party Mummy
+          </div>
+          <div class="plot">Bored by a class documentary on mummies, Jimmy decides to take Carl, Sheen, Libby, and Cindy along with him to see the real deal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E02%20-%20The%20Retroville%209-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - The Retroville 9
+          </div>
+          <div class="plot">Jimmy's determination to captain a winning baseball team leads him to rev up the equipment with Neutronic technology.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E03%20-%20Grumpy%20Young%20Men-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Grumpy Young Men
+          </div>
+          <div class="plot">They boys use a metabolic accelerator to make them old enough to buy a violent video game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E04%20-%20Nightmare%20in%20Retroville-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Nightmare in Retroville
+          </div>
+          <div class="plot">In order to have the scariest Halloween costumes ever, Jimmy uses his latest invention to morph Carl and Sheen into a Vampire and a Werewolf.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E05%20-%20Monster%20Hunt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Monster Hunt
+          </div>
+          <div class="plot">Jimmy, Sheen, Carl and Captain Betty set out on a mission to capture the lake monster that has haunted Lake Retroville for at least six months.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E06%20-%20Jimmy%20For%20President-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Jimmy For President
+          </div>
+          <div class="plot">Jimmy runs for class president against Sheen, Libby and Bolbi - the new kid.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E07%20-%20Return%20of%20the%20Nanobots-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Return of the Nanobots
+          </div>
+          <div class="plot">Jimmy attempts to update the mischievous Nanobots in order to correct errors in his homework, but the Nanobots take it upon themselves to correct everything - even the human race!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E08%20-%20Holly%20Jolly%20Jimmy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Holly Jolly Jimmy
+          </div>
+          <div class="plot">Jimmy is convinced that Santa Claus does not exist. To prove his theory, he travels to the North Pole where he discovers a remote toy factory.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E09%20-%20Love%20Potion%20%23976%20J-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Love Potion #976/J
+          </div>
+          <div class="plot">A laboratory mishap exposes Jimmy, Carl and Sheen to a powerful pheromone that causes each of them to fall madly in love with the next female they see.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E10%20-%20Sheen%27s%20Brain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Sheen's Brain
+          </div>
+          <div class="plot">Sheen is one math test away from being left back, so Jimmy turns his Brain Drain helmet into a Brain Gain helmet and uses it on his buddy, instantly quadrupling Sheen's IQ.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E11%20-%20MaternoTron%20Knows%20Best-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - MaternoTron Knows Best
+          </div>
+          <div class="plot">While Judy Neutron takes a spa vacation, Jimmy invents The Maternotron 6000 to take care of the house.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E12%20-%20Send%20in%20the%20Clones-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Send in the Clones
+          </div>
+          <div class="plot">Jimmy clones himself so he doesn't have to do chores.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E13%20-%20The%20Great%20Egg%20Heist-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - The Great Egg Heist
+          </div>
+          <div class="plot">Jimmy must help Asian Princess Peggy Tsu retrieve the Egg Drop Jade before her evil brother steals it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E14%20-%20The%20Feud-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - The Feud
+          </div>
+          <div class="plot">Jimmy and Carl get caught in the middle of a feud between their dads.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E15%20-%20Out%2C%20Darn%20Spotlight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Out, Darn Spotlight
+          </div>
+          <div class="plot">Jimmy is desperate to get the starring role opposite dream girl Betty Quinlan in the school musical, &quot;Macbeth in Space.&quot; But the only part he can land is the FX master backstage.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E16%20-%20The%20Junkman%20Cometh-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - The Junkman Cometh
+          </div>
+          <div class="plot">Jimmy must rescue Brobot's parents from the terrifying Junk Man, a galactic space scoundrel who plans to dismantle the robots and sell their parts to the highest bidder.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E17%20-%20Foul%20Bull-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Foul Bull
+          </div>
+          <div class="plot">During a class trip to a rodeo, Jimmy, Carl and Sheen fall for a cute little cowgirl named Sally.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E18%20-%20The%20Science%20Fair%20Affair-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - The Science Fair Affair
+          </div>
+          <div class="plot">Cindy Vortex leads a campaign to ban Jimmy from the school's science fair.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E19%20-%20Men%20At%20Work-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Men At Work
+          </div>
+          <div class="plot">Carl, Sheen, and Jimmy take jobs at a local burger joint. Jimmy transforms it to a fully automated restaurant that aims to please the customers and destroy the competition.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E20%20-%20The%20Mighty%20Wheezers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - The Mighty Wheezers
+          </div>
+          <div class="plot">Jimmy designs a temporary remedy at the Wheezers' house so he and Carl can have fun.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S02E21%20-%20Billion%20Dollar%20Boy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - Billion Dollar Boy
+          </div>
+          <div class="plot">Jimmy and company are invited to the home of a spoiled boy billionaire - who wants Jimmy's dog.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E01%20-%20Lights%21%20Camera%21%20Danger%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Lights! Camera! Danger!
+          </div>
+          <div class="plot">Famous film director Quintin Smithee is coming to Retroville to make his next big movie, and Jimmy, Cindy, Libby, Sheen and Carl all have starring roles.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E02%20-%20The%20N%20Men-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - The N Men
+          </div>
+          <div class="plot">After a run in with a radiation belt in outer space, Jimmy, Cindy, Carl, Sheen and Libby are all endowed with super powers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E03%20-%20The%20Tomorrow%20Boys-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - The Tomorrow Boys
+          </div>
+          <div class="plot">Jimmy, Sheen, and Carl travel 15 years into the future, only to find that some things have gone wrong. Can they right the past to save their future?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E04%20-%20Fundemonium-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Fundemonium
+          </div>
+          <div class="plot">Jimmy's dad loses his job at the now-defunct automotive plant which means that the Neutrons may have to move to a new town. As a last-ditch effort to keep the family in Retroville, Hugh applies for a job as a toy inventor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E05%20-%20Stranded-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Stranded
+          </div>
+          <div class="plot">A trip gone wrong ends up turning even worse when Jimmy and Cindy get into an argument that winds up getting them stranded together.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E06%20-%20Jimmy%20Goes%20to%20College-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Jimmy Goes to College
+          </div>
+          <div class="plot">Jimmy is recruited by the most prestigious science college in the country to be their new superstar student. But when he gets there, Jimmy becomes the unwitting target of rival student, Seymour Nimmelfarb.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E07%20-%20Who%27s%20Your%20Mommy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Who's Your Mommy?
+          </div>
+          <div class="plot">On a trip to Planet Schmengy, a strange alien substance attaches itself to Carl's face.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E08%20-%20Clash%20of%20the%20Cousins-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Clash of the Cousins
+          </div>
+          <div class="plot">The Neutron family has gathered to celebrate Great Aunt Amanda's birthday. When Jimmy's present explodes, everyone suspects him of fowl.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E09%20-%20My%20Big%20Fat%20Spy%20Wedding-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - My Big Fat Spy Wedding
+          </div>
+          <div class="plot">Jimmy's new mission from the BTSO is to follow Beautiful Gorgeous. He takes the job and he discovers that she and Jet Fusion are getting married!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E10%20-%20Crouching%20Jimmy%2C%20Hidden%20Sheen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Crouching Jimmy, Hidden Sheen
+          </div>
+          <div class="plot">In Retroville, Sheen is just an average hyperactive kid. But in Shangri Llama, he is known as The Chosen One, or One Who Puts Foot Behind Head.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E11%20-%20The%20Incredible%20Shrinking%20Town-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - The Incredible Shrinking Town
+          </div>
+          <div class="plot">When the entire population of Retroville is accidentally hit by Jimmy's shrink ray, the Space Bandits abduct everyone with the nefarious plan of marketing and selling them throughout the galaxy as living dolls.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E12%20-%20One%20of%20Us-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - One of Us
+          </div>
+          <div class="plot">A new TV show turns everyone in Retroville into mindless and exceedingly cheerful zombies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E13%20-%20Vanishing%20Act-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Vanishing Act
+          </div>
+          <div class="plot">To impress Betty Quinlan, Jimmy performs a magic show using a cheap magic kit that's full of his own technological upgrades.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E14%20-%20The%20Trouble%20with%20Clones-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - The Trouble with Clones
+          </div>
+          <div class="plot">The evil Jimmy clone is back, and he's reconfigured the cloning device to make an evil clone of the Earth with an alarming side effect &ndash; the real Earth is starting to disappear.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E15%20-%20The%20Evil%20Beneath-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - The Evil Beneath
+          </div>
+          <div class="plot">The boys travel to the Bahama Quadrangle to disprove the myth of the disappearances associated with the mysterious site.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E16%20-%20Carl%20Wheezer%20Boy%20Genius-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - Carl Wheezer: Boy Genius
+          </div>
+          <div class="plot">Carl's pen pal, Elke Elkberg from Sweden, is coming to Retroville to meet him, and Carl is in a panic.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E17%20-%20Who%20Framed%20Jimmy%20Neutron-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - Who Framed Jimmy Neutron?
+          </div>
+          <div class="plot">Jimmy is framed for a break in at the Retroville Bank. When Carl and Sheen attempt to free him from his incarceration, the three boys end up on a chain gang together.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E18%20-%20Flippy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x18 - Flippy
+          </div>
+          <div class="plot">Jimmy places a funny chip into Hugh's new Flippy puppet when he insists on using it for Career Day at school. But Jimmy soon learns that Flippy is stealing his dad's mind and has to save him before Flippy disposes of him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E19%20-%20How%20to%20Sink%20a%20Sub-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x19 - How to Sink a Sub
+          </div>
+          <div class="plot">When Jimmy hides a time displacement device in the teachers' transportation to the annual education convention, the entire faculty of Lindberg Elementary is sent into temporary time limbo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E20%20-%20Lady%20Sings%20the%20News-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x20 - Lady Sings the News
+          </div>
+          <div class="plot">The kids become news anchors for a local television network.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E21%20-%20King%20of%20Mars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x21 - King of Mars
+          </div>
+          <div class="plot">Eustace Strych is back, and he's still determined to humiliatingly defeat Jimmy. Now the race to find an energy source on Mars is on! Who will win?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E22%20-%20El%20Magnifico-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x22 - El Magnifico
+          </div>
+          <div class="plot">Sheen's dad, Mr. Estevez desperately wants to impress his son, so he pretends he is a superhero.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Adventures%20of%20Jimmy%20Neutron%20Boy%20Genius%20-%20S03E23%20-%20Best%20in%20Show-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x23 - Best in Show
+          </div>
+          <div class="plot">Goddard is disqualified from the Retroville Pet Show because he is not technically a real dog.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
