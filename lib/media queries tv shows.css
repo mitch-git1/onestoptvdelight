@@ -228,6 +228,23 @@ body.sidebar-open .infoContainer {
 display: none;
 }
 
+#searchContainer{
+  position: relative;
+  right: 50px;
+  bottom: 70px;
+  width: 200px; /* add a width */
+  height: 50px; /* add a height */
+}
+
+.homepage-link-container{
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 900px; /* reduce the left value to a smaller number */
+  width: 200px; /* add a width */
+  height: 50px; /* add a height */
+}
+
 }
 
 
@@ -450,7 +467,24 @@ body.sidebar-open .infoContainer {
 }
 
 .infoBackTitleContainer.sidebar-nav-open {
-display: none;
+   display: none;
+}
+
+#searchContainer{
+  position: relative;
+  right: 50px;
+  bottom: 70px;
+  width: 200px; /* add a width */
+  height: 50px; /* add a height */
+}
+
+.homepage-link-container{
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 900px; /* reduce the left value to a smaller number */
+  width: 200px; /* add a width */
+  height: 50px; /* add a height */
 }
 
 }

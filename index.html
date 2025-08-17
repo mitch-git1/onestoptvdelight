@@ -40,38 +40,10 @@
        </ul>
        </div>
       <div class="infoContainer">
-	 <div id="searchContainer">
-        <input type="text" autocomplete="off" onfocus="this.value=''; searchOnPage('');"
-        onblur="if(this.value==''){this.value='Search Movie Name'};"
-        onkeyup="searchOnPage(this.value.toLowerCase());"
-        id="search_box" value="Search Movie Name" />
-        <input type="submit" id="search_button" value="Search" />
-        <div id="search_result"></div>
         <div class="homepage-link-container">
            <!-- add home button -->
        <a href="https://mitch-git5.github.io/homepage-one-stop-tv-delight-/index.html" class="homepage-link">Home Button</a>
          </div>
-         </div>
-         <div class="dropdown-container">
-         <div id="genre-select-container">
-         <label for="genre-select" class="genre-label">Search By Genre:</label>
-         <select id="genre-select">
-         <option value="all">All</option>
-         </select>
-         </div>
-         <div id="date-select-container">
-           <label for="date-select" class="date-label">Search By Year:</label>
-           <select id="date-select">
-             <option value="all">All</option>
-           </select>
-         </div>
-         <div id="age-rating-select-container">
-         <label for="age-rating-select" class="age-rating-label">Search By Age Rating:</label>
-         <select id="age-rating-select">
-         <option value="all">All</option>
-        </select>
-        </div>
-        </div>
         <div class="infoBackTitleContainer">
           <span class="infoBackTitle">Full Library</span>
           <hr class="subTitleSeprator" />
@@ -96,6 +68,40 @@
           </div>
         </div>
       </div>
+        <div id="searchContainer">
+        <input type="text" autocomplete="off" onfocus="this.value=''; searchOnPage('');"
+        onblur="if(this.value==''){this.value='Search TV Show Name'};"
+        onkeyup="searchOnPage(this.value.toLowerCase());"
+        id="search_box" value="Search TV Show Name" />
+        <input type="submit" id="search_button" value="Search" />
+        <div id="search_result"></div>
+        </div>
+        <div class="dropdown-container">
+         <div id="genre-select-container">
+         <label for="genre-select" class="genre-label">Search By Genre:</label>
+         <select id="genre-select">
+         <option value="all">All</option>
+         </select>
+         </div>
+         <div id="date-select-container">
+           <label for="date-select" class="date-label">Search By Year:</label>
+           <select id="date-select">
+             <option value="all">All</option>
+           </select>
+         </div>
+         <div id="age-rating-select-container">
+         <label for="age-rating-select" class="age-rating-label">Search By Age Rating:</label>
+         <select id="age-rating-select">
+         <option value="all">All</option>
+        </select>
+        </div>
+        <div id="rating-select-container">
+        <label for="rating-select" class="rating-label">Search By Rating:</label>
+        <select id="rating-select">
+        <option value="all">All</option>
+        </select>
+        </div>
+        </div>
        <div id="no-results-message" class="no-results-message"></div>
 	      
       <div id="movie_1" class="aniContainer aniOrder0">
@@ -20502,6 +20508,7 @@ menuButton.addEventListener('click', () => {
 </script>
 <script src="lib/sortMovies.js"></script>
 <script src="lib/filter dropdowns.js" defer></script>
+ <script src="lib/rating-filter.js" defer></script>
        <!-- Add the no-results-message element -->
 <div id="no-results-message" style="display: none;"></div>
 <script src="lib/Iframe movies.js"></script>

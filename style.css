@@ -24,7 +24,8 @@
 #searchContainer
 {
 	position:absolute;
-	right:5px;
+	right:500px;
+    bottom: 420px;
 }
 #search_box:focus
 {
@@ -49,10 +50,11 @@
 {
 	background:#74797A;
 	padding:2px;
-	width:200px;
+	width:280px;
 	border: 2px solid rgba(103,140,177,0.2);
 	border-radius:5px;
 	text-align:center;
+        height: 20px;
 }
 #search_result a
 {
@@ -428,7 +430,7 @@ a:hover {
 	cursor:default;
     position: absolute;
 	width:400px;
-	top:69px;
+	top: 40px;
     right: 390px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -443,7 +445,7 @@ a:hover {
     padding-bottom: 10px;
 	text-shadow: 4px 4px 0 rgba(215,215,215,0.15);
     width: 950px;
-	top:80px;
+	top:50px;
     right: 120px;
     text-align: center;
     position: absolute;
@@ -464,7 +466,7 @@ a:hover {
 	text-shadow: 4px 4px 0 rgba(215,215,215,0.15);
     width: 950px;
     right: 120px;
-	top:30px;
+	top: 0px;
     text-align: center;
     position: absolute;
     font-size: 30px;
@@ -935,8 +937,8 @@ a:active {
       background-color: #f9f9f9;
       border: 3px solid #d31212;
       position: absolute; /* Position absolutely */
-      top: 60%; /* Move down by 50% of the parent's height */
-      left: 50%; /* Move right by 50% of the parent's width */
+      top: 80%; /* Move down by 50% of the parent's height */
+      left: 48%; /* Move right by 50% of the parent's width */
       transform: translate(-50%, -50%); /* Move back up and left by 50% of its own width and height */
       width: 50%; /* Set a width to make it visible */
       text-align: center; /* Center the text */
@@ -1010,10 +1012,11 @@ a:active {
 
 .dropdown-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
   padding: 20px;
   margin-top: 40px; /* add this */
+  gap: 10px; 
 }
 
 .dropdown-container > div {
@@ -1022,6 +1025,7 @@ a:active {
 
 #genre-select-container,
 #date-select-container,
+#rating-select-container,
 #age-rating-select-container {
   position: relative; /* change to relative */
   margin-top: 0; /* remove margin-top */
@@ -1039,6 +1043,7 @@ a:active {
 
 #genre-select:focus,
 #date-select:focus,
+#rating-select:focus,
 #age-rating-select:focus {
   /* add these styles to the focused dropdown list */
   box-shadow: 0 2px 4px rgba(6, 192, 161, 0.534); /* increase box-shadow on focus */
@@ -1047,6 +1052,7 @@ a:active {
 
 #genre-select option,
 #date-select option,
+#rating-select option,
 #age-rating-select option {
   /* add these styles to the option elements */
   padding: 10px;
@@ -1058,6 +1064,7 @@ a:active {
 
 #genre-select option:hover,
 #date-select option:hover,
+#rating-select option:hover,
 #age-rating-select option:hover {
   /* add these styles to the option elements on hover */
   background-color: #ffffff;
@@ -1148,6 +1155,6 @@ a:active {
     display: inline-block;
     position: relative;
     top: 0;
-    left: 0;
+    left: 1075px;
     /* add other styles to match the current layout */
 }
