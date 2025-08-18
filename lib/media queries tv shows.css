@@ -230,7 +230,7 @@ display: none;
 
 #searchContainer{
   position: relative;
-  right: 50px;
+  left: 30px;
   bottom: 70px;
   width: 200px; /* add a width */
   height: 50px; /* add a height */
@@ -472,7 +472,7 @@ body.sidebar-open .infoContainer {
 
 #searchContainer{
   position: relative;
-  right: 50px;
+  left: 30px;
   bottom: 70px;
   width: 200px; /* add a width */
   height: 50px; /* add a height */
