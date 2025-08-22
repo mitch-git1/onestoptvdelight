@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Peacemaker
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Peacemaker</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Peacemaker%20%282022%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Peacemaker%20-%20S01E01%20-%20A%20Whole%20New%20Whirled-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - A Whole New Whirled
+          </div>
+          <div class="plot">After making a miraculous recovery, Peacemaker returns home&ndash;only to discover that his freedom comes at a price.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Peacemaker%20-%20S01E02%20-%20Best%20Friends%2C%20For%20Never-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Best Friends, For Never
+          </div>
+          <div class="plot">After Peacemaker&rsquo;s hazardous escape, tension and mistrust build within the team. Later, as Peacemaker grapples with his new assignment, he receives a surprise visitor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Peacemaker%20-%20S01E03%20-%20Better%20Goff%20Dead-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Better Goff Dead
+          </div>
+          <div class="plot">On their first official mission to assassinate suspected &ldquo;butterflies,&rdquo; Economos and Murn bond, and Peacemaker and Harcourt reach an understanding. But the whole job goes sideways with the arrival of Judomaster.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Peacemaker%20-%20S01E04%20-%20The%20Choad%20Less%20Traveled-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Choad Less Traveled
+          </div>
+          <div class="plot">Following a somewhat successful mission, Murn recruits Vigilante. Meanwhile, after learning that the team helped land his father in prison, Peacemaker confronts his complicated past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Peacemaker%20-%20S01E05%20-%20Monkey%20Dory-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Monkey Dory
+          </div>
+          <div class="plot">The team scouts the apparent hub for the aliens&rsquo; food supply, only to come face-to-face with a full-fledged invasion. Meanwhile, Auggie&rsquo;s attempt to sell out his son to the police is complicated by Murn&rsquo;s mysterious contact.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Peacemaker%20-%20S01E06%20-%20Murn%20After%20Reading-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Murn After Reading
+          </div>
+          <div class="plot">Murn reveals his deepest secret. Auggie is set free. The botched arrest of Peacemaker sends alien Goff into an unexpected new host.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Peacemaker%20-%20S01E07%20-%20Stop%20Dragon%20My%20Heart%20Around-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Stop Dragon My Heart Around
+          </div>
+          <div class="plot">Harcourt, Murn, and Adebayo find themselves surrounded by an alien force, while Peacemaker squares off against his father with help from Vigilante and Economos.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Peacemaker%20-%20S01E08%20-%20It%27s%20Cow%20or%20Never-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - It's Cow or Never
+          </div>
+          <div class="plot">With Peacemaker and Adebayo at odds, can the team kill the cow once and for all &ndash; or will their fracture give the aliens the opening they need to complete its teleportation?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Peacemaker%20-%20S02E01%20-%20The%20Ties%20That%20Grind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - The Ties That Grind
+          </div>
+          <div class="plot">While Peacemaker attempts to join the Justice Gang, Harcourt struggles to find work, and Economos takes on a challenging new assignment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

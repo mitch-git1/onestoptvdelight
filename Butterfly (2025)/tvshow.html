@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Butterfly
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Butterfly</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Butterfly%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Butterfly%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">David Jung, a Korean-American man who faked his death nine years ago, confronts his past when his daughter Rebecca, now working as an assassin for the private intelligence agency Caddis, is sent to kill him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Butterfly%20-%20S01E02%20-%20Daegu-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Daegu
+          </div>
+          <div class="plot">David and Rebecca find themselves on the run from Caddis after a tense encounter at a police checkpoint. But their unexpected reunion is complicated by Rebecca's resentment over her father's abandonment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Butterfly%20-%20S01E03%20-%20Busan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Busan
+          </div>
+          <div class="plot">Rebecca, David and his family escape to a safe house in the coastal city of Busan. Family tensions mount as Rebecca struggles with her father's new family. And a shocking revelation about David's past with Juno is revealed during a violent confrontation at a marina.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Butterfly%20-%20S01E04%20-%20Pohang-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Pohang
+          </div>
+          <div class="plot">After abducting Oliver, David and Rebecca use the information they gather from him to devise a plan to go after Juno, taking them back to Seoul, where Gun and Caddis are waiting.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Butterfly%20-%20S01E05%20-%20Seoul-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Seoul
+          </div>
+          <div class="plot">Juno interrogates Oliver and discovers he betrayed her while being held captive by David. Meanwhile, David and Rebecca carry out a PSYOP campaign against Juno, aimed at dividing her and Oliver and bringing down Caddis once and for all.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Butterfly%20-%20S01E06%20-%20Annyeong-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Annyeong
+          </div>
+          <div class="plot">David pursues Rebecca after she's captured by Juno and Caddis operatives, leading to a high-speed chase and brutal ambush at an abandoned factory site.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
