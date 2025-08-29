@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Kaiju No. 8
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Kaiju No. 8</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Kaiju%20No.%208%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Kaiju%20No.%208%20-%20S01E01%20-%20The%20Man%20Who%20Became%20a%20Kaiju-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Man Who Became a Kaiju
+          </div>
+          <div class="plot">Kafka Hibino has almost abandoned his dream of joining the anti-Kaiju &quot;Defense Force.&quot; He now works in Kaiju clean-up, disposing of the bodies of slain Kaiju and thinking back with regret to the days he spent with his childhood friend Mina Ashiro, captain of Defense Force's Third Division.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Kaiju%20No.%208%20-%20S01E02%20-%20The%20Kaiju%20Who%20Defeats%20Kaiju-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Kaiju Who Defeats Kaiju
+          </div>
+          <div class="plot">After turning into a Kaiju, Kafka is forced to flee. His escape is interrupted, however, by the arrival of another Kaiju...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Kaiju%20No.%208%20-%20S01E03%20-%20Revenge%20Match-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Revenge Match
+          </div>
+          <div class="plot">Kafka arrives for one last shot at the Defense Force entry exam... but can he pass while keeping his Kaiju powers a secret?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Kaiju%20No.%208%20-%20S01E04%20-%20Fortitude%209.8-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Fortitude 9.8
+          </div>
+          <div class="plot">An unexpected incident during the exam forces Kafka to use his powers at the risk of revealing his secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Kaiju%20No.%208%20-%20S01E05%20-%20Joining%20Up%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Joining Up!
+          </div>
+          <div class="plot">Kafka is now a member of the Defense Force, if not a full-fledged one. But Hoshina tells him he has three months to prove himself before he's fired...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Kaiju%20No.%208%20-%20S01E06%20-%20Sagamihara%20Neutralization%20Operation%20at%20Daybreak-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Sagamihara Neutralization Operation at Daybreak
+          </div>
+          <div class="plot">It's time for Kafka's first mission, and he witnesses the true power of the Defense Force when a Kaiju strikes a nearby city.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Kaiju%20No.%208%20-%20S01E07%20-%20Kaiju%20No.%209-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Kaiju No. 9
+          </div>
+          <div class="plot">Reno and Iharu encounter a powerful humanoid Kaiju that quickly overwhelms them. Can help arrive in time?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Kaiju%20No.%208%20-%20S01E08%20-%20Welcome%20to%20the%20Defense%20Force-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Welcome to the Defense Force
+          </div>
+          <div class="plot">After transforming into a Kaiju to rescue Reno and Iharu, Kafka is found by Hoshina, who immediately attacks him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Kaiju%20No.%208%20-%20S01E09%20-%20Raid%20on%20Tachikawa%20Base-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Raid on Tachikawa Base
+          </div>
+          <div class="plot">Tachikawa base comes under attack from the air, as a powerful Kaiju has its sights set on the Defense Force.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Kaiju%20No.%208%20-%20S01E10%20-%20Secret%20Revealed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Secret Revealed
+          </div>
+          <div class="plot">When the Defense Force is in danger, Kafka is forced to choose between keeping his secret and saving his comrades.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Kaiju%20No.%208%20-%20S01E11%20-%20Kaiju%20No.%208%20Captured-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Kaiju No. 8 Captured
+          </div>
+          <div class="plot">Kaiju No. 8 is captured, and Kafka is at the mercy of the Defense Force's most important leaders.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Kaiju%20No.%208%20-%20S01E12%20-%20Kafka%20Hibino-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Kafka Hibino
+          </div>
+          <div class="plot">Kafka's final fate is determined as the monster within him tries to take control.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

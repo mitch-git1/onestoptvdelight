@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Dan Da Dan
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Dan Da Dan</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Dan%20Da%20Dan%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dan%20Da%20Dan%20-%20S01E01%20-%20That%27s%20How%20Love%20Starts%2C%20Ya%20Know%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - That's How Love Starts, Ya Know!
+          </div>
+          <div class="plot">Momo believes in ghosts. Okarun believes in aliens. To make each other believe what they deny, they head to a spot famous for UFO sightings and a spiritual hotspot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dan%20Da%20Dan%20-%20S01E02%20-%20That%27s%20a%20Space%20Alien%2C%20Ain%27t%20It%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - That's a Space Alien, Ain't It?!
+          </div>
+          <div class="plot">Momo awakens psychic powers, while Okarun is cursed by Turbo Granny. They evacuate to Momo's house, but a giant alien appears before them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dan%20Da%20Dan%20-%20S01E03%20-%20It%27s%20a%20Granny%20vs.%20Granny%20Clash%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - It's a Granny vs. Granny Clash!
+          </div>
+          <div class="plot">After Momo's grandmother temporarily suppresses the evil spirit within Okarun, she says that a game of tag may be the key to defeating it for good.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dan%20Da%20Dan%20-%20S01E04%20-%20Kicking%20Turbo%20Granny%27s%20Ass-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Kicking Turbo Granny's Ass
+          </div>
+          <div class="plot">Okarun and Momo arrive at the tunnel to confront Turbo Granny. Just when they think they've won, a giant crab spirit crashes through the wall.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dan%20Da%20Dan%20-%20S01E05%20-%20Like%2C%20Where%20Are%20Your%20Balls%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Like, Where Are Your Balls?!
+          </div>
+          <div class="plot">Momo and Okarun&rsquo;s ordeal with Turbo Granny has brought them closer, but things remain awkward between them. Okarun realizes he still has a problem.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dan%20Da%20Dan%20-%20S01E06%20-%20A%20Dangerous%20Woman%20Arrives-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - A Dangerous Woman Arrives
+          </div>
+          <div class="plot">Turbo Granny reveals that Okarun's missing organs are contained within golden spheres. Aira, who has found one, now has the ability to see spirits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dan%20Da%20Dan%20-%20S01E07%20-%20To%20a%20Kinder%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - To a Kinder World
+          </div>
+          <div class="plot">Momo and Okarun manage to weaken Acrobatic Silky but make a shocking discovery regarding Aira. Acrobatic Silky suggests a surprising way to help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dan%20Da%20Dan%20-%20S01E08%20-%20I%27ve%20Got%20This%20Funny%20Feeling-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - I've Got This Funny Feeling
+          </div>
+          <div class="plot">Aira begins to develop a crush on Okarun. As the three friends' emotions intertwine, they suddenly face another extraterrestrial emergency.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dan%20Da%20Dan%20-%20S01E09%20-%20Merge%21%20Serpo%20Dover%20Demon%20Nessie%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Merge! Serpo Dover Demon Nessie!
+          </div>
+          <div class="plot">Wielding Acrobatic Silky's power, Aira fights the Serpoians alongside Okarun and Momo. The frustrated Serpoians power up their crustacean-like minion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dan%20Da%20Dan%20-%20S01E10%20-%20Have%20You%20Ever%20Seen%20a%20Cattle%20Mutilation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Have You Ever Seen a Cattle Mutilation?
+          </div>
+          <div class="plot">Okarun and the girls try to clean up some misunderstandings with their classmates. Later, the aquatic creature reappears before Momo and Aira.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dan%20Da%20Dan%20-%20S01E11%20-%20First%20Love-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - First Love
+          </div>
+          <div class="plot">Momo's childhood friend Jiji has come to stay with the Ayases. He explains that he needs Seiko&rsquo;s help with some strange phenomena at his house.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dan%20Da%20Dan%20-%20S01E12%20-%20Let%27s%20Go%20to%20the%20Cursed%20House-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Let's Go to the Cursed House
+          </div>
+          <div class="plot">Momo and Okarun head to Jiji's house in a hot springs district to investigate the case of Jiji's family. Okarun feels gloomy looking at how close Momo and Jiji are. Arriving at Jiji's house, there are several shadows watching them as they enter...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

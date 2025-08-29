@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - No Guns Life
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">No Guns Life</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/No%20Guns%20Life%20%282019%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E01%20-%20Renegade%20Extended-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Renegade Extended
+          </div>
+          <div class="plot">Meet Juuzo Inui. An Over-Extended who deals with the problems of other Extended, people who have gotten enhanced body modifications. One night, a mysterious Extended &quot;visits&quot; his office with an unconscious boy from a shady orphanage...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E02%20-%20Extended%20Remote-Control%20Device-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Extended Remote-Control Device
+          </div>
+          <div class="plot">Juuzo makes a move to get Tetsuro back and carries the Extended boy to a place where Ber&uuml;hren cannot easily reach. While Tetsuro is unconscious, Juuzo wanders around town looking for his favorite pack of smokes. A man named Cunningham greets him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E03%20-%20Puppet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Puppet
+          </div>
+          <div class="plot">Tetsuro is now awake and Mary works on his rehabilitation. A man named Huang comes to visit Juuzo and offers him a job to resolve a certain Extended case. Children in the Kyusei Pit are being attacked and each time, a message is left...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E04%20-%20Trigger-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Trigger
+          </div>
+          <div class="plot">Tetsuro took over Juzo's body and found the culprits to the puppet casses. However, the culprits were children like him. They were experimented on and used as tools by the Ber&uuml;hren company. He tries to save them, but he cannot do it alone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E05%20-%20EMS-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - EMS
+          </div>
+          <div class="plot">Ever since the incident with Ende, Ber&uuml;hren has not made any movements. Even so, Tetsuro is worried about involving Juzo and the others. Especially since Juzo could lose his immunity license, which is exactly what Olivier plans to do.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E06%20-%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Hero
+          </div>
+          <div class="plot">In exchange for taking care of the issues he's caused and to have Olivier protect his friends and client, Juzo accepts her request to hunt down a renegade Extended named Hayden Gondry. As Juzo searches, he realizes Gondry's connection with his past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E07%20-%20Overheat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Overheat
+          </div>
+          <div class="plot">Juzo and Kronen face Gondry, but he escapes. Behind the scenes, Olivier is removed from her position as Director. Her superiors move to erase Gondry to sweep this incident under the rug. Kronen walks away with new orders and Juzo is left behind.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E08%20-%20Will-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Will
+          </div>
+          <div class="plot">Juzo faces off against Tokisada, who wishes to eliminate Gondry and keep the secrets of the Nightmare of Norse Scott buried. At the same time, Tetsuro and Olivier speed toward the memorial park to get Juzo his cigarettes before it is too late.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E09%20-%20Reverberation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Reverberation
+          </div>
+          <div class="plot">Days after the events at the End of War Commemoration Park, things begin to settle down. Though tension is still high, everyone goes back to Christina's building and continue their daily lives. There, Tetsuro meets a man named Colt.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E10%20-%20Phantom%20Limb-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Phantom Limb
+          </div>
+          <div class="plot">Colt cannot stand the vapid eyes of his dear little sisters. He takes on a job that will give his family a future. Tetsuro and Mary go after him, hoping to stop him from going down a dangerous past. Meanwhile, Juzo hunts down Saryshagan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E11%20-%20Owner-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Owner
+          </div>
+          <div class="plot">Pepper and Seven greet Juzo at his office to ask Juzo for one thing, himself. Though Seven isn't happy about it, it seems Pepper wants to add Juzo to her collection. Their little scuffle creates more questions and brings back some memories as well.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E12%20-%20Specter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Specter
+          </div>
+          <div class="plot">A client named Danny Yoe requests Juzo to protect a girl named Rosa from the ghost of an Extended. Mary makes him take the case, but Juzo thinks the whole situation is a bit suspicious. It seems this &quot;ghost&quot; is searching for something...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E13%20-%20Turning%20Point-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Turning Point
+          </div>
+          <div class="plot">Tetsuro and the others get attacked by unknown assailants while Juzo is out getting the data from the memory medium he recovered from Rosa. Mary runs into her long-missing brother, Victor, during her escape from the attackers...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E14%20-%20Client-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Client
+          </div>
+          <div class="plot">Mary begins to question her memories with Victor. Maybe she never really understood him at all. In order to confirm things with her own eyes, she heads to the Kyusei Pit with Juzo, who happened to be going the same way. There, Lefty greets them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E15%20-%20A%20Place%20to%20Call%20Home-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - A Place to Call Home
+          </div>
+          <div class="plot">As Juzo faces Victor as Mary is shocked by how much he has changed. The war and what he saw there seems to have turned him into some kind of monster. If someone has to stop his maniacal rampage... At the very least, it should be her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E16%20-%20Engineer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Engineer
+          </div>
+          <div class="plot">Avi Cobo has once again appeared and now he's taken Mary hostage. Juzo watches as the two men clash. Each and every one of them... They all just keep getting in the way of his job. Now, he's not going to just stand back and let a girl suffer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E17%20-%20Noble%20Rot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Noble Rot
+          </div>
+          <div class="plot">Juzo and the others try to get back into their normal lives as things have seemingly resolved with Spitzbergen. A mysterious man watches from the shadows as Juzo goes downstairs to get his maintenance done. The time has finally come...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E18%20-%20Traces%20of%20Crime-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Traces of Crime
+          </div>
+          <div class="plot">A woman name Emma appears at Inui's office and asks him to find her husband. The mysterious Edmund seems to be looking for Juzo as well. Juzo is taken aback when they meet. It seems, after all these years, he's come to settle an old score.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E19%20-%20Scar-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Scar
+          </div>
+          <div class="plot">Tetsuro struggles with his task to take control of Juzo. The appearance Edmund pulls up Juzo's past and forces Tetsuro to face even more of the absurdity in this world. Unsure of himself and his own past, he turns Juzo for direction.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E20%20-%20I%27m%20Dreaming-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - I'm Dreaming
+          </div>
+          <div class="plot">Juzo, pretending to be controlled, runs away while leaving Tetsuro's body behind with Professor Wachowski. The two of them have a discussion about Ber&uuml;hren once more. Tetsuro struggles with his decisions, both from the past and in the present.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E21%20-%20Degeneration-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - Degeneration
+          </div>
+          <div class="plot">Juzo continues to hold Shimazu and Kunugi back while Tetsuro finishes things up. During the struggle, new players appear at the scene and Juzo finds out that Kunugi may not be on Spitzbergen's side, after all.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E22%20-%20Imprisoning%20Binds-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Imprisoning Binds
+          </div>
+          <div class="plot">Without a Hands, Juzo is fighting a losing fight. Even so, he doesn't budge from his ideals. Even though Tetsuro knows Juzo will get mad at him, Tetsuro uses Harmony on him once again. There, Tetsuro discovers the reason for Juzo's decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E23%20-%20Trigger%20Again-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - Trigger Again
+          </div>
+          <div class="plot">While Tetsuro speaks with Juzo, things get out of hand outside. The EMS, Security Bureau, and Ber&uuml;hren rush to the scene to control the situation. There, Pepper whispers to Seven that she wants everything destroyed. As Pepper's gun, Seven complies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Guns%20Life%20-%20S01E24%20-%20Earnest%20Desire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - Earnest Desire
+          </div>
+          <div class="plot">Pepper wakes up at the Reconstruction Agency hospital without her Hands device. Juzo meets with her to finish things up after taking a job from Seven. Yet again, Ber&uuml;hren has managed to slip away and Juzo continues his days with Tetsuro.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

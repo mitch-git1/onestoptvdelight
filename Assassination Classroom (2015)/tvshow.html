@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Assassination Classroom
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Assassination Classroom</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Assassination%20Classroom%20%282015%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E01%20-%20Assassination%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Assassination Time
+          </div>
+          <div class="plot">A creature who blasted the moon into a crescent shows up at Kunugigaoka Junior High School--and he's giving the students a year to assassinate him!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E02%20-%20Baseball%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Baseball Time
+          </div>
+          <div class="plot">The reasoning behind the E Class's segregation is revealed. Nagisa tracks Koro Sensei's weak points in the hopes of using them to take him down.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E03%20-%20Karma%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Karma Time
+          </div>
+          <div class="plot">The brilliant, belligerent Karma Akabane, Nagisa's former classmate, joins 3-E and immediately jumps into the assassination mission with both feet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E04%20-%20Grown-Up%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Grown-Up Time
+          </div>
+          <div class="plot">A new foreign-language teacher comes to 3-E with some major ulterior motives... among other things. Will she get any closer to killing Koro Sensei?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E05%20-%20Assembly%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Assembly Time
+          </div>
+          <div class="plot">Before the torturous school assembly begins, Okuda attempts to poison Koro Sensei in an unexpected way... with unexpected results.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E06%20-%20Test%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Test Time
+          </div>
+          <div class="plot">Time for midterms! Koro Sensei gives his aspiring assassins an ultimatum as they battle a grueling test and the disdain of the rest of the school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E07%20-%20School%20Trip%20Time%2C%20First%20Period-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - School Trip Time, First Period
+          </div>
+          <div class="plot">The students go on a school trip to Kyoto, where they must still keep assassination foremost in their minds. Kanzaki faces trouble from her past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E08%20-%20School%20Trip%20Time%2C%20Second%20Period-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - School Trip Time, Second Period
+          </div>
+          <div class="plot">The E Class gives a pro sniper plenty of chances to take down Koro Sensei, then try to make the most of what's left of their school trip to Kyoto.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E09%20-%20Transfer%20Student%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Transfer Student Time
+          </div>
+          <div class="plot">A new student joins the E Class with a singleminded focus on assassination that drives her classmates to distraction. Koro Sensei to the rescue!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E10%20-%20L%20and%20R%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - L and R Time
+          </div>
+          <div class="plot">Irina is greeted by her former master, retired assassin Lovro, who thinks she should give up as she has no chance of killing Koro-sensei.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E11%20-%20Transfer%20Student%20Time%2C%20Second%20Period-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Transfer Student Time, Second Period
+          </div>
+          <div class="plot">Class 3-E prepare for the arrival of their second transfer student, who is allegedly more powerful than Ritsu.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E12%20-%20Ball%20Game%20Tournament%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Ball Game Tournament Time
+          </div>
+          <div class="plot">A baseball tournament is to be held, in which Class 3-E are forced to play an exhibition match against the top players of the school's baseball club, which Sugino used to be a part of.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E13%20-%20Talent%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Talent Time
+          </div>
+          <div class="plot">As Karasuma briefly senses what appears to be a fearsome aura coming from Nagisa, Akira Takaoka, an aquaintance of Karasuma from the Ministry of Defense, is sent to Class 3-E to take over Karasuma's role as P.E. teacher.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E14%20-%20Vision%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Vision Time
+          </div>
+          <div class="plot">Koro Sensei exposes a major weakness, and Terasaka interrupts a fun summer day out with an assassination attempt that goes a little too far.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E15%20-%20End-of-Term%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - End-of-Term Time
+          </div>
+          <div class="plot">For finals, Koro Sensei gives his class a new goal--with an irresistible reward. The E Class makes its own deal with the top-tier A Class's Big Five.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E16%20-%20School%27s%20Out%20-%20First%20Term-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - School's Out - First Term
+          </div>
+          <div class="plot">After two days of exams, the results are in. Both the ace A Class and the end E Class must come to terms with the outcome--and so must Koro Sensei.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E17%20-%20Island%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Island Time
+          </div>
+          <div class="plot">The E Class trains intently under a pro killer to prepare for their island assassination. Once there, they must make sure everything falls into place.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E18%20-%20Action%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Action Time
+          </div>
+          <div class="plot">The summer assassination attempt is followed by a crisis affecting nearly half the E Class. Can the rest think and move fast enough to save them?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E19%20-%20Pandemonium%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Pandemonium Time
+          </div>
+          <div class="plot">The E Class must put their lessons into practice as they tackle an intimidating hotel brimming with baddies--and all without Koro Sensei's help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E20%20-%20Karma%20Time%2C%20Second%20Period-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Karma Time, Second Period
+          </div>
+          <div class="plot">Karma must use his head to get past a formidable foe. Nagisa goes undercover as the E Class continues to sneak its way to the hotel's top floor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E21%20-%20XX%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - XX Time
+          </div>
+          <div class="plot">The students take on one last assassin opponent before meeting the shadowy figure who's holding the virus remedy hostage in exhange for Koro Sensei.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S01E22%20-%20Nagisa%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Nagisa Time
+          </div>
+          <div class="plot">Before Nagisa completely gives into his anger, Terasaka throws a stun-gun at him, urging him not to become a murderer and think about what's truly important.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E01%20-%20Summer%20Festival%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Summer Festival Time
+          </div>
+          <div class="plot">Koro Sensei and his students try some matchmaking at the end of their island trip. Class 3-E's eventful summer ends with a taste of pure festival fun.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E02%20-%20Kaede%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Kaede Time
+          </div>
+          <div class="plot">Kaede comes up with a delicious plan of attack, Class 3-E plays an intense game of Cops and Robbers, and Koro Sensei is accused of a serious crime.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E03%20-%20Itona%20Horibe%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Itona Horibe Time
+          </div>
+          <div class="plot">Koro Sensei faces off against the powerful, tentacled Itona and his handler Shiro yet again, revealing more of his teaching philosophy along the way.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E04%20-%20Spinning%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Spinning Time
+          </div>
+          <div class="plot">Itona endears himself to the boys in Class 3-E as he shows off his assassination creation. The students call each other code names for an entire day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E05%20-%20Leader%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Leader Time
+          </div>
+          <div class="plot">Competition between the elite A Class and downtrodden E Class heats up at the school sports festival, with Isogai's livelihood hanging in the balance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E06%20-%20Before%20%26%20After%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Before &amp; After Time
+          </div>
+          <div class="plot">After an accident, the E Class winds up doing a whole different kind of studying off campus. But will they have a chance to bone up for the midterms?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E07%20-%20Reaper%20Time%2C%20Part%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Reaper Time, Part 1
+          </div>
+          <div class="plot">A well-intentioned act leads to a falling-out with Professor Bitch. Soon the E Class finds itself facing off alone against a formidable assassin foe.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E08%20-%20Reaper%20Time%2C%20Part%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Reaper Time, Part 2
+          </div>
+          <div class="plot">When Koro Sensei and Mr. Karasuma reach the Reaper's hideout, it's anyone's guess who'll come out on top--especially with wild-card Irina in the mix.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E09%20-%20Round%20Two%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Round Two Time
+          </div>
+          <div class="plot">The students consider their future career options. Nagisa struggles to come to terms with his talent; meanwhile, his mother has her own plans for him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E10%20-%20School%20Festival%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - School Festival Time
+          </div>
+          <div class="plot">Each class at Kunugigaoka Academy is competing for the highest sales totals in the school festival. How can the E Class even hope to stand a chance?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E11%20-%20End-of-Term%20Time%20-%20Second%20Period-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - End-of-Term Time - Second Period
+          </div>
+          <div class="plot">It's exam time again, and the cream-of-the-crop A Class is a bigger threat than ever before. Top-ranking Asano, however, has something up his sleeve.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E12%20-%20Think%20Outside%20the%20Box%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Think Outside the Box Time
+          </div>
+          <div class="plot">The end-of-term exams come down to one doozy of a final problem. Principal Asano comes to Koro Sensei with a little wager that has a lot riding on it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E13%20-%20Let%20Live%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Let Live Time
+          </div>
+          <div class="plot">Principal Asano recalls his first foray into the world of education. In the drama festival, the E Class puts on a play with a few unexpected twists.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E14%20-%20Secret%20Identity%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - Secret Identity Time
+          </div>
+          <div class="plot">Following the drama festival, the E Class learn that one of their classmates is hiding a big secret connected to Koro Sensei's past!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E15%20-%20Confession%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Confession Time
+          </div>
+          <div class="plot">Koro Sensei begins to come clean about his background after a tense and terrifying encounter with a student who has her own reasons to kill him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E16%20-%20Past%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - Past Time
+          </div>
+          <div class="plot">Following the traumatic story of Koro Sensei's past, the E Class is left reeling after learning revelations about his past deeds and identity. As the gather themselves with this new information, it begins to affect their assassination plans.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E17%20-%20Discord%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Discord Time
+          </div>
+          <div class="plot">The E class is divided over whether to kill Koro Sensei or try to save him. Koro Sensei suggests a way of settling the issue between the two sides.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E18%20-%20Outcome%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - Outcome Time
+          </div>
+          <div class="plot">The battle amongst the E-Class comes down to the final two on each side: Karma vs. Nagisa. But, a new obstacle throws a wrench into the E Class's plans.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E19%20-%20Outer%20Space%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Outer Space Time
+          </div>
+          <div class="plot">Class 3-E has agreed to try and save Koro Sensei. In order to do this, they must track down confidential information -- information that takes the class to another height.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E20%20-%20Valentine%27s%20Day%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - Valentine's Day Time
+          </div>
+          <div class="plot">Nagisa remains uncertain about his future as high-school entrance exams loom over him. It's time for Class 3-E to celebrate Valentine's Day!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E21%20-%20Trust%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - Trust Time
+          </div>
+          <div class="plot">It's time for the last project from Koro Sensei before the E-Class closes out the year, but the government's own plans and threatens to get in the way.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E22%20-%20Happy%20Birthday%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - Happy Birthday Time
+          </div>
+          <div class="plot">The students fight to see their teacher one last time. A figure from Koro Sensei's past arrives with a serious grudge against the super-creature.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E23%20-%20Final%20Boss%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x23 - Final Boss Time
+          </div>
+          <div class="plot">A pitched battle between two super-creatures threatens to harm the students of Class 3-E. Can Koro Sensei protect them while fighting for his life?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E24%20-%20Graduation%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x24 - Graduation Time
+          </div>
+          <div class="plot">Time is running out, and the E Class students must decide once and for all whether to kill the teacher who so changed their lives over the past year.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Assassination%20Classroom%20-%20S02E25%20-%20Future%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x25 - Future Time
+          </div>
+          <div class="plot">Graduation day: one of life's chapters ends and another begins as the students and teachers of Class 3-E go on to forge their own paths in the world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

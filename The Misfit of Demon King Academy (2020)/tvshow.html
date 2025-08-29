@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Misfit of Demon King Academy
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Misfit of Demon King Academy</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Misfit%20of%20Demon%20King%20Academy%20%282020%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S01E01%20-%20The%20Misfit%20of%20Demon%20King%20Academy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Misfit of Demon King Academy
+          </div>
+          <div class="plot">&quot;Listen up, my beloved descendants. Your founding ancestor has returned.&quot; The most powerful Demon King in history, Anos, known for his tyrannical rule 2000 years ago, has been reincarnated. Entrance exams are being held at the Demon King Academy where they train his descendants to be his successor and become Demon Lords. The entrance exam is a practical test where students must duel each other. Bored of the war-torn world of 2000 years ago, the tyrannical Demon King, Anos, appears on the scene.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S01E02%20-%20The%20Witch%20of%20Destruction-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Witch of Destruction
+          </div>
+          <div class="plot">Though he is the founding ancestor and possesses enormous magical powers, Anos is cast as a misfit at the Academy. Unperturbed by this unjust treatment, he continues to demonstrate his overwhelming powers and takes part in the team competition exam as a leader. His classmates mock him for being a hybrid, and the only teammate he can find is Misha. Their rival team is led by Sasha, Misha&rsquo;s older sister, who looks down on Misha and calls her a &quot;junk doll.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S01E03%20-%20Sasha%E2%80%99s%20True%20Intentions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Sasha&rsquo;s True Intentions
+          </div>
+          <div class="plot">&quot;One last thing, I&rsquo;m glad I got to meet you.&quot; Without being able to understand Sasha&rsquo;s true intent behind these final words, much time has passed, and Ivis, one of the Seven Elder Demon Emperors, holds a special class at the Demon King Academy called the Great Magic Training. The Seven Elder Demon Emperors are seven demons that Anos, the founding ancestor, created from his own blood. Emilia implores Anos to act respectfully to Ivis, but without hesitation, he speaks to Ivis in a condescending tone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S01E04%20-%2015th%20Birthday-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - 15th Birthday
+          </div>
+          <div class="plot">Misha confesses the shocking truth that, &quot;At midnight on my 15th birthday, I&rsquo;m going to disappear.&quot; Misha was never supposed to exist in this world in the first place, but due to Ivis Necron&rsquo;s magic, she was living a transient life. She had resigned to her fate that she will only live for 15 years, but Anos tells her, &quot;There are two things that I do not understand. Regret and saying that something is impossible.&quot; The misfit crushes the tragedy and unjust fate that binds the two sisters.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S01E05%20-%20The%20Transfer%20Student-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Transfer Student
+          </div>
+          <div class="plot">Shortly after Anos&rsquo; encounter with Misha and Sasha as well as his battle with Ivis, a transfer student named Ray enters the Demon Academy. As the Master of Magic Sword and powerful enough to defeat the Seven Elder Demon Emperors, Ray makes it clear that he wants to join a team with a capable leader, and requests to join Anos&rsquo; team. However, Anos refuses and proposes to Ray that, &quot;If you prove that you are worthy, I will allow you to become one of my followers.&quot; Ray decides to form his own team and battles head-to-head with Team Anos during the team competition exam.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S01E06%20-%20Magic%20Sword%20Tournament-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Magic Sword Tournament
+          </div>
+          <div class="plot">In recognition of their accomplishments in the team competition exam, Anos welcomes Lay and Misa to his team. The team gathers at Anos&rsquo; home to celebrate, but shortly after, Lay and Anos are announced as participants in the Magic Sword Tournament. Lay rejoices at the chance for a rematch with Anos, but Anos suspects that there is an ulterior motive. The situation escalates when Misa takes Anos to meet one of the Seven Elder Demon Emperors, Melheis Boran.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S01E07%20-%20Mother%E2%80%99s%20Words-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Mother&rsquo;s Words
+          </div>
+          <div class="plot">Anos resolves to defeat the Royalists no matter what tricks they have up their sleeve. He uses the sword received from his father Gusta to fight in his first match in the Magic Sword Tournament. Meanwhile in the dressing room, Lay clutches his chest. Sensing that something is wrong with Lay, Anos speculates that somebody is controlling Lay and a hostage may be involved. Who is conspiring to control the Magic Sword Tournament from behind the scenes?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S01E08%20-%20The%20Final%20Duel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Final Duel
+          </div>
+          <div class="plot">Anos and Lay battle head-to-head at the Dilhade Magic Sword Tournament finals. With Sheila being taken hostage, the two are unable to fight at their full potential and come to a decision. Just as the showdown reaches its climax, a huge Magic Circle appears in the arena. The scenery around Anos and Lay begins to distort, and they are taken into an alternate dimension. The mastermind behind the recent events finally reveals his true identity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S01E09%20-%20The%20Mystery%20of%20the%20Hero%20Academy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Mystery of the Hero Academy
+          </div>
+          <div class="plot">After the Magic Sword Tournament, Anos and the other students visit Azeshion in the Human Realm for an educational exchange with the Hero Academy. While they individually explore the city, Anos heads to the Hero Academy saying that he wants to research something. The academy is off-limits to outsiders, but without hesitation, he tries to make his way inside. Eleanor Bianca, a third-year student at the Hero Academy, appears before Anos and says, &quot;You&rsquo;ll be safe as long as you&rsquo;re with me&quot; with a mischievous smile. She acts as Anos&rsquo; guide inside the academy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S01E10%20-%20Inter-Academy%20Exams-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Inter-Academy Exams
+          </div>
+          <div class="plot">Anos and the students from the Demon King Academy participate in their first day of inter-academy exchange with the Hero Academy. However, the students from the Demon King Academy soon find out that the inter-academy exchange is in name only, and they are met with outright hostility. Revest, a third-year student at the top of his class from the Demon King Academy is ridiculed by the students from the Hero Academy when he unsuccessfully tries to activate a magic spell. The students from the Demon King Academy are visibly offended by this treatment, but Anos&rsquo; words turn the tables. &quot;As usual, humans sure like to set traps for us, don&rsquo;t they?&quot; The inter-academy exchange is off to an ominous start.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S01E11%20-%20The%20Glow%20of%20Life-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Glow of Life
+          </div>
+          <div class="plot">Round 2 of the inter-academy exams begins. After Revest&rsquo;s deplorable defeat against Heine, Anos and his team battle with the students of the Hero Academy. Anos says that he will think of a strategy if it becomes necessary, and clashes head-on with his enemies using his vast Magic Powers. However, due to a magic barrier called De Igelia that is cast over the entire city, and a young girl named Zeshia who wields the holy sword Enhale, Anos&rsquo; attacks prove to be futile. Anos and his team are unable to come up with their next strategy, but Misha proposes a plan that could help them win.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S01E12%20-%20Taboo%20Magic-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Taboo Magic
+          </div>
+          <div class="plot">&quot;Please, the only person who can stop Zeshia is me.&quot; Anos carries Misha, who is on the brink of death after being attacked by Diego, to an inner room of the temple. Eleonore is waiting there and claims that she is &quot;the embodiment of magic itself.&quot; She explains the meaning behind this and exposes the madness that has taken ahold of the Hero Academy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E01%20-%20A%20Lesson%20by%20God-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - A Lesson by God
+          </div>
+          <div class="plot">Erdomaid DittiJohn, one of the four evil royals, has appeared before Anos as a teacher at Demon King Academy. Not only that, he claims himself to be the Heavenly Father God NousGalia, and that the new &quot;Child of God&quot; who will vanquish the Demon King of Tyranny is also at the Demon King Academy. The &ldquo;Misfit&rdquo; who overcomes all odds sets off to a new battle!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E02%20-%20The%20Demon%20King%27s%20Duel%20of%20Intellect-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - The Demon King's Duel of Intellect
+          </div>
+          <div class="plot">Anos and his classmates search around Demon King Academy for the &ldquo;Child of God.&rdquo; While Anos&rsquo; comrades are fending off the attacks from the demons of two thousand years ago, Anos himself faces the King of Death&rsquo;s Army Officer, Ziek Ozma, in a duel of intellect. In this duel, Anos must speculate who the &ldquo;Child of God&rdquo; is and make the correct guess. However, the number of times he can make his guess is limited.
+
+What was Anos&rsquo; answer, and what is Ziek&rsquo;s motive ― ?!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E03%20-%20The%20Spirit%27s%20School%20Building-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - The Spirit's School Building
+          </div>
+          <div class="plot">Anos and the first-year students visit Zehenburg under the guise of an expeditionary examination. Anos's goal is to find his former right-hand man, Shin Reglia, who left a message for him, &quot;Wait for me in the Spirit Forest Aharthern.&quot; On the way to the forest, Anos meets an information broker, Lena. Together with her, who is also heading to Aharthern, the group proceeds into the forest's depths.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E04%20-%20The%20Spirit%27s%20Trial-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - The Spirit's Trial
+          </div>
+          <div class="plot">In order to visit the Spirit King, Anos and his team continue to go through trials provided by the Great Tree Spirit Enyunien. The next trial, &ldquo;The staircase of Geunier&rdquo; is a trial where they must choose the 5 correct paths out of the 20 paths before them, which appears to be a game entirely dependent on luck. However, thanks to the advice from Lena, Anos and the team individually made their ways to the top. Lay and Misa arrive to the Spirit King&rsquo;s castle first, and engage in the final trial!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E05%20-%20In%20Between%20Royalty%20and%20Mixed%20Blood-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - In Between Royalty and Mixed Blood
+          </div>
+          <div class="plot">Avos Dilhevia who appeared in Delsgade was actually Misa, who was being controlled by traditions and rumors. After getting the demons in central Dilhade on her side, she declares that she will destroy Anos. Anos is making his way to the Demon King&rsquo;s Castle to rescue Misa. Meanwhile, in the city, the people being controlled by Avos were attacking mixed blood demons, and they had even started making their way to Anos&rsquo; parents&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E06%20-%20The%20Great%20Mother%20Spirit%20and%20the%20Demon%20King%27s%20Right-Hand%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - The Great Mother Spirit and the Demon King's Right-Hand Man
+          </div>
+          <div class="plot">Anos and the others have infiltrated the Underground Dungeon. Before their duel against Avos Dilheiva, they use Time Magic, Revalon, to go back in time to Gairadite two-thousand years ago, in order to unravel the secret behind Misa&rsquo;s birth, Shin Reglia, Anos&rsquo; right-hand man&rsquo;s, intentions, and the reason behind the Great Spirit Leno&rsquo;s death. What Anos saw in the world after he had passed was―.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E07%20-%20Like%20a%20Single%20Stroke%20of%20a%20Sword-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Like a Single Stroke of a Sword
+          </div>
+          <div class="plot">The Forest of the Great Spirit Aharthern. Anos who has transformed into his younger form, takes on the fake name Anoshu Polticoal, and decides to stay to investigate for a while. They watch over Shin who was tasked with being a bodyguard of the Great Spirit Leno by Anos prior to his reincarnation, and then appears the Blaze Death King Erdomaid, who claims to have brought information regarding the gods...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E08%20-%20The%20Land%20of%20Demons%20Without%20a%20Demon%20King-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - The Land of Demons Without a Demon King
+          </div>
+          <div class="plot">Anos and the others continue their investigation in Aharthern. Although he wasn&rsquo;t able to switch his source as Avos Dilhevia as the Demon King of Tyranny, Anos receives an important hint from Leno. Lay engages in practicing swordsmanship with Shin. After this, Anos follows after Erdomaid to Delsgade. There, they encounter Demons who were ruling over humans.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E09%20-%20A%20Prayer%20for%20Two%20Thousand%20Years%20Later-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - A Prayer for Two Thousand Years Later
+          </div>
+          <div class="plot">To prevent a clash that may happen between Anos and humans 2,000 years in the future, Hero Kanon proceeds with the plan to become an imposter Demon King himself, with Shin agreeing to this decision. Gradually but surely, Shin begins to change, and Leno realizes that she loves him. However, after fulfilling his duty to protect her, Shin begins to leave her side...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E10%20-%20Send%20Hatred%20to%20the%20Past-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Send Hatred to the Past
+          </div>
+          <div class="plot">After witnessing Great Spirit Leno and Shin meet a tragic fate, Anos and his classmates return to Delsgade in the present day. There, persecution against those of mixed blood by Meleheyth and the demons whom Avos Deilhevia brainwashed was progressing. Anos holds them off and heads to the throne room. He faces off against Avos who attempts to steal Magic Sword of Destruction Venuzdnor!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E11%20-%20To%20Sever%20the%20Fate-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - To Sever the Fate
+          </div>
+          <div class="plot">Lay challenges Avos to liberate Misa whom he loves. However, Heavenly Father God NousGalia aids Avos, and seals Lay&rsquo;s power of Evansmana. There, Anos and Shin arrive. Shin fights NousGalia once again to avenge his late wife, but he struggles against the enormous power of God. Then, he hears a voice for the first time in two thousand years...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E12%20-%20The%20Misfit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - The Misfit
+          </div>
+          <div class="plot">Avos Dilhevia takes control over Magic Sword of Destruction Venuzdnor at last. Anos gives a calm smile to the enemy who seizes everything from the Demon King of Tyranny and reigns control, however... The true purpose of Avos taking control over the Magic Sword at the end of the fierce battle is revealed. How does Anos face off against the Child of God, destroyer of the Demon King of Tyranny, and the power that destroys all life!?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E13%20-%20Moon%20of%20Creation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Moon of Creation
+          </div>
+          <div class="plot">The Mythical Age. In an effort to destroy the Moon of Creation, Anos meets the Goddess of Creation Militia and begins to interact with her. And now the present... Anos, who has made his identity as the Demon King of Tyranny known throughout the world, joins classes at Demon King Academy as the transfer student, Anoshu. To train even stronger demons, Erdomaid instates the Great Demon King Drills. As the first initiative, swordsmanship training under Shin begins!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E14%20-%20Goddess%20of%20Selection-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - Goddess of Selection
+          </div>
+          <div class="plot">To investigate the dragon sighted in Azeshion, Anos and his friends visit the Hero Academy in the name of participating in an exchange program. Emilia teaches at the Hero Academy, but despite her efforts, Ledriano and the other students of the Hero Academy are rather unenthusiastic about the exchange. Furthermore, Zamira, the headmaster of the Hero Academy, issues a decree to slay the dragon. Yet, as Emilia resists his unreasonable order, the Hero Academy students begin to lose interest&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E15%20-%20Institute%20of%20the%20Gods-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Institute of the Gods
+          </div>
+          <div class="plot">Erdomaid trains the students in methods of dragon slaying. He does so in a dangerous battle with an actual dragon summoned. Anos and his friends infiltrate the dragon&rsquo;s den and arrive in the Underground World, where the dragonfolk called Draconids live. Ahide, who attacked the previous evening, guides them to the Institute of the Gods, Everastanzetta. There, Anos is told how he has already been involved in the &ldquo;Judgement Selection.&rdquo;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E16%20-%20With%20a%20Pinch%20of%20Courage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - With a Pinch of Courage
+          </div>
+          <div class="plot">Emilia and her students take on the dragon-slaying and binding spell called &ldquo;De Jelias.&rdquo; However, Emilia and her students failed because they couldn't corporate with Laos and others. It was then that she caught a glimpse of their helplessness&hellip;. Meanwhile, Ley who was invited as a hero, has an audience with Lysius, King of Gairadite. He is asked to save the ailing royal family. But as he is shown around, what he encounters is&hellip;!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E17%20-%20Battle%20of%20Pride-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Battle of Pride
+          </div>
+          <div class="plot">A horde of dragons approaches Azeshion! To protect their homeland with their own hands, the Hero Academy students set out to slay the dragons without the help of Anos and his friends. Under Emilia&rsquo;s command, the Hero Academy students engage in a battle to the death. Meanwhile, Lay and Misa wind up in a predicament after being captured by Lysius&hellip;. Anos and the others head to the Underground World to take care of their own agenda. There, he learns that Ahide is controlling the Draconids.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E18%20-%20Almighty%20Demon%20King-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - Almighty Demon King
+          </div>
+          <div class="plot">Ahide announces that Midhaze will be destroyed. However, the oracle&rsquo;s will contradicts Arcana&rsquo;s true intentions. Shin also joins in the fray as the two finally face off! Ahide possesses Arcana and thrusts the judgement of the Sword of the Almighty, Leviangilma, upon Anos. Arcana states that to destroy Ahide, he must be slashed three times with the Divine Sword. But the sword obliterates the source of anyone who draws the sword from its sheath&hellip;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E19%20-%20The%20Great%20Demon%20King%20Drills-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - The Great Demon King Drills
+          </div>
+          <div class="plot">That day, Anos had a dream about a time that he lived together with a young girl. The young girl is strangely also named Arcana&hellip;. Furthermore, the fact that the Draconids called the fusion of Sasha and Misha the Goddess of Absurdity, Genedonov, was also a problem. To investigate the piling mysteries, Anos decides to take a special class in the Underground World. And as a special lecturer, Anos teaches the student of Demon King Academy himself!?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E20%20-%20Kingdom%20of%20the%20Dragon%20God-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - Kingdom of the Dragon God
+          </div>
+          <div class="plot">Arriving in Giorhaze, capital of the Underground World Giordal, Anos follows a wary Erdomaid to a church. There, they obtain a Pledge Jewel which summons dragons. Furthermore, Erdomaid sees Naya&rsquo;s aptitude and makes a pack with her after learning her plan. Anos hears about Ahide&rsquo;s actions from the bishop of the church and decides to catch him before he meets the pope.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E21%20-%20Demon%20King%20Hymn%20No.%206%20Neighbors-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - Demon King Hymn No. 6 &quot;Neighbors&quot;
+          </div>
+          <div class="plot">The sacred Sojourner&rsquo;s Psalm to be performed at the Divine Dragon Festival is in danger of being cancelled due to Ahide&rsquo;s schemes! Ellen and the Anos Fan Union are asked to take the stage instead as the Dilhade Demon King Choir. The Draconids are drawn in by their song and begin to sing along. Meanwhile, while trying to pursue and capture Ahide, Anos encounters Dietrich, the King of Agatha, who has received a prophecy from the Goddess of the Future Naphta.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E22%20-%20Liebarschend%2C%20the%20God%20of%20Vestiges-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - Liebarschend, the God of Vestiges
+          </div>
+          <div class="plot">Anos and Pope Golroana clash for the future of their respective countries! GGG launches a fierce attack with Gospel Magic using the power of the God of Gospel Doldread, who controls sound. Anos counters with the song of the Dilhade Demon King Choir and brings Golroana&rsquo;s support, the former popes, into the fray. Yet even after the conclusion of the battle, Golroana continues his prayers. Anos offers him peace, but&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E23%20-%20The%20Promise%20Made%20in%20a%20Dream-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x23 - The Promise Made in a Dream
+          </div>
+          <div class="plot">Ceris, commander of the Phantom Knights, who claims to be Anos' father, says that Militia gave Anos false memories. After Ceris leaves, Arcana, unable to recover her memories of Anos, falls into a dream once again. In her memory of 2,000 years ago, Arcana hears a secret about herself from Ceris. Anos reincarnates Arcana to protect her, but his wish for her at the time was&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Misfit%20of%20Demon%20King%20Academy%20-%20S02E24%20-%20The%20Dream%20That%20God%20Saw-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x24 - The Dream That God Saw
+          </div>
+          <div class="plot">The battle between Dilhade and Giordal intensifies! However, Anos becomes suspicious of Giordal's small fighting force. After seeing Cannibal flying out of the castle and noticing he has eaten the song of a Divine Dragon, Anos comes to one final conclusion. The 1,500 years of prayer that Giordal had continued for so long&hellip;was a never-ending barrier separating the two irreconcilable nations.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

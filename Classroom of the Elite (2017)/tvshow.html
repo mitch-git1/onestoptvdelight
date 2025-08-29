@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Classroom of the Elite
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Classroom of the Elite</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Classroom%20of%20the%20Elite%20%282017%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x1 - What is evil? Whatever springs from weakness.
+          </div>
+          <div class="plot">Melancholy, unmotivated Kiyotaka Ayanokouji attends his first day at Tokyo Metropoiltan Advanced Nurturing High School, a government-established institution for training a generation of Japan's best and brightest. In this school, it is said, everything is decided based on merit, which includes the generous monthly &quot;point&quot; allowance students can spend at local shops. As Ayanokouji begins navigating this system, he also nurtures curious relationships with aloof fellow outsider Suzune Horikita and the terminally gregarious Kikyou Kushida.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x2 - It takes a great talent and skill to conceal one's talent and skill.
+          </div>
+          <div class="plot">1-D learn more about point system. They need to change their habits if they want to score some. But few students don't want to change even if they are facing expulsion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x3 - Man is an animal that makes bargains: no other animal does this - no dog exchanges bones with another.
+          </div>
+          <div class="plot">Kiyotaka explains to Suzune what he did last three days before test. And why everybody get such good scores on tests. But Sudo failed tests anyway and is going to be expelled.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x4 - We should not be upset that others hide the truth from us, when we hide it so often from ourselves.
+          </div>
+          <div class="plot">Classrooms analyze their and others test results. Points distribution is late. Three students from 1-C reported Sudo for attacking them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x5 - Hell is other people.
+          </div>
+          <div class="plot">Kiyotaka and Kushida go with Sakura to he mall where Sakura will try to repair her camera. After that Kiyotaka talk to Sakura about Sado's situation and should she talk about what she saw.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x6 - There are two kinds of lies; one concerns an accomplished fact, the other concerns a future duty.
+          </div>
+          <div class="plot">Sakura received some weird messages on her portal, than some pictures of herself. Kiyotaka and Suzune are trying to find evidence that would set Sudo free.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x7 - Nothing is as dangerous as an ignorant friend; a wise enemy is to be preferred.
+          </div>
+          <div class="plot">Even during summer vacation, lone wolf Horikita would rather remain locked in her room studying than interacting with others. One day, Ayanokouji invites her to visit the pool with some of the others.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x8 - Abandon all hope, ye who enter here.
+          </div>
+          <div class="plot">All students go to the cruise. Chabashira informs Kiyotaka that somebody requested his expulsion. If he don't help others to promote to A class she will use first opportunity to expel him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x9 - Man is condemned to be free.
+          </div>
+          <div class="plot">As part of a special test, the school has brought the students to an uninhabited tropical island where they must now live for a week. Their performance on the test can have an enormous impact on the point standings of the four classes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x10 - Every man has in himself the most dangerous traitor of all.
+          </div>
+          <div class="plot">Class D has achieved a degree of unity in facing the special test, so Ayanokouji and Horikita head out to see how the other classes are getting along. Class B is working together to make a comfortable life for themselves, while Class A remains secretive.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x11 - What people commonly call fate is mostly their own stupidity.
+          </div>
+          <div class="plot">With the panty thief incident already eroding Class D's trust, Horikita finds her leader key card stolen. While they try to figure out who did it, the base camp is thrown into chaos with a new incident of arson.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x12 - Genius lives only one story above madness.
+          </div>
+          <div class="plot">Survival test is coming to the end. Things don't look well for 1-D. Key card is stolen. And now Suzune is forced to withdraw due to her sickness. Kiyotaka will try to turn things around.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x1 - Remember to keep a clear head in difficult times.
+          </div>
+          <div class="plot">With the island test over, Ayanokoji Kiyotaka and the others are enjoying their summer vacation on a luxury liner. Suddenly, they're interrupted by a new special test. Ayanokoji is called into the same room as Karuizawa Kei and others, where they learn that this test isn't strictly along class lines...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x2 - There are two main human sins from which all the others derive: impatience and indolence.
+          </div>
+          <div class="plot">With Day 1 of the &quot;thinking&quot; test over, Ayanokoji is talking to Hirata and the others about a way to break out of the stalemate when he receives a message on his phone from an irritated Horikita. Meanwhile, noticing something strange about Karuizawa's behavior, he seeks information from Horikita, but...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x3 - The greatest souls are capable of the greatest vices as well as of the greatest virtues.
+          </div>
+          <div class="plot">Karuizawa is pushed to her breaking point by the girls of Class C. Ayanokoji watches impassively, but Yukimura flies to her aid, unable to bear it. Noticing Karuizawa's abnormal levels of fear, Ayanokoji seems to get an idea...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x4 - The material has to be created.
+          </div>
+          <div class="plot">At the start of the second term, preparations for the sports festival begin. The students are nervous about the fact that performance in the events will affect their written tests, and even more pressure is added by the unique team breakdowns and freedom given to the students to decide who takes part in what event.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x5 - Every failure is a step to success.
+          </div>
+          <div class="plot">Ayanokoji brings Kushida, whom he suspects of being a traitor, to observe the other classes alongside Horikita. When the day of the festival arrives, Team Red pulls into the lead with great performances by Horikita and Sudo, but Ayanokoji merely watches with disinterest...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x6 - Adversity is the first path to truth.
+          </div>
+          <div class="plot">As the sports festival comes down to the wire, Horikita must deal with Sudo, as well as Ryuen's threat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x7 - To doubt everything or to believe everything are two equally convenient solutions; both dispense with the necessity of reflection.
+          </div>
+          <div class="plot">Class D prepares to face their next major challenge, a test called &quot;Paper Shuffle&quot; where the price of failure is expulsion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x8 - The wound is at her heart.
+          </div>
+          <div class="plot">Horikita decides to use Paper Shuffle to settle matters with Kushida, and Ayanokoji finds himself caught in the middle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x9 - If you make a mistake and do not correct it, this is called a mistake.
+          </div>
+          <div class="plot">As the day of the Paper Shuffle draws near, the plans of the various forces in play collide.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x10 - People, often deceived by an illusive good, desire their own ruin.
+          </div>
+          <div class="plot">Ayanokoji receives a visit from outside the school, and learns more about the conditions of his stay.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x11 - A man who cannot command himself will always be a slave.
+          </div>
+          <div class="plot">Karuizawa, whose cooperative relationship with Ayakoji has ended abruptly, cannot hide her embarrassment at the complete loss of contact with him. As Class D discusses their plans for the future, Ryuen and the other members of Class C appear overbearing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x12 - Force without wisdom falls of its own weight.
+          </div>
+          <div class="plot">Ayanokoji makes his final decision on how to deal with Ryuen and the Class C threat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x13 - The worst enemy you can meet will always be yourself.
+          </div>
+          <div class="plot">The aftermath of the gymnasium incident plays out as Christmas brings romance to the school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x1 - The strongest principle of growth lies in the human choice.
+          </div>
+          <div class="plot">Ayanokoji's class embarks on their first trial as the ascended Class C, the mixed training camp.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x2 - Man is wolf to man.
+          </div>
+          <div class="plot">Yukimura injures his leg while the group is training for the upcoming tests. He later devises a plan for how the group should handle the marathon and then the day of the four tests arrives.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x3 - Man never forgets what he wants to forget.
+          </div>
+          <div class="plot">While Class C are discussing Karuizawa and Hirata's break up Yamauchi is approached by Sakayanagi from Class A. Horikita warns that it's a trap, but Yamauchi pays it no heed. Meanwhile, Horikita tells Ayanokoji that rumors are swirling around Ichinose.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x4 - To work you have the right, but not to the fruits thereof.
+          </div>
+          <div class="plot">It's Valentine's Day and the boys of Class C are excited about whether or not they will receive chocolates. Meanwhile, Karuizawa seems uneasy over Ayanokoji's request to meet up and while doing so an unexpected person appears...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x5 - Fortune favors the bold.
+          </div>
+          <div class="plot">Turns out the one spreading the rumors was Hashimoto, who did so at the behest of Sakayanagi. Shortly thereafter, Sakayanagi appears before Class C and she informs them she has evidence regarding the rumors about Ichinose.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x6 - It is better to receive an injury than to inflict one.
+          </div>
+          <div class="plot">Everyone in Class C has passed their year-end exam. While relief flows through the classroom, Chabashira announces a special exam. It will be a class vote to choose three people worthy of praise and three worthy of censure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x7 - People will do anything, no matter how absurd, in order to avoid facing their own souls
+          </div>
+          <div class="plot">With the approaching class vote, a disturbing atmosphere hangs over Class C and fills them with suspicion. Second-year Class A's Asahina informs Ayanokoji that Ichinose has asked for cooperation from student council president Nagumo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x8 - Those who cannot remember the past are condemned to repeat it.
+          </div>
+          <div class="plot">After conversing with her brother Manabu, Horikita offers Yamauchi name as the one who should be expelled. Not only has he made few contributions to the class, but he also worked with Sakayanagi in Class A to expel Ayanokoji.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x9 - Extreme justice is extreme injustice.
+          </div>
+          <div class="plot">The class vote has seen the first student expelled from Class C. Sakayanagi meets up with Ayanokoji and they're approached by a man named Tsukishiro sent by Ayanokoji's father. Afterward Ayanokoji challenges Sakayanagi to compete on their next exam.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x10 - The first cause of absurd conclusions I ascribe to the want of method.
+          </div>
+          <div class="plot">Class C considers various strategies for the special exam, but they all lack a decisive factor. Hirata remains disappointed in the class vote result. Ayanokoji calls out to Hirata, who acts coldly towards Mii-chan who is worried about him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x11 - There is only one rule in love: bring happiness to those you love.
+          </div>
+          <div class="plot">As Hirata recovers and the class shows unity, it's finally Ayanokoji vs. Sakayanagi. The final special exam has begun and the first round is basketball. Class C puts up a good fight, but Sakayanagi plans to mentally shake Sudo so he will fall.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x12 - Change your desires rather than the order of the world.
+          </div>
+          <div class="plot">The class narrowly lost to Class A in the final exam, and were demoted back to Class D. However, the students showed growth throughout the year. Horikita, in particular, having grown as leader requests to dissolve the alliance with Class B.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x13 - Love is the best teacher.
+          </div>
+          <div class="plot">It's spring break. Shiina calls Ayanokoji to discuss books. Meanwhile, Class B's Kanzaki appears before Ryuen, who is having a secret meeting with Hashimoto. Although the class was defeated, Kanzaki faces Ryuen without hesitation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

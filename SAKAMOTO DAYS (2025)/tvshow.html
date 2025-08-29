@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - SAKAMOTO DAYS
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">SAKAMOTO DAYS</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/SAKAMOTO%20DAYS%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SAKAMOTO%20DAYS%20-%20S01E01%20-%20The%20Legendary%20Hit%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Legendary Hit Man
+          </div>
+          <div class="plot">Sakamoto enjoys a quiet life in retirement with his family. But one day, an old colleague demands he return to the assassin world &mdash; or face consequences.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SAKAMOTO%20DAYS%20-%20S01E02%20-%20Vs.%20Son%20Hee%20and%20Bacho-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Vs. Son Hee and Bacho
+          </div>
+          <div class="plot">While out on an errand, Sakamoto and Shin encounter Lu Shaotang, the daughter of a mafia boss, who's on the run and targeted by twin assassins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SAKAMOTO%20DAYS%20-%20S01E03%20-%20Welcome%20to%20Sugar%20Park-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Welcome to Sugar Park
+          </div>
+          <div class="plot">After learning of the huge bounty on Sakamoto's head, the crew tries to enjoy a family outing at the amusement park while fending off assassins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SAKAMOTO%20DAYS%20-%20S01E04%20-%20Hard-Boiled-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Hard-Boiled
+          </div>
+          <div class="plot">With the poison-wielding hitman taken out, the Sakamotos head to their next attraction, where they're ambushed by Dondenkai Ltd's ultimate assassin duo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SAKAMOTO%20DAYS%20-%20S01E05%20-%20Source%20of%20Strength-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Source of Strength
+          </div>
+          <div class="plot">Sakamoto goes all out in a fierce one-on-one duel with Boiled. Meanwhile, ORDER members are tasked with handling a serial case targeting assassins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SAKAMOTO%20DAYS%20-%20S01E06%20-%20Heisuke%20Mashimo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Heisuke Mashimo
+          </div>
+          <div class="plot">Hoping to win the million-yen prize, Team Sakamoto enters the shopping district's survival tournament and teams up with a completely clueless sniper.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SAKAMOTO%20DAYS%20-%20S01E07%20-%20Jurassic%20Bastard-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Jurassic Bastard
+          </div>
+          <div class="plot">While manning the store alone, Lu gets kidnapped by a mysterious group. Sakamoto and Shin pursue her but are halted by an invisible assassin
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SAKAMOTO%20DAYS%20-%20S01E08%20-%20Sakamoto%27s%20vs.%20the%20Lab-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Sakamoto's vs. the Lab
+          </div>
+          <div class="plot">To rescue Lu, Sakamoto and Shin infiltrate a top-secret lab seized by assassins. Meanwhile, in the prison cell, Lu meets someone from Shin's childhood.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SAKAMOTO%20DAYS%20-%20S01E09%20-%20All%20Aboard-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - All Aboard
+          </div>
+          <div class="plot">In the depths of the Lab, Shin and Heisuke join forces to take down the invisible assailant, while Sakamoto engages in an intense battle against Kashima.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SAKAMOTO%20DAYS%20-%20S01E10%20-%20Bathhouse%20Roughhouse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Bathhouse Roughhouse
+          </div>
+          <div class="plot">Exhausted from their battle, the crew heads to a local bathhouse but finds it too dangerous to relax. Later, a mysterious man arrives in search of Lu.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SAKAMOTO%20DAYS%20-%20S01E11%20-%20Casino%20Battle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Casino Battle
+          </div>
+          <div class="plot">The crew faces Wutang in a high-stakes casino showdown to learn who issued Sakamoto's bounty. Meanwhile, X sends a group of vicious assassins their way
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

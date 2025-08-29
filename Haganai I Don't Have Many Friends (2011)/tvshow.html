@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Haganai: I Don't Have Many Friends
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Haganai: I Don't Have Many Friends</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20%282011%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S01E01%20-%20We%20Can%27t%20Make%20Any%20Friends-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - We Can't Make Any Friends
+          </div>
+          <div class="plot">Yozora and Kodoka are loners at school. In order to make friends with other misfits, they start the Neighbors Club. Soon, a third member joins the club: Sena, a popular girl who annoys Yozora to no end.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S01E02%20-%20There%27s%20No%20God%20in%20the%20Electric%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - There's No God in the Electric World
+          </div>
+          <div class="plot">Yozora, Kodaka, and Sena try to bond over some co-op video game action. Unfortunately, the girls are way better at bashing each other than working as a team.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S01E03%20-%20There%20Are%20No%20Flags%20at%20the%20Swimming%20Pool-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - There Are No Flags at the Swimming Pool
+          </div>
+          <div class="plot">Kodaka tries to give Sena a swimming lesson, but some obnoxious guys hanging out by the pool make the situation even more uncomfortable than it already is. Luckily, Kodaka&rsquo;s got Sena&rsquo;s back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S01E04%20-%20Underclassmen%20Don%27t%20Hold%20Back-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Underclassmen Don't Hold Back
+          </div>
+          <div class="plot">The Club gets a couple of new freshmen members: Yukimura, who&rsquo;s been following Kodaka around to learn some lessons in manliness, and Rika, an awkward young scientist.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S01E05%20-%20This%20Time%2C%20the%20SAGA%20is%20a%20Serious%20Battle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - This Time, the SAGA is a Serious Battle
+          </div>
+          <div class="plot">Rika gets the group to play a new RPG. Of course, the gang&rsquo;s manic dynamic is as much a problem in the virtual world as it is in the real one. Later, Kodaka must deal with a surprising new Club member.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S01E06%20-%20There%20Aren%27t%20Many%20Customers%20at%20the%20Karaoke%20Box-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - There Aren't Many Customers at the Karaoke Box
+          </div>
+          <div class="plot">When the Neighbors Club heads out to sing some karaoke, the whole group ends up divided between multiple rooms. Later, Yozora gets jealous when she hears that Sena&rsquo;s dad wants to meet Kodaka.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S01E07%20-%20My%20Cell%20Phone%20Doesn%27t%20Get%20Many%20Calls-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - My Cell Phone Doesn't Get Many Calls
+          </div>
+          <div class="plot">With summer break approaching, the gang decides to use their cell phones to keep in touch. Sena decides to get the same model as Kodaka's - a choice which drives Yozora totally insane.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S01E08%20-%20School%20Swimsuits%20Don%27t%20Appear-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - School Swimsuits Don't Appear
+          </div>
+          <div class="plot">Kobato&rsquo;s burning up, thanks to a busted A/C. Inspired by her favorite anime, she decides to wear more season-appropriate attire. Later, the Neighbors Club heads to the pool to cool off.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S01E09%20-%20The%20President%27s%20Recollections%20are%20Painful-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The President's Recollections are Painful
+          </div>
+          <div class="plot">Sena takes Kodaka and Kobato to meet her father, Pegasus. They decide to spend the night - and lots and lots of awkward situations ensue.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S01E10%20-%20No%20One%20Sleeps%20at%20Camp-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - No One Sleeps at Camp
+          </div>
+          <div class="plot">The gang heads to Sena&rsquo;s summer home, where they spend hours romping on the beach. Later, the group settles in for some ghost stories. Unfortunately, after the chilling tales, everyone&rsquo;s too scared to go to the bathroom alone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S01E11%20-%20Girls%20Are%20Super-Cute%20in%20Yukatas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Girls Are Super-Cute in Yukatas
+          </div>
+          <div class="plot">It&rsquo;s festival time! Kodoka talks to Sena about hair dye, and Yozora&rsquo;s hair becomes a casualty of a fireworks display!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S01E12%20-%20We%20Don%27t%20Have%20Many%20Friends-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - We Don't Have Many Friends
+          </div>
+          <div class="plot">The origins of the Neighbors Club &ndash; and a few gender-bending secrets &ndash; are finally revealed! What on Earth will happen next!?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x13 - A Round Robin Story's Ending Is Way Extreme
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S02E01%20-%20Yeah%2C%20My%20Youth%20Is%20Seriously%20Wrong-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Yeah, My Youth Is Seriously Wrong
+          </div>
+          <div class="plot">As we rejoin the Neighbors, we find that, no, they still don't have any friends. Sena decides to follow Yozora's lead with a stylish new haircut! Kodaka doesn't get much studying done during his visit to the Kashiwazaki manor, but he does manage to learn some disturbing facts about Sena&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S02E02%20-%20Homo%20Game%20Club-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Homo Game Club
+          </div>
+          <div class="plot">Rika draws from her extensive knowledge of gay erotica to give the Neighbors a crash course on male friendship. Later, Kodaka runs into an oddly familiar-looking lavender-haired nun...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S02E03%20-%20My%20Little%20Sisters%20Are%20This%20Cute-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - My Little Sisters Are This Cute
+          </div>
+          <div class="plot">Maria runs away from home (with her big sister's help) and winds up at Kodaka's place. Later, the Neighbors celebrate the end of finals the only way they know how: awkwardly, with lots of public humiliation!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S02E04%20-%20A%20Man%20is%20Among%20Them-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - A Man is Among Them
+          </div>
+          <div class="plot">Yozora and Sena face off in a race to conquer the Black Dragon at Yokoshima Wonderland. Who will prevail?! Later, Yukimura's shocking secret is revealed!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S02E05%20-%20That%20Kind%20of%20Play%20Is%20Not%20Allowed%21%20My%20Worldview%20Is%20Disturbed%20When%20You%20Are%20Around-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - That Kind of Play Is Not Allowed! My Worldview Is Disturbed When You Are Around
+          </div>
+          <div class="plot">Yozora tries her hand at one of Rika's dating sims, and quickly learns that she doesn't like virtual people any better than real people. Then, Kodaka tests out Rika's new time machine!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S02E06%20-%20Unbreakable%20Weird-Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Unbreakable Weird-Girl
+          </div>
+          <div class="plot">The school festival is approaching, and the Neighbors will be taking part! Can our intrepid band of oddballs find a way to attract normal people to their booth? Can they stop Rika from scaring away customers?!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S02E07%20-%20As%20Long%20as%20There%60s%20Love%2C%20It%20Doesn%60t%20Matter%20If%20I%20Get%20More%20Sisters%2C%20Right-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - As Long as There`s Love, It Doesn`t Matter If I Get More Sisters, Right?
+          </div>
+          <div class="plot">Kobato's birthday is coming up, and the Neighbors need to get her some presents. Kodaka and Sena find themselves shopping together! Will Sena be able to break down the wall of Kodaka's obliviousness? Do you really have to ask?!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S02E08%20-%20My%20Childhood%20Friend%20Is%20Too%20Much%20of%20a%20Battleground-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - My Childhood Friend Is Too Much of a Battleground
+          </div>
+          <div class="plot">The Neighbors Club will be presenting a movie for the school festival, and Yozora's writing the script! What can we expect? High drama! Steamy boy-on-boy action! Meat! A samurai? Probably a lot of repressed feelings of isolation and self doubt, too!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S02E09%20-%20Stray%20Cats%20Overheat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Stray Cats Overheat
+          </div>
+          <div class="plot">Kodaka meets Yusa Aoi, Sena's classmate and perpetual runner-up. Someone has tricked this girl into thinking that Kodaka and Sena are happy and well-balanced individuals -- in a committed relationship! Who is responsible?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S02E10%20-%20The%20Sad-Case%20King%20and%20the%20Stone-Cold%20Story-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - The Sad-Case King and the Stone-Cold Story
+          </div>
+          <div class="plot">Sena refuses to be seen in Yozora's plagiarized movie, so the Neighbors have to do it over again. High drama! Steamy boy-on-boy action! Meat! A samurai! No, for real this time!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S02E11%20-%20Dismay%20of%20I%2C%20the%20Chicken-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Dismay of I, the Chicken
+          </div>
+          <div class="plot">This week is full of lessons for the Neighbors: There's no such thing as a yaoi hole; little girls can't really be nuns; Kodaka really is that much of a putz.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Haganai%20I%20Don%27t%20Have%20Many%20Friends%20-%20S02E12%20-%20I%20Have...%20Friends-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - I Have... Friends
+          </div>
+          <div class="plot">Kodaka's cowardly flight from the club room has left the Neighbors on the brink of collapse. Will he be lured away by the world of normal kids with real lives, or can Rika save the club with the help of her deadly new weapon?!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Maken-Ki! Battling Venus
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Maken-Ki! Battling Venus</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Maken-Ki%21%20Battling%20Venus%20%282011%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S00E01%20-%20Doki%20Doki%20%21%20Maken-Ki%20%21%20Secret%20training%21%20%231-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - Doki Doki ! Maken-Ki ! Secret training! #1
+          </div>
+          <div class="plot">A Special Training Episode for Maken-Ki DVD and BluRay version only.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S00E02%20-%20Doki%20Doki%20%21%20Maken-Ki%20%21%20Secret%20training%21%20%232-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x2 - Doki Doki ! Maken-Ki ! Secret training! #2
+          </div>
+          <div class="plot">Included in the BD/DVD Vol.2
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S00E03%20-%20Doki%20Doki%20%21%20Maken-Ki%20%21%20Secret%20training%21%20%233-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x3 - Doki Doki ! Maken-Ki ! Secret training! #3
+          </div>
+          <div class="plot">Included in the BD/DVD Vol.3
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S00E04%20-%20Doki%20Doki%20%21%20Maken-Ki%20%21%20Secret%20training%21%20%234-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x4 - Doki Doki ! Maken-Ki ! Secret training! #4
+          </div>
+          <div class="plot">Included in the BD/DVD Vol.4
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S00E05%20-%20Doki%20Doki%20%21%20Maken-Ki%20%21%20Secret%20training%21%20%235-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x5 - Doki Doki ! Maken-Ki ! Secret training! #5
+          </div>
+          <div class="plot">Included in the BD/DVD Vol.5
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S00E06%20-%20Doki%20Doki%20%21%20Maken-Ki%20%21%20Secret%20training%21%20%236-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x6 - Doki Doki ! Maken-Ki ! Secret training! #6
+          </div>
+          <div class="plot">Included in the BD/DVD Vol.6
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S00E07%20-%20It%27s%20Summer%21%20It%27s%20Swimsuits%21%20It%27s%20Training%20Camp%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x7 - It's Summer! It's Swimsuits! It's Training Camp!
+          </div>
+          <div class="plot">The first semester ends at Tenbi High School and the summer holidays begin. Ooyama Takeru, his childhood friend Amaya Haruko and the other girls are off to a Maken-ki camp on the southern islands.
+
+But at the beach it is not all fun and games, harsh training awaits Takeru, who wants to be able to protect the one he loves...
+
+Original episode aired on TV, and not included on the DVD that comes with the Limited Edition Anime DVD Volume 8 comics on sale March 1, 2012.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S00E08%20-%20Takeru%20Turns%20into%20a%20Woman%21%20Naked%20in%20a%20Southern%20Island%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x8 - Takeru Turns into a Woman!? Naked in a Southern Island!
+          </div>
+          <div class="plot">The group decides to take a trip to the beach to get a long deserved break, yet Takeru has been forced into intense training to control his Maken. During training an emergency at the beach cuts his training short...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S00E09%20-%20Maken-ki%21%20Two%20Specials%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x9 - Maken-ki! Two Specials 1
+          </div>
+          <div class="plot">Included in the BD/DVD Vol.1
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S00E10%20-%20Maken-ki%21%20Two%20Specials%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x10 - Maken-ki! Two Specials 2
+          </div>
+          <div class="plot">Included in the BD/DVD Vol.2
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S00E11%20-%20Maken-ki%21%20Two%20Specials%203-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x11 - Maken-ki! Two Specials 3
+          </div>
+          <div class="plot">Included in the BD/DVD Vol.3
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S00E12%20-%20Maken-ki%21%20Two%20Specials%204-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x12 - Maken-ki! Two Specials 4
+          </div>
+          <div class="plot">Included in the BD/DVD Vol.4
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S00E13%20-%20Maken-ki%21%20Two%20Specials%205-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x13 - Maken-ki! Two Specials 5
+          </div>
+          <div class="plot">Included in the BD/DVD Vol.5
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S01E01%20-%20The%20Day%20We%20Swore%20to%20Heaven-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Day We Swore to Heaven
+          </div>
+          <div class="plot">Takeru's first day at the Tenbi Academy is full of fights and panties. After accidentally kissing a second-year girl, she challenges him to a duel in front of the entire student body. Without a Maken or Element, how is he supposed to protect himself?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S01E02%20-%20Girls%20Are%20Amazing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Girls Are Amazing
+          </div>
+          <div class="plot">The beginning of the school year could only mean one thing: time for physical exams! But after getting caught peeking in on the girls from his class, Takeru finds out that he's an anomaly at Tenbi, and that no Maken can be matched to him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S01E03%20-%20Welcome%20to%20Maken-ki-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Welcome to Maken-ki
+          </div>
+          <div class="plot">Takeru decides to join the Security Committee! To welcome its new members, the Committee takes a trip to the hot springs. Things are going well until a bear shows up, giving the girls of the Tenbi Academy a chance to show off their special powers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S01E04%20-%20The%20Enemy%20Is%20at%20Tenbi-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Enemy Is at Tenbi
+          </div>
+          <div class="plot">Himegami asks Takeru to go on a shopping date! Of course, she has an ulterior motive: to inspect the mysterious mark on Takeru's chest. Sounds easy enough, but her plans are interrupted by her roommates, her fan club, and an unknown stalker.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S01E05%20-%20The%20Strongest%20Girl%20in%20Tenbi-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Strongest Girl in Tenbi
+          </div>
+          <div class="plot">It's time for the clubs at Tenbi to negotiate their annual budgets! Takeru and Uru try to work together to help the Security Committee, but their work is interrupted by an assailant who claims to be responsible for the random acts of violence on campus.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S01E06%20-%20Like%20Rain%20on%20a%20Sunny%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Like Rain on a Sunny Day
+          </div>
+          <div class="plot">Since Takeru's first day at Tenbi, Inaho has called him her fianc&eacute;. On a rainy night, the story of their past together is revealed, and Takeru's Elemental powers surface in order to protect his friend (and an adorable new addition to the household).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S01E07%20-%20The%20Goddesses%20Who%20Came%20Down%20to%20Tenbi-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Goddesses Who Came Down to Tenbi
+          </div>
+          <div class="plot">A group of beautiful, powerful transfer students arrive at Tenbi in order to root out a mysterious secret society. But before they can get to work, they'll have to prove their strength against the girls of Makenki in an epic volleyball showdown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S01E08%20-%20Syria%20Will%20Give%20You%20Everything-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Syria Will Give You Everything
+          </div>
+          <div class="plot">Syria is Tenbi's newest transfer student, and she's taken quite an interest in Takeru! What does she plan to do with him in the disused shack on the outskirts of campus?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S01E09%20-%20Stormy%20Games-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Stormy Games
+          </div>
+          <div class="plot">The boys of Tenbi Academy petition the faculty for co-ed swim classes (for the sake of gender equality, of course). Naturally, the girls protest. There's only one way to solve this dilemma: a boys-versus-girls water fight full of swimsuits and nosebleeds!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S01E10%20-%20The%20Girls%20of%20Light%20and%20Shadow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Girls of Light and Shadow
+          </div>
+          <div class="plot">If Takeru fails his Element practical again, he'll be kicked out of Makenki! Meanwhile, there's something not quite right about Minerva, the newest member of Venus to transfer to Tenbi. Why is she confronting Himegami in the woods?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S01E11%20-%20Macaron%20Limited-Time-Only%20Service%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Macaron Limited-Time-Only Service Day
+          </div>
+          <div class="plot">Takeru gets a Maken! The secret history of Makenki! A dangerous new threat! But most important, the girls of the Security Committee don their skimpiest outfits and get jobs at the local maid cafe in order to pay for their bikini-filled summer camp.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S01E12%20-%20Protectors%20of%20Paradise-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Protectors of Paradise
+          </div>
+          <div class="plot">Kamigari kidnaps Haruko as part of an incomprehensible evil scheme concerning Takeru's untapped powers. When things backfire and Takeru goes out of control, only one person can stop him from destroying Tenbi Academy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S02E01%20-%20Magical%20Security%20Organization-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Magical Security Organization
+          </div>
+          <div class="plot">Hijinks and wardrobe malfunctions abound at Tenbi Academy as Takeru and the rest of the school's security force try to track down a perv who's been taking lewd photos of female students and posting them on the school bulletin board-along with their bras!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S02E02%20-%20I%20Love%20Takeru-kun%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - I Love Takeru-kun!
+          </div>
+          <div class="plot">A graduate of the academy returns and uses her clothes-shredding powers to steal Haruko's memories and Maken! The security team tries desperately to track down the thief, while Inaho and amnesiac Haruko fight over Takeru's affections.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S02E03%20-%20Meowken-ki-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Meowken-ki?
+          </div>
+          <div class="plot">When Inaho brings her pet to school, the kitten displays an amazing Element power-and turns the girls of Makenki into sexy human-feline hybrids! Can Takeru get things back to normal before the situation devolves into one epic catfight?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S02E04%20-%20Man%20Heart%20Cos-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Man *Heart* Cos
+          </div>
+          <div class="plot">When the school holds a manga festival, a couple of hornballs use Maken to shrink the costumes right off the curvy contestants in the masquerade contest! Can anyone save the day - or will the student body bare all!?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S02E05%20-%20Begging%20Teacher-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Begging Teacher
+          </div>
+          <div class="plot">Aki, the buxom school nurse, needs someone to pretend to be her boyfriend-so who better than Takeru, one of her students? When the two faux lovebirds end up handcuffed together on a romantic deserted island, things get really, really hard for Takeru.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S02E06%20-%20Villainous%20Leadership%20Committee-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Villainous Leadership Committee
+          </div>
+          <div class="plot">In order to prove herself worthy of joining the Leadership Committee, Uruchi must complete a series of complicated trials-which somehow involve learning absolutely everything there is to know about Haruko's body and bathing habits!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S02E07%20-%20His%20Name%20Is%20Rudolf%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - His Name Is Rudolf!
+          </div>
+          <div class="plot">Kodama goes underwear shopping, but ends up blowing all her money on an adorable fluffy teddy bear! Naturally, though, the bear ends up being a complete perv with a mind of his own, and is bursting at the seams to get his paws on every girl in sight.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S02E08%20-%20Academy%20Harem-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Academy Harem
+          </div>
+          <div class="plot">When the principal at Tenbi gets fed up with the school, she does the only logical thing and puts one of the male students in charge. Pretty soon the academy turns into one big harem full of erotica readings, bouncy exercises, and chest inspections.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S02E09%20-%20You%20Are%20More%20Manly%20Than%20Roses-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - You Are More Manly Than Roses
+          </div>
+          <div class="plot">The Leadership Committee president falls for a dashing boy. One problem: he's actually Azuki dressed in guys's clothing! Rather than come clean about the mistaken identity, the other girls make Azuki pretend to be a dude and go on a hot date with the pres.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Maken-Ki%21%20Battling%20Venus%20-%20S02E10%20-%20And%20So%2C%20Toward%20Makenki-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - And So, Toward Makenki
+          </div>
+          <div class="plot">Someone's broken into the principal�۪s room in search of files that could put the whole school at risk. In order to track down the culprit, the Leadership Committee will use all their resources-including a new student, fireworks, and skimpy costumes!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

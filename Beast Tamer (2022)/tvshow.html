@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Beast Tamer
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Beast Tamer</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Beast%20Tamer%20%282022%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x1 - Meeting of Fate
+          </div>
+          <div class="plot">Beast Tamer Rein is kicked out of the Hero's party, but his fortunes change when he meets the Cat Spirit, Kanade!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x2 - Comrades
+          </div>
+          <div class="plot">Rein learns the full implications of his contract with Kanade while doing basic jobs for the Adventurer's Guild.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x3 - Another Ultimate Species
+          </div>
+          <div class="plot">An open job for the Guild pits Rein and Kanade against the Guard Dog of Stride Bridge... a violent raider with a surprising identity!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x4 - Dragonoid Power
+          </div>
+          <div class="plot">With Tania added to the team, Rein unlocks new power and takes the team on a series of new quests!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x5 - Beast Tamer VS Hero
+          </div>
+          <div class="plot">Rein and his new friends are forced to reckon with the Hero's party, who want him back for their own purposes!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x6 - The Lost Woods
+          </div>
+          <div class="plot">When Rein's next job comes from the Hero himself, he and his party attempt to conquer the aptly named &quot;Lost Woods.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Beast%20Tamer%20-%20S01E07%20-%20The%20Captive%20Fairy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Captive Fairy
+          </div>
+          <div class="plot">The party forges a plan to save Runa from the Shadow Knight, but receives an unexpected reception back in town.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Beast%20Tamer%20-%20S01E08%20-%20Let%27s%20Make%20Weapons-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Let's Make Weapons
+          </div>
+          <div class="plot">With his reward fresh in hand, Rein goes shopping at the best weapons shop in town. But there's something off about the old dwarf's wares...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Beast%20Tamer%20-%20S01E09%20-%20Beast%20Tamer%20VS%20Beast%20Tamer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Beast Tamer VS Beast Tamer
+          </div>
+          <div class="plot">In order to stop a group of mine thieves, Rein must fight another beast tamer, who has an unexpected creature in his repertoire!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Beast%20Tamer%20-%20S01E10%20-%20Darkness%20in%20Horizon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Darkness in Horizon
+          </div>
+          <div class="plot">While defending Sora and Runa from a demanding aristocrat, Rein learns of an insidious darkness in the city of Horizon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Beast%20Tamer%20-%20S01E11%20-%20Black%20Waves-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Black Waves
+          </div>
+          <div class="plot">While attempting to rescue the kidnapped townspeople and find proof of the lord's wrongdoing, Rein and his comrades make an unexpected discovery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Beast%20Tamer%20-%20S01E12%20-%20Champion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Champion
+          </div>
+          <div class="plot">After the demon reveals himself, Rain and his friends must not only fight for their own lives, but also protect the townsfolk. Will they succeed by joining forces?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Beast%20Tamer%20-%20S01E13%20-%20A%20Home%20for%20All-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - A Home for All
+          </div>
+          <div class="plot">The town is rebuilding in the wake of the demon's attack, which means there's just one more thing for Rein to do...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

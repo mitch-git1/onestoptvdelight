@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Combatants Will Be Dispatched!
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Combatants Will Be Dispatched!</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Combatants%20Will%20Be%20Dispatched%21%20%282021%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Combatants%20Will%20Be%20Dispatched%21%20-%20S01E01%20-%20Spies%20Will%20Be%20Dispatched%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Spies Will Be Dispatched!
+          </div>
+          <div class="plot">Agent Six is a powerful (but stupid) combat agent for an evil secret organization. His life takes a twist when his bosses send him to a fantasy world!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Combatants%20Will%20Be%20Dispatched%21%20-%20S01E02%20-%20Annihilate%20Your%20Business%20Rivals-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Annihilate Your Business Rivals
+          </div>
+          <div class="plot">Now in command of his own combat unit, Agent Six sets out to fight the enemy the only way he knows how: by being the biggest jerk he can!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Combatants%20Will%20Be%20Dispatched%21%20-%20S01E03%20-%20The%20Right%20Way%20to%20Clear%20a%20Tower-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Right Way to Clear a Tower
+          </div>
+          <div class="plot">When the army needs to clear out a tower controlled by powerful demons, the only man for the job is the sleaziest, nastiest soldier they have: Agent Six!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Combatants%20Will%20Be%20Dispatched%21%20-%20S01E04%20-%20How%20to%20Defeat%20an%20Evil%20Leader-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - How to Defeat an Evil Leader
+          </div>
+          <div class="plot">Six's crew is tasked with the toughest job in the army: battling the forces of Heine of the flame. She's a powerful enemy, but when he gets the upper hand, there's no limits to how far he'll go&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Combatants%20Will%20Be%20Dispatched%21%20-%20S01E05%20-%20To%20Be%20a%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - To Be a Hero
+          </div>
+          <div class="plot">Six is run out of town on a rail as the Demon Lord's army marches on the city. He's a coward and a sleeze, but is he willing to let his old friends fight the Demon Lord's army alone?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Combatants%20Will%20Be%20Dispatched%21%20-%20S01E06%20-%20Combatants%20Will%20Be%20Dispatched%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Combatants Will Be Dispatched!
+          </div>
+          <div class="plot">The Demon Lord's army has invaded the city, and Rose, Grimm, and Snow can barely keep them back. Will Six help them, even if it means being a good guy?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Combatants%20Will%20Be%20Dispatched%21%20-%20S01E07%20-%20The%20Con%20Artist%20Marriage%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Con Artist Marriage Girl
+          </div>
+          <div class="plot">With the Demon Lord's army driven away, Alice has time to investigate the local wildlife. But things turn sour when Grimm talks about summoning a ghost&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Combatants%20Will%20Be%20Dispatched%21%20-%20S01E08%20-%20Corrupt%2C%20Black-Hearted%20Knight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Corrupt, Black-Hearted Knight
+          </div>
+          <div class="plot">Princess Tillis has a plan to send Snow on an important diplomatic mission to secure water for the Kingdom of Grace. Unfortunately, Six goes with her&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Combatants%20Will%20Be%20Dispatched%21%20-%20S01E09%20-%20Carnivorous%20Female%20Chimera-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Carnivorous Female Chimera
+          </div>
+          <div class="plot">The team gets stuck in the desert after a mission goes bad. They're forced to spend days trekking through the hot sands, and Rose is looking at Six in a very strange way&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Combatants%20Will%20Be%20Dispatched%21%20-%20S01E10%20-%20Kisaragi%20Leaders%20Will%20Be%20Livestreamed%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Kisaragi Leaders Will Be Livestreamed!
+          </div>
+          <div class="plot">Kisaragi has defeated the heroes back on Earth, and it's time for some R&amp;R. But things don't go as planned when Lilith starts livestreaming&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Combatants%20Will%20Be%20Dispatched%21%20-%20S01E11%20-%20How%20to%20Make%20an%20Evil%20Leader%20Cry-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - How to Make an Evil Leader Cry
+          </div>
+          <div class="plot">Six has a plan to save Grace Kingdom from invasion: let the enemy do all the work, then stroll in at the last minute, beat them up and steal their prize!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Combatants%20Will%20Be%20Dispatched%21%20-%20S01E12%20-%20Strong%20Partner%20and%20Smart%20Partner-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Strong Partner and Smart Partner
+          </div>
+          <div class="plot">Russell has trapped Six and his friends inside the ruins with his giant robot. Alice has a plan, but Six will have to face him alone to buy time&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

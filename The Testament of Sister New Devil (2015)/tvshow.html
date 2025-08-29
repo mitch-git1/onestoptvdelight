@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Testament of Sister New Devil
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Testament of Sister New Devil</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Testament%20of%20Sister%20New%20Devil%20%282015%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - DB Shinmai Maou no Testament Burst OVA Dual Audio BD1080p
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - DB Shinmai Maou no Testament Departures OVA Dual Audio BD1080p
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            -1x-1 - DB Shinmai Maou no Testament OVA Dual Audio BD1080p
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S00E01%20-%20Special%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - Special 1
+          </div>
+          <div class="plot">Maria shows recap footage of a prior episode's erotic scenes. Most of the time the female being shown off will also be there to comment often very embarrassed or indignant at what is being shown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S00E02%20-%20Special%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x2 - Special 2
+          </div>
+          <div class="plot">Maria shows recap footage of a prior episode's erotic scenes. Most of the time the female being shown off will also be there to comment often very embarrassed or indignant at what is being shown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S00E03%20-%20Special%203-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x3 - Special 3
+          </div>
+          <div class="plot">Maria shows recap footage of a prior episode's erotic scenes. Most of the time the female being shown off will also be there to comment often very embarrassed or indignant at what is being shown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S00E04%20-%20Special%204-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x4 - Special 4
+          </div>
+          <div class="plot">Maria shows recap footage of a prior episode's erotic scenes. Most of the time the female being shown off will also be there to comment often very embarrassed or indignant at what is being shown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S00E05%20-%20Special%205-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x5 - Special 5
+          </div>
+          <div class="plot">Maria shows recap footage of a prior episode's erotic scenes. Most of the time the female being shown off will also be there to comment often very embarrassed or indignant at what is being shown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S00E06%20-%20Special%206-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x6 - Special 6
+          </div>
+          <div class="plot">Maria shows recap footage of a prior episode's erotic scenes. Most of the time the female being shown off will also be there to comment often very embarrassed or indignant at what is being shown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S00E08%20-%20BURST%20Special%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x8 - BURST Special 1
+          </div>
+          <div class="plot">Maria shows recap footage of a prior episode's erotic scenes. Most of the time the female being shown off will also be there to comment often very embarrassed or indignant at what is being shown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S00E09%20-%20BURST%20Special%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x9 - BURST Special 2
+          </div>
+          <div class="plot">Maria shows recap footage of a prior episode's erotic scenes. Most of the time the female being shown off will also be there to comment often very embarrassed or indignant at what is being shown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S00E10%20-%20BURST%20Special%203-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x10 - BURST Special 3
+          </div>
+          <div class="plot">Maria shows recap footage of a prior episode's erotic scenes. Most of the time the female being shown off will also be there to comment often very embarrassed or indignant at what is being shown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S00E11%20-%20BURST%20Special%204-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x11 - BURST Special 4
+          </div>
+          <div class="plot">Maria shows recap footage of a prior episode's erotic scenes. Most of the time the female being shown off will also be there to comment often very embarrassed or indignant at what is being shown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S00E12%20-%20BURST%20Special%205-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x12 - BURST Special 5
+          </div>
+          <div class="plot">Maria shows recap footage of a prior episode's erotic scenes. Most of the time the female being shown off will also be there to comment often very embarrassed or indignant at what is being shown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S01E01%20-%20The%20Day%20I%20Got%20A%20Little%20Sister-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Day I Got A Little Sister
+          </div>
+          <div class="plot">Thanks to his father's sudden remarriage, Toujou Basara finds himself with two beautiful new step-sisters. Their names are Naruse Mio and Maria. Mio wakes him up in the morning, while Maria stands in the kitchen wearing a suggestive outfit...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S01E02%20-%20First%20Contract%20Between%20Servant%20And%20Master-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - First Contract Between Servant And Master
+          </div>
+          <div class="plot">As daughter of the former demon lord, Mio's foster parents were slain by powerful demons after her life. Still seeking to slay her, Basara reveals himself as a member of the hero clan--an enemy of the demons--and vows to protect Mio as a member of his family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S01E03%20-%20Reunion%20and%20a%20Gap%20in%20Trust-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Reunion and a Gap in Trust
+          </div>
+          <div class="plot">Basara's childhood friend Nonaka Yuuki warns him not to get involved with Naruse Mio any longer. She is a fellow member of the hero clan, and the one charged with observing Mio. She claims that Mio will bring great disaster, but Basara proclaims that he will protect Mio as a girl on his own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S01E04%20-%20Until%20Sadness%20Reaches%20Zero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Until Sadness Reaches Zero
+          </div>
+          <div class="plot">Basara suffers a deep wound in the battle against the white-masked man after Mio's power. Mio regrets getting Basara involved, and challenges the white-masked man to battle on her own. Meanwhile, in order to protect Mio, Basara resolves to use the &quot;forbbiden art&quot; he sealed away after the events of his past. What was the tragedy that visited the hero village and Basara?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S01E05%20-%20A%20Little%20Sister%27s%20Morning%20Demon%20Lording-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - A Little Sister's Morning Demon Lording
+          </div>
+          <div class="plot">With the battle against the white-masked man settled, they returned to their bawdy daily life. Basara wakes up with his hand groping Maria's butt, he runs into a naked Mio when he enters the bathroom, and Yuki sneaks into the bath with him. The master-servant pact lying at the heart of everything. Accoring to Takigawa, his classmate and the white-masked man, the pact between Basara and Mio holds another secret. Meanwhile, Basara's childhood friend Yuki invites him out on a date...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S01E06%20-%20Bearing%20Growing%20Emotions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Bearing Growing Emotions
+          </div>
+          <div class="plot">Basara goes on a date with Yuki. Unaccustomed to the shopping center, when the two of them are overwhelmed by a clerk's sales talk, Mio stops following to rescue them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S01E07%20-%20The%20Depths%20of%20Love%20and%20Hatred-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Depths of Love and Hatred
+          </div>
+          <div class="plot">Basara leads Mio to higher peaks as he pursues pleasure with the use of syrup. With their master-servant pact reaching a new level, they both bring their full might to face the ones trying to eliminate Mio: Takashi and Kurumi.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S01E08%20-%20Erotic%20Succubus%20Out%20of%20Control-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Erotic Succubus Out of Control
+          </div>
+          <div class="plot">Ten days pass since the battle with Takashi and others. Although the battle ended with reconciliation, Yuki returned to the hero's village. ...or she was supposed to, but when Basara returns home, he finds Yuki in an apron!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S01E09%20-%20Merits%20and%20Demerits%20of%20Master%20and%20Servant-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Merits and Demerits of Master and Servant
+          </div>
+          <div class="plot">Basara and Yuki begin the ceremony to form their pact. Clad in a bustier and garter belt, Yuki was raring to go for it, but she refused to forge the pact normally, and suffered the same succubus curse as Mio.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S01E10%20-%20Plaintive%20Betrayal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Plaintive Betrayal
+          </div>
+          <div class="plot">Mio has been captured by Zolgia following Maria's betrayal. Basara too is captured by Lars and brought to Zolgia's mansion. Lars' goal is to exchange Basara for Mio. He explains that he's only doing his duty as Mio's observer, but negotiations fail, and Zest slays him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S01E11%20-%20Epsionage...%20What%20Lies%20After-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Epsionage... What Lies After
+          </div>
+          <div class="plot">Strength as a human, the power to rend evil--With the power inherited from his father, Tojou Jin, Basara faces off against Zolgia. Basara is driven by the desire to protect his precious family. That desire gives him strength, and even as Zolgia pushes him to the edge, he rises without breaking. However, even Basara eventually runs out of strength facting that all too powerful might. His mind in despair, he's unable to escape from Zolgia's dominion...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S01E12%20-%20For%20This%20Night%2C%20This%20Moment-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - For This Night, This Moment
+          </div>
+          <div class="plot">Everyone is trapped inside the body of the demon realm's most dangerous creature, a beast capable of infinitely multiplying until it swallows the entire world. Dimensionally cut off, the only remaining option for Basara and the others is to completely eliminate this dangerous creature's vital core.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S02E01%20-%20What%20I%20Can%20Do%20For%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - What I Can Do For You
+          </div>
+          <div class="plot">After ending the battle against Zolgia, Basara regains his peaceful life with his two little sisters, Mio, the daughter of the previous demon lord, and Maria, her little sister who's also a succubus. As Basara pursues the preparations for the sports festival at school, one day he's attacked by a person being manipulated by magic. Recalling the strange gaze he felt at school, a suspicion of his begins to grow...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S02E02%20-%20Suspicions%20Deepening%20Within%20Mysteries-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Suspicions Deepening Within Mysteries
+          </div>
+          <div class="plot">The day of the sports festival is finally here. Though Basara remains cautious of the mysterious enemy who manipulates people with magic, he happily enjoys the sports festival with Mio and Yuki as the three of them compete in the four-legged-race and enjoy their youth getting entangled and sweaty with each other. Meanwhile, Kurumi, who was placed in charge of guarding the school, discovers a suspicious individual. At almost the same time, a giant twister forms on the sports field. Basara fights to protect the students... but an unexpected individual appears!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S02E03%20-%20My%20Cherished%20Feelings%2C%20For%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - My Cherished Feelings, For You
+          </div>
+          <div class="plot">After taking Kurumi hostage, Ornis robs Basara of the right arm wielding Bynhildr. Though he lost conciousness from the pain, his sealed power unleashes and goes on a rampage. Their positions are reversed as he corners Ornis with his overwhelming power. However, the moment he tries to silence Ornis for good, a golden chain appears and binds him. When Ornis turns around, he finds Hasegawa Chisato. What secrets has she kept hidden?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S02E04%20-%20Amidst%20Entwining%20Plots-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Amidst Entwining Plots
+          </div>
+          <div class="plot">As the clash between the peaceful faction and the present demon lord faction draws near, Basara visits the peaceful faction along with Mio. Though Basara enjoys their reunion with Zest and Shella, Maria seems to be acting odd. In fact, a heavy punishment was awaiting her for her betrayal of the peaceful faction. Basara begs Rukia for her forgiveness, and ends up administering the punishment in her stead... but that punishment was to spank Maria's behind while she was in a state of arousal?!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S02E05%20-%20Amidst%20the%20Wind%20Blowing%20Through%20the%20Battlefield-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Amidst the Wind Blowing Through the Battlefield
+          </div>
+          <div class="plot">Ramsus is out to extract the &quot;Demon Lord's Power&quot; that Mio possesses, and Basara reveals his anger at Ramsus' lack of concern for Mio's safety. Just as sparks are about to fly, Shella interrupts them. She leads Basara into the bath to try and help calm him down, and when Zest appears, she orders Zest to massage and wash Basara's body with her bountiful bosom. Then Shella tries to get Basara and Zest to forge a master-servant pact...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S02E06%20-%20Between%20Reality%20and%20One%27s%20Own%20Truth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Between Reality and One's Own Truth
+          </div>
+          <div class="plot">Basara and the others recieve a message from Lars, calling them to Leohart's royal castle. Then Basara's father, Toujou Jin, appears before them all. He brought with him another message from Leohart. A message saying that they　would hold a tournament before Leohart and Ramsus' forces to determine authority of the demon realm--authority of the demon realm being synonymous with Mio's power. After being selected as the representatives, Basara begins　learning &quot;how to win&quot; from Jin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S02E07%20-%20Between%20Entwining%20Plots%20and%20Desires-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Between Entwining Plots and Desires
+          </div>
+          <div class="plot">Basara and the others finally face the current demon lord, Leohart. Leohart's confidence in his strength fills the air as he welcomes them in without any tricks. Can they really beat him? After Maria encourages them to do what they can for now, Basara commands Mio, Yuki, Maria, Kurumi, and Zest to strip for him. Using items full of aphrodisiacs, they lick, molest, and entwine together...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S02E08%20-%20Those%20Contending%20For%20The%20Future-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Those Contending For The Future
+          </div>
+          <div class="plot">The group battle between Leohart and Ramsus's forces finally begins. After Mio wins the first match, Maria enters the arena for the next round. Her opponent is Lars. Maria uses her enormous power to face him in close combat, but she fails to overcome the gap in experience and magic power, and gets driven into a corner by Lars' clever attackes. What does Maria pull out in hopes of overturning the battle...? Meanwhile, the demons lay a cowardly trap for Kurumi.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S02E09%20-%20Beyond%20the%20Endless%20Dream-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Beyond the Endless Dream
+          </div>
+          <div class="plot">The only remaining match of the tournament is the duel between leaders, Basara vs Leohart. Basara finally appears after his long time in hiding, and faces off against Leohart. The two demon swords clash in fierce battle. Though Basara manages to keep up with Leohart, Leohart clearly holds an overwhelming advantage. Basara is unable to use his Banishing Shift due to the large opening it creates. What secret strategy does Basara pull out in the fight...?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Testament%20of%20Sister%20New%20Devil%20-%20S02E10%20-%20The%20Consequences%20of%20What%20Must%20Be%20Done-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - The Consequences of What Must Be Done
+          </div>
+          <div class="plot">The council's rampage sends quakes through the demon realm, and the demon Chaos is called forth through a giant magic circle. That commander of all heroic spirits flails madly, seeking to claim Basara, Mio, and Leohart's lives. Do they even stand a chance of victory with this supreme being before them?! Meanwhile, Maria, Yuki, and the others put a final end to their own personal battle. &quot;Believe in me... once more.&quot; The ultimate sibling combo risks their lives to face the disaster striking all of the demon realm!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

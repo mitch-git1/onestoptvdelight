@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - My Hero Academia: Vigilantes
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">My Hero Academia: Vigilantes</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/My%20Hero%20Academia%20Vigilantes%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Hero%20Academia%20Vigilantes%20-%20S01E01%20-%20I%27m%20Here-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - I'm Here
+          </div>
+          <div class="plot">Koichi is convinced he'll never manage to become a hero, until he meets someone with an odd take on justice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Hero%20Academia%20Vigilantes%20-%20S01E02%20-%20Takeoff-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Takeoff
+          </div>
+          <div class="plot">Some people frown upon vigilante activities, but the least they could do is remember The Crawler's name.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Hero%20Academia%20Vigilantes%20-%20S01E03%20-%20Bee-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Bee
+          </div>
+          <div class="plot">The drug Trigger is wreaking havoc all over town, but figuring out who's dealing it is easier said than done.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Hero%20Academia%20Vigilantes%20-%20S01E04%20-%20Top%20Runner-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Top Runner
+          </div>
+          <div class="plot">What happens when pro heroes and vigilantes target the same villain? Is it possible to work as a team?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Hero%20Academia%20Vigilantes%20-%20S01E05%20-%20Judgment-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Judgment
+          </div>
+          <div class="plot">Koichi and Pop each find themselves considerably influenced by various events from their pasts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Hero%20Academia%20Vigilantes%20-%20S01E06%20-%20Crossing%20Lines-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Crossing Lines
+          </div>
+          <div class="plot">Hachisuka tries manipulating Stendhal into fighting targets of her choosing, but can anyone control him?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Hero%20Academia%20Vigilantes%20-%20S01E07%20-%20Makoto%20Truth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Makoto/Truth
+          </div>
+          <div class="plot">Makoto offers to help a struggling Koichi with his studies, but she requests something surprising in return.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Hero%20Academia%20Vigilantes%20-%20S01E08%20-%20Major-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Major
+          </div>
+          <div class="plot">The American hero Captain Celebrity sets up shop in Japan, and it isn't long before trouble begins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Hero%20Academia%20Vigilantes%20-%20S01E09%20-%20Mom%20Descends%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Mom Descends!
+          </div>
+          <div class="plot">Koichi's mother is in town, and he's willing to take drastic measures so that she'll let him stay in Tokyo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Hero%20Academia%20Vigilantes%20-%20S01E10%20-%20Event%20Announcement%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Event Announcement!
+          </div>
+          <div class="plot">Pop receives a request to perform at an upcoming local event, and she finds herself in need of guidance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Hero%20Academia%20Vigilantes%20-%20S01E11%20-%20The%20Day%20Of-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Day Of
+          </div>
+          <div class="plot">Preparing for Narufest proves to be an uphill battle. Will teamwork be what gets everyone to the finish line?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Hero%20Academia%20Vigilantes%20-%20S01E12%20-%20Goodbye%20to%20Dad-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Goodbye to Dad
+          </div>
+          <div class="plot">There's trouble when the power goes out at Narufest, all while Knuckleduster fights a very personal battle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Hero%20Academia%20Vigilantes%20-%20S01E13%20-%20What%20a%20Man%20Takes%20with%20Him-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - What a Man Takes with Him
+          </div>
+          <div class="plot">Narufest turned out to be a huge success, but our vigilantes must decide whether it's time for some changes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

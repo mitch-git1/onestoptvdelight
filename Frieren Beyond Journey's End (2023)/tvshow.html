@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Frieren: Beyond Journey's End
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Frieren: Beyond Journey's End</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Frieren%20Beyond%20Journey%27s%20End%20%282023%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E01%20-%20The%20Journey%27s%20End-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Journey's End
+          </div>
+          <div class="plot">The world celebrates the Demon King's defeat at the hands of the Hero and his companions. Now that their great adventure is over, what will Frieren the mage do next?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E02%20-%20It%20Didn%27t%20Have%20to%20Be%20Magic-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - It Didn't Have to Be Magic...
+          </div>
+          <div class="plot">Frieren instructs Fern in the use of magic while deciphering a grimoire for Heiter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E03%20-%20Killing%20Magic-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Killing Magic
+          </div>
+          <div class="plot">While retracing the path she took on her adventure with her former traveling companions, Frieren confronts an old enemy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E04%20-%20The%20Land%20Where%20Souls%20Rest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Land Where Souls Rest
+          </div>
+          <div class="plot">Frieren and Fern pay a visit to Eisen, who requests their help in finding the notes of Flamme the Legendary Mage.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E05%20-%20Phantoms%20of%20the%20Dead-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Phantoms of the Dead
+          </div>
+          <div class="plot">Frieren and Fern investigate ghost sightings at a village where people have started going missing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E06%20-%20The%20Hero%20of%20the%20Village-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Hero of the Village
+          </div>
+          <div class="plot">Frieren and Fern enlist Stark's help to fight the solar dragon - but is he up to the task?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E07%20-%20Like%20a%20Fairy%20Tale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Like a Fairy Tale
+          </div>
+          <div class="plot">After reflecting on the transient nature of the past as it exists in people's collective memories, Frieren unexpectedly runs into a sworn enemy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E08%20-%20Frieren%20the%20Slayer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Frieren the Slayer
+          </div>
+          <div class="plot">As tensions in Graf Granat's domain reach a breaking point, Fern and Stark find their own resolve - and Frieren resumes an old duty.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E09%20-%20Aura%20the%20Guillotine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Aura the Guillotine
+          </div>
+          <div class="plot">While Fern and Stark make a temporary retreat with Graf Granat, Frieren's true foe awaits her outside the city.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E10%20-%20A%20Powerful%20Mage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - A Powerful Mage
+          </div>
+          <div class="plot">Frieren's many years of training under her teacher Flamme are tested in her confrontation with Aura the Guillotine. Will Aura's scales find her wanting?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E11%20-%20Winter%20in%20the%20Northern%20Lands-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Winter in the Northern Lands
+          </div>
+          <div class="plot">Frieren and her companions continue their journey through the northern lands, but obstacles both natural and manmade still stand in their way.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E12%20-%20A%20Real%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - A Real Hero
+          </div>
+          <div class="plot">Deep in the mountains of the northern lands, Frieren and her party arrive at the Village of the Sword, where they have another job to do.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E13%20-%20Aversion%20to%20One%27s%20Own%20Kind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Aversion to One's Own Kind
+          </div>
+          <div class="plot">While passing by a village in the woods of the northern lands, Frieren and party meet Sein, a gifted priest who is nonetheless corrupt enough to give even Heiter a run for his money. But what happened in his past?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E14%20-%20Privilege%20of%20the%20Young-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Privilege of the Young
+          </div>
+          <div class="plot">The party arrives in a large and lively town with a bustling shopping district that Frieren once visited with Himmel, but something seems to have come up between Fern and Stark.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E15%20-%20Smells%20Like%20Trouble-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Smells Like Trouble
+          </div>
+          <div class="plot">When the party happens upon a town whose inhabitants are all mysteriously asleep, it's time for their newest traveling companion to prove his mettle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E16%20-%20Long-Lived%20Friends-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Long-Lived Friends
+          </div>
+          <div class="plot">Frieren pays a visit to Old Man Voll, a long-lived friend of hers, with traveling companions in tow.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E17%20-%20Take%20Care-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Take Care
+          </div>
+          <div class="plot">Now that Sein finally has a lead on the whereabouts of his long-lost friend, is it time for him and Frieren's party to part ways?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E18%20-%20First-Class%20Mage%20Exam-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - First-Class Mage Exam
+          </div>
+          <div class="plot">Frieren and party finally arrive in &Auml;u&szlig;erst, ready to undergo the first-class mage exam, and meet a number of colorful characters who are there to do the same.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E19%20-%20Well-Laid%20Plans-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Well-Laid Plans
+          </div>
+          <div class="plot">Frieren and her new teammates hatch a plan to capture a Stille - but are the other teams just going to stand by and let it happen?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E20%20-%20Necessary%20Killing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Necessary Killing
+          </div>
+          <div class="plot">The first-class mage exam intensifies as fighting breaks out between the participants - and what's at stake might even be worth killing for.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E21%20-%20The%20World%20of%20Magic-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - The World of Magic
+          </div>
+          <div class="plot">Frieren, Kanne, and Lawine struggle with the 13th party over possession of the Stille, but there'll be more surprises in store before their battle, and the first test, reach their conclusion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E22%20-%20Future%20Enemies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Future Enemies
+          </div>
+          <div class="plot">After the conclusion of the first test, the exam participants have some time to kill in town. What do mages get up to on their days off?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E23%20-%20Conquering%20the%20Labyrinth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - Conquering the Labyrinth
+          </div>
+          <div class="plot">The aspiring first-class mages now face their second test: conquering the Ruins of the King's Tomb. A simple task, or so the proctor claims, but there's a reason this particular dungeon remains unexplored.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E24%20-%20Perfect%20Replicas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - Perfect Replicas
+          </div>
+          <div class="plot">Due to the Spiegel, a legendary monster that can create perfect replicas of others, the test-takers who would conquer the Ruins of the King's Tomb must first face the ultimate enemy: themselves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E25%20-%20A%20Fatal%20Vulnerability-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x25 - A Fatal Vulnerability
+          </div>
+          <div class="plot">A perfect imitation of Frieren stands between the test-takers and victory, but Fern believes she knows how to win. Is it time for the student to surpass the master?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E26%20-%20The%20Height%20of%20Magic-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - The Height of Magic
+          </div>
+          <div class="plot">To defeat Spiegel, Frieren and Fern fight against Frieren's replica, but have a tough time. Meanwhile, Denken, Lavine, and the others fight against the replicas, but the magic of Sense, a first-class mage and the exam's proctor, rages.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E27%20-%20An%20Era%20of%20Humans-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x27 - An Era of Humans
+          </div>
+          <div class="plot">With the second test behind them, only one remains - but first, Frieren and Fern need to settle an important matter in town. What awaits them in the third test?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Frieren%20Beyond%20Journey%27s%20End%20-%20S01E28%20-%20It%20Would%20Be%20Embarrassing%20When%20We%20Met%20Again-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x28 - It Would Be Embarrassing When We Met Again
+          </div>
+          <div class="plot">As the first-class mage exam concludes and the test-takers go their separate ways, farewell leads to departure - but the next stage of Frieren's journey has only just begun.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

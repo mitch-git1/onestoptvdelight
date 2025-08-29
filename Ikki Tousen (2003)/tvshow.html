@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Ikki Tousen
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Ikki Tousen</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Ikki%20Tousen%20%282003%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S00E01%20-%20Seito%27s%20Big%20Boobs%20Chibi%27s%20Hot%20Spring%20Grand%20Final%20Battle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - Seito's Big Boobs: Chibi's Hot Spring Grand Final Battle
+          </div>
+          <div class="plot">Ikki Tousen Season 1 Special 1
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S00E02%20-%20Nanyou%27s%20Wild%20Breasts-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x2 - Nanyou's Wild Breasts
+          </div>
+          <div class="plot">Ikki Tousen Season 1 Special 2
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S00E03%20-%20Let%27s%20Cosplay%20Glorious%20General-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x3 - Let's Cosplay Glorious General
+          </div>
+          <div class="plot">Ikki Tousen Season 1 Special 3
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S00E04%20-%20Unparalleled%20Explosive%20Breasts%20Yakyuuken%20Part%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x4 - Unparalleled Explosive Breasts Yakyuuken Part 1
+          </div>
+          <div class="plot">Ikki Tousen Season 1 Special 4
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S00E05%20-%20Unparalleled%20Explosive%20Breasts%20Yakyuuken%20Part%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x5 - Unparalleled Explosive Breasts Yakyuuken Part 2
+          </div>
+          <div class="plot">Ikki Tousen Season 1 Special 5
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S00E06%20-%20The%20Party%20Remains%20Left%20by%20the%20Fighters-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x6 - The Party Remains Left by the Fighters
+          </div>
+          <div class="plot">Ikki Tousen Season 1 Special 6
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S00E07%20-%20Lifeguard%20Hakufu-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x7 - Lifeguard Hakufu
+          </div>
+          <div class="plot">Battle Tour Club - Sexy Cosplay, Dangerous Part-time Job Part 1
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S00E08%20-%20Nurse%20Ryofu-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x8 - Nurse Ryofu
+          </div>
+          <div class="plot">Battle Tour Club - Sexy Cosplay, Dangerous Part-time Job Part 2
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S00E09%20-%20Kanu%27s%20Fantasy%20Part%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x9 - Kanu's Fantasy Part 1
+          </div>
+          <div class="plot">Battle Tour Club - Sexy Cosplay, Dangerous Part-time Job Part 3
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S00E10%20-%20Kanu%27s%20Fantasy%20Part%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x10 - Kanu's Fantasy Part 2
+          </div>
+          <div class="plot">Battle Tour Club - Sexy Cosplay, Dangerous Part-time Job Part 4
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S00E11%20-%20Trapping%20Kanu-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x11 - Trapping Kanu
+          </div>
+          <div class="plot">Battle Tour Club - Sexy Cosplay, Dangerous Part-time Job Part 5
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S00E12%20-%20Maids%20Of%20The%20Joint-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x12 - Maids Of The Joint
+          </div>
+          <div class="plot">Battle Tour Club - Sexy Cosplay, Dangerous Part-time Job Part 6
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S01E01%20-%20The%20Champions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Champions
+          </div>
+          <div class="plot">Seven schools are competing for complete control over the region of Kanto. The students are known as &quot;Fighters&quot;, and each carry a sacred bead, or Magatama, and enclosed in it is a spirit of an ancient fighter from 1800 years ago in Chinese history. The Fighters are destined to the fates of their Magatama.
+
+Enter Hakufu Sonsaku, a big-breasted, air-headed bimbo, who joins the ranks of Nanjou Academy, alongside her cousin, Koukin. Encassed in her Magatama is the spirit of a fierce warrior who conquered the lands 1800 years previous, but was killed at an early age. The Big Four of Nanyou Academy see her as a threat and wish to prevent history from repeating itself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S01E02%20-%20A%20Confrontation%20at%20Nanyou-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - A Confrontation at Nanyou
+          </div>
+          <div class="plot">Fighters from Rakuyo High School have been found hanging around near Nanyou Academy. Rakuyo is headed by the fierce Fighter Totaku, who has conquered a couple of the schools in Kanto. Other schools have been banding together against him.
+
+Meanwhile, while running late for school, Koukin reveals to Hakufu that he would be willing to sacrifice himself if it meant protecting her. Gakushu questions Saji over Nanyou Academy's leader, Enjyutsu, whom he has not seen in months. Gakushu feels that there is something going on that he has been kept in the dark about. Enjyutsu sees Hakufu as a threat and issues the order to Big Four member Kannei to execute her to prevent her destiny from being fulfilled. This order is given to the whole of Nanyou Academy, and results in Hakufu doing battle with Kannei and Ryomou, while Koukin fights all of the students and Saji. Will they all survive? And what is Saji planning?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S01E03%20-%20My%20Chastity%20is%20in%20Danger-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - My Chastity is in Danger
+          </div>
+          <div class="plot">Following on from the previous episode, Hakufu Sonsaku has defeated Big Four member Ryomou, when her defeat looked imminent. However, her victory saw a force take over her body, rending her powerless against it, almost costing Ryomou her life, who is recovering in Hospital. Koukin vows to protect Hakufu so that it never happens again, but Hakufu runs away from home, only to find herself in trouble.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S01E04%20-%20A%20Duel%21%20Taishiji%20vs.%20Sonsaku-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - A Duel! Taishiji vs. Sonsaku
+          </div>
+          <div class="plot">The schools throughout Kanto begin to form short-term alliances as a means of disposing of their enemies. Taishiji is given an order to execute Hakufu Sonsaku. After his school's Fighters render Koukin incapable to fight, Hakufu does battle with Taishiji himself. How will it all end?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S01E05%20-%20An%20Angry%20Hakufu%20and%20a%20School%20Wide%20Counterattack-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - An Angry Hakufu and a School Wide Counterattack
+          </div>
+          <div class="plot">The Great Fighter's Tournament is approaching quickly. Totaku, the previous victor, is hoping that the other schools will eliminate each other, leaving him to do battle with the sole, under-strengthed school left in the tournament (other than his own), and in order for ends to meet, he has rigged the draw for the tournament.
+
+Hakufu goes on a rampage to avenge Taishiji, but is defeated, until the spirit awakens within her once again...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S01E06%20-%20The%20Great%20Tournament%20Begins-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Great Tournament Begins
+          </div>
+          <div class="plot">The new Fighters Tournament has now commenced. Which school will come out on top? Will anyone defeat Toutaku? How will Nanjou Academy go with Hakufu Sonsaku fighting for them? And will the spirit living inside her be awakened once again?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S01E07%20-%20A%20Confrontation%20With%20Destiny-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - A Confrontation With Destiny
+          </div>
+          <div class="plot">Hakufu and Koukin manage to fend off the crazed snake-like Kannei Kouha. Ryofu continues to pursue her own relationships with the possibility of betraying Tontaku. Shimei Ryomou fights the beautiful but deadly schoolgirl-uniformed Kanu Unchou of Seito Private School on the rooftops. Hakufu gets in another battle as well.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S01E08%20-%20Why%21%20The%20Betrayal%20of%20G%C5%8Dei%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Why! The Betrayal of Gōei!
+          </div>
+          <div class="plot">Nanyou Academy gets to fight Kyoshou Academy in this round. Hakufu Sonsaku is up against Kakouton &quot;Basic&quot; Genjou, but Aunt Goei arrives; whom will she support? Ryomou's opponent, Kakuka Houkou isn't a pushover either. Meanwhile, Kaku Bunwa and Ryofu Housen get into a heated conflict; Ryofu Housen and Chinkyuu Koudai decide to walk away from Toutaku's gang.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S01E09%20-%20Viva%20Hot%20Springs%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Viva Hot Springs!
+          </div>
+          <div class="plot">Aunt Goei takes Hakufu and Koukin to a mountain hot springs that seems to attract some of the other female fighters including Ryoumou and Ryofu who are also hoping to recover. Hakufu catches up to Ryoumou and they spar with Hakufu's old teacher Choukou.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S01E10%20-%20An%20Encounter%20Between%20the%20Ruler%20and%20the%20Devil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - An Encounter Between the Ruler and the Devil
+          </div>
+          <div class="plot">Aunt Goei gives Hakufu and Koukin some tickets to the pool. Ryoumou ponders her fate to guard Hakufu. At the pool, Toutaku catches Hakufu in an alone moment, and befriends her with some watermelon. The mysterious and foreshadowing Ukitsu appears before Goei, looking for Hakufu. Chinkyuu gets caught stealing the Gyokuji. Ukitsu arrives at the pool and challenges Hakufu to a fight. Ryofu decides to get her revenge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S01E11%20-%20Ryofu%20-%20Love%20and%20Death-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Ryofu - Love and Death
+          </div>
+          <div class="plot">Ukitsu was about to fight Hakufu, but Hakufu was weakened by Toutaku's touch, so she gives up. Goei, Ryoumou and Koukin ponder Hakufu's destiny where her dragon fighting spirit may awaken and she might lose her life. Ryoumou and Koukin look for Gakushuu. Koukin meets Saji who invites him to see the senior leader Enjutsu, but then gets ambushed and attacked. Hakufu stays home for the day, but then learns of her fate, and decides to go after Toutaku.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S01E12%20-%20Summer%20Comes%20to%20the%20Watermelon%20Patch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Summer Comes to the Watermelon Patch
+          </div>
+          <div class="plot">Toutaku forces Hakufu to battle Ryofu, otherwise Ryoumou will be killed. The girls fight each other, but also attempt to go after Toutaku. It looks like no one will be able to win, until Ryofu defies her fate, and uses her ultimate technique. Hakufu and Ryoumou learn Saji's true identity and they go to rescue Koukin and confront Saji.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S02E01%20-%20The%20Movements%20of%20a%20Newborn%20Dragon%27s%20Spirit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - The Movements of a Newborn Dragon's Spirit
+          </div>
+          <div class="plot">Ryomou stealthily pursues the Dragon Jade while the dragon hidden within Sousou begins to stir.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S02E02%20-%20Awakening%20of%20the%20Devil%20King-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Awakening of the Devil King
+          </div>
+          <div class="plot">Kakuka's scheming causes Sousou's dragon to awaken; Ryomou visits Seito High School.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S02E03%20-%20Dripping%20Blood%2C%20Shedding%20Tears-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Dripping Blood, Shedding Tears
+          </div>
+          <div class="plot">The awakening of Ryuubi's dragon forces Ryomou to flee; Sonsaku and the Nanyou gang at last make their first appearance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S02E04%20-%20Chance%20Meeting%20Between%20Two%20Dragons-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Chance Meeting Between Two Dragons
+          </div>
+          <div class="plot">The looming threat of Kyoshou lures Nanyou into the plot. During a visit to Seito to search for answers, an assassin is sent to face Ryomou.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S02E05%20-%20Cruel%20Toushi-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Cruel Toushi
+          </div>
+          <div class="plot">Ryomou's battle comes to an unforeseen end; Sousou loses more of himself to his ancient namesake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S02E07%20-%20Kanu%27s%20Surrender-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Kanu's Surrender
+          </div>
+          <div class="plot">Influenced by the desires of his ancient incarnation, Sousou goes to great lengths to have Kan'u at his side once again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S02E08%20-%20A%20Minor%20Leader%27s%20Glorious%20Defeat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - A Minor Leader's Glorious Defeat
+          </div>
+          <div class="plot">Sonsaku journeys to Kyoshou alone to seek justice for Kakouen's rampage, but a surprising opponent is waiting there.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S02E10%20-%20Koukin%27s%20Vissitude-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Koukin's Vissitude
+          </div>
+          <div class="plot">Koukin is still devastated by a loss and wanders without purpose, until a chance encounter with Seito's Kan'u reestablishes his resolve.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S02E12%20-%20Chibi%20Ablaze%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Chibi Ablaze!
+          </div>
+          <div class="plot">The final battle commences, as three dragons fight for survival and domination as they did thousands of years ago.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S03E01%20-%20The%20Military%20is%20a%20Great%20Matter%20of%20the%20State-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - The Military is a Great Matter of the State
+          </div>
+          <div class="plot">Hakufu and her crew work to raise money for a tournament where they will face fierce opponents. When her little sister shows up things get crazy!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S03E02%20-%20All%20Warfare%20is%20Based%20on%20Deception-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - All Warfare is Based on Deception
+          </div>
+          <div class="plot">When a gang of thugs kidnaps her sweet little sister, Hakufu goes on a rampage. The odds are not on her side, but luckily, her friends are!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S03E05%20-%20Do%20Not%20Fight%20Unless%20the%20Situation%20is%20Critical-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Do Not Fight Unless the Situation is Critical
+          </div>
+          <div class="plot">A day at the beach turns into a treasure hunt, but when giant man-eating sharks appear, the bikini-clad warrior babes show off their moves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S03E07%20-%20At%20First%20Like%20a%20Young%20Virgin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - At First Like a Young Virgin
+          </div>
+          <div class="plot">Possessed by a mysterious girl in a cape, Ryofu wreaks havoc on her new friends. He scandalous behavior with Gentoku may push Kanu over the edge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S03E08%20-%20To%20the%20People%20and%20Not%20for%20the%20People-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - To the People and Not for the People
+          </div>
+          <div class="plot">Suspicious of her master&rsquo;s odd behavior, Kanu sends a messenger to ask Hakufu for help; Ryomou&rsquo;s peaceful dip in a hot spring is disrupted by Ryofu.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S03E10%20-%20The%20Best%20General%20Will%20Aim%20to%20Ruin%20the%20Enemy%27s%20Plans-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - The Best General Will Aim to Ruin the Enemy's Plans
+          </div>
+          <div class="plot">When Hakufu is possessed by the magician, cousin Koukin and Chuubo must make a dangerous stand to prevent her from being lost forever.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S03E11%20-%20Taking%20the%20Initiative%20Insures%20the%20Enemy%27s%20Defeat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Taking the Initiative Insures the Enemy's Defeat
+          </div>
+          <div class="plot">Chuubo reveals her shocking true identity, the joins forces with Koukin and Hakufu on a perilous mission to rescue Ryomou.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S04E01%20-%20Wet%20Warrior-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Wet Warrior
+          </div>
+          <div class="plot">Sworn to avenge her brother's death, novice warrior Mouki infiltrates the killer's academy, then must test her skills against his fierce defenders.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S04E02%20-%20Gathered%20Comrades-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Gathered Comrades
+          </div>
+          <div class="plot">Bookish team leader Gentoku and her Saito Academy pals befriend the defeated Mouki and reveal the secret behind their intense warrior bond.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S04E03%20-%20The%20Training%20Lion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - The Training Lion
+          </div>
+          <div class="plot">Mouki convinces powerful fighter Hakufu to mentor her and undergoes grueling training in preparation for a mysterious all-schools tournament.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S04E04%20-%20Beckoning%20Demon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Beckoning Demon
+          </div>
+          <div class="plot">While Hakufu visits her sister, the Saito Academy fighters set sail for the tournament but soon discover a vicious rival team has invaded their boat..
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S04E05%20-%20Bonds%20of%20the%20Soul-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Bonds of the Soul
+          </div>
+          <div class="plot">Ambushed, Kanu and Ekitoku fall overboard, but their pals are captured and forced to Nanban Island. In a bathhouse, Gentuko battles rival Shimei.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S04E08%20-%20A%20Reunion%20of%20Fists-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - A Reunion of Fists
+          </div>
+          <div class="plot">In the nick of time, Hakufu rejoins her team as they battle Kentei, while Kanu fights the vengeful one-eyed dragon warrior Shimei.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S04E10%20-%20Torn%20Darkness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Torn Darkness
+          </div>
+          <div class="plot">As Kanu and Shimei's to-the-death battle rages, Hakufu is buried in rubble while trying to protect Koukin from Kentei's fierce disciple Teni.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S04E11%20-%20Burning%20Castle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Burning Castle
+          </div>
+          <div class="plot">After Hakufu's battered body is restored and Kentei's identity revealed, the epic conflict between the ancient warriors comes to its brutal climax.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Ikki%20Tousen%20-%20S04E12%20-%20Infinite%20Future-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - Infinite Future
+          </div>
+          <div class="plot">To celebrate their victory and safe return to Saito, the teens throw a party for Gentoku, unaware that in another part of town, a new evil lurks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Demon Slayer: Kimetsu no Yaiba
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Demon Slayer: Kimetsu no Yaiba</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20%282019%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S00E01%20-%20Kimetsu%20Academy%20Special%20Edition%20%231%20Introductions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - Kimetsu Academy Special Edition #1 Introductions
+          </div>
+          <div class="plot">Junior High and High School!!  Demon Slayer Banquet - Special Arc
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S00E02%20-%20Kimetsu%20Academy%20Special%20Edition%20%232%20PE-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x2 - Kimetsu Academy Special Edition #2 PE
+          </div>
+          <div class="plot">Junior High and High School!! Demon Slayer Banquet - Special Arc
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S00E03%20-%20Kimetsu%20Academy%20Special%20Edition%20%233%20One%20Morning-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x3 - Kimetsu Academy Special Edition #3 One Morning
+          </div>
+          <div class="plot">Junior High and High School!! Demon Slayer Banquet - Special Arc
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S00E04%20-%20Junior%20High%20and%20High%20School%21%21%20Kimetsu%20Academy%20Story%20Valentine%20Edition%20%231-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x4 - Junior High and High School!! Kimetsu Academy Story: Valentine Edition #1
+          </div>
+          <div class="plot">It&rsquo;s Valentine&rsquo;s Day. Zenitsu is full of excitement and unable to calm down revisits an incident from half a year ago.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S00E05%20-%20Junior%20High%20and%20High%20School%21%21%20Kimetsu%20Academy%20Story%20Valentine%20Edition%20%232-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x5 - Junior High and High School!! Kimetsu Academy Story: Valentine Edition #2
+          </div>
+          <div class="plot">Due to his strong desire to receive chocolates, Zenitsu seeks advice from teachers Mr. Rengoku and Mr. Tomioka on how to be more popular.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S00E06%20-%20Junior%20High%20and%20High%20School%21%21%20Kimetsu%20Academy%20Story%20Valentine%20Edition%20%233-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x6 - Junior High and High School!! Kimetsu Academy Story: Valentine Edition #3
+          </div>
+          <div class="plot">Zenitsu continues to seek in advice on how to be more popular and approaches teacher Mr. Uzui next.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S00E07%20-%20Junior%20High%20and%20High%20School%21%21%20Kimetsu%20Academy%20Story%20Valentine%20Edition%20%234-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x7 - Junior High and High School!! Kimetsu Academy Story: Valentine Edition #4
+          </div>
+          <div class="plot">For the past few days, there are rumors of a suspicious person lurking around the school premises. Upon seeing an illustration of the alleged perpretator, Tanjiro notices something&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E01%20-%20Cruelty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Cruelty
+          </div>
+          <div class="plot">It is the Taisho Period (i.e. 1912-1926). Tanjiro Kamado is living a modest but blissful life in the mountains with his family. One day, when he returns from selling charcoal in town, he finds the remains of his slaughtered family in pools of blood after a demon attack. Tanjiro rushes down the snowy mountain with the sole survivor, his sister Nezuko, on his back. But on the way, Nezuko suddenly snarls, turning on Tanjiro.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E02%20-%20Trainer%20Sakonji%20Urokodaki-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Trainer Sakonji Urokodaki
+          </div>
+          <div class="plot">At Giyu Tomioka's urging, Tanjiro heads for Mt. Sagiri with his sister Nezuko who's been turned into a demon. During the night, Tanjiro catches the smell of blood from inside a temple. He enters, thinking that someone might be hurt, only to come upon a man-eating demon. When the demon attacks, Tanjiro manages to fight back with his hatchet, but the demon's strength is overwhelming. Just as the demon is about to finish him off, Tanjiro is saved by none other than.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E03%20-%20Sabito%20and%20Makomo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Sabito and Makomo
+          </div>
+          <div class="plot">The Demon Slayer Corps... An organization that's been hunting down demons since ancient times. Sakonji Urokodaki starts training Tanjiro for Final Selection, the test for joining the unit. Navigating a mountain riddled with booby traps, dry sword swings, waterfall immersion and breathing techniques... A year later, Urokodaki informs Tanjiro that he has nothing more to teach him, and gives him one last hurdle to overcome in front of a giant boulder.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E04%20-%20Final%20Selection-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Final Selection
+          </div>
+          <div class="plot">To pass Final Selection, one must survive for seven days on Mt. Fujikasane where demons captured by the Demon Slayers have been imprisoned. So begins the battle for survival between the young swordsmen and the demons. Armed with the breathing techniques and stances he'd learned from Sakonji Urokodaki, Tanjiro slashes demon after demon. His two years of training have not gone to waste. But just then, a morphed demon appears out of nowhere.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E05%20-%20My%20Own%20Steel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - My Own Steel
+          </div>
+          <div class="plot">When day breaks, there are only four swordsmen left standing after the seven-day battle. The guides who greet Tanjiro and the other survivors explain the Demon Slayer Corps system. All four are issued uniforms and Kasugai Crows as messengers, after which they must select the ore for their own Nichirin swords. After gazing hard at each lump of ore, and using his keen sense of smell, the one Tanjiro chooses is...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E06%20-%20Swordsman%20Accompanying%20a%20Demon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Swordsman Accompanying a Demon
+          </div>
+          <div class="plot">Tanjiro is now clad in the uniform of the Demon Slayer Corps. His Nichirin Sword on his hip, and Nezuko, now awake, in a special box made by Urokodaki on his back, he heads out for his first assignment. A town to the northwest where girls have been vanishing nightly. There, Tanjiro meets Kazumi, haggard with worry after his girlfriend's been abducted. Though he does catch the scent of a demon nearby, there's just no demon in sight. Tanjiro is sure that a demon is behind this sinister incident...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E07%20-%20Muzan%20Kibutsuji-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Muzan Kibutsuji
+          </div>
+          <div class="plot">Now split into three, the demons have driven Tanjiro into a corner. It is then that Nezuko attacks. Now that she&rsquo;s become a demon herself, she&rsquo;s no longer so weak that she needs protection. His mind made up, Tanjiro follows one of the demons into the swamp now spreading across the ground. Waiting for him there is...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E08%20-%20The%20Smell%20of%20Enchanting%20Blood-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Smell of Enchanting Blood
+          </div>
+          <div class="plot">The next mission is in Asakusa, Tokyo. Tanjiro is taken aback by the opulent Taisho Era cityscape, but soon picks up the demon&rsquo;s scent there. His pursuit of the scent leads him to Muzan Kibutsuji. Tanjiro attempts to strike him down. But Kibutsuji transforms a passerby into demon, triggering a commotion. As Tanjiro desperately tries to get things under control, someone appears before him...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E09%20-%20Temari%20Demon%20and%20Arrow%20Demon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Temari Demon and Arrow Demon
+          </div>
+          <div class="plot">It was two demons named Tamayo and Yushiro who came to Tanjiro&rsquo;s rescue. Using the &ldquo;Eyeblind&rdquo; spell, Tamayo guides Tanjiro and Nezuko to her house. There, through his conversation with Tamayo, Tanjiro learns that there is a way to return demons to human form. Just then, two demons in pursuit of Tanjiro locate the house and unleash a furious assault...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E10%20-%20Together%20Forever-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Together Forever
+          </div>
+          <div class="plot">Tanjiro&rsquo;s crisis continues. He uses multiple forms of the Water Breathing technique to hold out against Yahaba&rsquo;s final Blood Demon Art, the &quot;Kouketsu Arrow.&quot; Meanwhile, Nezuko and Susamaru are still battling it out. Worried about the outcome, Tamayo unleashes her own Blood Demon Art.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E11%20-%20Tsuzumi%20Mansion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Tsuzumi Mansion
+          </div>
+          <div class="plot">Tanjiro's next destination, according to his Kasugai Crow, is to the south-southeast. On the way, Tanjiro runs into his fellow Final Selection survivor, the swordsman Zenitsu Agatsuma. Tanjiro has a hard time dealing with Zenitsu's passive attitude as they head deep into the mountains. They encounter two children whose older brother was taken away right in front of their house. There, Zenitsu hears the sound of a tsuzumi ringing out from somewhere.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E12%20-%20The%20Boar%20Bares%20Its%20Fangs%2C%20Zenitsu%20Sleeps-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Boar Bares Its Fangs, Zenitsu Sleeps
+          </div>
+          <div class="plot">Inside the house, where the rooms spin each time the tsuzumi is played, Tanjiro gets separated from Zenitsu Agatsuma. Without Tanjiro by his side, Zenitsu is overcome by fear and despair as he takes Shoichi through the house. Meanwhile, Tanjiro meets the master of the house, the tsuzumi-playing demon, and an odd-looking man wearing a boar&rsquo;s head mask.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E13%20-%20Something%20More%20Important%20Than%20Life-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Something More Important Than Life
+          </div>
+          <div class="plot">Every time Kyogai, the master of house, plays his tsuzumi, the room spins and Tanjiro struggles. Debilitated by the fractured bones he sustained in his previous battle, Tanjiro tries to fire himself up as he desperately fights on, but he is overwhelmed by Kyogai's Blood Demon Art. Will he find a way to slice off Kyogai's head?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E14%20-%20The%20House%20With%20the%20Wisteria%20Family%20Crest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - The House With the Wisteria Family Crest
+          </div>
+          <div class="plot">After a desperate fight to the death, Tanjiro prevails over Kyogai. He exits the house to find Zenitsu who had escaped earlier. But it is then that he sees the strange circumstances before him... The battered Zenitsu holding the box containing Nezuko in his arms while the man in the boar's head mask stands in the way with two Nichirin Swords drawn.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E15%20-%20Mount%20Natagumo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Mount Natagumo
+          </div>
+          <div class="plot">Their next destination is to the north-northwest. Tanjiro and Nezuko head towards Mount Natagumo with Zenitsu and Inosuke. This mountain is covered with spider webs and is swarming with innumerable spiders. Leaving the cowering Zenitsu behind, Tanjiro and Inosuke head up the mountain where they run into fellow Demon Slayers entangled in spider webs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E16%20-%20Letting%20Someone%20Else%20Go%20First-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Letting Someone Else Go First
+          </div>
+          <div class="plot">Tanjiro and Inosuke battle the Demon Slayers trapped by spider webs. After slashing the threads and destroying the webs, they head deeper into the mountain. The farther they advance through the forest, the thicker the threads become, and those under their control start moving in ways impossible for a human being. Stopping the Demon Slayers without hurting them isn't going to be easy, but then Tanjiro makes a certain move...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E17%20-%20You%20Must%20Master%20a%20Single%20Thing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - You Must Master a Single Thing
+          </div>
+          <div class="plot">One of the Twelve Kizuki, a direct subordinate of Muzan Kibutsuji, is here somewhere. When Tanjiro slays the Mother Spider Demon of Mt. Natagumo, he learns that a demon who might hold the key to turning Nezuko back into a human is somewhere in this very forest. With the battered Inosuke in tow, he heads deeper into the forest. Meanwhile, Zenitsu trudges forlornly through the woods only to encounter a spider with a human face.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E18%20-%20A%20Forged%20Bond-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - A Forged Bond
+          </div>
+          <div class="plot">Tanjiro and Inosuke face off against the Father Spider Demon of Mt. Natagumo. Tanjiro unleashes an attack, only to get hurled away by the demon's overwhelming power. Landing near a river, he comes upon the young demon Rui torturing the Sister Spider Demon. When Rui calls their bond of terror and hatred &quot;a family&rsquo;s bond,&quot; Tanjiro is enraged. So begins the battle between Rui and Tanjiro.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E19%20-%20Hinokami-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Hinokami
+          </div>
+          <div class="plot">Swordsmen in the Demon Slayer Corps known as Hashiras have arrived on Mt. Natagumo. Giyu Tomioka, the Water Hashira, slays the Father Spider Demon with a single strike. Inosuke, thrilled to see such a display of swordsmanship by someone in a totally different league from himself, challenges Giyu to a duel. Meanwhile, Zenitsu lies near death as the poison circulates throughout his body. Just then, the Insect Hashira, Shinobu Kocho appears before him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E20%20-%20Pretend%20Family-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Pretend Family
+          </div>
+          <div class="plot">When Rui assaults him with his Blood Demon Art, Tanjiro braces himself for certain death. As his life flashes before his eyes, he suddenly remembers his father's dance, the kagura, and unleashes a new, non-Water Breathing attack. Hinokami Kagura Dance. Knowing that he&rsquo;ll be receiving a simultaneous blow from the demon, he uses his new move to slice off Rui&rsquo;s head. As Tanjiro crawls towards Nezuko, who lies on the ground, riddled with wounds, someone appears before him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E21%20-%20Against%20Corps%20Rules-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - Against Corps Rules
+          </div>
+          <div class="plot">Seeing Tanjiro try to protect Nezuko even as he collapses triggers memories of Rui&rsquo;s own past. Once a sickly boy, he became a demon after meeting Muzan Kibutsuji who gave him a share of his blood. But after he turns into a demon, his own parents try to kill him. Ever since then, he has been searching for a family. Seeking a bond that he can never hope to acquire...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E22%20-%20Master%20of%20the%20Mansion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Master of the Mansion
+          </div>
+          <div class="plot">After the battle is over, Tanjiro and Nezuko are taken to the Demon Slayer Corps headquarters. This is where the Hashira Meeting between the Corps leader, Ubuyashiki, and the Hashiras, the most powerful swordsmen in the Corps, is to be held. The Hashiras censure Tanjiro for violating the Demon Slayer Corps by protecting a demon. And then, the Wind Hashira, Sanemi Shinazugawa, raises his sword against Nezuko...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E23%20-%20Hashira%20Meeting-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - Hashira Meeting
+          </div>
+          <div class="plot">Ubuyashiki, the leader of the Demon Slayer Corps, finally appears before Tanjiro. He tells him that he will allow Tanjiro and Nezuko to join the Corps. But the Hashiras are unable to accept this decision right away. The Wind Hashira, Sanemi Shinazugawa, slashes his own arm and taunts Nezuko with his blood, trying to get her to show her true colors as a demon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E24%20-%20Rehabilitation%20Training-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - Rehabilitation Training
+          </div>
+          <div class="plot">The injured Tanjiro, Zenitsu and Inosuke are sent to the home of the Insect Hashira, Shinobu Kocho, for treatment. Two weeks later, Tanjiro and Inosuke start rehabilitation training. But the drills are brutal, and they find themselves broken in spirit. Unaware of the grueling regimen, Zenitsu joins them late and is visibly enthusiastic in front of girls, but...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E25%20-%20Tsuguko%2C%20Kanao%20Tsuyuri-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x25 - Tsuguko, Kanao Tsuyuri
+          </div>
+          <div class="plot">Tanjiro, who's undergoing rehabilitation training at the Butterfly Mansion, works hard to keep up his Total Concentration Breathing techniques all day long. Though at first, he's helpless against Kanao, a swordswoman in his class who's training him, he slowly but surely begins to make some headway. Seeing Tanjiro devote himself to training every single day, Zenitsu and Inosuke resume training as well, but...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S01E26%20-%20New%20Mission-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x26 - New Mission
+          </div>
+          <div class="plot">As Tanjiro and the others are devoted to their rehabilitation training, the absolute master of the demons, Muzan Kibutsuji, gathers the Lower Ranks of the Twelve Kizuki. The demons, too, are preparing to make their next move. As training draws to a close, Tanjiro has improved to the point where he can fight on equal terms with Kanao. Just then, he receives word of a new mission from his Kasugai Crow.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S02E01%20-%20Flame%20Hashira%20Kyojuro%20Rengoku-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Flame Hashira Kyojuro Rengoku
+          </div>
+          <div class="plot">Flame Hashira Kyojuro Rengoku receives new orders: Travel to the Mugen Train, where over forty people have gone missing, and conduct an investigation. Leaving the Demon Slayer Corps Headquarters, he sets off on this new mission.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S02E02%20-%20Deep%20Sleep-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Deep Sleep
+          </div>
+          <div class="plot">Tanjiro's group, fresh from completing their training at the Butterfly Mansion, head to their next mission, the Mugen Train. There they rendezvous with Rengoku, who arrived ahead of them. Tanjiro is overwhelmed by the always-energetic Rengoku, Zenitsu is frightened by the prospect of facing demons as usual, and Inosuke is immensely excited by the sight of the huge machine. But on this train loaded with passengers, a new battle is about to begin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S02E03%20-%20Should%20Have%20Been-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Should Have Been
+          </div>
+          <div class="plot">Tanjiro, Nezuko, Zenitsu and Inosuke join Rengoku on the Mugen Train. Having heard that there may be demons on the train, they are on high alert, but they find themselves falling into a slumber. Within his dream, Tanjiro is reunited with his long lost family. However, it is soon revealed that this is a trap set by Enmu (Lower One).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S02E04%20-%20Insult-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Insult
+          </div>
+          <div class="plot">Tanjiro, Zenitsu, Inosuke and Rengoku have fallen into a deep sleep while under the control of Enmu's Blood Demon Art. As Enmu attempts to use his accomplices to destroy the spiritual cores of Tanjiro and his companions in order to defeat them, Tanjiro realizes that he is inside a dream and searches for a way to wake up. In order to awaken from the dream, Tanjiro makes a decision to use his sword to cut into his own neck.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S02E05%20-%20Move%20Forward%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Move Forward!
+          </div>
+          <div class="plot">After waking up from his dream by cutting his own neck, Tanjiro battles Enmu, who is the source of all the turmoil on the train. Enmu appears to be getting pleasure from inflicting pain on the passengers, which only infuriates Tanjiro even more. Tanjiro succeeds in severing Enmu's head, only to discover that Enmu's body is fused with the Mugen Train itself. Tanjiro is backed into a corner, but a freshly-awakened Inosuke comes to assist him and...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S02E06%20-%20Akaza-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Akaza
+          </div>
+          <div class="plot">Nezuko, Zenitsu and Rengoku fight against Enmu to protect the passengers. Meanwhile, Tanjiro and Inosuke discover the location of Enmu's neck. They work in tandem to thwart Enmu's Blood Demon Art and sever Enmu's neck. The Mugen Train writhes in pain and derails. What will be the fate of the 200 or so passengers as well as Tanjiro and his friends?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S02E07%20-%20Set%20Your%20Heart%20Ablaze-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Set Your Heart Ablaze
+          </div>
+          <div class="plot">The demon that appeared before Tanjiro and Rengoku after they defeated Enmu was the Upper Three, Akaza. While injured and on the ground, Tanjiro is almost attacked by Akaza and narrowly escapes death when Rengoku quickly strikes back. During the intense battle between Rengoku and Akaza, Akaza suggests to Rengoku that he should also become a demon. Rengoku vehemently refuses Akaza's offer, but his injured body is exhausted and being pushed past its physical limits...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S03E01%20-%20Sound%20Hashira%20Tengen%20Uzui-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Sound Hashira Tengen Uzui
+          </div>
+          <div class="plot">After the Mugen Train incident, Akaza visits Muzan Kibutsuji. Guided by a crow, Tanjiro Kamado heads off to the Rengoku residence to convey Kyojuro Rengoku's last messages to his father and little brother. Tanjiro's group return to the Butterfly Mansion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S03E02%20-%20Infiltrating%20the%20Entertainment%20District-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Infiltrating the Entertainment District
+          </div>
+          <div class="plot">After Tanjiro visits the Rengoku residence and meets Kyojuro's younger brother, Senjuro, to deliver Kyojuro's last message, Tanjiro spends his days training and completing missions. One day, he returns to the Butterfly Mansion to find Sound Hashira, Tengen Uzui, attempting to take Aoi and Naho away on a mission against their will. Tanjiro, Zenitsu and Inosuke offer to go on that mission instead, and they head to their next destination - the Entertainment District.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S03E03%20-%20What%20Are%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - What Are You?
+          </div>
+          <div class="plot">After arriving at the Entertainment District, Tanjiro and his comrades infiltrate each House where Uzui's wives, Suma, Makio and Hinatsuru, work. While working as apprentices and searching for their whereabouts, Inosuke hears that Makio has been shutting herself away from everyone in her room.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S03E04%20-%20Tonight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Tonight
+          </div>
+          <div class="plot">As Tanjiro close in on the demon that has been preying upon the entertainment district. But even as he closes in, the others continue to follow their leads toward their query. Who will find the demon first? And will they be able to survive the confrontation when they do?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S03E05%20-%20Things%20Are%20Gonna%20Get%20Real%20Flashy%21%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Things Are Gonna Get Real Flashy!!
+          </div>
+          <div class="plot">After being told of Zenitsu&rsquo;s disappearance and to leave the Entertainment District by Uzui, Tanjiro and Inosuke decide that they will rescue Zenitsu. That evening, Tanjiro picks up a scent of a demon, which leads him to Koinatsu Oiran being swallowed by Daki&rsquo;s belt. With Uzui nowhere in sight, Tanjiro must face the Upper Six demon alone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S03E06%20-%20Layered%20Memories-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Layered Memories
+          </div>
+          <div class="plot">During the fierce battle with Daki, Tanjiro continues to unleash the Hinokami Kagura, which causes a huge strain on his body. Meanwhile, Inosuke reaches the Belt Demon&rsquo;s nest and saves people who have been captured. Makio, Suma, and Zenitsu, who have been freed from the belt, join in on the fight. As the ceiling of the nest is broken, Uzui appears wielding his swords.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S03E07%20-%20Transformation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Transformation
+          </div>
+          <div class="plot">Enraged by Daki's contempt for human life, Tanjiro attacks her with more intensity and gradually corners the demon. But he's already gone past his physical limit. As Tanjiro collapses and all seems lost again, Nezuko appears. A vicious battle ensues and Nezuko starts transforming into a more demon-like form...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S03E08%20-%20Gathering-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Gathering
+          </div>
+          <div class="plot">After Nezuko attempts to attack innocent bystanders as her demon form advances, Tanjiro is finally able to make her fall asleep by singing a lullaby. Meanwhile, another demon emerges out of Daki's body after being beheaded by Uzui - Gyutaro, Daki's older brother and the other form of Upper Six. Uzui must now face both demons, Daki and Gyutaro.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S03E09%20-%20Defeating%20an%20Upper%20Rank%20Demon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Defeating an Upper Rank Demon
+          </div>
+          <div class="plot">Tanjiro, Zenitsu and Inosuke have joined Uzui in battle. While Zenitsu and Inosuke take on Daki, Tanjiro and Uzui deal with Gyutaro; however, they struggle as the demons have the upper hand with their coordinated attacks. But thanks to Hinatsuru's help and some teamwork from Uzui, Tanjiro's blade finds its way towards Gyutaro's neck...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S03E10%20-%20Never%20Give%20Up-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Never Give Up
+          </div>
+          <div class="plot">Tanjiro and Uzui have been separated by Gyutaro&rsquo;s Blood Demon Art. As Tanjiro joins the struggling Zenitsu and Inosuke, they manage to decapitate Daki at last thanks to their coordinated barrage of sword strikes. However, when Inosuke tries to run off with Daki&rsquo;s head, he gets pierced by Gyutaro&rsquo;s scythe. Uzui has also collapsed, leaving Tanjiro and the others with their backs to the wall.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S03E11%20-%20No%20Matter%20How%20Many%20Lives-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - No Matter How Many Lives
+          </div>
+          <div class="plot">Uzui deflects all of Gyutaro's Blood Demon Art attacks, and despite getting pierced in the jaw, Tanjiro is able to slice off Gyutaro's head. Though wounded from head to toe, Zenitsu and Inosuke also behead Daki, and they succeed in decapitating both demons at the same time. Just when it seems as though they've defeated the Upper Six demons after a fierce struggle, Gyutaro unleashes his Blood Demon Art...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S04E01%20-%20Someone%27s%20Dream-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Someone's Dream
+          </div>
+          <div class="plot">An Upper Rank Demon has been defeated for the first time in a hundred years by Uzui, Tanjiro, and his comrades' effort. This news causes a ripple effect not only among the members of the Demon Slayer Corps, but also the Upper Rank Demons, who have been summoned by Muzan Kibutsuji. Meanwhile, Tanjiro is recovering at the Butterfly Mansion when he discovers that he has upset his swordsmith Haganezuka after chipping his sword and decides to head to the village where the swordsmiths live to talk to him in person.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S04E02%20-%20Yoriichi%20Type%20Zero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Yoriichi Type Zero
+          </div>
+          <div class="plot">Tanjiro intervenes during an argument between a pillar and an apprentice blacksmith and learns of the existence of an amazing training method.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S04E03%20-%20A%20Sword%20From%20Over%20300%20Years%20Ago-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - A Sword From Over 300 Years Ago
+          </div>
+          <div class="plot">Tanjiro begins his training with Yoriichi Type Zero and is pushed to the limits by Kotetsu's relentless coaching and extreme training. Through this experience, Tanjiro masters a new skill of predicting where the opponent's next move will hit by using his sense of smell. During his training, Tanjiro lands a blow on Yoriichi Type Zero and ends up destroying it, but a sword from over 300 years ago appears from inside...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S04E04%20-%20Thank%20You%2C%20Tokito-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Thank You, Tokito
+          </div>
+          <div class="plot">Hantengu's head is slashed by Muichiro and he splits into two clones. Muichiro is blown away by Karaku. Tanjiro, Nezuko and Genya are stunned when the clones split into more clones. Muichiro rescues Kotetsu from a Goldfish Demon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S04E05%20-%20Bright%20Red%20Sword-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Bright Red Sword
+          </div>
+          <div class="plot">Tokito continues advancing through the forest and finds Mr. Kanamori. As soon as they arrive at the work hut in the middle of the forest, they are welcomed by Gyokko. Meanwhile, Tanjiro continues his fight against Hantengu.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S04E06%20-%20Aren%27t%20You%20Going%20to%20Become%20a%20Hashira-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Aren't You Going to Become a Hashira?
+          </div>
+          <div class="plot">Two simultaneous fights continue, Tanjiro, Nezuko and Genya against Hantengu and Tokito against Gyokko. Genya began to show a demonic form. Tanjiro asks him to look for Hantengu's real body, but memories of the past begin to plague Genya.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S04E07%20-%20Awful%20Villain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Awful Villain
+          </div>
+          <div class="plot">Genya aims for the neck of the fifth demon that split off from Hantengu, but the demon's neck is shockingly hard, and his sword snaps in half in his attempt to strike it. His gun is also ineffective and Genya is driven into a corner. Realizing that he is unable to sever the neck by himself, he entrusts defeating the fifth demon, which is believed to be the main body, to Tanjiro. Taking on Genya's will, Tanjiro wields his sword against the fleeing demon...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S04E08%20-%20The%20Mu%20in%20Muichiro-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - The Mu in Muichiro
+          </div>
+          <div class="plot">Muichiro, with the help of air blown by Kotetsu to him, escapes Gyokko's Water Prison Pot. Muichiro finally recalls his tragic past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S04E09%20-%20Mist%20Hashira%20Muichiro%20Tokito-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Mist Hashira Muichiro Tokito
+          </div>
+          <div class="plot">Armed with his memories, Muichiro feels powerful and invincible, convinced that the demonic fifth moon has no chance against him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S04E10%20-%20Love%20Hashira%20Mitsuri%20Kanroji-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Love Hashira Mitsuri Kanroji
+          </div>
+          <div class="plot">Tanjiro, Nezuko, and Genya are struggling through an arduous battle against Zohakuten and his five tree dragons. They are forced to fight defensively against the tree dragons using the four emotion demon's powers, and Tanjiro is swallowed by one of them amidst the fight. Just as Tanjiro is close to meeting his demise, Mitsuri arrives in the nick of time and rescues him. And now, Mitsuri faces off against Zohakuten to rescue the captured Nezuko and Genya...!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S04E11%20-%20A%20Connected%20Bond%20Daybreak%20and%20First%20Light-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - A Connected Bond: Daybreak and First Light
+          </div>
+          <div class="plot">Tanjiro continues the fight against Hantengu. Amidst all his injuries and the Superior Four's skill, will he be able to defeat him? As the battle draws to a close, the Demon Slayer Squad must race against time to end the fight before dawn.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S05E01%20-%20To%20Defeat%20Muzan%20Kibutsuji-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x1 - To Defeat Muzan Kibutsuji
+          </div>
+          <div class="plot">The Hashira, Sanemi and Iguro, along with their comrades head to an abandoned castle on top of a mountain for a mission, while Tanjiro is being treated at the Butterfly Mansion for the wounds he suffered at the Swordsmith Village. Later on, the Hashira gather at the Ubuyashiki Mansion to hold a Hashira meeting, where Muichiro reveals how the marks manifested. In an effort to strengthen the entire Demon Slayer Corps from the bottom up, the Hashira Training begins...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S05E02%20-%20Water%20Hashira%20Giyu%20Tomioka%27s%20Pain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x2 - Water Hashira Giyu Tomioka's Pain
+          </div>
+          <div class="plot">Kagaya's Kasugai Crow suddenly appears in front of Tamayo and invites her to the Demon Slayer headquarters &mdash; even though she is a demon. Meanwhile, after receiving a letter from Kagaya at the Butterfly Mansion, Tanjiro pays a visit to Giyu, who is not participating in the Hashira Training. At first, Tanjiro is rejected by Giyu but patiently continues to try to talk to him. Giyu, who gives in to Tanjiro's persistence, begins to share the reason why he won't participate in the training.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S05E03%20-%20Fully%20Recovered%20Tanjiro%20Joins%20the%20Hashira%20Training%21%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x3 - Fully Recovered Tanjiro Joins the Hashira Training!!
+          </div>
+          <div class="plot">After talking with Tanjiro, Giyu is able to overcome his past self and decides to join the training. Meanwhile, Tanjiro's wounds have healed enough to join the training, and heads to his first training with the former Hashira, Uzui.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S05E04%20-%20To%20Bring%20a%20Smile%20to%20One%27s%20Face-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x4 - To Bring a Smile to One's Face
+          </div>
+          <div class="plot">After completing training with Uzui, Tanjiro visits the Tokito residence next. The Demon Slayer swordsmen who have already started the training are dispirited by Muichiro's intense training and harsh words. Tanjiro hears the swordsmen discussing if there's anything they can do about it...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S05E05%20-%20I%20Even%20Ate%20Demons-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - I Even Ate Demons
+          </div>
+          <div class="plot">After completing Mitsuri's training, Tanjiro heads to train with Iguro. When he arrives at the training site, Iguro is waiting for him, visibly angry. Will he be able to complete this horrifying training where he'll have to fix his sword skills?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S05E06%20-%20The%20Strongest%20of%20the%20Demon%20Slayer%20Corps-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x6 - The Strongest of the Demon Slayer Corps
+          </div>
+          <div class="plot">Tanjiro and Zenitsu head to Himejima's training site deep in the mountains and reunite with Inosuke and Murata. Tanjiro first starts the training by being hit by a waterfall but struggles with the coldness and weight of the water.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S05E07%20-%20Stone%20Hashira%20Gyomei%20Himejima-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x7 - Stone Hashira Gyomei Himejima
+          </div>
+          <div class="plot">Tanjiro was struggling with Himejima's tasks. Now he finally manages to move the boulder after receiving advice from Genya, whom he meets by chance. With this breakthrough, will Tanjiro be able to overcome Himejima's rigorous training?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Slayer%20Kimetsu%20no%20Yaiba%20-%20S05E08%20-%20The%20Hashira%20Unite-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x8 - The Hashira Unite
+          </div>
+          <div class="plot">During a silent night when the moon shines, Kagaya finally meets Muzan Kibutsuji, who appears at the Ubuyashiki Mansion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

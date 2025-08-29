@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Koro Sensei Quest!
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Koro Sensei Quest!</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Koro%20Sensei%20Quest%21%20%282016%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Koro%20Sensei%20Quest%21%20-%20S01E01%20-%20The%20E%20Class%20and%20the%20Big%20Bad-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The E Class and the Big Bad
+          </div>
+          <div class="plot">Set in a role-playing game world, the students of Kunigigaoka Junior High School's Class 3-E are heroes-in-training filled with various bugs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Koro%20Sensei%20Quest%21%20-%20S01E02%20-%20The%20Red%20Devil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Red Devil
+          </div>
+          <div class="plot">Koro-sensei and the students of Class 3-E travel to the northern cave to confront Karma Akabane the Red Devil, who is known to be unlucky when he is cocky, especially when washtubs randomly land on his head.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Koro%20Sensei%20Quest%21%20-%20S01E03%20-%20The%20Seductive%20Witch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Seductive Witch
+          </div>
+          <div class="plot">Koro-sensei and the students of Class 3-E go to a nearby village, where the village chief warns them of Irina Jelavić the Seductive Witch.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Koro%20Sensei%20Quest%21%20-%20S01E04%20-%20The%20Ruins%20of%20Tribulation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Ruins of Tribulation
+          </div>
+          <div class="plot">Karasuma visits Pope Gakuhō Asano, who devises a plan to lure Koro-sensei into a trap. Koro-sensei and the students of Class 3-E go into the Ruins of Tribulation with three chambers hosted by a Guardian Kunudon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Koro%20Sensei%20Quest%21%20-%20S01E05%20-%20The%20Evolved%20Mage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Evolved Mage
+          </div>
+          <div class="plot">The students have a new addition to their class, her being the Autonomous Intelligence Magic Stone Tablet, who can perform various forms of sorcery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Koro%20Sensei%20Quest%21%20-%20S01E06%20-%20The%20Silver%20Berserker-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Silver Berserker
+          </div>
+          <div class="plot">Itona Horibe the Silver Berserker crashes through the classroom, and his guardian Mage Shiro tells Koro-sensei that Itona will be the new Demon King.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Koro%20Sensei%20Quest%21%20-%20S01E07%20-%20The%20Big%20Five%20Attack%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Big Five Attack!
+          </div>
+          <div class="plot">lass 3-E talks about Class 3-A's Big Five (Gakushū Asano, Teppei Araki, Ren Sakakibara, Natsuhiko Koyama and Tomoya Seo), an elite group of paladins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Koro%20Sensei%20Quest%21%20-%20S01E08%20-%20Big%20Bad%20Switcheroo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Big Bad Switcheroo
+          </div>
+          <div class="plot">Class 3-E finds a treasure chest deep in a cave, but it turned out to be empty when it is opened. To make matters worse, everyone switches bodies with someone else.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Koro%20Sensei%20Quest%21%20-%20S01E09%20-%20Showdown%20at%20Fukuma%20Tower-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Showdown at Fukuma Tower
+          </div>
+          <div class="plot">Kaede Kayano witnesses Nagisa and her pudding being abducted by Akira Takaoka the Merciless, ringleader of the Taka Gang. The students of Class 3-E goes to Fukuma Tower, where Nagisa is being held captive. On the second floor, Yuzuki Fuwa takes down Smog the Noxious by breaking the fourth wall.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Koro%20Sensei%20Quest%21%20-%20S01E10%20-%20Takebayashi%2C%20Leaving%20the%20E%20Class-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Takebayashi, Leaving the E Class?
+          </div>
+          <div class="plot">The female students go to Irina to brew a potion for sacks of chocolates. On Valentine's Day, some of the female students give some of the male students the sacks of chocolates, but it turns the male students into monsters for a day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Koro%20Sensei%20Quest%21%20-%20S01E11%20-%20It%27s%20Not%20a%20Job%2C%20It%27s%20a%20Calling-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - It's Not a Job, It's a Calling
+          </div>
+          <div class="plot">When Koro-sensei was a human, he was thought of as a hero, but became bored of his work. He was assigned by Aguri Yukimura to be a Demon King and live in a castle, since his predecessor (actually Neuro from Neuro: Supernatural Detective) retired from his position.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Koro%20Sensei%20Quest%21%20-%20S01E12%20-%20Bye%20Bye%2C%20Big%20Bad-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Bye Bye, Big Bad
+          </div>
+          <div class="plot">The students of Class 3-E storm through the castle to get to the Demon King. Many students sacrifice themselves for each other in many traps as they travel to the throne room.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

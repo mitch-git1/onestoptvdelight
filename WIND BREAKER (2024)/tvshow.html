@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - WIND BREAKER
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">WIND BREAKER</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/WIND%20BREAKER%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S01E01%20-%20SAKURA%20ARRIVES%20AT%20FURIN-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - SAKURA ARRIVES AT FURIN
+          </div>
+          <div class="plot">An admirer of strong people with a complete disinterest in the weak, Haruka Sakura, a loner and delinquent high school student, aims to be a fighter at the top of Furin High School. Coming from outside the city, Sakura enrolls in Furin High School, infamous for its delinquents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S01E02%20-%20THE%20HERO%20OF%20MY%20DREAMS-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - THE HERO OF MY DREAMS
+          </div>
+          <div class="plot">It is the morning of the school entrance ceremony, and Furin High School has transformed into a group that protects the town now known as the &quot;Chime of the Wind Breaker&quot; &mdash; Bofurin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S01E03%20-%20THE%20MAN%20WHO%20STANDS%20AT%20THE%20TOP-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - THE MAN WHO STANDS AT THE TOP
+          </div>
+          <div class="plot">Furin High School's first-year Class 1 is infamous for its group of strong fighters.
+
+One of the students in the class, Kyotaro Sugishita, becomes furious with what Sakura said and throws a punch at him. The two begin a spectacular fight, ignoring an aloof Hayato Suo, who's carefully watching the fight, and Nirei, who's now panicking.
+
+A tremendously loud voice echoes throughout the school, interrupting the fight between the two young men. The owner of that voice that instantly changed the mood of the entire school is none other than Umemiya, the Representative of Bofurin. Sakura and the rest look nervously up at the speakers to hear Umemiya say something completely unexpected.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S01E04%20-%20CLASH-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - CLASH
+          </div>
+          <div class="plot">A fight breaks out between Bofurin and Shishitoren as Bofurin tries to protect the town's middle schoolers. Sakura receives a declaration of war from the group's second-in-command, Jo Togame. Sakura and one of the Four Kings of Bofurin, Toma Hiragi, tell Umemiya what happened.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S01E05%20-%20A%20GENTLEMAN-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - A GENTLEMAN
+          </div>
+          <div class="plot">&quot;That&rsquo;s why I'm going to take all of Furin&hellip;and you for myself!&quot; declares Shishitoren's leader, Choji Tomiyama, as he makes his way onto Furin High School grounds. Finally, it's a one-on-one showdown between Bofurin and Shishitoren!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S01E06%20-%20VOW%20TO%20FOLLOW-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - VOW TO FOLLOW
+          </div>
+          <div class="plot">Tomiyama and Togame, far from worrying about their teammate who lost the battle, expel him from their team. While this peculiar spectacle shakes Sakura and the rest, Suo becomes unexpectedly emotional and wins against Minoru Kanuma, earning another win for Bofurin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S01E07%20-%20FIGHT%20TO%20WIN-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - FIGHT TO WIN
+          </div>
+          <div class="plot">It&rsquo;s now time for the battle of those second-in-command: Sakura versus Togame &mdash; a fight that will set things on fire!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S01E08%20-%20SUCCEEDING%20THE%20PAST-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - SUCCEEDING THE PAST
+          </div>
+          <div class="plot">Togame can no longer hide the fact he's feeling lost. He remembers when he met Tomiyama, the fun days he had with Shishitoren, how the team changed when Tomiyama became the leader, and the things he's done himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S01E09%20-%20UMEMIYA%27S%20STYLE-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - UMEMIYA'S STYLE
+          </div>
+          <div class="plot">It's now time for a one-on-one fight between Umemiya and Tomiyama. Tomiyama believed that by winning against Umemiya, he would obtain Furin High School, freedom, and a sense of fun that would rival no other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S01E10%20-%20DIALOGUE-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - DIALOGUE
+          </div>
+          <div class="plot">Admitting defeat, Tomiyama tries to pass Shishitoren on to Umemiya &mdash; to which Umemiya declares, &quot;Instead of taking over your team, we'll be friends!&quot; Bofurin and Shishitoren are dumbfounded at this turn of events but talks progress, food is brought, and a celebratory afterparty starts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S01E11%20-%20NEW%20CLASSMATES-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - NEW CLASSMATES
+          </div>
+          <div class="plot">With the fights against Shishitoren over, Class 1 enthusiastically welcomes Sakura, Nirei, and Suo's return. Their classmates, brimming with interest in the details of the fights, surround them, asking questions. Sakura can't hide his bashfulness.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S01E12%20-%20THE%20DEPENDABLE%20ONE-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - THE DEPENDABLE ONE
+          </div>
+          <div class="plot">Ren Kaji, Yuto Kusumi, and Takeshi Enomoto, second-year students from the Tamon Team, start their ruling on who will be Grade Captain for first-year Class 1. Suo is the first to raise his hand, immediately nominating Sakura as the other classmates vote for him one after the other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S01E13%20-%20FOR%20A%20FRIEND-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - FOR A FRIEND
+          </div>
+          <div class="plot">Sakura, Nirei, and Suo finish their meeting with Umemiya, the other members of the Four Kings, and other prominent leading figures and join up with Kiryu and Tsugeura on their way home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S02E01%20-%20RAGE-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - RAGE
+          </div>
+          <div class="plot">Sakura is a high school delinquent who, as a member of Bofurin, has vowed to &ldquo;protect this town.&rdquo;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S02E02%20-%20CONCLUSION-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - CONCLUSION
+          </div>
+          <div class="plot">Ren Kaji and the second-year senpai rush in to save Sakura and the others when a fierce attack is upon them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S02E03%20-%20Restart-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Re:start
+          </div>
+          <div class="plot">Bofurin is able to defeat every member of Natori-led KEEL and safely rescue Nagato.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S02E04%20-%20SENPAI%27S%20TEACHINGS-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - SENPAI'S TEACHINGS
+          </div>
+          <div class="plot">The battle with KEEL is now over, and one afternoon&hellip;Sakura doesn&rsquo;t show up at school. Worried, Nirei contacts him and can tell over the phone that Sakura&rsquo;s got a terrible cold. That day after school, Nirei and Suo, representing the first-year class 1, head to Sakura&rsquo;s apartment with a care package. Sakura came from out of town, but what kind of life is he living now?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S02E05%20-%20A%20PLACE%20I%20BELONG-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - A PLACE I BELONG
+          </div>
+          <div class="plot">Sakura deeply feels that he wasn't able to do much during the battle with KEEL. When Sakura goes to Kaji to seek some advice, Kaji bluntly says, &quot;You need to trust them based on what you have seen.&quot; In addition, Umemiya encourages him to &quot;Jump right out there with everything you've got!&quot; After recovering from his cold, Sakura enters the classroom determined. He faces Nirei, Suo, and the rest of the first-year class, and begins to share his honest thoughts about being grade captain&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S02E06%20-%20HIDDEN%20FEELINGS-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - HIDDEN FEELINGS
+          </div>
+          <div class="plot">Tsubakino leads Sakura, Nirei, and Suo to the home of an old man named Ito.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S02E07%20-%20NIGHT%20STREET-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - NIGHT STREET
+          </div>
+          <div class="plot">As a thank you for helping Ito recover, Tsubakino takes Sakura, Nirei, and Suo to the neon-lit entertainment district of &ldquo;Keisei Street,&rdquo; which is full of cozy drinking establishments, mahjong parlors, and bars. The boys are overwhelmed by the atmosphere of this part of town. They head to meet up with Tsubakino when suddenly, a girl in a tattered white dress falls on Sakura. They have no chance to hear the girl&rsquo;s story before a group of thugs approaches them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S02E08%20-%20SHARED%20FRONTLINES-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - SHARED FRONTLINES
+          </div>
+          <div class="plot">Sakura, Nirei, and Suo, having saved the girl chased by thugs whose name is Shizuka Narita, run into a suited team called Roppo Ichiza, led by someone named Kanji Nakamura. The Roppo Ichiza is a strong fighting team that had many clashes with Bofurin before the school was unified. However, there is no conflict between the two groups at present. The group goes to Burlesque Bar Ougi, where Kanji and Shizuka work, and see Tsubakino pole dance while his two lieutenants are sitting at a nearby table.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S02E09%20-%20SHALL%20WE%20DANCE-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - SHALL WE DANCE?
+          </div>
+          <div class="plot">The name of the group pursuing Shizuka is GRAVEL, a group of delinquents from the Sunaba District, a notorious area known for its rough reputation. They begin to rampage through Keisei Street again, this time with more members, in an attempt to capture Shizuka. However, the members of Roppo Ichiza, Sakura, Nirei, and Suo are ready to confront them! Roppo Ichiza struggles in the fight due to the overwhelming number of GRAVEL forces despite them being beaten down one after another. Meanwhile, Tsubakino, Seiryu, and Uryu wait with Shizuka at the Burlesque Bar OUGI.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S02E10%20-%20SALVATION-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - SALVATION
+          </div>
+          <div class="plot">Unable to bear anyone getting hurt because of her, Shizuka attempts to run to Shuhei Suzuri, the leader of GRAVEL, while ignoring the calls from Nirei and the others. However, she is stopped by Tsubakino, Seiryu, and Uryu. Tsubakino asks what she wants to do, to which Shizuka responds, &ldquo;I want to stay with everyone!&rdquo; This prompts Tsubakino to finally show the seriousness of the Four Kings. Tsubakino asks what Suzuri likes and gradually, their fists become part of a conversation, as the battle between Tsubakino and Suzuri continues.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S02E11%20-%20AFTER%20THE%20STORM-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - AFTER THE STORM
+          </div>
+          <div class="plot">&ldquo;All of us will work together and become one unit.&rdquo; Suzuri-led GRAVEL resolves to walk a different path &ldquo;together&rdquo; as they take the extended hand of Roppo Ichiza. Shizuka, whose decision would have made everyone sad, sincerely apologizes and expresses her gratitude to Tsubakino and Kanji. Just then, as they have reconciled and everyone&rsquo;s feelings are in sync, a former Furin student named Endo, covered in tattoos from his back to his shoulders and arms, appears.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/WIND%20BREAKER%20-%20S02E12%20-%20STRENGTH%20FOR%20ANOTHER-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - STRENGTH FOR ANOTHER
+          </div>
+          <div class="plot">Sakura, Nirei, and Suo are called up to the roof of Furin High School. Waiting for them are the Four Kings, their next-in-commands, and Sugishita, who&rsquo;s helping Umemiya. Having heard about the recent events from Tsubakino, Umemiya has called everyone here to tell the story of Endo, who was the mastermind behind the conflicts between KEEL and GRAVEL, and to explain the origins of the Bofurin unification. As Umemiya, Hiragi, Tsubakino, Momose, and Mizuki join Furin High School and become a part of the Bofurin; what shadow is born as a result of this?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

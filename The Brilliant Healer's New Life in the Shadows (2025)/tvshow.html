@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Brilliant Healer's New Life in the Shadows
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Brilliant Healer's New Life in the Shadows</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Brilliant%20Healer%27s%20New%20Life%20in%20the%20Shadows%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Brilliant%20Healer%27s%20New%20Life%20in%20the%20Shadows%20-%20S01E01%20-%20An%20Equal%20Price-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - An Equal Price
+          </div>
+          <div class="plot">Zenos, an unlicensed healer working in the shadows, works to fix what's ailing his patients.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Brilliant%20Healer%27s%20New%20Life%20in%20the%20Shadows%20-%20S01E02%20-%20The%20Underground%20Healer%20in%20the%20Abandoned%20Part%20of%20Town-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Underground Healer in the Abandoned Part of Town
+          </div>
+          <div class="plot">Kicked out of his party for his unorthodox skills and humble origins, Zenos seeks a new way of life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Brilliant%20Healer%27s%20New%20Life%20in%20the%20Shadows%20-%20S01E03%20-%20Turf%20War-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Turf War
+          </div>
+          <div class="plot">An encounter with the chief of the orcs leads Zenos into a three-way standoff in the slums.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Brilliant%20Healer%27s%20New%20Life%20in%20the%20Shadows%20-%20S01E04%20-%20A%20Righteous%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - A Righteous Hero
+          </div>
+          <div class="plot">Zenos resolving the feud between the demihuman gangs attracts attention from an unwanted source.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Brilliant%20Healer%27s%20New%20Life%20in%20the%20Shadows%20-%20S01E05%20-%20A%20Place%20to%20Belong-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - A Place to Belong
+          </div>
+          <div class="plot">Zenos' old party find themselves at an impasse, and wondering if they kicked out the reason for their success.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Brilliant%20Healer%27s%20New%20Life%20in%20the%20Shadows%20-%20S01E06%20-%20The%20End%20of%20Adventure-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The End of Adventure
+          </div>
+          <div class="plot">A rampaging golem threatens the slums as Zenos is forced to organize a resistance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Brilliant%20Healer%27s%20New%20Life%20in%20the%20Shadows%20-%20S01E07%20-%20Special%20Service-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Special Service
+          </div>
+          <div class="plot">After having dealt with the the rampaging golem, Zenos and his friends visit a hot springs to recuperate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Brilliant%20Healer%27s%20New%20Life%20in%20the%20Shadows%20-%20S01E08%20-%20The%20Royal%20Hospital-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Royal Hospital
+          </div>
+          <div class="plot">Zenos attends class at the Royal Hospital's headquarters, under the assumed identity of &quot;Zeno.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Brilliant%20Healer%27s%20New%20Life%20in%20the%20Shadows%20-%20S01E09%20-%20Faction%20Infiltration-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Faction Infiltration
+          </div>
+          <div class="plot">Zenos' gets an invite to the Goldran Laboratory, and a chance to track down Becker's missing student.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Brilliant%20Healer%27s%20New%20Life%20in%20the%20Shadows%20-%20S01E10%20-%20A%20Request%20from%20a%20Noble%20Lady-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - A Request from a Noble Lady
+          </div>
+          <div class="plot">A request for Zenos to treat Lord Fennel's daughter ends up being complicated by her haughty attitude.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Brilliant%20Healer%27s%20New%20Life%20in%20the%20Shadows%20-%20S01E11%20-%20Just%20a%20Normal%20Healer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Just a Normal Healer
+          </div>
+          <div class="plot">Zenos is invited to a dinner party by Goldran, where he hopes to discover the truth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Brilliant%20Healer%27s%20New%20Life%20in%20the%20Shadows%20-%20S01E12%20-%20Choosing%20Who%20Lives-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Choosing Who Lives
+          </div>
+          <div class="plot">Zenos learns the truth behind Becker's investigation, and faces the question: are lives equal in value?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

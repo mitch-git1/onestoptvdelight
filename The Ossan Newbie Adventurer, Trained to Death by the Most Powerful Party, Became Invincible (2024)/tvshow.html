@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Ossan Newbie Adventurer, Trained to Death by the Most Powerful Party, Became Invincible
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Ossan Newbie Adventurer, Trained to Death by the Most Powerful Party, Became Invincible</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Ossan%20Newbie%20Adventurer%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party%2C%20Became%20Invincible%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Ossan%20Newbie%20Adventurer%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party%2C%20Became%20Invincible%20-%20S01E01%20-%20Starting%2012%20Years%20Late-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Starting 12 Years Late
+          </div>
+          <div class="plot">Rick Gladiatol became an adventurer at the age of thirty. Now, after two years of training, he's taking the test to advance to E-rank. As the exam begins, he wonders if he's done enough to measure up to all the young people testing alongside him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Ossan%20Newbie%20Adventurer%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party%2C%20Became%20Invincible%20-%20S01E02%20-%20Number%204242%27s%20E-rank%20Promotion%20Exam-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Number 4242's E-rank Promotion Exam
+          </div>
+          <div class="plot">As Rick awaits his initial exam results, Raster, an examiner for the upcoming section, appears. Rick stops him from hitting on Reanette and earns the examiner's hatred. Raster isn't one to be thwarted, and he isn't called the F-rank Crusher for nothing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Ossan%20Newbie%20Adventurer%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party%2C%20Became%20Invincible%20-%20S01E03%20-%20A%20Super%20First-Rate%20Elite%20vs%20an%20F-Rank%20Ossan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - A Super First-Rate Elite vs an F-Rank Ossan
+          </div>
+          <div class="plot">Rick begins his mock battle with the F-rank Crusher, Raster Diarmut. Raster thinks the gap in ability between him, a genius, and Rick, a late-starting newbie, is all too clear. But as the battle progresses, Rick's training begins to show through.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Ossan%20Newbie%20Adventurer%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party%2C%20Became%20Invincible%20-%20S01E04%20-%20The%20Ossan%20Becomes%20an%20Adventurer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Ossan Becomes an Adventurer
+          </div>
+          <div class="plot">As Rick waits for his test results, memories flood his mind. As a boy, he'd dreamed of being an adventurer, but the older he got, the more distant the dream became. He set it aside and began work at a Guild. Then, Rick met a certain S-rank adventurer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Ossan%20Newbie%20Adventurer%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party%2C%20Became%20Invincible%20-%20S01E05%20-%20Ossan%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Ossan, Trained to Death by the Most Powerful Party
+          </div>
+          <div class="plot">Laurotte asks Rick if he can meet Orichalcum Fist. Rick agrees, but under certain conditions. After warming to Laurotte, Broughston asks him to gather intel to help the party reach their goal. A tip from him sends Rick and the others to a northern town.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Ossan%20Newbie%20Adventurer%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party%2C%20Became%20Invincible%20-%20S01E06%20-%20The%20King%20of%20Fists%20Elimination%20Tournament-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The King of Fists Elimination Tournament
+          </div>
+          <div class="plot">Rick and the others head to Heractopia to look for information on the Six Jewels. A parade for an upcoming tournament makes them realize that what they seek might be closer than they think, but there's only one way to know for sure. Enter the tournament!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Ossan%20Newbie%20Adventurer%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party%2C%20Became%20Invincible%20-%20S01E07%20-%20Ossan%2C%20the%20Fastest%20Preliminaries%20Qualifier%20in%20History-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Ossan, the Fastest Preliminaries Qualifier in History
+          </div>
+          <div class="plot">Angelica, Rick, and Broughston all make it through the preliminaries, but the two men do it at an unheard of speed. Rick meets a tournament sponsor who says he's close to Angelica, but when Rick mentions him, Angelica's expression turns dark. (Subs Flix_)
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Ossan%20Newbie%20Adventurer%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party%2C%20Became%20Invincible%20-%20S01E08%20-%20Scales%20of%20the%20Heart-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Scales of the Heart
+          </div>
+          <div class="plot">Angelica tries to run from her brutal training. Rick empathizes and shares something Broughston once told him. After her training, Angelica faces her final block match. Will she break through the qualifiers? The King of Fists Tournament is about to begin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Ossan%20Newbie%20Adventurer%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party%2C%20Became%20Invincible%20-%20S01E09%20-%20The%20Perfect%20Prodigy%2C%20Born%20with%20Absolutely%20Everything-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Perfect Prodigy, Born with Absolutely Everything
+          </div>
+          <div class="plot">Angelica strikes at Geith using the techniques she's learned in her training. Rick and the others watch closely as she makes use of what they've taught her. Just when it looks like Angelica is about to win, Geith rallies. But Anglica isn't one to give up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Ossan%20Newbie%20Adventurer%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party%2C%20Became%20Invincible%20-%20S01E10%20-%20The%20Strongest%20Pugilist%20in%20History-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Strongest Pugilist in History
+          </div>
+          <div class="plot">The second semi-final match pits Kelvin against Broughston. Kelvin heads out of town to prepare. He spots Rick and presses him for a sparring match. After seeing Rick's skills, Kelvin opens up to Rick about his dreams and what his strength has cost him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Ossan%20Newbie%20Adventurer%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party%2C%20Became%20Invincible%20-%20S01E11%20-%20Fistfight%20on%20Equal%20Ground-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Fistfight on Equal Ground
+          </div>
+          <div class="plot">When Rick learns who he'll face in the final match, he locks himself in his room in fear. Mizett tells Rick he's free to withdraw, but he might like to know Broughston's secret wish first. With that, and everyone's encouragement, Rick decides to fight.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Ossan%20Newbie%20Adventurer%2C%20Trained%20to%20Death%20by%20the%20Most%20Powerful%20Party%2C%20Became%20Invincible%20-%20S01E12%20-%20Quarter%20Thumbs%20Up-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Quarter Thumbs Up
+          </div>
+          <div class="plot">During the final match, Broughston tells Rick about his loneliness, the founding of Orichalcum Fist, and his longtime dream. Wanting to repay Broughston for the training that allowed him to fulfill his own dream, Rick makes a decision. It's time to fight!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

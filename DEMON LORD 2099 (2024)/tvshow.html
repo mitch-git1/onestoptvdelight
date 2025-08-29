@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - DEMON LORD 2099
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">DEMON LORD 2099</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/DEMON%20LORD%202099%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/DEMON%20LORD%202099%20-%20S01E01%20-%20Cyberpunk%20City%20Shinjuku-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Cyberpunk City Shinjuku
+          </div>
+          <div class="plot">Long ago, Demon Lord Veltol was defeated in battle by the Hero, but thanks to his reincarnation magic, he has returned after 500 years. Veltol is keen to resume his world domination once more, but his vassal, Machina&mdash;one of the Six Dark Peers&mdash;reveals an unexpected truth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/DEMON%20LORD%202099%20-%20S01E02%20-%20The%20Demon%20Lord%20and%20His%20Vassals-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Demon Lord and His Vassals
+          </div>
+          <div class="plot">Veltol learns of his former vassal Marcus&rsquo;s betrayal firsthand. Meanwhile, Machina shows Veltol around the city. While Veltol struggles to adapt to the completely altered world of the future, Machina introduces him to someone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/DEMON%20LORD%202099%20-%20S01E03%20-%20%5BDEBUT%20STREAM%5D%20The%20Demon%20Lord%20Veltol%20Has%20Arisen%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - [DEBUT STREAM] The Demon Lord Veltol Has Arisen!
+          </div>
+          <div class="plot">Following the advice of Machina&rsquo;s friend, Takahashi, Veltol begins streaming games with a face reveal. He spends his days establishing his image as a streamer, using Takahashi&rsquo;s strategy and influence. Meanwhile, Veltol goes for a stroll through the back alleys of Shinjuku&rsquo;s outskirts one day, and Veltol is intrigued by the sight of a particular vagabond.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/DEMON%20LORD%202099%20-%20S01E04%20-%20The%20Shadows%20of%20Shinjuku-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Shadows of Shinjuku
+          </div>
+          <div class="plot">Veltol is asked to work as Takahashi&rsquo;s bodyguard. Hoping to test the strength of his restored faith as well, Veltol planned to launch a surprise attack on the yakuza, but their run-of-the-mill heist leads to unexpected developments, swallowing the two of them deeper into the city&rsquo;s dark underbelly.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/DEMON%20LORD%202099%20-%20S01E05%20-%20The%20Depths%20of%20the%20Crucible-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Depths of the Crucible
+          </div>
+          <div class="plot">Machina lets her thoughts drift to Veltol as she prepares dinner. Meanwhile, Veltol learns new facts about the Immortal Furnace, and while he tries to inform Machina using Whisper magic, he gets no response. At the same time, Machina has an unexpected visitor&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/DEMON%20LORD%202099%20-%20S01E06%20-%20The%20Hero%E2%80%99s%20Battle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Hero&rsquo;s Battle
+          </div>
+          <div class="plot">The Immortal Furnace lies directly below the Aether Reactor of Shinjuku, and Machina flies into a rage when Marcus reveals an appalling truth about immortals. Meanwhile, Kinohara stands in the way of Veltol&rsquo;s group. After Gram takes an attack for him, Veltol issues his orders.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/DEMON%20LORD%202099%20-%20S01E07%20-%20The%20Demon%20Lord%E2%80%99s%20Resurrection-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Demon Lord&rsquo;s Resurrection
+          </div>
+          <div class="plot">Trusting Gram to handle Kinohara, Veltol reaches the Immortal Furnace. He grills Marcus about his betrayal of the immortals and why he kidnapped Machina. The legendary Demon Lord faces Shinjuku&rsquo;s ruler. The former lord and vassal cross blades in this new world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/DEMON%20LORD%202099%20-%20S01E08%20-%20Cybermagic%20City%20Akihabara-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Cybermagic City Akihabara
+          </div>
+          <div class="plot">Hizuki Reynard-Yamada heaves another deep sigh in class at the Akihabara Private School of Magic &quot;Lu Xel&quot;. Meanwhile, Veltol defeats Marcus and safely rescues Machina. What he seeks next lies somewhere in Akihabara City&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/DEMON%20LORD%202099%20-%20S01E09%20-%20The%20Poor%20Student%20and%20the%20Exchange%20Student-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Poor Student and the Exchange Student
+          </div>
+          <div class="plot">Veltol, Machina, and Takahashi infiltrate Lu Xel under the pretense of a short-term exchange program so they can search for the regalia. When the three sit around a table in the school cafeteria, the school&rsquo;s top student&mdash;Albert&mdash;begins provoking Hizuki Reynard-Yamada, the woman seated nearby.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/DEMON%20LORD%202099%20-%20S01E10%20-%20Akihabara%27s%20Three%20Great%20Houses-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Akihabara's Three Great Houses
+          </div>
+          <div class="plot">Veltol and the others go to Electric Town and visit the maid caf&eacute; Helheim, where Hizuki works. While experiencing the unique services the maid caf&eacute; provides, Veltol asks Hizuki about the regalia. Afterward, the four head out into Electric Town where they encounter a certain someone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/DEMON%20LORD%202099%20-%20S01E11%20-%20The%20Goddess%20Reincarnated-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Goddess Reincarnated
+          </div>
+          <div class="plot">After heading out into Electric Town, Veltol&rsquo;s group visits the mansion of the Reynard family. After entertaining them, Hizuki heads for the bathroom&hellip; only to find Veltol already there! The next day, Hizuki hears people talking about the explosion in Electric Town.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/DEMON%20LORD%202099%20-%20S01E12%20-%20The%20Lord%E2%80%99s%20Return-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Lord&rsquo;s Return
+          </div>
+          <div class="plot">Thanks to Mag Rosanta&rsquo;s plot, the goddess Meldia has manifested by using Hizuki as a vessel. Veltol battles Meldia in an attempt to save Hizuki. Meanwhile, Machina faces a young girl wearing a visor. What will happen to Akihabara City and the conflict between Electric Town and Magic Town?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

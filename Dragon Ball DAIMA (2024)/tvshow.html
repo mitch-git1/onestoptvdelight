@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Dragon Ball DAIMA
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Dragon Ball DAIMA</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Dragon%20Ball%20DAIMA%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E01%20-%20Conspiracy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Conspiracy
+          </div>
+          <div class="plot">A giant castle in a mysterious world. Two shady Majin, Gomah and Degesu, watch a monitor. The monitor shows Goku and the others having a fierce battle against Majin Buu. Gomah and Degesu head to Earth to execute a certain conspiracy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E02%20-%20Glorio-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Glorio
+          </div>
+          <div class="plot">Goku and his friends have been turned small due to Gomah's scheme. They begin preparing to go to the demon world. Goku collects his Nyoibo and looks forward to a new adventure. Then the mysterious young Majin Glorio appears!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E03%20-%20Daima-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Daima
+          </div>
+          <div class="plot">Goku, Supreme Kai, and Glorio head out to the &quot;Demon Realm&quot; first. Their plane travels through space and a mysterious dimension. They arrive at the entrance to the Demon Realm, the &quot;Third Demon World&quot;!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E04%20-%20Chatty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Chatty
+          </div>
+          <div class="plot">Forced to make their way through the Third Demon World on foot, Goku and his companions stop by a lone drive-in on the way. There they encounter some strange souvenirs and a rather chatty and quirky Majin woman and her husband!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E05%20-%20Panzy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Panzy
+          </div>
+          <div class="plot">The masked Majin who appeared before Goku and his companions is a young girl named Panzy! While Glorio gives her the cold shoulder, Panzy insists on acting as their guide. The group reaches a suspicious castle!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E06%20-%20Lightning-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Lightning
+          </div>
+          <div class="plot">After encountering the Gendarmerie, the wardens of the Demon Realm, the four are forced to camp in a cave where they encounter further trouble! The enigmatic Glorio unleashes lightning magic against Goku to resolve the situation!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E07%20-%20Collar-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Collar
+          </div>
+          <div class="plot">Goku and his companions continue their journey. But the Gendarmerie appear and bar their way again, perhaps due to them knowing the location of the Magic Collar around Panzy's neck. Can the bond with her friends save Panzy from peril?!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E08%20-%20Tamagami-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Tamagami
+          </div>
+          <div class="plot">The fight with a Tamagami begins! The Tamagamis are the undefeated guardians of the Dragon Balls. Seeing Goku fight toe-to-toe with one, Panzy and the others are unable to hide their surprise. As the battle heats up, what will happen?!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E09%20-%20Thieves-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Thieves
+          </div>
+          <div class="plot">Rumors of what Goku did in the Third Demon World spread across the Demon Realm. To avoid trouble, Goku wears a disguise at the hotel, but they can't let their guard down in the Third Demon World. Thieves see through his disguise!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E10%20-%20Ocean-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Ocean
+          </div>
+          <div class="plot">Goku and his companions arrive at the mystic Second Demon World where a giant ocean spreads as far as the eye can see! The party is amazed at the new world but is immediately attacked by Gendarmerie that have been sent by Gomah!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E11%20-%20Legend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Legend
+          </div>
+          <div class="plot">Having regrouped with Vegeta and the others, Goku and his companions arrive at a planet that seems familiar. As they move to head out, a suspicious shadow approaches! It's the Legendary Namek who remained alone in the Demon Realm!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E12%20-%20True%20Strength-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - True Strength
+          </div>
+          <div class="plot">Vegeta&rsquo;s battle with the Tamagami is evenly matched, but forced underwater where he's not used to fighting, he finds himself struggling! Vegeta is cornered and sinks to the ocean floor. But then he finally unleashes his true strength!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E13%20-%20Surprise-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Surprise
+          </div>
+          <div class="plot">As Goku and his companions head to where Gomah is, engine trouble causes them to land on a certain planet. The place they land happens to be a surprise-filled planet where even Supreme Demon Kings are afraid to tread!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E14%20-%20Taboo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Taboo
+          </div>
+          <div class="plot">To stop Goku's advancement, Gomah commits an unbelievable taboo! Goku and his companions can no longer proceed. Just when it seems their adventure is over, a certain someone reveals their true power!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E15%20-%20Third%20Eye-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Third Eye
+          </div>
+          <div class="plot">The Evil Third Eye offers absolute power in the Demon Realm. King Gomah confirms its location and moves to obtain it! Will the Third Eye open on Gomah's forehead?!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E16%20-%20Degesu-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Degesu
+          </div>
+          <div class="plot">Goku and his companions finally reach Gomah's palace. But Kadem and the mighty Gendarmerie Force bar their way! Meanwhile, in the palace, Degesu takes action for his own ambitions!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dragon%20Ball%20DAIMA%20-%20S01E17%20-%20Gomah-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Gomah
+          </div>
+          <div class="plot">Goku and his companions face off with Arinsu. With everything on the line, their battle begins. But all of a sudden, a transformed King Gomah stands before both parties!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

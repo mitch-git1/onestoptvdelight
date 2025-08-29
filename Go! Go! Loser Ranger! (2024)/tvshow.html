@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Go! Go! Loser Ranger!
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Go! Go! Loser Ranger!</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Go%21%20Go%21%20Loser%20Ranger%21%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Go%21%20Go%21%20Loser%20Ranger%21%20-%20S01E01%20-%20We%20Are%20Justice%21%20The%20Dragon%20Keepers%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - We Are Justice! The Dragon Keepers!
+          </div>
+          <div class="plot">Tired of the Sunday Showdown charade, Fighter D decides to defeat the Rangers for real this time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Go%21%20Go%21%20Loser%20Ranger%21%20-%20S01E01%20S01E06%20-%20We%20Are%20Justice%21%20The%20Dragon%20Keepers%21%20-%201%20Plus%202%20Equals...%20Threat%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - We Are Justice! The Dragon Keepers!
+          </div>
+          <div class="plot">Tired of the Sunday Showdown charade, Fighter D decides to defeat the Rangers for real this time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Go%21%20Go%21%20Loser%20Ranger%21%20-%20S01E01%20-%20We%20Are%20Justice%21%20The%20Dragon%20Keepers%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - We Are Justice! The Dragon Keepers!
+          </div>
+          <div class="plot">Tired of the Sunday Showdown charade, Fighter D decides to defeat the Rangers for real this time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Go%21%20Go%21%20Loser%20Ranger%21%20-%20S01E01%20-%20We%20Are%20Justice%21%20The%20Dragon%20Keepers%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - We Are Justice! The Dragon Keepers!
+          </div>
+          <div class="plot">Tired of the Sunday Showdown charade, Fighter D decides to defeat the Rangers for real this time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Go%21%20Go%21%20Loser%20Ranger%21%20-%20S01E02%20-%20Go%21%20Fighter%20D%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Go! Fighter D!
+          </div>
+          <div class="plot">Fighter D reunites with Yumeko Suzukiri, who approaches him with an unexpected proposal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Go%21%20Go%21%20Loser%20Ranger%21%20-%20S01E03%20-%20Our%20Evil%20Will%20Bloom%2C%20Someday-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Our Evil Will Bloom, Someday.
+          </div>
+          <div class="plot">Fighter D decides to infiltrate the Red Garrison with Yumeko, only to find himself in a tight spot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Go%21%20Go%21%20Loser%20Ranger%21%20-%20S01E04%20-%20The%20Soldier%20with%20Love%2C%20Hibiki%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Soldier with Love, Hibiki!
+          </div>
+          <div class="plot">In pursuit of Fighter D, Aran Hekiru, a Blue Junior Third Rank, discovers his connection to Hibiki.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Go%21%20Go%21%20Loser%20Ranger%21%20-%20S01E05%20-%20Fighter%20D%2C%20as%20a%20Part%20of%20%E2%80%9CRanger%20Force%E2%80%9D-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Fighter D, as a Part of &ldquo;Ranger Force&rdquo;
+          </div>
+          <div class="plot">Fighter D infiltrates the White Dragon's Nest in disguise and discovers someone in hiding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Go%21%20Go%21%20Loser%20Ranger%21%20-%20S01E01%20S01E06%20-%20We%20Are%20Justice%21%20The%20Dragon%20Keepers%21%20-%201%20Plus%202%20Equals...%20Threat%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - 1 Plus 2 Equals... Threat!
+          </div>
+          <div class="plot">Fighter D and Kai Shion work together to face off against Shun Tokita in the final exam.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Go%21%20Go%21%20Loser%20Ranger%21%20-%20S01E07%20-%20The%20Zigzag%20Road%20to%20the%20Final%20Exam%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Zigzag Road to the Final Exam!
+          </div>
+          <div class="plot">Fighter D's plans go awry as Shion works with the other cadets on the second day of the exam.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Go%21%20Go%21%20Loser%20Ranger%21%20-%20S01E08%20-%20Shout%20Out%20Loud%2C%20Cadets%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Shout Out Loud, Cadets!
+          </div>
+          <div class="plot">Peltrola sneaks into the White Dragon's Nest, and meets Komachi Aizome of the Blue Squadron.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Go%21%20Go%21%20Loser%20Ranger%21%20-%20S01E09%20-%20Battle%21%20Fever%21%20Fighter%20D%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Battle! Fever! Fighter D!
+          </div>
+          <div class="plot">Fighter XX steps in to help Fighter D but is stopped by Blue Keeper with his Divine Artifact.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Go%21%20Go%21%20Loser%20Ranger%21%20-%20S01E10%20-%20It%27s%20Showtime%20for%20Blue%20Keeper%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - It's Showtime for Blue Keeper!
+          </div>
+          <div class="plot">Peltrola retreats after an all-out fight with Blue Keeper, but is halted by the Junior First Ranks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

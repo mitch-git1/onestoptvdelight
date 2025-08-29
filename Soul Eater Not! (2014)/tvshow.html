@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Soul Eater Not!
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Soul Eater Not!</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Soul%20Eater%20Not%21%20%282014%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Soul%20Eater%20Not%21%20-%20S01E01%20-%20Enrolling%20at%20the%20DWMA%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Enrolling at the DWMA!
+          </div>
+          <div class="plot">When 14-year-old middle-schooler Tsugumi Harudori discovers she is a weapon, she flies to America to enroll at DWMA. There, she meets the absent-minded Meme Tatane and the patrician Anya Hepburn, both of whom are meisters that are also new enrollees.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Soul%20Eater%20Not%21%20-%20S01E02%20-%20Girls%27%20Dorm%20%C3%A0%20la%20Carte%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Girls' Dorm &agrave; la Carte!
+          </div>
+          <div class="plot">Fellow student Eternal Feather shows Tsugumi, Meme and Anya around the girls' dorm, and they meet some of the residents there. By the next morning, all three had lost their allowance, and thus had to take part-time jobs at a caf&eacute; named &quot;Deathbucks.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Soul%20Eater%20Not%21%20-%20S01E03%20-%20The%20Witch%20of%20the%20Girls%27%20Dorm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Witch of the Girls' Dorm
+          </div>
+          <div class="plot">Eternal Feather reveals more about Kim's history, as well as the origin of her name. A new threat, known as &quot;Traitor,&quot; menaces the students of DWMA, and Sid sends Clay and Akane to scare them off. Anya feels left out when she misses her turn with Tsugumi.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Soul%20Eater%20Not%21%20-%20S01E04%20-%20Waver%2C%20Run%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Waver, Run!
+          </div>
+          <div class="plot">After a nightmare, Tsugumi wonders why the meisters choose to come to DWMA. She spends some time talking to Akane, who asks her to be his girlfriend, only to say he was joking. The class takes their physical fitness exams, where both Meme and Anya excel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Soul%20Eater%20Not%21%20-%20S01E05%20-%20Invitation%20Fighting-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Invitation Fighting
+          </div>
+          <div class="plot">After dreaming about Kim, Jacqueline is bothered by feelings of attraction for her. Kim leads the girls in a pool-cleaning job, and after she takes most of the pay, they help Jacqueline try to win Kim over, while learning about her mysterious background.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Soul%20Eater%20Not%21%20-%20S01E06%20-%20This%20is%20a%20Real%20Fight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - This is a Real Fight
+          </div>
+          <div class="plot">Tsugumi and the others get a bad impression from the Thompson sisters, Liz and Patty, who are working at Deathbucks whilst on probation, having spent most of their childhood living on the streets of Brooklyn. When they run into the sisters later that day, Anya prepares to stand against them with Tsugumi, but is outmatched by their ability to both transform into pistols.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Soul%20Eater%20Not%21%20-%20S01E07%20-%20Nice%20Day%20For%20a%20Death%20Bazaar%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Nice Day For a Death Bazaar!
+          </div>
+          <div class="plot">Akane and Clay report to Sid that they suspect the culprit behind the Traitor incidents to be a witch named Shaula Gorgon. Meanwhile, Tsugumi and the others get together for a study session at Deathbucks, helping out when the place gets busier, even if only for a brief moment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Soul%20Eater%20Not%21%20-%20S01E08%20-%20Tsugumi%20Spiral%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Tsugumi Spiral!
+          </div>
+          <div class="plot">Whilst Akane and Clay interview Maka and Soul about the incident, Tsugumi and the others are relieved to find Eternal Feather has survived thanks to the efforts of Dr. Franken Stein, though are none too pleased with his pranks. As Eternal Feather steadily recovers from her injuries, Stein reports his findings to Sid.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Soul%20Eater%20Not%21%20-%20S01E09%20-%20Pumpkin%20Growing%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Pumpkin Growing!
+          </div>
+          <div class="plot">A series of tales that take place whilst the girls are growing pumpkins for Halloween. During the night, Tsugumi and Anya have to deal with Meme's unique sleepwalking, which proves to be a fearsome fighting style similar to drunken boxing, which Meme can only perform whilst asleep or unconscious. On another day, Meme wakes up with a bag full of cash, a sloth, and a missing eyebrow, with no recollection of what led her to this bizarre situation. As Meme's investigation continues to leave her with more questions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Soul%20Eater%20Not%21%20-%20S01E10%20-%20The%20Beginning%20of%20the%20Nightmare%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Beginning of the Nightmare!
+          </div>
+          <div class="plot">Tsugumi becomes upset when she receives a letter from her mother informing her that her dog, Pochi, had gotten involved in an accident, and ends up lashing out at Meme for forgetting things so easily. That night, Tsugumi and Anya follow Meme during one of her sleepwalks, winding up at the hidden research room where they are discovered by Akane and Clay.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Soul%20Eater%20Not%21%20-%20S01E11%20-%20Their%20Various%20Resolves%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Their Various Resolves!
+          </div>
+          <div class="plot">Whilst the rest of Death City celebrate Halloween with a Battle Festival amongst the EAT students, Kim and Jacqueline are tasked with watching over Tsugumi, who had been grounded for her actions. Meanwhile, as Akane and Clay escort Anya towards the airport, the city is suddenly overrun by NOT students turned into Traitors, which the EAT students have to fend off.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Soul%20Eater%20Not%21%20-%20S01E12%20-%20Soul%20Resonance%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Soul Resonance!
+          </div>
+          <div class="plot">Having spread out Traitors across Death City, Shaula unleashes her magic, making the Traitors more powerful whilst also ordering some of them to kill themselves as she sees fit. Shaula then sends Meme to kill Tsugumi and Anya, with Anya attempting to subdue her to give Tsugumi the chance to administer the antidote.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

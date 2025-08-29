@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Tokyo ESP
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Tokyo ESP</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Tokyo%20ESP%20%282014%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20ESP%20-%20S01E01%20-%20White%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - White Girl
+          </div>
+          <div class="plot">Tokyo has suddenly been taken over violently by espers. Amidst the destruction and terror as the metropolis of Tokyo falls, a name keeps surfacing. There is still hope. The White Girl will come to save the day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20ESP%20-%20S01E02%20-%20Girl%20Meets%20Boy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Girl Meets Boy
+          </div>
+          <div class="plot">Urushiba Rinka suddenly finds herself in the apartment below her home, completely naked! Rinka meets a mysterious boy who seems to know her as she tries to recall what happened to her. All the while, new threats begin to appear...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20ESP%20-%20S01E03%20-%20Penguin%20and%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Penguin and Girl
+          </div>
+          <div class="plot">In order to find a way to return to normal, Rinka searches for the flying penguin with Kyotaro. She thinks about what it means to be a hero as she meets Murasaki and involves herself in various events. Has Rinka bitten off more than she can chew?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20ESP%20-%20S01E04%20-%20The%20Rain%2C%20Ring%2C%20and%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Rain, Ring, and Girl
+          </div>
+          <div class="plot">Rinka decides to stand and fight back in order to rescue Murasaki. The enemy reveals herself to be Azuma's adoptive sister who had disappeared two years ago with her father. Big things may have been set in motion long before Rinka and Azuma realized.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20ESP%20-%20S01E05%20-%20Meeting%2C%20Phantom%20and%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Meeting, Phantom and Girl
+          </div>
+          <div class="plot">Rinka comes face to face with the Professor. He calls on her to join his crusade for a new world order and tells her of a miracle to come. Will Rinka respond to his invitation or ignore it completely? For what reason does she fight?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20ESP%20-%20S01E06%20-%20Each%20Girl%2C%20Each%20Desire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Each Girl, Each Desire
+          </div>
+          <div class="plot">Around Rinka, each girl is fighting and standing strong next to their own beliefs. As she struggles with the aftermath and the loss of Azuma, Rinka meets her father's old combat teacher. Now, Rinka must decide what she stands for to move forward.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20ESP%20-%20S01E07%20-%20Girls%20in%20the%20Rain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Girls in the Rain
+          </div>
+          <div class="plot">Master Roshi introduces Ayumu, a curly haired young boy who hates women, to Rinka and Murasaki. Rinka must get stronger and defeat him in order to face off with Minami. Ayumu has his own problems, too. His mother is a politician who hates espers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20ESP%20-%20S01E08%20-%20Fruition%2C%20Girls%20Set%20into%20Motion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Fruition, Girls Set into Motion
+          </div>
+          <div class="plot">Summer is coming to a close and the day of battle is coming near. The city of Tokyo is working to go against the existence of espers and Kyotaro continues his efforts to escape. All the while, the Professor continues to gather powerful allies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20ESP%20-%20S01E09%20-%20Attack%2C%20ESP%20Girls-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Attack, ESP Girls
+          </div>
+          <div class="plot">With school back in session and Azuma-san back at her side, Rinka feels a momentary happiness. However, the Professor has other plans for them. Namely, a public execution of Rinka and Azuma, to crush any possible hope mankind may have imagined.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20ESP%20-%20S01E10%20-%20In%20Bitter%20Lament-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - In Bitter Lament..
+          </div>
+          <div class="plot">Rinka wanders the town, lost and broken. At the same time, Kyotaro desperately tries to get back to Tokyo and confirm Rinka's safety. Minami tells Kyotaro what really happened to her mother and his parents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20ESP%20-%20S01E11%20-%20Tokyo%20Girls%20War-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Tokyo Girls War
+          </div>
+          <div class="plot">Mass chaos ensues as the Professor takes over the parliament building. Though Rinka has lost her ESP powers, she still pushes forward to protect the people she treasures. Slowly, but surely, the White Girl and her crew gather for the ultimate battle!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20ESP%20-%20S01E12%20-%20Tokyo%20ESP%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Tokyo ESP Girl
+          </div>
+          <div class="plot">The great battle is reaching its climax as everyone hurries to save the parliament from imminent doom. However, the Professor's true target is elsewhere and may change Tokyo's future completely. Rinka must fight to protect everything dear to her!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

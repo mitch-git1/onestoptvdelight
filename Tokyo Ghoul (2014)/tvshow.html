@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Tokyo Ghoul
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Tokyo Ghoul</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Tokyo%20Ghoul%20%282014%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S00E01%20-%20Tokyo%20Ghoul%20Jack-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - Tokyo Ghoul: Jack
+          </div>
+          <div class="plot">The story will focus on the high school days of Kishou Arima, the CCG's shinigami.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S00E02%20-%20Tokyo%20Ghoul%20Pinto-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x2 - Tokyo Ghoul: Pinto
+          </div>
+          <div class="plot">The OVA will adapt the third story in the Tokyo Ghoul: Hibi novel when Shuu Tsukiyama and Chie Hori met.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S01E01%20-%20Tragedy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Tragedy
+          </div>
+          <div class="plot">Amid news reports of &quot;Ghoul&quot; attacks nearby, Ken Kaneki points out Rize, a girl he is interested in, to his friend Hide at a local coffee shop. When Kaneki discovers the two share a favorite author, he asks her out. However, their date ends in tragedy!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S01E02%20-%20Incubation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Incubation
+          </div>
+          <div class="plot">Kaneki desperately fights the urge to eat human flesh, the only thing that can satisfy his hunger as a ghoul. He meets up with Hide again, joining him on an errand, and is glad for the companionship. But will his declining condition place Hide at risk?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S01E03%20-%20Dove-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Dove
+          </div>
+          <div class="plot">Yoshimura teaches Kaneki more about how to blend in with mankind, and takes in a mother and daughter needing protection. Two ghoul investigators, Mado and Amon, are assigned to the 20th Ward. In response, Toka takes Kaneki out to have a mask made for him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S01E04%20-%20Supper-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Supper
+          </div>
+          <div class="plot">Kaneki starts receiving self-defense lessons from Yomo. He meets Itori, who runs her own bar, and is friends with Uta and Yomo. Kaneki is befriended by Tsukiyama, a ghoul who knew Rize, who also enjoys reading, and possesses other, more epicurean tastes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S01E05%20-%20Scars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Scars
+          </div>
+          <div class="plot">When Touka falls ill, Kaneki pays her a visit that has unexpected consequences. Meanwhile, as Nishiki is still recovering from his run-in with Kaneki, he is nearly preyed upon by other ghouls. Tsukiyama remains consumed with the idea of having Kaneki.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S01E06%20-%20Cloudburst-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Cloudburst
+          </div>
+          <div class="plot">The fight against Tsukiyama is resolved, but Touka wants to kill Kimi, now that it's clear she knows that Nishiki and Kaneki are ghouls. Meanwhile, Hinami is eager to see her father again after being apart for so long, and acts out when she is unable.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S01E07%20-%20Captivity-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Captivity
+          </div>
+          <div class="plot">After Kaneki and Hinami witness Ryoko's fate, the personnel at Anteiku are grieved, and Touka decides to take matters with the investigators into her own hands. Kaneki is fed up with not being able to do anything, and makes up his mind to become involved.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S01E08%20-%20Circular-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Circular
+          </div>
+          <div class="plot">Touka sets out to lure the ghoul investigators, but before she can strike, she finds that Hinami has run away. When Touka and Kaneki go out looking for her, they find themselves face to face with Amon and Mado, who has a few surprises of his own for them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S01E09%20-%20Birdcage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Birdcage
+          </div>
+          <div class="plot">After several weeks go by, everyone tries to return to their normal lives. Hinami moves in with Touka, and despite her aversion to birds, they nurse an injured cockatiel they name Hetare back to health. Kaneki visits Itori to try to learn more about Rize.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S01E10%20-%20Aogiri-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Aogiri
+          </div>
+          <div class="plot">The 11th Ward offices of CCG are attacked by ghouls, wiping everyone out. Banjo and company stop in at Anteiku, looking for Rize to warn her to flee from Aogiri Tree, a new group of ghouls bent on taking over-- until Kaneki accidentally knocks him out!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S01E11%20-%20High%20Spirits-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - High Spirits
+          </div>
+          <div class="plot">Kaneki is held captive by Yamori, who practices his torturous craft on him. The police and CCG move in to deal with Aogiri Tree, who have made an 11th Ward shopping mall their headquarters. In all the commotion, the Anteiku team tries to rescue Kaneki.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S01E12%20-%20Ghoul-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Ghoul
+          </div>
+          <div class="plot">As Yamori continues to brutally torture Kaneki, Rize once again appears to him, and the two of them explore Kaneki's childhood and relationship with his mother. Kaneki is forced to make a choice that has a profound impact on him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S02E01%20-%20New%20Surge-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - New Surge
+          </div>
+          <div class="plot">Having defeated Jason and accepted his ghoul half, Kaneki joins Aogiri Tree to protect those close to him in Anteiku.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S02E02%20-%20Dancing%20Flowers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Dancing Flowers
+          </div>
+          <div class="plot">Now with Kaneki at their ranks, the Aogiri Tree takes the offensive against the CCG, and Amon is introduced to Mado's daughter Akira, who is assigned to become his new partner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S02E03%20-%20Hangman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Hangman
+          </div>
+          <div class="plot">Kaneki and Ayato rescue Naki, one of Jason's old cohorts from CCG custody, and prepare to storm the maximum security prison for Ghouls known as &quot;Cochlea&quot;. Meanwhile, Tōka pays a visit to the university were Kaneki used to attend, where she has an encounter with Hideyoshi.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S02E04%20-%20Deeper%20Layers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Deeper Layers
+          </div>
+          <div class="plot">Aogiri commences their invasion of Cochlea and free a majority of the imprisoned ghouls while Amon and Akira visit the prison to learn more about Aogiri's plan from Donato Porpora. Amid the battles between the CCG, Cochlea security and ghouls, Kaneki meets a ghoul named Orca with orders to break him free, but is attacked by him instead.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S02E05%20-%20Rift-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Rift
+          </div>
+          <div class="plot">The battle at Cochlea intensifies on several fronts and when Ayato is to be almost killed, he is rescued in the nick of time by Kaneki, who undergoes a bizarre transformation after consuming the bodies of several dead Ghouls to empower himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S02E06%20-%20Thousand%20Paths-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Thousand Paths
+          </div>
+          <div class="plot">The appearance of the &quot;One-Eyed-Ghoul&quot;, considered the most dangerous of them all, leaves the CCG in a state of alert while Kaneki writhes in pain due to his new condition.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S02E07%20-%20Permeation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Permeation
+          </div>
+          <div class="plot">Worried about Kaneki's disappearance, Hinami wants to do something for him, but is uncertain about it, until Kaneki appears at Anteiku and she calls for Touka to see him again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S02E08%20-%20Old%20Nines-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Old Nines
+          </div>
+          <div class="plot">During Kaneki's visit with Yoshimura, he asks for information about the Owl, and is told the tragic tale of a young ghoul named Kuzen. Touka makes plans to move out of Anteiku. A snowy day brings with it brisk business at the coffee shop.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S02E09%20-%20City%20in%20Waiting-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - City in Waiting
+          </div>
+          <div class="plot">Yoshitoki is granted permission to execute the operation to eradicate the Owl. The many CCG officers involved in the mission take time beforehand to write any last words they might have, as the 20th Ward is cordoned off and its civilians evacuated.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S02E10%20-%20Last%20Rain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Last Rain
+          </div>
+          <div class="plot">The battle between CCG and Anteiku continues, and Koma, Irimi, and Yoshimura each engage the special investigators. When a civilian gets caught in the middle, Hachikawa continues to press his attack unabated. Shinohara receives some unexpected advice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S02E11%20-%20Deluge%20of%20Flowers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Deluge of Flowers
+          </div>
+          <div class="plot">Suzuya is left to face the newly-arrived one-eyed Owl on his own. Aogiri Tree joins the battle against CCG, who find themselves overwhelmed by the sheer number of opponents. Meanwhile, Kaneki confronts Amon, who stands in his way to Anteiku.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S02E12%20-%20Ken-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Ken
+          </div>
+          <div class="plot">After waking up in Anteiku, he hears someone mention that &quot;making coffee is difficult.&quot; When the person comes out, it is revealed to be Hide. By the time that Kaneki realises that he has his ghoul eye activated, Hide tells him &quot;I Knew.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S03E01%20-%20START%20Those%20Who%20Hunt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - START: Those Who Hunt
+          </div>
+          <div class="plot">The members of Quinx Squad, an experimental division of Akira Mado's CCG squad, and composed of investigators who have been surgically made part ghoul, work to track down the A-rated ghoul Torso.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S03E02%20-%20member%20Fragments-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - member: Fragments
+          </div>
+          <div class="plot">Haise loses control while fighting Orochi, and has to be subdued. Later at the Chateau, Haise berates Urie for not getting the squad to safety, and removes him from his squad captaincy. Urie seeks to increase his power.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S03E03%20-%20fresh%20Eve-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - fresh: Eve
+          </div>
+          <div class="plot">Urie speaks to Chief Washu about having his Frame level increased. With a mission coming up, the Quinxes try to get Saiko to come to work. Donato asks Haise about his missing memories. The squad goes undercover.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S03E04%20-%20MAIN%20Auction-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - MAIN: Auction
+          </div>
+          <div class="plot">The Clowns act as auctioneers for a human auction, in which Mutsuki finds himself embroiled. CCG forces surround the complex in which the auction is being held, with orders to exterminate the ghouls inside--especially Big Madam.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S03E05%20-%20PresS%20Night%20of%20Scattering-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - PresS: Night of Scattering
+          </div>
+          <div class="plot">The Quinx Squad rushes to save Mutsuki from Kanae. The Owl goes on a seemingly unstoppable rampage. Urie is frustrated when he is assigned escort duty. Ato Squad meets resistance trying to secure the monitor room.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S03E06%20-%20Turn%20In%20the%20End-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Turn: In the End
+          </div>
+          <div class="plot">Takizawa continues his offensive against Haise on the main stage. Shirazu tries to get Saiko to help him subdue Nutcracker in the monitor room. Urie pursues Big Madam, and feels the effects of his increased Frame level.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S03E07%20-%20Mind%20Days%20of%20Recollections-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Mind: Days of Recollections
+          </div>
+          <div class="plot">Haise asks Arima to allow him to take custody of Hinami, and the remaining ghouls retreat. Following an awards ceremony where many of the investigators are promoted, Haise hosts a celebratory dinner at the Chateau.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S03E08%20-%20TAKe%20One%20Who%20Writhes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - TAKe: One Who Writhes
+          </div>
+          <div class="plot">Tsukiyama's condition worsens. Tatara and Ayato argue about rescuing Hinami. Shirazu finds it difficult to take possession of the Nutcracker quinque. Quinx Squad begins a new joint investigation with S1 Squad.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S03E09%20-%20Play%20Departed%20Spirit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Play: Departed Spirit
+          </div>
+          <div class="plot">Having seen a photo of Haise, Tsukiyama bounces back and races to see him. Haise takes the rest of the squad to Uta's shop to be fitted for masks. Kijima releases a shocking video on the CCG website to draw Rose out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S03E10%20-%20Think%20Sway-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Think: Sway
+          </div>
+          <div class="plot">Eto drops in on a defeated Kanae, offering to help. Shirazu decides he needs to make a fresh start. Ui finally consents to Haise's idea of an undercover fact-finding mission. Haise grows frustrated probing into his past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S03E11%20-%20WritE%20The%20Absent%20One-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - WritE: The Absent One
+          </div>
+          <div class="plot">Matsumae and Mairo try to hold off the investigators long enough for Shu to escape. Haise and Shu face each other on the building's helipad. Quinx Squad has their hands full when a powerful ghoul stands in their way.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S03E12%20-%20Beautiful%20Dream%20Daybreak-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Beautiful Dream: Daybreak
+          </div>
+          <div class="plot">Eto arrives on the rooftop, spurring Kanae to attack Haise, who must also reason with Kaneki. With the other squad members on the ropes, Shirazu goes all-out to stop Noro. Kanae and Tsukiyama reach an understanding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S04E01%20-%20Place%20And%20So%2C%20Once%20Again-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Place: And So, Once Again
+          </div>
+          <div class="plot">CCG locates Aogiri Tree's headquarters. Hinami's execution is scheduled. Takatsuki's editor is questioned over whether or not she is a ghoul. Before Takatsuki can be questioned, however, she makes a stunning public announcement.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S04E02%20-%20VOLT%20White%20Darkness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - VOLT: White Darkness
+          </div>
+          <div class="plot">Ayato leads a raiding party on Cochlea to rescue Hinami, He is joined by Touka and Yomo. Haise tries to get Hinami to safety, but is confronted by Furuta. As the others flee through the basement, Haise confronts Arima.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S04E03%20-%20Union%20Close%20Game-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Union: Close Game
+          </div>
+          <div class="plot">CCG's assault on Aogiri Tree on Rushima Island continues, and Urie and Saiko are anxious to rescue Mutsuki. Tatara and Kurona both make their stands against the investigators. Akira receives help from a surprise source.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S04E04%20-%20Vive%20Those%20Left%20Behind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Vive: Those Left Behind
+          </div>
+          <div class="plot">As the fighting on Rushima reaches its climax, Akira makes a fateful decision. Urie, together with the new members of the Quinx Squad, continue their search for Mutsuki. Arima makes a startling revelation to Kaneki.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S04E05%20-%20MovE%20Confluence%2C%20Confusion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - MovE: Confluence, Confusion
+          </div>
+          <div class="plot">Kaneki assembles the remaining Aogiri Tree and Anteiku members to announce the creation of a new ghoul organization. Akira's course of treatment takes a surprise turn. Yomo and Touka both try to make peace with their past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S04E06%20-%20FACE%20Effulgence-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - FACE: Effulgence
+          </div>
+          <div class="plot">The CCG investigators that were close to Haise react to his leaving. Furuta takes over as the head of the CCG, and sets forth a new strategy to deal with the ghouls. The Clowns begin to riot, threatening CCG Headquarters.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S04E07%20-%20Proof%20Bonds-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Proof: Bonds
+          </div>
+          <div class="plot">Under Furuta, CCG cracks down hard on the ghoul community, forcing Goat to go underground. Takeomi and Yoriko set a wedding date. Mutsuki locates Kaneki and invites him back. Touka takes the next step with Kaneki.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S04E08%20-%20Incarnation%20Awakened%20Child-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Incarnation: Awakened Child
+          </div>
+          <div class="plot">Mutsuki leads the Oggais in a raid on Goat's underground lair. Urie and Kuroiwa confront Furuta in his office over his fitness to lead. Kaneki and Suzuya face each other in combat. Kaneki goes to drastic lengths to protect Touka.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S04E09%20-%20Morse%20Remembrances-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Morse: Remembrances
+          </div>
+          <div class="plot">As Dr. Kanou visits his family's gravesite, Kurona confronts him. CCG gains a new ally and expert on ghouls. Hide enlists the help of Akira and Amon to plead his case to CCG. A despondent Mutsuki lashes out at Saiko and Urie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S04E10%20-%20Call%20The%20Far%20Side%20of%20Tragedy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Call: The Far Side of Tragedy
+          </div>
+          <div class="plot">While Kaneki's body lies dormant in its giant kagune, he has an inner dialogue with Rize. Urie talks to Mutsuki about the hardships of going it alone. A crisis places the city on alert, forcing CCG and the ghouls to work together.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S04E11%20-%20ACT%20Encounters-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - ACT: Encounters
+          </div>
+          <div class="plot">Following increasing dragon activity and the discovery of a second core, Kaneki and Ayato volunteer to go and deal with it. When Kaiko and the members of V launch an attack, CCG and the ghouls must fight together to stop them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tokyo%20Ghoul%20-%20S04E12%20-%20The%20Final%20Episode-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - The Final Episode
+          </div>
+          <div class="plot">Kaneki and Furuta continue their duel below the streets of Tokyo, as CCG and Goat jointly continue fighting the members of V aboveground. Kaneki comes to terms with the events of the last several years.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
