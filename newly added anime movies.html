@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/x-icon" href="images\favicon\favicon.ico">.
+    <title>Newly Added Anime - Movies</title>
+    <script type="text/javascript" src="./lib/jquery.js"></script>
+    <link rel="stylesheet" href="./lib/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="./lib/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="./lib/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="./lib/deadsix.js"></script>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="text/javascript">
+                $(document).ready(function() {
+                                        startUP();
+                                });
+                                $(window).on(&#39;hashchange&#39;, function() {
+                                  checkHash();
+                                });
+            
+</script>
+<link rel="stylesheet" href="lib/lib 2/media queries movies.css">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="largeContainer">
+      <!-- Add the menu button -->
+       <button id="menu-button">Menu</button>
+      <!-- Add the sidebar navigation -->
+       <div id="sidebar-nav">
+       <ul>
+       <li><a href="https://www.onestoptvdelight.co.za/newly added anime movies.html"target="_blank">Newly Added:Anime Movies</a></li>
+       <li><a href="https://www.onestoptvdelight.co.za/newly added tv shows.html"target="_blank">Newly Added:Anime TV Shows</a></li>
+       <li><a href="https://www.onestoptvdelight.co.za/full anime movies.html"target="_blank">Full Anime Movie List</a></li>
+       <li><a href="https://forms.gle/PQD2pqESWVzFCscc9"target="_blank">CheckList Link Page Newly Added Anime Movie List:</a></li>
+       </ul>
+       </div>
+      <div class="infoContainer">
+        <div class="homepage-link-container">
+           <!-- add home button -->
+       <a href="https://www.onestoptvdelight.co.za/index.html" class="homepage-link">Home Button</a>
+         </div>
+        <div class="infoBackTitleContainer">
+          <span class="infoBackTitle">Newly Added</span>
+          <hr class="subTitleSeprator" />
+          <span class="infoBackTitleSub">Anime Movies</span>
+        </div>
+        <div class="infoContainerTextContainer">
+          <div class="name">
+            <span class="titleNoBlock">Total Movies:</span>
+            <span>6</span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Request Page Link:</span>
+            <span><a href="https://forms.gle/rbLCy1hxpxC5SXG1A"target="_blank">Request File</a></span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Top 10 Picked Anime Movies This Month</span>
+            <span><a href="https://www.onestoptvdelight.co.za/top 10 anime movies.html"target="_blank">Top 10</a></span>
+          </div>
+        </div>
+      </div>
+        <div id="searchContainer">
+        <input type="text" autocomplete="off" onfocus="this.value=''; searchOnPage('');"
+        onblur="if(this.value==''){this.value='Search TV Show Name'};"
+        onkeyup="searchOnPage(this.value.toLowerCase());"
+        id="search_box" value="Search TV Show Name" />
+        <input type="submit" id="search_button" value="Search" />
+        <div id="search_result"></div>
+        </div>
+        <div class="dropdown-container">
+         <div id="genre-select-container">
+         <label for="genre-select" class="genre-label">Search By Genre:</label>
+         <select id="genre-select">
+         <option value="all">All</option>
+         </select>
+         </div>
+         <div id="date-select-container">
+           <label for="date-select" class="date-label">Search By Year:</label>
+           <select id="date-select">
+             <option value="all">All</option>
+           </select>
+         </div>
+         <div id="age-rating-select-container">
+         <label for="age-rating-select" class="age-rating-label">Search By Age Rating:</label>
+         <select id="age-rating-select">
+         <option value="all">All</option>
+        </select>
+        </div>
+        <div id="rating-select-container">
+        <label for="rating-select" class="rating-label">Search By Rating:</label>
+        <select id="rating-select">
+        <option value="all">All</option>
+        </select>
+        </div>
+        </div>
+       <div id="no-results-message" class="no-results-message"></div>
+       
+
+
+      <div id="movie_1" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="1">
+          <div class="fanArt" id="fanart_1">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Black%20Butler%20-%20Book%20of%20the%20Atlantic%20%282017%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="1" id="plot_1_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="1" id="plot_1">
+          <span class="value">Ciel learns of a &quot;Aurora Society&quot;, that is rumored to be researching how to bring the dead back to life. Their next meeting is scheduled to be conducted on the ship Campania, voyaging across the Atlantic Ocean. Much to Ciel's dismay, Elizabeth &quot;Lizzy&quot; Midford, is taking the same ship, thus leaving him with no choice but to get aboard as well.</span>
+        </div>
+        <span class="showId">#1</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="1">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Black%20Butler%20-%20Book%20of%20the%20Atlantic%20%282017%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Black Butler: Book of the Atlantic</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2017</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">7.6</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Action, Comedy, Fantasy, Mystery</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">A-1 Pictures</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hiroyuki Yoshino<br /> Yana Toboso</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Noriyuki Abe</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Unknown</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=iGqRJGhH0LQ"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_2" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="2">
+          <div class="fanArt" id="fanart_2">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Kaiju%20No.%208%20-%20Mission%20Recon%20%282025%29%201080p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="2" id="plot_2_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="2" id="plot_2">
+          <span class="value">In a Kaiju-filled Japan, Kafka Hibino works in monster disposal. After reuniting with his childhood friend Mina Ashiro, a rising star in the anti-Kaiju Defense Force, he decides to pursue his abandoned dream of joining the Force, when he suddenly transforms into the powerful &quot;Kaiju No. 8.&quot; An action-packed recap of the first season of Kaiju No. 8 and a new original episode, Hoshina's Day Off.</span>
+        </div>
+        <span class="showId">#2</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="2">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Kaiju%20No.%208%20-%20Mission%20Recon%20%282025%29%201080p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Kaiju No. 8: Mission Recon</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">7.0</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Action, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Production I.G, Shueisha, TOHO</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Naoya Matsumoto<br /> Ichiro Okouchi</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Shigeyuki Miya<br /> Tomomi Kamiya</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Unknown</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=D8cVDarxgHg"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_3" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="3">
+          <div class="fanArt" id="fanart_3">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/My%20Hero%20Academia%20-%20You%27re%20Next%20%282024%29%201080p%20EAC3-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="3" id="plot_3_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="3" id="plot_3">
+          <span class="value">In a society devastated by the effects of an all-out war between heroes and villains, a mysterious giant fortress suddenly appears, engulfing towns and people one after another. Then, a man reminiscent of All Might, the 'symbol of peace', stands in front of Izuku and his friends...</span>
+        </div>
+        <span class="showId">#3</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="3">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/My%20Hero%20Academia%20-%20You%27re%20Next%20%282024%29%201080p%20EAC3-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">My Hero Academia: You're Next</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2024</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">7.1</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Action, Adventure, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">BONES, TOHO, Yomiuri Telecasting Corporation</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Yosuke Kuroda<br /> Kohei Horikoshi</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Tensai Okamura</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=22hBq1cvemE"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+<script>
+const menuButton = document.getElementById('menu-button');
+const sidebarNav = document.getElementById('sidebar-nav');
+const infoContainer = document.querySelector('.infoContainerTextContainer');
+const infoBackTitleContainer = document.querySelector('.infoBackTitleContainer');
+
+menuButton.addEventListener('click', () => {
+  sidebarNav.classList.toggle('open');
+  menuButton.classList.toggle('menu-button-open');
+
+  // Toggle the sidebar-open class on the body
+  document.body.classList.toggle('sidebar-open');
+
+  // Toggle the sidebar-nav-open class on the infoContainer and infoBackTitleContainer
+  infoContainer.classList.toggle('sidebar-nav-open');
+  infoBackTitleContainer.classList.toggle('sidebar-nav-open');
+});
+</script>
+	  <script type="text/javascript">
+                      $(document).ready(function() {
+                                $(&quot;.fancybox&quot;).fancybox({
+                                                openEffect : &#39;elastic&#39;,
+                                                closeEffect     : &#39;elastic&#39;,
+                                                helpers : {
+                                                        title : {
+                                                                type : &#39;float&#39;
+                                                        }
+                                                }
+                                                });
+                        });
+                
+</script>
+<script src="lib/sortMovies.js"></script>
+<script src="lib/filter dropdowns.js" defer></script>
+ <script src="lib/rating-filter.js" defer></script>
+       <!-- Add the no-results-message element -->
+<div id="no-results-message" style="display: none;"></div>
+<script src="lib/Iframe movies.js"></script>
+  </body>
+</html>

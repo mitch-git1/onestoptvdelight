@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name=ìviewportî content=ìwidth=device-width, initial-scale=1.0î
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/x-icon" href="images\favicon\favicon.ico">.
+    <title>Newly Added - Movies</title>
+    <script type="text/javascript" src="./lib/jquery.js"></script>
+    <link rel="stylesheet" href="./lib/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="./lib/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="./lib/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="./lib/deadsix.js"></script>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="text/javascript">
+                $(document).ready(function() {
+                                        startUP();
+                                });
+                                $(window).on(&#39;hashchange&#39;, function() {
+                                  checkHash();
+                                });
+            
+</script>
+<link rel="stylesheet" href="lib/media queries movies.css">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="largeContainer">
+      <!-- Add the menu button -->
+       <button id="menu-button">Menu</button>
+      <!-- Add the sidebar navigation -->
+       <div id="sidebar-nav">
+       <ul>
+       <li><a href="https://www.onestoptvdelight.co.za/newly added movies.html"target="_blank">Newly Added:Movies</a></li>
+       <li><a href="https://www.onestoptvdelight.co.za/newly added tv shows.html"target="_blank">Newly Added:TV Shows</a></li>
+       <li><a href="https://www.onestoptvdelight.co.za/full movies.html"target="_blank">Full Movie List</a></li>
+       <li><a href="https://forms.gle/afjM67umTqWp4q5h9"target="_blank">CheckList Link Page Newly Added:Movies</a></a></li>
+       </ul>
+       </div>
+      <div class="infoContainer">
+        <div class="homepage-link-container">
+           <!-- add home button -->
+       <a href="https://www.onestoptvdelight.co.za/index.html" class="homepage-link">Home Button</a>
+         </div>
+        <div class="infoBackTitleContainer">
+          <span class="infoBackTitle">Newly Added</span>
+          <hr class="subTitleSeprator" />
+          <span class="infoBackTitleSub">Movies</span>
+        </div>
+        <div class="infoContainerTextContainer">
+          <div class="name">
+            <span class="titleNoBlock">Total Movies:</span>
+            <span>16</span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Request Page Link:</span>
+            <span><a href="https://forms.gle/rbLCy1hxpxC5SXG1A"target="_blank">Request File</a></span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Top 10 Picked Movies This Month</span>
+            <span><a href="https://www.onestoptvdelight.co.za/top 10 movies.html"target="_blank">Top 10</a></span>
+          </div>
+        </div>
+      </div>
+        <div id="searchContainer">
+        <input type="text" autocomplete="off" onfocus="this.value=''; searchOnPage('');"
+        onblur="if(this.value==''){this.value='Search TV Show Name'};"
+        onkeyup="searchOnPage(this.value.toLowerCase());"
+        id="search_box" value="Search TV Show Name" />
+        <input type="submit" id="search_button" value="Search" />
+        <div id="search_result"></div>
+        </div>
+        <div class="dropdown-container">
+         <div id="genre-select-container">
+         <label for="genre-select" class="genre-label">Search By Genre:</label>
+         <select id="genre-select">
+         <option value="all">All</option>
+         </select>
+         </div>
+         <div id="date-select-container">
+           <label for="date-select" class="date-label">Search By Year:</label>
+           <select id="date-select">
+             <option value="all">All</option>
+           </select>
+         </div>
+         <div id="age-rating-select-container">
+         <label for="age-rating-select" class="age-rating-label">Search By Age Rating:</label>
+         <select id="age-rating-select">
+         <option value="all">All</option>
+        </select>
+        </div>
+        <div id="rating-select-container">
+        <label for="rating-select" class="rating-label">Search By Rating:</label>
+        <select id="rating-select">
+        <option value="all">All</option>
+        </select>
+        </div>
+        </div>
+       <div id="no-results-message" class="no-results-message"></div>
+	  	  
+
+      <div id="movie_1" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="1">
+          <div class="fanArt" id="fanart_1">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/28%20Years%20Later%20%282025%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="1" id="plot_1_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="1" id="plot_1">
+          <span class="value">Twenty-eight years since the rage virus escaped a biological weapons laboratory, now, still in a ruthlessly enforced quarantine, some have found ways to exist amidst the infected. One such group lives on a small island connected to the mainland by a single, heavily-defended causeway. When one member departs on a mission into the dark heart of the mainland, he discovers secrets, wonders, and horrors that have mutated not only the infected but other survivors as well.</span>
+        </div>
+        <span class="showId">#1</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="1">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/28%20Years%20Later%20%282025%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">28 Years Later</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">6.9</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Horror, Thriller, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Columbia Pictures, DNA Films, Decibel Films, TSG Entertainment</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Alex Garland</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Danny Boyle</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Rated R</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=IYGG55qwQZQ"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_2" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="2">
+          <div class="fanArt" id="fanart_2">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Black%20Dynamite%20%282009%29%20720p%20AC3-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="2" id="plot_2_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="2" id="plot_2">
+          <span class="value">This is the story of 1970s African-American action legend Black Dynamite. The Man killed his brother, pumped heroin into local orphanages, and flooded the ghetto with adulterated malt liquor. Black Dynamite was the one hero willing to fight The Man all the way from the blood-soaked city streets to the hallowed halls of the Honky House.</span>
+        </div>
+        <span class="showId">#2</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="2">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Black%20Dynamite%20%282009%29%20720p%20AC3-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Black Dynamite</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2009</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">7.1</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Comedy, Action</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Six Point Harness, Destination Films, Goliath Entertainment, Ars Nova/span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Michael Jai White<br /> Byron Minns<br /> Scott Sanders</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Scott Sanders</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Rated R</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=96Y24a0cyCE"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_3" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="3">
+          <div class="fanArt" id="fanart_3">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Happy%20Gilmore%20%281996%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="3" id="plot_3_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="3" id="plot_3">
+          <span class="value">Failed hockey player-turned-golf whiz Happy Gilmore &mdash; whose unconventional approach and antics on the green courts the ire of rival Shooter McGavin &mdash; is determined to win a PGA tournament so he can save his granny's house with the prize money. Meanwhile, an attractive tour publicist tries to soften Happy's image.</span>
+        </div>
+        <span class="showId">#3</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="3">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Happy%20Gilmore%20%281996%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Happy Gilmore</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1996</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">6.7</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Comedy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Universal Pictures, Brillstein-Grey Entertainment, Robert Simonds Productions</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Tim Herlihy<br /> Adam Sandler</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Dennis Dugan</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=y1emDAYCfVQ"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_4" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="4">
+          <div class="fanArt" id="fanart_4">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Happy%20Gilmore%202%20%282025%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="4" id="plot_4_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="4" id="plot_4">
+          <span class="value">Happy Gilmore isn't done with golf &mdash; not by a long shot. Since his retirement after his first Tour Championship win, Gilmore returns to finance his daughter's ballet classes.</span>
+        </div>
+        <span class="showId">#4</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="4">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Happy%20Gilmore%202%20%282025%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Happy Gilmore 2</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">6.7</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Comedy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Happy Madison Productions</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Tim Herlihy<br /> Adam Sandler</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kyle Newacheck</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=YKzRPFvky9Y"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_5" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="5">
+          <div class="fanArt" id="fanart_5">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/I%20Am%20Street%20Fighter%20%282012%29%201080p%20AC3-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="5" id="plot_5_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="5" id="plot_5">
+          <span class="value">For one of the longest-running game franchises in history, Street Fighter creators Capcom needed something exceedingly special to accompany the release of their 25th anniversary edition of the game.  AREA 5 produced, shot, edited, and finished a documentary that spans three countries, more than two decades, and tells the story of how a game not only birthed an entire genre, but changed the lives of a generation.</span>
+        </div>
+        <span class="showId">#5</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="5">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/I%20Am%20Street%20Fighter%20%282012%29%201080p%20AC3-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">I Am Street Fighter</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2012</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">6.0</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Documentary</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Capcom, AREA 5</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Jason Bertrand<br /> Matt Chandronait<br /> Rick Curnutte<br /> Ryan O'Donnell/span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Jason Bertrand</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Unknown</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="No Trailer"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_6" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="6">
+          <div class="fanArt" id="fanart_6">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Kim%20Possible%20%282019%29%20720p%20AC3-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="6" id="plot_6_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="6" id="plot_6">
+          <span class="value">Everyday teen hero Kim Possible and her best friend Ron Stoppable embark on their freshman year of high school, all while saving the world from evil villains. While Kim and Ron have always been one step ahead of their opponents, navigating the social hierarchy of high school is more challenging than the action-hero ever imagined. With Drakken and Shego lurking in the wings, Kim must rely on her family and Team Possible&mdash;Ron, tech-genius Wade, new friend Athena, and Rufus, a Naked mole-rat.</span>
+        </div>
+        <span class="showId">#6</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="6">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Kim%20Possible%20%282019%29%20720p%20AC3-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Kim Possible</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2019</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">5.5</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Action, Adventure, Comedy, TV Movie</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Omnifilm Entertainment, Disney Enterprises, Inc.</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Josh A. Cagan<br /> Mark McCorkle<br /> Bob Schooley</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Adam B. Stein<br /> Zach Lipovsky</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=TNRQT9ODqDI"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_7" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="7">
+          <div class="fanArt" id="fanart_7">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Kim%20Possible%20Movie%20-%20So%20the%20Drama%20%282005%29%20720p%20AC3-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="7" id="plot_7_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="7" id="plot_7">
+          <span class="value">Dr. Drakken has an evil new plot for world domination, but his ultimate success depends upon finding out KP's weakness which may involve a new hottie at Middleton High School named Eric, who suddenly sparks feelings in Ron about Kim that resemble much more than friendship. To make matters worse, Bueno Nacho, Ron's favorite fast food chain has turned sour on him by bombarding him with little Devils</span>
+        </div>
+        <span class="showId">#7</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="7">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Kim%20Possible%20Movie%20-%20So%20the%20Drama%20%282005%29%20720p%20AC3-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Kim Possible Movie: So the Drama</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2005</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">6.9</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Adventure, Family, Action, Comedy, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Disney Television Animation</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Mark McCorkle<br /> Bob Schooley<br /> Madellaine Paxson<br /> Gary Sperling</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Steve Loter</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=Zf4T9fYjLNI"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_8" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="8">
+          <div class="fanArt" id="fanart_8">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Mortal%20Kombat%20%281995%29%20720p%20AC3-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="8" id="plot_8_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="8" id="plot_8">
+          <span class="value">For nine generations an evil sorcerer has been victorious in hand-to-hand battle against his mortal enemies. If he wins a tenth Mortal Kombat tournament, desolation and evil will reign over the multiverse forever. To save Earth, three warriors must overcome seemingly insurmountable odds, their own inner demons, and superhuman foes in this action/adventure movie based on one of the most popular video games of all time.</span>
+        </div>
+        <span class="showId">#8</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="8">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Mortal%20Kombat%20%281995%29%20720p%20AC3-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Mortal Kombat</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1995</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">5.9</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Action, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">New Line Cinema, Threshold Entertainment</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Kevin Droney</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Paul W. S. Anderson</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=JHIfHL5UgFs"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_9" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="9">
+          <div class="fanArt" id="fanart_9">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/images/icons/fanartPlaceholder.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="9" id="plot_9_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="9" id="plot_9">
+          <span class="value"></span>
+        </div>
+        <span class="showId">#9</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="9">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/images/icons/noPoster.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Mortal Kombat REBIRTH</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2010</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">0.0</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value"></span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="No Trailer"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_10" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="10">
+          <div class="fanArt" id="fanart_10">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Mortal%20Kombat%20-%20Annihilation%20%281997%29%20720p%20AC3-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="10" id="plot_10_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="10" id="plot_10">
+          <span class="value">A group of heroic warriors has only six days to save the planet in &quot;Mortal Kombat Annihilation.&quot; To succeed they must survive the most spectacular series of challenges any human, or god, has ever encountered as they battle an evil warlord bent on taking control of Earth.</span>
+        </div>
+        <span class="showId">#10</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="10">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Mortal%20Kombat%20-%20Annihilation%20%281997%29%20720p%20AC3-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Mortal Kombat: Annihilation</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1997</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">4.5</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Action, Fantasy, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">New Line Cinema, Threshold Entertainment</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Joshua Wexler<br /> Bryce Zabel<br /> Lawrence Kasanoff<br /> John Tobias</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">John R. Leonetti</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=ObHbkrh8qZM"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_11" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="11">
+          <div class="fanArt" id="fanart_11">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Mortal%20Kombat%20-%20The%20Journey%20Begins%20%281995%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="11" id="plot_11_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="11" id="plot_11">
+          <span class="value">As the three chosen defenders of Earth travel to Shang Tsung's island, Rayden teaches them how to become the masters of their destinies, overcome their foes, and control their powers. Liu Kang, Sonya Blade and Johnny Cage must defeat Shang Tsung, Sub Zero, Scorpion and Goro in a tournament of Mortal Kombat if they are to survive and save the fate of the earth.</span>
+        </div>
+        <span class="showId">#11</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="11">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Mortal%20Kombat%20-%20The%20Journey%20Begins%20%281995%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Mortal Kombat: The Journey Begins</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1995</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">3.9</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Action, Animation</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Threshold Entertainment, New Line Home Entertainment</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Kevin Droney</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Joseph Francis</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=aeVKev74ku0"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_12" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="12">
+          <div class="fanArt" id="fanart_12">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Recess%20Christmas%20-%20Miracle%20On%20Third%20Street%20%282001%29%20480p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="12" id="plot_12_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="12" id="plot_12">
+          <span class="value">Principal Prickly gets his car stuck in a snowbank and decides it has to be the Recess gang's fault, but the teachers look back and remember all the good times they've had with T.J. and the rest of the gang.</span>
+        </div>
+        <span class="showId">#12</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="12">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Recess%20Christmas%20-%20Miracle%20On%20Third%20Street%20%282001%29%20480p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Recess Christmas: Miracle On Third Street</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2001</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">6.3</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Comedy, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Disney Television Animation</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Chuck Sheetz</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=yjrerea_mZs"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_13" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="13">
+          <div class="fanArt" id="fanart_13">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Recess%20-%20All%20Growed%20Down%20%282003%29%20480p%20AC3-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="13" id="plot_13_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="13" id="plot_13">
+          <span class="value">T.J. and The Recess Gang are kidnapped by the Third Street School's kindergartners, who are in turn being bullied by a new kid in their class.</span>
+        </div>
+        <span class="showId">#13</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="13">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Recess%20-%20All%20Growed%20Down%20%282003%29%20480p%20AC3-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Recess: All Growed Down</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2003</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">6.5</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Comedy, Animation</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Paul &amp; Joe Productions, Disney Television Animation</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Bart Jennett<br /> Elijah Aron<br /> Mark Drop<br /> Jonathan Rosenthal</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Howy Parkins<br /> Brenda Piluso<br /> Chuck Sheetz</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=_E304JZmx4k"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_14" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="14">
+          <div class="fanArt" id="fanart_14">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Recess%20-%20School%27s%20Out%20%282001%29%201080p%20AC3-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="14" id="plot_14_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="14" id="plot_14">
+          <span class="value">The school year is finally ending, and T.J. Detweiler is looking forward to summer. But boredom quickly sets in when his friends leave for camp &mdash; until T.J. uncovers an evil plot to do away with summer vacation! A crazy former principal, Dr. Benedict, is planning to use a laser beam to alter the weather and create permanent winter. Faced with the dire threat of year-round school, T.J. rounds up the RECESS gang and bands together with some unexpected allies &mdash; Miss Finster and Principal Prickly &mdash; in a nonstop adventure to save everyone's summer break. As the kids discover the heroes inside themselves, a platoon of wacky characters, far-out music, and sci-fi surprises turn this madcap mission into a major victory for fun!</span>
+        </div>
+        <span class="showId">#14</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="14">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Recess%20-%20School%27s%20Out%20%282001%29%201080p%20AC3-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Recess: School's Out</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2001</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">6.6</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Animation, Comedy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Disney Television Animation, Walt Disney Pictures</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Jonathan Greenberg<br /> Joe Ansolabehere<br /> Paul Germain</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Chuck Sheetz</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=OgBTaBQEFnw"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_15" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="15">
+          <div class="fanArt" id="fanart_15">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Recess%20-%20Taking%20the%20Fifth%20Grade%20%282003%29%20720p%20AC3-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="15" id="plot_15_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="15" id="plot_15">
+          <span class="value">Everyone's favorite fourth graders have graduated! It's an all-new school year for the kids &mdash; and the gang hits the fifth grade running! But they're stopped in their tracks when they discover some unwelcome changes &mdash; no pizza, no playground... no lockers! And to make things worse, their teacher turns out to be the cantankerous Miss Finster! It's all too much for T.J., who is determined to find a way to stand up for what the gang believes in and improve the school they love! The fifth grade brings out the best in everyone... even Miss Finster and Principal Prickly!</span>
+        </div>
+        <span class="showId">#15</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="15">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Recess%20-%20Taking%20the%20Fifth%20Grade%20%282003%29%20720p%20AC3-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Recess: Taking the Fifth Grade</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2003</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">6.5</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Comedy, Animation</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Disney Television Animation, Paul &amp; Joe Productions</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Elijah Aron<br /> Bart Jennett</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Howy Parkins</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=_E304JZmx4k"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_16" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="16">
+          <div class="fanArt" id="fanart_16">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Street%20Fighter%20II%20-%20The%20Animated%20Movie%20%281994%29%201080p%20AC3-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="16" id="plot_16_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="16" id="plot_16">
+          <span class="value">Bison, the ruthless leader of the international terrorist organization Shadowlaw, has been desperately searching for the greatest fighter on the planet for years. He finds it in Ryu, a young wanderer who never stays in one place long enough for Bison to find him. He does, however, get a fix on Ken Masters, an American martial arts champion who studied with Ryu as a child under the same master. Meanwhile, Major Guile of the United States Army is forced to team up with Chun Li from China in hopes of apprehending Bison and putting a stop his international ring of crime.</span>
+        </div>
+        <span class="showId">#16</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="16">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Street%20Fighter%20II%20-%20The%20Animated%20Movie%20%281994%29%201080p%20AC3-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Street Fighter II: The Animated Movie</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1994</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">7.1</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Action</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Group TAC, Capcom, Sedic</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Kenichi Imai<br /> Gisabur≈ç Sugii</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Gisabur≈ç Sugii</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=waR_eKC0FfI"target="_blank">trailer link</a></span>
+          </div>     
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+
+       <div class="footerSpacer"></div>
+      <div class="footerContainer">
+      <div class="footerTextContainer">
+      </div>
+      </div>
+
+<script>
+const menuButton = document.getElementById('menu-button');
+const sidebarNav = document.getElementById('sidebar-nav');
+const infoContainer = document.querySelector('.infoContainerTextContainer');
+const infoBackTitleContainer = document.querySelector('.infoBackTitleContainer');
+
+menuButton.addEventListener('click', () => {
+  sidebarNav.classList.toggle('open');
+  menuButton.classList.toggle('menu-button-open');
+
+  // Toggle the sidebar-open class on the body
+  document.body.classList.toggle('sidebar-open');
+
+  // Toggle the sidebar-nav-open class on the infoContainer and infoBackTitleContainer
+  infoContainer.classList.toggle('sidebar-nav-open');
+  infoBackTitleContainer.classList.toggle('sidebar-nav-open');
+});
+</script>
+	  <script type="text/javascript">
+                      $(document).ready(function() {
+                                $(&quot;.fancybox&quot;).fancybox({
+                                                openEffect : &#39;elastic&#39;,
+                                                closeEffect     : &#39;elastic&#39;,
+                                                helpers : {
+                                                        title : {
+                                                                type : &#39;float&#39;
+                                                        }
+                                                }
+                                                });
+                        });
+                
+</script>
+<script src="lib/sortMovies.js"></script>
+ <script src="lib/filter dropdowns.js" defer></script>
+ <script src="lib/rating-filter.js" defer></script>
+       <!-- Add the no-results-message element -->
+<div id="no-results-message" style="display: none;"></div>
+<script src="lib/Iframe movies.js"></script>
+  </body>
+</html>
