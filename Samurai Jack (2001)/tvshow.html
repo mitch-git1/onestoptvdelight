@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Samurai Jack
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Samurai Jack</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Samurai%20Jack%20%282001%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S01E01%20-%20I-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - I
+          </div>
+          <div class="plot">When Aku is reborn to set forth his reign of terror, the Emperor's son is sent off to learn the ways of the samurai. That boy becomes a man and attempts to slay Aku with a mighty sword, but Aku banishes him to the future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S01E02%20-%20II-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - II
+          </div>
+          <div class="plot">The Samurai lands in the future and is named Jack. He is enlisted by a race of dogs to destroy Aku.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S01E03%20-%20III-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - III
+          </div>
+          <div class="plot">Jack gets weapons and beats back Aku's army of beetles saving the canine race.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S01E04%20-%20IV-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - IV
+          </div>
+          <div class="plot">Jack helps free the Woolies from the tyrannical Chritchellites.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S01E05%20-%20V-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - V
+          </div>
+          <div class="plot">When Jack mistakenly destroys a group of scientists' chance to escape Aku, he and the scientists join forces to try and fix the problem, hopefully returning Jack home as well.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S01E06%20-%20VI-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - VI
+          </div>
+          <div class="plot">Jack and a mysterious woman goon a quest in an attempt to resolve their personal goals.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S01E07%20-%20VII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - VII
+          </div>
+          <div class="plot">Jack must get past three blind archers to reach an all-powerful wishing well.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S01E08%20-%20VIII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - VIII
+          </div>
+          <div class="plot">Jack meets up with Mad Jack and must battle his darker self.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S01E09%20-%20IX-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - IX
+          </div>
+          <div class="plot">Jack has an underwater adventure with a jelly-whale and sea monkeys while hunting foran ancient time portal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S01E10%20-%20X-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - X
+          </div>
+          <div class="plot">Jack goes through a cave full of challenges only to find an old warrior longing to reach Valhalla.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S01E11%20-%20XI-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - XI
+          </div>
+          <div class="plot">WhenJack and a Scotsman meet ona never-ending bridge, they end up shackled together and on the run from bounty hunters.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S01E12%20-%20XII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - XII
+          </div>
+          <div class="plot">Jack hooks up with some Chicago gangsters to try and get close to Aku.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S01E13%20-%20XIII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - XIII
+          </div>
+          <div class="plot">Aku tells fairy tales to the children to try and win them over to his side instead of Jack's.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S02E01%20-%20XIV-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - XIV
+          </div>
+          <div class="plot">Jack comes upon a monkey-man and agrees to train his tribe in the ways of defending themselves if the monkey-man teaches him how to &quot;jump good&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S02E02%20-%20XV-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - XV
+          </div>
+          <div class="plot">Three short stories: Jack vs. the Worm: Jack confronts a two-headed riddling serpent who will grant him his wish if he can answer their questions;  The Metal-Eaters: Jack confronts a family that feed on metal and eat Jack's sword; Jack, the Gargoyle and the Fairy: Jack tries to rescue a wish-granting fairy from a gargoyle so that she may grant his wish to return home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S02E03%20-%20XVI-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - XVI
+          </div>
+          <div class="plot">Jack is kidnapped and placed in a chain gang of warriors chosen to battle in front of a coliseum audience against the Dome of Doom's Champions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S02E04%20-%20XVII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - XVII
+          </div>
+          <div class="plot">The Scotsman needs Jack's help to save his kidnapped wife. But this woman is hardly the distressed damsel the Scotsman makes her out to be.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S02E05%20-%20XVIII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - XVIII
+          </div>
+          <div class="plot">Jack goes from destroyed village to another looking for those responsible, only to find the destruction was commissioned by Aku.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S02E06%20-%20XIX-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - XIX
+          </div>
+          <div class="plot">Jack comes upon ruins of a village and realizes it is his home. He then reflects on the past when he was a young boy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S02E07%20-%20XX-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - XX
+          </div>
+          <div class="plot">Jack travels vertically up a mountain with three monks to witness the magic of the mountain only to have the power of the mountain save his very life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S02E08%20-%20XXI-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - XXI
+          </div>
+          <div class="plot">When a flatulent dragon begins stinking out an entire village. Jack slays the beast and ventures inside it to cure to source of its bellyache.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S02E09%20-%20XXII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - XXII
+          </div>
+          <div class="plot">Aku hires the best hunters in the galaxy to track down the most elusive of prey - Samurai Jack.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S02E10%20-%20XXIII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - XXIII
+          </div>
+          <div class="plot">Aku sends out Demongo, the soul collector, to destroy Jack. Now Jack must fight all the mighty warrior souls that Demongo has collected.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S02E11%20-%20XXIV-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - XXIV
+          </div>
+          <div class="plot">When Jack has his sword and clothing stolen, he must give chase to a white rabbit who took them while trying to maintain his modesty.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S02E12%20-%20XXV-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - XXV
+          </div>
+          <div class="plot">Jack comes upon a battle where a mere 300 men are fighting a vast, unending army of robots and their evil robotic leader.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S02E13%20-%20XXVI-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - XXVI
+          </div>
+          <div class="plot">When a band of bikes mow over Jack's sandals, he goes on a hunt for the perfect footwear.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S03E01%20-%20XXVII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - XXVII
+          </div>
+          <div class="plot">Jack is turned into a chicken by a cranky wizard. While he tries to fix this, he gets caught by a &quot;handler&quot; and becomes a prize-winning Creature Combat fighter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S03E02%20-%20XXVIII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - XXVIII
+          </div>
+          <div class="plot">When a man's daughter is kidnapped by Aku's Children, Jack must infiltrate a rave to stop the musical brainwashing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S03E03%20-%20XXIX-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - XXIX
+          </div>
+          <div class="plot">Jack boards a train to his next destination only to be attacked by a couple of arguing bounty hunters.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S03E04%20-%20XXX-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - XXX
+          </div>
+          <div class="plot">Aku leads Jack to a graveyard where the dead begin to rise. An evil spirit takes over Jack's sword, leading Jack to defend himself against his own weapon. When Aku gets hold of the sword, Jack fears he's finally met his end.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S03E05%20-%20XXXI-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - XXXI
+          </div>
+          <div class="plot">Jack must read hieroglyphics, solve riddles and assemble a sacred scarab to call upon Ra for help in fighting evil ancient Egyptian shadow warriors.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S03E06%20-%20XXXII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - XXXII
+          </div>
+          <div class="plot">Jack must travel along a water creature, a mountain creature and a flying creature to get to a portal to return home. But once he reaches the portal, it is guarded by an undefeatable warrior who tells him that this portal is not for him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S03E07%20-%20XXXIII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - XXXIII
+          </div>
+          <div class="plot">An over-friendly creature begins following Jack, messing up Jack's every move along his quest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S03E08%20-%20XXXIV-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - XXXIV
+          </div>
+          <div class="plot">Jack and a Swamp Wizard travel to the four corners of the earth, collecting pieces that are meant to get Jack home. But when Aku reveals himself to be the Swamp Wizard, Jack must battle these pieces which are now being puppeteered by Aku's evil hands.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S03E09%20-%20XXXV-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - XXXV
+          </div>
+          <div class="plot">When Jack enters a spooky, old mansion and gets locked inside, he catches sight of a figure and sets after it to find out what is going on. As Jack is led further and further in, he discovers that the house and its inhabitants have an evil plan that involves&hellip;him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S03E10%20-%20XXXVI-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - XXXVI
+          </div>
+          <div class="plot">Jack falls into a hidden temple sanctuary to find monks trained like him in the style of the Ancient Master. The Ancient Master's Son then tells Jack of a portal to send him home, but in order to use it, his new friends must be sacrificed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S03E11%20-%20Birth%20of%20Evil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Birth of Evil
+          </div>
+          <div class="plot">When ancient gods try to destroy a powerful evil, they send one piece of the beast hurtling through space. This piece lands on earth, spreading its evil through the land. When it encroaches on an Emperor's empire, he takes it upon himself to destroy the evil, but ends up unleashing the evil that is Aku.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S03E12%20-%20XXXIX-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - XXXIX
+          </div>
+          <div class="plot">Jack is directed to a deathtrap-filled labyrinth which holds a diamond that can restore him to his time. Unfortunately a master thief also enters the labyrinth going for the item.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x13 - XXXIX Jack and the Labyrinth EDGE2020
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S04E01%20-%20XL-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - XL
+          </div>
+          <div class="plot">Aku sends a Ninja to destroy Jack who is busily helping a port town in distress.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S04E02%20-%20XLI%20-%20Robo%20Mondo%20-%20Bot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - XLI - Robo/Mondo - Bot
+          </div>
+          <div class="plot">Jack enters a village to discover that he is their Chosen One meant to embody the Robo-Samurai and destroy the Mondo-bot that has come to destroy them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S04E03%20-%20XLII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - XLII
+          </div>
+          <div class="plot">Jack is approached by a cool Samurai-punk who wants to battle with Jack in order to prove that he is the best.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S04E04%20-%20XLIII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - XLIII
+          </div>
+          <div class="plot">When Aku catches a cold and sneezes on Jack, Jack becomes infected with Aku&rsquo;s badness which begins to take over his entire body.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S04E05%20-%20XLIV-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - XLIV
+          </div>
+          <div class="plot">When Aku raises the bounty on Jack, the best bounty hunters in the world gather to capture him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S04E06%20-%20Scotsman%20Saves%20Jack-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Scotsman Saves Jack
+          </div>
+          <div class="plot">Jack has lost all memory of who he is and it's up to the Scotsman to put the pieces of the puzzle together to save the samurai.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S04E07%20-%20XLVII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - XLVII
+          </div>
+          <div class="plot">Jack helps save a Prince and Princess whose ship has been shot down to Earth by Aku.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S04E08%20-%20XLVIII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - XLVIII
+          </div>
+          <div class="plot">Tired of all the bounty hunters and robots failing, Aku fights Jack, mano y mano.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S04E09%20-%20XLIX-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - XLIX
+          </div>
+          <div class="plot">As Jack goes through fall, winter, spring and summer, he must battle the perils that each season brings.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S04E10%20-%20L-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - L
+          </div>
+          <div class="plot">Aku forces an old, ace robot assassin out of retirement to eliminate the ultimate mark - Jack.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S04E11%20-%20LI-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - LI
+          </div>
+          <div class="plot">Young Jack is brought to Africa for part of his training, but when his tribe is abducted, he must learn how to use their unique sword-like weapon &ndash; and fast!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S04E12%20-%20LII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - LII
+          </div>
+          <div class="plot">Jack finds a baby and the two travel together as Jack tries to return the boy to his mother.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            4x13 - LII Jack and the Baby EDGE2020
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S05E01%20-%20XCII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x1 - XCII
+          </div>
+          <div class="plot">It's been 50 years since we last saw Samurai Jack and time has not been kind to him. Aku has destroyed every time portal and Jack has stopped aging, a side effect of time travel. It seems he is cursed to just roam the land for all eternity. His past haunts him as well as a cult of assasins dedicated to killing him for Aku's glory.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S05E02%20-%20XCIII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x2 - XCIII
+          </div>
+          <div class="plot">Jack's will to survive is pushed to its absolute limits after a deadly, unseen foe launches a relentless surprise attack.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S05E03%20-%20XCIV-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x3 - XCIV
+          </div>
+          <div class="plot">Samurai Jack is gravely injured, but still decides to face one of the deadliest foes he's ever faced, Assassins from the Cult of Aku.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S05E04%20-%20XCV-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x4 - XCV
+          </div>
+          <div class="plot">Samurai Jack partners with a deadly assassin in order to escape a gargantuan creature that has swallowed them whole.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S05E05%20-%20XCVI-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - XCVI
+          </div>
+          <div class="plot">Samurai Jack fights to save a group of enslaved people from being harvested as the power source for a monstrous Mega-Robot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S05E06%20-%20XCVII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x6 - XCVII
+          </div>
+          <div class="plot">Ashi's search for Samurai Jack helps her to see his effect on the world after encountering numerous people and places where he has changed things for the better
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S05E07%20-%20XCVIII-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x7 - XCVIII
+          </div>
+          <div class="plot">Jack and Ashi overcome a series of dangerous physical and spiritual tests in order to recover Jack's sword.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S05E08%20-%20XCIX-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x8 - XCIX
+          </div>
+          <div class="plot">The burgeoning relationship between Jack and Ashi takes a turn after they are hunted by one of the galaxy's deadliest creatures.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S05E09%20-%20C-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x9 - C
+          </div>
+          <div class="plot">Samurai Jack's worst fear is realized when he faces off against Aku; the demon makes a shocking discovery about Ashi that puts her in grave danger.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Samurai%20Jack%20-%20S05E10%20-%20CI-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x10 - CI
+          </div>
+          <div class="plot">The fate of the entire universe hangs in the balance as Samurai Jack faces Aku.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Boondocks
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Boondocks</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Boondocks%20%282005%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E01%20-%20The%20Garden%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Garden Party
+          </div>
+          <div class="plot">When the owner of Granddad's house invites Granddad and the kids to his garden party, Huey tries to start trouble by saying Jesus was black and comparing Ronald Regan to the devil. Meanwhile, Riley and the owner's grandson (a soldier back from Iraq) play with guns and Granddad runs into the self-loathing black butler Uncle Rukus.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E02%20-%20The%20Trial%20of%20Robert%20Kelly-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Trial of Robert Kelly
+          </div>
+          <div class="plot">When the trial of R&amp;B star R. Kelly comes to town and Tom Dubois is the ADA, Huey and Riley are on opposing sides of the hot-button &quot;underage peeing&quot; issue. Meanwhile, Granddad and Uncle Ruckus argue about white people during a game of checkers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E03%20-%20Guess%20Hoe%27s%20Coming%20to%20Dinner-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Guess Hoe's Coming to Dinner
+          </div>
+          <div class="plot">Huey and Riley try to convince Grandad that his new girlfriend Cristal (like the champagne) is actually a prostitute. Of course, Grandad doesn't believe them, even when she spends all his money. But when A Pimp Named Slickback shows up, the truth is revealed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E04%20-%20Granddad%27s%20Fight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Granddad's Fight
+          </div>
+          <div class="plot">Grandad and Colonel Stinkmeaner have a beef. One man's blind. One man's feeble. Both are really, really old. Let &quot;The Slugfest In Woodcrest&quot; commence!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E05%20-%20A%20Date%20with%20the%20Health%20Inspector-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - A Date with the Health Inspector
+          </div>
+          <div class="plot">District Attorney and law-abiding citizen Tom Dubois fits the description of the elusive &quot;X-Box Killer&quot; and is arrested. Huey has to find the real killer before Tom is shipped off to &quot;real&quot; prison where he will most assuredly become &quot;someone's girlfriend.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E06%20-%20The%20Story%20of%20Gangstalicious-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Story of Gangstalicious
+          </div>
+          <div class="plot">Riley's favorite rapper, Gangstalicious, is shot and hospitalized in Woodcrest. When Riley goes to visit the rapper, he finds more than he anticipated ... like maybe rappers that make songs like &quot;Thuggin' Luv&quot; aren't necessarily as tough as they seem. Go figure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E07%20-%20A%20Huey%20Freeman%20Christmas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - A Huey Freeman Christmas
+          </div>
+          <div class="plot">A well meaning teacher offers Huey the chance to direct the school Christmas play, and Huey decides to release his vision to the world: &quot;The Adventures of Black Jesus.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E08%20-%20The%20Real-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Real
+          </div>
+          <div class="plot">While Riley is busy convincing two reality shows that Granddad's blind and running a homeless shelter, Huey is being shadowed by a secret government agent. But is he real?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E09%20-%20Return%20of%20the%20King-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Return of the King
+          </div>
+          <div class="plot">When Martin Luther King Jr. comes out of a coma after 32 years and finds himself thrust into the 21st and life in the post &quot;September 11th&quot; lunacy, his &quot;turn the other cheek&quot; philosophy quickly takes him from beloved national hero to dispised terrorist sympathizer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E10%20-%20The%20Itis-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Itis
+          </div>
+          <div class="plot">Grandad opens &quot;The Itis&quot;, the only soul food restaurant in Woodcrest. White people didn't expect it. They also didn't expect high cholesterol, heart disease, and obesity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E11%20-%20Let%27s%20Nab%20Oprah-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Let's Nab Oprah
+          </div>
+          <div class="plot">Huey has to stop Riley and a small gang of misfit idiots from nabbing the talk show deity, Oprah.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E12%20-%20Riley%20Wuz%20Here-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Riley Wuz Here
+          </div>
+          <div class="plot">When Riley's affinity for grafitti goes too far, Grandad sends him to an art teacher that actually encourages him to do grafitti, only painting murals instead. Meanwhile, Huey discovers a black woman died from watching too much black TV, and decides to watch black TV for 2 weeks to see if that was the cause.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E13%20-%20Wingmen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Wingmen
+          </div>
+          <div class="plot">When Grandad's oldest friend, and possibly his worst friend, Moe, dies, the Freemans go back home and Grandad wants the possession Moe left him. Meanwhile, Huey is eager to see his friend again but both Grandad and Huey both discover to put the past behind them and focus on the future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E14%20-%20The%20Block%20is%20Hot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - The Block is Hot
+          </div>
+          <div class="plot">Its February, and its record temperatures of 90 degrees. Luckily, Jazmine has her lemonade stand open, and does pretty well. Her success catches the eye of corporate tycoon Ed Wuncler. Despite several warnings from Huey, Jazmine then learns the true meaning of &quot;capitalism&quot; when Wuncler decides to buy the stand.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S01E15%20-%20The%20Passion%20of%20Reverend%20Ruckus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - The Passion of Reverend Ruckus
+          </div>
+          <div class="plot">While Ruckus spreads the word of White Jesus to get into White Heaven, Huey desperately tries to save his friend from death row.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E01%20-%20...Or%20Die%20Trying-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - ...Or Die Trying
+          </div>
+          <div class="plot">Granddad, Huey, Riley and Jazmine must avoid guards after they sneak in to a theatre to watch Soul Plane 2: The Blackjacking.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E02%20-%20Tom%2C%20Sarah%20and%20Usher-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Tom, Sarah and Usher
+          </div>
+          <div class="plot">While on a date with Tom Dubois, Sarah Dubois meets the singing sensation, Usher. Sarah starts being obsessed with Usher, and Tom begins to think Sarah is cheating on him. Sarah kicks Tom out of the house and Tom moves in with the Freemans. A pimp Named Slick Back returns in this episode to try to help Tom get Sarah back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E03%20-%20Thank%20You%20for%20Not%20Snitching-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Thank You for Not Snitching
+          </div>
+          <div class="plot">Two men are invading homes, and Riley and Granddad are refusing to speak to the police. It gets worse when Granddad's car, Dorothy, gets stolen by the robbers. If Riley and Granddad still refuse, worse things may be in store.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E04%20-%20Stinkmeaner%20Strikes%20Back-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Stinkmeaner Strikes Back
+          </div>
+          <div class="plot">Huey has a dream of Stinkmeaner and Granddad says that he was a menace and he sent him to hell like he deserves. Stinkmeaner's spirit later inhabits Tom Dubois' body and goes looking for revenge against Granddad. Huey must stop him from killing Granddad.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E05%20-%20The%20Story%20of%20Thugnificent-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - The Story of Thugnificent
+          </div>
+          <div class="plot">The infamous rapper Thugnificent moves to the neighbourhood with his friends Macktastic and Flonominal, eventually leading to Granddad becoming annoyed with his new neighbours. Their feud inspires Thugnificent to create a diss-track called &quot;Eff Granddad&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E06%20-%20Attack%20of%20the%20Killer%20Kung-Fu%20Wolf%20Bitch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Attack of the Killer Kung-Fu Wolf Bitch
+          </div>
+          <div class="plot">After many failed attempts at online dating, Granddad finally meets a beautiful woman named Luna&hellip; who just happens to be a psycho.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E07%20-%20Shinin%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Shinin'
+          </div>
+          <div class="plot">Riley joins Thugnificent's Lethal Injection crew. Meanwhile, a local bully steals Riley's prized chain.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E08%20-%20Ballin%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Ballin'
+          </div>
+          <div class="plot">Riley learns a lesson in good sportsmanship after he joins a basketball team.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E09%20-%20Invasion%20of%20the%20Katrinians-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Invasion of the Katrinians
+          </div>
+          <div class="plot">Jericho Freeman, Granddad's cousin, and his family, who were displaced by Hurricane Katrina, arrive at the Freeman's home looking for a place to stay. Granddad reluctantly allows the family to stay, but is soon trying to get rid of them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E10%20-%20Home%20Alone-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Home Alone
+          </div>
+          <div class="plot">Granddad takes a vacation, leaving the boys alone, but just who is in charge?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E11%20-%20The%20S-Word-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - The S-Word
+          </div>
+          <div class="plot">A teacher calls Riley a &quot;nigga&quot; in class, causing Robert to decide that he wants to sue for restitution.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E12%20-%20The%20Story%20of%20Catcher%20Freeman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - The Story of Catcher Freeman
+          </div>
+          <div class="plot">Huey and Riley listen to different perspectives on the story of their ancestor Catcher Freeman.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E13%20-%20The%20Story%20of%20Gangstalicious%20Part%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - The Story of Gangstalicious: Part 2
+          </div>
+          <div class="plot">Granddad worries about Riley's sexuality when he notices that he begins to dress and act like &quot;in-the-closet&quot; rapper, Gangstalicious.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E14%20-%20The%20Hunger%20Strike-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - The Hunger Strike
+          </div>
+          <div class="plot">Huey goes on a hunger strike in a boycott of BET, and receives some high-profile support from Reverend Rollo Goodlove, who may be more interested in his own self-promotion than any good intentions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S02E15%20-%20The%20Uncle%20Ruckus%20Reality%20Show-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - The Uncle Ruckus Reality Show
+          </div>
+          <div class="plot">In the wake of Huey's failed protest against the network, BET's Harvard-educated programming chief, Weggie Rudlin, is moving ahead with his promise to create The Uncle Ruckus Reality Show.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E01%20-%20It%27s%20a%20Black%20President%2C%20Huey%20Freeman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - It's a Black President, Huey Freeman
+          </div>
+          <div class="plot">The Freemans are filmed for a German documentary about the 2008 election of Barack Obama in the Season 3 premiere.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E02%20-%20Bitches%20to%20Rags-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Bitches to Rags
+          </div>
+          <div class="plot">When his new album tanks, Thugnificent is faced with the horror of getting a real job.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E03%20-%20The%20Red%20Ball-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - The Red Ball
+          </div>
+          <div class="plot">Kickball legend Huey Freeman returns after a self-imposed exile from the game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E04%20-%20The%20Story%20of%20Jimmy%20Rebel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - The Story of Jimmy Rebel
+          </div>
+          <div class="plot">Uncle Ruckus has long idolized Jimmy Rebel, a popular racist country singer based on the infamous Johnny Reb, a.k.a. Pee Wee Trahan. So much did Jimmy Rebel's music influence him that he eventually sends off recordings of his own racist tunes to the man, and is faced with a dilemma when Jimmy shows up on his doorstep.  Uncle Ruckus' legendary status as a black-hating racist thus runs up against the slight problem of his negritude.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E05%20-%20Stinkmeaner%203%20The%20Hateocracy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Stinkmeaner 3: The Hateocracy
+          </div>
+          <div class="plot">The Freemans are in trouble when Stinkmeaner's gang decide to come after them in retaliation for his death
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E06%20-%20Smokin%20with%20Cigarettes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Smokin with Cigarettes
+          </div>
+          <div class="plot">Riley becomes friends with a sociopathic boy named Lamilton, who wants to do nothing more than hurt people, cause mayhem, and smoke cigarettes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E07%20-%20The%20Fundraiser-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - The Fundraiser
+          </div>
+          <div class="plot">Riley organizes a fundraiser with Cindy McPhearson and other kids from Woodcrest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E08%20-%20Pause-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Pause
+          </div>
+          <div class="plot">Granddad is cast as the leading man by mega-superstar of stage and screen, Winston Jerome. But when the theater group turns out to be a homoerotic evangelical cult, it's up to Huey and Riley to put a pause to it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E09%20-%20A%20Date%20with%20the%20Booty%20Warrior-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - A Date with the Booty Warrior
+          </div>
+          <div class="plot">Having conquered his fear of prison rape, Tom volunteers to lead Huey, Riley, and some classmates on a trip to jail as part of a Scared Stiff program. But when a riot breaks out, Tom has to get the kids, and his delicate backside, out of jail in one piece.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E10%20-%20The%20Story%20of%20Lando%20Freeman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - The Story of Lando Freeman
+          </div>
+          <div class="plot">There's a new handyman in the neighborhood undercutting Uncle Ruckus... which is all good for Granddad and his garden until the man claims to be his long lost son, Lando. Will Granddad take responsibility and be a father to his child? Not without a talk show paternity test.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E11%20-%20Lovely%20Ebony%20Brown-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Lovely Ebony Brown
+          </div>
+          <div class="plot">Grandad meets a young black woman who asks him out on a date, and the only person who can spoil Grandad's new romance, is Grandad.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E12%20-%20Mr.%20Medicinal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Mr. Medicinal
+          </div>
+          <div class="plot">After a checkup, a doctor warns Granddad that he could die any day if he doesn't get his stress levels down. Not wanting to become dependent on pills, he decides to take Thugnificent's suggestion and turns to marijuana.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E13%20-%20The%20Fried%20Chicken%20Flu-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - The Fried Chicken Flu
+          </div>
+          <div class="plot">When a chicken franchise run out of its newest recipe introduction, things go from bad to worse when a viral outbreak is linked to the same chicken. Thankfully, Huey has prepared a survival outline in just such an emergency, but it's all threatened when no one can seem to stick to the simple plan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E14%20-%20The%20Color%20Ruckus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - The Color Ruckus
+          </div>
+          <div class="plot">On a final visit to Woodcrest, Ruckus's terminally ill Nana wants to die in Robert Freeman's house.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S03E15%20-%20It%27s%20Goin%27%20Down-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - It's Goin' Down
+          </div>
+          <div class="plot">A terror attack near Woodcrest is imminent, and retired domestic terrorist Huey Freeman is the main suspect. With super-agent Jack Flowers on his tail and Ed and Rummy on the loose, can anyone save the day?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S04E01%20-%20Pretty%20Boy%20Flizzy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Pretty Boy Flizzy
+          </div>
+          <div class="plot">Pretty Boy Flizzy is arrested for armed robbery while in town, and Tom agrees to be his lawyer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S04E02%20-%20Good%20Times-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Good Times
+          </div>
+          <div class="plot">Eddie Wuncler has unique ideas about how Granddad can repay the millions he owes on his house.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S04E03%20-%20Breaking%20Granddad-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Breaking Granddad
+          </div>
+          <div class="plot">The Freemans sell an explosive hair product and contend with the black market of the hair-care industry.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S04E04%20-%20Early%20Bird%20Special-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Early Bird Special
+          </div>
+          <div class="plot">Granddad is hired by pimps to escort lonely women at a nursing home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S04E05%20-%20Freedom%20Ride%20or%20Die-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Freedom Ride or Die
+          </div>
+          <div class="plot">A young Granddad is held as an unwilling freedom rider on a trip through the racist South.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S04E06%20-%20Granddad%20Dates%20a%20Kardashian-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Granddad Dates a Kardashian
+          </div>
+          <div class="plot">Granddad begins dating a long-lost Kardashian sister and winds up on a reality show.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S04E07%20-%20Freedomland-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Freedomland
+          </div>
+          <div class="plot">The Freemans get trapped in a slavery theme park.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S04E08%20-%20I%20Dream%20of%20Siri-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - I Dream of Siri
+          </div>
+          <div class="plot">Grandpa's personal assistant program on his phone becomes obsessed with him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S04E09%20-%20Stinkmeaner%20Begun%20the%20Clone%20War%20Has-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Stinkmeaner: Begun the Clone War Has
+          </div>
+          <div class="plot">Stinkmeaner becomes a celebrity after a video of his fight with Granddad goes viral.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Boondocks%20-%20S04E10%20-%20The%20New%20Black-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - The New Black
+          </div>
+          <div class="plot">Riley's homophobic slur ends him in hot water with gay rights groups.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

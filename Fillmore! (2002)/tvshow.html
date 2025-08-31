@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Fillmore!
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Fillmore!</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Fillmore%21%20%282002%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S01E01%20-%20To%20Mar%20a%20Stall-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - To Mar a Stall
+          </div>
+          <div class="plot">X Middle School's bathroom renovation project teeters on the brink of disaster as the new tagger &quot;STAINLESS&quot; strikes at will. Out of leads, Fillmore and Ingrid turn to Randall Julian, the former vandal &quot;FLAVA SAVA&quot;, currently in solitary detention. His help puts them back on the trail, but Randall escapes, forcing Fillmore and Ingrid to hunt down both &quot;STAINLESS&quot; and &quot;FLAVA SAVA&quot; before they strike again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S01E02%20-%20Test%20of%20the%20Tested-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Test of the Tested
+          </div>
+          <div class="plot">The student body is in an uproar when the controversial S.A.T.T.Y. 9 tests are stolen by an assailant dressed as X's beloved mascot, Lobstee the Lobster. Fillmore and Ingrid are under pressure&mdash;they have only 48 hours to find the tests or Principal Folsom will have the entire school take the tests again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S01E03%20-%20A%20Wurm%20in%20Our%20Midst-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - A Wurm in Our Midst
+          </div>
+          <div class="plot">The library's books have disappeared, and Tony Clementina, X Middle School's local heavy, is all too eager to take credit for it. Meanwhile, an empty can of Carbee Cola leads Ingrid back to the biggest custard spill in X Middle School history, an incident that disturbingly points to Fillmore.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S01E04%20-%20Cry%2C%20The%20Beloved%20Mascot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Cry, The Beloved Mascot
+          </div>
+          <div class="plot">Someone has stolen X Middle School's beloved mascot, Lobstee the Lobster. Time is running out for both Lobstee and the Bocce Team, and the key to finding him before time runs out might be X's resident psychic, Alistair Greystone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S01E05%20-%20Red%20Robins%20Don%27t%20Fly-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Red Robins Don't Fly
+          </div>
+          <div class="plot">During an undercover sting operation, boxes of band candy were accidentally discovered in the lake. The candy is traced back to the Red Robins, seemingly a school club in the same manner as Girl Scouts who make record sales of their award-winning taffy. In reality, the Robins strong-arm their competition, and the Safety Patrol have been trying to catch them in the act for a long time. Ingrid goes undercover as a Red Robin, but Vallejo isn't convinced she's the right person for the job and suspects something might go wrong.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S01E06%20-%20Next%20Stop%2C%20Armageddon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Next Stop, Armageddon
+          </div>
+          <div class="plot">After accidentally destroying Folsom's birthday party, Fillmore and Ingrid are asked to do convention duty. However, the train convention experiences sabotage, leaving the entire convention ruined. Fillmore and Ingrid first suspect the RC Car Club to be behind it, but the evidence points in the other direction.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S01E07%20-%20Nappers%20Never%20Sleep-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Nappers Never Sleep
+          </div>
+          <div class="plot">Duappy, a virtual pet kept alive the longest, has been stolen, and it is up to Fillmore and Ingrid to find X's pride and joy before a reporter comes to X to do a story on Duappy and before Duappy dies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S01E08%20-%20Ingrid%20Third%2C%20Public%20Enemy%20%231-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Ingrid Third, Public Enemy #1
+          </div>
+          <div class="plot">Fillmore's partner moves away to Tennessee, and he is partnered up with Brad Parnassus, the smartest kid at X Middle School. Rebellious and super-smart new student Ingrid Third doesn't take her introduction to X student body well at all, and a giant stink bomb soon explodes in the hallways.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S01E09%20-%20A%20Cold%20Day%20at%20X-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - A Cold Day at X
+          </div>
+          <div class="plot">Mrs. Cornwall's pre-algebra final exam looks like it's going to be a tough one. However, some of her students have decided to take more extreme measures beyond studying. Fillmore sleeps over in the school to safeguard the exam, but an unexpected blizzard leaves him standing alone to face a desperate gang of determined exam thieves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S01E10%20-%20Masterstroke%20of%20Malevolence-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Masterstroke of Malevolence
+          </div>
+          <div class="plot">Mrs. Lawson's field trip to the Modern Contemporary Natural History, Art, Science and Miniature Museum takes a horrifying turn as someone draws a mustache on the priceless painting &quot;The Lobster Man at Port&quot;. Fillmore, Ingrid, and O'Farrell work to find the culprit and save the painting, but the clock is ticking and everyone's a suspect.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S01E11%20-%20Two%20Wheels%2C%20Full%20Throttle%2C%20No%20Breaks-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Two Wheels, Full Throttle, No Breaks
+          </div>
+          <div class="plot">Scooter thefts are up, and the Safety Patrol faces a challenge from student activist Derek Minna, who establishes B.A.G.A.S.T. (Boys And Girls Against Scooter Theft), a scooter and rollerblade equipped task force that he intends to ultimately replace the safety patrol. Fillmore and Ingrid trace the thefts to the Metal Shop and infiltrate the gang in an attempt to take down the culprits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S01E12%20-%20Of%20Slain%20Kings%20on%20Checkered%20Fields-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Of Slain Kings on Checkered Fields
+          </div>
+          <div class="plot">X Middle School's best hope to break a losing streak is Checkmatey, a flamboyant rapper who is X's finest chess player. However, Checkmatey is kidnapped before the championship match, and multiple suspects possess a suitable motive for the crime. Fillmore and Ingrid are on the case&mdash;but the clock is ticking down and Checkmatey is nowhere to be found.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S01E13%20-%20A%20Forgotten%20Yesterday-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - A Forgotten Yesterday
+          </div>
+          <div class="plot">The heat is on from Student Council Representative Peabody to get illegal term papers off the street, but the perps always seem one step ahead of the Safety Patrol. After a botched raid and the sabotage of his bike, Fillmore turns to Sonny Lombard, his old partner from his bad-boy days. They track the papers back to Rudy Teravall, the Kingpin of Home Economics, but just as Fillmore and Ingrid get ready to move in on Rudy's gang, Peabody gets tipped off about bootleg hall passes in Fillmore's desk, resulting in Fillmore getting suspended from the force. Nonetheless, Fillmore is determined to find the term papers&mdash;with or without his badge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S02E01%20-%20The%20Currency%20of%20Doubt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - The Currency of Doubt
+          </div>
+          <div class="plot">Tina and Toby are the stars of the school at both dancing and smoit-collecting. Smoits are tokens found on dairy bars and packets of chips used to buy basically anything a kid could want once enough of them are saved up. The smoit stash goes missing, and Fillmore and Ingrid go undercover in X's steamy underground casino scene. They discover Toby's gambling debts, and he becomes the prime suspect, which destroys his dance partnership with Tina.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S02E02%20-%20The%20Shreds%20Fell%20Like%20Snowflakes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - The Shreds Fell Like Snowflakes
+          </div>
+          <div class="plot">Vallejo's nearing his second term test for Junior Commissioner, and in the meantime, a crime crops up involving &quot;The Shredder&quot;, an anonymous criminal who shreds people's pet projects. Unfortunately, not a single one of the victims saw the Shredder's face. This seems like a job for Vallejo's old profiler partner, Frank Bishop, who was driven from the Safety Patrol in disgrace. He is tasked to deduce a pattern to the Shredder's crimes and discover who is next on the list.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S02E03%20-%20Foes%20Don%27t%20Forgive-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Foes Don't Forgive
+          </div>
+          <div class="plot">Reformed thug Linus Santiago wows the crowd at the X Middle School Talent Show with his magic act. Unfortunately, his disappearing trick with Dewey Hubble's robotic dog Barcode goes horribly wrong and it won't reappear. Santiago refuses to tell the Safety Patrol how he did the trick due to the Magician's Code, but by doing so, he makes himself the prime suspect. Dewey is anxious to get his robotic dog back as it's a stepping stone to getting a real dog. However, when Barcode's collar is found in the lake, all hope could be lost&mdash;for both Dewey and Santiago.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S02E04%20-%20South%20of%20Friendship%2C%20North%20of%20Honor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - South of Friendship, North of Honor
+          </div>
+          <div class="plot">Spring break has arrived, so Fillmore's taking the time to visit his former partner, Wayne Liggett. In Wayne's new school, something about the Safety Patrol stinks. The prize pralines of the school have been stolen, and the prime suspect is their Patrol Sheriff Thrift&mdash;who just so happens to be the son of their principal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S02E05%20-%20Immune%20to%20All%20But%20Justice-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Immune to All But Justice
+          </div>
+          <div class="plot">X Middle School has gone Canada Crazy, and the ambassador is staying over along with his assistant Penny Madrid, who happens to be an old partner in crime with Fillmore. Winston Kotter, the Canadian ambassador, turned Penny around just as the Safety Patrol turned Fillmore around&mdash;but Fillmore can't help suspecting something's up, especially as a huge supply of counterfeit baseball cards appear. However, as Winston has full diplomatic immunity, safety patrol investigation is strictly forbidden.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S02E06%20-%20The%20Nineteenth%20Hole%20is%20a%20Shallow%20Grave-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - The Nineteenth Hole is a Shallow Grave
+          </div>
+          <div class="plot">Something's down at the X Middle School Open&mdash;professional golfers are failing at games, and foul play is suspected. Normally, Fillmore would be all-up for an undercover job like this, but something in his past is making him hesitate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S02E07%20-%20Links%20in%20a%20Chain%20of%20Honor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Links in a Chain of Honor
+          </div>
+          <div class="plot">Rookie officer Peter Chestnut is the latest of four brothers to join the Safety Patrol. He has a lot to live up to&mdash;his older brother Robert was a highly decorated Safety Patroller and is now the Student Council President. When a shipment of stolen X Middle School foam spirit lobster claws is tracked back to also-ran Oscar Mabini, it looks like Peter has closed his first case&mdash;perhaps a bit too easily.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S02E08%20-%20The%20Unseen%20Reflection-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - The Unseen Reflection
+          </div>
+          <div class="plot">Vampirita, a series of novels about an astronaut vampiress, has attracted a huge following at X&mdash;and none moreso than Torrey and Terri. The next installment of the series will be released in a fortnight, and until then, fans can audition to star in the next book. The girls start to build projects to win the auditions, but every time one is finished, it gets sabotaged. The main suspects are two members of a rival novel's fan club, however, the evidence seems to point to neither of them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S02E09%20-%20Code%20Name%20Electric%20Haircut-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Code Name: Electric Haircut
+          </div>
+          <div class="plot">Fillmore and Ingrid investigate the mysterious vanishing of a student named Alexis, only to find that all reports of her have vanished from the school, and she's even been taken out of pictures. Meanwhile, someone is working on a computer virus called Electric Haircut, which must be stopped before it causes any irreparable damage.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S02E10%20-%20Play%20On%2C%20Maestro%2C%20Play%20On-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Play On, Maestro, Play On
+          </div>
+          <div class="plot">The Ultrabox, the hottest new game system on the market, makes its debut at X, and everyone wants one&mdash;including &quot;The Maestro,&quot; a gaming mastermind who will stop at nothing to get it. Fillmore and Ingrid track him down, but the Ultrabox is stolen while he's in custody. It looks like a copycat is on the loose.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S02E11%20-%20This%20Savior%2C%20a%20Snitch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - This Savior, a Snitch
+          </div>
+          <div class="plot">Facing expulsion under Principal Folsom's new &quot;Three Strikes, You're Out&quot; rule, Fillmore must protect the only person capable of clearing his name to a crime he has been framed for&mdash;the destruction of a giant Folsom statue made out of 12,000 pieces of macaroni.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S02E12%20-%20A%20Dark%20Score%20Evened-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - A Dark Score Evened
+          </div>
+          <div class="plot">Four victims&mdash;Wilbur, Grover, Becca and Stella. Four bullies&mdash;Rochelle, Bryan, Fiona and Horace. Someone's fed up of people being made to feel small and scared and is targeting each victim's bully respectively. Despite not wanting to help bullies, Fillmore starts to investigate who would want to scare the bullies so much. The main suspects are the four victims, but the victim of each bully is proven to have an alibi.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fillmore%21%20-%20S02E13%20-%20Field%20Trip%20of%20the%20Just-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Field Trip of the Just
+          </div>
+          <div class="plot">Guildenstern, the Science Department's tarantula mascot, has been poisoned, and the prime suspect, Eric Orben, has escaped into the city. Fillmore is given a permit to go out and track him down, but he has to contend with a relentless opponent from his bad-boy past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
