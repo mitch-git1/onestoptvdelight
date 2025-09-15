@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Loki
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Loki</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Loki%20%282021%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Loki%20-%20S01E01%20-%20Glorious%20Purpose-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Glorious Purpose
+          </div>
+          <div class="plot">After stealing the Tesseract in &quot;Avengers: Endgame,&quot; Loki lands before the Time Variance Authority.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Loki%20-%20S01E02%20-%20The%20Variant-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Variant
+          </div>
+          <div class="plot">Mobius puts Loki to work, but not everyone at TVA is thrilled about the God of Mischief's presence.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Loki%20-%20S01E03%20-%20Lamentis-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Lamentis
+          </div>
+          <div class="plot">Loki finds out The Variant's plans, but he has his own that will forever alter both their destinies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Loki%20-%20S01E04%20-%20The%20Nexus%20Event-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Nexus Event
+          </div>
+          <div class="plot">Frayed nerves and paranoia infiltrate the TVA as Mobius and Hunter B-15 search for Loki and Sylvie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Loki%20-%20S01E05%20-%20Journey%20Into%20Mystery-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Journey Into Mystery
+          </div>
+          <div class="plot">Loki tries to escape The Void, a desolate purgatory where he meets variant versions of himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Loki%20-%20S01E06%20-%20For%20All%20Time.%20Always-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - For All Time. Always.
+          </div>
+          <div class="plot">The clock is ticking in the season finale which finds Loki and Sylvie on a date with destiny.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Loki%20-%20S02E01%20-%20Ouroboros-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Ouroboros
+          </div>
+          <div class="plot">Loki finds himself lost to time and torn, quite literally, between past, present and future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Loki%20-%20S02E02%20-%20Breaking%20Brad-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Breaking Brad
+          </div>
+          <div class="plot">With the TVA on the verge of a temporal meltdown, Loki &amp; Mobius will stop at nothing to find Sylvie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Loki%20-%20S02E03%20-%201893-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - 1893
+          </div>
+          <div class="plot">Loki &amp; Mobius go on the hunt to find everyone&rsquo;s favorite cartoon clock as they try to save the TVA.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Loki%20-%20S02E04%20-%20Heart%20of%20the%20TVA-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Heart of the TVA
+          </div>
+          <div class="plot">The TVA's Loom nears catastrophic failure but Loki, Mobius and Sylvie have a He Who Remains variant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Loki%20-%20S02E05%20-%20Science%20Fiction-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Science/Fiction
+          </div>
+          <div class="plot">Loki traverses dying timelines in an attempt to find his friends, but Reality is not what it seems.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Loki%20-%20S02E06%20-%20Glorious%20Purpose-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Glorious Purpose
+          </div>
+          <div class="plot">Loki learns the true nature of 'glorious purpose' as he rectifies the past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

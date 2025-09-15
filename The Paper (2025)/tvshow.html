@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Paper
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Paper</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Paper%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Paper%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">A documentary crew discovers a historic Midwestern newspaper and the publisher trying to revive it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Paper%20-%20S01E02%20-%20The%20Five%20W%27s-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Five W's
+          </div>
+          <div class="plot">Ned starts slowly with his volunteer crew until Esmeralda forces them to scramble for stories.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Paper%20-%20S01E03%20-%20Buddy%20and%20the%20Dude-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Buddy and the Dude
+          </div>
+          <div class="plot">Ned tags along on Mare's consumer sting story after Esmeralda gets in his head.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Paper%20-%20S01E04%20-%20TTT%20vs%20the%20Blogger-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - TTT vs the Blogger
+          </div>
+          <div class="plot">Ned and Esmeralda go against a high school blog; Mare and Oscar cover a teacher's last production.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Paper%20-%20S01E05%20-%20Scam%20Alert%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Scam Alert!
+          </div>
+          <div class="plot">Ned chases a story about a scammer operating through a dating app and learns Esmeralda was a victim.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Paper%20-%20S01E06%20-%20Churnalism-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Churnalism
+          </div>
+          <div class="plot">Ned takes over Esmeralda's advertorials and assigns the staff to test products themselves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Paper%20-%20S01E07%20-%20I%20Love%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - I Love You
+          </div>
+          <div class="plot">With Marv camped out in the newsroom, the staff's unresolved attitudes toward authority bubble up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Paper%20-%20S01E08%20-%20Church%20and%20State-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Church and State
+          </div>
+          <div class="plot">Mare uncovers a story that pits the Truth Teller against its owner; Ned is embarrassed by his past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Paper%20-%20S01E09%20-%20Matching%20Ponchos-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Matching Ponchos
+          </div>
+          <div class="plot">Ned and Mare take a long road trip to interview a possible cult leader; Ken goes on an apology tour.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Paper%20-%20S01E10%20-%20The%20Ohio%20Journalism%20Awards-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Ohio Journalism Awards
+          </div>
+          <div class="plot">Ned stifles his desire to win at the Ohio Journalism Awards; Nicole uncovers Detrick's monogamy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Sex Lives of College Girls
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Sex Lives of College Girls</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Sex%20Lives%20of%20College%20Girls%20%282021%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S01E01%20-%20Welcome%20to%20Essex-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Welcome to Essex
+          </div>
+          <div class="plot">As they start settling into college life, first-year suite mates Kimberly, Bela, Leighton, and Whitney navigate relationships, extracurriculars, and culture shock. Later, the girls hit an exclusive party to blow off some steam.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S01E02%20-%20Naked%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Naked Party
+          </div>
+          <div class="plot">The first week of class finds Kimberly feeling out of her league, while Leighton thrives academically&hellip; but not so much otherwise. Whitney confronts soccer drama, and &ndash; looking to get properly wild &ndash; Bela and Kimberly go to a naked party.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S01E03%20-%20Le%20Tuteur-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Le Tuteur
+          </div>
+          <div class="plot">While Kimberly connects with Nico during a tutoring session, Leighton begrudgingly starts volunteering at the women's center, Bela explores the local dating app pool, and Whitney seeks to take things with Dalton to the next level.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S01E04%20-%20Kappa-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Kappa
+          </div>
+          <div class="plot">After mingling with an exclusive sorority, Leighton gets roped into a date with a boy, while Whitney confides in a teammate about her relationship with Dalton. With Kimberly in tow, Bela speaks her mind at a high-profile Catullan event.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S01E05%20-%20That%20Comment%20Tho-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - That Comment Tho
+          </div>
+          <div class="plot">While a cryptic message from Nico sends Kimberly reeling, Leighton invites the women's center to her brother's frat party. Bela has an uncomfortable experience with a Catullan editor, and Whitney navigates the fallout of investigative work.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S01E06%20-%20Parents%20Weekend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Parents Weekend
+          </div>
+          <div class="plot">After reuniting with their families for the first time since move-in day, the girls struggle through an uncomfortable dinner, where parents clash, egos are bruised, and secrets are revealed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S01E07%20-%20I%20Think%20I%27m%20a%20Sex%20Addict-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - I Think I'm a Sex Addict
+          </div>
+          <div class="plot">While Bela anxiously awaits the Catullan's final decision, Kimberly gets hooked on casual sex with Nico, Whitney explores her connection with Canaan, and Leighton takes the next step with Alicia.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S01E08%20-%20The%20Surprise%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Surprise Party
+          </div>
+          <div class="plot">At Leighton's surprise party for Nico, an unexpected guest sends Kimberly reeling. Bela worries she silenced a fellow Catullan writer, and a rumor threatens to upend Whitney's world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S01E09%20-%20Cheating-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Cheating
+          </div>
+          <div class="plot">A heartbroken Kimberly considers cheating on an exam. Leighton's fear of coming out upends her weekend getaway with Alicia. Bela navigates the fallout of exposing assault. Whitney confronts the truth about Dalton.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S01E10%20-%20The%20Truth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Truth
+          </div>
+          <div class="plot">While Kimberly faces possible expulsion after her honor code violation, Bela takes a stand against the Catullan's culture, Whitney levels with her mom, and Leighton speaks her truth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S02E01%20-%20Winter%20Is%20Coming-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Winter Is Coming
+          </div>
+          <div class="plot">As they come to terms with their new status on campus, Bela creates an all-female humor magazine, Whitney copes with the off-season, and Kimberly tries to find money with Leighton's unexpected help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S02E02%20-%20Frat%20Problems-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Frat Problems
+          </div>
+          <div class="plot">Bela and Leighton organize a fundraiser to help Zeta so they can get back to their parties. Kimberly tries to find collateral for her loan and Whitney feels threatened by Canaan's new partner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S02E03%20-%20The%20Short%20King-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - The Short King
+          </div>
+          <div class="plot">While Leighton enjoys the perks of being out, Bela focuses on a short king. Whitney attempts to expand her horizons with a difficult class, and Kimberly considers a new fix for her money problems.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S02E04%20-%20Will%20You%20Be%20My%20Girlfriend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Will You Be My Girlfriend?
+          </div>
+          <div class="plot">Bela scrambles to expand The Foxy's reach ahead of its release. Jackson invites Kimberly to a study session. Canaan asks Whitney to be his girlfriend&hellip; but she already thought they were dating. Leighton gets called out.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S02E05%20-%20Taking%20Shots-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Taking Shots
+          </div>
+          <div class="plot">Leighton helps Kimberly administer her hormone injections. Whitney considers how to handle being repeatedly mistaken for the only other Black girl in class. Bela clashes with her Catullan replacement.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S02E06%20-%20Doppelbanger-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Doppelbanger
+          </div>
+          <div class="plot">Bela seizes an opportunity when a late-night comic visits campus. Kimberly attempts to prove she hasn't been &ldquo;med-zoned&rdquo; by Jackson. Whitney fights to contribute to a group assignment. Leighton pursues a junior&hellip; who reminds her of herself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S02E07%20-%20The%20Essex%20College%20Food%20Workers%20Strike-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - The Essex College Food Workers Strike
+          </div>
+          <div class="plot">Leighton grapples with &quot;dating up&quot; for the first time. Kimberly appeals to an unlikely source for help with the food workers' strike. Whitney sets out to crush her final lab. Bela's faces blowback from a misstep.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S02E08%20-%20Pre-Frosh%20Weekend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Pre-Frosh Weekend
+          </div>
+          <div class="plot">For Pre-Frosh Weekend, Bela hosts her nerdy childhood friend Priya, who's had a surprise glow-up. Leighton prepares to come out to her dad. Kimberly seeks commonalities with Jackson, while Whitney finds chemistry with her lab partner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S02E09%20-%20Sex%20%26%20Basketball-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Sex &amp; Basketball
+          </div>
+          <div class="plot">Whitney and Andrew attempt to bring their chemistry into the real world. Bela over-curates The Foxy&rsquo;s big spotlight. Kimberly accompanies Canaan to the Econ department&rsquo;s awards banquet. Leighton visits the women&rsquo;s center &ndash; and Alicia.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S02E10%20-%20The%20Rooming%20Lottery-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - The Rooming Lottery
+          </div>
+          <div class="plot">When Leighton is elected Kappa&rsquo;s campus social chair, the roommates must figure out what sophomore year will look like.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S03E01%20-%20Welcome%20Back%20to%20Essex-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Welcome Back to Essex
+          </div>
+          <div class="plot">As sophomore year begins, Bela tries to embrace a fresh start, Kimberly hopes to make things right with Whitney, and Alicia drops a bomb on Leighton.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S03E02%20-%20Lila%20by%20Lila-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Lila by Lila
+          </div>
+          <div class="plot">Kimberly tries to upgrade their dorm, Whitney has a specific gripe with a hot classmate, Bela struggles as a FAF, and Leighton thinks on her future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S03E03%20-%20Four%20to%20a%20Suite-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Four to a Suite
+          </div>
+          <div class="plot">While acclimating to their new roommate, Bela takes a chance on a nice guy, Kimberly gets adventurous, and Whitney fumbles with a professor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S03E04%20-%20Franklin%20the%20Fox-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Franklin the Fox
+          </div>
+          <div class="plot">Bela hooks up with the mascot, Kacey puts herself out there, Whitney struggles to find balance in her life, and Kimberly goes to her first rave.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S03E05%20-%20Parents%20Weekend%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Parents Weekend 2
+          </div>
+          <div class="plot">For Parents Weekend, the girls try to keep their visiting families from finding out every intimate detail of their dating lives.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S03E06%20-%20Halloween%20%26%20Oat%20Milk-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Halloween &amp; Oat Milk
+          </div>
+          <div class="plot">It's Halloween! Kimberly tries to impress in class. Kacey debates when to admit she's a virgin. Bela keeps Taylor busy, and Lila hunts down a hottie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S03E07%20-%20The%20Rodeo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - The Rodeo
+          </div>
+          <div class="plot">Bela tries to break her dry spell, Kimberly takes a campus tour, Whitney's science project gets messy, and Kacey vies to be on Essex's &quot;50 Most&quot; list.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S03E08%20-%20The%20Good%20Partner%20Test-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - The Good Partner Test
+          </div>
+          <div class="plot">The girls put the people they're dating through The Good Partner Test, secretly seeing how they'd react to manufactured situations.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S03E09%20-%20Pics-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Pics
+          </div>
+          <div class="plot">As Kacey preps for a special date, Kimberly takes her first nude. Bela hits a roadblock with Arvind, and Whitney prioritizes her needs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Sex%20Lives%20of%20College%20Girls%20-%20S03E10%20-%20Essex%20Strong-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Essex Strong
+          </div>
+          <div class="plot">With a protest looming on campus, the girls find themselves standing up for themselves, for what they need, and for each other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

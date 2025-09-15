@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Girlfriend
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Girlfriend</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Girlfriend%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Girlfriend%20-%20S01E01%20-%20Episode%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Episode 1
+          </div>
+          <div class="plot">Glamorous Laura Sanderson's beloved son, Daniel, confides that he's met someone special. Wanting to impress, Laura meets the beguiling Cherry but soon catches her telling lies and starts to investigate. Cherry hides her humble beginnings as she works and plays amongst London's elite. She does everything to win over her new boyfriend's mother, Laura, but the more she tries the worse it gets.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Girlfriend%20-%20S01E02%20-%20Episode%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Episode 2
+          </div>
+          <div class="plot">Cherry joins the Sandersons' family holiday, intimidated by Daniel's bond with Laura. As Cherry seeks alone time with Daniel, Laura grows suspicious of her secrets. The tension peaks until a yacht incident unexpectedly brings the women together. Just as they form a genuine connection, Laura witnesses something she was never meant to see and threatens Cherry, who in turn gives her an ultimatum.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Girlfriend%20-%20S01E03%20-%20Episode%203-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Episode 3
+          </div>
+          <div class="plot">Laura digs deeper into Cherry's past as they continue to tussle for Daniel's affection. When Daniel confronts his mother over her behaviour, they have a vicious argument and Daniel spends his birthday with Cherry. With no support at home, Laura turns to her former lover for comfort before a phone call changes her and Cherry's lives forever.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Girlfriend%20-%20S01E04%20-%20Episode%204-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Episode 4
+          </div>
+          <div class="plot">Laura finds proof that her instincts were right about Cherry, and she whisks her family to Spain, spinning a web of lies to explain Cherry's sudden disappearance. Back in London, Cherry's life starts to unravel and she's forced to move in with her mother. Upset the Sanderson's are callously ignoring her, it's not long until Cher's plotting to get her life back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Girlfriend%20-%20S01E05%20-%20Episode%205-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Episode 5
+          </div>
+          <div class="plot">An explosive revelation shatters Laura and Daniel's relationship, as Cherry must decide if reclaiming him is worth re-entering Laura's toxic orbit. But she's done being pushed around and she and Daniel are more in love than ever. Laura's desperation to win back her son and her obsession with Cherry spiral out of control, as her life unravels, and their mutual hatred reaches new heights.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Girlfriend%20-%20S01E06%20-%20Episode%206-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Episode 6
+          </div>
+          <div class="plot">Cherry and Daniel seem blissfully in love, but cracks are starting to show. As Cherry fights to hold on to her new life, Laura discovers their relationship is progressing quickly. A tense visit to Cherry's family brings the evidence Laura thinks she needs to take Cherry down. It looks like she's won until the tables turn and a bitter showdown erupts, with Daniel caught in the crossfire.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

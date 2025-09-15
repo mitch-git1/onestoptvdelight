@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Long Story Short
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Long Story Short</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Long%20Story%20Short%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Long%20Story%20Short%20-%20S01E01%20-%20Yoshi%27s%20Bar%20Mitzvah-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Yoshi's Bar Mitzvah
+          </div>
+          <div class="plot">It's a night to remember when Avi brings his girlfriend home to meet the family on the same weekend his kid brother is becoming a man.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Long%20Story%20Short%20-%20S01E02%20-%20Hannah%27s%20Dance%20Recital-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Hannah's Dance Recital
+          </div>
+          <div class="plot">Shira and Kendra head north to attend a winter-themed dance recital in Santa Rosa... and to ask Avi a very important question.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Long%20Story%20Short%20-%20S01E03%20-%20There%27s%20a%20Mattress%20in%20There-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - There's a Mattress in There
+          </div>
+          <div class="plot">With Elliott's blessing, Yoshi goes all-in on an exciting new business opportunity, inspired by a salesman wearing flip-flops.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Long%20Story%20Short%20-%20S01E04%20-%20Shira%20Can%27t%20Cook-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Shira Can't Cook
+          </div>
+          <div class="plot">To crush the competition at a high-stakes school potluck, Shira tries making knishes &mdash; her mother's most difficult recipe.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Long%20Story%20Short%20-%20S01E05%20-%20Yoshi%20%26%20Baby-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Yoshi &amp; Baby
+          </div>
+          <div class="plot">Yoshi's determined to come through for his sister and be responsible. But a chance meeting while waiting in line for potato ice cream changes everything.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Long%20Story%20Short%20-%20S01E06%20-%20Wolves-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Wolves
+          </div>
+          <div class="plot">While trying to address the &quot;wolf situation&quot; at Hannah's school, Avi teams up with a group of parents who take things a little too far.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Long%20Story%20Short%20-%20S01E07%20-%20Kendra%27s%20Job-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Kendra's Job
+          </div>
+          <div class="plot">Kendra weighs the pros and cons of putting work before personal relationships when she's accepted into a management training program.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Long%20Story%20Short%20-%20S01E08%20-%20The%20Intervention-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Intervention
+          </div>
+          <div class="plot">The truth comes out when the kids come home for an awkward conversation under the guise of celebrating their parents' anniversary.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Long%20Story%20Short%20-%20S01E09%20-%20Honoring%20Naomi%20Schwartz-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Honoring Naomi Schwartz
+          </div>
+          <div class="plot">A special event at the Jewish Community Center puts Naomi in the spotlight &mdash; but it's the same night as Shira's prom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Long%20Story%20Short%20-%20S01E10%20-%20Uncle%20Barry-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Uncle Barry
+          </div>
+          <div class="plot">A somber occasion brings everyone together in Las Vegas, leading to a surprise family gathering in the desert.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

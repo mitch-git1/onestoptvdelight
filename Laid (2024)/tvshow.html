@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Laid
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Laid</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Laid%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Laid%20-%20S01E01%20-%20Brandon%20from%20College-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Brandon from College
+          </div>
+          <div class="plot">When Ruby learns a guy she briefly dated in college has died, she attends his funeral to make up for how selfishly she treated him; this sets her off on a path of examining her past choices to move forward with her present love life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Laid%20-%20S01E02%20-%20FB%20to%20the%20T-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - FB to the T
+          </div>
+          <div class="plot">Ruby makes a mistake and questions past relationships when she and AJ attend an ex's wedding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Laid%20-%20S01E03%20-%20Sex%20Cluster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Sex Cluster
+          </div>
+          <div class="plot">Ruby believes the recent deaths are the work of a stalker and suspects her new client, Isaac; AJ insists Ruby must track down all her exes to warn them they're in danger, forcing her to confront how she's treated people in the past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Laid%20-%20S01E04%20-%20Flagstaff-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Flagstaff
+          </div>
+          <div class="plot">After Ruby's ex, Richie, confronts her about the sex timeline and his imminent death, she continues looking inward; after warning one celebrity on her timeline, she discovers a loophole in the pattern of her exes dying.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Laid%20-%20S01E05%20-%20Secret%20Soft-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Secret Soft
+          </div>
+          <div class="plot">Ruby attends in-person therapy for the first time in years; when her therapist suggests she take a break from romance, it proves to be more of a challenge than anticipated.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Laid%20-%20S01E06%20-%20More%20Handsome%20than%20Joe%20Jonas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - More Handsome than Joe Jonas
+          </div>
+          <div class="plot">Ruby reconnects with the &quot;one who got away,&quot; who gives her more insight into how she is in relationships; AJ makes a discovery that changes the course of the case.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Laid%20-%20S01E07%20-%20Toby%20and%20Lindsey%20Are%20Here-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Toby and Lindsey Are Here
+          </div>
+          <div class="plot">Ruby, AJ and her coworker Brad, must track down the person who is responsible for what's happening and can undo all of it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Laid%20-%20S01E08%20-%20Il%20Mostro%20del%20Sesso-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Il Mostro del Sesso
+          </div>
+          <div class="plot">Ruby must decide who she loves the most while also learning some news that points the case in a whole new direction.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

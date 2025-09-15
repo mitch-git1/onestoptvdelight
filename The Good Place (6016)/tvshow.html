@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Good Place
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Good Place</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Good%20Place%20%286016%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S01E01%20-%20Everything%20Is%20Fine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Everything Is Fine
+          </div>
+          <div class="plot">Newly-deceased Eleanor Shellstrop is sent to the Good Place, but only by mistake; Eleanor is determined to become a better person in her afterlife with help from friends Chidi and Janet; Eleanor tries to prove to Chidi that she's worthy of his help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S01E02%20-%20Flying-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Flying
+          </div>
+          <div class="plot">Eleanor tries to prove to Chidi that she is worthy of his help. Meanwhile, Tahani and Jianyu try to help Michael feel better about the unknown flaw in his Neighborhood.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S01E03%20-%20Tahani%20Al-Jamil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Tahani Al-Jamil
+          </div>
+          <div class="plot">Chidi begins formally teaching Eleanor about ethics, and lesson No. 1 is: be kind to your neighbor. Michael and Janet help Chidi find a new, exciting hobby.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S01E04%20-%20Jason%20Mendoza-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Jason Mendoza
+          </div>
+          <div class="plot">Eleanor has a hard time remaining hidden.  Michael asks Tahani to assist a neighbor in finding her true purpose.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S01E05%20-%20Category%2055%20Emergency%20Doomsday%20Crisis-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Category 55 Emergency Doomsday Crisis
+          </div>
+          <div class="plot">Eleanor's eagerness to learn ethics from Chidi becomes the full-time job he never wanted. Meanwhile, Michael and Janet focus their attention on a Neighborhood emergency.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S01E06%20-%20What%20We%20Owe%20to%20Each%20Other-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - What We Owe to Each Other
+          </div>
+          <div class="plot">Eleanor is enlisted to help Michael with an important task that could determine her fate in the Good Place. Meanwhile, Chidi agrees to be the third wheel in an effort to help out his friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S01E07%20-%20The%20Eternal%20Shriek-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Eternal Shriek
+          </div>
+          <div class="plot">Eleanor puts Janet in her crosshairs to save Michael from eternal suffering.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S01E08%20-%20Most%20Improved%20Player-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Most Improved Player
+          </div>
+          <div class="plot">Michael has a private meeting with Eleanor, who is put to the test. Also, Chidi harbors a secret and mulls over what to do.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S01E09%20-%20...Someone%20Like%20Me%20as%20a%20Member-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - ...Someone Like Me as a Member
+          </div>
+          <div class="plot">Michael faces a challenge when he tries to resolve an unprecedented situation. In addition, Chidi makes a connection, to Eleanor's chagrin, and a different side of Janet emerges.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S01E10%20-%20Chidi%27s%20Choice-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Chidi's Choice
+          </div>
+          <div class="plot">Eleanor makes a surprising personal discovery. Meanwhile, Michael tasks an indecisive Chidi with coming to an important decision and Jianyu makes a big announcement.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S01E11%20-%20What%27s%20My%20Motivation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - What's My Motivation
+          </div>
+          <div class="plot">Eleanor and Tahani hatch a plan while Michael makes a startling discovery. Meanwhile, Chidi confides in Eleanor after learning some interesting news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S01E12%20-%20Mindy%20St.%20Claire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Mindy St. Claire
+          </div>
+          <div class="plot">With the help of Chidi and Tahani, Michael faces his biggest challenge yet. Meanwhile, Eleanor, Jianyu and Janet are faced with a monumental decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S01E13%20-%20Michael%27s%20Gambit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Michael's Gambit
+          </div>
+          <div class="plot">Eleanor, Jason, Chidi and Tahani argue about which two of them should go to the Bad Place. Eleanor has a shocking realization about the Good Place.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S02E01%20-%20Everything%20Is%20Great%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Everything Is Great!
+          </div>
+          <div class="plot">Having had their memories erased by ambitious master architect Michael, Eleanor, Chidi, Tahani and Jason again settle into the Good Place, unaware of what has previously transpired...except that Eleanor discovers the one clue she had left for herself and attempts to piece things together.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S02E02%20-%20Dance%20Dance%20Resolution-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Dance Dance Resolution
+          </div>
+          <div class="plot">Michael continues to work out the kinks in his grand plan. Meanwhile, Eleanor stumbles across a secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S02E03%20-%20Team%20Cockroach-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Team Cockroach
+          </div>
+          <div class="plot">Michael approaches things from a new angle. Eleanor, Chidi, Tahani and Jason struggle to make a collective decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S02E04%20-%20Existential%20Crisis-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Existential Crisis
+          </div>
+          <div class="plot">Tahani throws a dinner party to impress. Eleanor and Jason both have to lend a hand when things don't go as planned.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S02E05%20-%20The%20Trolley%20Problem-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - The Trolley Problem
+          </div>
+          <div class="plot">Chidi and Eleanor tackle a famous ethical dilemma, leading to a conflict with Michael. Meanwhile, Tahani harbors a secret and confides in Janet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S02E06%20-%20Janet%20and%20Michael-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Janet and Michael
+          </div>
+          <div class="plot">When the Neighborhood experiences a small glitch, Michael has to resolve the issue with Janet before it gets out of control.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S02E07%20-%20Derek-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Derek
+          </div>
+          <div class="plot">Janet creates a big problem for Michael. Meanwhile, Eleanor lets Chidi  in on a secret, and Jason puts Tahani in a difficult position.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S02E08%20-%20Leap%20to%20Faith-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Leap to Faith
+          </div>
+          <div class="plot">Michael receives a surprise visitor. Meanwhile, Eleanor, Chidi, Tahani and Jason attempt to solve a riddle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S02E09%20-%20Best%20Self-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Best Self
+          </div>
+          <div class="plot">Michael finds himself in a bind. Meanwhile, Eleanor sparks an idea that has Chidi, Tahani, Jason and even Janet laying their feelings on the line.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S02E10%20-%20Rhonda%2C%20Diana%2C%20Jake%2C%20and%20Trent-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Rhonda, Diana, Jake, and Trent
+          </div>
+          <div class="plot">Eleanor, Chidi, Tahani, Janet, and Jason head to a destination that may have lasting implications.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S02E11%20-%20The%20Burrito-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - The Burrito
+          </div>
+          <div class="plot">Eleanor, Chidi, Tahani, and Jason consider just how much they have (or have not) improved. Michael is left to deal with the consequences of his recent actions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S02E12%20-%20Somewhere%20Else-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Somewhere Else
+          </div>
+          <div class="plot">Michael makes a plea. Eleanor looks to take the high road. Michael tries to pull a rabbit out of a hat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S03E01%20-%20Everything%20Is%20Bonzer%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Everything Is Bonzer!
+          </div>
+          <div class="plot">Michael intervenes in the near-death accidents of Eleanor, Chidi, Tahani and Jason on Earth, in hopes that a second chance at life allows them to become better versions of themselves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S03E02%20-%20The%20Brainy%20Bunch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - The Brainy Bunch
+          </div>
+          <div class="plot">Michael's grand scheme hits an unexpected snag and forces him to take drastic measures.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S03E03%20-%20The%20Snowplow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - The Snowplow
+          </div>
+          <div class="plot">A surprising announcement from one of the humans threatens to dissolve the group.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S03E04%20-%20Jeremy%20Bearimy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Jeremy Bearimy
+          </div>
+          <div class="plot">The group explores the three main branches of ethical thought.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S03E05%20-%20The%20Ballad%20of%20Donkey%20Doug-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - The Ballad of Donkey Doug
+          </div>
+          <div class="plot">Jason visits with some people from his past while Chidi gets help in resolving a problem.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S03E06%20-%20A%20Fractured%20Inheritance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - A Fractured Inheritance
+          </div>
+          <div class="plot">Eleanor makes a startling discovery that tests her resolve, Tahani looks to make amends and Janet does some bonding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S03E07%20-%20The%20Worst%20Possible%20Use%20of%20Free%20Will-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - The Worst Possible Use of Free Will
+          </div>
+          <div class="plot">Eleanor recalls some forgotten events from her past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S03E08%20-%20Don%27t%20Let%20The%20Good%20Life%20Pass%20You%20By-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Don't Let The Good Life Pass You By
+          </div>
+          <div class="plot">Michael and Janet visit the person they believe to be the blueprint for how to live a good life on Earth; Eleanor turns to Tahani for advice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S03E09%20-%20Janet%28s%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Janet(s)
+          </div>
+          <div class="plot">While Eleanor and the gang contend with an intense out-of-body experience, Michael hatches a plan with Janet's help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S03E10%20-%20The%20Book%20of%20Dougs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - The Book of Dougs
+          </div>
+          <div class="plot">Michael's resolve is put to the test. Meanwhile, Jason wrestles with his feelings and Chidi surprises Eleanor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S03E11%20-%20Chidi%20Sees%20the%20Time-Knife-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Chidi Sees the Time-Knife
+          </div>
+          <div class="plot">Michael arranges an important meeting and Janet makes a reconnection.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S03E12%20-%20Pandemonium-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Pandemonium
+          </div>
+          <div class="plot">Michael's crisis forces Eleanor to assume the title of the neighborhood architect. Tahani makes a discovery about the new humans.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            3x13 - GalaxyTV
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S04E01%20-%20A%20Girl%20from%20Arizona%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - A Girl from Arizona (1)
+          </div>
+          <div class="plot">With Eleanor assuming the role of the architect, the group adapts to the challenges facing them when four test subjects inhabit a new neighborhood under their supervision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S04E02%20-%20A%20Girl%20from%20Arizona%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - A Girl from Arizona (2)
+          </div>
+          <div class="plot">Eleanor, Michael, Janet and Tahani have their hands full when the new residents begin to show their true colors. Jason receives some unsettling news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S04E03%20-%20Chillaxing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Chillaxing
+          </div>
+          <div class="plot">Michael and Eleanor discover something troubling and turn to an unusual source for help. Tahani lends her expertise to assist with one of the new residents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S04E04%20-%20Tinker%2C%20Tailor%2C%20Demon%2C%20Spy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Tinker, Tailor, Demon, Spy
+          </div>
+          <div class="plot">As the group deals with a frustrating lack of progress, a visitor arrives and makes a shocking claim that causes them to question who can be trusted.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S04E05%20-%20Employee%20of%20the%20Bearimy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Employee of the Bearimy
+          </div>
+          <div class="plot">Michael and Jason sneak into Demon-Con. Left in charge of the neighborhood, Eleanor copes with Derek's ineptitude and Tahani's dissatisfaction.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S04E06%20-%20A%20Chip%20Driver%20Mystery-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - A Chip Driver Mystery
+          </div>
+          <div class="plot">After Brent writes an offensive book, Eleanor, Michael and the others try to help him evolve. One of the humans discovers Jason's true identity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S04E07%20-%20Help%20is%20Other%20People-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Help is Other People
+          </div>
+          <div class="plot">With one day left in the year, Simone reveals that she's suspicious about the neighborhood -- and her investigation could derail the entire experiment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S04E08%20-%20The%20Funeral%20to%20End%20All%20Funerals-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - The Funeral to End All Funerals
+          </div>
+          <div class="plot">As the Judge hears Michael and Shawn's arguments about the results of the experiment, Janet and the humans give each other the funerals they deserved.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S04E09%20-%20The%20Answer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - The Answer
+          </div>
+          <div class="plot">With time running out to find answers, Chidi must sort through his life -- and afterlives -- before he can provide the help everyone needs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S04E10%20-%20You%27ve%20Changed%2C%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - You've Changed, Man
+          </div>
+          <div class="plot">The group scrambles to devise a new afterlife system that the Good and Bad Places can agree on before it's too late. Chidi has a newfound confidence.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S04E11%20-%20Mondays%2C%20Am%20I%20Right-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Mondays, Am I Right?
+          </div>
+          <div class="plot">While the humans search for test candidates, Michael trains a group of architects. Eleanor doesn't want Chidi to learn too much about her past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S04E12%20-%20Patty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - Patty
+          </div>
+          <div class="plot">Arriving at a new place, Michael receives an unexpected honor. Meanwhile, the rest of the group explores &mdash; and learns a shocking truth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Good%20Place%20-%20S04E13%20-%20Whenever%20You%27re%20Ready-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - Whenever You're Ready
+          </div>
+          <div class="plot">Michael works with the Joint Council of Afterlife Affairs to smooth out kinks in the system. Jason and Tahani move on. Eleanor tries to influence Chidi.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

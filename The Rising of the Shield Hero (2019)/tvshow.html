@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Rising of the Shield Hero
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Rising of the Shield Hero</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Rising%20of%20the%20Shield%20Hero%20%282019%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E01%20-%20The%20Shield%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Shield Hero
+          </div>
+          <div class="plot">College student Iwatani Naofumi is reading a book titled &quot;The Records of the Four Cardinal Weapons&quot; in the library when he is suddenly summoned to another world and told he has to save the world as the Shield Hero, one of the Four Cardinal Heroes. And one morning, he finds all his money and equipment gone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E02%20-%20The%20Slave%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Slave Girl
+          </div>
+          <div class="plot">Naofumi follows the slave merchant to his store, where he looks for a partner to act as his sword. But all he has the money to buy is a diseased demi-human girl named Raphtalia, whom he then forces into an incredibly harsh battle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E03%20-%20Wave%20of%20Catastrophe-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Wave of Catastrophe
+          </div>
+          <div class="plot">Naofumi has obtained a whole load of abilities and skills, and his teamwork with Raphtalia is reaching perfection, too. To prepare for the incoming Wave, he upgrades their equipment and heads to the dragon hourglass to find out exactly when it will arrive. But there, he runs into Motoyasu and the other heroes once again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E04%20-%20Lullaby%20at%20Dawn-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Lullaby at Dawn
+          </div>
+          <div class="plot">The Wave is gone, but Naofumi's relief is short-lived as Motoyasu challenges him to a duel in the middle of the celebratory banquet held in Melromarc Castle. Motoyasu insists that owning a slave is unbecoming for a hero and that Naofumi free Raphtalia at once.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E05%20-%20Filo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Filo
+          </div>
+          <div class="plot">After Aultcray reluctantly offers Naofumi a paltry reward, he heads to the slave merchant to redo the slave crest as per Raphtalia's wishes. He also buys a monster egg there, which hatches a few days later and gives him a new party member. Meanwhile, Myne shows up in Lute Village, where they're staying.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E06%20-%20A%20New%20Comrade-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - A New Comrade
+          </div>
+          <div class="plot">The mysterious girl that showed up out of nowhere was actually Filo. She's a filolial queen with an advanced transformation ability, and she can even take human form thanks to it. However, her clothes get ripped every time she transforms, meaning Naofumi has to get her some magic clothes if he doesn't want to go broke. The party leaves on a new adventure to gather the materials required.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E07%20-%20The%20Savior%20of%20the%20Heavenly%20Fowl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Savior of the Heavenly Fowl
+          </div>
+          <div class="plot">After hearing of a village that's in immediate need of herbicide, Naofumi and his party head there to do business. The village has been overrun by plants that have turned into monsters, and its residents were forced to abandon it. These plants can even take root in humans, and apparently Motoyasu is the one who released them into the wild.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E08%20-%20Curse%20Shield-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Curse Shield
+          </div>
+          <div class="plot">After hearing of a village in the East that's being ravaged by an epidemic, Naofumi and his party head there to deliver medicine. The epidemic was caused by the corpse of a dragon that had been killed a month before and left there to rot. Naofumi's party accepts a job request to clean the corpse and head to the mountains where it lies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E09%20-%20Melty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Melty
+          </div>
+          <div class="plot">In the Eastern village, Naofumi meets a girl named Melty. She instantly becomes friends with Filo and then requests to accompany the party on their journey. It seems she got separated from her guards. They travel together for a while, but when they reach the capital, they find...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E10%20-%20In%20the%20Midst%20of%20Turmoil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - In the Midst of Turmoil
+          </div>
+          <div class="plot">After refusing to hear Melty out, Naofumi switches to planning for the next Wave. When a bunch of young soldiers ask to join his party, he agrees, but on a certain condition. At the same time, he also tries to upgrade Raphtalia's class after she hits the level cap, but all he receives is harassment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E11%20-%20Catastrophe%20Returns-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Catastrophe Returns
+          </div>
+          <div class="plot">Naofumi faces another Wave, this time in a remote village. With the help of the soldiers who volunteered to join him, he's able to secure the safety of the villagers, but the Wave shows no signs of letting up. He heads to fight with the other heroes, only to find a giant ghost ship floating in the sky.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E12%20-%20The%20Raven%20Invader-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Raven Invader
+          </div>
+          <div class="plot">A mysterious woman showed up out of nowhere and destroyed the second Soul Eater in a single blow. She then proclaimed the start of the &quot;true battle of the wave&quot; and blew away the other three heroes when they attacked her. With Naofumi's party proving ineffective as well, he decided to use the Rage Shield one more time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E13%20-%20The%20Devil%20of%20the%20Shield-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - The Devil of the Shield
+          </div>
+          <div class="plot">Naofumi foils the attempt to take Melty's life and fights off the royal knights, but he's then framed for abducting Melty and killing several knights, so the party is forced to go on the run. With security tightened and checkpoints everywhere, the party receives a further blow that only makes things even worse.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E14%20-%20Everlasting%20Memory-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Everlasting Memory
+          </div>
+          <div class="plot">Due to Myne recklessly starting a forest fire, Naofumi and his party are forced to flee to a village at the base of the mountain. However, it won't be easy to break through the knights' net. Melty suggests going to a noble she knows for help, and it just so happens that Raphtalia's past is linked to his domain.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E15%20-%20Raphtalia-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Raphtalia
+          </div>
+          <div class="plot">Raphtalia corners Idol with vengeance in her eyes, her bloodthirsty blade reaching for his throat. Naofumi's words bring her back to her senses momentarily, but when Idol attacks her once again...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E16%20-%20Filolial%20Queen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Filolial Queen
+          </div>
+          <div class="plot">As Naofumi and his party try to get the weakened kids to safety, Tyrant attacks them. Once Naofumi realizes that he's actually after Filo, he hatches a plan to lure him outside the city, but they can't even put a scratch on its massive body.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E17%20-%20A%20Promise%20Made-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - A Promise Made
+          </div>
+          <div class="plot">Fitoria tells Naofumi that she'll kill all Four Cardinal Heroes if they don't get back on the same page. She even takes Melty hostage, but Naofumi continues to refuse. Understanding where he's coming from, Fitoria instead proposes a one-on-one duel with Filo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E18%20-%20A%20Conspiracy%20Linked-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - A Conspiracy Linked
+          </div>
+          <div class="plot">Naofumi decides to go straight up to the checkpost in order to talk it out with the other heroes. But there, he finds the one guy least likely to listen to him, Motoyasu, who attacks Naofumi without bothering to listen to what he has to say. Why could Motoyasu be so intent on killing Naofumi, more than ever before?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E19%20-%20The%20Four%20Cardinal%20Heroes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - The Four Cardinal Heroes
+          </div>
+          <div class="plot">The Pope holds in his hands the ultimate weapon, which possesses the properties of all four cardinal weapons. Faced with its attack skill, &quot;Judgment,&quot; and its powerful defensive force field, Naofumi and gang are rendered helpless. As the crisis worsens, Motoyasu, who is now in line to be punished as a &quot;fake&quot; hero, makes a surprising decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E20%20-%20Battle%20of%20Good%20and%20Evil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Battle of Good and Evil
+          </div>
+          <div class="plot">Naofumi and gang stay on the attack despite being trapped in the Pope's Great Cathedral, but its sacred subspace nullifies his Curse Shield, leaving them one step short. Naofumi turns to another, newly unlocked Curse Shield, but the dragon's wrath threatens to swallow his mind whole.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E21%20-%20Naofumi%27s%20Triumphant%20Return-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - Naofumi's Triumphant Return
+          </div>
+          <div class="plot">After Naofumi survives thanks to Mirelia's help, she comes to visit him and tells him the truth behind the summoning of the heroes and the discrimination against the Shield Hero. She also promises to clear his name, and holds a trial for Aultcray and Myne's crimes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E22%20-%20Four%20Heroes%20Council-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Four Heroes Council
+          </div>
+          <div class="plot">After being unable to for so long, Naofumi finally gets to upgrade his party's classes. He then takes part in a meeting of the Four Cardinal Heroes, held under the guise of a celebratory banquet. There, he learns of the existence of a bonus stage, with increased XP earnings. Meanwhile, Raphtalia gets into a fight at the party.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E23%20-%20Cal%20Mira%20Archipelago-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - Cal Mira Archipelago
+          </div>
+          <div class="plot">On the ship to Cal Mira, Naofumi once again runs into L'arc, who keeps throwing him off. However, the strange man's friendly nature shines through, and Naofumi quickly takes a liking to him. After having a fun time grinding levels and a lively meal, Naofumi feels happy and fulfilled for the first time in this world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E24%20-%20Guardians%20of%20Another%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - Guardians of Another World
+          </div>
+          <div class="plot">Melromarc brings a large fleet to fight the Wave out at sea. While the queen takes charge and leads the operation well, the other three heroes prove useless yet again, leaving Naofumi to do it all alone. Later, he gets help from L'arc and Therese to fend off the monsters, but then...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S01E25%20-%20The%20Rising%20of%20the%20Shield%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x25 - The Rising of the Shield Hero
+          </div>
+          <div class="plot">It turns out that Glass, like L'arc, is also a hero from other world. Naofumi barely fights off their combo attacks and then corners Glass in a one-on-one battle, but is then faced with an all-important question: does he truly wish to protect this world?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S02E01%20-%20A%20New%20Roar-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - A New Roar
+          </div>
+          <div class="plot">Mysterious monsters appear as Naofumi is preparing for the next Wave. At the same time they show up, the Wave countdown stops. The Queen summons the Four Cardinal Heroes, and tells them that the Spirit Tortoise has revived.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S02E02%20-%20Footprints%20of%20the%20Spirit%20Tortoise-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Footprints of the Spirit Tortoise
+          </div>
+          <div class="plot">The leaders of all the nations&rsquo; militaries gather in the Spirit Tortoise Kingdom. Naofumi is there as well, and promises to offer his help as one of the heroes. But just before they decide on a plan, a mysterious woman appears&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S02E03%20-%20Shaking%20Land-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Shaking Land
+          </div>
+          <div class="plot">The Spirit Tortoise begins its march once more, appearing at the border of the kingdom bearing its name. Naofumi volunteers to lure away its familiars while the army tries to bring it to the mountains. The Spirit Tortoise&rsquo;s familiar, Ost, fights alongside the humans&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S02E04%20-%20Ruins%20in%20the%20Fog-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Ruins in the Fog
+          </div>
+          <div class="plot">The Spirit Tortoise&rsquo;s head was cut off, but Ost, its familiar, is still alive. It could revive at any moment. The allied armies need to get back into fighting shape, and fast. Naofumi makes the risky move of heading onto the Tortoise&rsquo;s back with only a small group, and tries to find its true weak spot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S02E05%20-%20Ost%20Hourai-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Ost Hourai
+          </div>
+          <div class="plot">Naofumi is met by L&rsquo;Arc, Glass, and Therese. They&rsquo;re after the person who broke the Spirit Tortoise&rsquo;s seal and is controlling it. L&rsquo;Arc proposes teaming up again&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S02E06%20-%20Racing%20to%20Catch%20Up-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Racing to Catch Up
+          </div>
+          <div class="plot">Fitoria appears when the Spirit Tortoise revives, and with her help, Naofumi attempts to destroy its heart and cut off its head at the same time. L&rsquo;Arc arrives as well, but all of them are helpless before Kyo&rsquo;s overwhelming power.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S02E07%20-%20Infinite%20Labyrinth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Infinite Labyrinth
+          </div>
+          <div class="plot">Naofumi wakes up in a strange prison to find him and his party at level 1, and Filo missing. They start to raise their levels in order to escape, but things quickly turn against them when a dangerous monster suddenly appears&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S02E08%20-%20A%20Parting%20in%20the%20Snow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - A Parting in the Snow
+          </div>
+          <div class="plot">Naofumi&rsquo;s party heads for the Dragon Hourglass of Mikakage, in order to get to Sikul, the country that summoned Kizuna. Along the way, he sells rare healing items to make a hefty profit. He hears a rumor about a genius mage&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S02E09%20-%20Humming%20Fairy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Humming Fairy
+          </div>
+          <div class="plot">Naofumis party is teleported to Sikul, where Kizuna introduces the Vassal Weapon Hero, Ethnobalt. He soys he can use a piece of Raphtalia's hair and Naofumis blood as a catalyst that can create a shikigami to find her. He creates the shikigami, and they find.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S02E10%20-%20Katana%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Katana Hero
+          </div>
+          <div class="plot">Raphtalia is imprisoned in a Raybul Kingdom prison. She&rsquo;s wary of L&rsquo;Arc&rsquo;s team, who is also imprisoned there, but asks them for help in escaping. Glass is weakened by the draining power of the prison. Raphtalia has a plan to escape, but&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S02E11%20-%20Kizuna-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Kizuna
+          </div>
+          <div class="plot">Naofumi's party is overjoyed to be reunited with Raphtalia. Kizuna criticizes Glass for invading another world. Glass and L'Arc swear they won't fight Naofumi anymore, and instead find another way to solve their problem. Meanwhile, Kyo's plot proceeds.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S02E12%20-%20Reason%20to%20Fight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Reason to Fight
+          </div>
+          <div class="plot">The Wave appears before its scheduled time. Kizuna's group is teleported to it while Naofumi and his party head for Kyo's lab on Ethnobalt's ship. There, they see the true depths of Kyo's wickedness...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S02E13%20-%20Flowers%20Offered%20in%20Recollection-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Flowers Offered in Recollection
+          </div>
+          <div class="plot">Raphtalia recalls having to buy clothing for her smaller self. Kizuna remembers being alone for so long. Rishia remembers Ost trying to give advice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S03E01%20-%20The%20Dark%20Coliseum-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - The Dark Coliseum
+          </div>
+          <div class="plot">Seeking to reunite the scattered inhabitants of Lurolona Village who were sold into slavery, the Shield Hero and his party head to Zeltoble to secretly compete in the underground fights at the coliseum.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S03E02%20-%20Nadia-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Nadia
+          </div>
+          <div class="plot">Naofumi's party enters the underground arena while concealing their identity. As they win and rise through the ranks, they're forced to confront the greed and lawlessness that lurks both without and within the arena. And when the final battle arrives, Raphtalia recognizes her opponent&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S03E03%20-%20The%20White%20Tiger%20Siblings-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - The White Tiger Siblings
+          </div>
+          <div class="plot">Naofumi visits the slave market, where the demi-human slave Fohl asks him to save his sick sister. Naofumi asks him if he's prepared to pay the price, but&hellip; Meanwhile, Lurolona Village is beginning to come back to life as the rescued demi-humans return, but a grave danger awaits it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S03E04%20-%20The%20Operation%20to%20Capture%20the%20Spear%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - The Operation to Capture the Spear Hero
+          </div>
+          <div class="plot">The Spear Hero, Motoyasu, has been sighted, and Mirelia asks Naofumi to persuade him to return. Naofumi is about to leave his lands to Eclair and go look for Motoyasu when an unexpected visitor arrives. And they also meet someone unexpected in the town where Motoyasu is staying&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S03E05%20-%20Each%20of%20Their%20Paths-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Each of Their Paths
+          </div>
+          <div class="plot">Naofumi's party is attacked by a pair of mysterious and powerful men. S'yne arrives during the battle and finally attempts to explain why she wants to become one of Naofumi's followers. Meanwhile, more villagers are training in Hengen Muso.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S03E06%20-%20Where%20You%20Point%20Your%20Strength-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Where You Point Your Strength
+          </div>
+          <div class="plot">Ren is haunted by the deaths of his party members in a failed attempt to defeat the Spirit Tortoise, and doesn't want to believe that he might be responsible for what happened. Myne seems ready to take his side and support him, but...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S03E07%20-%20The%20Girl%20and%20the%20Dragon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - The Girl and the Dragon
+          </div>
+          <div class="plot">Keel and other demi-human children in the village are starting to learn how to assume therianthrope form like Sadeena. Ren is now staying in the village while suffering the effects of the Curse swords, and doing his best to fit in.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S03E08%20-%20Dragon%27s%20Den-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Dragon's Den
+          </div>
+          <div class="plot">Naofumi assembles a party to pursue Gaelion, who has consumed the Emperor Dragon's Core. Gaelion's transformation is profoundly sickening Filo, so Naofumi must return Gaelion to normal within the next two days.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S03E09%20-%20Emperor%20Dragon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Emperor Dragon
+          </div>
+          <div class="plot">Naofumi's party regroups and plans another assault on the Emperor Dragon. While their plan of attack comes together, Wyndia explains her connection to the dragon. This causes Wyndia to remember something very significant...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S03E10%20-%20Perfect%20Hidden%20Justice-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Perfect Hidden Justice
+          </div>
+          <div class="plot">Filo has recovered but needs to gain experience to replace her lost levels. S'yne returns from the underground arena bearing a tale of a suspiciously familiar new fighter who uses a bow and goes by the alias Perfect Hidden Justice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S03E11%20-%20Justice%20VS%20Justice-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Justice VS Justice
+          </div>
+          <div class="plot">Rishia faces Itsuki in the underground arena. As Itsuki rants and raves, it's clear that he's also come under the mental influence of Myne and unlocked a Curse series. Naofumi evacuates the children as Rishia enters her most dangerous fight yet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Rising%20of%20the%20Shield%20Hero%20-%20S03E12%20-%20The%20Ones%20We%20Must%20Protect-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - The Ones We Must Protect
+          </div>
+          <div class="plot">Naofumi begins training in the Way of the Dragon Vein with Sadeena and Gaelion. Back at the village, the blacksmith visits, bringing new equipment for Raphtalia. When she tries it on, it reveals a shocking secret about her past...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

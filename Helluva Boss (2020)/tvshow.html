@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Helluva Boss
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Helluva Boss</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Helluva%20Boss%20%282020%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x1 - Pilot
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S01E01%20-%20Murder%20Family-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Murder Family
+          </div>
+          <div class="plot">After her husband's mistress survives a violent outburst, a deceased teacher hires the I.M.P to finish the job, only to encounter a far more bizarre threat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S01E02%20-%20Loo%20Loo%20Land-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Loo Loo Land
+          </div>
+          <div class="plot">In an attempt to get Blitz&oslash;'s attention, Stolas unnecessarily hires the I.M.P to work as bodyguards for him and his daughter, Octavia, while they visit Loo Loo Land, an amusement park in the Greed Ring.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S01E03%20-%20Spring%20Broken-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Spring Broken
+          </div>
+          <div class="plot">Blitz&oslash; discovers that his reserved, sole parking spot has been stolen by his ex-girlfriend, succubus and famous pop star Verosika Mayday. He and the rest of the I.M.P attempt to get it back by challenging Verosika to a &quot;demon duel.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S01E04%20-%20C.H.E.R.U.B-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - C.H.E.R.U.B.
+          </div>
+          <div class="plot">An eccentric inventor killed by an experiment gone wrong hires the I.M.P to assassinate his now elderly business partner, only to find that he's being talked out of suicide by a rival organization.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S01E05%20-%20The%20Harvest%20Moon%20Festival-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Harvest Moon Festival
+          </div>
+          <div class="plot">Stolas invites the I.M.P to attend the Harvest Moon Festival, an annual event taking place in the Wrath Ring that is overseen by him. However, unbeknownst to our protagonists, an insidious plot will be transpiring there.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S01E06%20-%20Truth%20Seekers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Truth Seekers
+          </div>
+          <div class="plot">While on Earth, Blitz&oslash; and Moxxie are captured by demon-hunting government agents. To escape, they must fight, and come to terms with their inner fears in the process.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S01E07%20-%20Ozzie%27s-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Ozzie's
+          </div>
+          <div class="plot">Moxxie and Millie celebrate their first anniversary at Ozzie's, a club in the Lust Ring. Blitz&oslash; wants in on the action, but since the club is couples only, he has no choice but to invite Stolas.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x8 - Queen Bee
+          </div>
+          <div class="plot">Loona goes to a hellhound party in the Gluttony Ring, but after things don't go the way she planned, she asks Blitz&oslash; to join.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S02E01%20-%20The%20Circus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - The Circus
+          </div>
+          <div class="plot">In a flashback to 25 years in the past, Stolas meets Blitz&oslash;, who becomes his first friend. Flash forward to shortly before the present, and they meet again for the first time since on a night that kickstarts their monthly arrangement.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S02E02%20-%20Seeing%20Stars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Seeing Stars
+          </div>
+          <div class="plot">In an effort to watch Azathoth's tears descend onto Earth, an event that Stolas promised to take her to but forgot to, Octavia steals his grimoire from the I.M.P's office to do so but ends up getting lost in Hollywood.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S02E03%20-%20Exes%20and%20Oohs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Exes and Oohs
+          </div>
+          <div class="plot">The I.M.P are invited to meet a mysterious figure offering them a vague job. Upon arrival, Moxxie realizes that he is far more familiar with the place and the figure than he'd like to be.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S02E04%20-%20Western%20Energy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Western Energy
+          </div>
+          <div class="plot">When Striker kidnaps Stolas, Millie and Moxxie must rescue him while Blitz&oslash; takes Loona to the vet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S02E05%20-%20Unhappy%20Campers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Unhappy Campers
+          </div>
+          <div class="plot">Due to Blitz&oslash; being preoccupied, Moxxie takes an opportunity to lead a mission for the first time, in which he and Millie travel to Earth to investigate the death of a camper and kill the culprit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S02E06%20-%20Oops-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Oops
+          </div>
+          <div class="plot">Upon being abducted by Crimson and Striker so that they may be used as ransom, Blitz&oslash; and Fizzarolli are forced to confront each other over their mutual hatred for each other following the explosive ending of their childhood friendship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S02E07%20-%20Mammon%27s%20Magnificent%20Musical%20Mid-Season%20Special%20%28ft%20Fizzarolli%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Mammon's Magnificent Musical Mid-Season Special (ft Fizzarolli)
+          </div>
+          <div class="plot">Fizzarolli participates in Mammon's annual clown pageant, which he has done every year since Mammon began hosting them and won in each of them. However, with the help of Asmodeus and Blitz&oslash;, he realizes that things need to change.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S02E08%20-%20The%20Full%20Moon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - The Full Moon
+          </div>
+          <div class="plot">On Earth, the Cherubs partner with the D.H.O.R.K.S. after being captured by them and discovering their mutual disdain for the I.M.P. Meanwhile, in Hell, Blitz&oslash; prepares for his monthly meeting with Stolas.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S02E09%20-%20Apology%20Tour-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Apology Tour
+          </div>
+          <div class="plot">After Blitz&oslash; and Stolas' transactional relationship finally comes to an apparent end, Blitz&oslash; attempts to make things right with those who he has wronged in the past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S02E10%20-%20Ghostfkers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Ghostf**kers
+          </div>
+          <div class="plot">Millie helps Blitz deal with his NOT-breakup and things happen. WARNING: Happy Halloween.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S02E11%20-%20Mastermind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Mastermind
+          </div>
+          <div class="plot">When Andrealphus learns that Blitz&oslash; has been illegally accessing Stolas' Grimoire, I.M.P. is arrested and put on trial, where they must defend themselves against the court's harsh accusations.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Helluva%20Boss%20-%20S02E12%20-%20Sinsmas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Sinsmas
+          </div>
+          <div class="plot">Stolas tries to contact Via. Sinsmas starts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

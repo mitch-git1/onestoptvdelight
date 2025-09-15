@@ -46,8 +46,6 @@
 }
 
 body {
-  background-color: #000;
-  background-image: none;
   height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
@@ -327,3 +325,10 @@ p {
 .sidebar-toggle {
   margin-right: 20px;
 }
+
+.background-image {
+    background-image: url('images/tv and movie lists/icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

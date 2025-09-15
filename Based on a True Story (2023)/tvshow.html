@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Based on a True Story
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Based on a True Story</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Based%20on%20a%20True%20Story%20%282023%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S01E01%20-%20The%20Great%20American%20Art%20Form-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Great American Art Form
+          </div>
+          <div class="plot">A realtor and a former tennis star struggle to stay afloat as a serial killer puts LA on alert.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S01E02%20-%20BDE-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - BDE
+          </div>
+          <div class="plot">Ava and Nathan try to maintain appearances; detectives question Nathan at work; Matt asks to meet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S01E03%20-%20Who%27s%20Next-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Who's Next?
+          </div>
+          <div class="plot">Ava and Nathan spar with Matt for creative control; Nathan struggles to keep his story straight.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S01E04%20-%20The%20Survivor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Survivor
+          </div>
+          <div class="plot">Ava, Nathan and Matt attend a true crime convention; a surprise panelist threatens the podcast.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S01E05%20-%20Ted%20Bundy%20Bottle%20Opener-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Ted Bundy Bottle Opener
+          </div>
+          <div class="plot">After a shocking incident at CrimeCon, Ava and Nathan probe Matt for the truth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S01E06%20-%20Love%20You%2C%20Buzzfeed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Love You, Buzzfeed
+          </div>
+          <div class="plot">Ava and Nathan attend a charity auction at Ruby's mansion, where new and old wounds are laid bare.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S01E07%20-%20National%20Geographic-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - National Geographic
+          </div>
+          <div class="plot">Nathan reckons with a devastating failure; Ava confronts her buyer; Matt takes a new approach.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S01E08%20-%20The%20Universe-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Universe
+          </div>
+          <div class="plot">With the cards finally on the table, Ava and Nathan race against time to prevent a tragedy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S02E01%20-%20Liquid%20Gold-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Liquid Gold
+          </div>
+          <div class="plot">Ava and Nathan struggle with parenthood and try to convince Matt to return home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S02E02%20-%20Control%20F%20for%20Murder-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Control F for Murder
+          </div>
+          <div class="plot">Ava tries to make new friends but gets interrogated; Matt helps Nathan stand up for himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S02E03%20-%20Relapse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Relapse
+          </div>
+          <div class="plot">Ava investigates a crime scene and runs into an old friend; Nathan takes a risk seeking redemption.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S02E04%20-%20Y%27all%20Ready%20for%20This-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Y'all Ready for This?
+          </div>
+          <div class="plot">Ava and Nathan go to a sex party to rekindle their spark; Matt is confronted by a fellow addict.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S02E05%20-%20Double%20Fault-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Double Fault
+          </div>
+          <div class="plot">Nathan plays a redemption match; Ava and Matt decode a cipher from the new killer haunting LA.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S02E06%20-%20Based%20on%20a%20Drew%20Story-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Based on a Drew Story
+          </div>
+          <div class="plot">Ava and Nathan look for Drew; Matt and Tory plan their wedding, but he gives into his dark desires.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S02E07%20-%20Shotgun%20Wedding-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Shotgun Wedding
+          </div>
+          <div class="plot">Matt's past comes back to haunt Ava and Nathan; Ava realizes her obsession has become an addiction.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Based%20on%20a%20True%20Story%20-%20S02E08%20-%20This%20Week%27s%20Guest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - This Week's Guest
+          </div>
+          <div class="plot">Ava and Nathan are on a game show with deadly stakes; Tory and Matt are on the run from the police.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
