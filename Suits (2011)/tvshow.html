@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Suits
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Suits</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Suits%20%282011%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">A &quot;closer&quot; for one of New York City's most successful law firms decides to hire an aloof genius who has passed the bar but never went to law school as his associate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S01E02%20-%20Errors%20and%20Omissions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Errors and Omissions
+          </div>
+          <div class="plot">Mike has an ethical dilemma when Louis forces him to make a decision that could hurt his relationship with Harvey. Elsewhere, Harvey's past comes back to haunt him during a case.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S01E03%20-%20Inside%20Track-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Inside Track
+          </div>
+          <div class="plot">Jessica hopes Harvey's promotion will reign him in, but when a crisis arises with the first client he brought into the firm, Harvey goes rogue trying to fix it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S01E04%20-%20Dirty%20Little%20Secrets-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Dirty Little Secrets
+          </div>
+          <div class="plot">Harvey and Jessica's relationship is tested when Harvey defends someone from her past. Also, Louis assigns Mike his first solo case, a pro bono that has him itching for a win.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S01E05%20-%20Bail%20Out-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Bail Out
+          </div>
+          <div class="plot">Mike's life becomes complicated when an old friend reappears and needs his help. Harvey must decide between closing a multi-million dollar deal and helping his trusted driver defend himself against a law suit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S01E06%20-%20Tricks%20of%20the%20Trade-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Tricks of the Trade
+          </div>
+          <div class="plot">Harvey and Mike work to save a woman wrongly accused of insider trading. Mike helps Rachel study for the LSAT, only to find out she is on the brink of discovering his closely guarded secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S01E07%20-%20Play%20the%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Play the Man
+          </div>
+          <div class="plot">Mike takes on Louis' prot&eacute;g&eacute; during a mock trial, but his conflict with Rachel could hurt his chances of winning. Elsewhere, Harvey works on a merger between two hotel chains, but his past with the opposing counsel complicates matters.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S01E08%20-%20Identity%20Crisis-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Identity Crisis
+          </div>
+          <div class="plot">Mike is tasked with reigning in a modern day Robin Hood whose illicit deeds are putting a client's business at risk. Also, Louis must resolve his differences with Harvey to win a case. Amanda Crew and Bruce Altman guest star.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S01E09%20-%20Undefeated-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Undefeated
+          </div>
+          <div class="plot">Harvey meets his match in a cocky opposing counsel in a class action lawsuit, and Mike unknowingly helps frame Rachel as a traitor to the firm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S01E10%20-%20Shelf%20Life-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Shelf Life
+          </div>
+          <div class="plot">Harvey must fire an accountant for falsifying his credentials, but Mike finds a more sinister motive for his termination and becomes concerned about his own employment. Meanwhile, Louis thinks he's found his future wife.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S01E11%20-%20Rules%20of%20the%20Game-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Rules of the Game
+          </div>
+          <div class="plot">Harvey's former mentor turns to him for help when his office comes under investigation. Meanwhile, Jenny suspects Mike may be occupied with more than just his job.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S01E12%20-%20Dog%20Fight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Dog Fight
+          </div>
+          <div class="plot">Harvey's efforts to free an innocent man hit a wall when he goes against the new district attorney, who seems more focused on the integrity of the system than justice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E01%20-%20She%20Knows-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - She Knows
+          </div>
+          <div class="plot">Mike is trusted to close a major lawsuit. Harvey must decide whether or not to defend Mike and his secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E02%20-%20The%20Choice-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - The Choice
+          </div>
+          <div class="plot">Mike confronts Rachel while Jessica approaches Harvey looking for support for Hardman's return.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E03%20-%20Meet%20the%20New%20Boss-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Meet the New Boss
+          </div>
+          <div class="plot">Mike has to handle complications and finds himself caught in the middle of the battle between Harvey and Daniel, and Louis meets his match.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E04%20-%20Discovery-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Discovery
+          </div>
+          <div class="plot">When Travis makes a return causing trouble Jessica and Harvey must work to hide it from Daniel. Meanwhile, Louis and Mike grow closer but Louis' paranoia threatens to ruin their new bond.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E05%20-%20Break%20Point-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Break Point
+          </div>
+          <div class="plot">When Jessica decides to put him in second chair on a lawsuit which could potentially make or break the firm, Harvey feels undermined. However, his 'back seat driving' might just have far reaching consequences. Meanwhile, Mike's case sees a young tennis pro pitted against his trainer, who also happens to be the athlete&rsquo;s father, and Donna deals with the fallout from the Coastal Motors case
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E06%20-%20All%20In-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - All In
+          </div>
+          <div class="plot">Harvey's personal history with a client forces him and Mike to take on an unorthodox case from which they'd normally walk away. Also, Louis and Rachel team up to save a mutually beloved institution from ruin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E07%20-%20Sucker%20Punch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Sucker Punch
+          </div>
+          <div class="plot">As the fallout continues to reverberate from the pending lawsuit against Pearson Hardman, Harvey turns to a former colleague, with whom he has a thorny past, for help in proving the firm's case.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E08%20-%20Rewind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Rewind
+          </div>
+          <div class="plot">With the continuing upheaval at the firm, Mike and Harvey reflect back on how their past decisions have influenced their present situation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E09%20-%20Asterisk-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Asterisk
+          </div>
+          <div class="plot">Harvey is tasked with closing the one person whose vote will decide Pearson Hardman's future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E10%20-%20High%20Noon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - High Noon
+          </div>
+          <div class="plot">Harvey needs Mike's help as the battle for control of Pearson Hardman reaches its climax. But Mike drops off the grid following a dramatic turn in his personal life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E11%20-%20Blind-Sided-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Blind-Sided
+          </div>
+          <div class="plot">Harvey and Mike take on a criminal suit that hits close to home for Mike, who struggles to separate his personal feelings from the facts of the case.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E12%20-%20Blood%20in%20the%20Water-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Blood in the Water
+          </div>
+          <div class="plot">The war with Daniel may be over, but the battle has left Pearson Hardman vulnerable, and Harvey must protect the firm from a rival whose attack seems as personal as it is professional. Louis and Mike are forced to pay the price for previous actions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E13%20-%20Zane%20vs.%20Zane-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Zane vs. Zane
+          </div>
+          <div class="plot">Harvey goes head to head against Robert Zane, Rachel&rsquo;s father, on a gender discrimination case that forces Rachel to confront her complicated relationship with her Dad.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E14%20-%20He%27s%20Back-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - He's Back
+          </div>
+          <div class="plot">With the resources of the firm stretched to the limit, Daniel Hardman returns with an outrageous lawsuit against Jessica.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E15%20-%20Normandy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Normandy
+          </div>
+          <div class="plot">Dana &ldquo;Scottie&rdquo; Scott returns to complicate Harvey and Jessica's battle against Hardman. But this time, she's brought the full force of her British firm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S02E16%20-%20War-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - War
+          </div>
+          <div class="plot">Harvey&rsquo;s vision for the firm&rsquo;s future clashes with Jessica&rsquo;s when a British firm offers a tempting proposition.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E01%20-%20The%20Arrangement-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - The Arrangement
+          </div>
+          <div class="plot">Jessica's new partnership is tested; Harvey must prove a high-profile client's innocence; Mike tries to manage the fallout from his revelation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E02%20-%20I%20Want%20You%20to%20Want%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - I Want You to Want Me
+          </div>
+          <div class="plot">Louis offers Mike a future-changing case; Harvey and Jessica work together to bring down an old nemesis.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E03%20-%20Unfinished%20Business-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Unfinished Business
+          </div>
+          <div class="plot">Cameron has Harvey's client arrested for murder; Katrina tries to win over Louis; a British version of Harvey arrives at the firm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E04%20-%20Conflict%20of%20Interest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Conflict of Interest
+          </div>
+          <div class="plot">Harvey&rsquo;s defense of Ava hits a roadblock when the interests of her murder trial are at odds with Louis&rsquo; work to thwart a hostile takeover of Hessington Oil by a rival businessman.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E05%20-%20Shadow%20of%20a%20Doubt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Shadow of a Doubt
+          </div>
+          <div class="plot">Lines between the personal and the professional get blurred when Harvey and Stephen work together on Ava's case, and Mike invites Rachel to join him on a case that gets complicated when his secret falls in the line of fire -- with Rachel's parents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E06%20-%20The%20Other%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - The Other Time
+          </div>
+          <div class="plot">Cameron continues to use dodgy tactics on Ava's case; Rachel visits law schools; Mike reflects on the past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E07%20-%20She%27s%20Mine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - She's Mine
+          </div>
+          <div class="plot">Harvey and Stephen clash over Ava's case; Harvey and Jessica strategize; Louis gets Rachel's help with a broken contract.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E08%20-%20Endgame-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Endgame
+          </div>
+          <div class="plot">As Ava Hessington&rsquo;s murder trial begins, Harvey, Mike and Jessica fight off betrayal from both inside the firm and out. Meanwhile, Louis and Donna seek to even the score with those who have done them wrong.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E09%20-%20Bad%20Faith-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Bad Faith
+          </div>
+          <div class="plot">An old nemesis returns; Harvey and Scottie are on opposing sides again; Louis ends up in Sheila's crosshairs; Mike and Rachel are under Jessica's scrutiny.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E10%20-%20Stay-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Stay
+          </div>
+          <div class="plot">An old nemesis returns to complicate the Pearson Darby negotiations and put Harvey and Scottie on opposite sides once again. Meanwhile, Mike and Rachel find themselves under Jessica's scrutiny. Louis ends up in Sheila's crosshairs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E11%20-%20Buried%20Secrets-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Buried Secrets
+          </div>
+          <div class="plot">Things get complicated when Harvey mixes business with pleasure and gets caught between Jessica and Scottie. Painful memories plague Mike as he uses a case to exorcise demons against an old foe, while Louis&rsquo; suspicions threaten to expose Mike.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E12%20-%20Yesterday%27s%20Gone-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Yesterday's Gone
+          </div>
+          <div class="plot">Both Mike and Jessica lean on Harvey for support when things from their respective pasts throw them off their game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E13%20-%20Moot%20Point-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Moot Point
+          </div>
+          <div class="plot">Harvey faces an old rival from law school; Jessica tries to stay out of Louis and Scottie's feud.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E14%20-%20Heartburn-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - Heartburn
+          </div>
+          <div class="plot">A major client demands that Harvey and Mike perform an unpleasant task; Louis faces a difficult challenge; Rachel collects an old debt.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E15%20-%20Know%20When%20to%20Fold%20%27Em-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - Know When to Fold 'Em
+          </div>
+          <div class="plot">A persistent attorney goes after one of Harvey's clients; Mike is faced with a difficult decision; former name partner Charles Van Dyke returns with revenge on his mind.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S03E16%20-%20No%20Way%20Out-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - No Way Out
+          </div>
+          <div class="plot">Things are anything but business as usual when Harvey and Mike find themselves at odds with a tenacious U.S. Attorney. Scottie and Harvey can&rsquo;t seem to get on the same page and Mike and Rachel clash over plans for the future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E01%20-%20One-Two-Three%20Go-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - One-Two-Three Go...
+          </div>
+          <div class="plot">Mike and Harvey adjust to their new paradigm. As they butt heads over strategy in Mike&rsquo;s first foray into investment banking, their new attorney-client relationship may be short-lived. Meanwhile, Pearson Specter discovers that a disgraced former District Attorney may be pursuing a vendetta against Harvey and the firm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E02%20-%20Breakfast%2C%20Lunch%20and%20Dinner-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Breakfast, Lunch and Dinner
+          </div>
+          <div class="plot">Harvey and Mike find themselves on opposite sides of a takeover battle that threatens to turn into a knockdown, drag-out fight &ndash; a fight complicated by Rachel&rsquo;s relationship with Mike. Meanwhile, Louis finds himself partnered with recent SEC defector Jeff Malone in defending Pearson Specter from disgraced DA Eric Woodall.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E03%20-%20Two%20in%20the%20Knees-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Two in the Knees
+          </div>
+          <div class="plot">Pearson Specter&rsquo;s client, Logan Sanders, pushes Harvey to prove his relationship with Mike won&rsquo;t hinder him from doing what it takes to win their takeover battle. Meanwhile, Louis attempts to mend his relationship with new colleague Jeff Malone, but their ensuing bonding leads to some misunderstandings.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E04%20-%20Leveraged-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Leveraged
+          </div>
+          <div class="plot">Having lost his partner on the inside, Mike moves to a hostile takeover of Gillis Industries. On the other side, Harvey and Louis pull out all the stops to make sure they win this takeover fight, and things take a personal turn. Meanwhile, Jessica and Malone come face-to-face with Sean Cahill, the attack dog with the weight of the SEC behind him, bent on bringing The Firm down.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E05%20-%20Pound%20of%20Flesh-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Pound of Flesh
+          </div>
+          <div class="plot">Rachel becomes increasingly anxious about work, school, and the growing attraction between herself and Pearson Specter client Logan Sanders. Meanwhile, Louis helps Donna prepare for a major role while she encourages him to face his fear. Harvey and Mike agree to a ceasefire, but Sam accuses him of collusion and Mike learns how ruthless his new partner can be.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E06%20-%20Litt%20the%20Hell%20Up-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Litt the Hell Up
+          </div>
+          <div class="plot">When Sean Cahill brings Pearson Specter client Logan Sanders in to the SEC for questioning, Harvey tries to put an end to the Gillis Industries takeover. But when Mike continues to play hardball, Louis sees an opportunity to make a name for himself by saving the day. Meanwhile, Rachel must contend with the fallout of a moment of weakness.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E07%20-%20We%27re%20Done-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - We're Done
+          </div>
+          <div class="plot">Rachel brings disturbing news while Mike is still reeling from the aftermath of the battle for Gillis Industries. Feeling Harvey is his only friend left, Mike makes a rash decision. Meanwhile, Jessica asks Louis to pick his own reward after his victory for the firm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E08%20-%20Exposure-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Exposure
+          </div>
+          <div class="plot">Mike and Rachel work closely with one another while Jessica and Harvey try to outmaneuver Sean Cahill. Meanwhile, Louis tries to hide evidence for the sake of his career.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E09%20-%20Gone-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Gone
+          </div>
+          <div class="plot">Sean begins a round of depositions for the SEC investigation, endangering the employees at Pearson Specter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E10%20-%20This%20Is%20Rome-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - This Is Rome
+          </div>
+          <div class="plot">Harvey and Jessica take measures to protect the firm; Louis tries to get his affairs in order.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E11%20-%20Enough%20Is%20Enough-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Enough Is Enough
+          </div>
+          <div class="plot">Louis is gaining leverage in his quest to become a name partner of the firm and the Pearson Specter team is dealing with the fallout of Louis learning Mike's secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E12%20-%20Respect-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - Respect
+          </div>
+          <div class="plot">Harvard ethics professor Henry Gerard seeks Harvey's help with a case that requires a lack of ethics to win. Mike, meanwhile, does his best to not be spotted by the professor, whose class he never took; and Louis tries to wine and dine a socialite CEO.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E13%20-%20Fork%20in%20the%20Road-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - Fork in the Road
+          </div>
+          <div class="plot">Harvey and Louis take a drive to aid an out-&shy;-of-&shy;-town client to whom they both have deep ties; and Harvey uses the opportunity to force a confrontation between Louis and Mike about their trust issues. Meanwhile, in a flashback, we discover the root of Harvey and Louis&rsquo;s competitive relationship in their early days at the firm. And Mike first learns the limitations of his genius when it comes to the law.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E14%20-%20Derailed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x14 - Derailed
+          </div>
+          <div class="plot">Mike takes on a humanitarian case that could potentially harm firm business.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E15%20-%20Intent-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x15 - Intent
+          </div>
+          <div class="plot">Evan Smiths offers new evidence that nullifies the firm's victory against Liberty Rail. Harvey and Mike scramble to save the Liberty Rail case; D.A. Wolf comes after the firm; and Jessica and Malone try to adjust to their new circumstances.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S04E16%20-%20Not%20Just%20a%20Pretty%20Face-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x16 - Not Just a Pretty Face
+          </div>
+          <div class="plot">Cahill needs help from Harvey in order to make his case against Woodall and Forstman; Rachel and Mike deal with their different relationships with Harvey; and Donna helps Louis with a crisis.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E01%20-%20Denial-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x1 - Denial
+          </div>
+          <div class="plot">Mike and Rachel's engagement is put on the back burner as Donna leaves Harvey to work for Louis. Harvey is in denial and is confident she will return, but will he be able to handle it when he discovers she's not bluffing?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E02%20-%20Compensation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x2 - Compensation
+          </div>
+          <div class="plot">Jessica thinks that Harvey is putting out his &quot;Donna anger&quot; on Louis, as an ambitious senior partner tries to take on Harvey's salary. Rachel's dad insists that Mike and Rachel sign a prenup.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E03%20-%20No%20Refills-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x3 - No Refills
+          </div>
+          <div class="plot">Harvey uses some star power in his conflict with Jack. Robert Zane to co-counsel is brought in by Mike.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E04%20-%20No%20Puedo%20Hacerlo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x4 - No Puedo Hacerlo
+          </div>
+          <div class="plot">Harvey steps outside his usual area of expertise, in order to take a case from a client who has a special tie to the firm. Mike and Zane work their class-action case together, but Mike learns they have different ideas about what constitutes a win - for themselves, and for their clients. And Donna counsels Louis on the best way to settle a feud.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E05%20-%20Toe%20to%20Toe-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - Toe to Toe
+          </div>
+          <div class="plot">Harvey faces old rival Travis Tanner, who claims to be a changed man, in a case. Harvey's sessions with Agard reveal the influence his past has on his present. Jessica tasks Louis to fix things with Harvey, but the plan may make an enemy of Jack.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E06%20-%20Privilege-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x6 - Privilege
+          </div>
+          <div class="plot">Harvey reels from Dr. Agard's revelation about the root of his panic attacks and has to make a tough decision in a case that touches a nerve. Mike and Louis take over responsibility for Harvey's oldest client. Donna tries to make Rachel's dream wedding possible.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E07%20-%20Hitting%20Home-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x7 - Hitting Home
+          </div>
+          <div class="plot">Mike teams with Jack Soloff on a case. Esther Litt returns to P.S.L. in hopes of discreetly solving a problem. Donna and Harvey try to return their friendship to normal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E08%20-%20Mea%20Culpa-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x8 - Mea Culpa
+          </div>
+          <div class="plot">Jessica does damage control in the wake of Harvey punching Louis, just as Jack Soloff and Daniel Hardman are looking for weaknesses to exploit. Meanwhile, Donna counsels both men on how to rectify their issues. And Mike must find a way to turn down his recently announced promotion without raising suspicion - while he and Rachel combat an opposing attorney who holds the key to uncovering his secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E09%20-%20Uninvited%20Guests-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x9 - Uninvited Guests
+          </div>
+          <div class="plot">Rachel and her mother, Laura Zane, plan for Rachel's dream wedding, but Rachel fears the event may reveal Mike's secret. Meanwhile Daniel Hardman and Jack Soloff make their move against Jessica and the partners, as Harvey and Mike tangle with Hardman's mysterious backer, and Louis tries to find Jack's Achilles heel.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E10%20-%20Faith-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x10 - Faith
+          </div>
+          <div class="plot">Jessica and Louis attempt to rally the partners to prevent the takeover attempt by Hardman and Soloff. Mike and Harvey both have to deal with demons from the past  as they make potentially life-altering decisions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E11%20-%20Blowback-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x11 - Blowback
+          </div>
+          <div class="plot">Jessica and Harvey have to come up with a defense, even though Mike is guilty. Rachel must come to terms with her family's reaction to the news that her fianc&eacute; is not the person he claimed to be - and that he could soon be in prison.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E12%20-%20Live%20to%20Fight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x12 - Live to Fight...
+          </div>
+          <div class="plot">Mike and Louis must identify an anonymous tipster in order to diffuse a damning piece of evidence. Gibbs isn't just after Mike, she's set her sights on Jessica and Harvey as well.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E13%20-%20God%27s%20Green%20Earth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x13 - God's Green Earth
+          </div>
+          <div class="plot">With time running out before Mike's case goes to trial, Harvey and Mike are at odds over their strategy, and just what lengths they'll go to in order to defeat Gibbs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E14%20-%20Self%20Defense-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x14 - Self Defense
+          </div>
+          <div class="plot">Time is running out before the trial and Mike wants to represent himself. Harvey wants lead and challenges Mike to a showdown. Louis attempts to get Sheila out of the picture for good.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E15%20-%20Tick%20Tock-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x15 - Tick Tock
+          </div>
+          <div class="plot">Louis thinks about Anita Gibbs' offer of immunity. Rachel offers Mike advise on how to win over the people in the courtroom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S05E16%20-%2025th%20Hour-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x16 - 25th Hour
+          </div>
+          <div class="plot">With the judgment just around the corner, it threatens to ruin the lives of the people closest to Mike. Mike makes one last play.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E01%20-%20To%20Trouble-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x1 - To Trouble
+          </div>
+          <div class="plot">Mike transitions to prison life while Harvey, Jessica, Louis, Donna and Rachel deal with the fallout of Mike&rsquo;s plea deal and try to prevent what&rsquo;s left of PSL from collapsing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E02%20-%20Accounts%20Payable-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x2 - Accounts Payable
+          </div>
+          <div class="plot">Louis, Jessica and Harvey fend off a class action lawsuit from PSL&rsquo;s former clients. Meanwhile, Mike runs afoul of a fellow prisoner due to reasons beyond his own control.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E03%20-%20Back%20on%20the%20Map-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x3 - Back on the Map
+          </div>
+          <div class="plot">Mike tries to stay safe without violating Danbury&rsquo;s unwritten rules. Jessica and Harvey try to land a whale. Louis searches for an office tenant. Rachel goes up against a fellow student.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E04%20-%20Turn-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x4 - Turn
+          </div>
+          <div class="plot">Mike considers a deal that could reduce his sentence. Jessica and Louis take different approaches to deal with tenants. Rachel represents a death row inmate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E05%20-%20Trust-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x5 - Trust
+          </div>
+          <div class="plot">Mike tries to gain Kevin's trust. Harvey enacts a risky plan. Jessica tries to mend the firm's reputation. Rachel hits a roadblock. Louis enlists Donna's help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E06%20-%20Spain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x6 - Spain
+          </div>
+          <div class="plot">Harvey defends Sutter from Cahill. Mike's past threatens to derail his mission. Rachel and Jessica seek evidence to re-open a case. Louis woos Tara.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E07%20-%20Shake%20the%20Trees-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x7 - Shake the Trees
+          </div>
+          <div class="plot">Harvey, Louis and Donna search for a missing link to Sutter's inside trading. Mike takes measures to get Kevin on his side. Rachel and Jessica deliver bad news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E08%20-%20Borrowed%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x8 - Borrowed Time
+          </div>
+          <div class="plot">Harvey counters Cahill's star witness. Mike tries to deliver a witness himself. Jessica and Rachel try to delay Leonard's execution. Louis adjusts to life as the other man.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E09%20-%20The%20Hand%20That%20Feeds%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x9 - The Hand That Feeds You
+          </div>
+          <div class="plot">In order to protect Mike, Harvey considers putting Gallo back on the streets. Jessica and Rachel get Bailey's case re-opened. Louis deals with anxiety over Tara.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E10%20-%20P.S.L-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x10 - P.S.L.
+          </div>
+          <div class="plot">Jessica and Rachel fight to save Leonard Bailey. Harvey and Louis try to keep clients from abandoning ship by wooing their oldest client.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E11%20-%20She%27s%20Gone-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x11 - She's Gone
+          </div>
+          <div class="plot">Harvey, Louis and Donna plan for a future without Jessica; Mike adjusts to life as an ex-convict; Rachel considers her options.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E12%20-%20The%20Painting-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x12 - The Painting
+          </div>
+          <div class="plot">Harvey tries to repair a broken relationship - leaving Louis, Donna and Rachel to manage PSL in his absence. Meanwhile, Mike gets a helping hand from an unexpected place.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E13%20-%20Teeth%2C%20Nose%2C%20Teeth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x13 - Teeth, Nose, Teeth
+          </div>
+          <div class="plot">Rachel receives a letter that creates an unexpected issue for Harvey and Louis. Mike's mentorship of Oliver and Marissa gets put to the test. And Donna gets a surprise from the IT department.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E14%20-%20Admission%20of%20Guilt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x14 - Admission of Guilt
+          </div>
+          <div class="plot">Harvey and Mike walk a fine line when they partner on a class action. Louis needs Rachel's help impressing a client during an annual presentation. Donna and Benjamin refine their product.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E15%20-%20Quid%20Pro%20Quo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x15 - Quid Pro Quo
+          </div>
+          <div class="plot">When Mike's class action hits a snag, it might cost him more than the case; Harvey, Louis and Rachel consider getting their hands dirty; and Donna and Benjamin seek an investor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S06E16%20-%20Character%20and%20Fitness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x16 - Character and Fitness
+          </div>
+          <div class="plot">Mike needs Harvey and Rachel's help to overcome an impossible obstacle, or his dream of becoming a real lawyer is over. Donna's new venture hits a snag. Louis tries to patch things up with Tara.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E01%20-%20Skin%20in%20the%20Game-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x1 - Skin in the Game
+          </div>
+          <div class="plot">Mike returns to Pearson Specter Litt as Harvey takes the reins. Louis manages the new class of associates, while Donna and Rachel find their places in the new world order.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E02%20-%20The%20Statue-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x2 - The Statue
+          </div>
+          <div class="plot">Harvey butts heads with his partners over a bold move. Mike pursues a pro bono case with the legal clinic. Donna's actions raise tough questions at the firm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E03%20-%20Mudmare-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x3 - Mudmare
+          </div>
+          <div class="plot">Louis and Harvey wrangle with new firm dynamics. Mike's latest success brings him unexpected new business. Rachel's leadership is challenged by an insubordinate associate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E04%20-%20Divide%20and%20Conquer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x4 - Divide and Conquer
+          </div>
+          <div class="plot">Harvey, Louis and Donna must get on the same page - and fast - when Bratton Gould comes after PSL for poaching an attorney. Mike and Rachel struggle to make time for their wedding plans.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E05%20-%20Brooklyn%20Housing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x5 - Brooklyn Housing
+          </div>
+          <div class="plot">Mike juggles his work obligations with his promise to help a family; Harvey asks for Louis's discretion in a sensitive matter; Donna vets a possible addition to the firm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E06%20-%20Home%20to%20Roost-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x6 - Home to Roost
+          </div>
+          <div class="plot">Mike deals with the blowback on his prison case; Harvey tries to tell Donna about his relationship with Paula; Louis' past behavior comes back to haunt him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E07%20-%20Full%20Disclosure-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x7 - Full Disclosure
+          </div>
+          <div class="plot">Harvey learns the scope of Alex's involvement with the prison case; Mike tries to keep the case alive; Lipschitz forces Louis out of his comfort zone; Donna tries to balance work and life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E08%20-%20100-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x8 - 100
+          </div>
+          <div class="plot">Harvey and Mike seek outside help; an unexpected encounter derails Louis' search for a new associate; Donna receives a proposition.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E09%20-%20Shame-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x9 - Shame
+          </div>
+          <div class="plot">Mike proposes a power move to boost business; Harvey's past causes complications; Rachel's father wants to join forces; Louis mentors Brian.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E10%20-%20Donna-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x10 - Donna
+          </div>
+          <div class="plot">After their power move gets countered, Mike and Harvey end up with their backs are against the wall. Rachel worries about her father's clouded judgment. Louis helps Alex.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E11%20-%20Hard%20Truths-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x11 - Hard Truths
+          </div>
+          <div class="plot">Harvey and Louis fight to protect the future of the firm from its past; Alex worries Mike's instincts could risk a client relationship; Donna and Harvey delve into the aftermath of their kiss.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E12%20-%20Bad%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x12 - Bad Man
+          </div>
+          <div class="plot">Harvey has to call in an old debt for the firm. Mike goes toe-to-toe with an unlikely opponent. Louis comes to terms with his new role.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E13%20-%20Inevitable-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x13 - Inevitable
+          </div>
+          <div class="plot">Harvey is forced into a difficult decision when the impossible is asked of him. Mike and Rachel try to make time to discuss their future. Louis struggles with the rules of his relationship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E14%20-%20Pulling%20the%20Goalie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x14 - Pulling the Goalie
+          </div>
+          <div class="plot">Mike's attempt to distract Harvey with a case backfires. Louis tries not to let emotion affect his judgment in a legal duel. Donna finds a way to prove her worth to the firm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E15%20-%20Tiny%20Violin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x15 - Tiny Violin
+          </div>
+          <div class="plot">Harvey and Louis are blindsided by an attack against Specter Litt. Meanwhile, Mike can&rsquo;t turn his back on the clinic when a class action suit overwhelms Nathan and Oliver.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S07E16%20-%20Good-Bye-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x16 - Good-Bye
+          </div>
+          <div class="plot">Season Finale. It's all hands on deck as Louis, Donna and Alex defend the firm, while Harvey aids Jessica on a case; Mike and Rachel juggle their commitments to the firm, the clinic and each other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E01%20-%20Right-Hand%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x1 - Right-Hand Man
+          </div>
+          <div class="plot">Following the merger, Harvey and Zane grapple over who should lead the firm. Louis tasks Katrina with culling the herd, but doesn't like her decision. Donna helps her see beyond the numbers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E02%20-%20Pecking%20Order-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x2 - Pecking Order
+          </div>
+          <div class="plot">The transition continued to cause headaches as Harvey and Donna get their first taste of how Samantha operates and Alex tries to impress Robert Zane.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E03%20-%20Promises%2C%20Promises-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x3 - Promises, Promises
+          </div>
+          <div class="plot">Harvey&rsquo;s good deed puts him on a collision course with the firm&rsquo;s landlord, David Fox. Alex pursues Samantha's former client. A medical condition jeopardizes Katrina&rsquo;s shot at Senior Partner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E04%20-%20Revenue%20Per%20Square%20Foot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x4 - Revenue Per Square Foot
+          </div>
+          <div class="plot">Alex is caught between Harvey and Zane as Louis struggles to overcome a shocking setback.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E05%20-%20Good%20Mudding-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x5 - Good Mudding
+          </div>
+          <div class="plot">Harvey confronts his personal issues to defend his brother. Louis sacrifices for family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E06%20-%20Cats%2C%20Ballet%2C%20Harvey%20Specter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x6 - Cats, Ballet, Harvey Specter
+          </div>
+          <div class="plot">Harvey and Louis assess their relationship. Donna doubts Samantha's motives for helping her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E07%20-%20Sour%20Grapes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x7 - Sour Grapes
+          </div>
+          <div class="plot">Donna's agreement forces Harvey to help David Fox. Alex comes to Zane's aid on a personal venture.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E08%20-%20Coral%20Gables-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x8 - Coral Gables
+          </div>
+          <div class="plot">Harvey helps Samantha settle an old score. Louis faces a hurdle on the path to fatherhood.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E09%20-%20Motion%20to%20Delay-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x9 - Motion to Delay
+          </div>
+          <div class="plot">An old foe backs the firm into a corner. Samantha and Alex try to broker a peace between clients.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E10%20-%20Managing%20Partner-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x10 - Managing Partner
+          </div>
+          <div class="plot">When Harvey and Zane can't stay on the sidelines, Donna does what's best for the firm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E11%20-%20Rocky%208-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x11 - Rocky 8
+          </div>
+          <div class="plot">Harvey laces up for a rematch against an old foe. Louis struggles to hold the reins of the firm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E12%20-%20Whale%20Hunt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x12 - Whale Hunt
+          </div>
+          <div class="plot">Louis learns the finer points of managing Harvey. Alex is caught between Samantha and his wife.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E13%20-%20The%20Greater%20Good-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x13 - The Greater Good
+          </div>
+          <div class="plot">Harvey and Donna are caught in the crosshairs when Stu is blackmailed; Samantha revisits her past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E14%20-%20Peas%20in%20a%20Pod-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x14 - Peas in a Pod
+          </div>
+          <div class="plot">Harvey's forced to choose a side when Samantha and Scottie go toe-to-toe. Louis represents Lipschitz.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E15%20-%20Stalking%20Horse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x15 - Stalking Horse
+          </div>
+          <div class="plot">Donna's relationship complicates a deal for Harvey and Alex. Samantha helps Louis get justice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S08E16%20-%20Harvey-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x16 - Harvey
+          </div>
+          <div class="plot">When Hardman comes looking for retribution, the firm rallies to Harvey's defense.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S09E01%20-%20Everything%27s%20Changed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x1 - Everything's Changed
+          </div>
+          <div class="plot">Harvey and Samantha fight to keep Zane's name on the wall. Alex warns Louis of the consequences.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S09E02%20-%20Special%20Master-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x2 - Special Master
+          </div>
+          <div class="plot">The firm faces the repercussions of its actions. Samantha enlists Katrina to help an old friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S09E03%20-%20Windmills-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x3 - Windmills
+          </div>
+          <div class="plot">Harvey takes a case to send Faye a message. Louis finds a new opportunity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S09E04%20-%20Cairo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x4 - Cairo
+          </div>
+          <div class="plot">Faye decides to take action against Harvey and Donna's relationship. Harvey looks to impress Donna's father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S09E05%20-%20If%20the%20Shoe%20Fits-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x5 - If the Shoe Fits
+          </div>
+          <div class="plot">Samantha finds herself caught in the middle of a tricky situation when Mike picks a fight with Harvey.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S09E06%20-%20Whatever%20It%20Takes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x6 - Whatever It Takes
+          </div>
+          <div class="plot">Harvey makes a play to get Samantha's job back. Katrina faces off against an old friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S09E07%20-%20Scenic%20Route-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x7 - Scenic Route
+          </div>
+          <div class="plot">Harvey and Samantha head out on a road trip together. Louis gets in over his head with a potential client.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S09E08%20-%20Prisoner%27s%20Dilemma-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x8 - Prisoner's Dilemma
+          </div>
+          <div class="plot">An old foe forces Harvey to account for past actions. Esther has a problem only Louis can solve.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S09E09%20-%20Thunder%20Away-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x9 - Thunder Away
+          </div>
+          <div class="plot">Mike helps Harvey overcome a personal loss and an attempt to take down Faye grows more complicated than what was originally anticipated.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Suits%20-%20S09E10%20-%20One%20Last%20Con-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x10 - One Last Con
+          </div>
+          <div class="plot">Facing its potential destruction, the partners must go all in to save the firm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

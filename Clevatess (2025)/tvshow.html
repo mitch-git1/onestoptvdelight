@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Clevatess
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Clevatess</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Clevatess%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Clevatess%20-%20S01E01%20-%20The%20Lord%20of%20Dark%20Beasts-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Lord of Dark Beasts
+          </div>
+          <div class="plot">An expedition of heroes challenges a powerful monster that keeps mankind trapped on a single continent.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Clevatess%20-%20S01E02%20-%20The%20Beast%20Lord%20in%20Captivity-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Beast Lord in Captivity
+          </div>
+          <div class="plot">Alicia and Clevatess are captured by a group of foul bandits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Clevatess%20-%20S01E03%20-%20Hero%27s%20Duty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Hero's Duty
+          </div>
+          <div class="plot">Nell is punished for her dreams of freedom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Clevatess%20-%20S01E04%20-%20Magical%20Talent-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Magical Talent
+          </div>
+          <div class="plot">Clevatess and Alicia's time at the bandit camp nears its end.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Clevatess%20-%20S01E05%20-%20Boelate%27s%20March-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Boelate's March
+          </div>
+          <div class="plot">Clevatess and Alicia are suddenly attacked by an unexpected opponent.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Clevatess%20-%20S01E06%20-%20Insect%20Controlling%20Wizard-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Insect Controlling Wizard
+          </div>
+          <div class="plot">Alicia and Nelluru stop at a small village after destroying the bandits.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Clevatess%20-%20S01E07%20-%20Secrets%20of%20Magic-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Secrets of Magic
+          </div>
+          <div class="plot">Drel's wizards come to steal Luna away.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Clevatess%20-%20S01E08%20-%20Current%20of%20Insects-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Current of Insects
+          </div>
+          <div class="plot">Alicia continues her battle against the wizards.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Clevatess%20-%20S01E09%20-%20War%20Zone%20Hiderat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - War Zone Hiderat
+          </div>
+          <div class="plot">The battle intensifies as Drel's army reaches Hiderat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Clevatess%20-%20S01E10%20-%20Margo%20and%20Drel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Margo and Drel
+          </div>
+          <div class="plot">The truth about Drel's origins is revealed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Clevatess%20-%20S01E11%20-%20Fake%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Fake Hero
+          </div>
+          <div class="plot">The truth about the hero legend is revealed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Clevatess%20-%20S01E12%20-%20Return%20of%20the%20King-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Return of the King
+          </div>
+          <div class="plot">Alicia's battle with Drel comes to a conclusion as Clevatess questions what he's done.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

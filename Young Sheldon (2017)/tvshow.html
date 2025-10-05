@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Young Sheldon
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Young Sheldon</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Young%20Sheldon%20%282017%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">9-year-old Sheldon Cooper is a once-in-a-generation mind capable of advanced mathematics and science but learns that isn&rsquo;t always helpful growing up in East Texas, a land where church and football are king.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E02%20-%20Rockets%2C%20Communists%2C%20and%20the%20Dewey%20Decimal%20System-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Rockets, Communists, and the Dewey Decimal System
+          </div>
+          <div class="plot">To appease his worried mother, Sheldon employs the techniques of a self-help book to try and make a friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E03%20-%20Poker%2C%20Faith%2C%20and%20Eggs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Poker, Faith, and Eggs
+          </div>
+          <div class="plot">When George Sr. is rushed to the emergency room, Connie comes to babysit, and the kids have an adventure getting to the hospital on their own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E04%20-%20A%20Therapist%2C%20a%20Comic%20Book%2C%20and%20a%20Breakfast%20Sausage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - A Therapist, a Comic Book, and a Breakfast Sausage
+          </div>
+          <div class="plot">After choking on a breakfast sausage, Sheldon wrestles with his fear of solid foods and discovers comic books for the first time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E05%20-%20A%20Solar%20Calculator%2C%20a%20Game%20Ball%2C%20and%20a%20Cheerleader%27s%20Bosom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - A Solar Calculator, a Game Ball, and a Cheerleader's Bosom
+          </div>
+          <div class="plot">Sheldon struggles with newfound popularity after utilizing statistics to help the football team.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E06%20-%20A%20Patch%2C%20a%20Modem%2C%20and%20a%20Zantac-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - A Patch, a Modem, and a Zantac
+          </div>
+          <div class="plot">When a NASA representative visits Sheldon&rsquo;s school and dismisses his science, Sheldon is set on a mission to prove him wrong.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E07%20-%20A%20Brisket%2C%20Voodoo%2C%20and%20Cannonball%20Run-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - A Brisket, Voodoo, and Cannonball Run
+          </div>
+          <div class="plot">The kids brainstorm ways to resolve a family feud when Connie refuses to give George Sr. her brisket recipe.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E08%20-%20Cape%20Canaveral%2C%20Schr%C3%B6dinger%27s%20Cat%2C%20and%20Cyndi%20Lauper%27s%20Hair-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Cape Canaveral, Schr&ouml;dinger's Cat, and Cyndi Lauper's Hair
+          </div>
+          <div class="plot">While Mary, Connie and Missy have their girls night at the salon, the three Cooper men plan their road trip to see the space launcher, but it doesn't go as well as they plan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E09%20-%20Spock%2C%20Kirk%2C%20and%20Testicular%20Hernia-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Spock, Kirk, and Testicular Hernia
+          </div>
+          <div class="plot">George Sr. strikes a deal with Sheldon to tutor Georgie when poor grades threaten to keep him from playing football. While Sheldon's tutoring attempts are ultimately unsuccessful, he does learn some skills from his brother.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E10%20-%20An%20Eagle%20Feather%2C%20a%20String%20Bean%2C%20and%20an%20Eskimo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - An Eagle Feather, a String Bean, and an Eskimo
+          </div>
+          <div class="plot">When Sheldon moves to Dallas to attend a school for gifted children, the family struggles to cope with his absence.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E11%20-%20Demons%2C%20Sunday%20School%2C%20and%20Prime%20Numbers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Demons, Sunday School, and Prime Numbers
+          </div>
+          <div class="plot">A worried Mary sends Sheldon to Sunday school after she finds him playing Dungeons and Dragons with his friends, Tam and Billy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E12%20-%20A%20Computer%2C%20a%20Plastic%20Pony%2C%20and%20a%20Case%20of%20Beer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - A Computer, a Plastic Pony, and a Case of Beer
+          </div>
+          <div class="plot">Sheldon asks for a computer and unknowingly sparks a heated argument between Mary and George Sr. over the family&rsquo;s finances.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E13%20-%20A%20Sneeze%2C%20Detention%2C%20and%20Sissy%20Spacek-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - A Sneeze, Detention, and Sissy Spacek
+          </div>
+          <div class="plot">When flu season hits Medford, Sheldon takes extreme measures to remain healthy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E14%20-%20Potato%20Salad%2C%20a%20Broomstick%2C%20and%20Dad%27s%20Whiskey-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Potato Salad, a Broomstick, and Dad's Whiskey
+          </div>
+          <div class="plot">When Mary takes a job as church secretary, she finds herself becoming Pastor Jeff's marriage counselor. Also, Sheldon and Missy spend their first afternoon home alone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E15%20-%20Dolomite%2C%20Apple%20Slices%2C%20and%20a%20Mystery%20Woman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Dolomite, Apple Slices, and a Mystery Woman
+          </div>
+          <div class="plot">Sheldon makes friends with an upperclassman who introduces him to a new field of science. Also, Mary and George disagree on how to handle Sheldon's blossoming social life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E16%20-%20Killer%20Asteroids%2C%20Oklahoma%2C%20and%20a%20Frizzy%20Hair%20Machine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Killer Asteroids, Oklahoma, and a Frizzy Hair Machine
+          </div>
+          <div class="plot">A disappointing loss at the science fair sends Sheldon&rsquo;s life in a new direction.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E17%20-%20Jiu-Jitsu%2C%20Bubble%20Wrap%2C%20and%20Yoo-hoo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Jiu-Jitsu, Bubble Wrap, and Yoo-hoo
+          </div>
+          <div class="plot">Sheldon is bullied by an unlikely character, and Mary and George disagree on how to handle the situation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E18%20-%20A%20Mother%2C%20A%20Child%2C%20and%20a%20Blue%20Man%27s%20Backside-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - A Mother, A Child, and a Blue Man's Backside
+          </div>
+          <div class="plot">Mary bans Sheldon from reading a mature comic book. Sheldon decides it's time to stop living under Mary's thumb.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E19%20-%20Gluons%2C%20Guacamole%2C%20and%20the%20Color%20Purple-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Gluons, Guacamole, and the Color Purple
+          </div>
+          <div class="plot">When Sheldon is no longer academically challenged at Medford High, he audits a college class taught by Dr. John Sturgis.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E20%20-%20A%20Dog%2C%20a%20Squirrel%2C%20and%20a%20Fish%20Named%20Fish-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - A Dog, a Squirrel, and a Fish Named Fish
+          </div>
+          <div class="plot">A battle erupts between the Coopers and Sparks when the Sparks' new dog terrorizes Sheldon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E21%20-%20Summer%20Sausage%2C%20a%20Pocket%20Poncho%2C%20and%20Tony%20Danza-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - Summer Sausage, a Pocket Poncho, and Tony Danza
+          </div>
+          <div class="plot">While Sheldon is busy keeping tabs on Connie&rsquo;s budding relationship with Dr. Sturgis, George Sr. and Mary attempt to bond with their other children.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S01E22%20-%20Vanilla%20Ice%20Cream%2C%20Gentleman%20Callers%2C%20and%20a%20Dinette%20Set-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Vanilla Ice Cream, Gentleman Callers, and a Dinette Set
+          </div>
+          <div class="plot">When Connie is pursued by two gentlemen callers, Sheldon interferes, forcing her to set some ground rules.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E01%20-%20A%20High-Pitched%20Buzz%20and%20Training%20Wheels-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - A High-Pitched Buzz and Training Wheels
+          </div>
+          <div class="plot">After Sheldon dismantles the refrigerator to stop an annoying hum, he gets a paper route to pay for the repairs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E02%20-%20A%20Rival%20Prodigy%20and%20Sir%20Isaac%20Neutron-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - A Rival Prodigy and Sir Isaac Neutron
+          </div>
+          <div class="plot">When Dr. Sturgis bonds with Paige, another 10-year-old genius, Sheldon&rsquo;s jealousy leads Connie to intervene. Mary invites Paige&rsquo;s family over for a play date.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E03%20-%20A%20Crisis%20of%20Faith%20and%20Octopus%20Aliens-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - A Crisis of Faith and Octopus Aliens
+          </div>
+          <div class="plot">When Mary&rsquo;s faith is shaken by a tragedy in the community, Sheldon becomes an unlikely ally.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E04%20-%20A%20Financial%20Secret%20and%20Fish%20Sauce-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - A Financial Secret and Fish Sauce
+          </div>
+          <div class="plot">When George Sr. asks Sheldon to keep a secret from Mary, the stress of not being honest drives Sheldon to hideout at Tam&rsquo;s for his first sleepover.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E05%20-%20A%20Research%20Study%20and%20Czechoslovakian%20Wedding%20Pastries-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - A Research Study and Czechoslovakian Wedding Pastries
+          </div>
+          <div class="plot">When Dr. Sturgis recommends Sheldon and Missy for a university research study on twins, Mary is unhappy when the test results go to Sheldon's head.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E06%20-%20Seven%20Deadly%20Sins%20and%20a%20Small%20Carl%20Sagan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Seven Deadly Sins and a Small Carl Sagan
+          </div>
+          <div class="plot">Mary clashes with Sheldon's drama teacher over plans for a Halloween fundraiser for the church. Georgie falls for a rebellious teenage girl whom Sheldon is tutoring.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E07%20-%20Carbon%20Dating%20and%20a%20Stuffed%20Raccoon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Carbon Dating and a Stuffed Raccoon
+          </div>
+          <div class="plot">Sheldon gets into trouble with fellow child genius, Paige at the science museum. George is forced to play therapist to Paige&rsquo;s bickering parents. Mary, Georgie and Missy help Connie with a garage sale.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E08%20-%20An%208-Bit%20Princess%20and%20a%20Flat%20Tire%20Genius-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - An 8-Bit Princess and a Flat Tire Genius
+          </div>
+          <div class="plot">A video game takes over Sheldon and Connie&rsquo;s life. George Sr. is jealous when Georgie bonds with Herschel at the auto shop.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E09%20-%20Family%20Dynamics%20and%20a%20Red%20Fiero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Family Dynamics and a Red Fiero
+          </div>
+          <div class="plot">Sheldon studies his family for a psychology project. Thanksgiving dinner turns into a family fight when George Sr. is offered a job in Oklahoma.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E10%20-%20A%20Stunted%20Childhood%20and%20a%20Can%20of%20Fancy%20Mixed%20Nuts-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - A Stunted Childhood and a Can of Fancy Mixed Nuts
+          </div>
+          <div class="plot">When Sheldon learns that people with stunted childhoods can turn into social outcasts, he tries to act. Connie and Dr. Sturgis' relationship is tested when she teaches him how to drive.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E11%20-%20A%20Race%20of%20Superhumans%20and%20a%20Letter%20to%20Alf-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - A Race of Superhumans and a Letter to Alf
+          </div>
+          <div class="plot">Sheldon experiments on Missy, and Georgie joins Mary&rsquo;s bible study to spend more time with his crush, Veronica.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E12%20-%20A%20Tummy%20Ache%20and%20a%20Whale%20of%20a%20Metaphor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - A Tummy Ache and a Whale of a Metaphor
+          </div>
+          <div class="plot">When Sheldon has to spend a few days in the hospital, he turns into the world&rsquo;s worst patient. Also, Missy gets a taste of what life would be like without her twin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E13%20-%20A%20Nuclear%20Reactor%20and%20a%20Boy%20Called%20Lovely-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - A Nuclear Reactor and a Boy Called Lovely
+          </div>
+          <div class="plot">Sheldon attempts to build a nuclear reactor. Also, a university cocktail party gets heated when Dr. Sturgis&rsquo; colleague, Dr. Linkletter, flirts with Connie, and Georgie is heartbroken when he learns Veronica has a boyfriend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E14%20-%20David%2C%20Goliath%20and%20a%20Yoo-hoo%20from%20the%20Back-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - David, Goliath and a Yoo-hoo from the Back
+          </div>
+          <div class="plot">Sheldon uses his new friendship with the school bully to boss Georgie around. Also, Missy steals Connie's makeup for picture day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E15%20-%20A%20Math%20Emergency%20and%20Perky%20Palms-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - A Math Emergency and Perky Palms
+          </div>
+          <div class="plot">Sheldon and Dr. Sturgis have their first fight when Dr. Sturgis marks a question wrong on Sheldon's test. Also, Mary takes over for Pastor Jeff when he's out sick.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E16%20-%20A%20Loaf%20of%20Bread%20and%20a%20Grand%20Old%20Flag-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - A Loaf of Bread and a Grand Old Flag
+          </div>
+          <div class="plot">Things spiral out of control when Sheldon boycotts his favorite bread company. Also, Georgie offers Veronica a shoulder to cry on when she's dumped by her boyfriend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E17%20-%20Albert%20Einstein%20and%20the%20Story%20of%20Another%20Mary-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Albert Einstein and the Story of Another Mary
+          </div>
+          <div class="plot">Inspired by his hero, Albert Einstein, Sheldon tries his hand at the violin. Also, Mary and Connie secretly buy a pregnancy test when Mary thinks she's pregnant
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E18%20-%20A%20Perfect%20Score%20and%20a%20Bunsen%20Burner%20Marshmallow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - A Perfect Score and a Bunsen Burner Marshmallow
+          </div>
+          <div class="plot">Sheldon moves in with Dr. Sturgis for the weekend to see what his life will be like in college. Also, a lonely Mary tries to bond with the other Coopers during Sheldon's absence.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E19%20-%20A%20Political%20Campaign%20and%20a%20Candy%20Land%20Cheater-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - A Political Campaign and a Candy Land Cheater
+          </div>
+          <div class="plot">Unhappy that school funds are going towards football rather than academics, Sheldon decides to run for class president.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E20%20-%20A%20Proposal%20and%20a%20Popsicle%20Stick%20Cross-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - A Proposal and a Popsicle Stick Cross
+          </div>
+          <div class="plot">Georgie is thrilled when Veronica stays at the Coopers' house for a few days. Also, Connie and Dr. Sturgis celebrate their one-year anniversary.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E21%20-%20A%20Broken%20Heart%20and%20a%20Crock%20Monster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - A Broken Heart and a Crock Monster
+          </div>
+          <div class="plot">The Coopers help Pastor Jeff through a rough patch in his marriage. Also, Sheldon pressures church members for donations when Mary takes him to work for a day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S02E22%20-%20A%20Swedish%20Science%20Thing%20and%20the%20Equation%20for%20Toast-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - A Swedish Science Thing and the Equation for Toast
+          </div>
+          <div class="plot">Sheldon invites the entire school to a party for the Nobel Prize announcements. Also, Connie learns more about Dr. Sturgis' past, and Georgie's desire for cable TV leads to a standoff between him and George Sr.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E01%20-%20Quirky%20Eggheads%20and%20Texas%20Snow%20Globes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Quirky Eggheads and Texas Snow Globes
+          </div>
+          <div class="plot">After Dr. Sturgis experiences a nervous breakdown, Mary worries Sheldon is headed down a similar path. Also, Georgie discovers he has a knack for sales.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E02%20-%20A%20Broom%20Closet%20and%20Satan%27s%20Monopoly%20Board-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - A Broom Closet and Satan's Monopoly Board
+          </div>
+          <div class="plot">Without Dr. Sturgis&rsquo; university class, Sheldon must find a new way to stay academically challenged. Also, Mary helps Pastor Jeff avoid temptation with his girlfriend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E03%20-%20An%20Entrepreneurialist%20and%20a%20Swat%20on%20the%20Bottom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - An Entrepreneurialist and a Swat on the Bottom
+          </div>
+          <div class="plot">Sheldon takes matters into his own hands when Connie refuses to drive him to a lecture with Dr. Linkletter. Also, Georgie tries to impress Veronica with his new business venture
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E04%20-%20Hobbitses%2C%20Physicses%20and%20a%20Ball%20with%20Zip-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Hobbitses, Physicses and a Ball with Zip
+          </div>
+          <div class="plot">Sheldon is forced to take a break from science when his new obsession with &quot;The Lord of the Rings&quot; leads to an unhealthy habit. Also, Missy asks George Sr. to teach her how to play catch.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E05%20-%20A%20Pineapple%20and%20the%20Bosom%20of%20Male%20Friendship-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - A Pineapple and the Bosom of Male Friendship
+          </div>
+          <div class="plot">After being released from the mental hospital, Dr. Sturgis unexpectedly breaks up with Connie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E06%20-%20A%20Parasol%20and%20a%20Hell%20of%20an%20Arm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - A Parasol and a Hell of an Arm
+          </div>
+          <div class="plot">A church carnival leads Missy to try out for the baseball team. Also, Connie struggles after her breakup with Dr. Sturgis.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E07%20-%20Pongo%20Pygmaeus%20and%20a%20Culture%20that%20Encourages%20Spitting-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Pongo Pygmaeus and a Culture that Encourages Spitting
+          </div>
+          <div class="plot">Sheldon starts an internet flame war, and Missy stands up to the boys on her baseball team. Also, Connie is unhappy when George Sr. spends time with her new boyfriend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E08%20-%20The%20Sin%20of%20Greed%20and%20a%20Chimichanga%20from%20Chi-chi%27s-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - The Sin of Greed and a Chimichanga from Chi-chi's
+          </div>
+          <div class="plot">The University makes George Sr. a lucrative job offer in the hopes of recruiting Sheldon. Also, Georgie gets a job working for Connie's new boyfriend, and Mary is determined to rid her home of greed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E09%20-%20A%20Party%20Invitation%2C%20Football%20Grapes%20and%20an%20Earth%20Chicken-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - A Party Invitation, Football Grapes and an Earth Chicken
+          </div>
+          <div class="plot">Mary gets Pastor Jeff involved when Sheldon isn't invited to Billy's birthday party. Also, George Sr. has &quot;male-bonding time&quot; with Dr. Sturgis.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E10%20-%20Teenager%20Soup%20and%20a%20Little%20Ball%20of%20Fib-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Teenager Soup and a Little Ball of Fib
+          </div>
+          <div class="plot">Sheldon fakes being sick to avoid a swim test at school. Also, Dr. Sturgis spies on Connie's new boyfriend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E11%20-%20A%20Live%20Chicken%2C%20a%20Fried%20Chicken%20and%20Holy%20Matrimony-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - A Live Chicken, a Fried Chicken and Holy Matrimony
+          </div>
+          <div class="plot">George Sr. and Connie struggle to manage the Cooper household while Mary plans Pastor Jeff&rsquo;s wedding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E12%20-%20Body%20Glitter%20and%20a%20Mall%20Safety%20Kit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Body Glitter and a Mall Safety Kit
+          </div>
+          <div class="plot">Sheldon learns to listen when an emotional Paige struggles with her parents&rsquo; divorce. George Sr. is furious when Georgie tries to buy his way out of chores.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E13%20-%20Contracts%2C%20Rules%20and%20a%20Little%20Bit%20of%20Pig%20Brains-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Contracts, Rules and a Little Bit of Pig Brains
+          </div>
+          <div class="plot">George Sr. and Georgie go camping with Connie's new boyfriend, Dale, but things get complicated when her ex-boyfriend, Dr. Sturgis, tags along. Also, Sheldon and Missy invent a super-game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E14%20-%20A%20Slump%2C%20a%20Cross%20and%20Roadside%20Gravel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - A Slump, a Cross and Roadside Gravel
+          </div>
+          <div class="plot">Sheldon and Georgie mine for platinum in roadside gravel. Mary is concerned when Missy misuses religion to help with a batting slump.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E15%20-%20A%20Boyfriend%27s%20Ex-Wife%20and%20a%20Good%20Luck%20Head%20Rub-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - A Boyfriend's Ex-Wife and a Good Luck Head Rub
+          </div>
+          <div class="plot">Connie meets Dale&rsquo;s ex-wife, June. Sheldon is forced to work on a group project with reluctant college students.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E16%20-%20Pasadena-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - Pasadena
+          </div>
+          <div class="plot">Sheldon visits CalTech for the very first time. Also, Georgie is furious when Mary listens in on a phone call with his girlfriend, and Connie tries to cheer up a jealous Missy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E17%20-%20An%20Academic%20Crime%20and%20a%20More%20Romantic%20Taco%20Bell-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - An Academic Crime and a More Romantic Taco Bell
+          </div>
+          <div class="plot">Dr. Sturgis is furious when Sheldon accuses him of plagiarism. Also, Mary sets out to find a &ldquo;girl trophy&rdquo; for Missy&rsquo;s end-of-season baseball ceremony, and Georgie has an awkward run-in with Veronica while on a date with his new girlfriend, Jana.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E18%20-%20A%20Couple%20Bruised%20Ribs%20and%20a%20Cereal%20Box%20Ghost%20Detector-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x18 - A Couple Bruised Ribs and a Cereal Box Ghost Detector
+          </div>
+          <div class="plot">When George Sr. accidentally lands the school librarian in the hospital, the Cooper family must nurse her back to health. Connie gives Georgie relationship advice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E19%20-%20A%20House%20for%20Sale%20and%20Serious%20Woman%20Stuff-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x19 - A House for Sale and Serious Woman Stuff
+          </div>
+          <div class="plot">When Sheldon learns the house next door is for sale, he takes it upon himself to find the perfect neighbors. Missy is torn when she&rsquo;s forced to pitch against her boyfriend at the baseball game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E20%20-%20A%20Baby%20Tooth%20and%20the%20Egyptian%20God%20of%20Knowledge-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x20 - A Baby Tooth and the Egyptian God of Knowledge
+          </div>
+          <div class="plot">Sheldon has a scientific breakthrough at the dentist's office. Also, Dale and Connie go to the casino, and Georgie makes a big mistake when Dale leaves him in charge of the store
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S03E21%20-%20A%20Secret%20Letter%20and%20a%20Lowly%20Disc%20of%20Processed%20Meat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x21 - A Secret Letter and a Lowly Disc of Processed Meat
+          </div>
+          <div class="plot">Sheldon discovers that Mary's been keeping a secret about his future. Also, Connie is furious when she learns Dale fired Georgie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E01%20-%20Graduation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Graduation
+          </div>
+          <div class="plot">After graduating high school, Sheldon has a breakdown when he realizes he may not be ready for college. Dale tries to make amends with Connie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E02%20-%20A%20Docent%2C%20A%20Little%20Lady%20and%20a%20Bouncer%20Named%20Dalton-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - A Docent, A Little Lady and a Bouncer Named Dalton
+          </div>
+          <div class="plot">Sheldon gets a summer job at the local train museum. Also, George and Missy bond when Missy embarks on a new stage of womanhood, and Georgie discovers Mary's guilty pleasure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E03%20-%20Training%20Wheels%20and%20an%20Unleashed%20Chicken-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Training Wheels and an Unleashed Chicken
+          </div>
+          <div class="plot">With college in sight, Sheldon is determined to ride his bike without training wheels. Also, Mary and George Sr. argue over parenting styles.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E04%20-%20Bible%20Camp%20and%20a%20Chariot%20of%20Love-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Bible Camp and a Chariot of Love
+          </div>
+          <div class="plot">When their mothers force them to attend Vacation Bible School. Also, George is furious after Georgie makes a questionable purchase.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E05%20-%20A%20Musty%20Crypt%20and%20a%20Stick%20to%20Pee%20On-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - A Musty Crypt and a Stick to Pee On
+          </div>
+          <div class="plot">Dale and Connie work out relationship issues while playing Dungeons and Dragons with Sheldon and Missy. Also, Mary and George take a trip with Coach Wilkins and his wife, and Georgie freaks out when his girlfriend thinks she's pregnant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E06%20-%20Freshman%20Orientation%20and%20the%20Inventor%20of%20The%20Zipper-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Freshman Orientation and the Inventor of The Zipper
+          </div>
+          <div class="plot">College orientation does not go as Sheldon planned. Also, Mary is invited to a party when she's mistaken for a university student, and George Sr. helps Pastor Jeff set up a children's nursery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E07%20-%20A%20Philosophy%20Class%20and%20Worms%20That%20Can%20Chase%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - A Philosophy Class and Worms That Can Chase You
+          </div>
+          <div class="plot">Sheldon's first day of college is derailed by his new philosophy teacher, Professor Ericson. Also, Mary and Brenda live vicariously through Missy's first day of middle school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E08%20-%20An%20Existential%20Crisis%20and%20a%20Bear%20That%20Makes%20Bubbles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - An Existential Crisis and a Bear That Makes Bubbles
+          </div>
+          <div class="plot">Connie takes matters into her own hands when Sheldon's philosophy teacher, Professor Ericson, sends him into a tailspin. Also, George Sr. learns Georgie has been cutting class.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E09%20-%20Crappy%20Frozen%20Ice%20Cream%20and%20an%20Organ%20Grinder%27s%20Monkey-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Crappy Frozen Ice Cream and an Organ Grinder's Monkey
+          </div>
+          <div class="plot">Sheldon and George Sr. dine with President Hagemeyer and a university benefactor. Also, Georgie gives Missy some brotherly advice when Mary won't let her go to the school dance, and Dale and June convince Connie to attend their son's wedding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E10%20-%20Cowboy%20Aerobics%20and%20473%20Grease-Free%20Bolts-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Cowboy Aerobics and 473 Grease-Free Bolts
+          </div>
+          <div class="plot">Sheldon campaigns to become Dr. Linkletter's lab assistant. Also, Georgie enlists the help of Mr. Lundy, the drama teacher, for a surprising business venture.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E11%20-%20A%20Pager%2C%20a%20Club%20and%20a%20Cranky%20Bag%20of%20Wrinkles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - A Pager, a Club and a Cranky Bag of Wrinkles
+          </div>
+          <div class="plot">Dr. Linkletter pushes Sheldon to make friends with his fellow students at college. Also, Georgie gets a pager.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E12%20-%20A%20Box%20of%20Treasure%20and%20the%20Meemaw%20of%20Science-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - A Box of Treasure and the Meemaw of Science
+          </div>
+          <div class="plot">Sheldon, Dr. Linkletter and Connie team up on a science experiment. Also, Mary is jealous that Pastor Jeff and Brenda are spending time together, and Georgie has a new side hustle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E13%20-%20The%20Geezer%20Bus%20and%20a%20New%20Model%20for%20Education-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - The Geezer Bus and a New Model for Education
+          </div>
+          <div class="plot">Sheldon refuses to ride in a car after getting into an accident with Connie. Also, Missy uses their trauma to her advantage at school and Connie is forced to take the church shuttle while her car is in the shop.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E14%20-%20Mitch%27s%20Son%20and%20the%20Unconditional%20Approval%20of%20a%20Government%20Agency-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x14 - Mitch's Son and the Unconditional Approval of a Government Agency
+          </div>
+          <div class="plot">When the IRS accuses Sheldon of making a mistake, he'll stop at nothing to prove them wrong. Also, Dale is forced to get a colonoscopy and tries to convince Connie to join him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E15%20-%20A%20Virus%2C%20Heartbreak%20and%20a%20World%20of%20Possibilities-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x15 - A Virus, Heartbreak and a World of Possibilities
+          </div>
+          <div class="plot">Sheldon is caught in a moral dilemma when offered a bootleg copy of a computer game he can't afford. Also, Mary and Connie take Brenda out for girls' night while George Sr. and the guys watch Billy, and Missy asks Georgie to take her and Marcus on a secret date.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E16%20-%20A%20Second%20Prodigy%20and%20the%20Hottest%20Tips%20for%20Pouty%20Lips-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x16 - A Second Prodigy and the Hottest Tips for Pouty Lips
+          </div>
+          <div class="plot">Sheldon finds himself at odds with Paige once again when she considers enrolling at East Texas Tech. Also, Mary seeks June's advice when looking for a change.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E17%20-%20A%20Black%20Hole-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x17 - A Black Hole
+          </div>
+          <div class="plot">The Coopers discuss the possibilities of black holes and alternate universes when Dr. Sturgis comes over for dinner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S04E18%20-%20The%20Wild%20and%20Woolly%20World%20of%20Nonlinear%20Dynamics-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x18 - The Wild and Woolly World of Nonlinear Dynamics
+          </div>
+          <div class="plot">Missy's first heartbreak triggers a series of events that lead the Cooper family to the brink.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E01%20-%20One%20Bad%20Night%20and%20Chaos%20of%20Selfish%20Desires-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x1 - One Bad Night and Chaos of Selfish Desires
+          </div>
+          <div class="plot">Sheldon and Missy both run away from home, and Mary gets upsetting news about George Sr.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E02%20-%20Snoopin%27%20Around%20and%20the%20Wonder%20Twins%20of%20Atheism-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x2 - Snoopin' Around and the Wonder Twins of Atheism
+          </div>
+          <div class="plot">Sheldon encourages Missy to question the Bible. Also, Connie is determined to catch George Sr. in a lie, and Mary helps Pastor Jeff search for a youth pastor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E03%20-%20Potential%20Energy%20and%20Hooch%20on%20a%20Park%20Bench-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x3 - Potential Energy and Hooch on a Park Bench
+          </div>
+          <div class="plot">Sheldon tries to convince Dr. Sturgis to return to the university. Also, Georgie upsets the family when he makes a life-changing decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E04%20-%20Pish%20Posh%20and%20a%20Secret%20Back%20Room-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x4 - Pish Posh and a Secret Back Room
+          </div>
+          <div class="plot">Sheldon, Missy and Georgie adapt to new living arrangements. Also, Connie opens a gambling room.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E05%20-%20Stuffed%20Animals%20and%20a%20Sweet%20Southern%20Syzygy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - Stuffed Animals and a Sweet Southern Syzygy
+          </div>
+          <div class="plot">Sheldon and Dr. Linkletter struggle to solve an equation. Also, Georgie has a solution for Connie's business woes, and George Sr. gives advice on Missy's love life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E06%20-%20Money%20Laundering%20and%20a%20Cascade%20of%20Hormones-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x6 - Money Laundering and a Cascade of Hormones
+          </div>
+          <div class="plot">Missy asks some uncomfortable questions at church, and Connie and Georgie go into business together.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E07%20-%20An%20Introduction%20to%20Engineering%20and%20a%20Glob%20of%20Hair%20Gel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x7 - An Introduction to Engineering and a Glob of Hair Gel
+          </div>
+          <div class="plot">Sheldon takes his first engineering class with Professor Boucher. Also, Meemaw and Dale help take care of his ex-wife, June.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E08%20-%20The%20Grand%20Chancellor%20and%20a%20Den%20of%20Sin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x8 - The Grand Chancellor and a Den of Sin
+          </div>
+          <div class="plot">Sheldon battles President Hagemeyer's mysterious boss over the university's science requirements. Also, Mary discovers that Georgie is working at Connie's illegal gambling room.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E09%20-%20The%20Yips%20and%20an%20Oddly%20Hypnotic%20Bohemian-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x9 - The Yips and an Oddly Hypnotic Bohemian
+          </div>
+          <div class="plot">Sheldon gets the science yips and has to learn how to not think. Also, George Sr. plays handyman at Brenda Sparks' house.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E10%20-%20An%20Expensive%20Glitch%20and%20a%20Goof-Off%20Room-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x10 - An Expensive Glitch and a Goof-Off Room
+          </div>
+          <div class="plot">Sheldon gets a dorm room all to himself. Also, Connie gains an unwanted business partner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E11%20-%20A%20Lock-In%2C%20a%20Weather%20Girl%20and%20a%20Disgusting%20Habit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x11 - A Lock-In, a Weather Girl and a Disgusting Habit
+          </div>
+          <div class="plot">Sheldon acts as Mary's spy during a youth lock-in at church. Also, Georgie is attracted to an older woman, Mandy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E12%20-%20A%20Pink%20Cadillac%20and%20a%20Glorious%20Tribal%20Dance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x12 - A Pink Cadillac and a Glorious Tribal Dance
+          </div>
+          <div class="plot">Sheldon attends his first comic book convention; Mary tries selling makeup.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E13%20-%20A%20Lot%20of%20Band-Aids%20and%20the%20Cooper%20Surrender-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x13 - A Lot of Band-Aids and the Cooper Surrender
+          </div>
+          <div class="plot">Sheldon makes friends with his dorm neighbors; George Sr. learns his job is in jeopardy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E14%20-%20A%20Free%20Scratcher%20and%20Feminine%20Wiles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x14 - A Free Scratcher and Feminine Wiles
+          </div>
+          <div class="plot">Sheldon butts heads with Dr. Lee, a new scientist in the lab. Also, Mary is given a lotto ticket.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E15%20-%20A%20Lobster%2C%20an%20Armadillo%20and%20a%20Way%20Bigger%20Number-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x15 - A Lobster, an Armadillo and a Way Bigger Number
+          </div>
+          <div class="plot">Sheldon joins Dr. Linkletter and Dr. Sturgis on a science road trip. Also, Georgie continues to lie about his age.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E16%20-%20A%20Suitcase%20Full%20of%20Cash%20and%20a%20Yellow%20Clown%20Car-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x16 - A Suitcase Full of Cash and a Yellow Clown Car
+          </div>
+          <div class="plot">Connie's gambling room is a success, and Sheldon dips his toe in the stock market. Also, Missy starts a business.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E17%20-%20A%20Solo%20Peanut%2C%20a%20Social%20Butterfly%20and%20the%20Truth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x17 - A Solo Peanut, a Social Butterfly and the Truth
+          </div>
+          <div class="plot">Sheldon gets an odd request from an old friend, Paige. Also, George Sr. and Mary are caught in the middle of Connie and Dale's breakup, and Georgie comes clean to Mandy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E18%20-%20Babies%2C%20Lies%20and%20a%20Resplendent%20Cannoli-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x18 - Babies, Lies and a Resplendent Cannoli
+          </div>
+          <div class="plot">Sheldon copes with the death of a hero. Also, Missy wants to babysit, and Georgie struggles with his big secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E19%20-%20A%20God-Fearin%27%20Baptist%20and%20a%20Hot%20Trophy%20Husband-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x19 - A God-Fearin' Baptist and a Hot Trophy Husband
+          </div>
+          <div class="plot">George and Mary insist on meeting the new woman in Georgie's life. Also, Sheldon and Missy have suspicions about what's going on with their family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E20%20-%20Uncle%20Sheldon%20and%20a%20Hormonal%20Firecracker-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x20 - Uncle Sheldon and a Hormonal Firecracker
+          </div>
+          <div class="plot">Sheldon and Missy learn about Georgie's pregnancy, and the whole family promises to keep it a secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E21%20-%20White%20Trash%2C%20Holy%20Rollers%20and%20Punching%20People-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x21 - White Trash, Holy Rollers and Punching People
+          </div>
+          <div class="plot">As the church congregation gossips about Georgie, Missy stands up for her brother, and Sheldon is distracted by the family drama.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S05E22%20-%20Clogged%20Pore%2C%20a%20Little%20Spanish%20and%20the%20Future-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x22 - Clogged Pore, a Little Spanish and the Future
+          </div>
+          <div class="plot">Sheldon struggles to cope with the first signs of puberty. Also, Mary and George Sr. hunt for new jobs, and Georgie and Meemaw take a business trip across the border.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E01%20-%20Four%20Hundred%20Cartons%20of%20Undeclared%20Cigarettes%20and%20a%20Niblingo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x1 - Four Hundred Cartons of Undeclared Cigarettes and a Niblingo
+          </div>
+          <div class="plot">George Sr. bails Connie and Georgie out of jail. Also, Sheldon and Missy meet Mandy, and Mary feels unwelcome at church.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E02%20-%20Future%20Worf%20and%20the%20Margarita%20of%20the%20South%20Pacific-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x2 - Future Worf and the Margarita of the South Pacific
+          </div>
+          <div class="plot">Sheldon and Missy try to help the family&rsquo;s finances. Also, Mary struggles to find her footing without the church.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E03%20-%20Passion%27s%20Harvest%20and%20a%20Sheldocracy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x3 - Passion's Harvest and a Sheldocracy
+          </div>
+          <div class="plot">Sheldon must choose sides in an ethical dilemma. Also, Mary tries her hand at writing and Mandy needs a new place to live.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E04%20-%20Blonde%20Ambition%20and%20the%20Concept%20of%20Zero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x4 - Blonde Ambition and the Concept of Zero
+          </div>
+          <div class="plot">Sheldon makes a terrifying mathematical discovery while tutoring Billy. Also, Mary is jealous of Missy's relationship with Mandy and Connie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E05%20-%20A%20Resident%20Advisor%20and%20the%20Word%20%27Sketchy%27-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x5 - A Resident Advisor and the Word 'Sketchy'
+          </div>
+          <div class="plot">At college, Sheldon decides to expand his responsibilities and become a dorm resident advisor. Also, Connie and Dale make a sketchy business deal, and Mary and George Sr. rekindle their romance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E06%20-%20An%20Ugly%20Car%2C%20an%20Affair%20and%20Some%20Kickass%20Football-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x6 - An Ugly Car, an Affair and Some Kickass Football
+          </div>
+          <div class="plot">George Sr. is asked to help with the football team. Also, Mandy discovers Georgie and Connie's secret business.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E07%20-%20A%20Tougher%20Nut%20and%20a%20Note%20on%20File-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x7 - A Tougher Nut and a Note on File
+          </div>
+          <div class="plot">Sheldon's search for a comic book leads him to a breakthrough. Also, Georgie and Mandy have an uncomfortable first encounter with her parents, Jim and Audrey.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E08%20-%20Legalese%20and%20a%20Whole%20Hoo-Ha-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x8 - Legalese and a Whole Hoo-Ha
+          </div>
+          <div class="plot">Sheldon's database invention puts him at odds with the university. Also, the church takes issue with Connie's video store.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E09%20-%20College%20Dropouts%20and%20the%20Medford%20Miracle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x9 - College Dropouts and the Medford Miracle
+          </div>
+          <div class="plot">Sheldon considers dropping out of college to focus on building his database. Also, George Sr. is frustrated when someone else gets credit for his football wins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E10%20-%20Pancake%20Sunday%20and%20Textbook%20Flirting-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x10 - Pancake Sunday and Textbook Flirting
+          </div>
+          <div class="plot">Mary struggles to make new friends while Mandy pushes Georgie to date another woman.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E11%20-%20Ruthless%2C%20Toothless%20and%20a%20Week%20of%20Bed%20Rest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x11 - Ruthless, Toothless and a Week of Bed Rest
+          </div>
+          <div class="plot">Sheldon learns the university is building a database without him. Also, Mary takes care of a bedridden Mandy and Meemaw.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E12%20-%20A%20Baby%20Shower%20and%20a%20Testosterone-Rich%20Banter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x12 - A Baby Shower and a Testosterone-Rich Banter
+          </div>
+          <div class="plot">Mary butts heads with Mandy's mother, Audrey, and Sheldon attempts male bonding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E13%20-%20A%20Frat%20Party%2C%20a%20Sleepover%20and%20the%20Mother%20of%20All%20Blisters-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x13 - A Frat Party, a Sleepover and the Mother of All Blisters
+          </div>
+          <div class="plot">Paige drags Sheldon to a college party and Missy gets caught in a lie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E14%20-%20A%20Launch%20Party%20and%20a%20Whole%20Human%20Being-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x14 - A Launch Party and a Whole Human Being
+          </div>
+          <div class="plot">The Coopers can't be found as Mandy goes into labor. Also, Sheldon is excited about the launch of his database.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E15%20-%20Teen%20Angst%20and%20a%20Smart-Boy%20Walk%20of%20Shame-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x15 - Teen Angst and a Smart-Boy Walk of Shame
+          </div>
+          <div class="plot">Sheldon confronts the failure of his database. Also, Georgie and Mandy struggle as new parents and Missy feels forgotten.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E16%20-%20A%20Stolen%20Truck%20and%20Going%20on%20the%20Lam-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x16 - A Stolen Truck and Going on the Lam
+          </div>
+          <div class="plot">Missy steals her dad's truck and hits the road with her friend Paige.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E17%20-%20A%20German%20Folk%20Song%20and%20an%20Actual%20Adult-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x17 - A German Folk Song and an Actual Adult
+          </div>
+          <div class="plot">Georgie goes on a birthday date and Mary confronts Brenda about her relationship with George. Also, Sheldon takes an interest in Missy's favorite TV show.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E18%20-%20Little%20Green%20Men%20and%20a%20Fella%27s%20Marriage%20Proposal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x18 - Little Green Men and a Fella's Marriage Proposal
+          </div>
+          <div class="plot">Sheldon wants to search for life on other planets and Mandy answers Georgie's marriage proposal. Also, Missy is caught between two friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E19%20-%20A%20New%20Weather%20Girl%20and%20a%20Stay-at-Home%20Coddler-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x19 - A New Weather Girl and a Stay-at-Home Coddler
+          </div>
+          <div class="plot">Mandy gets an exciting job opportunity and Sheldon worries that he's falling behind. Also, Georgie takes his daughter to work.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E20%20-%20German%20for%20Beginners%20and%20a%20Crazy%20Old%20Man%20with%20a%20Bat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x20 - German for Beginners and a Crazy Old Man with a Bat
+          </div>
+          <div class="plot">The gambling room gets broken into and Sheldon wants to study abroad. Also, Missy makes a new friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E21%20-%20A%20Romantic%20Getaway%20and%20a%20Germanic%20Meat-Based%20Diet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x21 - A Romantic Getaway and a Germanic Meat-Based Diet
+          </div>
+          <div class="plot">Mandy surprises Georgie with a spa weekend and Sheldon prepares for his summer in Germany.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S06E22%20-%20A%20Tornado%2C%20a%2010-Hour%20Flight%20and%20a%20Darn%20Fine%20Ring-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x22 - A Tornado, a 10-Hour Flight and a Darn Fine Ring
+          </div>
+          <div class="plot">Sheldon and Mary head to Germany while the rest of the Cooper family braves a tornado that is heading straight for Medford.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E01%20-%20A%20Wiener%20Schnitzel%20and%20Underwear%20in%20a%20Tree-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x1 - A Wiener Schnitzel and Underwear in a Tree
+          </div>
+          <div class="plot">News of the tornado reaches Sheldon and Mary in Germany. Also, with the Cooper house in chaos, Missy steps up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E02%20-%20A%20Roulette%20Wheel%20and%20a%20Piano%20Playing%20Dog-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x2 - A Roulette Wheel and a Piano Playing Dog
+          </div>
+          <div class="plot">Sheldon realizes he is the weakest student in his class; Meemaw is looking to expand her gambling business.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E03%20-%20A%20Strudel%20and%20a%20Hot%20American%20Boy%20Toy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x3 - A Strudel and a Hot American Boy Toy
+          </div>
+          <div class="plot">Sheldon explores Germany behind Mary's back, Missy attempts to pull a fast one on George Sr. and Meemaw and Dale adjust to living together.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E04%20-%20Ants%20on%20a%20Log%20and%20a%20Cheating%20Winker-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x4 - Ants on a Log and a Cheating Winker
+          </div>
+          <div class="plot">Missy steps up, Mary has a surprise for George, and Sheldon finds his dorm occupied.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E05%20-%20A%20Frankenstein%27s%20Monster%20and%20a%20Crazy%20Church%20Guy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x5 - A Frankenstein's Monster and a Crazy Church Guy
+          </div>
+          <div class="plot">Sheldon helps his roommate try to beat the stock market, Missy and Billy Sparks throw a party, and Mary finds a new church.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E06%20-%20Baptists%2C%20Catholics%20and%20an%20Attempted%20Drowning-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x6 - Baptists, Catholics and an Attempted Drowning
+          </div>
+          <div class="plot">Georgie and Mandy's wedding plans pit Mary against Mandy's mom, Audrey, with baby CeeCee caught in the middle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E07%20-%20A%20Proper%20Wedding%20and%20Skeletons%20in%20the%20Closet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x7 - A Proper Wedding and Skeletons in the Closet
+          </div>
+          <div class="plot">Georgie and Mandy get married! Meanwhile, Meemaw's gambling room gets raided.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E08%20-%20An%20Ankle%20Monitor%20and%20a%20Big%20Plastic%20Crap%20House-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x8 - An Ankle Monitor and a Big Plastic Crap House
+          </div>
+          <div class="plot">Sheldon studies to be Meemaw's lawyer when she is put on house arrest, and the Coopers have a plumbing emergency.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E09%20-%20A%20Fancy%20Article%20and%20a%20Scholarship%20for%20a%20Baby-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x9 - A Fancy Article and a Scholarship for a Baby
+          </div>
+          <div class="plot">Sheldon's published paper leads to a frenzy of grad school recruiting, and Georgie tries to speak more properly in front of his daughter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E10%20-%20Community%20Service%20and%20the%20Key%20to%20a%20Happy%20Marriage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x10 - Community Service and the Key to a Happy Marriage
+          </div>
+          <div class="plot">Connie gets assigned a tough probation officer, and Georgie takes marriage advice from his father-in-law.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E11%20-%20A%20Little%20Snip%20and%20Teaching%20Old%20Dogs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x11 - A Little Snip and Teaching Old Dogs
+          </div>
+          <div class="plot">George Sr. is worried that Mary wants another baby and gets a vasectomy behind her back. Meanwhile, Drs. Linkletter and Sturgis go to Sheldon for science tutoring.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E12%20-%20A%20New%20Home%20and%20a%20Traditional%20Texas%20Torture-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x12 - A New Home and a Traditional Texas Torture
+          </div>
+          <div class="plot">George Sr. gets an exciting job offer, and Sheldon prepares for his move to California.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E13%20-%20Funeral%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x13 - Funeral (1)
+          </div>
+          <div class="plot">The Cooper family grapples with the death of George Cooper Sr.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sheldon%20-%20S07E14%20-%20Memoir%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x14 - Memoir (2)
+          </div>
+          <div class="plot">Sheldon leaves East Texas for the California Institute of Technology following the death of his father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

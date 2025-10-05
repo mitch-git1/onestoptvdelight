@@ -1,0 +1,746 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name=�viewport� content=�width=device-width, initial-scale=1.0�
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/x-icon" href="images\tv and movie lists\icon.png">.
+    <title>Top 10 picked Anime - Movies this month</title>
+    <script type="text/javascript" src="./lib/jquery.js"></script>
+    <link rel="stylesheet" href="./lib/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="./lib/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="./lib/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="./lib/deadsix.js"></script>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" type="text/css" href="lib/style sheets/top 10 style.css" />
+    <script type="text/javascript">
+                $(document).ready(function() {
+                                        startUP();
+                                });
+                                $(window).on(&#39;hashchange&#39;, function() {
+                                  checkHash();
+                                });
+            
+</script>
+<link rel="stylesheet" href="lib/media queries stylesheets/media queries movies.css">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="largeContainer">
+      <div class="infoContainer">
+        <div class="homepage-link-container">
+           <!-- add home button -->
+       <a href="https://www.onestoptvdelight.co.za/index.html" class="homepage-link">Home Button</a>
+         </div>
+        <div class="infoContainerTextContainer">
+          <div class="name">
+            <span class="titleNoBlock">Total Movies:</span>
+            <span>10</span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Full List Anime Movies</span>
+            <span><a href="https://www.onestoptvdelight.co.za/full anime movies.html"target="_blank">Full List Anime Movies</a></span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Newly Added Anime Movies</span>
+            <span><a href="https://www.onestoptvdelight.co.za/newly added anime movies.html"target="_blank">Newly Added Anime Movies</a></span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">This list is a random order of 10 and is the most picked this month</span>
+          </div>
+          </div>
+         </div>
+        <div id="searchContainer">
+        <input type="text" autocomplete="off" onfocus="this.value=''; searchOnPage('');"
+        onblur="if(this.value==''){this.value='Search TV Show Name'};"
+        onkeyup="searchOnPage(this.value.toLowerCase());"
+        id="search_box" value="Search TV Show Name" />
+        <input type="submit" id="search_button" value="Search" />
+        <div id="search_result"></div>
+        </div>
+        <div class="dropdown-container">
+         <div id="genre-select-container">
+         <label for="genre-select" class="genre-label">Search By Genre:</label>
+         <select id="genre-select">
+         <option value="all">All</option>
+         </select>
+         </div>
+         <div id="date-select-container">
+           <label for="date-select" class="date-label">Search By Year:</label>
+           <select id="date-select">
+             <option value="all">All</option>
+           </select>
+         </div>
+         <div id="age-rating-select-container">
+         <label for="age-rating-select" class="age-rating-label">Search By Age Rating:</label>
+         <select id="age-rating-select">
+         <option value="all">All</option>
+        </select>
+        </div>
+        <div id="rating-select-container">
+        <label for="rating-select" class="rating-label">Search By Rating:</label>
+        <select id="rating-select">
+        <option value="all">All</option>
+        </select>
+        </div>
+        </div>
+       <div id="no-results-message" class="no-results-message"></div>
+
+       <div id="movie_1" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="1">
+          <div class="fanArt" id="fanart_1">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Bungo%20Stray%20Dogs%20-%20Dead%20Apple%20%282018%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="1" id="plot_1_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="1" id="plot_1">
+          <span class="value">A large scale catastrophe is occurring across the planet. Ability users are discovered after the appearance of a mysterious fog, apparently having committed suicide, so the Armed Detective Agency sets out to investigate these mysterious deaths. The case seems to involve an unknown ability user referred to as &quot;Collector,&quot; a man who could be the mastermind behind the incident.
+ Trust and courage are put to the test in order to save the city of Yokohama and ability users across the world from the grip of Collector where the Armed Detective Agency forms an unlikely partnership with the dangerous Port Mafia.</span>
+        </div>
+        <span class="showId">#1</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="1">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Bungo%20Stray%20Dogs%20-%20Dead%20Apple%20%282018%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Bungo Stray Dogs: Dead Apple</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2018</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.3 Based on (2590) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Action, Comedy, Mystery, Crime, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">BONES, Lantis, KADOKAWA, Bandai Namco Arts</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Yoji Enokido<br /> Asagiri Kafka</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Takuya Igarashi</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=ku8K3e05s1s"target="_blank">trailer link</a></span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:14</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt8391976/reviews/"target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_2" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="2">
+          <div class="fanArt" id="fanart_2">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Demon%20Slayer%20-%20Kimetsu%20no%20Yaiba%20-%20Asakusa%20Arc%20%282022%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="2" id="plot_2_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="2" id="plot_2">
+          <span class="value">A recap of Kimetsu no Yaiba episodes 6&ndash;10, with new footage and special end credits. Tanjiro ventures to Asakusa, Tokyo for his second mission with the Demon Slayer Corps.</span>
+        </div>
+        <span class="showId">#2</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="2">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Demon%20Slayer%20-%20Kimetsu%20no%20Yaiba%20-%20Asakusa%20Arc%20%282022%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Demon Slayer: Kimetsu no Yaiba - Asakusa Arc</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2022</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>8.5 Based on (4963) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Action, Fantasy, Thriller</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Koyoharu Gotouge</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Haruo Sotozaki</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=nxE0Xp0ARcM"target="_blank">trailer link</a></span>
+          </div>
+            <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt16492636/reviews/"target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_3" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="3">
+          <div class="fanArt" id="fanart_3">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Dragon%20Ball%20Super%20-%20Broly%20%282018%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="3" id="plot_3_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="3" id="plot_3">
+          <span class="value">Earth is peaceful following the Tournament of Power. Realizing that the universes still hold many more strong people yet to see, Goku spends all his days training to reach even greater heights. Then one day, Goku and Vegeta are faced by a Saiyan called 'Broly' who they've never seen before. The Saiyans were supposed to have been almost completely wiped out in the destruction of Planet Vegeta, so what's this one doing on Earth? This encounter between the three Saiyans who have followed completely different destinies turns into a stupendous battle, with even Frieza (back from Hell) getting caught up in the mix.</span>
+        </div>
+        <span class="showId">#3</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="3">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Dragon%20Ball%20Super%20-%20Broly%20%282018%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Dragon Ball Super: Broly</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2018</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.7 Based on (35K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Action, Science Fiction, Animation</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Toei Company, Shueisha, Fuji Television Network</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Akira Toriyama</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Tatsuya Nagamine</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=FHgm89hKpXU"target="_blank">trailer link</a></span>
+          </div>
+            <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt7961060/reviews/"target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+
+      <div id="movie_4" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="4">
+          <div class="fanArt" id="fanart_4">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Dragon%20Ball%20Z%20-%20Super%20Android%2013%21%20%281992%29%20480p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="4" id="plot_4_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="4" id="plot_4">
+          <span class="value">Dr. Gero's Androids #13, #14, and #15 are awakened by the laboratory computers and immediately head to the mall where Goku is shopping. After Goku, Trunks, and Vegeta defeat #14 and #15, #13 absorbs their inner computers and becomes a super being greater than the original three separately were. Now it is up to Goku to stop him.</span>
+        </div>
+        <span class="showId">#4</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="4">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Dragon%20Ball%20Z%20-%20Super%20Android%2013%21%20%281992%29%20480p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+          <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Dragon Ball Z: Super Android 13!</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1992</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.0 Based on (8629) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Action, Animation, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Toei Animation, Bird Studios, Toei Company</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Takao Koyama<br /> Akira Toriyama</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Daisuke Nishio</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=t7jna8AulKA"target="_blank">trailer link</a></span>
+          </div>
+            <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt0142241/reviews/"target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_5" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="5">
+          <div class="fanArt" id="fanart_5">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20Irregular%20at%20Magic%20High%20School%20-%20The%20Girl%20Who%20Summons%20the%20Stars%20%282017%29%201080p%20AC3-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="5" id="plot_5_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="5" id="plot_5">
+          <span class="value">In the story, the seasons have changed and it will soon be the second spring. Tatsuya and Miyuki have finished their first year at First Magic High School and are on their spring break. The two go to their villa on the Ogasawara Island archipelago. After only a small moment of peace a lone young woman named Kokoa appears before them. She has abandoned the Naval base and she tells Tatsuya her one wish.</span>
+        </div>
+        <span class="showId">#5</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="5">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/The%20Irregular%20at%20Magic%20High%20School%20-%20The%20Girl%20Who%20Summons%20the%20Stars%20%282017%29%201080p%20AC3-POSTER.thumb.jpg" />
+          </a>
+        </div>
+         <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The Irregular at Magic High School: The Girl Who Summons the Stars</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2017</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.7 Based on (902) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Science Fiction, Action, Animation, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">8bit</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Tsutomu Satou<br /> Muneo Nakamoto</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Risako Yoshida</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=UC0cnDhB7MQ"target="_blank">trailer link</a></span>
+          </div>
+            <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">Unknown</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt6580380/reviews/"target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+        <div id="movie_6" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="6">
+          <div class="fanArt" id="fanart_6">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/KONOSUBA%20%E2%80%93%20God%27s%20blessing%20on%20this%20wonderful%20world%21%20Legend%20of%20Crimson%20%282019%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="6" id="plot_6_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="6" id="plot_6">
+          <span class="value">It is not strange that the Demon Lord's forces fear the Crimson Demons, the clan from which Megumin and Yunyun originate. Even if the Demon Lord's generals attack their village, the Crimson Demons can just easily brush them off with their supreme mastery of advanced and overpowered magic.  When Yunyun receives a seemingly serious letter regarding a potential disaster coming to her hometown, she immediately informs Kazuma Satou and the rest of his party. After a series of wacky misunderstandings, it turns out to be a mere prank by her fellow demon who wants to be an author. Even so, Megumin becomes worried about her family and sets out toward the Crimson Demons' village with the gang.  There, Kazuma and the others decide to sightsee the wonders of Megumin's birthplace. However, they soon come to realize that the nonsense threat they received might have been more than just a joke.</span>
+        </div>
+        <span class="showId">#6</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="6">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/KONOSUBA%20%E2%80%93%20God%27s%20blessing%20on%20this%20wonderful%20world%21%20Legend%20of%20Crimson%20%282019%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">KONOSUBA &ndash; God's blessing on this wonderful world! Legend of Crimson</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2019</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.8 Based on (6571) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Adventure, Comedy, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">J.C.STAFF, KADOKAWA, Sammy, Nippon Columbia</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Makoto Uezu<br /> Natsume Akatsuki</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Takaomi Kanasaki</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=YYg3JtwP2NY"target="_blank">trailer link</a></span>
+          </div>
+            <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">Unknown</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt9239552/reviews/"target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+
+      <div id="movie_7" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="7">
+          <div class="fanArt" id="fanart_7">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%203%20-%20The%20Movie%20%282000%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="7" id="plot_7_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="7" id="plot_7">
+          <span class="value">When Molly Hale's sadness of her father's disappearance gets to her, she unknowingly uses the Unown to create her own dream world along with Entei, who she believes to be her father. When Entei kidnaps Ash's mother, Ash along with Misty &amp; Brock invade the mansion looking for his mom and trying to stop the mysteries of Molly's Dream World and Entei!</span>
+        </div>
+        <span class="showId">#7</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="7">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%203%20-%20The%20Movie%20%282000%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon 3: The Movie</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2000</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.9 Based on (16K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Adventure, Fantasy, Animation, Action, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Nintendo, OLM, TV Tokyo, Pikachu Project 2000</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Takeshi Shudo<br /> Kunihiko Yuyama<br /> Satoshi Tajiri</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=SEqstQn0sag"target="_blank">trailer link</a></span>
+          </div>
+             <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="reviews/"target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_8" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="8">
+          <div class="fanArt" id="fanart_8">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%202000%20%281999%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="8" id="plot_8_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="8" id="plot_8">
+          <span class="value">When Lawrence III's scheme to capture the Legendary Pok&eacute;mon Lugia upsets the balance of nature, it is up to Ash Ketchum and his friends to save the world.</span>
+        </div>
+        <span class="showId">#8</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="8">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%202000%20%281999%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+         <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon the Movie 2000</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1999</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.1 Based on (25K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Adventure, Fantasy, Animation, Science Fiction, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Nintendo, OLM, Pikachu Project '99, Shogakukan, TV Tokyo</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Takeshi Shudo<br /> Satoshi Tajiri</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=HJx0HNj_KMk"target="_blank">trailer link</a></span>
+          </div>
+             <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt0210234/reviews/"target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+
+      <div id="movie_9" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="9">
+          <div class="fanArt" id="fanart_9">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20-%20The%20First%20Movie%20%281998%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="9" id="plot_9_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="9" id="plot_9">
+          <span class="value">Determined to prove its superiority, a bio-engineered Pok&eacute;mon called Mewtwo lures Ash, Pikachu and others into a Pokemon match like none before.</span>
+        </div>
+        <span class="showId">#9</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="9">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20-%20The%20First%20Movie%20%281998%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+         <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon: The First Movie</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1998</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.3 Based on (48K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Family, Adventure, Fantasy, Action</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">OLM, Shogakukan Production, TV Tokyo, Pikachu Project '98</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Takeshi Shudo<br /> Satoshi Tajiri</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=hX-NHafvY5I"target="_blank">trailer link</a></span>
+          </div>
+             <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="reviews/"https://www.imdb.com/title/tt0190641/target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_10" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="10">
+          <div class="fanArt" id="fanart_10">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/That%20Time%20I%20Got%20Reincarnated%20as%20a%20Slime%20the%20Movie%20-%20Scarlet%20Bond%20%282022%29%201080p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="10" id="plot_10_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="10" id="plot_10">
+          <span class="value">A long-running conspiracy is swirling over a mysterious power wielded by the Queen in Raja, a small country west of Tempest. When a slime who evolved into a Demon Lord named Rimuru Tempest crosses paths with Hiiro, a survivor of the Ogre race, an incredible adventure packed with new characters begins. The power of bonds will be put to the test!</span>
+        </div>
+        <span class="showId">#10</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="10">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/That%20Time%20I%20Got%20Reincarnated%20as%20a%20Slime%20the%20Movie%20-%20Scarlet%20Bond%20%282022%29%201080p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">That Time I Got Reincarnated as a Slime the Movie: Scarlet Bond</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2022</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.9 Based on (2722) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Fantasy, Adventure</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">8bit, Bandai Namco Filmworks</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Kazuyuki Fudeyasu<br /> Junichiro Okumura<br /> Otoe Yoka<br /> Fuse</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Yasuhito Kikuchi</span>
+          </div>
+          <div class="anilink name">
+            <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=q2FCfgT-Fm8"target="_blank">trailer link</a></span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt15467380/reviews/"target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+	  
+	  <script type="text/javascript">
+                      $(document).ready(function() {
+                                $(&quot;.fancybox&quot;).fancybox({
+                                                openEffect : &#39;elastic&#39;,
+                                                closeEffect     : &#39;elastic&#39;,
+                                                helpers : {
+                                                        title : {
+                                                                type : &#39;float&#39;
+                                                        }
+                                                }
+                                                });
+                        });
+                
+</script>
+<script src="lib/sortMovies.js"></script>
+<script src="lib/filter dropdowns.js" defer></script>
+ <script src="lib/rating-filter.js" defer></script>
+       <!-- Add the no-results-message element -->
+<div id="no-results-message" style="display: none;"></div>
+<script src="lib/Iframe movies.js"></script>
+  </body>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name=“viewport” content=“width=device-width, initial-scale=1.0”
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/x-icon" href="images\tv and movie lists\icon.png">.
+    <title>Newly Added - Movies</title>
+    <script type="text/javascript" src="./lib/jquery.js"></script>
+    <link rel="stylesheet" href="./lib/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="./lib/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="./lib/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="./lib/deadsix.js"></script>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" type="text/css" href="lib/style sheets/movies style.css" />
+    <script type="text/javascript">
+                $(document).ready(function() {
+                                        startUP();
+                                });
+                                $(window).on(&#39;hashchange&#39;, function() {
+                                  checkHash();
+                                });
+            
+</script>
+<link rel="stylesheet" href="lib/media queries stylesheets/media queries movies.css">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="largeContainer">
+      <!-- Add the menu button -->
+       <button id="menu-button">Menu</button>
+      <!-- Add the sidebar navigation -->
+       <div id="sidebar-nav">
+       <ul>
+       <li><a href="https://www.onestoptvdelight.co.za/newly added movies.html"target="_blank">Newly Added:Movies</a></li>
+       <li><a href="https://www.onestoptvdelight.co.za/newly added tv shows.html"target="_blank">Newly Added:TV Shows</a></li>
+       <li><a href="https://www.onestoptvdelight.co.za/full movies.html"target="_blank">Full Movie List</a></li>
+       <li><a href="https://forms.gle/afjM67umTqWp4q5h9"target="_blank">CheckList Link Page Newly Added:Movies</a></a></li>
+       </ul>
+       </div>
+      <div class="infoContainer">
+        <div class="homepage-link-container">
+           <!-- add home button -->
+       <a href="https://www.onestoptvdelight.co.za/index.html" class="homepage-link">Home Button</a>
+         </div>
+        <div class="infoBackTitleContainer">
+          <span class="infoBackTitle">Newly Added</span>
+          <hr class="subTitleSeprator" />
+          <span class="infoBackTitleSub">Movies</span>
+        </div>
+        <div class="infoContainerTextContainer">
+          <div class="name">
+            <span class="titleNoBlock">Total Movies:</span>
+            <span>4</span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Request Page Link:</span>
+            <span><a href="https://forms.gle/rbLCy1hxpxC5SXG1A"target="_blank">Request File</a></span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Top 10 Picked Movies This Month</span>
+            <span><a href="https://www.onestoptvdelight.co.za/top 10 movies.html"target="_blank">Top 10</a></span>
+          </div>
+        </div>
+      </div>
+        <div id="searchContainer">
+        <input type="text" autocomplete="off" onfocus="this.value=''; searchOnPage('');"
+        onblur="if(this.value==''){this.value='Search TV Show Name'};"
+        onkeyup="searchOnPage(this.value.toLowerCase());"
+        id="search_box" value="Search TV Show Name" />
+        <input type="submit" id="search_button" value="Search" />
+        <div id="search_result"></div>
+        </div>
+        <div class="dropdown-container">
+         <div id="genre-select-container">
+         <label for="genre-select" class="genre-label">Search By Genre:</label>
+         <select id="genre-select">
+         <option value="all">All</option>
+         </select>
+         </div>
+         <div id="date-select-container">
+           <label for="date-select" class="date-label">Search By Year:</label>
+           <select id="date-select">
+             <option value="all">All</option>
+           </select>
+         </div>
+         <div id="age-rating-select-container">
+         <label for="age-rating-select" class="age-rating-label">Search By Age Rating:</label>
+         <select id="age-rating-select">
+         <option value="all">All</option>
+        </select>
+        </div>
+        <div id="rating-select-container">
+        <label for="rating-select" class="rating-label">Search By Rating:</label>
+        <select id="rating-select">
+        <option value="all">All</option>
+        </select>
+        </div>
+        </div>
+       <div id="no-results-message" class="no-results-message"></div>
+	  	  
+
+      <div id="movie_1" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="1">
+          <div class="fanArt" id="fanart_1">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20Drawn%20Together%20Movie%20-%20The%20Movie%21%20%282010%29%201080p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="1" id="plot_1_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="1" id="plot_1">
+          <span class="value">When the mystery-solving musician Foxxy Love notices she and her fellow housemates can curse without being bleeped&mdash;something they've never been able to do before&mdash;she realizes their show has been canceled. Determined to get back on the air, the gang travels to Make-A-Point-Land in order to get a point (and get back on the air).</span>
+        </div>
+        <span class="showId">#1</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="1">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/The%20Drawn%20Together%20Movie%20-%20The%20Movie%21%20%282010%29%201080p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The Drawn Together Movie: The Movie!</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2010</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.1 Based on (4817) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Comedy, Mystery</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Comedy Central, Six Point Harness, Paramount Pictures, Double Hemm</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Greg Franklin</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Rated:R</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=akr5JXpT-28"target="_blank">trailer link</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt1546036/reviews/"target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_2" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="2">
+          <div class="fanArt" id="fanart_2">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20Fantastic%204%20-%20First%20Steps%20%282025%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="2" id="plot_2_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="2" id="plot_2">
+          <span class="value">Against the vibrant backdrop of a 1960s-inspired, retro-futuristic world, Marvel's First Family is forced to balance their roles as heroes with the strength of their family bond, while defending Earth from a ravenous space god called Galactus and his enigmatic Herald, Silver Surfer.</span>
+        </div>
+        <span class="showId">#2</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="2">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/The%20Fantastic%204%20-%20First%20Steps%20%282025%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The Fantastic 4: First Steps</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.1 Based on (160K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Science Fiction, Adventure</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Marvel Studios, Kevin Feige Productions</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Josh Friedman<br /> Eric Pearson<br /> Jeff Kaplan<br /> Ian Springer</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Matt Shakman</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=18QQWa5MEcs"target="_blank">trailer link</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt10676052/reviews/"target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_3" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="3">
+          <div class="fanArt" id="fanart_3">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Splitsville%20%282025%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="3" id="plot_3_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="3" id="plot_3">
+          <span class="value">After Ashley asks for a divorce, good-natured Carey runs to his friends, Julie and Paul, for support. He&rsquo;s shocked to discover that the secret to their happiness is an open marriage, that is until Carey crosses the line and throws all of their relationships into chaos.</span>
+        </div>
+        <span class="showId">#3</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="3">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Splitsville%20%282025%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Splitsville</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.6 Based on (5765) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Comedy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">NEON, Topic Studios, Watch This Ready, TeaTime Pictures</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Michael Angelo Covino</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Rated:R</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=QxgYseGhccE"target="_blank">trailer link</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt33247023/reviews/"target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_4" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="4">
+          <div class="fanArt" id="fanart_4">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20Suite%20Life%20Movie%20%282011%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="4" id="plot_4_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="4" id="plot_4">
+          <span class="value">Cody and Zack are approached to join the Gemini Project, a high-tech research center studying the dynamics between twins. Shockingly, they find themselves interconnected in a whole new way! When one twin experiences something, the other twin feels it too. This newfound revelation helps them see eye to eye for the first time, and it puts them in more danger than they could have imagined.</span>
+        </div>
+        <span class="showId">#4</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="4">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/The%20Suite%20Life%20Movie%20%282011%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The Suite Life Movie</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2011</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.1 Based on (5039) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Adventure, Comedy, Family, Crime, Drama, Science Fiction, TV Movie</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">It's a Laugh Productions, Bon Mot Productions, Bad Angels Productions, Ltd., Disney Channel</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Sean McNamara</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+            <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=yQA5vp9LJBw"target="_blank">trailer link</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt1754799/reviews/"target="_blank">IMDB User Review link</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+
+       <div class="footerSpacer"></div>
+      <div class="footerContainer">
+      <div class="footerTextContainer">
+      </div>
+      </div>
+
+<script>
+const menuButton = document.getElementById('menu-button');
+const sidebarNav = document.getElementById('sidebar-nav');
+const infoContainer = document.querySelector('.infoContainerTextContainer');
+const infoBackTitleContainer = document.querySelector('.infoBackTitleContainer');
+
+menuButton.addEventListener('click', () => {
+  sidebarNav.classList.toggle('open');
+  menuButton.classList.toggle('menu-button-open');
+
+  // Toggle the sidebar-open class on the body
+  document.body.classList.toggle('sidebar-open');
+
+  // Toggle the sidebar-nav-open class on the infoContainer and infoBackTitleContainer
+  infoContainer.classList.toggle('sidebar-nav-open');
+  infoBackTitleContainer.classList.toggle('sidebar-nav-open');
+});
+</script>
+	  <script type="text/javascript">
+                      $(document).ready(function() {
+                                $(&quot;.fancybox&quot;).fancybox({
+                                                openEffect : &#39;elastic&#39;,
+                                                closeEffect     : &#39;elastic&#39;,
+                                                helpers : {
+                                                        title : {
+                                                                type : &#39;float&#39;
+                                                        }
+                                                }
+                                                });
+                        });
+                
+</script>
+<script src="lib/sortMovies.js"></script>
+ <script src="lib/filter dropdowns.js" defer></script>
+ <script src="lib/rating-filter.js" defer></script>
+       <!-- Add the no-results-message element -->
+<div id="no-results-message" style="display: none;"></div>
+<script src="lib/Iframe movies.js"></script>
+  </body>
+</html>

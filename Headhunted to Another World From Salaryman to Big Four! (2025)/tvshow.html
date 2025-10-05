@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Headhunted to Another World: From Salaryman to Big Four!
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Headhunted to Another World: From Salaryman to Big Four!</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Headhunted%20to%20Another%20World%20From%20Salaryman%20to%20Big%20Four%21%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Headhunted%20to%20Another%20World%20From%20Salaryman%20to%20Big%20Four%21%20-%20S01E01%20-%20Tips%20on%20How%20to%20Pass%20the%20Entrance%20Exam%20in%20Another%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Tips on How to Pass the Entrance Exam in Another World
+          </div>
+          <div class="plot">Uchimura is a regular office worker who did his best to find a job at a company and worked hard, but was constantly overlooked by his superiors. Just when his superiors decided to shunt him off to another dead-end branch, Uchimura is abruptly summoned by the Demon King of another world to work as one of his four generals.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Headhunted%20to%20Another%20World%20From%20Salaryman%20to%20Big%20Four%21%20-%20S01E02%20-%20The%20Art%20of%20Negotiation%20in%20Captivating%20a%20Stubborn%20Tribal%20Chief-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Art of Negotiation in Captivating a Stubborn Tribal Chief
+          </div>
+          <div class="plot">Hired as an Elite General, Dennosuke&rsquo;s first task is to negotiate a merger with the leader of the resource starved Ogre Tribe. Despite their suffering and the Ogre leader's stubbornness, Dennosuke works to find a way forward for the Demon lord's army.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Headhunted%20to%20Another%20World%20From%20Salaryman%20to%20Big%20Four%21%20-%20S01E03%20-%20Now%20I%20Understand%21%20Elite%20General%20Communication-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Now I Understand! Elite General Communication
+          </div>
+          <div class="plot">Dennosuke now has the help of Olulu, the daughter of the leader of the ogre clan. This fact greatly annoys Ulmandra, who tries to get close to our protagonist with little success.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Headhunted%20to%20Another%20World%20From%20Salaryman%20to%20Big%20Four%21%20-%20S01E04%20-%20Breakthroughs%20Happen%20Even%20With%20Magic%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Breakthroughs Happen Even With Magic!
+          </div>
+          <div class="plot">The Dark Lord gives Dennosuke a new task: to research the magical arts so that everyone can use magic even without the necessary power. And this time, he will have the help of the elusive Sylphid.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Headhunted%20to%20Another%20World%20From%20Salaryman%20to%20Big%20Four%21%20-%20S01E05%20-%20The%20Best%20Way%20to%20Enjoy%20a%20Stroll%20Through%20the%20Marketplace%20in%20Another%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Best Way to Enjoy a Stroll Through the Marketplace in Another World
+          </div>
+          <div class="plot">Having done so much under the Overlord's direct orders, Dennosuke now feels he must step up his game by becoming proactive. He decides to make a bold move by researching the marketplace with Ulmandra, hoping to find a hint to make the army even greater.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Headhunted%20to%20Another%20World%20From%20Salaryman%20to%20Big%20Four%21%20-%20S01E06%20-%20The%20Art%20of%20Managing%20People-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Art of Managing People
+          </div>
+          <div class="plot">Uchimura is off to go on his first business trip to the Golden Kingdom, where he must negotiate a trade with the formidable Rampage King. Will his previous experiences help him get the deal he needs to solve the current crisis?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Headhunted%20to%20Another%20World%20From%20Salaryman%20to%20Big%20Four%21%20-%20S01E07%20-%20Conditions%20to%20Become%20a%20First-class%20Merchant-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Conditions to Become a First-class Merchant
+          </div>
+          <div class="plot">Rampage King suddenly no longer wants to trade with the Demon Army saying he could get it elsewhere. Uchimura must now find out why this is happening.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Headhunted%20to%20Another%20World%20From%20Salaryman%20to%20Big%20Four%21%20-%20S01E08%20-%20Bring%20Down%20the%20Scalpel%20of%20Justice%20to%20the%20Corrupt%20Organization%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Bring Down the Scalpel of Justice to the Corrupt Organization!
+          </div>
+          <div class="plot">The guild is monopolizing the gim to get rich! Will Uchimura and Sylphid be able to find the proof they need?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Headhunted%20to%20Another%20World%20From%20Salaryman%20to%20Big%20Four%21%20-%20S01E09%20-%20The%20Sins%20and%20Punishments%20of%20an%20Evil%20Merchant-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Sins and Punishments of an Evil Merchant.
+          </div>
+          <div class="plot">Uchimura is in trouble as their plans get sabotaged by a spy. Will his next move expose the evil merchant?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Headhunted%20to%20Another%20World%20From%20Salaryman%20to%20Big%20Four%21%20-%20S01E10%20-%20Sword%20and%20Shield-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Sword and Shield
+          </div>
+          <div class="plot">Uchimura's next challenge is to deal with a calamity as well as deal with a racial conflict within the army.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Headhunted%20to%20Another%20World%20From%20Salaryman%20to%20Big%20Four%21%20-%20S01E11%20-%20A%20Battle%20Without%20Heroes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - A Battle Without Heroes.
+          </div>
+          <div class="plot">With Ulmandra down, Uchimura starts to lose himself as he hastily tries to devise a plan against the wyverns.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Headhunted%20to%20Another%20World%20From%20Salaryman%20to%20Big%20Four%21%20-%20S01E12%20-%20How%20to%20Find%20Your%20Way%20of%20Life-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - How to Find Your Way of Life
+          </div>
+          <div class="plot">Uchimura was asked to become the next King by the Demon Overlord?! Will he overcome his fears?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

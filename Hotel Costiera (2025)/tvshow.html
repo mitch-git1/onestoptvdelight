@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Hotel Costiera
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Hotel Costiera</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Hotel%20Costiera%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Hotel%20Costiera%20-%20S01E01%20-%20Sheryl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Sheryl
+          </div>
+          <div class="plot">When the billionaire Aaron Tarsky goes missing while out fishing at sea with his young wife Sheryl, Daniel and his team are called in by his family to figure out what happened. Daniel will realize that the truth is rarely as it seems and solving the case will reveal a hint to another truth he's seeking.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Hotel%20Costiera%20-%20S01E02%20-%20Richard-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Richard
+          </div>
+          <div class="plot">An old Jewish woman dies while staying at Villa Costiera, and her son Richard flies from New York to take her body back home for proper burial. It&rsquo;s Daniel and his team&rsquo;s job to make that happen, arranging the transfer in a race against time. In the meantime, Daniel, in his search for Alice, will start piecing the puzzle together, finding the name of the guy in the picture with her: Bruno.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Hotel%20Costiera%20-%20S01E03%20-%20April-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - April
+          </div>
+          <div class="plot">A woman from Daniel&rsquo;s past shows up in need of his help. It&rsquo;s April Mackenzie, a fellow Marine who lost a bracelet containing sensitive data. Daniel and his team must find out where the bracelet is and how to get it back before word gets out and April gets in trouble. He will also track down Bruno and confront him with the burning question: where is Alice?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Hotel%20Costiera%20-%20S01E04%20-%20Hassan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Hassan
+          </div>
+          <div class="plot">A young boy arrives at Villa Costiera in the hotel&rsquo;s goods van. His name is Hassan, and he is looking for Daniel. Daniel and his team must figure out why while keeping the boy safe. But as he gets answers on one front, he meets a dead end on another. He discovers where Alice is, but once he arrives, he realizes someone got there before him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Hotel%20Costiera%20-%20S01E05%20-%20Bruno-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Bruno
+          </div>
+          <div class="plot">Alice is now in real trouble, held hostage by a gang of thieves who want to use her to rob a priceless necklace at an auction held at Villa Costiera. Daniel and his team manipulate Bruno to find the villa where the gang is holding Alice, and when Daniel is about to rescue her, things take an unexpected turn.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Hotel%20Costiera%20-%20S01E06%20-%20Alice-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Alice
+          </div>
+          <div class="plot">Daniel, his team, and Alice&rsquo;s family must all collaborate to come up with a plan to get the necklace to the gang holding Alice. But despite the scheming, the auction gets intense and filled with unexpected twists. Daniel will have to come up with another plan to save the day. Will Daniel&rsquo;s secret backup plan work? Will Alice return safely in the arms of her father?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

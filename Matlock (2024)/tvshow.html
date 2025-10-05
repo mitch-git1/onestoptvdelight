@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Matlock
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Matlock</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Matlock%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">After achieving success in her younger years, brilliant septuagenarian Madeline Matlock uses her unassuming demeanor to make her way into a position at a prestigious law firm, Jacobson Moore.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E02%20-%20Rome%2C%20in%20a%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Rome, in a Day
+          </div>
+          <div class="plot">As Matty settles into her new role at Jacobson Moore, Olympia and the aptly nicknamed &quot;Team You Three&quot; take on a lawsuit involving a developmentally delayed teenager whose family claims he's been wrongly accused of murder.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E03%20-%20A%20Guy%20Named%20Greg-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - A Guy Named Greg
+          </div>
+          <div class="plot">Matty's rusty trial skills are put to the test during a wrongful termination case by a woman claiming she was sexually harassed by her boss. Also, the firm's jury consultant and master lie detector, Shae, joins the case.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E04%20-%20The%20Rabbit%20and%20the%20Hawk-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Rabbit and the Hawk
+          </div>
+          <div class="plot">Olympia tasks Matty with getting close to their client, who is fighting for justice in the wrongful death of his wife.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E05%20-%20Claws-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Claws
+          </div>
+          <div class="plot">A big class-action case against the prison system hits close to home for Matty when its lead plaintiff, jailed on drug charges, relapses. Also, Matty plays matchmaker with Sarah and a girl from IT.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E06%20-%20Sixteen%20Steps-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Sixteen Steps
+          </div>
+          <div class="plot">As Olympia and Julian get a second shot at a case regarding a tragic death due to contaminated baby formula, their past work on the investigation gives glimpses into what led to their divorce.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E07%20-%20Belly%20of%20the%20Beast-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Belly of the Beast
+          </div>
+          <div class="plot">Matty works on a case with Julian in which a young woman sues after experiencing severe symptoms from a clinical trial. At the company holiday party, Olympia learns a secret about Julian's past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E08%20-%20No%2C%20No%20Monsters-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - No, No Monsters
+          </div>
+          <div class="plot">YouThree help Olympia defend a defamed nanny at her children's school. Also, Matty is on a stressful hunt for an important document on the Wellbrexa case.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E09%20-%20Friends-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Friends
+          </div>
+          <div class="plot">Matty helps Olympia take on Elijah's cousin's wrongful termination case. Also, Edwin worries that the longer Matty remains at Jacobson Moore, the more she puts herself in danger of being caught.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E10%20-%20Crash%20Helmets%20On-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Crash Helmets On
+          </div>
+          <div class="plot">Matty and Sarah pose as grandmother and granddaughter in order to gather information at a senior living facility facing a wrongful death suit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E11%20-%20A%20Traitor%20in%20Thine%20Own%20House-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - A Traitor in Thine Own House
+          </div>
+          <div class="plot">Tensions rise as Shae work with Olympia's team on a case for a tech startup that's had trade secrets stolen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E12%20-%20This%20Is%20That%20Moment-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - This Is That Moment
+          </div>
+          <div class="plot">Olympia and Julian's issues intensify as they each represent opposing sides in a nasty custody case. Also, Matty uses the firm's security system to her advantage.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E13%20-%20Pregame-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Pregame
+          </div>
+          <div class="plot">An important class-action lawsuit leads the team to investigate a sorority; Matty brings Alfie with her to Jacobson Moore on Family Day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E14%20-%20Game%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - Game Day
+          </div>
+          <div class="plot">Olympia hires an outside party to select jurors rather than using Shae, putting the case at risk.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E15%20-%20Game%20Face-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Game Face
+          </div>
+          <div class="plot">Olympia's partnership dream hangs in the balance as she and her team race against the clock to get a dangerous drink off the market.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E16%20-%20The%20Johnson%20Case-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - The Johnson Case
+          </div>
+          <div class="plot">Olympia tries to impress the partnership board by taking on a complicated murder case.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E17%20-%20I%20Was%20That%2C%20Too-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - I Was That, Too
+          </div>
+          <div class="plot">A pregnant woman asks for Olympia&rsquo;s help obtaining a divorce from her husband, whose family is a client of the firm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E18%20-%20Tricks%20of%20the%20Trade%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Tricks of the Trade (1)
+          </div>
+          <div class="plot">When Sarah's client is arrested after his business partner is found murdered, Billy attempts to help her handle the case while Matty and Olympia contend with a pressing confidential matter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Matlock%20-%20S01E19%20-%20Tricks%20of%20the%20Trade%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Tricks of the Trade (2)
+          </div>
+          <div class="plot">Sarah's career is put in jeopardy as Jacobson-Moore readies for a trial that could change everything; Matty makes a shocking discovery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

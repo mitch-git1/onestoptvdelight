@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Boardwalk Empire
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Boardwalk Empire</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Boardwalk%20Empire%20%282010%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S01E01%20-%20Boardwalk%20Empire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Boardwalk Empire
+          </div>
+          <div class="plot">January 1920. On the eve of Prohibition, Atlantic City's Treasurer, Nucky Thompson, condemns alcohol at a Women's Temperance League meeting, where he is noticed by Margaret Schroeder, a pretty, pregnant housewife who comes to him for help in getting her abusive husband Hans a job. Later that evening, the duplicitous Nucky privately tells his ward bosses about the opportunity to make huge profits selling bootleg liquor. At a countdown-to-midnight blast at Babette's Supper Club, he assures Jimmy Darmody, a recently returned WWI vet, that his appointment as &quot;Man Friday&quot; to the new Chief Clerk of the Fourth Ward, Paddy Ryan, will lead to bigger things. Jimmy, meanwhile, has higher aspirations and ends up making an alliance that could have dire consequences for both him and Nucky.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S01E02%20-%20The%20Ivory%20Tower-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Ivory Tower
+          </div>
+          <div class="plot">Nucky deals with the fallout from Jimmy's rogue heist, sending Eli to sow the seeds of doubt in the mind of Margaret, who seeks help in the wake of her husband's demise.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S01E03%20-%20Broadway%20Limited-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Broadway Limited
+          </div>
+          <div class="plot">An unlikely witness to the woods massacre threatens to expose the perpetrators, sending both Eli and Van Alden rushing to the hospital. Margaret starts a new job at an upscale French dress shop at the Ritz, while Chalky's team pays a heavy price for taking over Mickey Doyle's bootleg operation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S01E04%20-%20Anastasia-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Anastasia
+          </div>
+          <div class="plot">In Chicago, Jimmy bonds with one of Johnny Torrio's prostitutes, Pearl, and finds himself increasingly at odds with the hot-headed Al Capone. Back in Atlantic City, Nucky looks to leverage his political relationships with ambitious U.S. Senator Walter Edge and Jersey City Mayor Frank Hague, while Eli and Chalky go to extremes to interrogate a local KKK leader.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S01E05%20-%20Nights%20in%20Ballygran-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Nights in Ballygran
+          </div>
+          <div class="plot">On the day of the annual St. Patrick's Eve dinner, Nucky deals with Eli's oratory ambitions, as well as a group of disenchanted &quot;Leprechauns&quot;. Feeling ignored by Nucky, a frustrated Margaret feeds Van Alden information. In Chicago, Jimmy copes with the aftermath of a vicious attack orchestrated by Torrio rival Charlie Sheridan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S01E06%20-%20Family%20Limitation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Family Limitation
+          </div>
+          <div class="plot">After the brazen robbery of one of his ward bosses, Nucky turns up the heat on Lucky Luciano. An emboldened Margaret stands up to Lucy at the dress shop and accepts an offer from Nucky to change her circumstances. In Chicago, Al's frustration over family issues spills over into his relationship with Jimmy, who scores points with Johnny Torrio for a bold power play involving Sheridan and the neighborhood of Greektown.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S01E07%20-%20Home-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Home
+          </div>
+          <div class="plot">After his father Ethan is injured in a fall, Nucky uses the opportunity to refurbish his childhood home. On a double-date with new friend Annabelle and her beaux, Margaret tries to get Nucky to open up about some painful childhood memories. During a visit to an army hospital, Jimmy befriends disfigured vet Richard Harrow, whose sharp eye proves invaluable. Van Alden gets a lead on the woods massacre.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S01E08%20-%20Hold%20Me%20in%20Paradise-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Hold Me in Paradise
+          </div>
+          <div class="plot">Nucky visits Chicago for the Republican National Convention, where he finds himself intrigued by the candidacy of Warren G. Harding over more established candidates. The D'Alessio gang moves in on Nucky's territory at the expense of Eli, who has been watching over his brother's affairs. Margaret finds herself entangled in Nucky's business affairs, while Van Alden struggles with his wife's desire for a child. Rothstein prepares for legal trouble over his role in fixing the 1919 World Series. Nucky asks Jimmy to return to Atlantic City to reinforce his position.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S01E09%20-%20Belle%20Femme-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Belle Femme
+          </div>
+          <div class="plot">Nucky is forced to readjust his political alliances with a Democratic mayoral candidate promising to wipe out corruption. Jimmy returns from Chicago to deal with the D'Alessio gang, which has allied with Rothstein to import European scotch through Atlantic City, but is arrested by Agent Van Alden for the massacre in the woods. Margaret intercedes with Nucky on Madame Jeunet's behalf, while Angela finds her romantic and artistic ambitions halted by Jimmy's return.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S01E10%20-%20The%20Emerald%20City-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Emerald City
+          </div>
+          <div class="plot">Nucky asks for Margaret's assistance in backing his mayoral candidate with the passage of women's right to vote, leaving her conflicted about her role. Doyle switches sides back from Rothstein, which leads Nucky to conspire with Chalky against Lansky and the D'Alessios. Angela witnesses Jimmy's violent side against her photographer friend, and considers leaving Atlantic City for good in the aftermath. Van Alden grapples with his emotions, and has encounters with both Margaret and Lucy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S01E11%20-%20Paris%20Green-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Paris Green
+          </div>
+          <div class="plot">&quot;Paris Green&quot; is the 11th episode of the first season of the HBO television series Boardwalk Empire, which premiered November 28, 2010. The episode was written by supervising producer Howard Korder and directed by Allen Coulter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S01E12%20-%20A%20Return%20to%20Normalcy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - A Return to Normalcy
+          </div>
+          <div class="plot">Nucky faces Election Day in Atlantic City and pulls out all the stops to keep power in Republican hands. Torrio brokers a discussion between Nucky and Rothstein to resolve their growing gang war, as well as Rothstein's looming federal indictment over the World Series.  Both Jimmy and Eli voice their growing resentment towards Nucky, and find they have an ally in the Commodore. Van Alden seeks a sign on whether or not to leave Atlantic City, but receives unexpected news from Lucy. Margaret weighs new information about Nucky's first marriage and her uncertain future to make a final decision on her role in his life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S02E01%20-%2021-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - 21
+          </div>
+          <div class="plot">Nucky is shocked by an insurrection among his inner circle. An attack threatens Chalky's life and livelihood. Margaret deals with her son's problems. Angela vies for Jimmy's affection. Van Alden shows his wife around town.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S02E02%20-%20Ourselves%20Alone-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Ourselves Alone
+          </div>
+          <div class="plot">Despite being publicly embarrassed by legal trouble, Nucky's biggest concern may be holding on to his private army in a battle for control of Atlantic City. Meanwhile, Jimmy pitches a business deal to Arnold Rothstein in New York, but may have more in common with Meyer Lansky and Lucky Luciano. Margaret draws on past experience to retrieve some valuable information, Chalky clashes with a fellow inmate, and an Irish nationalist comes to town looking for support.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S02E03%20-%20A%20Dangerous%20Maid-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - A Dangerous Maid
+          </div>
+          <div class="plot">The Commodore throws his weight around with the Coast Guard to disrupt the delivery of alcohol, which creates an opportunity for Owen to demonstrate his value to Nucky and a struggling casino. Meanwhile, a letter dredges up painful memories for Margaret, Nucky calls in a favor with the U.S. attorney general, Meyer and Lucky learn the price of power, and Lucy searches for ways to cure her loneliness.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S02E04%20-%20What%20Does%20the%20Bee%20Do-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - What Does the Bee Do?
+          </div>
+          <div class="plot">During Mayor Bader's birthday party, Nucky's attorney comes up with a solution that might help Nucky in his election-rigging case. With a liquor surplus likely, Jimmy and Mickey travel to Philadelphia to search for buyers while Nucky makes a surprising deal to try and get alcohol into Atlantic City. Eli is concerned over the Commodore's ability to lead. Margaret decides to give her staff bonuses. Chalky is cornered while at work and home. Owen takes his munitions expertise and uses it. Van Alden's agents set their eyes on Mickey's warehouse. Richard lets his guard down in the name of art. And Gillian thinks of the first time she was ever with the Commodore.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S02E05%20-%20Gimcrack%20%26%20Bunkum-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Gimcrack &amp; Bunkum
+          </div>
+          <div class="plot">After a dispute with his enemies, Nucky brings in a surprise guest speaker at a Memorial Day dedication for war veterans. Running out of options, Eli questions his allegiances, but it ends up sending him deeper into the hole. Nucky hires a new lawyer. Jimmy is taught a lesson by one of the Commodore's men that he won't soon forget. Richard decides to go hunting in the forest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S02E06%20-%20The%20Age%20of%20Reason-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - The Age of Reason
+          </div>
+          <div class="plot">Nucky tries to set up a risky liquor delivery to Philadelphia. Later, Attorney General Daugherty sees a problem that might complicate Nucky's case. Jimmy finds a new mentor in Leander Whitlock who is the Commodore's lawyer. Margaret finally goes to confessional. Lucy continues to struggle with loneliness while Van Alden tries to settle his conscience.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S02E07%20-%20Peg%20of%20Old-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Peg of Old
+          </div>
+          <div class="plot">Margaret has a family reunion. Owen gets even with a rival. Van Alden recognizes the hierarchy of the law. Jimmy wonders how a decision will affect the future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S02E08%20-%20Two%20Boats%20and%20a%20Lifeguard-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Two Boats and a Lifeguard
+          </div>
+          <div class="plot">In the wake of a personal loss, Nucky solicits advice on his political situation from Arnold Rothstein, while Eli remains suspicious of his brother&rsquo;s actions. Nucky finds himself in the unfamiliar position of showing gratitude toward a federal agent. Angela meets a new friend at the beach, and eavesdrops on her husband&rsquo;s treachery. Nelson gets a nanny. Nucky approaches Owen with an overseas proposition. Jimmy flexes his muscles, at Mickey Doyle&rsquo;s expense.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S02E09%20-%20Battle%20of%20the%20Century-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Battle of the Century
+          </div>
+          <div class="plot">Arriving in Belfast, Nucky and Owen meet with IRA leaders with a barter proposition. Meanwhile, in Atlantic City, Jimmy and his partners broker a deal with George Remus for his &ldquo;medicinal&rdquo; alcohol before taking a break to see/hear the Dempsey fight. Margaret frets when Emily&rsquo;s illness takes a turn for the worse. Dunn Purnsley orchestrates a worker&rsquo;s strike at the Ritz. Waxey Gordon takes action against Manny Horvitz in Philadelphia, and Randolph and Clifford Lathrop grill Halloran about Nucky&rsquo;s past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S02E10%20-%20Georgia%20Peaches-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Georgia Peaches
+          </div>
+          <div class="plot">Undercut by Nucky, who has a new source for alcohol, Jimmy and his partners look to cultivate a new revenue stream in Atlantic City. With the peak tourist season approaching, the Commodore&rsquo;s crew faces a choice in dealing with the city&rsquo;s striking workers; either negotiate or fight back. Fearing that sin has led to misfortune, Margaret approaches Father Brennan with an &ldquo;act of devotion.&rdquo; Nucky gets a new lawyer. Van Alden faces an uncertain future. Manny Horvitz takes exception to a debt payment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S02E11%20-%20Under%20God%27s%20Power%20She%20Flourishes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Under God's Power She Flourishes
+          </div>
+          <div class="plot">With Margaret pondering the consequences of sin, Nucky prepares her for a worst-case scenario as Esther Randolph plays out her trump cards. Jimmy revisits his college days with Angela and Gillian. Mickey Doyle chafes at sharing his liquor profits. Eli refuses to cop a plea. Nelson's past comes back to haunt him, tipping the scale in Nucky's favor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S02E12%20-%20To%20the%20Lost-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - To the Lost
+          </div>
+          <div class="plot">Nucky faces a difficult, bottom-line business decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S03E01%20-%20Resolution-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Resolution
+          </div>
+          <div class="plot">Nucky makes a resolution; Margaret considers a hospital expansion; Gillian builds a new business; Van Alden stumbles onto a confrontation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S03E02%20-%20Spaghetti%20%26%20Coffee-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Spaghetti &amp; Coffee
+          </div>
+          <div class="plot">Mixing business with pleasure in New York, Nucky bristles at the collection tactics of Gaston Means, a &ldquo;special investigator&rdquo; with ties to Attorney General Harry Daugherty. At St. Theresa&rsquo;s, Margaret is troubled when her altruism is met with resistance by both a patient and an idealistic doctor. Gyp extends his stopover in Tabor Heights, a town halfway between Atlantic City and New York, with an eye towards establishing a strategic foothold. Chalky and his daughter Maybelle (Christina Jackson) fail to agree on her future with Samuel (Ty Michael Robinson); Eli gets a new boss and faces new realities at home; a major liquor shipment takes an unexpected detour.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S03E03%20-%20Bone%20for%20Tuna-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Bone for Tuna
+          </div>
+          <div class="plot">Disturbed by a recent nightmare and Billie&rsquo;s absence, Nucky reluctantly joins Margaret to receive a high honor from the Church. Meanwhile, Gyp makes a deal with Nucky for a onetime liquor shipment, though the mobster&rsquo;s longtime intentions remain very much up in the air. Van Alden regrets trying to socialize with his co-workers; Margaret takes her women&rsquo;s-clinic pitch to a higher authority; Lucky and Meyer (Anatol Yusef) protect their investments; Richard sets the record straight with Mickey, and with Nucky.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S03E04%20-%20Blue%20Bell%20Boy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Blue Bell Boy
+          </div>
+          <div class="plot">After tracking down a liquor thief, Nucky and Owen spend a long night hiding out from the fedswith the precocious perp. In his boss&rsquo; absence, and with Rothstein fuming over a late delivery, Mickey overrules Eli to make a routing call that will have far-reaching consequences for Nucky and Gyp. Margaret encounters a familiar face while promoting Dr. Mason&rsquo;s classes at the new women&rsquo;s clinic at St. Theresa&rsquo;s. In New York, Lucky haggles with Joe Masseria over heroin splits, while in Chicago, Capone&rsquo;s feud with O&rsquo;Banion heats up when one of his collectors gets roughed up on the South Side.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S03E05%20-%20You%27d%20Be%20Surprised-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - You'd Be Surprised
+          </div>
+          <div class="plot">Rothstein vents to Nucky and delivers a message to Gyp. Gaston Means sees an opportunity. Billie gets a new co-start. Van Alden and Sigrid receive an unexpected visitor. Gillian worries about her business.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S03E06%20-%20Ging%20Gang%20Goolie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Ging Gang Goolie
+          </div>
+          <div class="plot">Nucky is detained in Washington; Margaret copes with Teddy's demons; Owen investigates a suspicious fire; Richard makes a connection with a veteran and his daughter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S03E07%20-%20Sunday%20Best-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Sunday Best
+          </div>
+          <div class="plot">Eli hopes to get back in Nucky's good graces; Gillian tries to improve her future; Gyp asks for a blessing in New York.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S03E08%20-%20The%20Pony-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - The Pony
+          </div>
+          <div class="plot">Gillian makes her peace with Jimmy's death; Van Alden attends a meeting with Capone and Torrio; Nucky makes an offer to Andrew Mellon; Margaret makes a stand on birth control; Nucky and Owen shop for a pony; Billie considers a future in film.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S03E09%20-%20The%20Milkmaid%27s%20Lot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - The Milkmaid's Lot
+          </div>
+          <div class="plot">Nucky vows to eliminate his nemesis. A high-profile bootlegger is arrested. Emily's birthday party is scaled down. Gillian blames Harrow for Tommy's trouble. Gyp decides to buy a town's silence.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S03E10%20-%20A%20Man%2C%20A%20Plan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - A Man, A Plan...
+          </div>
+          <div class="plot">Nucky tries to keep Jess Smith quiet and neutralize Gyp's alliance with Joe Masseria; Margaret considers an alternate future; Van Alden's side business backfires; Gyp's shipment is short; Chalky sees an opportunity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S03E11%20-%20Two%20Imposters-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Two Imposters
+          </div>
+          <div class="plot">Gyp makes his move in Atlantic City, forcing Nucky and Eddie to seek refuge with Chalky. With the Artemis Club overrun by Rosetti thugs, Gillian contemplates a business future that includes an unwelcome partner. Luciano makes a deal he&rsquo;ll come to regret. Harrow loses his house privileges.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S03E12%20-%20Margate%20Sands-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Margate Sands
+          </div>
+          <div class="plot">Nucky makes a deal with Rothstein as his war with Gyp Rosetti reaches its climax. Season finale.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S04E01%20-%20New%20York%20Sour-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - New York Sour
+          </div>
+          <div class="plot">Following his battle with Gyp Rosetti, Nucky makes a peace offering to Joe Masseria while working the odds with Arnold Rothstein. While Chalky is busy running the Onyx Club on the Boardwalk, the impulsive Dunn Purnsley clashes with a booking agent. Fresh-faced Federal Agent Warren Knox arrives in Atlantic City to learn the ropes from Agent Sawicki. Gillian seeks custody of her grandson, Tommy, while trying to find a &ldquo;good&rdquo; man to keep the Artemis Club afloat. Eli&rsquo;s college-age son, Willie, turns to Nucky for career advice. Al Capone enlists his brothers, Frank and Ralph, to help him expand his business in the Chicago suburb of Cicero. Richard Harrow returns to his violent ways.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S04E02%20-%20Resignation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Resignation
+          </div>
+          <div class="plot">Now working as a &ldquo;delivery man&rdquo; for Dean O&rsquo;Banion, Van Alden is ordered to keep tabs on Al Capone, joining the ascendant mobster to help keep Cicero voters &ldquo;informed&rdquo; at a political rally. Dr. Valentin Narcisse arrives in Atlantic City, clashing with Chalky and Nucky over the loss of an employee. In Washington, Agent Knox aligns himself with J. Edgar Hoover, acting director of the Bureau of Investigation. Harrow fails to finish a job in Milwaukee, while Eddie demands a promotion after 11 years of service. With a business opportunity on the horizon, Nucky departs for Florida.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S04E03%20-%20Acres%20of%20Diamonds-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Acres of Diamonds
+          </div>
+          <div class="plot">Nucky has reservations about investing in a Tampa land deal engineered by transplanted bootlegger Bill McCoy. While there, he meets speakeasy owner Sally Wheet. Valentin Narcisse books a sexy jazz singer, Daughter Maitland, to perform at the Onyx, and gauges Dunn Purnsley&rsquo;s allegiance to Chalky. Willie, Eli&rsquo;s son, turns to Mickey Doyle and his bootleg warehouse to elevate his social standing at college. Gillian agrees to pose as Roy Phillips&rsquo; wife to impress a possible partner. Harrow tries to bury his past, though not before taking care of some unfinished business with Emma.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S04E04%20-%20All%20In-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - All In
+          </div>
+          <div class="plot">Nucky gets to know Arnold Rothstein over a card game, and sizes up an unexpected partner for his Tampa land deal. A newly promoted Eddie Kessler gets detoured after making a train-station delivery. When one of their collectors is incapacitated, Al and Frank Capone decide to finish his route, enlisting a reluctant Van Alden to tag along. Agent Knox fills Hoover in on the Thompson operation, vowing to exploit Nucky's weakest link. Chalky is intrigued by Daughter Maitland&rsquo;s presence. Dunn Purnsley goes to Harlem, and is courted by Valentin Narcisse. Willie and his college roommate, Clayton, carry a practical joke too far.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S04E05%20-%20Erlk%C3%B6nig-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Erlk&ouml;nig
+          </div>
+          <div class="plot">Nucky heads to Philadelphia; Agent Knox detains Eddie Kessler to obtain information about Nucky's organization; Gillian tries to score a fix; Van Alden is recruited by the Capones.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S04E06%20-%20The%20North%20Star-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - The North Star
+          </div>
+          <div class="plot">Nucky heads to Tampa to work out details of his land deal with Bill McCoy; Richard Harrow returns to Atlantic City; Agent Knox tries to gain Eli's trust; Chalky takes out his frustrations on Daughter Maitland.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S04E07%20-%20William%20Wilson-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - William Wilson
+          </div>
+          <div class="plot">Eli confronts Nucky after Willie makes an unpopular decision. Margaret has a surprise encounter at her job on Wall Street. Joe Masseria orders Lucky Luciano to return to Tampa and deal with Vincenzo Petrucelli. Gillian goes cold turkey, with Roy Phillips&rsquo; help. Still seething over his brother&rsquo;s death, Al Capone tries to get Johnny Torrio to turn on rival gangster Dean O&rsquo;Banion. As Chalky White and Daughter Maitland&rsquo;s relationship deepens, Valentin Narcisse exerts his control over Dunn Purnsley and the Northside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S04E08%20-%20The%20Old%20Ship%20of%20Zion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - The Old Ship of Zion
+          </div>
+          <div class="plot">Nucky&rsquo;s shipment from Florida arrives with some unexpected cargo. Eli is backed into a corner after Agent Knox uncovers some new dirt on the Thompsons. After talking things over with Nucky, Willie reconsiders his recent life choices. Chalky throws down the gauntlet toward Valentin Narcisse, upholding his leadership on the Northside.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S04E09%20-%20Marriage%20and%20Hunting-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Marriage and Hunting
+          </div>
+          <div class="plot">Nucky refuses to back Chalky in a conflict; Gillian makes her custody case in court; Van Alden stands up to Capone and comes clean to O'Banion; Rothstein tries to make a trade.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S04E10%20-%20White%20Horse%20Pike-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - White Horse Pike
+          </div>
+          <div class="plot">Nucky enlists Eli and Agent Knox to check the cargo in the Florida shipments; Margaret considers making a deal with Rothstein; Capone grows suspicious of Torrio; Nucky faces a dilemma.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S04E11%20-%20Havre%20de%20Grace-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Havre de Grace
+          </div>
+          <div class="plot">Nucky takes inventory after being warned of a skunk in his cellar. On the lam following a close call, Chalky and Daughter take refuge outside Wilmington with Oscar Boneau, his mentor from years ago. Gillian considers selling her mansion and starting a new life with Roy Phillips.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Boardwalk%20Empire%20-%20S04E12%20-%20Farewell%20Daddy%20Blues-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - Farewell Daddy Blues
+          </div>
+          <div class="plot">Eli braces for the worst as Agent Knox launches his plan to bring Nucky down. Capone and Torrio reach an agreement in Cicero. Chalky looks to settle scores. Richard steps forward to save Tommy, at Gillian&rsquo;s expense
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

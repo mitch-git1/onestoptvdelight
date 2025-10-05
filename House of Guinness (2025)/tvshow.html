@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - House of Guinness
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">House of Guinness</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/House%20of%20Guinness%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20Guinness%20-%20S01E01%20-%20Episode%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Episode 1
+          </div>
+          <div class="plot">It's the day of Sir Benjamin Lee Guinness' funeral. Trouble is brewing on the streets of Dublin, while his children make plans for the family's future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20Guinness%20-%20S01E02%20-%20Episode%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Episode 2
+          </div>
+          <div class="plot">The will leaves two siblings with everything, two with nothing &mdash; and all of them dissatisfied. Rafferty makes threats and receives one himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20Guinness%20-%20S01E03%20-%20Episode%203-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Episode 3
+          </div>
+          <div class="plot">Anne suffers a traumatic carriage ride. Arthur makes a proposal, Edward makes changes within the brewery and Benjamin decides to strike out on his own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20Guinness%20-%20S01E04%20-%20Episode%204-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Episode 4
+          </div>
+          <div class="plot">All of Dublin society attends Arthur's wedding &mdash; including two faces he wasn't expecting. Benjamin steps up for Edward, and the expansion plan begins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20Guinness%20-%20S01E05%20-%20Episode%205-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Episode 5
+          </div>
+          <div class="plot">When Arthur's political career implodes, Rafferty helps comfort his wife. Byron makes a promise that could make or break the Guinness family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20Guinness%20-%20S01E06%20-%20Episode%206-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Episode 6
+          </div>
+          <div class="plot">A desperate Ellen asks Edward for help. On a trip to Cloonboo, Adelaide sees him in a new light and Arthur resolves to be more involved in the brewery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20Guinness%20-%20S01E07%20-%20Episode%207-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Episode 7
+          </div>
+          <div class="plot">Work gets started on the new social housing. Edward and Arthur agree to resist their own desires and do what's best for the brewery &mdash; and the family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/House%20of%20Guinness%20-%20S01E08%20-%20Episode%208-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Episode 8
+          </div>
+          <div class="plot">As election day approaches, a familiar face returns to Dublin. Arthur remains steadfast with his campaign &mdash; despite the looming danger.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
