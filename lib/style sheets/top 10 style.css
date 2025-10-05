@@ -1150,11 +1150,10 @@ a:active {
     position: relative;
     top: 0;
     left: 1075px;
-    /* add other styles to match the current layout */
-
-
+    }
 
      .value .star {
       color: gold;
-      font-size: 13px;
+      font-size: 15px;
        }
+       

@@ -246,7 +246,7 @@ display: none;
 
 .value .star {
   color: gold;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 }
@@ -493,7 +493,7 @@ body.sidebar-open .infoContainer {
 
 .value .star {
   color: gold;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 }
