@@ -13,6 +13,10 @@
     <script type="text/javascript" src="./lib/deadsix.js"></script>
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" type="text/css" href="lib/style sheets/movies style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script type="text/javascript">
                 $(document).ready(function() {
                                         startUP();
@@ -55,11 +59,11 @@
           </div>
           <div class="name">
             <span class="titleNoBlock">Request Page Link:</span>
-            <span><a href="https://forms.gle/rbLCy1hxpxC5SXG1A"target="_blank">Request File</a></span>
+            <span><a href="https://forms.gle/rbLCy1hxpxC5SXG1A"target="_blank" class="request-link"><i class="fa-solid fa-file-pen" style="color: #63E6BE;"></i> Request File</a></span>
           </div>
           <div class="name">
             <span class="titleNoBlock">Top 10 Picked Movies This Month</span>
-            <span><a href="https://www.onestoptvdelight.co.za/top 10 movies.html"target="_blank">Top 10</a></span>
+            <span><a href="https://www.onestoptvdelight.co.za/top 10 movies.html"target="_blank" class="top10-link"><i class="fa-solid fa-film" style="color: #74C0FC;"></i> Top 10</a></span>
           </div>
         </div>
       </div>
@@ -153,11 +157,11 @@
           </div>
             <div class="anilink name">
            <span class="titleNoBlock">Trailer:</span>
-            <span class="value"><a href="https://www.youtube.com/watch?v=akr5JXpT-28"target="_blank">trailer link</a></span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=akr5JXpT-28"target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
           </div>     
           <div class="aniIMBDReviews name">
            <span class="titleNoBlock">User Reviews:</span>
-            <span class="value"><a href="https://www.imdb.com/title/tt1546036/reviews/"target="_blank">IMDB User Review link</a></span>
+            <span class="value"><a href="https://www.imdb.com/title/tt1546036/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
           </div>
          </div>      
         <div class="qBar"></div>
@@ -216,11 +220,11 @@
           </div>
             <div class="anilink name">
            <span class="titleNoBlock">Trailer:</span>
-            <span class="value"><a href="https://www.youtube.com/watch?v=18QQWa5MEcs"target="_blank">trailer link</a></span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=18QQWa5MEcs"target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
           </div>     
           <div class="aniIMBDReviews name">
            <span class="titleNoBlock">User Reviews:</span>
-            <span class="value"><a href="https://www.imdb.com/title/tt10676052/reviews/"target="_blank">IMDB User Review link</a></span>
+            <span class="value"><a href="https://www.imdb.com/title/tt10676052/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
           </div>
          </div>      
         <div class="qBar"></div>
@@ -279,11 +283,11 @@
           </div>
             <div class="anilink name">
            <span class="titleNoBlock">Trailer:</span>
-            <span class="value"><a href="https://www.youtube.com/watch?v=QxgYseGhccE"target="_blank">trailer link</a></span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=QxgYseGhccE"target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
           </div>     
           <div class="aniIMBDReviews name">
            <span class="titleNoBlock">User Reviews:</span>
-            <span class="value"><a href="https://www.imdb.com/title/tt33247023/reviews/"target="_blank">IMDB User Review link</a></span>
+            <span class="value"><a href="https://www.imdb.com/title/tt33247023/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
           </div>
          </div>      
         <div class="qBar"></div>
@@ -342,11 +346,11 @@
           </div>
             <div class="anilink name">
            <span class="titleNoBlock">Trailer:</span>
-            <span class="value"><a href="https://www.youtube.com/watch?v=yQA5vp9LJBw"target="_blank">trailer link</a></span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=yQA5vp9LJBw"target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
           </div>     
           <div class="aniIMBDReviews name">
            <span class="titleNoBlock">User Reviews:</span>
-            <span class="value"><a href="https://www.imdb.com/title/tt1754799/reviews/"target="_blank">IMDB User Review link</a></span>
+            <span class="value"><a href="https://www.imdb.com/title/tt1754799/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
           </div>
          </div>      
         <div class="qBar"></div>
@@ -398,4 +402,12 @@ menuButton.addEventListener('click', () => {
 <div id="no-results-message" style="display: none;"></div>
 <script src="lib/Iframe movies.js"></script>
   </body>
+  <!-- Modal -->
+<div id="modal" class="modal">
+  <div id="modal-content">
+    <span class="close">&times;</span>
+    <div id="modal-video"></div>
+    <script src="lib/movie names.js"></script>
+  </div>
+</div>
 </html>
