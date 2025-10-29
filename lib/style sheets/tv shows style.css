@@ -863,8 +863,6 @@ a:hover {
     text-align: center;
 }
 
-<style>
-
 a:link {
   color: darkgreen;
   background-color: transparent;
@@ -888,8 +886,6 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
-
-</style>
 
 .homepage-link-container {
   position: absolute;
@@ -1356,4 +1352,12 @@ a:active {
 .close {
   cursor: pointer;
   font-weight: bold;
+}
+
+.modal.show-modal {
+  display: block;
+}
+
+.modal.hide-modal {
+  display: none;
 }

@@ -1356,3 +1356,11 @@ a:active {
   cursor: pointer;
   font-weight: bold;
 }
+
+.modal.show-modal {
+  display: block;
+}
+
+.modal.hide-modal {
+  display: none;
+}
