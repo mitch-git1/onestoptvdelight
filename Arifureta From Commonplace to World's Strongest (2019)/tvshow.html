@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Arifureta: From Commonplace to World's Strongest
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Arifureta: From Commonplace to World's Strongest</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20%282019%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S00E01%20-%20Picture%20Drama%201%201-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - Picture Drama 1 1
+          </div>
+          <div class="plot">Twitter連載ピクチャードラマ #01
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S00E02%20-%20Picture%20Drama%201%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x2 - Picture Drama 1 2
+          </div>
+          <div class="plot">Twitter連載ピクチャードラマ #02
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S00E03%20-%20Picture%20Drama%201%203-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x3 - Picture Drama 1 3
+          </div>
+          <div class="plot">Twitter連載ピクチャードラマ #03
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S01E01%20-%20The%20Monster%20of%20the%20Abyss-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Monster of the Abyss
+          </div>
+          <div class="plot">After he and his entire class are summoned to another world, Hajime Nagumo finds himself extremely underpowered and at the mercy of the Labyrinth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S01E02%20-%20Pandora%27s%20Box-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Pandora's Box
+          </div>
+          <div class="plot">Hajime's classmates struggle with the aftermath of Hajime's fall. Hajime descends even further into the Labyrinth, where he makes a fateful encounter.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S01E03%20-%20The%20Golden%20Vampire%20Princess-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Golden Vampire Princess
+          </div>
+          <div class="plot">Hajime and Yue descend deeper into the labyrinth, discovering one another's stories along the way.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S01E04%20-%20Guardian%20of%20the%20Depths-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Guardian of the Depths
+          </div>
+          <div class="plot">Hajime and Yue encounter a powerful foe in the deepest depths of the Labyrinth. Will they be able to defeat it and find a way out?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S01E05%20-%20The%20Maverick%27s%20Lair-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Maverick's Lair
+          </div>
+          <div class="plot">A rare oasis lies in the depths of the Labyrinth. There, Hajime and Yue come face-to-face with the specter of the labyrinth's namesake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S01E06%20-%20Worthless%20Rabbit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Worthless Rabbit
+          </div>
+          <div class="plot">After finally making it back to the surface, Hajime and Yue encounter a rabbit girl who claims she's been &quot;waiting for them&quot; -- and needs their help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S01E07%20-%20The%20Great%20Reisen%20Labyrinth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Great Reisen Labyrinth
+          </div>
+          <div class="plot">Hajime, Yue, and Shea forge onwards, their next labyrinth in sight. However, the Liberator of this Labyrinth is quite the unusual character.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S01E08%20-%20Reunion%20with%20the%20Past-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Reunion with the Past
+          </div>
+          <div class="plot">Hajime and the gang reluctantly accept a quest. Their journey north to the town of Ur leads to an unexpected reunion with their teacher, Aiko.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S01E09%20-%20Dragon%20Slayer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Dragon Slayer
+          </div>
+          <div class="plot">Hajime's quest leads him and his classmates into the mountains, where they come across their quarry -- and the huge black dragon attacking him!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S01E10%20-%20The%20Goddess%E2%80%99%20Sword-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Goddess&rsquo; Sword
+          </div>
+          <div class="plot">With an army of monsters approaching the town of Ur, Hajime sets a plan into motion to protect the citizens and exalt Aiko as the Goddess of Plenty.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S01E11%20-%20The%20Monsters%E2%80%99%20Day%20Off-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Monsters&rsquo; Day Off
+          </div>
+          <div class="plot">After returning to Fuhren, Hajime heads off on a date with Shea, which comes to a sudden close when they stumble on a kidnapped merfolk girl.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S01E12%20-%20A%20Looming%20Shadow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - A Looming Shadow
+          </div>
+          <div class="plot">Hajime's party makes their way back to a familiar location. Deep in the Labyrinth, a new foe threatens the lives of his classmates.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S01E13%20-%20The%20Best%20at%20Being%20the%20Worst-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - The Best at Being the Worst
+          </div>
+          <div class="plot">When Hajime's classmates are threatened by a demon mage to &quot;join or die&quot;, it's up to him to rescue them -- whether they like his methods or not.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S02E01%20-%20Irregular-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Irregular
+          </div>
+          <div class="plot">Shizuku and the other students return to the royal capital. Their brush with death, and the dramatic reencounter with Hajime Nagumo, has had different effects on each student's mind. Hajime, now joined by Kaori, arrives at the Gruen Desert.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S02E02%20-%20Burning%20Light-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Burning Light
+          </div>
+          <div class="plot">Hajime's party reaches Ankaji. Hajime must perform multiple miracles to save this dukedom from certain doom before traveling to his real destination, the Grand Gruen Volcano, the next labyrinth on his list.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S02E03%20-%20Black%20and%20White-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Black and White
+          </div>
+          <div class="plot">Hajime completes the grueling trial at the end of the Grand Gruen Volcano labyrinth, but at that exact moment, Freid, a demon commander, launches a surprise attack. Hajime is heavily injured, and a desperate battle begins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S02E04%20-%20Reunion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Reunion
+          </div>
+          <div class="plot">Tio escapes the volcano alone and flies towards Ankaji. Meanwhile, Hajime and the others, still in the volcano, hatch a plan to escape the incoming lava without sacrificing any of their goals.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S02E05%20-%20Memories%20from%20the%20Bottom%20of%20the%20Sea-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Memories from the Bottom of the Sea
+          </div>
+          <div class="plot">Hajime and his party departs the city of Erisen to head towards the Sunken Ruins of Melusine. They solve multiple puzzles to reach the labyrinth, and are confronted by a mysterious illusion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S02E06%20-%20Someone%20Important-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Someone Important
+          </div>
+          <div class="plot">Hajime and Kaori, separated from the others, move deeper into the labyrinth. They encounter an even more disturbing illusion, but Kaori has more important concerns - does she really want to continue this relationship with Hajime?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S02E07%20-%20A%20New%20Vow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - A New Vow
+          </div>
+          <div class="plot">Several days have passed since Hajime and his party returned safely from the Sunken Ruins of Melusine. Though Hajime knows he needs to get going, he doesn't want to break Myu's heart.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S02E08%20-%20Disturbing%20Shadow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Disturbing Shadow
+          </div>
+          <div class="plot">Daisuke and his shadowy co-conspirator overtly take action against Commander Meld, triggering the final phase of their nefarious plan. Meanwhile, Hajime encounters a group of bandits attacking someone he has met before.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S02E09%20-%20Invasion%20of%20the%20Royal%20Capital-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Invasion of the Royal Capital
+          </div>
+          <div class="plot">Hajime arrives at the Divine Mountain to rescue Aiko, but is immediately attacked by Noint. Meanwhile, a massive force of Demons and monsters suddenly appear just outside the capital city of Heiligh and immediately begin sieging the city.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S02E10%20-%20God%27s%20Apostle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - God's Apostle
+          </div>
+          <div class="plot">As Hajime's deadly duel versus Noint continues, Aiko and Tio hatch a plan to assist Hajime. The other students also notice the alarming noise and gather together to figure out what's going on.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S02E11%20-%20Betrayal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Betrayal
+          </div>
+          <div class="plot">With her trap sprung and all of the students rendered unable to fight, Eri reveals her true nature and sets the rest of her plan in motion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S02E12%20-%20A%20New%20Journey-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - A New Journey
+          </div>
+          <div class="plot">Hajime once again saved the day, thwarting Eri's evil plans and the demons' invasion. With the royal capital now safe, Hajime discusses future plans with his companions and classmates.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            2x13 - S02E13
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E01%20-%20Haulias%20Assemble-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Haulias Assemble
+          </div>
+          <div class="plot">With the Heiligh Kingdom heavily damaged, Princess Liliana travels to the Hoelscher Empire to request their aid. On their way, Hajime spots Haulia tribe members fighting imperial soldiers. The tribe members bring news of a coming invasion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E02%20-%20Roar%20of%20Revolution-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Roar of Revolution
+          </div>
+          <div class="plot">Hajime catches wind of conflict brewing between the empire and the rabbit beastmen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E03%20-%20The%20Princess%27s%20Ordeal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - The Princess's Ordeal
+          </div>
+          <div class="plot">Liliana meets the emperor to discuss receiving aid from him. She must make a great personal sacrifice to solidify this. She is ready to do so, but Hajime seems to have other plans.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E04%20-%20The%20Empire%20vs.%20the%20Strongest%20Rabbits-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - The Empire vs. the Strongest Rabbits
+          </div>
+          <div class="plot">The party to celebrate Liliana's visit to the imperial capital and announce her engagement to the imperial crown prince begins. However, the Haulia Tribe has a whole different event planned for the night.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E05%20-%20The%20Hero%20Returns-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - The Hero Returns
+          </div>
+          <div class="plot">After the Haulia Tribe's victory over the Empire, Hajime and the others travel to Verbergen to prepare to take on a new Great Labyrinth. During his visit, Hajime gets an opportunity to deepen his bond with Shea.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E06%20-%20Haltina%27s%20Labyrinth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Haltina's Labyrinth
+          </div>
+          <div class="plot">It's now time to tackle the next Great Labyrinth, located deep within the Haltina Sea of Trees. Immediately upon entering, it is made clear to Hajime that this is not going to be a straightforward hack-and-slash adventure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E07%20-%20A%20Devilish%20Trial-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - A Devilish Trial
+          </div>
+          <div class="plot">Hajime wakes up from the dream trap and waits for the others to break free as well. As they progress deeper into the labyrinth, many more mind-rending attacks are thrown against them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E08%20-%20Grab%20Hold%20of%20Hope-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Grab Hold of Hope
+          </div>
+          <div class="plot">Another trap activates, reversing the emotions each party member holds against the others. Hajime and Yue hate each other, while Kouki has nothing but respect towards Hajime. Moreover, they all fall in love with the enemy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E09%20-%20Changing%20Heart-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Changing Heart
+          </div>
+          <div class="plot">Hajime finally confirms that learning all of the ancient magics can help him return to Earth. With this newfound hope in heart, he reaffirms the bond between him and his friends - including someone whom he now treats as more than a friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E10%20-%20The%20Final%20Labyrinth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - The Final Labyrinth
+          </div>
+          <div class="plot">With all but one Great Labyrinth conquered, Hajime and the group travel to the Schnee Snow Fields to tackle the final labyrinth. Meanwhile, it becomes clear that certain members of the group have internal issues to deal with.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E11%20-%20Charging%20Emotions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Charging Emotions
+          </div>
+          <div class="plot">As the party pushes deeper into the labyrnth and reach an area where all of the icy walls are reflective, like a mirror. The mind games begin, and Kouki is the first to fall prey to the labyrinth's tricks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E12%20-%20True%20Heart-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - True Heart
+          </div>
+          <div class="plot">Aside from pointing out what a huge edgelord Hajime is, the labyrinth begins pointing out other painful realities that Hajime was trying to look away from. Meanwhile, Shizuku is subjected to the same ordeals.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E13%20-%20Thank%20God%20She%27s%20Still%20a%20Pervert%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Thank God She's Still a Pervert!
+          </div>
+          <div class="plot">Hajime rescues Shizuku in the nick of time, just as she was about to succumb to the labyrinth's trial. Suzu, Ryutarou and Tio also face their own tests.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E14%20-%20The%20Overpowered%20Vampire%20Princess%20and%20the%20Godlike%20Rabbit%27s%20Grand%20Battle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - The Overpowered Vampire Princess and the Godlike Rabbit's Grand Battle
+          </div>
+          <div class="plot">Yue notices something during her test and wants to warn Shea about it, but Yue's phrasing triggers Shea's outrage.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E15%20-%20What%20Makes%20a%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - What Makes a Hero
+          </div>
+          <div class="plot">Kouki's test pushes him to face his insecurities about Hajime head-on.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20-%20S03E16%20-%20The%20Key%20to%20the%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - The Key to the World
+          </div>
+          <div class="plot">Hajime and Yue attempt to harness their new power to realize their ultimate goal - creating a way home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Tower of God
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Tower of God</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Tower%20of%20God%20%282020%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S01E01%20-%20BALL-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - BALL
+          </div>
+          <div class="plot">She wanted to see the stars. He wanted to be with her. What do you desire that you would give your life for? Only those with the strength to survive can acquire that which they seek at the top of the tower.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S01E02%20-%203%20400%20%28Three%20Four-Hundredths%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - 3/400 (Three Four-Hundredths)
+          </div>
+          <div class="plot">Bam overcomes Headon&rsquo;s test and ascends to the second level of the tower. &quot;The Black March&quot; Bam received from Yuri catches the attention of Khun, who toys with him. Together they aim for the top, but&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S01E03%20-%20The%20Correct%20Door-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Correct Door
+          </div>
+          <div class="plot">When Test Director Hansung Yu announces the subject of the test, Rak throws a tantrum, and Bam calms him. Meanwhile, the gears in Khun&rsquo;s head alone are turning. Second by second, time moves forward. What will they do?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S01E04%20-%20The%20Green%20April-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Green April
+          </div>
+          <div class="plot">At the end of the first round of the Crown Game, Anaak, wielder of the ever-changing sword &quot;The Green April,&quot; sits upon the throne. Bam, Khun, and Rak wait for the right moment to participate. Will they survive until the end of this bonus game?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S01E05%20-%20The%20Crown%E2%80%99s%20Fate-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Crown&rsquo;s Fate
+          </div>
+          <div class="plot">Bam&rsquo;s team defends the crown from the looming Regulars. As they charge into battle one after alone, Bam is distracted by a lone girl. The Regulars attack Bam, but&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S01E06%20-%20Position%20Selection-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Position Selection
+          </div>
+          <div class="plot">What will Khun do after meeting Rachel? The position selection begins, and despite struggling with their assignments, the examinees grow closer. Meanwhile, someone watches them and ruminates from afar&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S01E07%20-%20Lunch%20and%20Tag-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Lunch and Tag
+          </div>
+          <div class="plot">Several days have passed since Anaak and Endorsi&rsquo;s feud came to a total stop. As the next &quot;Tag&quot; test is about to begin, dark clouds begin gathering around Bam again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S01E08%20-%20Khun%E2%80%99s%20Strategy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Khun&rsquo;s Strategy
+          </div>
+          <div class="plot">Team A is awed by the overwhelming power of the Ranker. As the Regulars are attacked one after another in the dark, will Anaak make it to the exit? What is Khun&rsquo;s next plan?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S01E09%20-%20The%20One-Horned%20Ogre-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The One-Horned Ogre
+          </div>
+          <div class="plot">&quot;My plan worked.&quot; With this declaration, Endorsi kicks her own teammate. What was the true intention of her plan to gather all the Fishermen in one location and see how the Ranker would act?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S01E10%20-%20Beyond%20the%20Sadness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Beyond the Sadness
+          </div>
+          <div class="plot">Rachel suffers a grave wound. How will she feel about reuniting with Bam? As their various thoughts and intentions jumble together, each one reaches their own decision in order to move forward. What waits for them beyond their sadness?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S01E11%20-%20Underwater%20Hunt%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Underwater Hunt (1)
+          </div>
+          <div class="plot">Another test is held to reach the top of the tower. Much has been lost and important things have been gained in order to climb the tower. Accept it all and move forward in the direction your feelings lead you.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S01E12%20-%20Underwater%20Hunt%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Underwater Hunt (2)
+          </div>
+          <div class="plot">All manner of thoughts and intentions intersect at the chaotic final testing ground. While tossed about by a giant plot, the combatants boldly race across the battlefield. As the test reaches its climax, what resolve will Bam show to Rachel?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S01E13%20-%20Tower%20of%20God-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Tower of God
+          </div>
+          <div class="plot">Just as the guardian&rsquo;s test is about to end, Bam is pushed off by Rachel. Time turns back to when the tower&rsquo;s doors opened. How did Bam spend his time? What is the world Rachel saw?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S02E01%20-%20Last%20Chance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Last Chance
+          </div>
+          <div class="plot">On the twentieth level, there is another test to determine who may continue to climb the tower. Many who have failed and buried their dreams gather there. However, Ja Wangnan does not want to give up and puts everything on one last chance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S02E02%20-%20The%20Strongest%20Regular-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - The Strongest Regular
+          </div>
+          <div class="plot">Once all the successful candidates had gathered, the second test began. However, the Test Director makes a strange proposal to Viole, who passes the test with top marks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S02E03%20-%20The%20Trustworthy%20Room-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - The Trustworthy Room
+          </div>
+          <div class="plot">Viole refused to choose companions for the journey ahead. Therefore, another test is being conducted to resolve this issue.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S02E04%20-%20Ramen%20and%20the%20Great%20Big%20Sky-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Ramen and the Great Big Sky
+          </div>
+          <div class="plot">In the test on the 20th floor, the examinees are supposed to form teams and capture rooms. However, trust is a rare resource in a world that rewards betrayal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S02E05%20-%20The%20Other%20Team-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - The Other Team
+          </div>
+          <div class="plot">Khun continues to climb the tower, thinking of his best friend Bam. He has assembled a new team and is dragging along the sluggish Rachel. But there's much more going on behind the scenes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S02E06%20-%20Zygaena%27s%20Flower-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Zygaena's Flower
+          </div>
+          <div class="plot">The team with Viole and Wangnan faces the next test on their journey to the top of the tower. But before that, they are evaluated by Viole's friends from FUG.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S02E07%20-%20Mazino%20Magic-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Mazino Magic
+          </div>
+          <div class="plot">The battle against Urek continues in Zygaena. In a deadly game between Urek and Viole, the stakes are Zygaena's flower. But then, everything takes an unexpected turn.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S02E08%20-%20Her%20Name%20Is%20Emily-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Her Name Is Emily
+          </div>
+          <div class="plot">Both Khun's team and the team of Wangnan and Viole continue to climb the tower, facing the necessary trials along the way. In the process, they discover a new tool: the increasingly popular chat AI, Emile.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S02E09%20-%20One-Winged%20Devil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - One-Winged Devil
+          </div>
+          <div class="plot">Kang Horyang shares his past with his teammates and asks Viole about the source of his power.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S02E10%20-%20The%20Hand%20of%20Arlen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - The Hand of Arlen
+          </div>
+          <div class="plot">Kang Horyang leaves to look for Cassano alone. Unable to abandon their teammate, Viole and the others go after him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S02E11%20-%20A%20Thick%20and%20Distant%20Wall-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - A Thick and Distant Wall
+          </div>
+          <div class="plot">Viole witnesses Kang Horyang's defeat and unleashes an incredible power. Meanwhile, Khun realizes he has been betrayed and rushes to save his teammates.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S02E12%20-%20A%20New%20Trial-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - A New Trial
+          </div>
+          <div class="plot">The Hand of Arlen is destroyed by FUG. Wangnan's team rescues Khun from the rubble, who explain that the long-haired man he saw is FUG Slayer Candidate Jue Viole Grace. While contemplating recent events, Khun encounters a familiar face...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Tower%20of%20God%20-%20S02E13%20-%20Archimedes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Archimedes
+          </div>
+          <div class="plot">Khun learns the truth from Hwaryun and decides to join Wangnan's team in the Workshop Battle. Meanwhile, Bam remains on Team FUG as Viole.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

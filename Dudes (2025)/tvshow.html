@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Dudes
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Dudes</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Dudes%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dudes%20-%20S01E01%20-%20An%20uns%20soll%20es%20nicht%20scheitern-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - An uns soll es nicht scheitern
+          </div>
+          <div class="plot">Ulf wird, anders als erwartet, nicht bef&ouml;rdert, Andi versucht, seine Ehe zu beleben, und Cems Tochter zieht bei ihm ein. Erik will sich endlich auf eine einzige Frau festlegen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dudes%20-%20S01E02%20-%20Die%20Libido%20einer%20Topfpflanze-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Die Libido einer Topfpflanze
+          </div>
+          <div class="plot">Cem wartet bei seinem Date mit einer dicken L&uuml;ge auf und Ulf versucht, seinen Job zur&uuml;ckzubekommen. Erik erlebt in einem Sexclub eine unangenehme &Uuml;berraschung.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dudes%20-%20S01E03%20-%20So%20%27ne%20Art%20Unbedenklichkeitsbescheinigung-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - So 'ne Art Unbedenklichkeitsbescheinigung
+          </div>
+          <div class="plot">Andi und Silke gehen ihre Probleme mit Medikamenten an. Nach seinem Einzug bei Cem schmiedet Erik einen Plan, um sich wieder bei Kim beliebt zu machen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dudes%20-%20S01E04%20-%20Diagnose%20und%20arrivederci-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Diagnose und arrivederci
+          </div>
+          <div class="plot">Auf einem Skiausflug der Jungs nach M&uuml;nchen macht das Schicksal eines alten Freundes Ulf zunehmend paranoid. W&auml;hrenddessen gibt sich Silke der Versuchung hin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dudes%20-%20S01E05%20-%20Yo%20Digga%2C%20alles%20slay-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Yo Digga, alles slay?
+          </div>
+          <div class="plot">Die Jungs besuchen ein Seminar &uuml;ber moderne M&auml;nnlichkeit. Elif tut, was sie kann, um Ulfs Stolz nicht zu verletzten. Silke ger&auml;t beim Sexten in Schwierigkeiten.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dudes%20-%20S01E06%20-%20Hemingway-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Hemingway
+          </div>
+          <div class="plot">Cem verschweigt Ulf sein Liebesleben und Andi macht eine schmerzliche Entdeckung. Ulf blamiert Elif bei einem Event und Kim und Erik experimentieren im Bett.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dudes%20-%20S01E07%20-%20Man%20kann%20nicht%20alles%20haben-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Man kann nicht alles haben
+          </div>
+          <div class="plot">Elif ger&auml;t mit Ulf wegen seiner viralen Videos aneinander. Cem w&auml;rmt eine alte Flamme auf und Kim erz&auml;hlt Erik von einem Jobangebot. Andi kann sich nicht l&auml;nger beherrschen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dudes%20-%20S01E08%20-%20Jedes%20Pok%C3%A9mon%20versteht%20das-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Jedes Pok&eacute;mon versteht das
+          </div>
+          <div class="plot">Die Jungs m&uuml;ssen sich mit den Folgen ihrer Handlungen auseinandersetzen. F&uuml;r einige steht ein Neuanfang an, w&auml;hrend auf andere ein b&ouml;ses Erwachen wartet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

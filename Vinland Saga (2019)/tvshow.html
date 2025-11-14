@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Vinland Saga
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Vinland Saga</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Vinland%20Saga%20%282019%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S00E01%20-%206.5%20-%20Drowning%20in%20the%20Shadow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - 6.5 - Drowning in the Shadow
+          </div>
+          <div class="plot">Special ONA covering events not shown in the original manga.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x2 - 18.5 - Same Old Story
+          </div>
+          <div class="plot">Special ONA taking place between episodes 18 and 19 of the anime.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E01%20-%20Somewhere%20Not%20Here-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Somewhere Not Here
+          </div>
+          <div class="plot">Thorfinn, a boy living in Iceland, longs for adventure and is eager to know more about the world. He dreams of a land of paradise called Vinland that he hears about from the adventurer Leif, while he leads his peaceful life with this father Thors, a former warrior. One day, Thors saves a runaway slave and sets a series of events in motion. This is the story of a true warrior in an age of turmoil.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E02%20-%20Sword-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Sword
+          </div>
+          <div class="plot">In the year 1002, the war between England and Denmark was intensifying. One day, the Jomsvikings pay a visit to Thorfinn's village in order to bring back Thors, their former commander, to prepare for the impending battle. Thors is forced to join the war in order to protect the villagers from being taken hostage, and must face his accursed past in order to save his family and his village.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E03%20-%20Troll-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Troll
+          </div>
+          <div class="plot">Askeladd, the leader of a Viking army of a hundred men, receives orders from Floki of the Jomsvikings to kill Thors, who was once known as the Troll of Jom. However, the villagers, completely unaware of the order, buzz with excitement as they prepare for their first battle. Thorfinn also joins in the excitement. Thors and his men are about to embark on a difficult sea journey to England.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E04%20-%20A%20True%20Warrior-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - A True Warrior
+          </div>
+          <div class="plot">Thors and his men fall for Askeladd's trap and faces a dangerous situation, but Thors defeats many of Askeladd's men with his overpowering strength. However, Thors knows that it will be difficult to save everyone, including his son, who've been living in a peaceful village their entire lives, and makes a tough decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E05%20-%20The%20Troll%27s%20Son-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Troll's Son
+          </div>
+          <div class="plot">After Askeladd kills Thorfinn's father Thors, Thorfinn hides inside Thor's ship and bides his time until the opportunity to take revenge. However, life on the ship is harsh without any food or water, and Thorfinn grows weaker day by day. One day, Thorfinn, armed with his sword, attempt to attack Askeladd in his sleep...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E06%20-%20The%20Journey%20Begins-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Journey Begins
+          </div>
+          <div class="plot">Thorfinn kills his first man. As more time goes on Thorfinn kills more men and becomes more skilled. One day when Thorfinn is in battle he gets shot with an arrow and ends up unconscious. An English woman and her daughter help him recover.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E07%20-%20Normanni-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Normanni
+          </div>
+          <div class="plot">Askeladd withdraws temporarily from the war against England. While searching for a new source of income, he encounters a skirmish among the Franks and hatches a plot to steal their treasure. Askeladd sends 16 years old Thorfinn, who has grown up into a cold-hearted Viking, ahead as a messenger.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E08%20-%20Beyond%20the%20Edge%20of%20the%20Sea-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Beyond the Edge of the Sea
+          </div>
+          <div class="plot">After capturing the treasure from the Franks, Askeladd's men return to the village of Gorm on the Jutland Peninsula in Denmark to pass the winter. Thorfinn challenges Askeladd to a duel as a reward for bringing him the head of the captain of the clan of Franks. Even though Thorfinn has grown in skill through his experience in battle, he is still no match for Askeladd.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E09%20-%20The%20Battle%20of%20London%20Bridge-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Battle of London Bridge
+          </div>
+          <div class="plot">In October 1013, King Sweyn leads a fleet of Danish and Viking ships in an attempt to take London Bridge of England. Askeladd's army, hired by the army of Denmark, was among them. However, after the betrayal of Thorkell the Tall, a Viking known for his overpowering strength, London Bridge has become impregnable. Askeladd tells Thorfinn he'll reward him with a duel if he's able to kill Thorkell.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E10%20-%20Ragnarok-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Ragnarok
+          </div>
+          <div class="plot">Askeladd's army separates from the army of Denmark and attacks a village 100 km to the west. Thorfinn leaves the soldiers behind in disgust and climbs up a hill overlooking the village, where he pledges revenge for his father. However, he encounters Askeladd sitting in the darkness, who tells him about &quot;Britannia&quot;, the aging of the world, and Ragnarok, the final battle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E11%20-%20A%20Gamble-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - A Gamble
+          </div>
+          <div class="plot">Thorkell takes Canute hostage and follows after the main army of Denmark. Ragnar objects to Thorkell&rsquo;s plan to take on the entire army of Denmark, boasting 16,000 soldiers, with only 500 men. Thorkell then begins to tell Ragnar the story of Valhalla, the pride of Normans, a place where only those who die in battle can go.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E12%20-%20The%20Land%20on%20the%20Far%20Bank-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Land on the Far Bank
+          </div>
+          <div class="plot">Askeladd and his men continue their march to escape from Thorkell. However, their march comes to a halt at the Severn River. Askeladd hands a letter to an old man operating a ferry across the river and tells him to deliver the letter to the other side immediately. As soon as he hears the addressee&rsquo;s name, the old man sets off in his boat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E13%20-%20Child%20of%20a%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Child of a Hero
+          </div>
+          <div class="plot">Askeladd crosses the river and escapes from Thorkell into Wales with Canute. However, Askeladd&rsquo;s men are ambushed by a group of soldiers hiding behind the boulders at the border of the kingdom of Brycheiniog. Askeladd attempts to negotiate with their messenger and reveals his plan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E14%20-%20The%20Light%20of%20Dawn-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - The Light of Dawn
+          </div>
+          <div class="plot">Askeladd and his men change course and decide to return to Gainsborough, by crossing through the Earldom of Mercia in the midst of a harsh snowstorm, where the main army of Denmark awaits. The men spot a small village in the blizzard and make their move.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E15%20-%20After%20Yule-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - After Yule
+          </div>
+          <div class="plot">After losing Canute, Thorkell decides to halt his advance in central England. Thorkell hears that the end of the war between Denmark and England is near, and bemoans the end of the war. However, he later gets wind of an interesting piece of news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E16%20-%20History%20of%20Beasts-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - History of Beasts
+          </div>
+          <div class="plot">Askeladd and his men are attacked by the English army in the village where they had planned to camp during the winter. Askeladd captures their captain and interrogates him to find out how the English knew where they were, and discovers that Thorkell is fast approaching. The news of Thorkell's arrival sends waves of shock among Askeladd's followers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E17%20-%20Servant-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Servant
+          </div>
+          <div class="plot">Askeladd's men continued their march to escape Thorkell. However, Torgrim and his friends were hatching a plot to switch sides and join Thorkell, taking Canute with them. Torgrim finally launches his rebellion and corners Askeladd, negotiating with him to hand over Canute, then Thorkell arrives in the midst of the confusion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E18%20-%20Out%20of%20the%20Cradle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Out of the Cradle
+          </div>
+          <div class="plot">Thorfinn and Thorkell agree to have a duel over the fate of Askeladd. Thorkell looks forward to facing off against Thors&rsquo;s son, Thorfinn, and asks him what a true warrior really is. Meanwhile, Canute is suddenly ambushed while he attempts to escape, and has a dream about a certain individual.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E19%20-%20United%20Front-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - United Front
+          </div>
+          <div class="plot">Thorfinn suffers a serious injury in his fight against Thorkell. Thorfinn is told to think about what he has to do to beat Thorkell. Askeladd treats Thorfinn&rsquo;s wounds so that he may fight again someday, and proposes a joint strategy to help the two of them survive longer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E20%20-%20Crown-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Crown
+          </div>
+          <div class="plot">Thorfinn suffers a serious injury in his fight against Thorkell. Thorfinn is told to think about what he has to do to beat Thorkell. Askeladd treats Thorfinn&rsquo;s wounds so that he may fight again someday, and proposes a joint strategy to help the two of them survive longer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E21%20-%20Reunion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - Reunion
+          </div>
+          <div class="plot">Canute&rsquo;s party arrives in York to attend the Imperial Council. Although Canute had wanted to strike out against King Sweyn, the King was being guarded by the most powerful Jomsviking unit in the Northern Sea while keeping a close eye on Canute. With the situation strained to the breaking point, Askeladd comes up with a plan. Meanwhile, Thorfinn is reunited with a person who knew his former self.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E22%20-%20Lone%20Wolf-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - Lone Wolf
+          </div>
+          <div class="plot">Thorfinn begins his duel against Askeladd with Canute and Thorkell as witnesses. However, Thorfinn is unable to strike as he stands overwhelmed by the extraordinary mood that overtakes Askeladd after Bjorn's departure. Having noticed Thorfinn's hesitation, Askeladd lays down his sword and provokes Thorfinn into an unarmed fight, which incites Thorfinn's fury.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E23%20-%20Miscalculation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - Miscalculation
+          </div>
+          <div class="plot">After the assassination attempt on Canute&rsquo;s life, rumors spread through York saying that the king is trying to kill Canute. As a result, the king is unable to issue any orders that would put Canute in harm, and Askeladd is pleased that everything is proceeding as planned. However, the tables turn when King Sweyn speaks. Meanwhile, Thorfinn is sent to prison as punishment for disturbing the peace.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S01E24%20-%20End%20of%20the%20Prologue-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - End of the Prologue
+          </div>
+          <div class="plot">Askeladd comes forth before King Sweyn and implores him to halt his invasion of Wales. Meanwhile, Thorfinn decides to return home at Leif&rsquo;s urging. However, the moment before he boards the ship, Thorfinn catches a glimpse of a single tern taking off into the sky...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E01%20-%20Slave-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Slave
+          </div>
+          <div class="plot">Einar lives peacefully in northern England with his mother and sister, but then one day, their village comes under attack.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E02%20-%20Ketil%27s%20Farm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Ketil's Farm
+          </div>
+          <div class="plot">Einar and Thorfinn are told to convert a wild forest into a wheat field; and if they succeed, they will have the chance to buy their own freedom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E03%20-%20Snake-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Snake
+          </div>
+          <div class="plot">The farm guards convince Ketil&rsquo;s 17-year-old son that he needs to make his first killing to become a man.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E04%20-%20Awakening-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Awakening
+          </div>
+          <div class="plot">After everything that happened, Einar asks Thorfinn if he's ever fought in a war &mdash; and if he's ever killed a man.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E05%20-%20Path%20of%20Blood-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Path of Blood
+          </div>
+          <div class="plot">After the sudden turn of events, young Canute must rise up to claim the throne to a kingdom much reduced and under attack.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E06%20-%20We%20Need%20a%20Horse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - We Need a Horse
+          </div>
+          <div class="plot">Thorfinn and Einar are working themselves to the bone to clear the forest, but there's only so much they can do without the help of horses.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E07%20-%20Iron%20Fist%20Ketil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Iron Fist Ketil
+          </div>
+          <div class="plot">Thieves have been stealing food from Ketil's farm. Meanwhile, Ketil's eldest son Thorgil returns home.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E08%20-%20An%20Empty%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - An Empty Man
+          </div>
+          <div class="plot">Thorfinn has nightmares almost every night, but he can never remember what he dreamed about &mdash; and that bothers him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E09%20-%20Oath-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Oath
+          </div>
+          <div class="plot">Thorfinn wakes up in a peaceful place and he sees his father again. But then things quickly turn dark, and Thorfinn must face his painful past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E10%20-%20The%20Cursed%20Head-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - The Cursed Head
+          </div>
+          <div class="plot">Finally, after three long years, Einar and Thorfinn chop down the final tree in the forest. With hope in their hearts, they talk about the future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E11%20-%20Kings%20and%20Swords-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Kings and Swords
+          </div>
+          <div class="plot">While in Jelling, Ketil, Thorgil and Olmar meet a man named Leif Erikson who is searching for Thorfinn, the son of his close friend.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E12%20-%20For%20Lost%20Love-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - For Lost Love
+          </div>
+          <div class="plot">Olmar feels insulted by Canute's messenger and, encouraged by his older brother Thorgil, takes matters into his own hands.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E13%20-%20Dark%20Clouds-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Dark Clouds
+          </div>
+          <div class="plot">Einar says that even if he gains his freedom, he wants to stay near Arnheid. Snake hears news of a slave who killed his owners, and is now on the run.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E14%20-%20Freedom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - Freedom
+          </div>
+          <div class="plot">A runaway slave appears on Ketil's farm, claiming to be Arnheid's husband. But before he can free her, he's confronted by Snake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E15%20-%20Storm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Storm
+          </div>
+          <div class="plot">Arnheid comes to the fortress where Gardar is imprisoned. She wants to see her husband and treat his injuries.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E16%20-%20Great%20Purpose-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - Great Purpose
+          </div>
+          <div class="plot">As Snake intensifies his search, Arnheid tells Einar and Thorfinn everything she's done. Knowing the risks, Einar and Thorfinn offer to help her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E17%20-%20The%20Road%20Home-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - The Road Home
+          </div>
+          <div class="plot">Snake strikes quickly, surprising Thorfinn with his speed and agility. As he lies wounded, Gardar thinks back on the life he shared with Arnheid.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E18%20-%20The%20First%20Method-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - The First Method
+          </div>
+          <div class="plot">After returning home to his farm, an exhausted Ketil starts searching for Arnheid, only to find out what happened in his absence.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E19%20-%20The%20Battle%20of%20Ketil%27s%20Farm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - The Battle of Ketil's Farm
+          </div>
+          <div class="plot">Amidst the confusion of a peasant uprising, Thorfinn and the others try to escape, carrying a severely injured and pregnant Arnheid.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E20%20-%20Pain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - Pain
+          </div>
+          <div class="plot">As Thorfinn and Einar head for their escape, Arnheid regains consciousness and asks where they are going &mdash; and if there are slaves and wars there, too.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E21%20-%20Courage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - Courage
+          </div>
+          <div class="plot">The battle has left heartbreaking casualties in its wake. Though Thorgil and Ketil's wife want to continue the fight, Canute demands their surrender.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E22%20-%20The%20King%20of%20Rebellion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - The King of Rebellion
+          </div>
+          <div class="plot">Snake tries to put a stop to it, but Thorfinn insists on receiving all 100 blows from Canute's brutish guard Drott, shocking the rowdy onlookers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E23%20-%20Two%20Paths-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x23 - Two Paths
+          </div>
+          <div class="plot">Thorfinn and Einar have said their piece, but Canute stubbornly refuses to give up Ketil's Farm. Then, Thorfinn breaks the standoff with a decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Vinland%20Saga%20-%20S02E24%20-%20Home-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x24 - Home
+          </div>
+          <div class="plot">At long last, Thorfinn returns to Iceland and finds a moment of happiness, reunited with his loved ones. But soon, he opens up about his next journey.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

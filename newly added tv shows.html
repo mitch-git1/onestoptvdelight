@@ -1,0 +1,1280 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="HTML Tidy for HTML5 for Windows version 5.3.1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/x-icon" href="images\tv and movie lists\icon.png">.
+    <title>Newly Added - TV Shows</title>
+    <script type="text/javascript" src="./lib/jquery.js"></script>
+    <link rel="stylesheet" href="./lib/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="./lib/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="./lib/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="./lib/deadsix.js"></script>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" type="text/css" href="lib/style sheets/tv shows style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    startUP();
+  });
+  $(window).on('hashchange', function () {
+    checkHash();
+  });
+</script>
+<link rel="stylesheet" href="lib/media queries stylesheets/media queries tv shows.css">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="largeContainer">
+      <!-- Add the menu button -->
+       <button id="menu-button">Menu</button>
+      <!-- Add the sidebar navigation -->
+       <div id="sidebar-nav">
+       <ul>
+       <li><a href="https://www.onestoptvdelight.co.za/newly added tv shows.html"target="_blank">Link Page Newly Added:TV Shows</a></li>
+       <li><a href="https://www.onestoptvdelight.co.za/newly added movies.html"target="_blank">Link Page Newly Added:Movies</a></li>
+       <li><a href="https://www.onestoptvdelight.co.za/full tv shows.html"target="_blank">Link Page Full Tv Show List</a></li>
+       <li><a href="https://forms.gle/EUaEUCBoX7CG8DL97"target="_blank">CheckList Link Page Newly Added Tv Shows</a></li>
+       </ul>
+       </div>
+      <div class="infoContainer">
+        <div class="homepage-link-container">
+           <!-- add home button -->
+       <a href="https://www.onestoptvdelight.co.za/index.html" class="homepage-link">Home Button</a>
+         </div>
+        <div class="infoBackTitleContainer">
+          <span class="infoBackTitle">Newly Added</span>
+          <hr class="subTitleSeprator" />
+          <span class="infoBackTitleSub">TV Shows</span>
+        </div>
+        <div class="infoContainerTextContainer">
+          <div class="name">
+            <span class="titleNoBlock">Total TV Shows:</span>
+            <span>15</span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Request Page Link:</span>
+            <span><a href="https://forms.gle/rbLCy1hxpxC5SXG1A"target="_blank" class="request-link"><i class="fa-solid fa-file-pen" style="color: #63E6BE;"></i> Request File</a></span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Top 10 Picked TV Shows This Month:</span>
+            <span><a href="https://www.onestoptvdelight.co.za/top 10 tv shows.html"target="_blank" class="top10-link"><i class="fa-solid fa-tv" style="color: #74C0FC;"></i> Top 10</a></span>
+          </div>
+        </div>
+      </div>
+        <div id="searchContainer">
+        <input type="text" autocomplete="off" onfocus="this.value=''; searchOnPage('');"
+        onblur="if(this.value==''){this.value='Search TV Show Name'};"
+        onkeyup="searchOnPage(this.value.toLowerCase());"
+        id="search_box" value="Search TV Show Name" />
+        <input type="submit" id="search_button" value="Search" />
+        <div id="search_result"></div>
+        </div>
+        <div class="dropdown-container">
+         <div id="genre-select-container">
+         <label for="genre-select" class="genre-label">Search By Genre:</label>
+         <select id="genre-select">
+         <option value="all">All</option>
+         </select>
+         </div>
+         <div id="date-select-container">
+           <label for="date-select" class="date-label">Search By Year:</label>
+           <select id="date-select">
+             <option value="all">All</option>
+           </select>
+         </div>
+         <div id="age-rating-select-container">
+         <label for="age-rating-select" class="age-rating-label">Search By Age Rating:</label>
+         <select id="age-rating-select">
+         <option value="all">All</option>
+        </select>
+        </div>
+        <div id="rating-select-container">
+        <label for="rating-select" class="rating-label">Search By Rating:</label>
+        <select id="rating-select">
+        <option value="all">All</option>
+        </select>
+        </div>
+        <button id="reset-filters-button" class="reset-filters">Reset Filters</button>
+        </div>
+       <div id="no-results-message" class="no-results-message"></div>
+      
+
+      <div id="tvshow_1" class="aniContainer aniOrder0">
+        <a href="images/fanart/1.jpg" class="fancybox" rel="1">
+          <div class="fanArt" id="fanart_1">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20100%20%282014%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="1" id="plot_1_icon"></div>
+        <a target="_BLANK" href="The%20100%20%282014%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="1" id="plot_1">
+          <span class="value">100 years in the future, when the Earth has been abandoned due to radioactivity, the last surviving humans live on an ark orbiting the planet &mdash; but the ark won't last forever. So the repressive regime picks 100 expendable juvenile delinquents to send down to Earth to see if the planet is still habitable.</span>
+        </div>
+        <span class="showId">#1</span>
+        <div class="posterContainer">
+          <a href="images/The%20100%20%282014%29-POSTER.thumb.jpg" class="fancybox" rel="1">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/The%20100%20%282014%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The 100</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2014/03/19</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">7</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">100</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.5 Based on (297K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Science Fiction, Action, Drama, Crime</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">The CW, Warner Bros. Television, Alloy Entertainment</span>
+          </div>
+          <div class="anilink name">
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=aDrsItJ_HU4"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Ended</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:14</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt2661044/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_2" class="aniContainer aniOrder0">
+        <a href="images/fanart/2.jpg" class="fancybox" rel="2">
+          <div class="fanArt" id="fanart_2">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20Bad%20Guys%20Breaking%20In%20%282025%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="2" id="plot_2_icon"></div>
+        <a target="_BLANK" href="The%20Bad%20Guys%20Breaking%20In%20%282025%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="2" id="plot_2">
+          <span class="value">How did the Bad Guys break into the bad guy business in the first place? Find out in this hilarious prequel series set before the hit films.</span>
+        </div>
+        <span class="showId">#2</span>
+        <div class="posterContainer">
+          <a href="images/The%20Bad%20Guys%20Breaking%20In%20%282025%29-POSTER.thumb.jpg" class="fancybox" rel="2">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/The%20Bad%20Guys%20Breaking%20In%20%282025%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The Bad Guys: Breaking In</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025/11/06</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">9</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.4 Based on (75) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Netflix, DreamWorks Animation Television</span>
+          </div>
+          <div class="anilink name">
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=o6HXxD6CcLg"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Continuing</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Y7</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt31392119/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_3" class="aniContainer aniOrder0">
+        <a href="images/fanart/3.jpg" class="fancybox" rel="3">
+          <div class="fanArt" id="fanart_3">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Boots%20%282025%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="3" id="plot_3_icon"></div>
+        <a target="_BLANK" href="Boots%20%282025%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="3" id="plot_3">
+          <span class="value">In 1990, a bullied, gay high school student named Cameron joins the Marine Corps with his straight best friend, Ray &mdash; a dangerous move when being gay in the military meant jail time or worse. As these two friends plunge into Marine Corps boot camp, where the landmines are both literal and metaphorical, they join a platoon of young men on a harrowing journey of transformation.</span>
+        </div>
+        <span class="showId">#3</span>
+        <div class="posterContainer">
+          <a href="images/Boots%20%282025%29-POSTER.thumb.jpg" class="fancybox" rel="3">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Boots%20%282025%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Boots</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025/10/09</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">8</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.9 Based on (16K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Comedy, Drama, War</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Netflix, Sony Pictures Television, Act III Productions</span>
+          </div>
+          <div class="anilink name">
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=2mjN2f5tu2s"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Ended</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:MA</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt27987047/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_4" class="aniContainer aniOrder0">
+        <a href="images/fanart/4.jpg" class="fancybox" rel="4">
+          <div class="fanArt" id="fanart_4">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Chuck%20%282007%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="4" id="plot_4_icon"></div>
+        <a target="_BLANK" href="Chuck%20%282007%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="4" id="plot_4">
+          <span class="value">When Buy More computer geek Chuck Bartowski unwittingly downloads a database of government information and deadly fighting skills into his head, he becomes the CIA's most vital secret. This sets Chuck on a path to become a full-fledged spy.</span>
+        </div>
+        <span class="showId">#4</span>
+        <div class="posterContainer">
+          <a href="images/Chuck%20%282007%29-POSTER.thumb.jpg" class="fancybox" rel="4">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Chuck%20%282007%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Chuck</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2007/09/24</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">5</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">91</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>8.2 Based on (152K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Action, Comedy, Drama</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">NBC, Warner Bros. Television, Wonderland Sound and Vision, Fake Empire Productions</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=gSaua8MSDzg"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Ended</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:14</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt0934814/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_5" class="aniContainer aniOrder0">
+        <a href="images/fanart/5.jpg" class="fancybox" rel="5">
+          <div class="fanArt" id="fanart_5">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Disenchantment%20%282018%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="5" id="plot_5_icon"></div>
+        <a target="_BLANK" href="Disenchantment%20%282018%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="5" id="plot_5">
+          <span class="value">Set in a ruined medieval city called Dreamland, Disenchantment follows the grubby adventures of a hard-drinking princess, her feisty elf companion and her personal demon.</span>
+        </div>
+        <span class="showId">#5</span>
+        <div class="posterContainer">
+          <a href="images/Disenchantment%20%282018%29-POSTER.thumb.jpg" class="fancybox" rel="5">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Disenchantment%20%282018%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Disenchantment</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2018/08/17</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">3</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">50</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.2 Based on (78K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Comedy, Action, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Netflix, The ULULU Company</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=jGSWVzc7vTQ"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Ended</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:MA</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt5363918/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_6" class="aniContainer aniOrder0">
+        <a href="images/fanart/6.jpg" class="fancybox" rel="6">
+          <div class="fanArt" id="fanart_6">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/DMV%20%282025%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="6" id="plot_6_icon"></div>
+        <a target="_BLANK" href="DMV%20%282025%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="6" id="plot_6">
+          <span class="value">A single camera workplace comedy set at the place everyone dreads going most: the DMV. Our quirky and lovable characters are making minimum wage, doing a thankless job where customers are annoyed before they even walk in the door. Good thing they have each other.</span>
+        </div>
+        <span class="showId">#6</span>
+        <div class="posterContainer">
+          <a href="images/DMV%20%282025%29-POSTER.thumb.jpg" class="fancybox" rel="6">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/DMV%20%282025%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">DMV</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025/10/13</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">4</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.7 Based on (1025) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Comedy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">CBS, CBS Studios, Kapital Entertainment, TrillTV</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=93UiToEtW8s"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Continuing</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">UnComplete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt33078075/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_7" class="aniContainer aniOrder0">
+        <a href="images/fanart/7.jpg" class="fancybox" rel="7">
+          <div class="fanArt" id="fanart_7">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Dudes%20%282025%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="7" id="plot_7_icon"></div>
+        <a target="_BLANK" href="Dudes%20%282025%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="7" id="plot_7">
+          <span class="value">In the midst of a masculinity crisis, four friends in their forties are losing their throne, privileges and identity; years ago, they would have been alpha males in charge of their lives, but they have had to live in the era of equality.</span>
+        </div>
+        <span class="showId">#7</span>
+        <div class="posterContainer">
+          <a href="images/Dudes%20%282025%29-POSTER.thumb.jpg" class="fancybox" rel="7">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Dudes%20%282025%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Dudes</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025/10/02</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">8</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.9 Based on (600) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Comedy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Netflix</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=_zb7WgYfyDs"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Continuing</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Unknown</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt33034757/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_8" class="aniContainer aniOrder0">
+        <a href="images/fanart/8.jpg" class="fancybox" rel="8">
+          <div class="fanArt" id="fanart_8">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Film%20Club%20%282025%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="8" id="plot_8_icon"></div>
+        <a target="_BLANK" href="Film%20Club%20%282025%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="8" id="plot_8">
+          <span class="value">Friday night. 7pm. Film Club Week 198. Evie hasn't left the house in six months after a 'wobble', and Film Club is her escape. A weekly chance to create a world of wonder, deck the garage out in whatever the movie calls for and spend a few uninterrupted hours with Noa - her best friend and one of the few mates who still shows up. But tonight, things are different. Noa's got big news. A dream job is taking him across the other side of the country, which means that all of this is ending.</span>
+        </div>
+        <span class="showId">#8</span>
+        <div class="posterContainer">
+          <a href="images/Film%20Club%20%282025%29-POSTER.thumb.jpg" class="fancybox" rel="8">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Film%20Club%20%282025%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Film Club</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025/10/07</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">6</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.3 Based on (1003) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Drama, Comedy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">BBC Three, Gaumont, BBC</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=S2RttLOjReo"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Continuing</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Unknown</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt33335242/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_9" class="aniContainer aniOrder0">
+        <a href="images/fanart/9.jpg" class="fancybox" rel="9">
+          <div class="fanArt" id="fanart_9">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Inside%20Job%20%282021%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="9" id="plot_9_icon"></div>
+        <a target="_BLANK" href="Inside%20Job%20%282021%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="9" id="plot_9">
+          <span class="value">For employees of the Deep State, conspiracies aren't just theories &mdash; they're fact. And keeping them a secret is a full-time job.</span>
+        </div>
+        <span class="showId">#9</span>
+        <div class="posterContainer">
+          <a href="images/Inside%20Job%20%282021%29-POSTER.thumb.jpg" class="fancybox" rel="9">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Inside%20Job%20%282021%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Inside Job</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2021/10/22</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">18</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.7 Based on (36K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Comedy, Animation</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Netflix, Taco Gucci, Netflix Animation</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=-aZBIpZY_Fw"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">canceled</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:MA</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt10231312/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_10" class="aniContainer aniOrder0">
+        <a href="images/fanart/10.jpg" class="fancybox" rel="10">
+          <div class="fanArt" id="fanart_10">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20Lowdown%20%282025%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="10" id="plot_10_icon"></div>
+        <a target="_BLANK" href="The%20Lowdown%20%282025%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="10" id="plot_10">
+          <span class="value">Follow the gritty exploits of citizen journalist Lee Raybon, a self-proclaimed Tulsa &quot;truthstorian&quot; whose obsession with the truth is always getting him into trouble.</span>
+        </div>
+        <span class="showId">#10</span>
+        <div class="posterContainer">
+          <a href="images/The%20Lowdown%20%282025%29-POSTER.thumb.jpg" class="fancybox" rel="10">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/The%20Lowdown%20%282025%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The Lowdown</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025/09/23</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">8</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.2 Based on (3018) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Drama</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">FX, FX Productions, Crazy Eagle Media</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=cE9bq37W3Qo"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Continuing</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:MA</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt31289994/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_11" class="aniContainer aniOrder0">
+        <a href="images/fanart/11.jpg" class="fancybox" rel="11">
+          <div class="fanArt" id="fanart_11">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Minx%20%282022%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="11" id="plot_11_icon"></div>
+        <a target="_BLANK" href="Minx%20%282022%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="11" id="plot_11">
+          <span class="value">An earnest young feminist joins forces with a low-rent publisher to make the world's first erotic magazine for women.</span>
+        </div>
+        <span class="showId">#11</span>
+        <div class="posterContainer">
+          <a href="images/Minx%20%282022%29-POSTER.thumb.jpg" class="fancybox" rel="11">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Minx%20%282022%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Minx</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2022/03/17</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">2</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">18</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.6 Based on (13K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Comedy, Drama</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Starz, HBO Max, Feigco Entertainment, Lionsgate Television</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=TrPNaJu19xY"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">canceled</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:MA</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt11947418/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_12" class="aniContainer aniOrder0">
+        <a href="images/fanart/12.jpg" class="fancybox" rel="12">
+          <div class="fanArt" id="fanart_12">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Mob%20War%20Philadelphia%20vs.%20the%20Mafia%20%282025%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="12" id="plot_12_icon"></div>
+        <a target="_BLANK" href="Mob%20War%20Philadelphia%20vs.%20the%20Mafia%20%282025%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="12" id="plot_12">
+          <span class="value">Philadelphia is the City of Brotherly Love, but in the '90s, it was a bloodbath. Two warring mob factions battle for control in this true-crime series.</span>
+        </div>
+        <span class="showId">#12</span>
+        <div class="posterContainer">
+          <a href="images/Mob%20War%20Philadelphia%20vs.%20the%20Mafia%20%282025%29-POSTER.thumb.jpg" class="fancybox" rel="12">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Mob%20War%20Philadelphia%20vs.%20the%20Mafia%20%282025%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Mob War: Philadelphia vs. the Mafia</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025/10/22</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">3</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.6 Based on (788) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Documentary, Crime</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Netflix</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=9bWSDB6CHQ8"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Continuing</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:MA</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt38501655/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_13" class="aniContainer aniOrder0">
+        <a href="images/fanart/13.jpg" class="fancybox" rel="13">
+          <div class="fanArt" id="fanart_13">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/N%C3%A9ro%20the%20Assassin%20%282025%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="13" id="plot_13_icon"></div>
+        <a target="_BLANK" href="N%C3%A9ro%20the%20Assassin%20%282025%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="13" id="plot_13">
+          <span class="value">France, 1504. A ruthless assassin goes on the run with his estranged daughter in his quest to protect her from deadly enemies and evil forces.</span>
+        </div>
+        <span class="showId">#13</span>
+        <div class="posterContainer">
+          <a href="images/N%C3%A9ro%20the%20Assassin%20%282025%29-POSTER.thumb.jpg" class="fancybox" rel="13">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/N%C3%A9ro%20the%20Assassin%20%282025%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">N&eacute;ro the Assassin</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025/10/08</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">8</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.7 Based on (2435) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Drama, Action</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Netflix, Kar&eacute; Productions, Summertime Films</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=pJHX786KP7w"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Continuing</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:MA</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt32400599/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_14" class="aniContainer aniOrder0">
+        <a href="images/fanart/14.jpg" class="fancybox" rel="14">
+          <div class="fanArt" id="fanart_14">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Under%20the%20Dome%20%282013%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="14" id="plot_14_icon"></div>
+        <a target="_BLANK" href="Under%20the%20Dome%20%282013%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="14" id="plot_14">
+          <span class="value">A small town is suddenly and inexplicably sealed off from the rest of the world by an enormous transparent dome. While military forces, the government and the media positioned outside of this surrounding barrier attempt to break it down, a small group of people inside attempt to figure out what the dome is, where it came from, and when (and if) it will go away.</span>
+        </div>
+        <span class="showId">#14</span>
+        <div class="posterContainer">
+          <a href="images/Under%20the%20Dome%20%282013%29-POSTER.thumb.jpg" class="fancybox" rel="14">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Under%20the%20Dome%20%282013%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Under the Dome</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2013/06/24</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">3</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">39</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.5 Based on (117K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Drama, Mystery, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">CBS, Amblin Television, Baer Bones, CBS Studios</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=f_Y5YeYrqUk"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">canceled</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:14</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt1553656/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_15" class="aniContainer aniOrder0">
+        <a href="images/fanart/15.jpg" class="fancybox" rel="15">
+          <div class="fanArt" id="fanart_15">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20Vince%20Staples%20Show%20%282024%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="15" id="plot_15_icon"></div>
+        <a target="_BLANK" href="The%20Vince%20Staples%20Show%20%282024%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="15" id="plot_15">
+          <span class="value">Kind of famous and sort of rich, rapper and actor Vince Staples navigates the challenges and surprises of everyday life in his hometown of The Beach.</span>
+        </div>
+        <span class="showId">#15</span>
+        <div class="posterContainer">
+          <a href="images/The%20Vince%20Staples%20Show%20%282024%29-POSTER.thumb.jpg" class="fancybox" rel="15">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/The%20Vince%20Staples%20Show%20%282024%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The Vince Staples Show</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2024/02/15</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">2</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">11</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.4 Based on (2969) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Drama, Comedy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Netflix, Khalabo Ink Society</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=lyg01lUOvm0"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Continuing</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:MA</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt1553656/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+ 
+       <div class="footerSpacer"></div>
+      <div class="footerContainer">
+      <div class="footerTextContainer">
+      </div>
+      </div>
+
+<script>
+const menuButton = document.getElementById('menu-button');
+const sidebarNav = document.getElementById('sidebar-nav');
+const infoContainer = document.querySelector('.infoContainerTextContainer');
+const infoBackTitleContainer = document.querySelector('.infoBackTitleContainer');
+
+menuButton.addEventListener('click', () => {
+  sidebarNav.classList.toggle('open');
+  menuButton.classList.toggle('menu-button-open');
+
+  // Toggle the sidebar-open class on the body
+  document.body.classList.toggle('sidebar-open');
+
+  // Toggle the sidebar-nav-open class on the infoContainer and infoBackTitleContainer
+  infoContainer.classList.toggle('sidebar-nav-open');
+  infoBackTitleContainer.classList.toggle('sidebar-nav-open');
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox").fancybox({
+      openEffect: "elastic",
+      closeEffect: "elastic",
+      helpers: {
+        title: { type: "float" }
+      }
+    });
+  });
+</script>
+
+ <script src="lib/sortShows.js" defer></script>
+<script src="lib/new add lib/genre-filter.js" defer></script>
+<script src="lib/new add lib/year-filter.js" defer></script>
+<script src="lib/new add lib/age-rating-filter.js" defer></script>
+<script src="lib/new add lib/rating-filter.js" defer></script>
+<script src="lib/new add lib/combined-filters.js" defer></script>
+<script src="lib/Iframe tv shows.js" defer></script>
+<script src="lib/tv show names.js" defer></script>
+<script src="lib/new add lib/reset-filters-combined.js" defer></script>
+
+
+       <!-- Add the no-results-message element -->
+<div id="no-results-message" style="display: none;"></div>
+
+  </body>
+  <!-- Modal -->
+<div id="modal" class="modal">
+  <div id="modal-content" class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modal-video"></div>
+  </div>
+</div>
+</html>

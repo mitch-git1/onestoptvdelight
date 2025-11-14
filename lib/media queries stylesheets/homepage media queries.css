@@ -1,0 +1,124 @@
+``
+``
+``
+/* Base styles (mobile-first - applies to all screen sizes by default) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%; /* Full width on mobile */
+  margin: 10px auto; /* Smaller margin on mobile */
+  padding: 5px; /* Smaller padding on mobile */
+}
+
+.text-box {
+  font-size: 12px; /* Smaller font size on mobile */
+}
+
+.image-gallery {
+  display: grid; /* Use Grid for layout */
+  /* **Mobile/Base:** Single column */
+  grid-template-columns: 1fr;
+  /* **Mobile/Base:** Only vertical gap needed */
+  gap: 10px; /* Vertical gap between images */
+  /* **Mobile/Base:** Center items horizontally */
+  justify-items: center;
+  /* Consider adding some padding here for mobile as well if not using a container */
+  /* padding: 0px 10px; */
+}
+
+.image-gallery img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  /* Padding already adds space around the image, contributing to row separation */
+  padding: 5px;
+}
+
+/* Tablet styles (screens 768px and wider) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 90%; /* Tablet max-width */
+    margin: 20px auto; /* Tablet margin */
+    padding: 10px; /* Tablet padding */
+  }
+
+  .text-box {
+    font-size: 16px; /* Tablet font size */
+  }
+
+  .image-gallery {
+    /* **Tablet:** Single column for both portrait and landscape */
+    grid-template-columns: 1fr;
+    /* **Tablet:** Only vertical gap needed */
+    gap: 15px; /* Vertical gap between images on tablet */
+    /* **Tablet:** Center items horizontally */
+    justify-items: center;
+    /* Consider adding some padding here for tablet as well if not using a container */
+    /* padding: 0px 20px; */
+  }
+}
+
+/* Mobile Landscape styles (screens up to 767px wide and in landscape orientation) */
+@media (max-width: 767px) and (orientation: landscape) {
+   .image-gallery {
+     /* **Mobile Landscape:** Explicitly set to single column */
+     grid-template-columns: 1fr;
+     /* **Mobile Landscape:** Only vertical gap needed */
+     gap: 10px; /* Match mobile portrait vertical gap */
+     /* **Mobile Landscape:** Center items horizontally */
+     justify-items: center;
+     /* Add padding if needed for landscape */
+     /* padding: 0px 10px; */
+   }
+}
+
+
+/* Desktop and Laptop styles (screens 1200px and wider - applies your original desktop styles and fixed image grid) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px; /* Original desktop max-width */
+    margin: 40px auto; /* Original desktop margin */
+    padding: 20px; /* Original desktop padding */
+  }
+
+   .text-box {
+    font-size: 18px; /* Example: slightly larger font for desktop */
+  }
+
+  .image-gallery {
+    display: grid; /* Ensure it's still a grid */
+    grid-template-columns: repeat(2, 1fr); /* Fixed 2 columns for desktop */
+    grid-template-rows: repeat(4, auto); /* Fixed 4 rows for desktop */
+    gap: 15px 0px; /* Adjusted gap: vertical gap 15px, horizontal gap 0px */
+    padding: 0px 100px; /* Added padding: 0px top/bottom, 100px left/right */
+  }
+
+  .image-gallery img {
+      width: 100%; /* Ensure images fill their grid cell width */
+      height: auto; /* Maintain aspect ratio */
+      display: block;
+      padding: 5px; /* Add 5px of padding around each image */
+      /* Optional: remove background-color and border if you added them for visualization */
+      /* background-color: #f0f0f0; */
+      /* border: 1px solid #ccc; */
+   }
+}
+
+/* Mobile and tablet view */
+@media (max-width: 1024px) {
+  body.homepage {
+    background: url('../../images/tv and movie lists/background-mobile.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+}

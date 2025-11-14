@@ -1,0 +1,2868 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/x-icon" href="images\tv and movie lists\icon.png">.
+    <title>Newly Added Anime - Movies</title>
+    <script type="text/javascript" src="./lib/jquery.js"></script>
+    <link rel="stylesheet" href="./lib/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="./lib/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="./lib/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="./lib/deadsix.js"></script>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" type="text/css" href="lib/style sheets/movies style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    startUP();
+  });
+  $(window).on('hashchange', function () {
+    checkHash();
+  });
+</script>
+<link rel="stylesheet" href="lib/media queries stylesheets/anime media queries movies.css">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="largeContainer">
+      <!-- Add the menu button -->
+       <button id="menu-button">Menu</button>
+      <!-- Add the sidebar navigation -->
+       <div id="sidebar-nav">
+       <ul>
+       <li><a href="https://www.onestoptvdelight.co.za/newly added anime movies.html"target="_blank">Newly Added:Anime Movies</a></li>
+       <li><a href="https://www.onestoptvdelight.co.za/newly added tv shows.html"target="_blank">Newly Added:Anime TV Shows</a></li>
+       <li><a href="https://www.onestoptvdelight.co.za/full anime movies.html"target="_blank">Full Anime Movie List</a></li>
+       <li><a href="https://forms.gle/PQD2pqESWVzFCscc9"target="_blank">CheckList Link Page Newly Added Anime Movie List:</a></li>
+       </ul>
+       </div>
+      <div class="infoContainer">
+        <div class="homepage-link-container">
+           <!-- add home button -->
+       <a href="https://www.onestoptvdelight.co.za/index.html" class="homepage-link">Home Button</a>
+         </div>
+        <div class="infoBackTitleContainer">
+          <span class="infoBackTitle">Newly Added</span>
+          <hr class="subTitleSeprator" />
+          <span class="infoBackTitleSub">Anime Movies</span>
+        </div>
+        <div class="infoContainerTextContainer">
+          <div class="name">
+            <span class="titleNoBlock">Total Movies:</span>
+            <span>43</span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Request Page Link:</span>
+            <span><a href="https://forms.gle/rbLCy1hxpxC5SXG1A"target="_blank" class="request-link"><i class="fa-solid fa-file-pen" style="color: #63E6BE;"></i> Request File</a></span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Top 10 Picked Anime Movies This Month</span>
+            <span><a href="https://www.onestoptvdelight.co.za/top 10 anime movies.html"target="_blank" class="top10-link"><i class="fa-solid fa-film" style="color: #74C0FC;"></i> Top 10</a></span>
+          </div>
+        </div>
+      </div>
+        <div id="searchContainer">
+        <input type="text" autocomplete="off" onfocus="this.value=''; searchOnPage('');"
+        onblur="if(this.value==''){this.value='Search TV Show Name'};"
+        onkeyup="searchOnPage(this.value.toLowerCase());"
+        id="search_box" value="Search TV Show Name" />
+        <input type="submit" id="search_button" value="Search" />
+        <div id="search_result"></div>
+        </div>
+        <div class="dropdown-container">
+         <div id="genre-select-container">
+         <label for="genre-select" class="genre-label">Search By Genre:</label>
+         <select id="genre-select">
+         <option value="all">All</option>
+         </select>
+         </div>
+         <div id="date-select-container">
+           <label for="date-select" class="date-label">Search By Year:</label>
+           <select id="date-select">
+             <option value="all">All</option>
+           </select>
+         </div>
+         <div id="age-rating-select-container">
+         <label for="age-rating-select" class="age-rating-label">Search By Age Rating:</label>
+         <select id="age-rating-select">
+         <option value="all">All</option>
+        </select>
+        </div>
+        <div id="rating-select-container">
+        <label for="rating-select" class="rating-label">Search By Rating:</label>
+        <select id="rating-select">
+        <option value="all">All</option>
+        </select>
+        </div>
+        <button id="reset-filters-button" class="reset-filters">Reset Filters</button>
+        </div>
+       <div id="no-results-message" class="no-results-message"></div>
+       
+      <div id="movie_1" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="1">
+          <div class="fanArt" id="fanart_1">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Assassination%20Classroom%20the%20Movie%20-%20365%20Days%27%20Time%20%282016%29%201080p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="1" id="plot_1_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="1" id="plot_1">
+          <span class="value">The killer class is back in session&mdash;sort of. Relive every moment through the eyes of the top two students: Nagisa and Karma!</span>
+        </div>
+        <span class="showId">#1</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="1">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Assassination%20Classroom%20the%20Movie%20-%20365%20Days%27%20Time%20%282016%29%201080p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Assassination Classroom the Movie: 365 Days' Time</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2016</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.5 Based on (708) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Action, Animation, Comedy, Drama</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Lerche</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Makoto Uezu</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Seiji Kishi</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=kgNkGohA20k"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt6475250/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_2" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="2">
+          <div class="fanArt" id="fanart_2">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Castle%20in%20the%20Sky%20%281986%29%20720p%20Vorbis-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="2" id="plot_2_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="2" id="plot_2">
+          <span class="value">A young boy and a girl with a magic crystal must race against pirates and foreign agents in a search for a legendary floating castle.</span>
+        </div>
+        <span class="showId">#2</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="2">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Castle%20in%20the%20Sky%20%281986%29%20720p%20Vorbis-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Castle in the Sky</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1986</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>8.0 Based on (194K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Adventure, Fantasy, Animation, Action, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Nibariki, Tokuma Shoten</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=5lMRfLJGXSM"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0092067/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_3" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="3">
+          <div class="fanArt" id="fanart_3">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20Cat%20Returns%20%282002%29%20720p%20Vorbis-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="3" id="plot_3_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="3" id="plot_3">
+          <span class="value">Young Haru rescues a cat from being run over, but soon learns it's no ordinary feline; it happens to be the Prince of the Cats.</span>
+        </div>
+        <span class="showId">#3</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="3">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/The%20Cat%20Returns%20%282002%29%20720p%20Vorbis-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The Cat Returns</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2002</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.1 Based on (70K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Adventure, Fantasy, Animation, Drama, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Hakuhodo DY Media Partners, Mitsubishi, Nippon Television Network Corporation, TOHO, Tokuma Shoten</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Reiko Yoshida</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Hiroyuki Morita</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=Gp-H_YOcYTM"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0347618/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_4" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="4">
+          <div class="fanArt" id="fanart_4">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Demon%20Slayer%20-Kimetsu%20no%20Yaiba-%20The%20Movie%20-%20Mugen%20Train%20%282020%29%201080p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="4" id="plot_4_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="4" id="plot_4">
+          <span class="value">Tanjiro Kamado, joined with Inosuke Hashibira, a boy raised by boars who wears a boar's head, and Zenitsu Agatsuma, a scared boy who reveals his true power when he sleeps, boards the Infinity Train on a new mission with the Fire Hashira, Kyojuro Rengoku, to defeat a demon who has been tormenting the people and killing the demon slayers who oppose it!</span>
+        </div>
+        <span class="showId">#4</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="4">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Demon%20Slayer%20-Kimetsu%20no%20Yaiba-%20The%20Movie%20-%20Mugen%20Train%20%282020%29%201080p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Demon Slayer -Kimetsu no Yaiba- The Movie: Mugen Train</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2020</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>8.2 Based on (94K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Action, Fantasy, Thriller</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">ufotable, Aniplex, Shueisha, TOHO</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Haruo Sotozaki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Rated R</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=L9MQLhV2u2E"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt11032374/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_5" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="5">
+          <div class="fanArt" id="fanart_5">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/From%20Up%20on%20Poppy%20Hill%20%282011%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="5" id="plot_5_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="5" id="plot_5">
+          <span class="value">Yokohama, 1963. Japan is picking itself up from the devastation of World War II and preparing to host the 1964 Olympics&mdash;and the mood is one of both optimism and conflict as the young generation struggles to throw off the shackles of a troubled past. Against this backdrop of hope and change, a friendship begins to blossom between high school students Umi and Shun&mdash;but a buried secret from their past emerges to cast a shadow on the future and pull them apart.</span>
+        </div>
+        <span class="showId">#5</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="5">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/From%20Up%20on%20Poppy%20Hill%20%282011%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">From Up on Poppy Hill</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2011</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.4 Based on (57K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Drama</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Mitsubishi, Kodansha, KDDI, Hakuhodo DY Media Partners</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Keiko Niwa<br /> Hayao Miyazaki</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Goro Miyazaki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=9nzpk_Br6yo"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt1798188/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_6" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="6">
+          <div class="fanArt" id="fanart_6">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Grave%20of%20the%20Fireflies%20%281988%29%20720p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="6" id="plot_6_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="6" id="plot_6">
+          <span class="value">In the final months of World War II, 14-year-old Seita and his sister Setsuko are orphaned when their mother is killed during an air raid in Kobe, Japan. After a falling out with their aunt, they move into an abandoned bomb shelter. With no surviving relatives and their emergency rations depleted, Seita and Setsuko struggle to survive.</span>
+        </div>
+        <span class="showId">#6</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="6">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Grave%20of%20the%20Fireflies%20%281988%29%20720p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Grave of the Fireflies</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1988</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>8.5 Based on (367K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Drama, War</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Isao Takahata</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Isao Takahata</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Unknown</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=lhlh7JVcTt8"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0095327/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_7" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="7">
+          <div class="fanArt" id="fanart_7">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Howl%27s%20Moving%20Castle%20%282004%29%20720p%20Vorbis-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="7" id="plot_7_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="7" id="plot_7">
+          <span class="value">Sophie, a young milliner, is turned into an elderly woman by a witch who enters her shop and curses her. She encounters a wizard named Howl and gets caught up in his resistance to fighting for the king.</span>
+        </div>
+        <span class="showId">#7</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="7">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Howl%27s%20Moving%20Castle%20%282004%29%20720p%20Vorbis-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Howl's Moving Castle</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2004</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>8.2 Based on (498K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Fantasy, Animation, Adventure</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Tokuma Shoten, Nippon Television Network Corporation, dentsu, Walt Disney Japan, d-rights, TOHO</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=iwROgK94zcM"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0347149/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_8" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="8">
+          <div class="fanArt" id="fanart_8">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Kiki%27s%20Delivery%20Service%20%281989%29%20720p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="8" id="plot_8_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="8" id="plot_8">
+          <span class="value">A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.</span>
+        </div>
+        <span class="showId">#8</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="8">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Kiki%27s%20Delivery%20Service%20%281989%29%20720p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Kiki's Delivery Service</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1989</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.8 Based on (182K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Family, Drama, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Nibariki, Tokuma Shoten, Nippon Television Network Corporation</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=4bG17OYs-GA"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0097814/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_9" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="9">
+          <div class="fanArt" id="fanart_9">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/My%20Neighbor%20Totoro%20%281988%29%20720p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="9" id="plot_9_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="9" id="plot_9">
+          <span class="value">Two sisters move to the country with their father in order to be closer to their hospitalized mother, and discover the surrounding trees are inhabited by Totoros, magical spirits of the forest. When the youngest runs away from home, the older sister seeks help from the spirits to find her.</span>
+        </div>
+        <span class="showId">#9</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="9">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/My%20Neighbor%20Totoro%20%281988%29%20720p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">My Neighbor Totoro</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1988</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>8.1 Based on (419K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Fantasy, Animation, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Nibariki, Tokuma Shoten</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=92a7Hj0ijLs"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0096283/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_10" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="10">
+          <div class="fanArt" id="fanart_10">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/My%20Neighbors%20the%20Yamadas%20%281999%29%20720p%20Vorbis-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="10" id="plot_10_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="10" id="plot_10">
+          <span class="value">The Yamadas are a typical middle class Japanese family in urban Tokyo and this film shows us a variety of episodes of their lives. With tales that range from the humorous to the heartbreaking, we see this family cope with life's little conflicts, problems, and joys in their own way.</span>
+        </div>
+        <span class="showId">#10</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="10">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/My%20Neighbors%20the%20Yamadas%20%281999%29%20720p%20Vorbis-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">My Neighbors the Yamadas</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1999</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.1 Based on (17K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Comedy, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Nippon Television Network Corporation, Tokuma Shoten, Hakuhodo</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Isao Takahata</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Isao Takahata</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=1C9ujuCPlnY"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0206013/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_11" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="11">
+          <div class="fanArt" id="fanart_11">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Nausica%C3%A4%20of%20the%20Valley%20of%20the%20Wind%20%281984%29%20720p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="11" id="plot_11_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="11" id="plot_11">
+          <span class="value">After a global war, the seaside kingdom known as the Valley of the Wind remains one of the last strongholds on Earth untouched by a poisonous jungle and the powerful insects that guard it. Led by the courageous Princess Nausica&auml;, the people of the Valley engage in an epic struggle to restore the bond between humanity and Earth.</span>
+        </div>
+        <span class="showId">#11</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="11">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Nausica%C3%A4%20of%20the%20Valley%20of%20the%20Wind%20%281984%29%20720p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Nausica&auml; of the Valley of the Wind</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1984</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>8.0 Based on (193K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Adventure, Animation, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Topcraft, Tokuma Shoten, Hakuhodo</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hayao Miyazaki<br /> Kazunori Ito</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=6zhLBe319KE"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0087544/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_12" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="12">
+          <div class="fanArt" id="fanart_12">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Ocean%20Waves%20%281993%29%20720p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="12" id="plot_12_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="12" id="plot_12">
+          <span class="value">At KichijÅji Station, Tokyo, Taku Morisaki glimpses a familiar woman on the platform opposite boarding a train. Later, her photo falls from a shelf as he exits his apartment before flying to KÅchi Prefecture. Picking it up, he looks at it briefly before leaving. As the aeroplane takes off, he narrates the events that brought her into his life...</span>
+        </div>
+        <span class="showId">#12</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="12">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Ocean%20Waves%20%281993%29%20720p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Ocean Waves</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1993</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.6 Based on (22K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Drama, Romance, TV Movie</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Tokuma Shoten, Nippon Television Network Corporation</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Keiko Niwa</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Tomomi Mochizuki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=tfkHiHjrqa8"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0108432/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_13" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="13">
+          <div class="fanArt" id="fanart_13">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Only%20Yesterday%20%281991%29%20720p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="13" id="plot_13_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="13" id="plot_13">
+          <span class="value">In lyrical switches between the present and the past, Taeko contemplates the arc of her life, and wonders if she has been true to the dreams of her childhood self.</span>
+        </div>
+        <span class="showId">#13</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="13">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Only%20Yesterday%20%281991%29%20720p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Only Yesterday</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1991</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.6 Based on (41K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Drama, Romance</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Tokuma Shoten, Nippon Television Network Corporation, Hakuhodo</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Isao Takahata</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Isao Takahata</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=OfkQlZArxw0"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0102587/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_14" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="14">
+          <div class="fanArt" id="fanart_14">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%204Ever%20%282001%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="14" id="plot_14_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="14" id="plot_14">
+          <span class="value">In order to escape a greedy Pok&eacute;mon hunter, Celebi must use the last of its energy to travel through time to the present day. Celebi brings along Sammy, a boy who had been trying to protect it. Along with Ash, Pikachu, and the rest of the gang, Sammy and Celebi must encounter an enemy far more advanced than the hunter, with the fate of the forest hanging in the balance.</span>
+        </div>
+        <span class="showId">#14</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="14">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%204Ever%20%282001%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon 4Ever</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2001</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.8 Based on (10K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Adventure, Fantasy, Animation, Science Fiction, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Pikachu Project 2001, Shogakukan Production, The Pok&eacute;mon Company, TV Tokyo, Media Factory, Tomy, jeki, OLM, Shogakukan</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hideki Sonoda</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=9lES7wavO5E"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0287635/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_15" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="15">
+          <div class="fanArt" id="fanart_15">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20Heroes%20%282002%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="15" id="plot_15_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="15" id="plot_15">
+          <span class="value">Ash, Pikachu and the gang try and stop a pair of thieves hiding out in the canals and alleyways of Altomare, the age-old water capital. Joining the adventure are two new legendary Pok&eacute;mon, a pair of siblings named Latias and Latios, who serve as peacekeepers and protectors of the Soul Dew &mdash; a priceless treasure with a mysterious power.</span>
+        </div>
+        <span class="showId">#15</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="15">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20Heroes%20%282002%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon Heroes</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2002</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.1 Based on (7443) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Adventure, Action, Fantasy, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Pikachu Project, Shogakukan Production, Tomy, The Pok&eacute;mon Company, TV Tokyo, jeki, Media Factory, OLM, Shogakukan</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=ZivTZFebZGY"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0347791/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_16" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="16">
+          <div class="fanArt" id="fanart_16">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20Ranger%20and%20the%20Temple%20of%20the%20Sea%20%282006%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="16" id="plot_16_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="16" id="plot_16">
+          <span class="value">On their way through the Battle Frontier, Ash and friends meet up with a Pok&eacute;mon Ranger who's mission is to deliever the egg of Manaphy to a temple on the ocean's floor. However, a greedy pirate wants the power of Manaphy to himself.</span>
+        </div>
+        <span class="showId">#16</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="16">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20Ranger%20and%20the%20Temple%20of%20the%20Sea%20%282006%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon Ranger and the Temple of the Sea</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2006</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.9 Based on (3273) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Animation, Action, Adventure, Fantasy, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">jeki, Media Factory, OLM, Pikachu Project</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hideki Sonoda</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=jt1Ui72oBlc"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt1000095/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_17" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="17">
+          <div class="fanArt" id="fanart_17">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20Black%20-%20Victini%20and%20Reshiram%20%282011%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="17" id="plot_17_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="17" id="plot_17">
+          <span class="value">The Kingdom of the People of the Earth once ruled over the land, but now all that remains is the Sword of the Earth. in the city of Eindoak. Satoshi, Iris, and Dent arrive in Eindoak during a harvest festival's Pok&eacute;mon Tournament and meet the legendary Pok&eacute;mon Victini who wishes to share its powers of victory to someone. Elsewhere in the city, a descendant of the People of the Earth named Dred Grangil has arrived who seeks to revive the kingdom's power with the Sword of the Earth, bringing them back into power over the land, and Satoshi and his friends must stop him before he destroys the land along with Victini.</span>
+        </div>
+        <span class="showId">#17</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="17">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20Black%20-%20Victini%20and%20Reshiram%20%282011%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon the Movie: Black - Victini and Reshiram</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2011</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.6 Based on (1552) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Family, Adventure, Drama, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Media Factory, OLM, Pikachu Project, Production I.G</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hideki Sonoda</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=pJGcJNkzWIM"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt1961324/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_18" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="18">
+          <div class="fanArt" id="fanart_18">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20Diancie%20and%20the%20Cocoon%20of%20Destruction%20%282014%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="18" id="plot_18_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="18" id="plot_18">
+          <span class="value">In the underground Diamond Domain, where many Carbink live, the Mythical Pok&eacute;mon Diancie serves as ruler. The Heart Diamond that sustains the land is beginning to fall apart, and Diancie is not yet strong enough to create a new one. While seeking help from the Legendary Pok&eacute;mon Xerneas, Diancie encounters a group of thieves who want to take control of its diamond-producing power&ndash;and who awaken the Legendary Pok&eacute;mon Yveltal from its cocoon in the process! Can Ash and his friends help Diancie discover its true power, stop Yveltal&rsquo;s rampage, and save the Diamond Domain?</span>
+        </div>
+        <span class="showId">#18</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="18">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20Diancie%20and%20the%20Cocoon%20of%20Destruction%20%282014%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon the Movie: Diancie and the Cocoon of Destruction</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2014</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.5 Based on (2063) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Family, Adventure, Action, Comedy, Drama</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">jeki, OLM, Pikachu Project, Shogakukan-Shueisha Productions, TV Tokyo, TakaraTomy, The Pok&eacute;mon Company, Shogakukan</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=v7SS33mFv5M"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt3918368/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_19" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="19">
+          <div class="fanArt" id="fanart_19">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20Genesect%20and%20the%20Legend%20Awakened%20%282013%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="19" id="plot_19_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="19" id="plot_19">
+          <span class="value">A group of five Genesect have invaded the big city and pose a threat to the supply of electricity, which attracts the attention of the legendary Pok&eacute;mon Mewtwo. Satoshi, Pikachu and his friends must come to the rescue when the powerful leader, a red Genesect, faces Mewtwo.</span>
+        </div>
+        <span class="showId">#19</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="19">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20Genesect%20and%20the%20Legend%20Awakened%20%282013%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon the Movie: Genesect and the Legend Awakened</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2013</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.4 Based on (1872) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Action, Adventure, Animation, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">The Pok&eacute;mon Company, OLM, Shogakukan, TV Tokyo, TakaraTomy, jeki, Shogakukan-Shueisha Productions, Pikachu Project</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hideki Sonoda</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=Tn5BvytJooA"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt3257582/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_20" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="20">
+          <div class="fanArt" id="fanart_20">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20Hoopa%20and%20the%20Clash%20of%20Ages%20%282015%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="20" id="plot_20_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="20" id="plot_20">
+          <span class="value">Ash, Pikachu, and their friends come to a desert city by the sea. Here they meet the Mythical Pok&eacute;mon Hoopa, which has the ability to summon things&mdash;including people and Pok&eacute;mon&mdash;through its magic rings. After a scary incident, they learn of a story about a brave hero who stopped the rampage of a terrifying Pok&eacute;mon long ago. Now, the threat that has been bottled up for years is in danger of breaking loose again.</span>
+        </div>
+        <span class="showId">#20</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="20">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20Hoopa%20and%20the%20Clash%20of%20Ages%20%282015%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon the Movie: Hoopa and the Clash of Ages</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2015</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.9 Based on (2528) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Adventure, Animation, Action, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Shogakukan-Shueisha Productions, OLM, TV Tokyo, The Pok&eacute;mon Company, Shogakukan, TakaraTomy, jeki, Pikachu Project</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Atsuhiro Tomioka</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=bxTxlKvQFU8"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt4503906/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_21" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="21">
+          <div class="fanArt" id="fanart_21">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20I%20Choose%20You%21%20%282017%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="21" id="plot_21_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="21" id="plot_21">
+          <span class="value">Ash Ketchum wakes up late one morning after having broken his alarm clock in his sleep. He eventually makes it to Professor Oak's lab, but is told that the three starter List of Pok&eacute;mon (Bulbasaur, Squirtle, and Charmander) have already been taken by Trainers who were on time. However, Oak reveals that he has one more Pok&eacute;mon, an Electric-type named Pikachu. Despite its volatile and feisty personality, as well as its refusal to get inside a Pok&eacute; Ball, Ash happily takes Pikachu for his journey.</span>
+        </div>
+        <span class="showId">#21</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="21">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20I%20Choose%20You%21%20%282017%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon the Movie: I Choose You!</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2017</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.3 Based on (8060) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Animation, Adventure, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">OLM, Pikachu Project, Shogakukan, Shogakukan-Shueisha Productions, TV Tokyo, The Pok&eacute;mon Company, TakaraTomy, jeki, TOHO</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Shouji Yonemura</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=r12w4iRBLp4"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt6595896/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_22" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="22">
+          <div class="fanArt" id="fanart_22">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20Kyurem%20vs.%20the%20Sword%20of%20Justice%20%282012%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="22" id="plot_22_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="22" id="plot_22">
+          <span class="value">Ash and his two friends Iris and Cilan help a Keldeo battle against a powerful Dragon-type Pok&eacute;mon named Kyurem its his test to become a Sacred Swordsman.</span>
+        </div>
+        <span class="showId">#22</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="22">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20Kyurem%20vs.%20the%20Sword%20of%20Justice%20%282012%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon the Movie: Kyurem vs. the Sword of Justice</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2012</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.5 Based on (2021) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Animation, Action, Adventure, Fantasy, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">jeki, OLM, Pikachu Project, Shogakukan-Shueisha Productions</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hideki Sonoda</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=8r1YM4x--xc"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt2549540/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_23" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="23">
+          <div class="fanArt" id="fanart_23">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20The%20Power%20of%20Us%20%282018%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="23" id="plot_23_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="23" id="plot_23">
+          <span class="value">A young athlete whose running days might be behind her, a compulsive liar, a shy researcher, a bitter old woman, and a little girl with a big secret&mdash;the only thing they have in common is the annual Wind Festival in Fula City.  The festival celebrates the Legendary Pok&eacute;mon Lugia, who brings the wind that powers this seaside city. When a series of threats endangers not just the festival, but all the people and Pok&eacute;mon of Fula City, it&rsquo;ll take more than just Satoshi and Pikachu to save the day! Can everyone put aside their differences and work together&mdash;or will it all end in destruction?</span>
+        </div>
+        <span class="showId">#23</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="23">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20The%20Power%20of%20Us%20%282018%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon the Movie: The Power of Us</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2018</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.3 Based on (3273) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Family, Adventure, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">OLM, Pikachu Project, TV Tokyo, The Pok&eacute;mon Company</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Aya Takaha<br /> Eiji Umehara</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Tetsuo Yajima</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=8PGsP59Io20"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt8108230/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_24" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="24">
+          <div class="fanArt" id="fanart_24">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20Volcanion%20and%20the%20Mechanical%20Marvel%20%282016%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="24" id="plot_24_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="24" id="plot_24">
+          <span class="value">Ash meets the Mythical Pok&eacute;mon Volcanion when it crashes down from the sky, creating a cloud of dust&mdash;and a mysterious force binds the two of them together! Volcanion despises humans and tries to get away, but it&rsquo;s forced to drag Ash along as it continues its rescue mission. They arrive in a city of cogs and gears, where a corrupt official has stolen the ultimate invention: the Artificial Pok&eacute;mon Magearna, created 500 years ago. He plans to use its mysterious power to take control of this mechanical kingdom! Can Ash and Volcanion work together to rescue Magearna? One of the greatest battles in Pok&eacute;mon history is about to unfold!</span>
+        </div>
+        <span class="showId">#24</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="24">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20Volcanion%20and%20the%20Mechanical%20Marvel%20%282016%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon the Movie: Volcanion and the Mechanical Marvel</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2016</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.9 Based on (1848) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Adventure, Animation, Fantasy, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">OLM, The Pok&eacute;mon Company, Pikachu Project, TV Tokyo</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Atsuhiro Tomioka</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=uBJ7yENNbTE"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt5889204/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_25" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="25">
+          <div class="fanArt" id="fanart_25">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20White%20-%20Victini%20and%20Zekrom%20%282011%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="25" id="plot_25_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="25" id="plot_25">
+          <span class="value">The Kingdom of the People of the Earth once ruled over the land, but now all that remains is the Sword of the Earth. in the city of Eindoak. Satoshi, Iris, and Dent arrive in Eindoak during a harvest festival's Pok&eacute;mon Tournament and meet the legendary Pok&eacute;mon Victini who wishes to share its powers of victory to someone. Elsewhere in the city, a descendant of the People of the Earth named Dred Grangil has arrived who seeks to revive the kingdom's power with the Sword of the Earth, bringing them back into power over the land, and Satoshi and his friends must stop him before he destroys the land along with Victini.</span>
+        </div>
+        <span class="showId">#25</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="25">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%20-%20White%20-%20Victini%20and%20Zekrom%20%282011%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon the Movie: White - Victini and Zekrom</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2011</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.7 Based on (2184) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Family, Adventure, Drama, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">OLM, Pikachu Project, Production I.G, Shogakukan-Shueisha Productions</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hideki Sonoda</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=sgpqZq8KG8U"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt1739212/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_26" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="26">
+          <div class="fanArt" id="fanart_26">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20-%20Arceus%20and%20the%20Jewel%20of%20Life%20%282009%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="26" id="plot_26_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="26" id="plot_26">
+          <span class="value">When the creator of the world, Arceus, comes to pass judgement on humanity for the theft of the legendary Jewel of Life, Ash and his friends are sent back in time to possibly reverse the events that led to Arceus' vendetta.</span>
+        </div>
+        <span class="showId">#26</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="26">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20-%20Arceus%20and%20the%20Jewel%20of%20Life%20%282009%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon: Arceus and the Jewel of Life</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2009</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.3 Based on (3271) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Animation, Adventure, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">OLM, Pikachu Project, The Pok&eacute;mon Company, Shogakukan</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hideki Sonoda</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=u0uW_J5enjU"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt1468843/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_27" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="27">
+          <div class="fanArt" id="fanart_27">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20-%20Destiny%20Deoxys%20%282004%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="27" id="plot_27_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="27" id="plot_27">
+          <span class="value">Deoxys, a Pok&eacute;mon from outer space, terrorizes the high-tech city Ash Ketchum and his friends are visiting.</span>
+        </div>
+        <span class="showId">#27</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="27">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20-%20Destiny%20Deoxys%20%282004%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon: Destiny Deoxys</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2004</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.1 Based on (4969) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Adventure, Animation, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Pikachu Project, The Pok&eacute;mon Company, Shogakukan, TV Tokyo, Media Factory, Tomy, jeki, OLM, Shogakukan Production</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=KNmPC3xiyKM&list=PLhBqmT64t9-H554nkZOTmUOOieAOvgEMR&index=3"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0435286/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_28" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="28">
+          <div class="fanArt" id="fanart_28">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20-%20Giratina%20and%20the%20Sky%20Warrior%20%282008%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="28" id="plot_28_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="28" id="plot_28">
+          <span class="value">When Giratina is discovered to be able to create parallel dimensions, it's up to Ash and his friends to stop a mysterious stranger from using its powers for evil.</span>
+        </div>
+        <span class="showId">#28</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="28">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20-%20Giratina%20and%20the%20Sky%20Warrior%20%282008%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon: Giratina and the Sky Warrior</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2008</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.0 Based on (3271) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Adventure, Animation, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">jeki, Media Factory, OLM, Pikachu Project, TV Tokyo, The Pok&eacute;mon Company, TakaraTomy, Shogakukan, Shogakukan-Shueisha Productions</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=c1RnodW3P78&list=PLhBqmT64t9-H554nkZOTmUOOieAOvgEMR&index=7"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt1160525/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_29" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="29">
+          <div class="fanArt" id="fanart_29">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20-%20Jirachi%20-%20Wish%20Maker%20%282003%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="29" id="plot_29_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="29" id="plot_29">
+          <span class="value">Ash, May, Brock, and Max come upon the festival of the Wishing Star of Seven Nights. During their enjoyment, the legendary Pokemon--Jirachi, descends from the heavens and befriends Max. Jirachi, with the power to grant any wish, is sought after by many people wanting to claim its power. One man seeks to use its legendary power to revive an ancient Pokemon known as Groudon, unaware of the dangers hidden within Jirachi's powers</span>
+        </div>
+        <span class="showId">#29</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="29">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20-%20Jirachi%20-%20Wish%20Maker%20%282003%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon: Jirachi - Wish Maker</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2003</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.7 Based on (5058) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Action, Animation, Adventure, Fantasy, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">OLM, Pikachu Project, Shogakukan Production, The Pok&eacute;mon Company, Shogakukan, TV Tokyo, Media Factory, Tomy, jeki</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=q473gvctl-w"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0420076/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_30" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="30">
+          <div class="fanArt" id="fanart_30">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20-%20Lucario%20and%20the%20Mystery%20of%20Mew%20%282005%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="30" id="plot_30_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="30" id="plot_30">
+          <span class="value">In the legendary past, before Pok&eacute; Balls were invented, an aura-guiding hero Pok&eacute;mon named Lucario sensed two groups of armies about to clash, and a threat of a massive war in front of Oldoran Castle in Kanto that would leave no survivors. He transferred this message to his master, the legendary hero Arlon, while he was being attacked by a violent group of Hellgar. During the battle, his sense of sight was lost and he was rendered unable to see. He used the detection of his Aura, and so with the offensive Wave Bomb, he eliminated them. Though by the threat, the queen of Rota, Lady Rin was resolute to die with her civilians, and so Arlon made a choice.</span>
+        </div>
+        <span class="showId">#30</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="30">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20-%20Lucario%20and%20the%20Mystery%20of%20Mew%20%282005%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon: Lucario and the Mystery of Mew</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2005</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.8 Based on (5770) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Adventure, Animation, Fantasy, Action, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Pikachu Project, The Pok&eacute;mon Company, Shogakukan, TV Tokyo, Media Factory, Tomy, jeki, OLM, Shogakukan Production</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hideki Sonoda</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=cksY3fTkc_I"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0875609/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_31" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="31">
+          <div class="fanArt" id="fanart_31">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20-%20The%20Rise%20of%20Darkrai%20%282007%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="31" id="plot_31_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="31" id="plot_31">
+          <span class="value">Ash and friends (this time accompanied by newcomer Dawn) arrive at an idyllic village on their way to their next Pokemon contest, where chaos will soon erupt with the prophecy of two Pokemon Gods (Dialga and Palkia) and the arrival of a mysterious, seemingly deadly Pokemon named Darkrai, which has the power to distort space and time.</span>
+        </div>
+        <span class="showId">#31</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="31">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20-%20The%20Rise%20of%20Darkrai%20%282007%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon: The Rise of Darkrai</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2007</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.4 Based on (4498) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Adventure, Animation, Fantasy, Action, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Pikachu Project, TV Tokyo, The Pok&eacute;mon Company, Shogakukan</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hideki Sonoda</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=koKPESdDzYU"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt1226251/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_32" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="32">
+          <div class="fanArt" id="fanart_32">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20-%20Zoroark%20-%20Master%20of%20Illusions%20%282010%29%201080p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="32" id="plot_32_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="32" id="plot_32">
+          <span class="value">Ash and his friends must stop a greedy media mogul from using the shape-shifting Zoroark to capture the time-travelling Celebi.</span>
+        </div>
+        <span class="showId">#32</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="32">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20-%20Zoroark%20-%20Master%20of%20Illusions%20%282010%29%201080p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon: Zoroark - Master of Illusions</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2010</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.1 Based on (2666) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Animation, Adventure, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">jeki, OLM, Pikachu Project, Shogakukan-Shueisha Productions</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hideki Sonoda</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=3Iy3UlYdF9U"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt1690470/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_33" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="33">
+          <div class="fanArt" id="fanart_33">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pom%20Poko%20%281994%29%20720p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="33" id="plot_33_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="33" id="plot_33">
+          <span class="value">The Raccoons of the Tama Hills are being forced from their homes by the rapid development of houses and shopping malls. As it becomes harder to find food and shelter, they decide to band together and fight back. The Raccoons practice and perfect the ancient art of transformation until they are even able to appear as humans in hilarious circumstances.</span>
+        </div>
+        <span class="showId">#33</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="33">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pom%20Poko%20%281994%29%20720p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pom Poko</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1994</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.2 Based on (37K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Adventure, Animation, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Isao Takahata</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=_7cowIHjCD4"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0110008/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_34" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="34">
+          <div class="fanArt" id="fanart_34">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Ponyo%20%282008%29%20720p%20Vorbis-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="34" id="plot_34_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="34" id="plot_34">
+          <span class="value">When Sosuke, a young boy who lives on a clifftop overlooking the sea, rescues a stranded goldfish named Ponyo, he discovers more than he bargained for. Ponyo is a curious, energetic young creature who yearns to be human, but even as she causes chaos around the house, her father, a powerful sorcerer, schemes to return Ponyo to the sea.</span>
+        </div>
+        <span class="showId">#34</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="34">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Ponyo%20%282008%29%20720p%20Vorbis-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Ponyo</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2008</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.6 Based on (180K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Fantasy, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, TOHO, Nippon Television Network Corporation, dentsu, Hakuhodo DY Media Partners, The Walt Disney Company (Japan), Mitsubishi</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=CsR3KVgBzSM"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0876563/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_35" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="35">
+          <div class="fanArt" id="fanart_35">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Porco%20Rosso%20%281992%29%20720p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="35" id="plot_35_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="35" id="plot_35">
+          <span class="value">In Italy in the 1930s, sky pirates in biplanes terrorize wealthy cruise ships as they sail the Adriatic Sea. The only pilot brave enough to stop the scourge is the mysterious Porco Rosso, a former World War I flying ace who was somehow turned into a pig during the war. As he prepares to battle the pirate crew's American ace, Porco Rosso enlists the help of spunky girl mechanic Fio Piccolo and his longtime friend Madame Gina.</span>
+        </div>
+        <span class="showId">#35</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="35">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Porco%20Rosso%20%281992%29%20720p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Porco Rosso</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1992</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.7 Based on (113K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Family, Comedy, Animation, Adventure</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, TOHO, Tokuma Shoten, Nibariki, Mitsubishi, Nippon Television Network Corporation</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=awEC-aLDzjs"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0104652/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_36" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="36">
+          <div class="fanArt" id="fanart_36">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Princess%20Mononoke%20%281997%29%20720p%20Vorbis-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="36" id="plot_36_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="36" id="plot_36">
+          <span class="value">Ashitaka, a prince of the disappearing Emishi people, is cursed by a demonized boar god and must journey to the west to find a cure. Along the way, he encounters San, a young human woman fighting to protect the forest, and Lady Eboshi, who is trying to destroy it. Ashitaka must find a way to bring balance to this conflict.</span>
+        </div>
+        <span class="showId">#36</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="36">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Princess%20Mononoke%20%281997%29%20720p%20Vorbis-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Princess Mononoke</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1997</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>8.3 Based on (472K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Adventure, Fantasy, Animation</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, dentsu, Tokuma Shoten, Nippon Television Network Corporation, Nibariki, TNDG</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=4OiMOHRDs14"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0119698/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_37" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="37">
+          <div class="fanArt" id="fanart_37">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20Secret%20World%20of%20Arrietty%20%282010%29%20720p%20Vorbis-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="37" id="plot_37_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="37" id="plot_37">
+          <span class="value">14-year-old Arrietty and the rest of the Clock family live in peaceful anonymity as they make their own home from items &quot;borrowed&quot; from the house's human inhabitants. However, life changes for the Clocks when a human boy discovers Arrietty.</span>
+        </div>
+        <span class="showId">#37</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="37">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/The%20Secret%20World%20of%20Arrietty%20%282010%29%20720p%20Vorbis-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The Secret World of Arrietty</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2010</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.6 Based on (114K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Fantasy, Animation, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Hakuhodo DY Media Partners, Mitsubishi Shoji, dentsu</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hayao Miyazaki<br /> Keiko Niwa</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Hiromasa Yonebayashi</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=vxoqVTSsFfo"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt1568921/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_38" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="38">
+          <div class="fanArt" id="fanart_38">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Spirited%20Away%20%282001%29%20720p%20Vorbis-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="38" id="plot_38_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="38" id="plot_38">
+          <span class="value">A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.</span>
+        </div>
+        <span class="showId">#38</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="38">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Spirited%20Away%20%282001%29%20720p%20Vorbis-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Spirited Away</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2001</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>8.6 Based on (938K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Family, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Tokuma Shoten, Nippon Television Network Corporation, Mitsubishi, dentsu, TFC</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=ByXuk9QqQkk"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0245429/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_39" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="39">
+          <div class="fanArt" id="fanart_39">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20Tale%20of%20The%20Princess%20Kaguya%20%282013%29%20720p%20Vorbis-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="39" id="plot_39_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="39" id="plot_39">
+          <span class="value">Found inside a shining stalk of bamboo by an old bamboo cutter and his wife, a tiny girl grows rapidly into an exquisite young lady. The mysterious young princess enthrals all who encounter her. But, ultimately, she must confront her fate.</span>
+        </div>
+        <span class="showId">#39</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="39">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/The%20Tale%20of%20The%20Princess%20Kaguya%20%282013%29%20720p%20Vorbis-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The Tale of The Princess Kaguya</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2013</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>8.0 Based on (60K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Drama, Fantasy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Hakuhodo DY Media Partners, KDDI, Mitsubishi Shoji</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Riko Sakaguchi<br /> Isao Takahata</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Isao Takahata</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=W71mtorCZDw"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt2576852/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_40" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="40">
+          <div class="fanArt" id="fanart_40">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Tales%20from%20Earthsea%20%282006%29%20720p%20Vorbis-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="40" id="plot_40_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="40" id="plot_40">
+          <span class="value">Something bizarre has come over the land. The kingdom is deteriorating. People are beginning to act strange... What's even more strange is that people are beginning to see dragons, which shouldn't enter the world of humans. Due to all these bizarre events, Ged, a wandering wizard, is investigating the cause. During his journey, he meets Prince Arren, a young distraught teenage boy. While Arren may look like a shy young teen, he has a severe dark side, which grants him strength, hatred, ruthlessness and has no mercy, especially when it comes to protecting Teru. For the witch Kumo this is a perfect opportunity. She can use the boy's &quot;fears&quot; against the very one who would help him, Ged.</span>
+        </div>
+        <span class="showId">#40</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="40">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Tales%20from%20Earthsea%20%282006%29%20720p%20Vorbis-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Tales from Earthsea</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2006</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.3 Based on (47K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Fantasy, Adventure</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, dentsu Music and Entertainment, GNDHDDT, Hakuhodo DY Media Partners, Mitsubishi, Nibariki, Nippon Television Network Corporation, TOHO</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Keiko Niwa<br /> Goro Miyazaki</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Goro Miyazaki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=8hxYx3Jq3kI"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0495596/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_41" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="41">
+          <div class="fanArt" id="fanart_41">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/When%20Marnie%20Was%20There%20%282014%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="41" id="plot_41_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="41" id="plot_41">
+          <span class="value">Upon being sent to live with relatives in the countryside due to an illness, an emotionally distant adolescent girl becomes obsessed with an abandoned mansion and infatuated with a girl who lives there - a girl who may or may not be real.</span>
+        </div>
+        <span class="showId">#41</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="41">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/When%20Marnie%20Was%20There%20%282014%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">When Marnie Was There</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2014</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.6 Based on (53K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Drama, Family, Mystery</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Hakuhodo DY Media Partners, KDDI, Nippon Television Network Corporation</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Masashi Ando<br /> Keiko Niwa<br /> Hiromasa Yonebayashi</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Hiromasa Yonebayashi</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=jjmrxqcQdYg"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt3398268/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_42" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="42">
+          <div class="fanArt" id="fanart_42">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Whisper%20of%20the%20Heart%20%281995%29%20720p%20Vorbis-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="42" id="plot_42_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="42" id="plot_42">
+          <span class="value">Shizuku lives a simple life, dominated by her love for stories and writing. One day she notices that all the library books she has have been previously checked out by the same person: 'Seiji Amasawa'.</span>
+        </div>
+        <span class="showId">#42</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="42">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Whisper%20of%20the%20Heart%20%281995%29%20720p%20Vorbis-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Whisper of the Heart</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1995</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.8 Based on (80K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Drama, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Nippon Television Network Corporation, Tokuma Shoten, Hakuhodo</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Yoshifumi Kondo</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:G</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=0pVkiod6V0U"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt0113824/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_43" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="43">
+          <div class="fanArt" id="fanart_43">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20Wind%20Rises%20%282013%29%20720p%20Opus-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="43" id="plot_43_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="43" id="plot_43">
+          <span class="value">A lifelong love of flight inspires Japanese aviation engineer Jiro Horikoshi, whose storied career includes the creation of the A-6M World War II fighter plane.</span>
+        </div>
+        <span class="showId">#43</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="43">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/The%20Wind%20Rises%20%282013%29%20720p%20Opus-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The Wind Rises</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2013</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.8 Based on (109K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Drama, Animation, Romance, War, History</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Studio Ghibli, Nippon Television Network Corporation, dentsu, Hakuhodo DY Media Partners</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Hayao Miyazaki</span>
+          </div>
+           <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>    
+          <span class="value"><a href="https://www.youtube.com/watch?v=RzSpDgiF5y8"target="_blank" data-movie-name-date="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>     
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+           <span class="value"><a href="https://www.imdb.com/title/tt2013293/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+<script>
+const menuButton = document.getElementById('menu-button');
+const sidebarNav = document.getElementById('sidebar-nav');
+const infoContainer = document.querySelector('.infoContainerTextContainer');
+const infoBackTitleContainer = document.querySelector('.infoBackTitleContainer');
+
+menuButton.addEventListener('click', () => {
+  sidebarNav.classList.toggle('open');
+  menuButton.classList.toggle('menu-button-open');
+
+  // Toggle the sidebar-open class on the body
+  document.body.classList.toggle('sidebar-open');
+
+  // Toggle the sidebar-nav-open class on the infoContainer and infoBackTitleContainer
+  infoContainer.classList.toggle('sidebar-nav-open');
+  infoBackTitleContainer.classList.toggle('sidebar-nav-open');
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox").fancybox({
+      openEffect: "elastic",
+      closeEffect: "elastic",
+      helpers: {
+        title: { type: "float" }
+      }
+    });
+  });
+</script>
+
+<script src="lib/sortMovies.js" defer></script>
+<script src="lib/new add lib/genre-filter.js" defer></script>
+<script src="lib/new add lib/year-filter.js" defer></script>
+<script src="lib/new add lib/age-rating-filter.js" defer></script>
+<script src="lib/new add lib/rating-filter.js" defer></script>
+<script src="lib/new add lib/combined-filters.js" defer></script>
+<script src="lib/Iframe movies.js" defer></script>
+<script src="lib/movie names.js" defer></script>
+<script src="lib/new add lib/reset-filters-combined.js" defer></script>
+
+
+       <!-- Add the no-results-message element -->
+<div id="no-results-message" style="display: none;"></div>
+
+  </body>
+  <!-- Modal -->
+<div id="modal" class="modal">
+  <div id="modal-content" class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modal-video"></div>
+  </div>
+</div>
+</html>

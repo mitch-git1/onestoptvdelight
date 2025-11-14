@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Vince Staples Show
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Vince Staples Show</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Vince%20Staples%20Show%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Vince%20Staples%20Show%20-%20S01E01%20-%20Pink%20House-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pink House
+          </div>
+          <div class="plot">After getting pulled over for speeding, Vince lands behind bars and meets an aspiring singer, inquisitive cops and a hostile inmate with a grudge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Vince%20Staples%20Show%20-%20S01E02%20-%20Black%20Business-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Black Business
+          </div>
+          <div class="plot">When an armed robbery breaks out at the bank where Vince is applying for a small-business loan, he seizes an opportunity to negotiate a lucrative deal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Vince%20Staples%20Show%20-%20S01E03%20-%20Brown%20Family-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Brown Family
+          </div>
+          <div class="plot">Tensions flare up over mac and cheese at a family reunion. As aunties bicker and hard truths emerge, Vince has a heart-to-heart with Uncle James.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Vince%20Staples%20Show%20-%20S01E04%20-%20Red%20Door-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Red Door
+          </div>
+          <div class="plot">At a theme park, a mission turns into a misadventure for Vince, who encounters a menacing mascot. Deja gets into a heated argument at the gift shop.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Vince%20Staples%20Show%20-%20S01E05%20-%20White%20Boy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - White Boy
+          </div>
+          <div class="plot">A run-in with a longtime enemy at Vince's old school escalates into a cat-and-mouse game all over Long Beach.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Vince%20Staples%20Show%20-%20S02E01%20-%20Country%20Mane-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Country Mane
+          </div>
+          <div class="plot">Vince and Anita's road trip for a family funeral veers off-course when they make an uncomfortable detour at a rental-car agency.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Vince%20Staples%20Show%20-%20S02E02%20-%20Petting%20Zoo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Petting Zoo
+          </div>
+          <div class="plot">When Vince tries to intervene in Bri and Anita's ongoing beef, the whole family is left to fight it out at a sketchy roadside pitstop.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Vince%20Staples%20Show%20-%20S02E03%20-%20God%27s%20Will-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - God's Will
+          </div>
+          <div class="plot">Stranded at Uncle James' empty mansion after an animated will reading, Vince discovers more than a few skeletons in the closet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Vince%20Staples%20Show%20-%20S02E04%20-%20Anti-Social-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Anti-Social
+          </div>
+          <div class="plot">Vince makes a delivery to his uncle's elite social club, where the vibes are seriously off and a familiar face doesn't offer much help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Vince%20Staples%20Show%20-%20S02E05%20-%20Mr.%20Baldwin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Mr. Baldwin
+          </div>
+          <div class="plot">Vince tries to turn the tables when he becomes the unwilling guest of honor at a twisted dinner party.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Vince%20Staples%20Show%20-%20S02E06%20-%20Uncle%20James%20is%20Dead-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Uncle James is Dead.
+          </div>
+          <div class="plot">On the day of Uncle James' funeral, Anita and Bri deal with chaos at the church, while Vince hits a few roadblocks on his way to deliver the eulogy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Secrets of the Silent Witch
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Secrets of the Silent Witch</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Secrets%20of%20the%20Silent%20Witch%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Secrets%20of%20the%20Silent%20Witch%20-%20S01E01%20-%20A%20Colleague%20Arrives%20and%20Acts%20Unreasonably-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - A Colleague Arrives and Acts Unreasonably
+          </div>
+          <div class="plot">Monica Everett, the Silent Witch is visited by a colleague to go undercover at Serendia Academy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Secrets%20of%20the%20Silent%20Witch%20-%20S01E02%20-%20Taking%20a%20Step%20Forward-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Taking a Step Forward
+          </div>
+          <div class="plot">Monica transfers to Serendia Academy after accepting the top-secret mission. Her mission is to secretly guard the second prince Felix without him noticing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Secrets%20of%20the%20Silent%20Witch%20-%20S01E03%20-%20Serendia%20Academy%20Student%20Council-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Serendia Academy Student Council
+          </div>
+          <div class="plot">Monica is accused of being an accomplice for attacking Felix, so she looks for the culprit to clear her name.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Secrets%20of%20the%20Silent%20Witch%20-%20S01E04%20-%20The%20Perfect%20Formula-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Perfect Formula
+          </div>
+          <div class="plot">Louis&rsquo;s familiar Ryn was at the Serendia Academy to drop off his message when they detected an irregular mana by the boy&rsquo;s dorm. When they went to the woods behind the dorm, they found Cyril losing control of his mana and slowly spreading ice around and freezing himself, too. Monica identifies the reason behind the mana rampage and finds out that there&rsquo;s a culprit behind it. The hidden secret of the student council gets unveiled.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Secrets%20of%20the%20Silent%20Witch%20-%20S01E05%20-%20The%20Adventure%20of%20the%20Silent%20Witch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Adventure of the Silent Witch
+          </div>
+          <div class="plot">It's the weekend and Monica is freed from her duty, so she decides to go to the city of Craeme with Nero.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Secrets%20of%20the%20Silent%20Witch%20-%20S01E06%20-%20A%20Cup%20Out%20of%20Place-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - A Cup Out of Place
+          </div>
+          <div class="plot">Serendia Academy is a distinguished academy dedicated to nurturing refined ladies and gentlemen, so girls are required to take ballroom dancing and tea party classes. Since Monica lived in isolation in a mountain cabin for a long time, she must re-take her ballroom dance test. Monica was already struggling, and to make matters worse, the tea party announcement was made. Her group is Monica&rsquo;s friends Lana Colette and Casey Grove, as well as Claudia who is an intelligent woman known as the &ldquo;walking library.&rdquo; How will the tea party and Monica&rsquo;s re-examination for the ballroom dance go?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Secrets%20of%20the%20Silent%20Witch%20-%20S01E07%20-%20A%20Jealous%20Noblewoman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - A Jealous Noblewoman
+          </div>
+          <div class="plot">The ballroom dance re-examination test is over, so Monica is having a barbecue with Glenn and the others.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Secrets%20of%20the%20Silent%20Witch%20-%20S01E08%20-%20My%20Responsibility-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - My Responsibility
+          </div>
+          <div class="plot">Monica is attending school for the first time in a week, so Lana and Casey hold a welcome back party for her. Claudia also joins and the girls have fun. Everyone is curious about the school festival that&rsquo;s right around the corner. Casey is going to sell her embroideries at the charity bazaar, and Monica&rsquo;s eyes light up when she sees them, so Casey promises to make one for Monica, too. That same day after school, supplies are delivered to the school, so Monica heads to the storage with Cyril. Casey fills in for the stage designer and accompanies them, but&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Secrets%20of%20the%20Silent%20Witch%20-%20S01E09%20-%20The%20Hidden%20Secret-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Hidden Secret
+          </div>
+          <div class="plot">The assassination plot against the second prince by Spiralflame was thwarted by Monica the Silent Witch.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Secrets%20of%20the%20Silent%20Witch%20-%20S01E10%20-%20Bernie%20Jones%20and%20Everett%20the%20Mute-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Bernie Jones and Everett the Mute
+          </div>
+          <div class="plot">Monica chooses horse riding and chess as her electives and is chosen to compete at the chess meet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Secrets%20of%20the%20Silent%20Witch%20-%20S01E11%20-%20My%20Friend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - My Friend
+          </div>
+          <div class="plot">The chess meet between Serendia Academy, Minerva's Mage Training Institution, and the University begins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Secrets%20of%20the%20Silent%20Witch%20-%20S01E12%20-%20Monica%20Becomes%20a%20Delinquent-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Monica Becomes a Delinquent
+          </div>
+          <div class="plot">Monica is summoned by Mary Harvey, one of the Seven Sages and the Starseer Witch. She asks Monica to accompany her to the &ldquo;Magical Offering&rdquo; that is held at the festival in Corlapton. Corlapton holds a festival that sends off the dead, and participants ring a bell in their costumes as they do so. As Monica arrives to Corlapton with Mary, she finds an unexpected person there. The second prince Felix who came incognito without a bodyguard.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Secrets%20of%20the%20Silent%20Witch%20-%20S01E13%20-%20A%20Book%27s%20Worth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - A Book's Worth
+          </div>
+          <div class="plot">The ancient magic tool the Starweaving Mira that is used at the &ldquo;Magical Offering&rdquo; during the Bell-Ringing Festival in Corlapton is stolen. The Starweaving Mira is an ancient magic tool that absorbs and liberates the mana of the land. It is a cursed item that is said to have its own mind and will kill the owner if it&rsquo;s a male. The &ldquo;Magical Offering&rdquo; cannot take place without the Starweaving Mira. Monica doesn&rsquo;t want the Bell-Ringing Festival that sends off the dead to be canceled, so she goes in search of the ancient magic tool. Thus beginning Monica the Silent Witch&rsquo;s pursuit!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

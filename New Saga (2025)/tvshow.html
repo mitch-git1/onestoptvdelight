@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - New Saga
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">New Saga</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/New%20Saga%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/New%20Saga%20-%20S01E01%20-%20I%27ll%20Change%20My%20Fate-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - I'll Change My Fate
+          </div>
+          <div class="plot">Kyle is sent back in time after his fateful fight with the demon king and swears to save the world this time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/New%20Saga%20-%20S01E02%20-%20The%20Hero%27s%20Conditions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Hero's Conditions
+          </div>
+          <div class="plot">Kyle sets about making preparations for his heroic journey and the fight to come.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/New%20Saga%20-%20S01E03%20-%20Application%20of%20the%20Contract-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Application of the Contract
+          </div>
+          <div class="plot">Kyle reunites with some old companions in new ways before making his first major play to change the future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/New%20Saga%20-%20S01E04%20-%20The%20Perfect%20Start%20to%20a%20Heroic%20Tale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Perfect Start to a Heroic Tale
+          </div>
+          <div class="plot">To save the ill-fated Princess Milena, Kyle must brave a danger the likes of which he's never faced before.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/New%20Saga%20-%20S01E05%20-%20Reunion%20at%20Dawn-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Reunion at Dawn
+          </div>
+          <div class="plot">Old friends become enemies as Kyle comes up with a plan to get Princess Milena to safety.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/New%20Saga%20-%20S01E06%20-%20Brothers%20in%20Arms-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Brothers in Arms
+          </div>
+          <div class="plot">Kyle's party is celebrated for rescuing the princess, but they're given no time to rest on their laurels.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/New%20Saga%20-%20S01E07%20-%20To%20the%20Blacksmith%27s%20Nation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - To the Blacksmith's Nation
+          </div>
+          <div class="plot">Kyle's party arrives in Karan and becomes embroiled in tensions between Zirgus and the Gargan Empire.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/New%20Saga%20-%20S01E08%20-%20Those%20Who%20Act%20Out%20of%20Sight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Those Who Act Out of Sight
+          </div>
+          <div class="plot">カイルが目にしたのは、無惨に殺害されたアルザードの亡骸と、その傍に立つ女魔族・ユーリガだった。咄嗟に身構え攻撃を繰り出したカイルはユーリガと交戦する。 一方、ゴウはシルドニアに助言を仰ぎながら開発を進めていた。休憩時間にセランはこの街のどこかにあるという聖剣ランドの話を聞き興味を示す。その時、ガザスの家を何者かが襲撃して&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/New%20Saga%20-%20S01E09%20-%20Hidden%20Ambitions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Hidden Ambitions
+          </div>
+          <div class="plot">Kyle insists on finding the secret underground passage hidden beneath Karan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/New%20Saga%20-%20S01E10%20-%20Duel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Duel
+          </div>
+          <div class="plot">The demons agree to formally duel Kyle's party for the holy sword and information.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/New%20Saga%20-%20S01E11%20-%20Secret%20Red-Hot%20Strategy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Secret Red-Hot Strategy
+          </div>
+          <div class="plot">Kyle and his companions acquire surprising new information about demons.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/New%20Saga%20-%20S01E12%20-%20The%20Heroic%20Tale%20Continues-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Heroic Tale Continues
+          </div>
+          <div class="plot">Kyle's party concludes their business in Karan, but ominous clouds can be seen on the horizon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

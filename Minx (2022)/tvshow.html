@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Minx
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Minx</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Minx%20%282022%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S01E01%20-%20Not%20like%20a%20shvantz%20right%20in%20the%20face-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Not like a shvantz right in the face
+          </div>
+          <div class="plot">After a fateful meeting with low-rent publisher Doug Renetti, self-proclaimed feminist Joyce Prigger finally gets a shot at creating the magazine of her dreams &ndash; with one enormous catch.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S01E02%20-%20Au%20revoir%2C%20le%20double%20dong-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Au revoir, le double dong
+          </div>
+          <div class="plot">Doug courts his usual advertisers, while Joyce looks for more conventional companies to do business with. Bambi looks to channel her newfound feminism into a new role.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S01E03%20-%20Norman%20Mailer%2C%20Samantha%20Shortcake-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Norman Mailer, Samantha Shortcake
+          </div>
+          <div class="plot">The arrival of a new local politician disrupts Bottom Dollar&rsquo;s status quo. Then, when her contributors pull out at the last minute, Joyce scrambles to fill Minx with articles that live up to her ludicrously high standards.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S01E04%20-%20An%20exciting%20new%20chapter%20in%20the%20annals%20of%20erotica-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - An exciting new chapter in the annals of erotica
+          </div>
+          <div class="plot">While David and Tina deal with Bottom Dollar&rsquo;s financial woes, Joyce helps a sexy coverboy prep for Minx&rsquo;s first presser.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S01E05%20-%20Relaying%20news%20of%20a%20wayward%20snake-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Relaying news of a wayward snake
+          </div>
+          <div class="plot">While Doug and Joyce work to placate the Mob, the Minx team scrambles to live up to their leader&rsquo;s overly ambitious vision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S01E06%20-%20Mary%20had%20a%20little%20hysterectomy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Mary had a little hysterectomy
+          </div>
+          <div class="plot">To help bolster Minx&rsquo;s sales, Bambi and Shelly spread the word to local housewives, while Joyce and Glenn are accidental sources of chaos on a local campus.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S01E07%20-%20God%20save%20the%20Queen%20of%20Dicks-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - God save the Queen of Dicks
+          </div>
+          <div class="plot">While Doug celebrates Minx&rsquo;s success, Joyce laments her newfound celebrity status. Councilwoman Westbury doubles down on her efforts to bring down Bottom Dollar, and Richie reluctantly enters the LA art scene.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S01E08%20-%20Oh%2C%20you%E2%80%99re%20the%20sun%20now%20Giver%20of%20life-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Oh, you&rsquo;re the sun now? Giver of life?
+          </div>
+          <div class="plot">Joyce enjoys the spotlight as a guest on an iconic TV talk show while fighting against memories of her time in New York. Doug makes moves for Minx. Back home, Bambi and Richie discover Tina&rsquo;s secret.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S01E09%20-%20A%20scintillating%20conversation%20about%20a%20lethal%20pesticide-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - A scintillating conversation about a lethal pesticide
+          </div>
+          <div class="plot">While Joyce takes it easy in New York, things back at Bottom Dollar only get harder for Doug, whose vision for Minx clashes with everything Joyce&rsquo;s magazine stood for. Bambi helps Shelly get in touch with her sexuality.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S01E10%20-%20You%20happened%20to%20me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - You happened to me
+          </div>
+          <div class="plot">With all of the Valley seemingly pitted against Bottom Dollar, Doug flounders, while Joyce takes a stand. A men&rsquo;s rights protest threatens the future of Minx.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S02E01%20-%20The%20perils%20of%20being%20a%20wealthy%20widow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - The perils of being a wealthy widow
+          </div>
+          <div class="plot">One year into launching Minx Magazine, Joyce struggles to pick a new publisher she can trust. Drowning in debt, Doug scrambles to keep his company afloat. Shelly goes back to the &rsquo;burbs to focus on her family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S02E02%20-%20I%20thought%20the%20bed%20was%20gonna%20fly-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - I thought the bed was gonna fly
+          </div>
+          <div class="plot">Bottom Dollar hosts the west coast premiere of the controversial and illegal adult film, &ldquo;Deep Throat.&rdquo; Doug tries to dazzle their new publisher while Joyce sets out to get a famed writer to contribute a piece for Minx.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S02E03%20-%20It%27s%20okay%20to%20like%20it-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - It's okay to like it
+          </div>
+          <div class="plot">Six months later, Minx is front and center of the sexual revolution. Rolling Stone descends on the Bottom Dollar offices to interview the gang.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S02E04%20-%20Life%2C%20Liberty%20and%20the%20Pursuit%20of%20Sexiness-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Life, Liberty and the Pursuit of Sexiness
+          </div>
+          <div class="plot">Joyce takes her eyes off the ball(s) and ditches work for her new rock star beau.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S02E05%20-%20A%20stately%20pleasure%20dome%20decree-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - A stately pleasure dome decree
+          </div>
+          <div class="plot">Joyce and Doug head to Vegas to sell the international rights to Minx. At Bottom Dollar, Tina aims to let loose and host a watch party for the Billie Jean King vs. Bobby Riggs tennis match.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S02E06%20-%20This%20is%20our%20zig-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - This is our zig
+          </div>
+          <div class="plot">Shelly gets a taste of college life while joining Joyce on her victory-lap trip to Vassar. Doug accompanies Tina to her mom&rsquo;s retirement party and learns some surprising news. Bambi connects with Richie on a trip of their own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S02E07%20-%20God%20closes%20a%20door%2C%20opens%20a%20glory%20hole-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - God closes a door, opens a glory hole
+          </div>
+          <div class="plot">Constance, Joyce, and Tina head to a wilderness retreat to pick Minx International publishers. Back at Bottom Dollar, Richie has to replace a centerfold and scrambles to redo the new issue.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Minx%20-%20S02E08%20-%20Woman%20of%20the%20hour-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Woman of the hour
+          </div>
+          <div class="plot">At the Minx International launch party, Doug confronts Constance, while Joyce starts to lose control of her magazine. Shelly and Lenny look towards an uncertain future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

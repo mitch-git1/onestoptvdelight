@@ -1,0 +1,975 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="HTML Tidy for HTML5 for Windows version 5.3.1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/x-icon" href="images\tv and movie lists\icon.png">.
+    <title>Newly Added Anime - TV Shows</title>
+    <script type="text/javascript" src="./lib/jquery.js"></script>
+    <link rel="stylesheet" href="./lib/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="./lib/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="./lib/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="./lib/deadsix.js"></script>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" type="text/css" href="lib/style sheets/tv shows style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    startUP();
+  });
+  $(window).on('hashchange', function () {
+    checkHash();
+  });
+</script>
+<link rel="stylesheet" href="lib/media queries stylesheets/anime media queries tv shows.css">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="largeContainer">
+      <!-- Add the menu button -->
+       <button id="menu-button">Menu</button>
+      <!-- Add the sidebar navigation -->
+       <div id="sidebar-nav">
+       <ul>
+       <li><a href="https://www.onestoptvdelight.co.za/newly added anime tv shows.html"target="_blank">Newly Added:Anime TV Shows</a></li>
+       <li><a href="https://www.onestoptvdelight.co.za/newly added anime movies.html"target="_blank">Newly Added:Anime Movies</a></li>
+       <li><a href="https://www.onestoptvdelight.co.za/full anime tv shows.html"target="_blank">Full List Anime TV Shows</a></li>
+       <li><a href="https://forms.gle/SM2WCm2LX7z44RicA"target="_blank">CheckList Link Page Newly Added Anime Tv Shows</a></a></li>
+       </ul>
+       </div>
+      <div class="infoContainer">
+        <div class="homepage-link-container">
+           <!-- add home button -->
+       <a href="https://www.onestoptvdelight.co.za/index.html" class="homepage-link">Home Button</a>
+         </div>
+        <div class="infoBackTitleContainer">
+          <span class="infoBackTitle">Newly Added</span>
+          <hr class="subTitleSeprator" />
+          <span class="infoBackTitleSub">Anime TV Shows</span>
+        </div>
+        <div class="infoContainerTextContainer">
+          <div class="name">
+            <span class="titleNoBlock">Total TV Shows:</span>
+            <span>11</span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Request Page Link:</span>
+            <span><a href="https://forms.gle/rbLCy1hxpxC5SXG1A"target="_blank" class="request-link"><i class="fa-solid fa-file-pen" style="color: #63E6BE;"></i> Request File</a></span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Top 10 Picked Anime TV Shows This Month:</span>
+            <span><a href="https://www.onestoptvdelight.co.za/top 10 anime tv shows.html"target="_blank" class="top10-link"><i class="fa-solid fa-tv" style="color: #74C0FC;"></i> Top 10</a></span>
+          </div>
+        </div>
+      </div>
+        <div id="searchContainer">
+        <input type="text" autocomplete="off" onfocus="this.value=''; searchOnPage('');"
+        onblur="if(this.value==''){this.value='Search TV Show Name'};"
+        onkeyup="searchOnPage(this.value.toLowerCase());"
+        id="search_box" value="Search TV Show Name" />
+        <input type="submit" id="search_button" value="Search" />
+        <div id="search_result"></div>
+        </div>
+        <div class="dropdown-container">
+         <div id="genre-select-container">
+         <label for="genre-select" class="genre-label">Search By Genre:</label>
+         <select id="genre-select">
+         <option value="all">All</option>
+         </select>
+         </div>
+         <div id="date-select-container">
+           <label for="date-select" class="date-label">Search By Year:</label>
+           <select id="date-select">
+             <option value="all">All</option>
+           </select>
+         </div>
+         <div id="age-rating-select-container">
+         <label for="age-rating-select" class="age-rating-label">Search By Age Rating:</label>
+         <select id="age-rating-select">
+         <option value="all">All</option>
+        </select>
+        </div>
+        <div id="rating-select-container">
+        <label for="rating-select" class="rating-label">Search By Rating:</label>
+        <select id="rating-select">
+        <option value="all">All</option>
+        </select>
+        </div>
+        <button id="reset-filters-button" class="reset-filters">Reset Filters</button>
+        </div>
+       <div id="no-results-message" class="no-results-message"></div>
+      
+
+      <div id="tvshow_1" class="aniContainer aniOrder0">
+        <a href="images/fanart/1.jpg" class="fancybox" rel="1">
+          <div class="fanArt" id="fanart_1">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20%282019%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="1" id="plot_1_icon"></div>
+        <a target="_BLANK" href="Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20%282019%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="1" id="plot_1">
+          <span class="value">Hajime Nagumo and his high school class are suddenly summoned to a fantastical land as heroes. But while most of his classmates have powerful stats and abilities, Hajime does not. Underappreciated and unprepared, he tumbles into the depths of a monster-infested dungeon where voracity and sacrifice are his only options. To thrive in this savage world, he&rsquo;ll have no choice but to welcome the abyss.</span>
+        </div>
+        <span class="showId">#1</span>
+        <div class="posterContainer">
+          <a href="images/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20%282019%29-POSTER.thumb.jpg" class="fancybox" rel="1">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Arifureta%20From%20Commonplace%20to%20World%27s%20Strongest%20%282019%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Arifureta: From Commonplace to World's Strongest</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2019/07/08</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">4</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">45</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.0 Based on (5885) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Action, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">AT-X, asread., White Fox, studio MOTHER</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=LHmdL6x9-kw"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Ended</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:14</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt10431290/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_2" class="aniContainer aniOrder0">
+        <a href="images/fanart/2.jpg" class="fancybox" rel="2">
+          <div class="fanArt" id="fanart_2">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20%282019%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="2" id="plot_2_icon"></div>
+        <a target="_BLANK" href="Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20%282019%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="2" id="plot_2">
+          <span class="value">Goddess Ristarte summons Seiya Ryuuguuin, an OVERLY cautious hero to save the world of Gaeabrande. Seiya is obsessed with muscle training and buying extra armor to deal with low level creatures. It&rsquo;s simply one cautious mission at-a-time for this hero!</span>
+        </div>
+        <span class="showId">#2</span>
+        <div class="posterContainer">
+          <a href="images/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20%282019%29-POSTER.thumb.jpg" class="fancybox" rel="2">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20%282019%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Cautious Hero: The Hero Is Overpowered but Overly Cautious</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2019/10/02</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">12</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.3 Based on (4685) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Action, Comedy, Science Fiction, War</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">AT-X, Digital Noise, White Fox, KADOKAWA</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=U6HXUsn9yWw"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Ended</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:14</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt10974198/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_3" class="aniContainer aniOrder0">
+        <a href="images/fanart/3.jpg" class="fancybox" rel="3">
+          <div class="fanArt" id="fanart_3">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20Elusive%20Samurai%20%282024%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="3" id="plot_3_icon"></div>
+        <a target="_BLANK" href="The%20Elusive%20Samurai%20%282024%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="3" id="plot_3">
+          <span class="value">Set between the Kamakura and Muromachi periods, during the Kenmu Restoration, the story follows the tale of Hojo Tokiyuki, a boy on the run after his family is overthrown by Ashikaga Takauji. With his only allies being a shady priest and his followers, the young lord must seek revenge and regain his glory, with his only weapon: a superhuman ability to flee and hide.</span>
+        </div>
+        <span class="showId">#3</span>
+        <div class="posterContainer">
+          <a href="images/The%20Elusive%20Samurai%20%282024%29-POSTER.thumb.jpg" class="fancybox" rel="3">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/The%20Elusive%20Samurai%20%282024%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The Elusive Samurai</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2024/07/06</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">12</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.3 Based on (1732) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Action</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Gunma TV, Tokyo MX, BS11, Tochigi TV</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=J8o9agst4ug"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Continuing</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:14</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt27187054/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_4" class="aniContainer aniOrder0">
+        <a href="images/fanart/4.jpg" class="fancybox" rel="4">
+          <div class="fanArt" id="fanart_4">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Gangsta.%20%282015%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="4" id="plot_4_icon"></div>
+        <a target="_BLANK" href="Gangsta.%20%282015%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="4" id="plot_4">
+          <span class="value">In the crime-ridden, mafia-governed city of Ergastulum, Worick and Nicolas are two &ldquo;handymen&rdquo; known as &ldquo;Benriya&rdquo; who would take any dirty job from either police or mafia, for a good price. After an assignment from police the two met and later joined by Alex, a former prostitute who got interested in the mysterious background of the team, in particular of Nicolas&rsquo; abilities.</span>
+        </div>
+        <span class="showId">#4</span>
+        <div class="posterContainer">
+          <a href="images/Gangsta.%20%282015%29-POSTER.thumb.jpg" class="fancybox" rel="4">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Gangsta.%20%282015%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Gangsta.</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2015/07/02</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">12</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.2 Based on (4005) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Drama, Action, Animation, Crime</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">ABC TV, Manglobe, Bandai Visual, Hakuhodo DY Media Partners</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=8G3Po13Oxko"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Ended</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:MA</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt5025394/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_5" class="aniContainer aniOrder0">
+        <a href="images/fanart/5.jpg" class="fancybox" rel="5">
+          <div class="fanArt" id="fanart_5">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/New%20Saga%20%282025%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="5" id="plot_5_icon"></div>
+        <a target="_BLANK" href="New%20Saga%20%282025%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="5" id="plot_5">
+          <span class="value">After a brutal war, magic swordsman Kyle defeats the Demon King but is left dying. A crimson crystal sends him four years into the past to his once-destroyed hometown where he finds his lost loved ones alive. Armed with future knowledge, Kyle vows to prevent the coming tragedy and rewrite fate.</span>
+        </div>
+        <span class="showId">#5</span>
+        <div class="posterContainer">
+          <a href="images/New%20Saga%20%282025%29-POSTER.thumb.jpg" class="fancybox" rel="5">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/New%20Saga%20%282025%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">New Saga</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025/07/03</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">12</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.3 Based on (577) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Action, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">ABC TV, Sotsu, AlphaPolis, Studio Clutch</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=eGNvCQAz36E"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Continuing</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:14</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt33050376/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_6" class="aniContainer aniOrder0">
+        <a href="images/fanart/6.jpg" class="fancybox" rel="6">
+          <div class="fanArt" id="fanart_6">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/No%20Longer%20Allowed%20in%20Another%20World%20%282024%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="6" id="plot_6_icon"></div>
+        <a target="_BLANK" href="No%20Longer%20Allowed%20in%20Another%20World%20%282024%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="6" id="plot_6">
+          <span class="value">Pulled into an otherworldly adventure with cute sidekicks and superpowers, you&rsquo;d think Osamu hit the jackpot. Nope! From a time before pixels, the early 20th-century gloomy author just wants to find a quiet place to meet his maker, not to rack up XP. Sadly, his poetic demise is constantly thwarted by inconvenient heroics. Dive into the hilariously tragic life of the most reluctant hero!</span>
+        </div>
+        <span class="showId">#6</span>
+        <div class="posterContainer">
+          <a href="images/No%20Longer%20Allowed%20in%20Another%20World%20%282024%29-POSTER.thumb.jpg" class="fancybox" rel="6">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/No%20Longer%20Allowed%20in%20Another%20World%20%282024%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">No Longer Allowed in Another World</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2024/07/09</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">12</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.7 Based on (1683) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Comedy, Drama, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">AT-X, Atelier Pontdarc, KADOKAWA, movic</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=WhdIjESjFCI"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Ended</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:14</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt31186547/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_7" class="aniContainer aniOrder0">
+        <a href="images/fanart/7.jpg" class="fancybox" rel="7">
+          <div class="fanArt" id="fanart_7">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20%282025%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="7" id="plot_7_icon"></div>
+        <a target="_BLANK" href="Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20%282025%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="7" id="plot_7">
+          <span class="value">Iruma Takumi finds himself caught up in a hero summoning, even though he&rsquo;s not a hero. Summoned by mistake to Mildgard, a fantasy world of swords and magic, Takumi is given a chance to start over. Though he dreams of a peaceful life, the goddess Nolyn grants him &ldquo;alchemy,&rdquo; an ultra-powerful skill that allows him to create anything from holy swords to flying ships. His reluctant adventure begins!</span>
+        </div>
+        <span class="showId">#7</span>
+        <div class="posterContainer">
+          <a href="images/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20%282025%29-POSTER.thumb.jpg" class="fancybox" rel="7">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20%282025%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Possibly the Greatest Alchemist of All Time</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025/01/08</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">12</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.4 Based on (1208) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Science Fiction, Action</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Tokyo MX, Studio Comet, AlphaPolis, Pony Canyon</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=K1SjhnWrKLk"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Ended</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:14</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt33478787/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_8" class="aniContainer aniOrder0">
+        <a href="images/fanart/8.jpg" class="fancybox" rel="8">
+          <div class="fanArt" id="fanart_8">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/ReLIFE%20%282016%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="8" id="plot_8_icon"></div>
+        <a target="_BLANK" href="ReLIFE%20%282016%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="8" id="plot_8">
+          <span class="value">Arata Kaizaki (27) quit the job he landed after graduation in only three months. His life did not go well after that. Now his parents are threatening to stop sending money, and want him to come back to the country. He has no friend or girlfriend to share his troubles with...as he hits rock bottom a strange man named Ryou Yoake appears. He invites Arata to join a societal rehabilitation program for NEETs called ReLife. This program uses a mysterious drug to make him look younger, and sends him back to high school for a year...</span>
+        </div>
+        <span class="showId">#8</span>
+        <div class="posterContainer">
+          <a href="images/ReLIFE%20%282016%29-POSTER.thumb.jpg" class="fancybox" rel="8">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/ReLIFE%20%282016%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">ReLIFE</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2016/07/02</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">2</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">19</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.8 Based on (8449) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Comedy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Gunma TV, Tokyo MX, BS11, TMS Entertainment</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=EMe_zK3th8E&list=RDEMe_zK3th8E&start_radio=1"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Ended</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:PG</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt5857720/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_9" class="aniContainer aniOrder0">
+        <a href="images/fanart/9.jpg" class="fancybox" rel="9">
+          <div class="fanArt" id="fanart_9">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Secrets%20of%20the%20Silent%20Witch%20%282025%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="9" id="plot_9_icon"></div>
+        <a target="_BLANK" href="Secrets%20of%20the%20Silent%20Witch%20%282025%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="9" id="plot_9">
+          <span class="value">Humans couldn&rsquo;t handle magic without chanting until Monica Everett, the Silent Witch and one of the Seven Sages, made unspoken magecraft possible. Painfully shy, she enjoys seclusion. One day, Louis Miller, the Barrier Mage, delivers the king&rsquo;s order: Go undercover at a prestigious school for nobles to guard the second prince. Get ready for her silent mission to begin!</span>
+        </div>
+        <span class="showId">#9</span>
+        <div class="posterContainer">
+          <a href="images/Secrets%20of%20the%20Silent%20Witch%20%282025%29-POSTER.thumb.jpg" class="fancybox" rel="9">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Secrets%20of%20the%20Silent%20Witch%20%282025%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Secrets of the Silent Witch</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2025/07/05</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">1</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">13</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.5 Based on (1316) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Comedy, Action, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Gunma TV, Tokyo MX, BS11, Tochigi TV</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=ENhLlWwrNxQ"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Ended</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Unknown</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt33317800/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_10" class="aniContainer aniOrder0">
+        <a href="images/fanart/10.jpg" class="fancybox" rel="10">
+          <div class="fanArt" id="fanart_10">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Tower%20of%20God%20%282020%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="10" id="plot_10_icon"></div>
+        <a target="_BLANK" href="Tower%20of%20God%20%282020%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="10" id="plot_10">
+          <span class="value">Reach the top, and everything will be yours. At the top of the tower exists everything in this world, and all of it can be yours. You can become a god. This is the story of the beginning and the end of Rachel, the girl who climbed the tower so she could see the stars, and Bam, the boy who needed nothing but her.</span>
+        </div>
+        <span class="showId">#10</span>
+        <div class="posterContainer">
+          <a href="images/Tower%20of%20God%20%282020%29-POSTER.thumb.jpg" class="fancybox" rel="10">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Tower%20of%20God%20%282020%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Tower of God</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2020/04/02</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">2</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">26</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.5 Based on (10K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Mystery, Science Fiction, Action</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Gunma TV, Tokyo MX, BS11, Tochigi TV</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=RNyClma6awo"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Ended</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:14</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt12057106/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="tvshow_11" class="aniContainer aniOrder0">
+        <a href="images/fanart/11.jpg" class="fancybox" rel="11">
+          <div class="fanArt" id="fanart_11">
+            <img class="lazyLoad" alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Vinland%20Saga%20%282019%29-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="11" id="plot_11_icon"></div>
+        <a target="_BLANK" href="Vinland%20Saga%20%282019%29/tvshow.html" class="detailsIcon">
+          <img src="images/icons/detailsIcon.png" />
+        </a>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="11" id="plot_11">
+          <span class="value">For a thousand years, the Vikings have made quite a name and reputation for themselves as the strongest families with a thirst for violence. Thorfinn, the son of one of the Vikings' greatest warriors, spends his boyhood in a battlefield enhancing his skills in his adventure to redeem his most-desired revenge after his father was murdered.</span>
+        </div>
+        <span class="showId">#11</span>
+        <div class="posterContainer">
+          <a href="images/Vinland%20Saga%20%282019%29-POSTER.thumb.jpg" class="fancybox" rel="11">
+            <img class="posterImage lazyLoad" alt="poster" onerror="this.src = &#39;images/icons/noPoster.jpg&#39;;"
+            src="images/Vinland%20Saga%20%282019%29-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Vinland Saga</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2019/07/08</span>
+          </div>
+          <div class="aniSeasons name">
+            <span class="titleNoBlock">Seasons:</span>
+            <span class="value">3</span>
+          </div>
+          <div class="aniNumEps name">
+            <span class="titleNoBlock">No. Episodes:</span>
+            <span class="value">50</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>8.8 Based on (115K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, War, Action, Drama</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">YouTube, NHK G, Tokyo MX, BS11</span>
+          </div>
+          <div class="anilink name">
+          <span class="titleNoBlock">Trailer:</span>
+          <span class="value"><a href="https://www.youtube.com/watch?v=6pX93dXfH9s"target="_blank" data-show-name-date="Show Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAiring name">
+           <span class="titleNoBlock">Currently Airing:</span>
+            <span class="value">Continuing</span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:MA</span>
+          </div>
+          <div class="aniStatus name">
+           <span class="titleNoBlock">Status:</span>
+            <span class="value">Complete</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt10233448/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+<script>
+const menuButton = document.getElementById('menu-button');
+const sidebarNav = document.getElementById('sidebar-nav');
+const infoContainer = document.querySelector('.infoContainerTextContainer');
+const infoBackTitleContainer = document.querySelector('.infoBackTitleContainer');
+
+menuButton.addEventListener('click', () => {
+  sidebarNav.classList.toggle('open');
+  menuButton.classList.toggle('menu-button-open');
+
+  // Toggle the sidebar-open class on the body
+  document.body.classList.toggle('sidebar-open');
+
+  // Toggle the sidebar-nav-open class on the infoContainer and infoBackTitleContainer
+  infoContainer.classList.toggle('sidebar-nav-open');
+  infoBackTitleContainer.classList.toggle('sidebar-nav-open');
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox").fancybox({
+      openEffect: "elastic",
+      closeEffect: "elastic",
+      helpers: {
+        title: { type: "float" }
+      }
+    });
+  });
+</script>
+
+ <script src="lib/sortShows.js" defer></script>
+<script src="lib/new add lib/genre-filter.js" defer></script>
+<script src="lib/new add lib/year-filter.js" defer></script>
+<script src="lib/new add lib/age-rating-filter.js" defer></script>
+<script src="lib/new add lib/rating-filter.js" defer></script>
+<script src="lib/new add lib/combined-filters.js" defer></script>
+<script src="lib/Iframe tv shows.js" defer></script>
+<script src="lib/tv show names.js" defer></script>
+<script src="lib/new add lib/reset-filters-combined.js" defer></script>
+
+
+       <!-- Add the no-results-message element -->
+<div id="no-results-message" style="display: none;"></div>
+
+  </body>
+  <!-- Modal -->
+<div id="modal" class="modal">
+  <div id="modal-content" class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modal-video"></div>
+  </div>
+</div>
+</html>

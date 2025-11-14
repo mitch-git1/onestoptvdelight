@@ -1,0 +1,781 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" type="image/x-icon" href="images\tv and movie lists\icon.png">.
+    <title>Top 10 picked Movies this month</title>
+    <script type="text/javascript" src="./lib/jquery.js"></script>
+    <link rel="stylesheet" href="./lib/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="./lib/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="./lib/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="./lib/deadsix.js"></script>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" type="text/css" href="lib/style sheets/top 10 style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    startUP();
+  });
+  $(window).on('hashchange', function () {
+    checkHash();
+  });
+</script>
+<link rel="stylesheet" href="lib/media queries stylesheets/media queries movies.css">
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="largeContainer">
+      <div class="infoContainer">
+        <div class="homepage-link-container">
+           <!-- add home button -->
+       <a href="https://www.onestoptvdelight.co.za/index.html" class="homepage-link">Home Button</a>
+         </div>
+        <div class="infoBackTitleContainer">
+          <span class="infoBackTitle">Top 10 Picked</span>
+          <hr class="subTitleSeprator" />
+          <span class="infoBackTitleSub">Movies This Month</span>
+        </div>
+        <div class="infoContainerTextContainer">
+          <div class="name">
+            <span class="titleNoBlock">Total Movies:</span>
+            <span>10</span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Full List Movies</span>
+            <span><a href="https://www.onestoptvdelight.co.za/full list movies.html"target="_blank" class="top10-link"><i class="fa-solid fa-film" style="color: #74C0FC;"></i> Full List Movies</a></span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Newly Added Movies</span>
+            <span><a href="https://www.onestoptvdelight.co.za/newly added movies.html"target="_blank" class="top10-link"><i class="fa-solid fa-film" style="color: #74C0FC;"></i> Newly Added Movies</a></span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">This list is the top 10 picked this month</span>
+          </div>
+          </div>
+         </div> 
+        <div id="searchContainer">
+        <input type="text" autocomplete="off" onfocus="this.value=''; searchOnPage('');"
+        onblur="if(this.value==''){this.value='Search TV Show Name'};"
+        onkeyup="searchOnPage(this.value.toLowerCase());"
+        id="search_box" value="Search TV Show Name" />
+        <input type="submit" id="search_button" value="Search" />
+        <div id="search_result"></div>
+        </div>
+        <div class="dropdown-container">
+         <div id="genre-select-container">
+         <label for="genre-select" class="genre-label">Search By Genre:</label>
+         <select id="genre-select">
+         <option value="all">All</option>
+         </select>
+         </div>
+         <div id="date-select-container">
+           <label for="date-select" class="date-label">Search By Year:</label>
+           <select id="date-select">
+             <option value="all">All</option>
+           </select>
+         </div>
+         <div id="age-rating-select-container">
+         <label for="age-rating-select" class="age-rating-label">Search By Age Rating:</label>
+         <select id="age-rating-select">
+         <option value="all">All</option>
+        </select>
+        </div>
+        <div id="rating-select-container">
+        <label for="rating-select" class="rating-label">Search By Rating:</label>
+        <select id="rating-select">
+        <option value="all">All</option>
+        </select>
+        </div>
+        <button id="reset-filters-button" class="reset-filters">Reset Filters</button>
+        </div>
+       <div id="no-results-message" class="no-results-message"></div>
+
+      <div id="movie_1" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="1">
+          <div class="fanArt" id="fanart_1">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Bad%20Boys%20-%20Ride%20or%20Die%20%282024%29%201080p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="1" id="plot_1_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="1" id="plot_1">
+          <span class="value">After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.</span>
+        </div>
+        <span class="showId">#1</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="1">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Bad%20Boys%20-%20Ride%20or%20Die%20%282024%29%201080p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+         <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Bad Boys: Ride or Die</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2024</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.5 Based on (106K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Action, Crime, Thriller, Comedy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Westbrook / Columbia Pictures / Don Simpson / Jerry Bruckheimer Films / 2.0 Entertainment</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">George Gallo<br /> Chris Bremner<br /> Will Beall</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Adil El Arbi<br /> Bilall Fallah</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=hRFY_Fesa9Q"target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Rated:R</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt4919268/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_2" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="2">
+          <div class="fanArt" id="fanart_2">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Blue%20Beetle%20%282023%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="2" id="plot_2_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="2" id="plot_2">
+          <span class="value">Recent college grad Jaime Reyes returns home full of aspirations for his future, only to find that home is not quite as he left it. As he searches to find his purpose in the world, fate intervenes when Jaime unexpectedly finds himself in possession of an ancient relic of alien biotechnology: the Scarab.</span>
+        </div>
+        <span class="showId">#2</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="2">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Blue%20Beetle%20%282023%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Blue Beetle</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2023</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.9 Based on (112K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Action, Science Fiction, Adventure</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Warner Bros. Pictures / The Safran Company / DC Films</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Gareth Dunnet-Alcocer</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">&Aacute;ngel Manuel Soto</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=vS3_72Gb-bI"target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt9362930/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+      <div id="movie_3" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="3">
+          <div class="fanArt" id="fanart_3">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Captain%20America%20-%20Civil%20War%20%282016%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="3" id="plot_3_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="3" id="plot_3">
+          <span class="value">Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.</span>
+        </div>
+        <span class="showId">#3</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="3">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Captain%20America%20-%20Civil%20War%20%282016%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Captain America: Civil War</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2016</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.8 Based on (903K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Adventure, Action, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Marvel Studios</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Christopher Markus<br /> Stephen McFeely<br /> Joe Simon<br /> Jack Kirby</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Anthony Russo<br /> Joe Russo</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href=""target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt3498820/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_4" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="4">
+          <div class="fanArt" id="fanart_4">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Captain%20America%20-%20The%20First%20Avenger%20%282011%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="4" id="plot_4_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="4" id="plot_4">
+          <span class="value">During World War II, Steve Rogers is a sickly man from Brooklyn who's transformed into super-soldier Captain America to aid in the war effort. Rogers must stop the Red Skull &ndash; Adolf Hitler's ruthless head of weaponry, and the leader of an organization that intends to use a mysterious device of untold powers for world domination.</span>
+        </div>
+        <span class="showId">#4</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="4">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Captain%20America%20-%20The%20First%20Avenger%20%282011%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Captain America: The First Avenger</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2011</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.9 Based on (946K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Action, Adventure, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Marvel Studios / Marvel Entertainment</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Stephen McFeely<br /> Christopher Markus<br /> Jack Kirby<br /> Joe Simon</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Joe Johnston</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href=""target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt0458339/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_5" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="5">
+          <div class="fanArt" id="fanart_5">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Captain%20America%20-%20The%20Winter%20Soldier%20%282014%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="5" id="plot_5_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="5" id="plot_5">
+          <span class="value">After the cataclysmic events in New York with The Avengers, Steve Rogers, aka Captain America is living quietly in Washington, D.C. and trying to adjust to the modern world. But when a S.H.I.E.L.D. colleague comes under attack, Steve becomes embroiled in a web of intrigue that threatens to put the world at risk. Joining forces with the Black Widow, Captain America struggles to expose the ever-widening conspiracy while fighting off professional assassins sent to silence him at every turn. When the full scope of the villainous plot is revealed, Captain America and the Black Widow enlist the help of a new ally, the Falcon. However, they soon find themselves up against an unexpected and formidable enemy&mdash;the Winter Soldier.</span>
+        </div>
+        <span class="showId">#5</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="5">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Captain%20America%20-%20The%20Winter%20Soldier%20%282014%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Captain America: The Winter Soldier</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2014</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.7 Based on (949K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Action, Adventure, Science Fiction</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Marvel Studios</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Stephen McFeely<br /> Christopher Markus<br /> Joe Simon<br /> Jack Kirby</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Anthony Russo<br /> Joe Russo</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href=""target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt1843866/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_6" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="6">
+          <div class="fanArt" id="fanart_6">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Daredevil%20-%20Director%27s%20Cut%20%282003%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="6" id="plot_6_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="6" id="plot_6">
+          <span class="value">A man blinded in a childhood accident fights crime using his superhumanly-elevated remaining senses.</span>
+        </div>
+        <span class="showId">#6</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="6">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Daredevil%20-%20Director%27s%20Cut%20%282003%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Daredevil</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2003</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.3 Based on (238K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Fantasy, Action</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Marvel Enterprises / New Regency Pictures / Epsilon Motion Pictures / Regency Enterprises / 20th Century Fox</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Mark Steven Johnson<br /> Frank Miller</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Mark Steven Johnson</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=muPX9Oi7-EE"target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt0287978/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_7" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="7">
+          <div class="fanArt" id="fanart_7">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/The%20Fall%20Guy%20%282024%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="7" id="plot_7_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="7" id="plot_7">
+          <span class="value">Fresh off an almost career-ending accident, stuntman Colt Seavers has to track down a missing movie star, solve a conspiracy and try to win back the love of his life while still doing his day job.</span>
+        </div>
+        <span class="showId">#7</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="7">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/The%20Fall%20Guy%20%282024%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">The Fall Guy</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2024</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>6.8 Based on (235K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Action, Comedy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">87North Productions / Entertainment 360 / Universal Pictures</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Drew Pearce<br /> Glen A. Larson</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">David Leitch</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=j7jPnwVGdZ8"target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt1684562/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_8" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="8">
+          <div class="fanArt" id="fanart_8">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Five%20Nights%20at%20Freddy%27s%20%282023%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="8" id="plot_8_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="8" id="plot_8">
+          <span class="value">Recently fired and desperate for work, a troubled young man named Mike agrees to take a position as a night security guard at an abandoned theme restaurant: Freddy Fazbear's Pizzeria. But he soon discovers that nothing at Freddy's is what it seems.</span>
+        </div>
+        <span class="showId">#8</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="8">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Five%20Nights%20at%20Freddy%27s%20%282023%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Five Nights at Freddy's</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2023</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.4 Based on (120K) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Horror, Mystery</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Blumhouse Productions / Scott Cawthon Productions</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Scott Cawthon<br /> Emma Tammi<br /> Seth Cuddeback<br /> Chris Lee Hill<br /> Tyler MacIntyre</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Emma Tammi</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=0VH9WCFV6XQ"target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:13</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt4589218/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_9" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="9">
+          <div class="fanArt" id="fanart_9">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Katt%20Williams%20-%20Woke%20Foke%20%282024%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="9" id="plot_9_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="9" id="plot_9">
+          <span class="value">Comedian Katt Williams lets loose in real time as he hits the stage for Netflix's second livestreamed stand-up event.</span>
+        </div>
+        <span class="showId">#9</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="9">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Katt%20Williams%20-%20Woke%20Foke%20%282024%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Katt Williams: Woke Foke</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2024</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>5.3 Based on (1110) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Comedy</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value"></span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Katt Williams</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value"></span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=TozX3UUPVt4"target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Rated:R</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt32046453/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_10" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="10">
+          <div class="fanArt" id="fanart_10">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Mixtape%20%282022%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="10" id="plot_10_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="10" id="plot_10">
+          <span class="value">Mixtapes have an out-sized role in the emergence of hip hop around the world. Before radio play, the internet, and social media, there were mixtapes. No matter where you lived, you could pop a cassette into a tape deck, and be transported to a party halfway around the world. DJs were taste makers, trendsetters and creators of the sound that became the biggest musical genre on the planet. A meteoric rise for an art form not yet 50 years old. The importance of mixtapes goes well beyond the tapes themselves. Mixtapes were a form of currency. A signifier that you were In-The-Know and had your ear to the streets. A skeleton key to the underground. The culture was too strong to be stopped, and the artists were too talented to be ignored - so they turned the sub-culture into the mainstream, and made hip hop what it is today.</span>
+        </div>
+        <span class="showId">#10</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="10">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Mixtape%20%282022%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Mixtape</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2022</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value"><span class="star">&#9733;</span>7.0 Based on (137) Votes</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Documentary</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Mercury Studios / Saboteur Media / Def Jam Recordings / MTV Documentary Films</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Daniel Seliger<br /> Omar Acosta</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Omar Acosta</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.imdb.com/video/vi3450849049/?"target="_blank" data-movie-name="Movie Name" class="trailer-link"><i class="fa-brands fa-youtube" style="color: #d40d0d;"></i> Trailer</a></span>
+          </div>
+          <div class="aniAgeRating name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">TV:Rated:R</span>
+          </div>
+          <div class="aniIMBDReviews name">
+           <span class="titleNoBlock">User Reviews:</span>
+            <span class="value"><a href="https://www.imdb.com/title/tt9818384/reviews/"target="_blank" class="reviews-link"><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i> Reviews</a></span>
+          </div>
+         </div>      
+        <div class="qBar"></div>
+      </div>
+	  
+<script>
+const menuButton = document.getElementById('menu-button');
+const sidebarNav = document.getElementById('sidebar-nav');
+const infoContainer = document.querySelector('.infoContainerTextContainer');
+const infoBackTitleContainer = document.querySelector('.infoBackTitleContainer');
+
+menuButton.addEventListener('click', () => {
+  sidebarNav.classList.toggle('open');
+  menuButton.classList.toggle('menu-button-open');
+
+  // Toggle the sidebar-open class on the body
+  document.body.classList.toggle('sidebar-open');
+
+  // Toggle the sidebar-nav-open class on the infoContainer and infoBackTitleContainer
+  infoContainer.classList.toggle('sidebar-nav-open');
+  infoBackTitleContainer.classList.toggle('sidebar-nav-open');
+});
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox").fancybox({
+      openEffect: "elastic",
+      closeEffect: "elastic",
+      helpers: {
+        title: { type: "float" }
+      }
+    });
+  });
+</script>
+
+<script src="lib/sortMovies.js"> defer></script>
+<script src="lib/new add lib/genre-filter.js" defer></script>
+<script src="lib/new add lib/year-filter.js" defer></script>
+<script src="lib/new add lib/age-rating-filter.js" defer></script>
+<script src="lib/new add lib/rating-filter.js" defer></script>
+<script src="lib/new add lib/combined-filters.js" defer></script>
+<script src="lib/Iframe movies.js"> defer></script>
+<script src="lib/movie names.js"> defer></script>
+<script src="lib/new add lib/reset-filters-combined.js" defer></script>
+
+
+       <!-- Add the no-results-message element -->
+<div id="no-results-message" style="display: none;"></div>
+
+  </body>
+  <!-- Modal -->
+<div id="modal" class="modal">
+  <div id="modal-content" class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modal-video"></div>
+  </div>
+</div>
+</html>

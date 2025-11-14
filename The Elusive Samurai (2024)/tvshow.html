@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Elusive Samurai
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Elusive Samurai</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Elusive%20Samurai%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Elusive%20Samurai%20-%20S01E01%20-%20May%2022nd-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - May 22nd
+          </div>
+          <div class="plot">The year is 1333, Kamakura. Tokiyuki Hojo, the rightful heir to the regent who rules the Kamakura shogunate, is a kind boy with a heart of gold who dislikes conflict &ndash; even though he&rsquo;s the son of a warrior.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Elusive%20Samurai%20-%20S01E02%20-%20The%20Gentle%20Uncle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Gentle Uncle
+          </div>
+          <div class="plot">Takauji Ashikaga, once considered the guardian of the Kamakura shogunate, stages a rebellion that led to its quick destruction. Tokiyuki&rsquo;s older brother, Kunitoki, successfully evades the eyes of the warriors loyal to Takauji, and he is placed under the care of their uncle, Muneshige Godaiin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Elusive%20Samurai%20-%20S01E03%20-%20A%20Forest%20Inhabited%20by%20a%20God-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - A Forest Inhabited by a God
+          </div>
+          <div class="plot">Tokiyuki risks his life and wins a game of tag, defeating the enemy who betrayed his brother. As soon as he arrives in Suwa, Yorishige urges him to begin his lessons and training to take back Kamakura.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Elusive%20Samurai%20-%20S01E04%20-%20Sadamune%20Appears%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Sadamune Appears!
+          </div>
+          <div class="plot">Tokiyuki spends his days undergoing strenuous training to perfect his sword techniques &ndash; something he&rsquo;s told to do to take back Kamakura for himself. However, everyone was surprised by how weak his swordsmanship was. It turns out that Tokiyuki was much better with another weapon: the bow.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Elusive%20Samurai%20-%20S01E05%20-%20Settling%20the%20Score%21%20A%20Dog-Shooting%20Competition%2C%20and%20Then%E2%80%A6-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Settling the Score! A Dog-Shooting Competition, and Then&hellip;
+          </div>
+          <div class="plot">Tokiyuki faces off against Sadamune in a dog-shooting competition, even though his opponent excels with the bow and possesses an almost prodigy-like eye for detail. With a large lead in points, Tokiyuki faces defeat as he gets hit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Elusive%20Samurai%20-%20S01E06%20-%20Steal%20the%20Imperial%20Command%20from%20Ogasawara%27s%20Residence%20at%20Night-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Steal the Imperial Command from Ogasawara's Residence at Night
+          </div>
+          <div class="plot">Tokiyuki and Genba sneak into the Ogasawara's residence and successfully infiltrate the warehouse where the Emperor&rsquo;s Imperial Command is kept. However, Sadamune&rsquo;s subordinate, Sukefusa Ichikawa, catches on and hears what these two are doing&hellip;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Elusive%20Samurai%20-%20S01E07%20-%20Children%20in%20Winter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Children in Winter
+          </div>
+          <div class="plot">Tokiyuki reigns in the new year for the first time in Suwa. As the chaos from the downfall lulls throughout the country, skirmishes still break out here and there, and another crisis knocks on Suwa&rsquo;s doors.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Elusive%20Samurai%20-%20S01E08%20-%20A%20War%20of%20Hide%20and%20Seek-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - A War of Hide and Seek
+          </div>
+          <div class="plot">The Elusive Warriors make their way to Nakayama Manor in the northern extremities of Suwa. There, Tokiyuki meets a young boy named Fubuki.
+
+In a village where Ogasawara and his forces killed all the grown-ups, Fubuki took charge and continually looked after all the children who were left in the aftermath.
+
+The warriors join forces with Fubuki, who&rsquo;s familiar with military strategies, and go on a mission to meet the enemy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Elusive%20Samurai%20-%20S01E09%20-%20My%20Buddha-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - My Buddha
+          </div>
+          <div class="plot">The Elusive Warriors engage in a fierce battle with the Seigi Party, a group spearheaded by Shokan himself. Stuck in a small chamber and faced with opponents wearing armor, Tokiyuki uses the &ldquo;escape&rdquo; technique he learned from Fubuki to face off against General Shokan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Elusive%20Samurai%20-%20S01E10%20-%20A%20Perverted%20Kid%20and%20Disturbances%20of%20Holy%20Power-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - A Perverted Kid and Disturbances of Holy Power
+          </div>
+          <div class="plot">Yorishige tells Tokiyuki there are times when he cannot see the future; as some people have come to rely on Yorishige's reputation and power as a god, he cannot reveal this shortcoming to anyone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Elusive%20Samurai%20-%20S01E11%20-%20Samurais%20Who%20Are%20Eager%20to%20Die%20%26%20An%20Elusive%20Samurai-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Samurais Who Are Eager to Die &amp; An Elusive Samurai
+          </div>
+          <div class="plot">The imperial court assigns a new provincial official for Shinano: Shinanonokami Kiyohara. Kiyohara did not hesitate to wield his power over people. He was considered a corrupt provincial official who made the people living in his territory suffer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Elusive%20Samurai%20-%20S01E12%20-%20Hang%20in%20There%2C%20Tokiyuki%2C%20Until%20the%20Day%20You%20Retake%20Kamakura-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Hang in There, Tokiyuki, Until the Day You Retake Kamakura
+          </div>
+          <div class="plot">Hoshina and his army decide to retreat from Kawanakajima after hearing what Tokiyuki and Saemontaro Shinomiya, a Suwa Sect warrior, had to say. But Kiyohara is evil and crafty &ndash; he won&rsquo;t let this slide without a fight.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - No Longer Allowed in Another World
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">No Longer Allowed in Another World</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/No%20Longer%20Allowed%20in%20Another%20World%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Longer%20Allowed%20in%20Another%20World%20-%20S01E01%20-%20I%20Must%20Commit%20Double-Suicide%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - I Must Commit Double-Suicide!
+          </div>
+          <div class="plot">Sensei, a depressed writer, fails to commit double-suicide when he is instead hit by a random truck. He wakes up in another world, where he refuses to obey the trope and become a hero. Will he find another way to die or a reason to live?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Longer%20Allowed%20in%20Another%20World%20-%20S01E02%20-%20Shall%20I%20Tell%20You%20How%20It%20Feels%20to%20Sleep%20in%20a%20Coffin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Shall I Tell You How It Feels to Sleep in a Coffin?
+          </div>
+          <div class="plot">The group arrives in the next town. During an audience with the king, Sensei is asked to decide on the future husband of the princess. That night, he meets with the princess and has a serious conversation with her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Longer%20Allowed%20in%20Another%20World%20-%20S01E03%20-%20I%27m%20Always%20Ready%20to%20Die-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - I'm Always Ready to Die
+          </div>
+          <div class="plot">Sensei, Annette, and Tama move on to the next city. Along the way, they meet a girl who can speak with dragons and harbors a great grudge against world-changers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Longer%20Allowed%20in%20Another%20World%20-%20S01E04%20-%20Don%27t%20Kill%20Yourself-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Don't Kill Yourself
+          </div>
+          <div class="plot">Suzuki tyrannizes the residents of Vale. Sensei finds his personality development extremely fascinating and decides to write a novel about him. For this purpose, he goes to Suzuki's new castle with Ysha.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Longer%20Allowed%20in%20Another%20World%20-%20S01E05%20-%20I%20Am%20Someone%20Who%20Wishes%20to%20Die%2C%20Not%20a%20Corpse%20That%27s%20Already%20Dead-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - I Am Someone Who Wishes to Die, Not a Corpse That's Already Dead
+          </div>
+          <div class="plot">Sensei and the others are tricked by a boy in a small village who promises to provide them with a hero for their journey but simply runs off with the money. They later learn from the innkeeper that this boy hasn't had an easy life either.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Longer%20Allowed%20in%20Another%20World%20-%20S01E06%20-%20Someone%20Who%20Wants%20to%20Be%20Eaten%20Has%20Come%20to%20the%20Castle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Someone Who Wants to Be Eaten Has Come to the Castle
+          </div>
+          <div class="plot">The group is arrested and imprisoned by soldiers in Tama's homeland&mdash;only Tama is taken to a different location. Then, they learn about her tragic past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Longer%20Allowed%20in%20Another%20World%20-%20S01E07%20-%20Will%20You%20Sentence%20Me%20to%20Death%20Again-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Will You Sentence Me to Death Again?
+          </div>
+          <div class="plot">Sensei's plan to be eaten gets them into the castle, much to everyone else's surprise, but but Sensei seeks out the queen's room instead of going straight to Tama. What story will he find... and is it worthy of being told?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Longer%20Allowed%20in%20Another%20World%20-%20S01E08%20-%20This%20Hole%20Stinks%20of%20Immorality-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - This Hole Stinks of Immorality
+          </div>
+          <div class="plot">The team visits the famous World Tree, a place of peace and nature... or so it should be. Instead they find a depraved den of Other Worlders, a righteous &quot;hero&quot;, and a mysterious dancer. Worst of all, Sensei is missing something VERY important.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Longer%20Allowed%20in%20Another%20World%20-%20S01E09%20-%20Turn%20Me%20Into%20a%20Lump%20of%20Ash-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Turn Me Into a Lump of Ash
+          </div>
+          <div class="plot">Continuing into the desert, Sensei discovers at least two new ways to die... but alas, his plan is thwarted by Other Worlds bikers, a mysterious wolf, and Nir's untold secrets.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Longer%20Allowed%20in%20Another%20World%20-%20S01E10%20-%20Reflect%20on%20Your%20Failure%20to%20Kill%20Me%20Properly-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Reflect on Your Failure to Kill Me Properly
+          </div>
+          <div class="plot">Sensei's party is drawn into a war between the church, the dwarves, and the Fallen Angel of Misery. They are fortunate to have the great wizard Wolff on their side until a young woman shows up...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Longer%20Allowed%20in%20Another%20World%20-%20S01E11%20-%20I%20Cannot%20Die%20Until%20I%27ve%20Finished%20Writing%20Your%20Story-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - I Cannot Die Until I've Finished Writing Your Story
+          </div>
+          <div class="plot">Sensei's party is forced to continue fighting as the Fallen Angel of Greed exercises her power. Like all Other Worlders, this angel has a backstory, but is it good enough to interest Sensei? And where is Sensei anyway?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/No%20Longer%20Allowed%20in%20Another%20World%20-%20S01E12%20-%20Now%20I%20Really%20Want%20to%20Die-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Now I Really Want to Die
+          </div>
+          <div class="plot">The others chase after Sensei who sets off directly to the Land of the Fairies in his coffin car. But whoever wants to go there must first pass a test.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

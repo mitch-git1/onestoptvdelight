@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - N&eacute;ro the Assassin
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">N&eacute;ro the Assassin</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/N%C3%A9ro%20the%20Assassin%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/N%C3%A9ro%20the%20Assassin%20-%20S01E01%20-%20The%20Assassin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Assassin
+          </div>
+          <div class="plot">When N&eacute;ro is betrayed by his ruthless master to a mysterious witch, the assassin must reunite with Perla, the long-lost daughter he abandoned at birth.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/N%C3%A9ro%20the%20Assassin%20-%20S01E02%20-%20The%20Witch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Witch
+          </div>
+          <div class="plot">The convoy starts its journey to S&eacute;gur with Rochemort's killers in relentless pursuit. Confronted with enemies, N&eacute;ro makes a seemingly ruthless choice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/N%C3%A9ro%20the%20Assassin%20-%20S01E03%20-%20The%20Princess-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Princess
+          </div>
+          <div class="plot">The group faces the wrath of the penitents. Rochemort tries to improve his standing with the prince. On the road, N&eacute;ro begins to show troubling symptoms.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/N%C3%A9ro%20the%20Assassin%20-%20S01E04%20-%20The%20Inquisitor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Inquisitor
+          </div>
+          <div class="plot">Having reached Havreval, the group wrestles with uneasy questions about their hosts. An unexpected reappearance forces Rochemort to take bloody action.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/N%C3%A9ro%20the%20Assassin%20-%20S01E05%20-%20The%20Villain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Villain
+          </div>
+          <div class="plot">N&eacute;ro reckons with an old friend and his past. Rochemort faces serious allegations, but the approach of the penitents could shift loyalties for everyone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/N%C3%A9ro%20the%20Assassin%20-%20S01E06%20-%20The%20Monk-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Monk
+          </div>
+          <div class="plot">With a new handmaid at her side, Hortense reveals her ruthless streak. N&eacute;ro tracks down Horace and an enfeebled Azel, in dire need of water.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/N%C3%A9ro%20the%20Assassin%20-%20S01E07%20-%20The%20Archbishop-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Archbishop
+          </div>
+          <div class="plot">In possession of the Witch's stone, Horace enters the citadel. Perla confesses to the prince and, despite warnings, N&eacute;ro lingers in the underworld.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/N%C3%A9ro%20the%20Assassin%20-%20S01E08%20-%20The%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Girl
+          </div>
+          <div class="plot">As the group hides out in the maze-like slums, Perla contemplates her role in the prophecy while N&eacute;ro devises a last-ditch plan to keep her safe.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

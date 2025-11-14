@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Cautious Hero: The Hero Is Overpowered but Overly Cautious
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Cautious Hero: The Hero Is Overpowered but Overly Cautious</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20%282019%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20-%20S01E01%20-%20This%20Hero%20is%20Too%20Cautious-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - This Hero is Too Cautious
+          </div>
+          <div class="plot">A goddess named Ristarte is given the task of saving a world with an S-ranked difficulty level. She summons her champion, a man named Seiya, whose abilities are off the charts, but whose overly-cautious personality may give her second thoughts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20-%20S01E02%20-%20Too%20Much%20For%20a%20Novice%20Goddess%20to%20Bear-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Too Much For a Novice Goddess to Bear
+          </div>
+          <div class="plot">Chaos Machina proves too much for Seiya and Rista, and they retreat back to the Unified Divine Realm. However, when Machina takes the entire town hostage, the pressure is on to come up with a way to stop her before more people get hurt.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20-%20S01E03%20-%20This%20Hero%20Is%20Too%20Self-Serving-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - This Hero Is Too Self-Serving
+          </div>
+          <div class="plot">After Rista and Seiya retreat once again to the Divine Realm, Aria proposes that Seiya train under the tutelage of one of the Gods there. A looming crisis on Gaeabrande compels the pair to return, and seek out companions to aid them in their quest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20-%20S01E04%20-%20I%20So%20Don%27t%20Need%20Any%20Allies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - I So Don't Need Any Allies
+          </div>
+          <div class="plot">With a massive undead army approaching, Seiya dismisses any assistance from Mash, who does not take kindly to the snub. However, when Mash later turns up missing, it is up to Seiya and the others to rescue him from the enemy's clutches.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20-%20S01E05%20-%20This%20Goddess%20Is%20Too%20Spooky-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - This Goddess Is Too Spooky
+          </div>
+          <div class="plot">Following Mash's recovery, Seiya agrees to allow him and Elulu join them on the adventure, but insists that they receive more training first. The pair offer to lead the party to a cave called the Dragons' Den, said to contain an ultimate weapon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20-%20S01E06%20-%20The%20Great%20Dragon%20Mother%20Is%20Too%20Sneaky-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Great Dragon Mother Is Too Sneaky
+          </div>
+          <div class="plot">Elulu and the others are stunned that she is supposed to offer her life to become the ultimate weapon for defeating the Dragon Lord. The party reluctantly agree to go through with the ceremony, but trouble erupts when they have second thoughts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20-%20S01E07%20-%20This%20Lady%20Knight%20Is%20Too%20Doglike-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - This Lady Knight Is Too Doglike
+          </div>
+          <div class="plot">A delegation of Roseguard Imperial Knights summons Seiya and the others to a nearby fortress, where a wing of demon houseflies is attacking from the air. Seiya offers his help, but when he butts heads with the knights' leader, things turn ugly.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20-%20S01E08%20-%20Neat%20and%20Tidy%20but%20Overly%20Nymphomaniacal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Neat and Tidy but Overly Nymphomaniacal
+          </div>
+          <div class="plot">Mash and Elulu demonstrate some new skills they picked up, and Aria is horrified to learn that Seiya is training with Mitis. Back on Gaeabrande, Rosalie has gone off to challenge the flies alone, and Seiya and company must go to her rescue.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20-%20S01E09%20-%20This%20Reaper%20Is%20Just%20Too%20Invincible-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - This Reaper Is Just Too Invincible
+          </div>
+          <div class="plot">Kilkapul summons a nightmarish reaper to eliminate Seiya and the others, and not even retreating to the Divine Realm is enough to stop its advance. After Mash and Elulu improve their skills, Rista resolves to step up her own game, as well.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20-%20S01E10%20-%20This%20Man%20Is%20Too%20Strong%20for%20Being%20So%20Old-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - This Man Is Too Strong for Being So Old
+          </div>
+          <div class="plot">With the last Heavenly King defeated, Rista, Mash and Elulu want to take some time to enjoy themselves, but Seiya has other ideas. After recovering, the Warmaster receives Seiya and company in the castle. Rosalie requests a favor of Seiya.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20-%20S01E11%20-%20The%20Truth%20Is%20Too%20Much%20to%20Bear-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Truth Is Too Much to Bear
+          </div>
+          <div class="plot">Rista, Mash and Elulu enjoy their day of shopping and strolling around town, but when Seiya fails to meet up with them later, they begin to worry. When Rista turns to Ishtar for help locating Seiya, she is met with a surprising revelation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Cautious%20Hero%20The%20Hero%20Is%20Overpowered%20but%20Overly%20Cautious%20-%20S01E12%20-%20The%20Hero%20Is%20Overpowered%20But%20Overly%20Cautious-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Hero Is Overpowered But Overly Cautious
+          </div>
+          <div class="plot">In violation of Divine Realm law, Rista opens a portal directly to the location of the final boss fight, where Seiya and the Demon Lord are locked in mortal combat. Seiya resolves himself to make the ultimate sacrifice to defeat the Demon Lord.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

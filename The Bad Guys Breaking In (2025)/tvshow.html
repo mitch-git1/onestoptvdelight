@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Bad Guys: Breaking In
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Bad Guys: Breaking In</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Bad%20Guys%20Breaking%20In%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Bad%20Guys%20Breaking%20In%20-%20S01E01%20-%20Bad%20Beginnings-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Bad Beginnings
+          </div>
+          <div class="plot">Mr. Wolf and his loyal band of thieves set out to make a name for themselves by stealing an iconic painting from the local museum.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Bad%20Guys%20Breaking%20In%20-%20S01E02%20-%20The%20Sweet%2C%20Sweet%20Steal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Sweet, Sweet Steal
+          </div>
+          <div class="plot">Still itching to be recognized for their crimes, the Bad Guys set out to swipe a top-secret recipe from a suspiciously sweet candy maker.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Bad%20Guys%20Breaking%20In%20-%20S01E03%20-%20No%20News%20Is%20Bad%20News-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - No News Is Bad News
+          </div>
+          <div class="plot">Wolf arranges for the team to be interviewed on the news as a way to hype up their heists. But are the Bad Guys really ready for prime time?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Bad%20Guys%20Breaking%20In%20-%20S01E04%20-%20This%20Means%20Chore-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - This Means Chore
+          </div>
+          <div class="plot">Tired of living in a messy lair, Piranha creates a household chore wheel. (Sorry, Mr. Wolf, but planning the perfect heist will have to wait.)
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Bad%20Guys%20Breaking%20In%20-%20S01E05%20-%20The%20Webs%2C%20the%20Wigglesworth%20and%20the%20Wardrobe-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Webs, the Wigglesworth and the Wardrobe
+          </div>
+          <div class="plot">After bungling a heist, Webs is worried the team might want to kick her out &mdash; so she asks a legendary escape artist to teach them all some new tricks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Bad%20Guys%20Breaking%20In%20-%20S01E06%20-%20It%27s%20a%20Hard%20Heist%20Life-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - It's a Hard Heist Life
+          </div>
+          <div class="plot">When an anti-aging cream transforms Snake into an adorable baby, the Bad Guys use his cuteness to try and pull a long con on a childless baron.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Bad%20Guys%20Breaking%20In%20-%20S01E07%20-%20Heist%20on%20the%20Run-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Heist on the Run
+          </div>
+          <div class="plot">The Bad Guys set out to out-heist the infamous Night Owls... but bragging about it online before they've actually succeeded puts them in a tough spot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Bad%20Guys%20Breaking%20In%20-%20S01E08%20-%20Home%20Is%20Where%20the%20Heist%20Is-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Home Is Where the Heist Is
+          </div>
+          <div class="plot">Suspecting Snake is hiding something, the rest of the Bad Guys tail him to a mysterious mansion and find themselves face-to-face with a legendary thief.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Bad%20Guys%20Breaking%20In%20-%20S01E09%20-%20Crime%20After%20Crime-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Crime After Crime
+          </div>
+          <div class="plot">The Bad Guys discover Wolf's dearly departed mentor left him an inheritance. But to get it, the gang will have to pull off five heists in just one night!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

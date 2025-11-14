@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Inside Job
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Inside Job</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Inside%20Job%20%282021%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E01%20-%20Unpresidented-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Unpresidented
+          </div>
+          <div class="plot">As Reagan prepares to replace the president with a robot, she finds her hard-earned promotion threatened by a clueless but likeable new colleague.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E02%20-%20Clone%20Gunman-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Clone Gunman
+          </div>
+          <div class="plot">When an expensive blunder forces budget cuts at Cognito Inc., J.R orders Reagan and Brett to decide which of their co-workers should be fired.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E03%20-%20Blue%20Bloods-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Blue Bloods
+          </div>
+          <div class="plot">After a lizard people-related PR disaster, the team must do damage control at the swanky Reptoid Gala, where - to Reagan's dismay - hugs are required.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E04%20-%20Sex%20Machina-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Sex Machina
+          </div>
+          <div class="plot">After Cognito Inc. buys a dating app, Reagan bets her team she can find a boyfriend - and creates a robot version of her perfect match to practice on.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E05%20-%20The%20Brettfast%20Club-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Brettfast Club
+          </div>
+          <div class="plot">Brett hopes to have a blast in the past as the team embarks on a nostalgia-laced mission to a small town that's permanently stuck in the '80s.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E06%20-%20My%20Big%20Flat%20Earth%20Wedding-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - My Big Flat Earth Wedding
+          </div>
+          <div class="plot">Reagan conspires to keep her dad from finding out about her mom's wedding, while J.R. ropes Brett into a personal mission to help offload his mega-yacht.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E07%20-%20Ghost%20Protocol-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Ghost Protocol
+          </div>
+          <div class="plot">Reagan sets up an elaborate plan in motion to ghost a debonair British secret agent who grows too attached after a fling.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E08%20-%20Buzzkill-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Buzzkill
+          </div>
+          <div class="plot">Desperate to get some space from her father, Reagan volunteers for a dangerous mission to the moon to make contact with a rogue colony.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E09%20-%20Mole%20Hunt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Mole Hunt
+          </div>
+          <div class="plot">Exciting changes are afoot at Cognito Inc., but first, Reagan and her team must find the mole behind a security breach that could take down the company.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E10%20-%20Inside%20Reagan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Inside Reagan
+          </div>
+          <div class="plot">To find a forgotten password and save Cognito Inc., Reagan goes deep into her mind and accesses memories from her dysfunctional childhood.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E11%20-%20How%20Reagan%20Got%20Her%20Grove%20Back-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - How Reagan Got Her Grove Back
+          </div>
+          <div class="plot">With Rand back in control of Cognito Inc., Reagan gets revenge &mdash; and has a hookup &mdash; at a Burning Man-style gathering of secret societies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E12%20-%20Whoas-Feratu-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Whoas-Feratu
+          </div>
+          <div class="plot">Tamiko's new beau is a Hollywood A-lister with a taste for blood, but that doesn't stop a jealous Rand from trying to break up the cozy couple.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E13%20-%20Reagan%20%26%20Mychelle%27s%20Hive%20School%20Reunion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Reagan &amp; Mychelle's Hive School Reunion
+          </div>
+          <div class="plot">The Cognito crew plays along with Magic Myc's big lies at a class reunion until he goes too far. Meanwhile, Rand finds a gross &quot;gift&quot; on his desk.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E14%20-%20We%20Found%20Love%20in%20a%20Popeless%20Place-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - We Found Love in a Popeless Place
+          </div>
+          <div class="plot">Reagan has to turn the new, woke pope into a fire-and-brimstone pontiff, so she's off to Italy with a friend &mdash; and a little romance on the side.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E15%20-%20Brettwork-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Brettwork
+          </div>
+          <div class="plot">Brett's an overnight sensation when he sits in as the host of a right-wing TV show, but quickly becomes a political puppet gleefully controlled by Rand.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E16%20-%20Rontagion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Rontagion
+          </div>
+          <div class="plot">Now that she's sleeping with the Illuminati, Reagan decides it's time for the Cognito Inc. gang to meet Ron and persuade him to jump ship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E17%20-%20Project%20Reboot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Project Reboot
+          </div>
+          <div class="plot">Rand unleashes Project Reboot as the Cognito co-workers learn about their alternate lives &mdash; and how a tin foil hat can actually come in handy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Inside%20Job%20-%20S01E18%20-%20Appleton-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Appleton
+          </div>
+          <div class="plot">With Cognito under new leadership, Reagan meets with the Robes who want a partnership, but she needs to make a big decision about her future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

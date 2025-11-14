@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Possibly the Greatest Alchemist of All Time
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Possibly the Greatest Alchemist of All Time</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20-%20S01E01%20-%20I%20Was%20Summoned%20By%20Accident-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - I Was Summoned By Accident
+          </div>
+          <div class="plot">Takumi Iruma is summoned to another world by chance. Since the goddess Nolyn cannot bring him back to his world, he is supposed to live in her fantasy world Mildgard. There, Takumi immediately saves a young girl and is taken to her village.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20-%20S01E02%20-%20To%20a%20New%20Land-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - To a New Land
+          </div>
+          <div class="plot">Maple, the spider monster that Takumi meets in the forest and Tames, possesses the Skill to create Spider Silk, an extreme luxury good! The silk becomes a hit amongst the villagers, and they welcome Takumi and his unique Skills as he grows accustomed to life in the village.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20-%20S01E03%20-%20Contracts%20and%20Oaths-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Contracts and Oaths
+          </div>
+          <div class="plot">In order to create 100 of the toilets equipped with a magic device that Papek begged him for, Takumi visits the Mulan Company to procure help. After requesting &quot;someone to the manage the mansion&quot; and &quot;someone capable of fighting and protecting me&quot;, Takumi meets a beautiful human girl, Maria, and a beautiful elf, Sofia.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20-%20S01E04%20-%20Takumi%20Party%27s%20First%20Battle%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Takumi Party's First Battle!
+          </div>
+          <div class="plot">Takumi informs Maria and Sofia that he'd like to travel, so he registers them both with the Adventurer's Guild and forms an official party. After Takumi sends some of the guild's troublemakers packing, he's approached by the Guild Master and advised to quickly rank up his party, so the three head out together on a Quest to defeat goblins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20-%20S01E05%20-%20Shadow%20of%20Sidonia-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Shadow of Sidonia
+          </div>
+          <div class="plot">Takumi wants to upgrade their gear for their journey, so he seeks out mythril and admantite ores. After consulting with the Adventurer's Guild, he accepts Quests to defeat monsters, gather Treant Wood, and escort a miner to excavate the ores. He plans to set out in three days time with the blacksmith, Dgambo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20-%20S01E06%20-%20A%20Drake%20Horse%20Appears-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - A Drake Horse Appears
+          </div>
+          <div class="plot">Word of Takumi's Purification magic device has reached the Holy Empire of Sidonia, and they demand that the Kingdom of Barcula hand over Takumi, but they refuse.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20-%20S01E07%20-%20The%20Fox-Eared%20Girl%20of%20the%20Royal%20Capital-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Fox-Eared Girl of the Royal Capital
+          </div>
+          <div class="plot">After welcoming the Drake Horse, Camellia, to his party, Takumi redoubles his efforts to build his carriage. Sofia starts to worry as he works with fervor and refuses to rest. The carriage is safely completed and they begin their journey to the Royal Capital with Marquis Godwin on board.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20-%20S01E08%20-%20Let%27s%20Choose%20a%20Party%20Name%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Let's Choose a Party Name!
+          </div>
+          <div class="plot">After welcoming Reyva to their group, they complete the carriage to be offered to the king of Barcula.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20-%20S01E09%20-%20Resolve-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Resolve
+          </div>
+          <div class="plot">Takumi strengthens his defenses by creating a barrier and taming an Iron Golem named Titan, while the Emperor temporarily leaves him alone to focus on summoning heroes, and Nolyn fears the Church of Divine Light may inadvertently manifest an evil goddess.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20-%20S01E10%20-%20Takumi%20Takes%20on%20Pioneering%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Takumi Takes on Pioneering!
+          </div>
+          <div class="plot">Takumi's group challenges the dungeon, Forest of the Beast King, and strengthens their bonds. Around that time Marquis Godwin consults with Takumi, and asks him to help create a pioneer village in the undeveloped lands to the south of his domain in order to secure a place for the refugees from a deserted village nearby.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20-%20S01E11%20-%20Signs%20of%20Turmoil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Signs of Turmoil
+          </div>
+          <div class="plot">M&aacute;ni joins the Wings of Nolyn as they build the fortress town of Wedgefort, which grows more prosperous by the day. However, the Holy Empire of Sidonia activates their Hero Summoning, which causes the mana in the region to fluctuate, increasing the strength of the monsters outside the fortress' ramparts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Possibly%20the%20Greatest%20Alchemist%20of%20All%20Time%20-%20S01E12%20-%20When%20Bonds%20Are%20Tested-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - When Bonds Are Tested
+          </div>
+          <div class="plot">Wedgefort is assaulted by a horde of monsters, and word of the emergency reaches Takumi. The Wings of Nolyn, Lion Fang, and Crimson Rose accept the Quest, and together the three parties fend off the assault, but the knights they fought alongside mention something concerning.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

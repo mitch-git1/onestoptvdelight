@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Chuck
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Chuck</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Chuck%20%282007%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S01E01%20-%20Chuck%20Versus%20the%20Intersect-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Chuck Versus the Intersect
+          </div>
+          <div class="plot">Chuck Bartowski is an average computer geek until files of government secrets are downloaded into his brain. He is soon scouted by the CIA and NSA to act in place of their computer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S01E02%20-%20Chuck%20Versus%20the%20Helicopter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Chuck Versus the Helicopter
+          </div>
+          <div class="plot">As Chuck is beginning to adapt to his new life as a spy, a doctor who could possibly &quot;cure&quot; Chuck is murdered. Chuck then begins a high-speed fight for his life, all while trying to decide which of his two new colleagues might be out to get him. Meanwhile, Chuck's sister Ellie invites Sarah to dinner to meet the family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S01E03%20-%20Chuck%20Versus%20the%20Tango-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Chuck Versus the Tango
+          </div>
+          <div class="plot">Chuck needs the help of Morgan and the Nerd Herd to prove that he is ready to become the store's assistant manager. Sarah and John assign Chuck his first undercover spy mission to foil a terrorism plot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S01E04%20-%20Chuck%20Versus%20the%20Wookiee-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Chuck Versus the Wookiee
+          </div>
+          <div class="plot">Chuck's latest mission has him raiding a Malibu mansion to grab a million dollar diamond being used to fund terrorism. Tagging along is an attractive but less-than-trustworthy DEA agent.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S01E05%20-%20Chuck%20Versus%20the%20Sizzling%20Shrimp-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Chuck Versus the Sizzling Shrimp
+          </div>
+          <div class="plot">After his intuition is wrong while working on a stakeout, Chuck feels morally obligated to make things right, even when both Sarah and Casey refuse to help with Chuck's new mission. Meanwhile, Morgan has to participate in a sales competition that could decide his fate at Buy More.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S01E06%20-%20Chuck%20Versus%20the%20Sandworm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Chuck Versus the Sandworm
+          </div>
+          <div class="plot">In this Halloween episode Chuck meets a Federal agent just like him: A computer whiz whose brain is important to national security. However, Chuck soon has a personal dilemma arise when he has to decide whether or not to turn the man over to Sarah and Casey or to help him escape his handlers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S01E07%20-%20Chuck%20Versus%20the%20Alma%20Mater-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Chuck Versus the Alma Mater
+          </div>
+          <div class="plot">Returning to Stanford, the University that expelled him, Chuck has to help a former professor who is a government agent being hunted for a sensitive top-secret file he has in his possession. At the same time, Chuck learns much about himself and about the death of his friend Bryce Larkin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S01E08%20-%20Chuck%20Versus%20the%20Truth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Chuck Versus the Truth
+          </div>
+          <div class="plot">Chuck must learn to balance a real love life with his cover love life when he meets a charming young woman by the name of Lou. At the same time, his relationship with Sarah gets interesting when the duo must explain their sexual relations with Ellie and Captain Awesome on a double date. Meanwhile, there is trouble when someone is using truth poison in order to retrieve codes for nuclear facilities.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S01E09%20-%20Chuck%20Versus%20the%20Imported%20Hard%20Salami-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Chuck Versus the Imported Hard Salami
+          </div>
+          <div class="plot">Not all of Sarah's feelings for Chuck may have been a cover, as she finds out, when Chuck begins to date Lou, a sandwich maker. When things couldn't get even more complicated, Lou turns out to be part of a smuggling ring.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S01E10%20-%20Chuck%20Versus%20the%20Nemesis-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Chuck Versus the Nemesis
+          </div>
+          <div class="plot">Chuck discovers that his former roommate and old nemesis, Bryce Larkin, is still alive, and that a renegade group within the CIA is after the Intersect. Chuck then has to balance helping Bryce return to the legitimate CIA, with the year's busiest shopping day at the Buy More.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S01E11%20-%20Chuck%20Versus%20the%20Crown%20Vic-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Chuck Versus the Crown Vic
+          </div>
+          <div class="plot">While coping with the realization that Sarah still has feelings for Bryce, Chuck must assume his toughest cover yet by going on a mission as Sarah's husband. The team must foil the plot of a politically connected counterfeiter, who may be endangering the lives of Anna, Morgan and Anna's parents. Both Morgan and Anna also find themselves in the cross hairs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S01E12%20-%20Chuck%20Versus%20the%20Undercover%20Lover-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Chuck Versus the Undercover Lover
+          </div>
+          <div class="plot">The episode begins with a flashback to the year 2004, where John Casey is involved with a female Russian named Ilsa, who claims she is a photo journalist. Later, in present day, Ilsa returns with a fianc&eacute;, named Victor Federov. Things get complicated when it is revealed that Ilsa is a French spy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S01E13%20-%20Chuck%20Versus%20the%20Marlin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Chuck Versus the Marlin
+          </div>
+          <div class="plot">Two new characters are introduced, both of whom want to take the Intersect. One is a beautiful, young female enemy agent that works in the Pita Palace next to the Buy More, and the other is a handsome CIA agent who is posing as an undercover police detective investigating a theft at the Buy More who wants to take Chuck into his custody. The former quickly blows Chuck's cover, while the latter kidnaps him and makes him vanish from his former life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E01%20-%20Chuck%20Versus%20the%20First%20Date-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Chuck Versus the First Date
+          </div>
+          <div class="plot">&quot;Chuck Versus the First Date&quot; is the second season premiere of the action-comedy series Chuck. It first aired on September 29, 2008. Chuck's time as the Intersect is coming to a close as the CIA and NSA have completed construction of the new Intersect.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E02%20-%20Chuck%20Versus%20the%20Seduction-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Chuck Versus the Seduction
+          </div>
+          <div class="plot">Chuck needs to go undercover to seduce a woman named Sasha Banachek, so an old school spy named Roan Montgomery is assigned as his mentor. Meanwhile, Captain Awesome finds himself in need of some relationship advice, and and turns to Morgan, and Lester faces his first problems as assistant manager.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E03%20-%20Chuck%20Versus%20the%20Break-Up-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Chuck Versus the Break-Up
+          </div>
+          <div class="plot">Bryce Larkin returns to town with news about Fulcrum. They have hired a wealthy software magnate named Von Hayes to decrypt information on a stolen chip containing a refresh to the Intersect with highly classified information. Bryce and Sarah have to pose as a married couple at Von Hayes' dining party to steal back the chip, while Chuck has to pose as a waiter. Meanwhile, Morgan has an encounter with the Mighty Jocks at the Buy More.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E04%20-%20Chuck%20Versus%20the%20Cougars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Chuck Versus the Cougars
+          </div>
+          <div class="plot">Chuck goes undercover at Sarah's 10-year High School reunion, where they meet the girl that tortured Sarah back in the old days.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E05%20-%20Chuck%20Versus%20Tom%20Sawyer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Chuck Versus Tom Sawyer
+          </div>
+          <div class="plot">Efficiency expert Emmett Milbarge pays the Buy More a visit to inspect the branch, while a global terrorist looks for Jeff. Chuck needs to socialize with Jeff to find out about his connection to the terrorist. Finally, it all comes down to video games and the prevention of World War III.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E06%20-%20Chuck%20Versus%20the%20Ex-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Chuck Versus the Ex
+          </div>
+          <div class="plot">At a BioScience conference, Chuck runs into Jill, his ex-girlfriend who broke up with him and later dated Bryce Larkin. He flashes on her boss, Guy Lafleur, who is suspected to be working on biochemical weapons. Chuck is ordered to reconnect with Jill in order to gain more information on Lafleur. Meanwhile, Emmett wants the staff to take CPR lessons including a test.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E07%20-%20Chuck%20Versus%20the%20Fat%20Lady-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Chuck Versus the Fat Lady
+          </div>
+          <div class="plot">The team needs to acquire a Fulcrum agent list by solving several riddles left behind by Guy Lafleur. Meanwhile, Emmett tries to find out why Chuck is absent so often and goes after his colleagues to get the information.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E08%20-%20Chuck%20Versus%20the%20Gravitron-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Chuck Versus the Gravitron
+          </div>
+          <div class="plot">After finding out that Jill is a Fulcrum agent, Chuck is ordered to use her to infiltrate Fulcrum. Meanwhile, Ellie is preparing the apartment for Thanksgiving and the arrival of Captain Awesome's parents. Morgan, Jeff and Lester are assigned to guard the store over Thanksgiving.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E09%20-%20Chuck%20Versus%20the%20Sensei-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - Chuck Versus the Sensei
+          </div>
+          <div class="plot">The team is assigned to survey the Global Launch Agency, when intel shows that someone might penetrate their security. During the surveillance someone intrudes the lab who turns out to be Casey's former sensei Ty Bennett. Meanwhile, Captain Awesome's perfect parents decide to pay Devon and Ellie a surprise visit to help them plan the wedding, and Emmett Milbarge introduces an &quot;Employee of the Month&quot; contest to the Buy More, but the employees start their own contest instead.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E10%20-%20Chuck%20Versus%20the%20DeLorean-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Chuck Versus the DeLorean
+          </div>
+          <div class="plot">Sarah's father, a con artist, comes to meet her, revealing that he conned a Saudi Arabian sheik, Rajiv Amad, out of nearly a million dollars. The sheik turns out to be connected to terrorist fundings, so the General wants Sarah and Chuck to gain intel from Sarah's father, but things get complicated when Amad shows up. Anna wants to take her relationship with Morgan a step further and asks him to move in an apartment with her. Devon lends him some money to buy one, but instead, he buys a car.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E11%20-%20Chuck%20Versus%20Santa%20Claus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Chuck Versus Santa Claus
+          </div>
+          <div class="plot">Christmas Eve does not go as planned when an amateur criminal on the run from the police crashes into the Buy More and takes Chuck, Ellie, Awesome and the rest of the Buy More gang hostage. In order to protect Chuck&rsquo;s cover and the safety of the other hostages, Sarah and Casey secretly go in to the store to remove Chuck, but the mission quickly falls apart when Chuck refuses to leave his friends and family behind.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E12%20-%20Chuck%20Versus%20the%20Third%20Dimension-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Chuck Versus the Third Dimension
+          </div>
+          <div class="plot">Chuck foils a plan to kill Tyler Martin, an international rock star. Chuck's night out with Tyler leads to trouble. Morgan holds a contest among his fellow employees.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E13%20-%20Chuck%20Versus%20the%20Suburbs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Chuck Versus the Suburbs
+          </div>
+          <div class="plot">A new mission has Chuck and Sarah posing as a married couple and interacting with some odd neighbors. The Buy More crew help Big Mike out after his wife files for divorce.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E14%20-%20Chuck%20Versus%20the%20Best%20Friend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - Chuck Versus the Best Friend
+          </div>
+          <div class="plot">While helping a depressed Morgan spy on Anna, Chuck flashes on her boyfriend; Jeff and Lester beg Ellie to hire them to play at her wedding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E15%20-%20Chuck%20Versus%20the%20Beefcake-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - Chuck Versus the Beefcake
+          </div>
+          <div class="plot">Chuck gets jealous when Sarah has to seduce a Fulcrum agent. Meanwhile, Jeff and Lester start looking for the &quot;Buy More Babe&quot; as a way of finding a new employee.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E16%20-%20Chuck%20Versus%20the%20Lethal%20Weapon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - Chuck Versus the Lethal Weapon
+          </div>
+          <div class="plot">Chuck, Sarah and Casey learn about a man called &ldquo;Perseus&rdquo; who is behind Fulcrum&rsquo;s plans to build their own Intersect. While Sarah and Casey are sent to find Perseus, Chuck and Agent Cole Barker are forced to stay in a safety bunker. When the mission takes a dangerous turn, their orders to stay out of harm&rsquo;s way go out the window. Meanwhile, Morgan tries to convince Anna that moving in with him would be a bad idea.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E17%20-%20Chuck%20Versus%20the%20Predator-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - Chuck Versus the Predator
+          </div>
+          <div class="plot">Chuck is contacted by the one person that can erase the Intersect from his mind. He starts having trust issues and doesn't know who to lean for help. Meanwhile, Buy More is having problems with the Buy More from Beverly Hills.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E18%20-%20Chuck%20Versus%20the%20Broken%20Heart-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - Chuck Versus the Broken Heart
+          </div>
+          <div class="plot">A female agent is sent to evaluate Sarah's performance, when Chuck's feelings for her are revealed.  Meanwhile, Morgan, Jeff and Lester are trying to get invited to Captain Awesome's bachelor party.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E19%20-%20Chuck%20Versus%20the%20Dream%20Job-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - Chuck Versus the Dream Job
+          </div>
+          <div class="plot">Chuck's life seems to be coming together, his long-absent father has returned and he landed his dream job. Unfortunately for Chuck, neither turns out to be quite what he expected.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E20%20-%20Chuck%20Versus%20the%20First%20Kill-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - Chuck Versus the First Kill
+          </div>
+          <div class="plot">After Chuck's father Steve is kidnapped by Fulcrum, Chuck learns the only chance he has to find him is by putting his trust and life into the hands of the person he trusts the least&mdash;his ex-girlfriend Jill Roberts. Meanwhile, the Buy More team tries to sabotage Emmett&rsquo;s corporate evaluation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E21%20-%20Chuck%20Versus%20the%20Colonel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - Chuck Versus the Colonel
+          </div>
+          <div class="plot">While Chuck and Sarah go on to rescue Steve they realize they have a chemistry together. Meanwhile Morgan becomes a pariah at the Buy More after mistakenly getting Emmett promoted.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S02E22%20-%20Chuck%20Versus%20the%20Ring-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - Chuck Versus the Ring
+          </div>
+          <div class="plot">Ellie's big day finally arrives and Chuck must save her life and her wedding from being ruined by Ted Roark and FULCRUM.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E01%20-%20Chuck%20Versus%20the%20Pink%20Slip-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Chuck Versus the Pink Slip
+          </div>
+          <div class="plot">As the upgraded Intersect, Chuck trains to become a full-fledged spy but hits rock bottom when he flunks out of spy school and loses Sarah in the process. Meanwhile, Morgan comes home from Benihana School to help Chuck get over Sarah.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E02%20-%20Chuck%20Versus%20the%20Three%20Words-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - Chuck Versus the Three Words
+          </div>
+          <div class="plot">Chuck gets a new mission when Sarah's best friend Carina comes through town with her fianc&eacute; Karl. Things get complicated when Chuck wants to hash out his and Sarah's relationship problems while they're on the mission. Meanwhile, Morgan finds himself in trouble when he lies to Jeff and Lester.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E03%20-%20Chuck%20Versus%20the%20Angel%20de%20la%20Muerte-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Chuck Versus the Angel de la Muerte
+          </div>
+          <div class="plot">Chuck must use his relationship with Awesome to protect a visiting dictator, Premier Goya, who is the target of an assassination. While Awesome is excited about the prospect of being a spy, Chuck is more concerned about Awesome and Ellie's safety.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E04%20-%20Chuck%20Versus%20Operation%20Awesome-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - Chuck Versus Operation Awesome
+          </div>
+          <div class="plot">When Awesome is mistaken for a super spy by the evil Sydney Price, Chuck must become his handler and show him the spy ropes. While on a mission for The Ring, they meet the mysterious Daniel Shaw. Meanwhile, Morgan gets promoted to assistant manager and must deal with Jeff and Lester's latest hijinks.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E05%20-%20Chuck%20Versus%20First%20Class-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Chuck Versus First Class
+          </div>
+          <div class="plot">CIA agent Daniel Shaw assigns Chuck to his first solo mission in Paris, ignoring Sarah and Casey&rsquo;s wishes. During the flight to France, Chuck befriends Hannah and flashes on another passenger the imposing Hugo Panzer. Meanwhile, Casey helps Morgan battle Jeff and Lester for control of the Buy More.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E06%20-%20Chuck%20Versus%20the%20Nacho%20Sampler-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Chuck Versus the Nacho Sampler
+          </div>
+          <div class="plot">Chuck juggles his two lives as he trains new Nerd Herder Hannah and gets his very own asset who is caught up with The Ring. Chuck thinks he can handle his asset all on his own but Sarah and Casey feel the need to intercede. Meanwhile, Awesome must lie to Ellie when she starts to ask questions about Chuck and Morgan, Jeff and Lester do some recon work to learn more about Hannah.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E07%20-%20Chuck%20Versus%20the%20Mask-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Chuck Versus the Mask
+          </div>
+          <div class="plot">Chuck and Hannah unexpectedly become part of agent Daniel Shaw's latest mission. Much to Sarah's chagrin, she gets paired with Shaw, who seems to be trying to get close to her. Meanwhile, Morgan and Ellie continue their mission to get to the bottom of Chuck's secretive and strange behavior.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E08%20-%20Chuck%20Versus%20the%20Fake%20Name-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Chuck Versus the Fake Name
+          </div>
+          <div class="plot">&quot;Chuck Versus the Fake Name&quot; is a third-season episode of the television series Chuck. It was the eighth episode of the season, and the first to air after a two-week hiatus for the 2010 Winter Olympics. Chuck must juggle his new relationship with Hannah while at the same time taking on the role of an assassin hired by the Ring.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E09%20-%20Chuck%20Versus%20the%20Beard-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Chuck Versus the Beard
+          </div>
+          <div class="plot">Chuck feels like his life is falling apart when he can't flash and gets left behind for a mission. While Shaw, Sarah and Casey go on without him, Chuck finds himself in a sticky situation back at the base.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E10%20-%20Chuck%20Versus%20the%20Tic%20Tac-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Chuck Versus the Tic Tac
+          </div>
+          <div class="plot">Casey carries out a side mission for his old commanding officer James Keller that leads to him committing treason. When Chuck learns the dark truth about Col. Keller, he and Sarah set out to break Casey out of jail and clear his name. Meanwhile, Awesome's plan to keep Ellie out of danger gets more difficult when she gets her dream fellowship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E11%20-%20Chuck%20Versus%20the%20Final%20Exam-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Chuck Versus the Final Exam
+          </div>
+          <div class="plot">Chuck learns that his latest solo mission will be a final test to see if he is ready to be a spy. Chuck needs to put everything he has learned into action to avoid going back to his old life while Sarah and Shaw observe his every move.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E12%20-%20Chuck%20Versus%20the%20American%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Chuck Versus the American Hero
+          </div>
+          <div class="plot">Chuck has his pick of the best CIA agents for an undercover operation, but he has only one girl in mind for the job, Sarah. Casey, Morgan and Awesome team up to help Chuck win her back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E13%20-%20Chuck%20Versus%20the%20Other%20Guy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - Chuck Versus the Other Guy
+          </div>
+          <div class="plot">Chuck, Sarah and Shaw reunite to find the Ring operative behind the death of Shaw's wife. Sarah has faith that Shaw is ready for the mission but Chuck is worried about his emotional stability. Meanwhile, Morgan considers leaving the Buy More.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E14%20-%20Chuck%20Versus%20the%20Honeymooners-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - Chuck Versus the Honeymooners
+          </div>
+          <div class="plot">While in Europe, Sarah and Chuck realize they&rsquo;re traveling on a train with Spanish spies. Even though they&rsquo;re all alone, they decide to take on these rogue agents. Of course, this impromptu mission doesn&rsquo;t go smoothly. Meanwhile, Beckman orders her newest &ldquo;unlikely&rdquo; spy team &ndash; John Casey and Morgan Grimes &ndash; to track down the missing couple.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E15%20-%20Chuck%20Versus%20the%20Role%20Models-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - Chuck Versus the Role Models
+          </div>
+          <div class="plot">Chuck and Sarah are assigned to train under Craig and Laura Turner, a married CIA team who, despite their impeccable record, hate one another. The Turners' stormy relationship forces Chuck and Sarah to wonder if they're doomed with the same fate. Meanwhile, Casey must train the newest member of the team Morgan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E16%20-%20Chuck%20Versus%20the%20Tooth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - Chuck Versus the Tooth
+          </div>
+          <div class="plot">Chuck struggles with disturbing dreams and now he believes his most recent dream predicts danger for a visiting head of state. General Beckman however, is unconvinced and assigns Chuck to meet with a CIA psychiatrist Dr. Leo Dreyfus. Meanwhile, Ellie gets surprising news and Anna  returns to the Buy More to talk to Morgan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E17%20-%20Chuck%20Versus%20the%20Living%20Dead-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - Chuck Versus the Living Dead
+          </div>
+          <div class="plot">After his last dream, Chuck asks Morgan to help him on a side mission. Their investigation becomes complicated when Stephen J. Bartowski returns and learns that Chuck downloaded the Intersect 2.0. Luckily, Chuck's father may be able to help his son.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E18%20-%20Chuck%20Versus%20the%20Subway-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x18 - Chuck Versus the Subway
+          </div>
+          <div class="plot">As the Intersect continues to malfunction Stephen hurries to complete the Governor for his son. Meanwhile, Daniel Shaw and the Ring close in on Team Bartowski and their families.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S03E19%20-%20Chuck%20Versus%20the%20Ring%20Part%202-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x19 - Chuck Versus the Ring: Part 2
+          </div>
+          <div class="plot">Shaw returns to threaten everything that Chuck holds dear as his friends, family and the woman he loves are all put in mortal danger. Chuck has to find Shaw and stop him before his own world gets torn apart.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E01%20-%20Chuck%20Versus%20the%20Anniversary-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - Chuck Versus the Anniversary
+          </div>
+          <div class="plot">Chuck and Morgan go on a rogue globe-spanning mission to find Chuck&rsquo;s mom. Meanwhile, Sarah and Casey follow a trail to Russia as they investigate the mysterious Volkoff Industries and its operative, Marco. Back at home, Ellie delivers big news to her family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E02%20-%20Chuck%20Versus%20the%20Suitcase-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - Chuck Versus the Suitcase
+          </div>
+          <div class="plot">When Chuck go undercover in Milan, Chuck realizes the &quot;Achilles' Heel&quot; in their relationship, but must set personal issues aside for the mission. Meanwhile, Morgan recognizes a fatal flaw that compromises the new Buy More. Elsewhere, Casey struggles to put down roots in Burbank.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E03%20-%20Chuck%20Versus%20the%20Cubic%20Z-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - Chuck Versus the Cubic Z
+          </div>
+          <div class="plot">Chuck and Sarah's romantic mission is canceled with the arrival of Hugo Panzer and Heather Chandler. But Chuck grows more interested when the manipulative Heather claims to know a secret about his mom. Meanwhile, as Morgan prepares the Buy More for a huge video game release, he gets a surprise from Big Mike.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E04%20-%20Chuck%20Versus%20the%20Coup%20d%27Etat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - Chuck Versus the Coup d'Etat
+          </div>
+          <div class="plot">Chuck and Sarah try to become better communicators as they join Ellie and Awesome on a trip to Costa Gravas; a forbidden romance may put Morgan at odds with Col. John Casey.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E05%20-%20Chuck%20Versus%20the%20Couch%20Lock-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Chuck Versus the Couch Lock
+          </div>
+          <div class="plot">When Colonel Casey's former team returns looking for him, Chuck must decide what he's willing to sacrifice in order to find his mom. Elsewhere, Morgan works up the nerve to reveal a potentially dangerous secret to Casey.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E06%20-%20Chuck%20Versus%20the%20Aisle%20of%20Terror-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - Chuck Versus the Aisle of Terror
+          </div>
+          <div class="plot">Chuck, Sarah, Casey and Morgan must stop Dr.Stanley (Robert Englund) from releasing a toxin that induces nightmares... Chuck's mother's allegiances are questioned; Lester and Jeff celebrate Halloween at the Buy More.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E07%20-%20Chuck%20Versus%20the%20First%20Fight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - Chuck Versus the First Fight
+          </div>
+          <div class="plot">After their first real fight, Chuck avoids confronting Sarah by going on a rogue mission that leads him to his mom's MI-6 handler, Gregory Tuttle, and a mysterious Russian agent. Meanwhile, Ellie is on her own mission to uncover the Bartowski family's long-buried past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E08%20-%20Chuck%20Versus%20the%20Fear%20of%20Death-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - Chuck Versus the Fear of Death
+          </div>
+          <div class="plot">Afraid that his latest setback is driving a wedge between him and Sarah, Chuck resolves to prove himself by going on a dangerous mission with the overeager Agent Rye. Meanwhile, Morgan and Casey scramble as the &quot;Buy Morons&quot; attempt to uncover the true identity of Greta.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E09%20-%20Chuck%20Versus%20Phase%20Three-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - Chuck Versus Phase Three
+          </div>
+          <div class="plot">Chuck, Sarah, Casey and Morgan venture into the jungles of Southeast Asia when The Belgian attempts to unravel the secrets of the Intersect. Meanwhile, Captain Awesome and Ellie try to decipher a secret left behind by her father.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E10%20-%20Chuck%20Versus%20the%20Leftovers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - Chuck Versus the Leftovers
+          </div>
+          <div class="plot">It's the day after Thanksgiving and Chuck faces the most awkward of family reunions when mom comes over for dinner&mdash;along with the dangerous Alexei Volkoff. Back at the Buy More, Morgan deals with the busiest shopping day of the year as Jeff and Lester hatch their latest scheme.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E11%20-%20Chuck%20Versus%20the%20Balcony-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - Chuck Versus the Balcony
+          </div>
+          <div class="plot">Chuck tries to create a romantic getaway for Sarah while tracking down a nano-chip at a French vineyard. Lester asks Big Mike for love advice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E12%20-%20Chuck%20Versus%20the%20Gobbler-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - Chuck Versus the Gobbler
+          </div>
+          <div class="plot">Sarah takes dangerous measures to help Mary Bartowski bring down Alexei Volkoff, as Chuck worries that she may be getting in too deep. Sarah, though, must enlist the help of Chuck, Morgan and Casey to complete her undercover mission. Meanwhile, Ellie and Awesome are at odds over what to name the baby.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E13%20-%20Chuck%20Versus%20the%20Push%20Mix-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - Chuck Versus the Push Mix
+          </div>
+          <div class="plot">The mission to take down Volkoff reaches a dangerous new level, while big changes loom at home. As Sarah works to free Chuck&rsquo;s mom, Chuck and Morgan embark on their own mission to take down Alexei Volkoff. Meanwhile, Casey bonds with his daughter, Alex, while Ellie tries to ease Awesome&rsquo;s anxieties over fatherhood.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E14%20-%20Chuck%20Versus%20the%20Seduction%20Impossible-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x14 - Chuck Versus the Seduction Impossible
+          </div>
+          <div class="plot">Casey, Chuck and Sarah are sent to Morocco to rescue Roan Montgomery. Morgan plans to meet Alex's mother and Mary spends some time with her family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E15%20-%20Chuck%20Versus%20the%20Cat%20Squad-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x15 - Chuck Versus the Cat Squad
+          </div>
+          <div class="plot">Chuck surprises Sarah with her old spy team, The C.A.T. Squad, leading to a mission in Rio. As The C.A.T. Squad works to settle a score with Augusto Gaez, old secrets and grudges come to light. Back at the Buy More, Morgan fends off the advances of Carina, a former flame and frisky member of The C.A.T Squad.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E16%20-%20Chuck%20Versus%20the%20Masquerade-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x16 - Chuck Versus the Masquerade
+          </div>
+          <div class="plot">Valentine's Day is interrupted when Chuck and the team are sent on a mission to England to protect a reclusive young heiress, Vivian McArthur. Meanwhile, Casey gets an offer from the mysterious Jane Bentley. Back at home, Ellie and Awesome find an unlikely solution to a parenting problem, as Morgan ponders a big move.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E17%20-%20Chuck%20Versus%20The%20First%20Bank%20of%20Evil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x17 - Chuck Versus The First Bank of Evil
+          </div>
+          <div class="plot">Chuck encourages Vivian to get in touch with her inner villain for a mission. Morgan's search for a new roommate has unexpected results.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E18%20-%20Chuck%20Versus%20the%20A-Team-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x18 - Chuck Versus the A-Team
+          </div>
+          <div class="plot">Chuck and Sarah suspect Casey is carrying out private missions. Chuck fears the CIA's new operatives will render him obsolete. Morgan settles in with a new roommate. Awesome becomes uncomfortable with Ellie's research.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E19%20-%20Chuck%20Versus%20the%20Muuurder-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x19 - Chuck Versus the Muuurder
+          </div>
+          <div class="plot">Chuck is put in charge of a top-priority mission, but his leadership skills are pushed to the limit when there is a murder in Castle. Meanwhile, Awesome takes on a mission of his own when Ellie finds an alarming new hobby. Elsewhere, Morgan's leadership is also tested when his Buy More troops wage war against Large Mart.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E20%20-%20Chuck%20Versus%20the%20Family%20Volkoff-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x20 - Chuck Versus the Family Volkoff
+          </div>
+          <div class="plot">With the help of his old nemesis Alexei Volkoff, Chuck and the team hunt down a deadly weapon, The Norseman. In a pre-wedding surprise, Sarah springs a pre-nup on Chuck.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E21%20-%20Chuck%20Versus%20the%20Wedding%20Planner-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x21 - Chuck Versus the Wedding Planner
+          </div>
+          <div class="plot">When Chuck and Sarah get conned out of their wedding money, there is only one man they can turn to for help -- Sarah's conman father, Jack Burton. Meanwhile, Morgan pressures Casey to face Alex's mother.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E22%20-%20Chuck%20Versus%20Agent%20X-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x22 - Chuck Versus Agent X
+          </div>
+          <div class="plot">Chuck and Sarah put aside spy work to have a weekend of debauchery, but Awesome&rsquo;s plans for Chuck&rsquo;s big night don&rsquo;t go quite as expected. Meanwhile, Ellie's investigation into her father's computer leads to a life-changing discovery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E23%20-%20Chuck%20Versus%20the%20Last%20Details-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x23 - Chuck Versus the Last Details
+          </div>
+          <div class="plot">Chuck and Sarah&rsquo;s wedding prep includes one final detail: ensuring that the mother-of-the-groom makes it to the ceremony alive. Meanwhile, Morgan&rsquo;s responsibilities as Best Man include his most dangerous mission yet, as he faces Vivian Volkoff. Elsewhere, Ellie tends to the last details of the rehearsal dinner and seeks help from an unlikely source.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S04E24%20-%20Chuck%20Versus%20the%20Cliffhanger-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x24 - Chuck Versus the Cliffhanger
+          </div>
+          <div class="plot">Before he can kiss the bride, Chuck must enlist his wedding party to take down Vivian Volkoff and stop her from destroying the big day. When he turns to Alexei Volkoff for help, the CIA sends its toughest agent, Clyde Decker, to stop them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S05E01%20-%20Chuck%20Versus%20the%20Zoom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x1 - Chuck Versus the Zoom
+          </div>
+          <div class="plot">Without the Intersect in his head or the support of the CIA, the world of espionage is a much more dangerous place for Chuck Bartowski and his team of freelance spies. To start, Carmichael Industries takes on a slick, rich thief named Jean Claude, and a conniving investor, Roger Bale, who has stolen money from some of the world's most dangerous people. Meanwhile, Morgan helps Chuck with a special surprise for Sarah. Back in the Buy More, Jeff and Lester have taken things to another level with their latest scheme.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S05E02%20-%20Chuck%20Versus%20the%20Bearded%20Bandit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x2 - Chuck Versus the Bearded Bandit
+          </div>
+          <div class="plot">As the team takes on a missing persons case, Chuck and company struggle to establish themselves as Carmichael Industries in the face of a rival security firm led by the tough and efficient Gertrude Verbanski. Meanwhile, Morgan continues to adjust to the Intersect while Chuck adjusts to being his handler. Also, the Buy More finds an unlikely spokesperson to help drum up business.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S05E03%20-%20Chuck%20Versus%20the%20Frosted%20Tips-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x3 - Chuck Versus the Frosted Tips
+          </div>
+          <div class="plot">As the team is tasked with finding one of the CIAs most wanted, Chuck fears that the Intersect may be going to Morgan's head. Meanwhile Sarah helps Casey navigate his relationship with Gertrude. Elsewhere, Captain Awesome makes a startling revelation about Jeff and Lester.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S05E04%20-%20Chuck%20Versus%20the%20Business%20Trip-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x4 - Chuck Versus the Business Trip
+          </div>
+          <div class="plot">Chuck and Sarah track an assassin who is trying to eliminate the new intersect. Morgan tries to adjust to having the intersect. Jeff exposes a new side of himself.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S05E05%20-%20Chuck%20Versus%20the%20Hack%20Off-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - Chuck Versus the Hack Off
+          </div>
+          <div class="plot">Chuck turns to Verbanski for help tracking a computer virus. Lester and Jeff's relationship is complicated by a new Buy More employee.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S05E06%20-%20Chuck%20Versus%20the%20Curse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x6 - Chuck Versus the Curse
+          </div>
+          <div class="plot">Chuck and Sarah must race against time and a ruthless spy Robyn Cunnings, to destroy a dangerous computer virus. Meanwhile, Ellie and Awesome are spending their date night which takes on a dangerous turn and Morgan is sent on a special mission to recover Chuck's P.A.N.T.S.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S05E07%20-%20Chuck%20Versus%20the%20Santa%20Suit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x7 - Chuck Versus the Santa Suit
+          </div>
+          <div class="plot">Chuck and Sarah learn who is trying to destroy Carmichael Industries. Ellie's Christmas plans come undone. A computer virus threatens to ruin Christmas at Buy More.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S05E08%20-%20Chuck%20Versus%20the%20Baby-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x8 - Chuck Versus the Baby
+          </div>
+          <div class="plot">Sarah is forced to confront a secret from her past and feels she must do so alone, while Chuck urges her to let him help. When Sarah encounters her original handler, Kieran Ryker, she fears that he will harm those closest to her, including her mom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S05E09%20-%20Chuck%20Versus%20the%20Kept%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x9 - Chuck Versus the Kept Man
+          </div>
+          <div class="plot">While Chuck and Sarah contemplate the next step for Carmichael Industries, Casey&rsquo;s forbidden love, Gertrude Verbanski, walks back into his life with a questionable mission in South Beach. Meanwhile, Jeff&rsquo;s enhanced intelligence leads he and Lester to suspect that something unusual may be happening at the Buy More.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S05E10%20-%20Chuck%20Versus%20Bo-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x10 - Chuck Versus Bo
+          </div>
+          <div class="plot">As Chuck and Sarah try to realize a new, safer future, Morgan&rsquo;s past as the Intersect sends them to Vail on one last mission, where they enlist the help of an unlikely source &mdash; the legendary Bo Derek. Elsewhere, Jeff and Lester continue their own spy mission.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S05E11%20-%20Chuck%20Versus%20the%20Bullet%20Train-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x11 - Chuck Versus the Bullet Train
+          </div>
+          <div class="plot">When a mission in Japan becomes a hostage situation, Sarah and Chuck must face the merciless Nicholas Quinn aboard a speeding Japanese bullet train. Meanwhile, the mission leaves Casey with an impossible decision.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S05E12%20-%20Chuck%20Versus%20Sarah-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x12 - Chuck Versus Sarah
+          </div>
+          <div class="plot">After a harrowing mission, Sarah returns to Chuck with a huge secret. Meanwhile, Ellie and Awesome are presented with a new opportunity that could change their lives.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Chuck%20-%20S05E13%20-%20Chuck%20Versus%20the%20Goodbye-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x13 - Chuck Versus the Goodbye
+          </div>
+          <div class="plot">Chuck enlists his family, friend and some unexpected allies as he races to stop Nicholas Quinn from destroying everything Chuck has built over the past five years.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

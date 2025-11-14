@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Under the Dome
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Under the Dome</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Under%20the%20Dome%20%282013%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S01E01%20-%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Pilot
+          </div>
+          <div class="plot">The residents of Chester's Mill find themselves trapped under an enormous, transparent dome.  Panic escalates as resources dwindle rapidly.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S01E02%20-%20The%20Fire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Fire
+          </div>
+          <div class="plot">Following Duke's death, his house catches fire, forcing the town to rally together to form a bucket brigade. Elsewhere, Junior ambushes Barbie, while Dodee and Phil pick up a military frequency.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S01E03%20-%20Manhunt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Manhunt
+          </div>
+          <div class="plot">When a former deputy goes rogue, Big Jim recruits Barbie to join the manhunt to keep the town safe. Meanwhile, Junior is determined to escape the Dome by going underground.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S01E04%20-%20Outbreak-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Outbreak
+          </div>
+          <div class="plot">The people of Chester's Mill panicked state when a meningitis outbreak hits the community, threatening the already scarce supply of drugs. Meanwhile, Julia continues to seek answers to her husband's disappearance
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S01E05%20-%20Blue%20on%20Blue-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Blue on Blue
+          </div>
+          <div class="plot">The Chester's Mill residents receive an unexpected visit from their loved ones on the other side. Meanwhile, the community braces for a threat from outside the Dome.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S01E06%20-%20The%20Endless%20Thirst-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Endless Thirst
+          </div>
+          <div class="plot">When the town begins to run low on water, the residents of Chester's Mill begin to fight for the remaining resources. Meanwhile, Julia discovers a strange connection that two of the town's residents have with the Dome.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S01E07%20-%20Imperfect%20Circles-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Imperfect Circles
+          </div>
+          <div class="plot">Big Jim takes matters into his own hands when he feels his authority slipping away, and the Dome displays its power when a life is taken just as a newborn arrives.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S01E08%20-%20Thicker%20Than%20Water-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Thicker Than Water
+          </div>
+          <div class="plot">Junior stands up to his father and is shattered when he discovers the truth about his mother's past. Meanwhile, Julia learns firsthand the powers of the &quot;mini dome.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S01E09%20-%20The%20Fourth%20Hand-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Fourth Hand
+          </div>
+          <div class="plot">Barbie and Big Jim realize their lives are more intertwined than they knew when a mysterious woman makes an appearance in Chester's Mill.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S01E10%20-%20Let%20the%20Games%20Begin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Let the Games Begin
+          </div>
+          <div class="plot">Julia uncovers the truth about her husband's disappearance and unravels some of Chester's Mill's darkest secrets. Meanwhile, Maxine shows Barbie how she plans to take control of the town.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S01E11%20-%20Speak%20of%20the%20Devil-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Speak of the Devil
+          </div>
+          <div class="plot">Big Jim turns the town against Barbie when the truth about his past is revealed. Meanwhile, Maxine makes it personal when she confronts Barbie&rsquo;s closest ally.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S01E12%20-%20Exigent%20Circumstances-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Exigent Circumstances
+          </div>
+          <div class="plot">While the manhunt for Barbie continues, Big Jim gets the residents of Chester&rsquo;s Mill riled up and the town demands justice for all of Barbie&rsquo;s supposed crimes. Meanwhile, Joe and Norrie must find a new hiding place for the mini dome.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S01E13%20-%20Curtains-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - Curtains
+          </div>
+          <div class="plot">Secrets of the Dome are revealed and Big Jim is determined to put an end to Barbie once and for all. Meanwhile, Junior, Angie, Joe and Norrie discover who the Monarch is after receiving a shocking visit from a familiar face.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S02E01%20-%20Heads%20Will%20Roll-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Heads Will Roll
+          </div>
+          <div class="plot">Barbie's life is in Big Jim's hands; the dome becomes magnetized; Julia tries to save the life of a mysterious girl who may have clues about the origin of the dome.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S02E02%20-%20Infestation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Infestation
+          </div>
+          <div class="plot">When Rebecca discovers an infestation of butterfly eggs on the crops, Barbie risks his life to help her save the town's food supply.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S02E03%20-%20Force%20Majeure-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Force Majeure
+          </div>
+          <div class="plot">Big Jim conducts a census to see how long the town can survive on dwindling resources; acid rain threatens everyone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S02E04%20-%20Revelation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Revelation
+          </div>
+          <div class="plot">Rebecca and Big Jim consider extreme measures as the conditions worsen in Chester's Mill; clues about Melanie's connection to the dome are revealed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S02E05%20-%20Reconciliation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Reconciliation
+          </div>
+          <div class="plot">After Big Jim and Rebecca's plan left the town divided, Julia takes over as the leader of Chester's Mill; Norrie and Joe help Melanie find more clues.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S02E06%20-%20In%20the%20Dark-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - In the Dark
+          </div>
+          <div class="plot">A cave-in severs Barbie and Sam's path back to Chester's Mill during their investigation of a mysterious tunnel; a dust storm rages through the town, as Big Jim and Julia face off in a power struggle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S02E07%20-%20Going%20Home-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Going Home
+          </div>
+          <div class="plot">As Barbie descends further into the mysterious tunnel in hope of finding Sam, he comes across a world filled with unanswered questions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S02E08%20-%20Awakening-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Awakening
+          </div>
+          <div class="plot">Barbie turns to his father for help contacting Julia but realizes that he may not be trustworthy; Big Jim declares himself sheriff of Chester's Mill.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S02E09%20-%20The%20Red%20Door-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - The Red Door
+          </div>
+          <div class="plot">Barbie is apprehended by mysterious men and relentlessly interrogated about the Dome; Big Jim forms a deal that could permanently seal the fate of the Chester's Mill residents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S02E10%20-%20The%20Fall-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - The Fall
+          </div>
+          <div class="plot">Big Jim finally learns what happened to his wife, Pauline; Chester's Mill faces a new threat -- climate change.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S02E11%20-%20Black%20Ice-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Black Ice
+          </div>
+          <div class="plot">Rebecca and Sam try to save Chester's Mill residents as temperatures plunge; Barbie puts his life at risk to help Julia after a terrible accident.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S02E12%20-%20Turn-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Turn
+          </div>
+          <div class="plot">The latest threat intensifies, leaving Chester's Mill residents at risk of being crushed to death; Melanie's health declines as the egg's fate remains uncertain.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S02E13%20-%20Go%20Now-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - Go Now
+          </div>
+          <div class="plot">Just as the walls start to close in on those trapped in Chester's Mill, a possible exit from the dome is revealed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S03E01%20S03E02%20-%20Move%20On%20-%20But%20I%27m%20Not-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - Move On
+          </div>
+          <div class="plot">A year after the dome disappears, Barbie, Joe, and the other townspeople gather for a memorial. A year earlier, Julia and Junior try to rescue Barbie and the others, but run afoul of Big Jim.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S03E01%20S03E02%20-%20Move%20On%20-%20But%20I%27m%20Not-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - But I'm Not
+          </div>
+          <div class="plot">Barbie investigates Ben's claim that something strange is going on in Chester's Mill, but Eva surprises him with unexpected news. Meanwhile, Norrie and Hunter grow closer, and Christine advises Joe to move on.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S03E03%20-%20Redux-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - Redux
+          </div>
+          <div class="plot">The residents of Chester&rsquo;s Mill try to move on with their lives in the aftermath of their mysterious experience in the tunnels beneath town. Meanwhile, Big Jim suspects new residents Christine and Eva are keeping secrets concerning the Dome.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S03E04%20-%20The%20Kinship-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - The Kinship
+          </div>
+          <div class="plot">Under the guise of helping Chester&rsquo;s Mill rebuild, Christine urges the townspeople towards specific individuals and projects that remind them of their experience in the tunnels. Also, Julia and Big Jim make shocking discoveries that reveal a new threat within the Dome.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S03E05%20-%20Alaska-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - Alaska
+          </div>
+          <div class="plot">Big Jim and Julia form a tentative alliance to search for proof that will discredit Christine, which leads them to new information about the Dome&rsquo;s capabilities. Meanwhile, when tensions run high in town and threaten Christine&rsquo;s leadership, she puts a plan in play that has deadly consequences.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S03E06%20-%20Caged-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - Caged
+          </div>
+          <div class="plot">When Big Jim is captured by Aktaion, the dangerous private corporation that&rsquo;s descended on Chester&rsquo;s Mill to harness the Dome&rsquo;s energy capabilities, he&rsquo;s forced to manipulate Christine for information about her agenda. Also, when Joe and Norrie question the town&rsquo;s new rules, they find themselves in a dangerous face-off with the increasingly unstable residents.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S03E07%20-%20Ejecta-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - Ejecta
+          </div>
+          <div class="plot">As the world outside the Dome is rocked by a catastrophic meteor shower, unexpected alliances form inside the barrier. Eva tries to indoctrinate Barbie deeper into The Kinship and Big Jim and Julia turn to one another while isolated on Bird Island outside of town. Also, Joe is forced to accept help from Sam, the man who killed his sister.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S03E08%20-%20Breaking%20Point-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - Breaking Point
+          </div>
+          <div class="plot">Big Jim, Julia, Joe, Norrie and Hunter join together to form a resistance against Christine, who is mobilizing residents to work on a massive excavation project in the caves underneath the town. Also, Hunter uses his tech skills to contact the outside world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S03E09%20-%20Plan%20B-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - Plan B
+          </div>
+          <div class="plot">Big Jim and Julia devise plans to end Christine&rsquo;s control over the town by initiating a life-or-death plot involving Barbie and Eva, while Joe and Norrie conduct research to better understand the Dome&rsquo;s ultimate agenda. Meanwhile, Hunter finds more information about the true head of Aktaion, the nefarious private corporation that wants to harness the Dome&rsquo;s energy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S03E10%20-%20Legacy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - Legacy
+          </div>
+          <div class="plot">The Resistance, the citizens not under Christine&rsquo;s control, join forces with an unexpected ally: Hektor Martin, the nefarious head of Aktaion. Despite Hektor revealing more about the Dome&rsquo;s origins and helping to strike back at it, Big Jim and Julia still worry he will betray them. Meanwhile, Hunter receives encrypted files that give disturbing insights into the final effect the Dome will have on the infected townspeople.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S03E11%20-%20Love%20is%20a%20Battlefield-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - Love is a Battlefield
+          </div>
+          <div class="plot">Members of The Resistance race to release their loved ones from Christine&rsquo;s influence before she reaches her end game for the Dome. While Barbie risks everything in an attempt to free Eva from the Kinship, Big Jim and Julia are enlisted by Hektor, the head of Aktaion, to test a possible cure for infected townspeople. Also, Joe chooses to work with Christine after she shares some shocking information about the entity behind the Dome.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S03E12%20-%20Incandescence-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - Incandescence
+          </div>
+          <div class="plot">When the Dome&rsquo;s calcification process accelerates, Chester&rsquo;s Mill has 24 hours before the barrier&rsquo;s breakdown will suffocate everyone inside. While the new deadline puts added pressure on Joe to bring the Dome down, Barbie and Julia race to save his child from The Kinship. Also, Big Jim tries to manage the increasingly volatile Hektor, who is adamant that infected townspeople never escape the Dome.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Under%20the%20Dome%20-%20S03E13%20-%20The%20Enemy%20Within-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - The Enemy Within
+          </div>
+          <div class="plot">Series Finale: As the Dome in Chester's Mill comes down, the Resistance makes a final attempt to protect the outside world from the infected townspeople in the Kinship and their new queen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
