@@ -1,7 +1,7 @@
 /*X-Small devices (portrait phones, less than 576px)*/
 @media (min-width: 300px) and (max-width: 374.98px) {
     #largeContainer {
-        width: 98%;
+        width: 120%;
     }
 
     div[id^="tvshow_"] {
