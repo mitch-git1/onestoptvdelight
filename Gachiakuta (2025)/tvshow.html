@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Gachiakuta
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Gachiakuta</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Gachiakuta%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E01%20-%20The%20Sphere-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Sphere
+          </div>
+          <div class="plot">Bullied outcast Rudo finds respite in repurposing trash, until a terrible tragedy changes his life forever.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E02%20-%20The%20Inhabited-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Inhabited
+          </div>
+          <div class="plot">Cast into the Pit, Rudo is saved by the mysterious Enjin who may not have his best interests at heart.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E03%20-%20The%20Ground-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Ground
+          </div>
+          <div class="plot">Enjin is a Giver, a being who can give life to things and draw out their power. Ludo, who has also awakened to his power as a Giver, is scouted by Enjin to join an organization called the Cleaners, which fights against the Spotted Beasts born from garbage. Ludo accepts the offer in order to find a way to return to the Heavenly World where he has lived until now, but he suddenly gets into a fight with his trainer, Zanca.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E04%20-%20Cleaner%20HQ-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Cleaner HQ
+          </div>
+          <div class="plot">After being introduced to Cleaner HQ, Rudo follows Riyo on a job to learn the business.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E05%20-%20Raiders-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Raiders
+          </div>
+          <div class="plot">The Cleaners go on a job to save another Sphereite who survived the fall. Rudo tags along to learn more.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E06%20-%20One%20Good%20Strike%21%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - One Good Strike!!
+          </div>
+          <div class="plot">With the job having gone terribly wrong, Rudo finds himself face to face with a merciless Raider named Jabber.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E07%20-%20A%20Score%20to%20Settle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - A Score to Settle
+          </div>
+          <div class="plot">Jabber employs a new strategy to get through Rudo's defenses, and another ally joins the fray.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E08%20-%20Moving%20Forward-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Moving Forward
+          </div>
+          <div class="plot">Rudo deals with the emotional aftermath of the Jabber fight and gets a new lead about returning to the Sphere.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E09%20-%20The%20City%20of%20Graffiti-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The City of Graffiti
+          </div>
+          <div class="plot">To get a &quot;spell&quot; for their next mission, the Cleaners head to Canvas Town, where they make a tragic discovery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E10%20-%20Penta%20The%20Desert%20No%20Man%27s%20Land-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Penta: The Desert No Man's Land
+          </div>
+          <div class="plot">With their gear-up complete, the crew heads into the No Man's Land, Penta, to get clues about the Sphere.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E11%20-%20Amo%27s%20Hospitality-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Amo's Hospitality
+          </div>
+          <div class="plot">A mysterious woman living in the No Man's Land challenges the crew from an unexpected angle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E12%20-%20Something%20Like%20a%20Curse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Something Like a Curse
+          </div>
+          <div class="plot">Tamsy and Zanka fight to save their captive allies. In the aftermath, Rudo has an unexpected reaction.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E13%20-%20An%20Empty%20Gaze-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - An Empty Gaze
+          </div>
+          <div class="plot">Amo tells the story of how she came to the tower and of the &quot;angels&quot; who came to visit her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E14%20-%20The%20Storm%20Before%20the%20Storm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - The Storm Before the Storm
+          </div>
+          <div class="plot">After returning from the Penta No Man's Land, Rudo and the Cleaners face a series of new threats.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E15%20-%20Clash%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - Clash!
+          </div>
+          <div class="plot">Taken by the Raiders to an unknown setting, the Cleaners fight for their lives, and Zodyl makes Rudo an offer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E16%20-%20Gifted%20and%20Not-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - Gifted and Not
+          </div>
+          <div class="plot">Bundus interrogates the Santas while Zanka struggles to keep pace with a powered-up Jabber.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E17%20-%20Memories%20of%20a%20Mediocrity-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - Memories of a Mediocrity
+          </div>
+          <div class="plot">Zanka reflects on the turning point in his past that brought him to where he is today.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E18%20-%20Oh%20Zap%2C%20Totes%20Legit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - Oh Zap, Totes Legit
+          </div>
+          <div class="plot">While the Raiders-Cleaners conflicts continue, the battle between Riyo and Noerde heats up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E19%20-%20Watchmen%20Series-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - Watchmen Series
+          </div>
+          <div class="plot">Zodyl reveals his plan to reach the Sphere, and the other Cleaners react to their current circumstances.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E20%20-%20Ensign-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - Ensign
+          </div>
+          <div class="plot">As the battle climaxes, Enjin makes a play to unite his team, and Zodyl makes his final entreaty to Rudo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E21%20-%20Race%20Against%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - Race Against Time
+          </div>
+          <div class="plot">Exiled from his home, Rudo seeks vengeance on those responsible. But first, he must survive a wasteland.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E22%20-%20The%20Power%20of%20Protection-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - The Power of Protection
+          </div>
+          <div class="plot">Noerde is doing everything he can to prevent the cleaning crew from escaping before they cross the border on the haphazard contraption.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E23%20-%20The%20Man%20Who%20Will%20Be%20Stronger-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - The Man Who Will Be Stronger
+          </div>
+          <div class="plot">As the Cleaners take stock after the battle, a convalescing Zanka receives some surprising news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Gachiakuta%20-%20S01E24%20-%20Field%20Trip-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - Field Trip
+          </div>
+          <div class="plot">Rudo and the other child Cleaners take a trip to Canvas Town while Corvus entertains some unwanted guests.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

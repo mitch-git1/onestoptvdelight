@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - My Isekai Life: I Gained a Second Character Class and Became the Strongest Sage in the World!
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">My Isekai Life: I Gained a Second Character Class and Became the Strongest Sage in the World!</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/My%20Isekai%20Life%20I%20Gained%20a%20Second%20Character%20Class%20and%20Became%20the%20Strongest%20Sage%20in%20the%20World%21%20%282022%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Isekai%20Life%20I%20Gained%20a%20Second%20Character%20Class%20and%20Became%20the%20Strongest%20Sage%20in%20the%20World%21%20-%20S01E01%20-%20I%20Wanted%20to%20Protect%20the%20Town-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - I Wanted to Protect the Town
+          </div>
+          <div class="plot">What can a single Tamer do against an entire army of 10,000 monsters with just a wolf, a dryad and a handful of slimes?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Isekai%20Life%20I%20Gained%20a%20Second%20Character%20Class%20and%20Became%20the%20Strongest%20Sage%20in%20the%20World%21%20-%20S01E02%20-%20Trying%20Out%20a%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Trying Out a Party
+          </div>
+          <div class="plot">Yuji&rsquo;s party members don&rsquo;t have a high opinion of Tamers, but his tracking skills are too valuable to pass up. Maybe Yuji can change their minds once they see him in action.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Isekai%20Life%20I%20Gained%20a%20Second%20Character%20Class%20and%20Became%20the%20Strongest%20Sage%20in%20the%20World%21%20-%20S01E03%20-%20I%20Meant%20Too%20Strong-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - I Meant Too Strong
+          </div>
+          <div class="plot">Yuji overdoes everything, even when he's trying not to. But when a dragon appears underneath the calamitous blue moon, the Tamer may be the only one who can prevent disaster.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Isekai%20Life%20I%20Gained%20a%20Second%20Character%20Class%20and%20Became%20the%20Strongest%20Sage%20in%20the%20World%21%20-%20S01E04%20-%20Truly%20Unusual%20Situations-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Truly Unusual Situations
+          </div>
+          <div class="plot">A dragon is a formidable opponent. That's precisely why Yuji needs to get up close and personal to fight it with... a dagger!?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Isekai%20Life%20I%20Gained%20a%20Second%20Character%20Class%20and%20Became%20the%20Strongest%20Sage%20in%20the%20World%21%20-%20S01E05%20-%20That%20Cold%20Looked%20Troubling-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - That Cold Looked Troubling
+          </div>
+          <div class="plot">A hard freeze means a high demand for firewood. It's time for Yuji to use his overpowered skills for a more mundane purpose, especially since delicious food is involved!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Isekai%20Life%20I%20Gained%20a%20Second%20Character%20Class%20and%20Became%20the%20Strongest%20Sage%20in%20the%20World%21%20-%20S01E06%20-%20Infiltrating%20an%20Ominous%20Village-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Infiltrating an Ominous Village
+          </div>
+          <div class="plot">The bad news? There's something sinister going on in that remote village. The good news? The cult stationed there has no idea Yuji is on to them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Isekai%20Life%20I%20Gained%20a%20Second%20Character%20Class%20and%20Became%20the%20Strongest%20Sage%20in%20the%20World%21%20-%20S01E07%20-%20Assassins%20in%20Pursuit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Assassins in Pursuit
+          </div>
+          <div class="plot">Yuuji has a price on his head and two assassins are after him. He could easily defeat them, but that would only make him a bigger target. This calls for a more unique approach.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Isekai%20Life%20I%20Gained%20a%20Second%20Character%20Class%20and%20Became%20the%20Strongest%20Sage%20in%20the%20World%21%20-%20S01E08%20-%20We%20Got%20Some%20Monster%20Armor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - We Got Some Monster Armor
+          </div>
+          <div class="plot">If Yuji wants quality armor, he&rsquo;ll need quality materials. And that means hunting a rare monster.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Isekai%20Life%20I%20Gained%20a%20Second%20Character%20Class%20and%20Became%20the%20Strongest%20Sage%20in%20the%20World%21%20-%20S01E09%20-%20We%20Fought%20a%20Fire%20Dragon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - We Fought a Fire Dragon
+          </div>
+          <div class="plot">Yuji must now protect the town from the kaiju-level threat of a rampaging Fire Dragon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Isekai%20Life%20I%20Gained%20a%20Second%20Character%20Class%20and%20Became%20the%20Strongest%20Sage%20in%20the%20World%21%20-%20S01E10%20-%20Didn%E2%80%99t%20Seem%20Like%20a%20Good%20Time%20for%20That-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Didn&rsquo;t Seem Like a Good Time for That
+          </div>
+          <div class="plot">According to legend, an emissary is supposed to stop the Blue Moon of Salvation&rsquo;s leader. Steyl is now convinced that Yuji is the one he&rsquo;s been waiting for.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Isekai%20Life%20I%20Gained%20a%20Second%20Character%20Class%20and%20Became%20the%20Strongest%20Sage%20in%20the%20World%21%20-%20S01E11%20-%20The%20Revelation%20Came%20True-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Revelation Came True
+          </div>
+          <div class="plot">The battle between Yuji and Walter begins in earnest, but that is only the beginning.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Isekai%20Life%20I%20Gained%20a%20Second%20Character%20Class%20and%20Became%20the%20Strongest%20Sage%20in%20the%20World%21%20-%20S01E12%20-%20My%20Isekai%20Life-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - My Isekai Life
+          </div>
+          <div class="plot">Yuji may be strong, but he can&rsquo;t fight the enemy and defend all the towns at once. If he wants to win, he needs to place his trust in all the friends he made along the way.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

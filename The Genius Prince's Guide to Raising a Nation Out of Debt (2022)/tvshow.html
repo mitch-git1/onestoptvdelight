@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Genius Prince's Guide to Raising a Nation Out of Debt
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Genius Prince's Guide to Raising a Nation Out of Debt</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Genius%20Prince%27s%20Guide%20to%20Raising%20a%20Nation%20Out%20of%20Debt%20%282022%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Genius%20Prince%27s%20Guide%20to%20Raising%20a%20Nation%20Out%20of%20Debt%20-%20S01E01%20-%20The%20Prince%20Who%20Would%20Sell%20His%20Kingdom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Prince Who Would Sell His Kingdom
+          </div>
+          <div class="plot">Try as he might, Prince Wein can't seem to fail. He wants to sell off his kingdom and disappear, but his brilliant decisions keep getting in the way. After he gets the empire to fund and train his troops, a string of victories only complicates his plans.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Genius%20Prince%27s%20Guide%20to%20Raising%20a%20Nation%20Out%20of%20Debt%20-%20S01E02%20-%20Wein%20Salema%20Arbalest%2C%20Battlefield%20Tactician-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Wein Salema Arbalest, Battlefield Tactician
+          </div>
+          <div class="plot">Back home after Natra's victory, Wein's sweet dream is dashed by reality. He must lead the defense of the mine they captured, but will his tactics work? Fisch discovers a secret about Wein's past. Bad news arrives from Marden but with a sliver of hope.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Genius%20Prince%27s%20Guide%20to%20Raising%20a%20Nation%20Out%20of%20Debt%20-%20S01E03%20-%20A%20Marriage%20as%20a%20Pretext-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - A Marriage as a Pretext
+          </div>
+          <div class="plot">Wein's dream about his academy days comes to life with a visitor. Lowa's marriage proposal catches him off guard, and he wonders what she's up to. He's again caught off guard by her power move. Lowa dreams about a talk she had with Wein about the future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Genius%20Prince%27s%20Guide%20to%20Raising%20a%20Nation%20Out%20of%20Debt%20-%20S01E04%20-%20Two%20Intellect-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Two Intellect
+          </div>
+          <div class="plot">Lowa and Wein's strategic dance heats up when a secret letter leads to a surprise visit from a suitor. But when it ends in the worst possible way, Wein and Lowa must salvage their plan to save the empire. Will they pull victory out of the jaws of defeat?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Genius%20Prince%27s%20Guide%20to%20Raising%20a%20Nation%20Out%20of%20Debt%20-%20S01E05%20-%20Hey%2C%20How%20About%20Covering%20the%20Crime-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Hey, How About Covering the Crime
+          </div>
+          <div class="plot">After Gerald's bizarre accident, Wein visits his father, marquiss Grenache Antgadull. Wein has figured out Angadull's rebellion plot, but the marquiss denies his involvement. Wein offers him a deal, and the marquiss seems to accept it, but aftewards he takes a surprising decision. After the meeting, Wein is attacked by unknown enemies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Genius%20Prince%27s%20Guide%20to%20Raising%20a%20Nation%20Out%20of%20Debt%20-%20S01E06%20-%20Holy%20Intrigue%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Holy Intrigue!
+          </div>
+          <div class="plot">Wein heads to Cavarin for the Festival of the Spirit, but it is a perilous journey with Mardenian remnants in the borderlands and rebellious lords at home. In Marden, Wein forges an unlikely alliance, but the intrigue goes into overdrive in Cavarin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Genius%20Prince%27s%20Guide%20to%20Raising%20a%20Nation%20Out%20of%20Debt%20-%20S01E07%20-%20Yesterday%27s%20Enemy%20Is%20Today%27s%E2%80%A6-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Yesterday's Enemy Is Today's&hellip;
+          </div>
+          <div class="plot">When Wein's second meeting with King Ordalasse ends with deadly consequences, the Natran delegation flees with the Cavarinians in hot pursuit. But Wein has a plan to turn hunter into hunted. Zenovia asks a favor that Wein is hard-pressed to refuse.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Genius%20Prince%27s%20Guide%20to%20Raising%20a%20Nation%20Out%20of%20Debt%20-%20S01E08%20-%20I%27ll%20Give%20It%20a%20Shot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - I'll Give It a Shot
+          </div>
+          <div class="plot">Falanya offers to attend important events in Mealters in Wein's stead, upsetting Lowa's scheme. But she quickly adapts by trying to get Falanya to say that Natra is on her side. When an imperial prince backs Falanye into a corner, unexpected help arrives.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Genius%20Prince%27s%20Guide%20to%20Raising%20a%20Nation%20Out%20of%20Debt%20-%20S01E09%20-%20The%20Little%20Princess%20Who%20Could-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Little Princess Who Could
+          </div>
+          <div class="plot">Wein arrives to save Falanya, but exhaustion takes a toll. Lowa seeks Wein's advice. The imperial princes suspect Wein in an attempted poisoning. When the princes surround Mealtars, Falanya convinces its people to unite and thwart their aggression.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Genius%20Prince%27s%20Guide%20to%20Raising%20a%20Nation%20Out%20of%20Debt%20-%20S01E10%20-%20A%20Bubble%20Economy%20Inflates%20an%20Ego-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - A Bubble Economy Inflates an Ego
+          </div>
+          <div class="plot">Wein uses Mealtars in a risky gambit. Demetrio's poisoning is pinned on a surprising suspect. As Marden's trade-based economy booms, Wein is sure he can get what he wants by toying with Zenovia's heart, but Soljest is unhappy with the goods from the east.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Genius%20Prince%27s%20Guide%20to%20Raising%20a%20Nation%20Out%20of%20Debt%20-%20S01E11%20-%20By%20Hook%20or%20Crook-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - By Hook or Crook
+          </div>
+          <div class="plot">Sirgis protests imperial goods flowing into Delunio, but Wein assures him they are Natran, but are they? Wein visits Soljest to forge an alliance with King Gruyere. Wein leaves perplexed, but the worst is yet to come. Zenovia again proves herself useful.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Genius%20Prince%27s%20Guide%20to%20Raising%20a%20Nation%20Out%20of%20Debt%20-%20S01E12%20-%20A%20Really%20Motivated%20Seller-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - A Really Motivated Seller
+          </div>
+          <div class="plot">Wein tries to thwart Delunio and Soljest with a diabolical plan. The Natrans hold their mountain fortress, but time is running short. Gruyere has one condition for helping Wein. After the bubble bursts, Wein really wants to sell his kingdom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

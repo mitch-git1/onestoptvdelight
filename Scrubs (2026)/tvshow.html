@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Scrubs
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Scrubs</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Scrubs%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E01%20-%20My%20Return-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - My Return
+          </div>
+          <div class="plot">John &quot;J.D.&quot; Dorian unexpectedly finds himself back at Sacred Heart, reuniting him with new and old faces.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E02%20-%20My%202nd%20First%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - My 2nd First Day
+          </div>
+          <div class="plot">J.D. navigates a new normal; Elliot and Turk clash over the budget.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E03%20-%20My%20Rom-Com-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - My Rom-Com
+          </div>
+          <div class="plot">Elliot faces a dilemma with a stubborn patient, while J.D. discovers online doctor reviews. Meanwhile, Turk teaches his interns about new surgical technology and unexpected life lessons.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E04%20-%20My%20Poker%20Face-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - My Poker Face
+          </div>
+          <div class="plot">To relive their glory days, J.D. plans a poker night with Turk. Elsewhere, competition brews between the medical and surgical interns, while Elliot decides how to handle a social media-obsessed patient.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E05%20-%20My%20Angel-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - My Angel
+          </div>
+          <div class="plot">J.D. ventures into the world of post-divorce dating with Turk's guidance. Elliot gets creative when sourcing an organ for a beloved elderly patient, while the interns learn about the unspoken rules of the hospital.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E06%20-%20My%20V.I.P-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - My V.I.P.
+          </div>
+          <div class="plot">J.D. and Dr. Park are forced to work together when a member of the hospital board experiences a mysterious health crisis. Turk helps Elliot navigate a newfound romance, while the interns practice vulnerability with patients.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E07%20-%20My%20Best%20Friend%27s%20Barbecue-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - My Best Friend's Barbecue
+          </div>
+          <div class="plot">While J.D. is upset to not be invited to Turk and Carla&rsquo;s annual barbecue, he takes the opportunity to nurture his friendship with Carla at work. Turk teaches the surgical interns how to deliver bad news.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E08%20-%20My%20Odds-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - My Odds
+          </div>
+          <div class="plot">J.D. has finally hit his stride as the new chief of medicine, only to be shaken by an unexpected visit. Meanwhile, Elliot grapples with being a good mentor for the interns while still holding them accountable.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E09%20-%20My%20Celebration-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - My Celebration
+          </div>
+          <div class="plot">A chaotic day at Sacred Heart forces the doctors and interns to face burnout, life-changing decisions, and their relationships with one another.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

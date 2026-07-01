@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Spartacus: House of Ashur
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Spartacus: House of Ashur</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Spartacus%20House%20of%20Ashur%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Spartacus%20House%20of%20Ashur%20-%20S01E01%20-%20Dominus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Dominus
+          </div>
+          <div class="plot">Having no memory of his downfall in &quot;Spartacus: Vengeance,&quot; Ashur wakes to find himself the owner of the former House of Batiatus; eager to earn the respect and power he's always desired, Ashur must save face by presenting something new to the arena.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Spartacus%20House%20of%20Ashur%20-%20S01E02%20-%20Forsaken-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Forsaken
+          </div>
+          <div class="plot">Ashur navigates the treacherous waters of the Roman elites while Achillia struggles to acclimate to the brutal life of a gladiator in training.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Spartacus%20House%20of%20Ashur%20-%20S01E03%20-%20Unworthy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Unworthy
+          </div>
+          <div class="plot">Korris faces Ashur's wrath and must prove himself worthy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Spartacus%20House%20of%20Ashur%20-%20S01E04%20-%20Blood%20and%20Bone-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Blood and Bone
+          </div>
+          <div class="plot">Ashur frantically tries to enter the Ludi Apollinares games before Marcus Crassus arrives.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Spartacus%20House%20of%20Ashur%20-%20S01E05%20-%20Goddess%20of%20Death-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Goddess of Death
+          </div>
+          <div class="plot">Ashur presents Achillia to the public, where she faces her first battle in the arena.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Spartacus%20House%20of%20Ashur%20-%20S01E06%20-%20Empty%20Things-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Empty Things
+          </div>
+          <div class="plot">Ashur's popularity within Capua soars, but at a devastating cost.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Spartacus%20House%20of%20Ashur%20-%20S01E07%20-%20Deepest%20Wound-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Deepest Wound
+          </div>
+          <div class="plot">Korris demands blood; Ashur attempts to sway an enemy toward his cause.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Spartacus%20House%20of%20Ashur%20-%20S01E08%20-%20Horizons-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Horizons
+          </div>
+          <div class="plot">Achillia prepares for her return to the arena, while Ashur faces a devastating setback.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Spartacus%20House%20of%20Ashur%20-%20S01E09%20-%20Those%20Who%20Remain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Those Who Remain
+          </div>
+          <div class="plot">Caesar demands a painful sacrifice from Ashur.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Spartacus%20House%20of%20Ashur%20-%20S01E10%20-%20Hail%20Caesar-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Hail Caesar
+          </div>
+          <div class="plot">Achillia returns to the arena to face her greatest challenge, while Ashur wrestles with the emotional fallout of his actions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

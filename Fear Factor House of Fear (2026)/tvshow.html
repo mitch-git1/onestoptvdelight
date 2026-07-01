@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Fear Factor: House of Fear
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Fear Factor: House of Fear</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Fear%20Factor%20House%20of%20Fear%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fear%20Factor%20House%20of%20Fear%20-%20S01E01%20-%20Sealed%20Fates-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Sealed Fates
+          </div>
+          <div class="plot">14 strangers move into the fear house and compete for $200,000.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fear%20Factor%20House%20of%20Fear%20-%20S01E02%20-%20Wrecking%20Ball-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Wrecking Ball
+          </div>
+          <div class="plot">Fears of fire and of heights push players to the edge - as the women of Fear House target their top enemy. Will a disgusting End Game expose a master manipulator?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fear%20Factor%20House%20of%20Fear%20-%20S01E03%20-%20Stuck-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Stuck
+          </div>
+          <div class="plot">Power shifts as players are buried alive in a claustrophobic challenge. But when Johnny introduces a big twist in the game, the underdogs become shot callers - and a Fear House favorite fights for her show life against a hissing boa constrictor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fear%20Factor%20House%20of%20Fear%20-%20S01E04%20-%20The%20Main%20Drag-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Main Drag
+          </div>
+          <div class="plot">Eleven remain in a game of horse dragging, dumpster diving and revenge.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fear%20Factor%20House%20of%20Fear%20-%20S01E05%20-%20The%20Deep-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Deep
+          </div>
+          <div class="plot">A terrifying water challenge threatens to drown competitors in their own fears.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fear%20Factor%20House%20of%20Fear%20-%20S01E06%20-%20Pain%20Auction-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Pain Auction
+          </div>
+          <div class="plot">Nine remain for 24 hours of non-stop fear. They bid on how much punishment they can take in Knoxville's twisted &quot;Pain Auction.&quot; And, for the first time, no one is safe from elimination in a truly sick pie-eating contest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fear%20Factor%20House%20of%20Fear%20-%20S01E07%20-%20Walk%20the%20Plank-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Walk the Plank
+          </div>
+          <div class="plot">Jayleen prepares to walk a 120-foot-high plank blindfolded to take her nemesis out; the end game serves up maggot-infested cheese and a painful obstacle course.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fear%20Factor%20House%20of%20Fear%20-%20S01E08%20-%20Human%20Claw-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Human Claw
+          </div>
+          <div class="plot">A warped game of human claw machine brings the final seven face-to-face with hungry snakes and squeaking rats. With the $200,000 in sight, alliances are tested and power shifts. Who will survive the medieval End Game and secure their spot in the semi-finals?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fear%20Factor%20House%20of%20Fear%20-%20S01E09%20-%20Short%20Circuit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Short Circuit
+          </div>
+          <div class="plot">In the shocking semi-finals, alliances are tested and strategies shift after Johnny reveals a first-ever double elimination. A painful electrocution challenge puts four players at risk, but the sky-high End Game sends one of them away in an ambulance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fear%20Factor%20House%20of%20Fear%20-%20S01E10%20-%20The%20Final%20Endgame-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Final Endgame
+          </div>
+          <div class="plot">The final four face their fear of drowning and biting fish. Then, the two finalists go head-to-head in a race that includes leaping between speeding semi-trucks to win the $200,000 and the right to say &quot;Fear Is Not A Factor!&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Fear%20Factor%20House%20of%20Fear%20-%20S01E11%20-%2048%20Hours%20of%20Fear%20-%20Part%20One-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - 48 Hours of Fear - Part One
+          </div>
+          <div class="plot">Competing for $50,000, six new players discover that fear never sleeps and they must carry darkling beetles in their mouths, endure a spelling bee while covered by bees and wear shock collars all night to stay awake! The first 24 hours comes to an end with the start of an all-new Pain Auction!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            1x12 - 48 Hours of Fear - Part Two
+          </div>
+          <div class="plot">Five sleep-deprived contestants push through another 24 hours with no sleep - facing tarantulas, needles, electrocution, and a disgusting sushi showdown that pushes one contestant over the edge. The explosive conclusion of the two-part special features a harrowing game of ATV chicken to decide who wins the $50,000 grand prize and the right to say, &quot;Fear is not a factor!&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Wise Man's Grandchild
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Wise Man's Grandchild</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Wise%20Man%27s%20Grandchild%20%282019%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wise%20Man%27s%20Grandchild%20-%20S01E01%20-%20A%20Babe%20in%20the%20Woods%20Goes%20to%20the%20Capital-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - A Babe in the Woods Goes to the Capital
+          </div>
+          <div class="plot">Shin Wolford was an average office worker in Japan, but after being killed in a traffic accident, he is reborn in another world. There he learns magic from his adoptive grandfather Merlin and grows up sheltered from the world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wise%20Man%27s%20Grandchild%20-%20S01E02%20-%20The%20Unconventional%20New%20Student-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Unconventional New Student
+          </div>
+          <div class="plot">After moving to the royal capital, Shin prepares to take the entrance exam for Earlsheid Magic Academy, a high school for magicians. However, his far-disproportionate skill in magic already ensures that he is in a class of his own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wise%20Man%27s%20Grandchild%20-%20S01E03%20-%20An%20Emergency%20Arises%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - An Emergency Arises!
+          </div>
+          <div class="plot">During their first full day of school, Shin and his classmates get a tour of the academy. After Kurt's father comes down on him over his recent behavior, he is grounded, while his mother invites his former mentor over to speak to him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wise%20Man%27s%20Grandchild%20-%20S01E04%20-%20The%20Name%20of%20the%20Instigator-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Name of the Instigator
+          </div>
+          <div class="plot">News of Shin's exploits proves impossible to keep under wraps, and many more applicants wish to join the study group. The king orders a joint investigation into the appearance of the new demonoid. The study group gains two new members.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wise%20Man%27s%20Grandchild%20-%20S01E05%20-%20A%20Pioneering%20New%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - A Pioneering New Hero
+          </div>
+          <div class="plot">Mark takes Shin and the others to his family-run blacksmith shop, where Shin commissions a new sword, and buys a gift for Sizilien. The Blusfia Empire begins preparing to go to war. Shin is formally decorated for his heroic actions.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wise%20Man%27s%20Grandchild%20-%20S01E06%20-%20Outbreak%20of%20War%20and%20a%20Joint%20Training%20Exercise-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Outbreak of War and a Joint Training Exercise
+          </div>
+          <div class="plot">Following the routing of an imperial invasion force and demon attacks, Diseum orders the students at both the magic and military schools to increase their combat readiness, resulting in a joint training exercise for both schools.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wise%20Man%27s%20Grandchild%20-%20S01E07%20-%20Let%E2%80%99s%20Go%20to%20Camp%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Let&rsquo;s Go to Camp!
+          </div>
+          <div class="plot">The members of the magic academy enjoy mixed results while training with their knight school counterparts. With the demonoid threat looming over them, Shin decides to hold a magic training camp for the group over summer vacation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wise%20Man%27s%20Grandchild%20-%20S01E08%20-%20A%20Starlit%20Pledge-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - A Starlit Pledge
+          </div>
+          <div class="plot">As Shin's training camp continues, the group members' skills improve. Aug's fianc&eacute;e and younger sister ask to come stay at the camp, and their presence compels Shin and Sizilien to come to terms with their feelings for each other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wise%20Man%27s%20Grandchild%20-%20S01E09%20-%20The%20Grandchild%2C%20the%20Magic%20Gear%2C%20and%20the%20Engagement%20Party-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Grandchild, the Magic Gear, and the Engagement Party
+          </div>
+          <div class="plot">Before Sizilien will allow Shin to date her, she insists on having him ask her parents for their blessing. Shin experiments with a new form of magic, and thinks the Ultimate Magic Study Group is ready to take their training to a higher level.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wise%20Man%27s%20Grandchild%20-%20S01E10%20-%20The%20Fall%20of%20the%20Empire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Fall of the Empire
+          </div>
+          <div class="plot">While Aug looks forward to his installment as crown prince, the study group practices flying, thanks to Shin's floating magic. As the last town in the Blusfia Empire falls, Schtrom recounts the events that led to his overthrow of the nation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wise%20Man%27s%20Grandchild%20-%20S01E11%20-%20The%20Mightiest%20Corps%20of%20Magicians%20Ever-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Mightiest Corps of Magicians Ever
+          </div>
+          <div class="plot">A horde of over a hundred demonoids crosses the border and invade the Kingdom of Sweed. However, Shin and the other Ultimate Magicians are already en route to provide their assistance in neutralizing the demonoid threat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Wise%20Man%27s%20Grandchild%20-%20S01E12%20-%20And%20So%2C%20Off%20into%20the%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - And So, Off into the World...
+          </div>
+          <div class="plot">Sizilien has her hands full performing triage at the aid station, while Shin and the others are occupied with Miria's exceptional fighting skills. Once the dust settles, Aug proposes a plan to King Sweed that could change the entire world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

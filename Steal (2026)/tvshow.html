@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Steal
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Steal</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Steal%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Steal%20-%20S01E01%20-%20Fill%20or%20Kill-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Fill or Kill
+          </div>
+          <div class="plot">A group of master thieves break into Lochmill Capital and hold Zara and her colleagues at gunpoint, attempting the heist of the century.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Steal%20-%20S01E02%20-%20Face%20Value-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Face Value
+          </div>
+          <div class="plot">In the aftermath of the heist, Zara finds herself under intense pressure as Luke breaks down. DCI Rhys meets unexpected resistance on the investigation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Steal%20-%20S01E03%20-%20Short%20Run-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Short Run
+          </div>
+          <div class="plot">A flashback shows more of Zara and Luke's lives pre-heist. Present day, Zara finds herself in a high-stakes situation. Running out of options, she makes a risky choice.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Steal%20-%20S01E04%20-%20Risk%20On-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Risk On
+          </div>
+          <div class="plot">Zara makes a dangerous alliance to uncover the truth about the heist. A revelation about the missing Lochmill money puts Rhys in conflict with powerful figures.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Steal%20-%20S01E05%20-%20Pay%20Yourself%20First-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Pay Yourself First
+          </div>
+          <div class="plot">Zara is given a life-changing ultimatum. With her survival on the line, who can she really trust?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Steal%20-%20S01E06%20-%20Dead%20Cat%20Bounce-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Dead Cat Bounce
+          </div>
+          <div class="plot">An action-packed final showdown at Lochmill Capital has devastating consequences. In a shocking reveal, all truths about the heist come to light.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

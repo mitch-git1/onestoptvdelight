@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Seirei Gensouki: Spirit Chronicles
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Seirei Gensouki: Spirit Chronicles</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Seirei%20Gensouki%20Spirit%20Chronicles%20%282021%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S01E01%20-%20Memories%20of%20the%20Previous%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Memories of the Previous World
+          </div>
+          <div class="plot">Amakawa Haruto, a twenty year old university student, loses his life when the bus he is on gets into an accident. As his consciousness begins to fade, his one regret is not telling his childhood friend, Miharu, how he felt. She'd disappeared after their high school entrance ceremony. Now we move to the slums of the Kingdom of Beltrum. In a corner of a filthy shack, a boy named Rio moans and wakes from a nightmare. He has lived only to take revenge upon a certain man, but now, in his mind, suddenly there are flashes of another version of himself living in a world he's never seen before&mdash;the memories of Amakawa Haruto.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S01E02%20-%20Royal%20Academy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Royal Academy
+          </div>
+          <div class="plot">As a reward for saving the kidnapped Princess Flora, Rio has been enrolled in the primary school branch of the Beltrum Royal Academy. However, the students at the academy are mostly the children of royalty and the nobility, and they do not welcome the orphaned Rio. With so many scornful gazes turned toward him, there is one person who worries for him&mdash;Celia, a girl of twelve who is nonetheless, at her young age, the lecturer in charge of the primary school. As Rio cannot read, Professor Celia begins privately tutoring him after school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S01E03%20-%20Kingdom%20of%20Lies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Kingdom of Lies
+          </div>
+          <div class="plot">Five years have passed since Rio enrolled in the Royal Academy. The graduation examination, the outdoor practicum, is quickly approaching. Celia listens with mixed feelings as Rio talks of his plans to go to his parents' homeland, the Yagumo region, after he graduates. On the day of the outdoor practicum, Stewart, wounded in a monster attack, knocks Princess Flora off a cliff. Rio dives for her without thinking, throws Flora back up to safety midair, and falls some thirty meters to the foot of the cliff...!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S01E04%20-%20The%20Assassin%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Assassin Girl
+          </div>
+          <div class="plot">After bidding farewell to Celia, Rio has left the kingdom of Beltrum and arrived in the market town of Amande in the neighboring kingdom of Galarc. The food stalls near the castle gates sell dishes called &quot;pasta&quot; and &quot;manjuu,&quot; leading Rio think that the person who developed the them, Liselotte, might have memories of living in Japan, like he does. After leaving the town and entering the forest, Rio comes across a young girl collapsed in his path... In the moment that he approaches and calls out to her, the girl opens her eyes and thrusts a knife at him!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S01E05%20-%20Forest%20of%20Spirits-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Forest of Spirits
+          </div>
+          <div class="plot">Rio and Latifa have entered a forest in the Wilderness. While she's sleeping, they're surrounded by a band of what appear to be demi-humans. The girls reveal themselves to be People of the Spirits. Rio tries to talk things out with them, but Uzuma, a winged beast person, finds Latifa and assumes that Rio has abducted her. Uzuma swoops down on Rio without giving him a chance to explain. Her sudden attack renders Rio unconscious. In his dreams, a beautiful girl with pink blonde hair appears to him as well as Amakawa Hayato's childhood friend, Ayase Miharu.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S01E06%20-%20Festival%20Night-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Festival Night
+          </div>
+          <div class="plot">It's been over a year since Rio began living in the village, and now the day of the Grand Spirit Festival has arrived. With the blessing of the great tree spirit Dryas, Rio is recognized as a sworn friend to the People of the Spirits. That night, while everyone is having fun and feasting, Rio tells Latifa that he intends to leave the village. Unable to accept it, Latifa runs off into the forest. Meanwhile, an airborne intruder is detected and the warriors of the village go to investigate suspicious od reactions. What they discover is a huge flight of wyverns headed straight for the village.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S01E07%20-%20Land%20of%20Promises-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Land of Promises
+          </div>
+          <div class="plot">Rio has left the village of the People of the Spirits and headed for his parents' homeland, Yaugumo. Unable to find any information on them, Rio searches and encounters the head of a small village in the Karasuki Kingdom, Yuba. When Rio tells Yuba the names of his parents, she's shocked&mdash;she and Rio have a profound connection. At Yuba's recommendation, Rio decides to live in the village and so a quiet, happy life alongside the villagers, including his cousin Ruri and a girl named Sayo, begins. Before long, the season turns to autumn, and they hear that the tax examiner will soon arrive to determine the amount of their annual tribute. Then, one day, Sayo's older brother Shin gets into a fight with men from the neighboring village.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S01E08%20-%20Royal%20Lineage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Royal Lineage
+          </div>
+          <div class="plot">Rio and the others have traveled to the royal capital of the Kingdom of Karasuki with the village's annual tribute as guards. With their duties fulfilled, Rio and Sayo head into the castle town. They enjoy a meal and are doing some shopping when wandering warriors attempt to abduct a young girl. Rio jumps into the fray and easily defeats them, saving the girl. Her name is Komomo and she's the tax examiner Hayate's younger sister. Hayate's father Gouki receives a letter from Yuba. What he reads astonishes him and he and his wife, Kayoko, visit the lodgings where Rio is staying. They reveal to Rio that they once served his mother, Ayame.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S01E09%20-%20Each%20of%20Their%20Decisions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Each of Their Decisions
+          </div>
+          <div class="plot">Having once again firmed his resolve to avenge his mother, Rio tells Yuba that he intends to return to the Strahl region. But prior to that journey, he passes peaceful, happy days in the village, keeping his royal heritage a secret from everyone but his cousin Ruri. Spring arrives, and after learning of Rio's eventual departure, Sayo returns home and collapses in tears. When her older brother Shin sees her like that, he can't just sit still. He goes to beg Rio to stay in the village, but...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S01E10%20-%20A%20Spirit%27s%20Awakening-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - A Spirit's Awakening
+          </div>
+          <div class="plot">Rio returns home to the village of the People of the Spirits. The next day, he wakes to find an unknown, beautiful, naked girl beside him...?! Latifa and the others peek into the room and chaos ensues, but it turns out that the girl is Rio's bond spirit. As she doesn't have a name, Rio gives her one-Aishia. Dryas, a spirit of great trees, appears after sensing the presence of a powerful spirit. At her urging, Rio and Aishia agree to fight in order to determine her combat capabilities.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S01E11%20-%20Silver%20Bride-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Silver Bride
+          </div>
+          <div class="plot">Rio is shocked when he learns of Celia's marriage of convenience to Charles Arbor. The wedding is closing in quickly. It's to be held the next day. Rio uses Aishia's powers to sneak into the palace guest house to reunite with Celia. The sight of Rio's face makes Celia overflow with joy, but when she's asked if the wedding is something she truly wants, she replies by saying it's something she's agreed to. From beginning to end, Celia's smiling demeanor never falters. Rio is unable to discern her true feelings. The next day, a magnificent parade begins, heading toward the great temple where the wedding will be held.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S01E12%20-%20Fated%20Reunion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Fated Reunion
+          </div>
+          <div class="plot">The moment the carriage carrying Celia arrives at the great temple where the wedding is being held, a dark figure darts toward her, threading nimbly through the crowd. The figure who so easily overpowers the knights acting as guards in order to steal Celia away is Rio. In the face of Rio's straight-forward emotions, asking Celia once again what her will in the matter is, she finally speaks her true feelings... Then, a beam of light shoots upward from the royal capital. The same thing happens in other places in the Strahl region until six pillars of light pierce the sky...!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S02E01%20-%20When%20I%20Met%20You%20in%20This%20World%2C%20You%20Were-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - When I Met You in This World, You Were...
+          </div>
+          <div class="plot">Just after rescuing Celia from her wedding, Rio witnesses six pillars of light. He heads towards them at Aishia's behest and finds three people he never imagined meeting in his world... and they need his help!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S02E02%20-%20Shopping%20in%20Another%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Shopping in Another World
+          </div>
+          <div class="plot">Rio takes Celia and Miharu to Amande to buy some daily necessities. At first, Miharu is bewildered by the strangeness of being in another world, but soon she's enjoying the trip. Meanwhile, in the Beltrum Kingdom, a Hero appears before Princess Flora.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S02E03%20-%20My%20Home%2C%20Under%20Attack-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - My Home, Under Attack
+          </div>
+          <div class="plot">Rio returns to the Village of the Spirits with a request. While he's there, Latifa has a quiet moment with him. Elsewhere, Liselotte goes to Sakata with an invitation to a royal party. Meanwhile, Miharu and the others are attacked by monsters!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S02E04%20-%20Welcome%20Home-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Welcome Home
+          </div>
+          <div class="plot">精霊の民の里にやって来たセリアと美春たちの歓迎会が催される。リオにとって大切な存在である彼女たちに対し、ラティーファは自分にも日本人だった前世の記憶があることを打ち明け、美春たちのシュトラール語の先生になると宣言する。それから数日後、リオはセリアの手紙を両親へ手紙を届けるため、故郷のロダニアへ行くことを提案する。里に美春たちを残し、リオはセリアとアイシアとともにセリアの生家へと旅立つ！
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S02E05%20-%20Heroes%20and%20Champions-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Heroes and Champions
+          </div>
+          <div class="plot">ワイバーンに遭遇したリーゼロッテ一行は、近くの都市ノワへ降り立つ。そこにはユグノー公爵の飛行船も避難していた。陸路を使うというリーゼロッテに、坂田は自分たちもついて行くと告げ、馬車でアマンドへ同行することになる。その道中、突如無数の魔物に襲われる一行。アリアを筆頭に侍女たちの活躍で何とか耐え凌ぐ戦闘の最中、さらに強力な伝説の魔物ミノタウロスが現れ、フローラとリーゼロッテに襲い掛かる――
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S02E06%20-%20Lynchpin%20of%20Memories-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Lynchpin of Memories
+          </div>
+          <div class="plot">リーゼロッテたちの窮地を救ったリオは、一行の中にベルトラム王国の学院で旧友だったフローラとロアナがいることを知り、ハルトと名乗って正体を偽る。だがフローラは、名前も髪の色も違うハルトにリオの面影を感じていた。なりゆきで一緒の馬車に同乗してアマンドに向かうことになったリオ。一方精霊の里では、亜紀が子供の頃を思い出し、一人立ちすくんでいた。それはかつての兄、天川春人との悲しい別れの記憶だった。
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S02E07%20-%20Intruders-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Intruders
+          </div>
+          <div class="plot">Rio rejoins Celia and Aishia in Amande. They go out to dine in a private room at a restaurant. Then Alphonse bursts in with his friends and demands they get out. Not wanting trouble, Rio and the others move to leave, but Alphonse blocks their way!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S02E08%20-%20The%20Clutches%20of%20Evil%2C%20Stealing%20Ever%20Closer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - The Clutches of Evil, Stealing Ever Closer
+          </div>
+          <div class="plot">As the knights investigate the forest, they are attacked and subdued in a flash. When Alphonse wakes, he witnesses a horrible sight. Meanwhile, Flora's thoughts of Haruto overlap with memories of Rio. Her swirling emotions keep her awake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S02E09%20-%20The%20Battle%20to%20Defend%20Amande-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - The Battle to Defend Amande
+          </div>
+          <div class="plot">Amande is attacked by monsters, plunging the townspeople into chaos and fear. Liselotte deploys her attendants to help limit the damage, and Rio goes to the east gate to help. Meanwhile, Lucius and the revenants swiftly approach their target.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S02E10%20-%20Destined%20Enemy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - Destined Enemy
+          </div>
+          <div class="plot">Revenants attack the room where Sakata, Flora, and the others have taken shelter. Sakata leaps into action and Flora manages to flee into the hallway, but there are other dangers lying in wait. Rio notices something wrong and pursues it alone.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S02E11%20-%20Clash-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - Clash
+          </div>
+          <div class="plot">In the Village of Spirits, Miharu wakes from an unsettling dream. Meanwhile, Rio catches up to Flora's kidnapper, Lucius. Rio calmly moves to bring Lucius down. His attitude irritates Lucius, who tries to provoke him into revealing his true identity.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Seirei%20Gensouki%20Spirit%20Chronicles%20-%20S02E12%20-%20Toward%20a%20Fateful%20Tomorrow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - Toward a Fateful Tomorrow
+          </div>
+          <div class="plot">Flora manages to speak to Rio, but it doesn't go the way she expects. Liselotte and the others tell Rio they'd like to show their gratitude, so he makes a request. Then, Rio travels back to the village to tell Miharu and the others what he's learned.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

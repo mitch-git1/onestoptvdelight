@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Malcolm in the Middle: Life's Still Unfair
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Malcolm in the Middle: Life's Still Unfair</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Malcolm%20in%20the%20Middle%20Life%27s%20Still%20Unfair%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Malcolm%20in%20the%20Middle%20Life%27s%20Still%20Unfair%20-%20S01E01%20-%20Episode%20One-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Episode One
+          </div>
+          <div class="plot">&quot;Hey, I remember him! That freaky kid genius with the weird family. And look, he's happy and successful and even has a nice daughter. I'm glad everything worked out for him. Wait... Oh. Wow, I did not see that coming.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Malcolm%20in%20the%20Middle%20Life%27s%20Still%20Unfair%20-%20S01E02%20-%20Episode%20Two-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Episode Two
+          </div>
+          <div class="plot">&quot;How does someone who's supposed to be so smart ruin everything so quickly? He's even fighting with his daughter, how's he going to fix that? I bet his dad can help&hellip; Jeez, never mind.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Malcolm%20in%20the%20Middle%20Life%27s%20Still%20Unfair%20-%20S01E03%20-%20Episode%20Three-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Episode Three
+          </div>
+          <div class="plot">&quot;Dude, this one is crazy. Fistfights, young love, revenge, dark secrets, acrobatics, a birth and a kidnapping.... Sorry, I'll stop before I spoil it.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Malcolm%20in%20the%20Middle%20Life%27s%20Still%20Unfair%20-%20S01E04%20-%20Episode%20Four-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Episode Four
+          </div>
+          <div class="plot">&quot;They've really created a mess. And they think that many people with that many different problems can be solved in one episode? There's no possible way. I'd like to see them try.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

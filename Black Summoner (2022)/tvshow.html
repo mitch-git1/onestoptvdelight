@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Black Summoner
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Black Summoner</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Black%20Summoner%20%282022%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Summoner%20-%20S01E01%20-%20Reincarnated%20Without%20Memories-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Reincarnated Without Memories
+          </div>
+          <div class="plot">Summoner Kelvin is reincarnated into another world after sacrificing all his memories for a variety of powerful skills. He's also brought the Goddess who reincarnated him with him, as his own personal summoned monster!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Summoner%20-%20S01E02%20-%20Dark%20Knight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Dark Knight
+          </div>
+          <div class="plot">Kelvin gets wind of a powerful monster named a Blackghost Knight that's the perfect way for him to test his new skills. But his Appraising Eye tells him that the person who gave him the quest has the title &quot;Murderer&quot;...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Summoner%20-%20S01E03%20-%20A%20Secret%20Shared%20with%20the%20Guild%2C%20and%20a%20Slave%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - A Secret Shared with the Guild, and a Slave Girl
+          </div>
+          <div class="plot">After defeating the Blackghost Knight, Kelvin now has powerful servants at his command. But he needs another party member, and he has his eyes set on a certain half-elf slave...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Summoner%20-%20S01E04%20-%20Demon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Demon
+          </div>
+          <div class="plot">After saving his friends from an arrogant noble, Kelvin is sent on an adventure to defeat a powerful demon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Summoner%20-%20S01E05%20-%20Daughter%20of%20the%20Demon%20King-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Daughter of the Demon King
+          </div>
+          <div class="plot">Kelvin faces off with a powerful gluttony demon in the depths of a dungeon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Summoner%20-%20S01E06%20-%20Rice%20and%20Thieves%20and%20Heroes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Rice and Thieves and Heroes
+          </div>
+          <div class="plot">Kelvin sets off on a new journey in search of more powerful foes... and rice?!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Summoner%20-%20S01E07%20-%20Battle%20with%20the%20Heroes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Battle with the Heroes
+          </div>
+          <div class="plot">Kelvin battles the heroes who are destined to save the world, and he has more than a few things to teach them.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Summoner%20-%20S01E08%20-%20Returning%20to%20Parth%20and%20the%20Goddess%20Arrives-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Returning to Parth and the Goddess Arrives
+          </div>
+          <div class="plot">Kelvin trains the heroes in the ways of advanced combat tactics.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Summoner%20-%20S01E09%20-%20Hero%20Summoning-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Hero Summoning
+          </div>
+          <div class="plot">After getting his own house and reunited with Melfina, Kelvin summons a new hero.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Summoner%20-%20S01E10%20-%20New%20Family-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - New Family
+          </div>
+          <div class="plot">Kelvin begins to power up his new family as he prepares for the next stage of his life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Summoner%20-%20S01E11%20-%20Rank%20S%20Promotion%20Exam-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Rank S Promotion Exam
+          </div>
+          <div class="plot">Kelvin heads to an elven village for his S Rank Promotion exam.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Black%20Summoner%20-%20S01E12%20-%20Another%20Reincarnated-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Another Reincarnated
+          </div>
+          <div class="plot">Kelvin fights another reincarnated warrior to protect the elven village.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

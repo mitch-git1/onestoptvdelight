@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Demon Lord, Retry!
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Demon Lord, Retry!</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Demon%20Lord%2C%20Retry%21%20%282019%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S01E01%20-%20Demon%20Lord%27s%20Descent-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Demon Lord's Descent
+          </div>
+          <div class="plot">Akira Onno ends up in another world of his own creation where he runs into a filthy girl shunned from her village who ends up calling him Demon Lord.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S01E02%20-%20Golden%20Luna-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Golden Luna
+          </div>
+          <div class="plot">When one of the three Holy Maidens comes to dispatch the Demon Lord, Kunai is forced to resort to some old-fashioned discipline.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S01E03%20-%20Killer%20Queen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Killer Queen
+          </div>
+          <div class="plot">Luna's wild sister comes to take her away. But when trouble shows up to ruin everything, a new face comes to save the day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S01E04%20-%20Yu%20Kirino-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Yu Kirino
+          </div>
+          <div class="plot">Kunai summons one of his underlings who lends Aku a helping hand. But being who it is, they may end up being more than he can handle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S01E05%20-%20Merciless%20Invasion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Merciless Invasion
+          </div>
+          <div class="plot">On their way to the Holy Capital, the party runs into a small village with big problems and decides to take matters into their own hands.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S01E06%20-%20Turmoil%20in%20the%20Capital-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Turmoil in the Capital
+          </div>
+          <div class="plot">While having a pleasant dinner banquet for Aku in the Holy Capital, the celebration is cut short by a dangerous cult with a thirst for blood.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S01E07%20-%20All%20or%20Nothing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - All or Nothing
+          </div>
+          <div class="plot">As the Holy Castle comes under attack, the defenders get in over their heads. Kunai opts to send his replacement to take on the troublesome Demon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S01E08%20-%20Demon%20Lord%27s%20Handiwork-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Demon Lord's Handiwork
+          </div>
+          <div class="plot">After investigating the Seraph in the Holy Capital, Kunai and crew jump back to Rabby Village to get his money-making scheme underway.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S01E09%20-%20Dancing%20Swindler%20and%20the%20Giant%20Gold%20Coin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Dancing Swindler and the Giant Gold Coin
+          </div>
+          <div class="plot">In order to prepare the hot spring resort for business, Kunai earns some much-needed funds by taking advantage of a merchant who doesn't know any better.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S01E10%20-%20Madam%20Roars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Madam Roars
+          </div>
+          <div class="plot">Luna tries to impress Madam Shrimpfry with a tour of the hot spring resort. Later on, Aku, Luna, Yu, and Tron all compete for Kunai's attention.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S01E11%20-%20Yukikaze%20Attacks-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Yukikaze Attacks
+          </div>
+          <div class="plot">Kunai falls victim to Yukikaze's attack while on the hunt for information. Meanwhile, Angel takes it upon herself to rescue her little sister.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S01E12%20-%20White%20Angel%20and%20Demon%20Lord-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - White Angel and Demon Lord
+          </div>
+          <div class="plot">During a surprise confrontation in the outdoor bath, Angel White finds out Kunai may be more than meets the eye.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S02E01%20-%20ReTry-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - ReTry
+          </div>
+          <div class="plot">Akira Oono was a game dev who wanted to build his own world, free from corporate oversight. But he had no idea that he'd get dragged into his own creation as Hakuto Kunai, the Demon Lord of the Great Empire! His adventure picks up where it left off!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S02E02%20-%20ReStart-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - ReStart
+          </div>
+          <div class="plot">Akira and Kunai reflect on how far the village of Rabby has come, and the prosperity lying ahead of it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S02E03%20-%20ReCycle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - ReCycle
+          </div>
+          <div class="plot">Kunai heads to the town of Rookie to farm for magical items in the Prison Labyrinth there. He's accompanied by Mikan and Yukikaze, and sparks are sure to fly.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S02E04%20-%20ReCruit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - ReCruit
+          </div>
+          <div class="plot">News of Kunai's exploits reaches other nations around the world. How will they respond?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S02E05%20-%20ReMind-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - ReMind
+          </div>
+          <div class="plot">Eagle reminisces on her life after being separated from Luna as the situation with her comes to a head. Meanwhile, Kunai gets a surprise visitor with an equally surprising request.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S02E06%20-%20ReUnion-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - ReUnion
+          </div>
+          <div class="plot">Things come to a head as all chaos breaks out around Eagle. Can she be saved?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S02E07%20-%20ReMain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - ReMain
+          </div>
+          <div class="plot">After the chaos dies down, Kunai returns to Organ, and they continue their journey into the Beast Kingdom.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S02E08%20-%20ReCovery-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - ReCovery
+          </div>
+          <div class="plot">Tensions flare up in Xenovia and their neighboring state of Parma as Kunai and gang continue their exploration of Beastkin territory.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S02E09%20-%20ReQuest-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - ReQuest
+          </div>
+          <div class="plot">Kunai and Organ discuss their plans for their attack of Belphegor's castle, while Akane and Mink run off to make their own inroads.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S02E10%20-%20ReScue-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - ReScue
+          </div>
+          <div class="plot">Kunai and Organ begin their attack on Belphegor's castle, with Monkeymagic and his troops providing assistance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S02E11%20-%20ReSurrect-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - ReSurrect
+          </div>
+          <div class="plot">The squad of raiders ends up meeting the lord of the castle and the primary target, Archfield Belphegor, and the outcome is less than desirable.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Demon%20Lord%2C%20Retry%21%20-%20S02E12%20-%20ReVenge-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - ReVenge
+          </div>
+          <div class="plot">Organ is in trouble, and it us up to Kunai to save the day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

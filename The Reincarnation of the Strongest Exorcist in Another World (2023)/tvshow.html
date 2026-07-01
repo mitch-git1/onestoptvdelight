@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Reincarnation of the Strongest Exorcist in Another World
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Reincarnation of the Strongest Exorcist in Another World</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20%282023%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20-%20S01E01%20-%20The%20Strongest%20Exorcist-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Strongest Exorcist
+          </div>
+          <div class="plot">On the verge of death, an exorcist decides to reincarnate to lead a perfect life.  He is reborn as Seika, the youngest of an aristocratic family.  While nobility and magic go hand in hand, the young boy, devoid of mana, must face the mockery of his family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20-%20S01E02%20-%20Academy%20City%20Lodonea-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Academy City Lodonea
+          </div>
+          <div class="plot">Thanks to his victory against the eldernewt, Seika has earned the respect of his people.  As a reward for his feat, his father allows him to join the magic academy.  Gray, jealous, does not hear it that way.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20-%20S01E03%20-%20The%20Hero%20the%20Oracles%20Spoke%20Of-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Hero the Oracles Spoke Of
+          </div>
+          <div class="plot">Seika arrives at the academy only to quickly fight himself in a fight with a terrible devil.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20-%20S01E04%20-%20Dungeon%20Trap-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Dungeon Trap
+          </div>
+          <div class="plot">Inglis makes a new friend after a complex battle involving the leader of the Bloodchain Brigade.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20-%20S01E05%20-%20Mabel%20Crane-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Mabel Crane
+          </div>
+          <div class="plot">Seika meets a powerful girl named Mabel and heads to a combat tournament in the capital.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20-%20S01E06%20-%20Interwoven%20Plots-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Interwoven Plots
+          </div>
+          <div class="plot">Seika makes his way through the tournament while he searches to find out what's really going on.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20-%20S01E07%20-%20Brother%20and%20Sister-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Brother and Sister
+          </div>
+          <div class="plot">The truth about Kyle and Mabel is revealed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20-%20S01E08%20-%20Yifa%27s%20Feelings-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Yifa's Feelings
+          </div>
+          <div class="plot">Seika heads to another country to investigate a rampaging dragon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20-%20S01E09%20-%20Yifa%27s%20Resolve-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Yifa's Resolve
+          </div>
+          <div class="plot">Seika finds the dragon's abode in the mountains and now faces a whole new challenge.  Meanwhile, however, the prince plans to take advantage of Seika's absence.  Yifa is in a bind.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20-%20S01E10%20-%20The%20Holy%20Princess-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Holy Princess
+          </div>
+          <div class="plot">Seika meets a princess with the power to see the future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20-%20S01E11%20-%20Future%20Sight-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Future Sight
+          </div>
+          <div class="plot">Seika comes to learn more of Fiona and her powers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20-%20S01E12%20-%20The%20Most%20Terrible%20Demon%20King-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Most Terrible Demon King
+          </div>
+          <div class="plot">Seika unleashes his power against a group of demon assassins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Reincarnation%20of%20the%20Strongest%20Exorcist%20in%20Another%20World%20-%20S01E13%20-%20A%20New%20Journey-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - A New Journey
+          </div>
+          <div class="plot">Seika unleashes his power against a group of demon assassins.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

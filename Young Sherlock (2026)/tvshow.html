@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Young Sherlock
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Young Sherlock</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Young%20Sherlock%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sherlock%20-%20S01E01%20-%20The%20Case%20of%20the%20Missing%20Scrolls-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Case of the Missing Scrolls
+          </div>
+          <div class="plot">1871. A wayward young Sherlock Holmes is sent to Oxford to keep out of trouble, but he soon finds himself the prime suspect in a police investigation that threatens his entire future.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sherlock%20-%20S01E02%20-%20The%20Case%20of%20the%20Burnt%20Photograph-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Case of the Burnt Photograph
+          </div>
+          <div class="plot">Sherlock is thrown into jail. He has to clear his name or face the gallows.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sherlock%20-%20S01E03%20-%20The%20Case%20of%20the%20Unarmed%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Case of the Unarmed Man
+          </div>
+          <div class="plot">The game's afoot. With another murder and two professors missing, it's a race against time for Sherlock and Moriarty to find them before the killer does.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sherlock%20-%20S01E04%20-%20The%20Case%20of%20the%20Missing%20Button-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Case of the Missing Button
+          </div>
+          <div class="plot">Sherlock returns to his childhood home in search of answers.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sherlock%20-%20S01E05%20-%20The%20Case%20of%20Young%20Sherlock%20Holmes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Case of Young Sherlock Holmes
+          </div>
+          <div class="plot">Years after a tragic accident that tore the Holmes family apart, Moriarty and Sherlock come to blows as they investigate that fateful day.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sherlock%20-%20S01E06%20-%20The%20Case%20of%20the%20Killing%20Jar-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Case of the Killing Jar
+          </div>
+          <div class="plot">As Sherlock digs deeper into the Oxford murders, he discovers a shocking connection.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sherlock%20-%20S01E07%20-%20The%20Case%20of%20the%20Two%20Corners-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Case of the Two Corners
+          </div>
+          <div class="plot">An impossible ultimatum challenges Sherlock's loyalties.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Young%20Sherlock%20-%20S01E08%20-%20The%20Case%20of%20Beatrice%20Holmes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Case of Beatrice Holmes
+          </div>
+          <div class="plot">Family ties and friendships are tested in the Holmes family reunion from hell.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

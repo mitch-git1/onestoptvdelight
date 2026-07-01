@@ -1,0 +1,2765 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Scrubs
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Scrubs</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Scrubs%20%282001%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S00E01%20-%20Scrubs%20Funniest%20Moments-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            0x1 - Scrubs Funniest Moments
+          </div>
+          <div class="plot">A collection of clips and bloopers from the first two seasons of the hit NBC comedy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x2 - Newbies
+          </div>
+          <div class="plot">Examines the actors before they were cast
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x3 - &quot;Superman&quot; Music Video
+          </div>
+          <div class="plot">Performed by Lazlo Bane
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x4 - The Doctor Is in
+          </div>
+          <div class="plot">One on one with Zach Braff
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x5 - Alternate Lines:  A Second Opinion
+          </div>
+          <div class="plot">From Season 1
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x6 - Not Just Another Medical Show
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x7 - Favorite Moments
+          </div>
+          <div class="plot">Cast and Crew reflections
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x8 - Outtakes Reel
+          </div>
+          <div class="plot">Funniest Scrubs flubs (Season 1)
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x9 - Deleted Scenes
+          </div>
+          <div class="plot">Clips that wound up on the O.R. floor (Season 1)
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x10 - A Rare Condition
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x11 - Johnny C. Keeps Talking
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            0x12 - Alternate Lines:  A Second Opinion
+          </div>
+          <div class="plot">From Season 2
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E01%20-%20My%20First%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - My First Day
+          </div>
+          <div class="plot">John Dorian, &quot;J.D.&quot; to friends, is a boyishly handsome, self-deprecatingly funny, likeable guy who would be confident if he only realized his assets. Four years of medical school have prepared J.D. for his first day as an intern at Sacred Heart Hospital - but he has his doubts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E02%20-%20My%20Mentor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - My Mentor
+          </div>
+          <div class="plot">J.D. tries to persuade a smoker patient to quit smoking in order to impress Dr. Cox, who is just feeling lonely in his opinion. Elliot's attitude towards Carla annoys her, thus Turk is able to go on a date with Carla, when he convinces her to forgive Elliot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E03%20-%20My%20Best%20Friend%27s%20Mistake-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - My Best Friend's Mistake
+          </div>
+          <div class="plot">J.D. begins to feel distant from Turk, when he leaves him abandoned every time that he tries to talk to him. Elliot fights with Kelso for calling her &quot;sweetheart,&quot; and she seeks Dr. Cox's advice. J.D.'s relationship with Elliot goes in a time race, when he has 48 hours to kiss her before he is put into her &quot;Friend Zone.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E04%20-%20My%20Old%20Lady-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - My Old Lady
+          </div>
+          <div class="plot">The three interns are each assigned patients with various illnesses. Statistically speaking, one of the three is going to die. J.D.'s patient is 86 year old Mrs. Tanner, who is in renal failure. 20 year old David Morrison is Turk's hernia patient and Elliot's patient Mrs. Guerrero only speaks Spanish and might have lupus.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E05%20-%20My%20Two%20Dads-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - My Two Dads
+          </div>
+          <div class="plot">J.D. points out what seems to be a technical mistake to Dr. Kelso, but it was really an attempt of Dr. Cox to save a woman without insurance using a dead guy's insurance. Dr. Kelso and Dr. Cox show J.D. their different ways of looking at medicine. Meanwhile, the Janitor intimidates J.D., Elliot discovers the healing powers of her boobs and Turk gives Carla a pen he thought he took from the Lost and Found box.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E06%20-%20My%20Bad-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - My Bad
+          </div>
+          <div class="plot">Dr. Cox is still facing the threat of suspension, and coincidentally, J.D. is assigned to a special patient: Jordan Sullivan, an important board member. Elliot is assigned to take care of a shrink whose jaw has been wired shut. Carla's mom makes a scandal after Turk spends the night at Carla's.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E07%20-%20My%20Super%20Ego-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - My Super Ego
+          </div>
+          <div class="plot">J.D. has finally earned the spot as brightest student, but he's got competition: Nick Murdoch, who seems to be nicer, friendlier and has a better butt than him. But even J.D. can't hate the guy. Turk is having problems at the operation table and doesn't tell Carla, who keeps bothering Dr. Cox about it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E08%20-%20My%20Fifteen%20Minutes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - My Fifteen Minutes
+          </div>
+          <div class="plot">J.D. and Turk become heroes after saving a cameraman's life on TV. J.D. worries about his evaluation. Carla blows off a night at the bar with Elliot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E09%20-%20My%20Day%20Off-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - My Day Off
+          </div>
+          <div class="plot">J.D. gets to see the hospital through the eyes of a patient. Elliot examines him while Dr. Cox is trying to show off to his mentor, Dr. Benson, the ex-chief of medicine.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E10%20-%20My%20Nickname-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - My Nickname
+          </div>
+          <div class="plot">J.D. gains a new nickname - &quot;Scooter&quot; - and Dr. Cox gives Elliot the evil eye when she won't discharge a troublesome patient.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E11%20-%20My%20Own%20Personal%20Jesus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - My Own Personal Jesus
+          </div>
+          <div class="plot">It's Christmas, and Dr. Cox has J.D. videotape the birth of the child of one of his friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E12%20-%20My%20Blind%20Date-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - My Blind Date
+          </div>
+          <div class="plot">Afraid a woman might sue the hospital, Dr. Kelso asks J.D. to stand by her and be friendly, so she won't sue them. Elliot is desperate for attention from Dr. Cox and Turk snaps at Carla when she steals fries from his plate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E13%20-%20My%20Balancing%20Act-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - My Balancing Act
+          </div>
+          <div class="plot">J.D. is frustrated when his budding romance is constantly interrupted by emergency calls. Dr. Cox informs the interns how to avoid Dr. Kelso's bite. Carla and Turk deal with their first sexual intimacy complication.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E14%20-%20My%20Drug%20Buddy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - My Drug Buddy
+          </div>
+          <div class="plot">Alex and Elliot argue over missing medication, and J.D. needs to choose sides. Dr. Kelso gives Carla a ride to work and she sees a totally different side of him. Turk finds out that Dr. Cox has secret feelings for Carla.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E15%20-%20My%20Bed%20Banter%20%26%20Beyond-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - My Bed Banter &amp; Beyond
+          </div>
+          <div class="plot">J.D. and Elliot go to work trying to hide their new secret romance, but everybody already knows it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E16%20-%20My%20Heavy%20Meddle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - My Heavy Meddle
+          </div>
+          <div class="plot">Dr. Cox shows up at J.D.'s door. Turk and Elliot partner on a research project and Carla struggles to fulfill a comatose patient's final request.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E17%20-%20My%20Student-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - My Student
+          </div>
+          <div class="plot">J.D., Elliot and Turk are receiving their first medical students. Turk's student is a very attractive young woman and Elliot's is the son of a CEO.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E18%20-%20My%20Tuscaloosa%20Heart-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - My Tuscaloosa Heart
+          </div>
+          <div class="plot">J.D.'s rude patient dies from cancer. Elliot is convinced Dr. Kelso is a singer and Dr. Cox finds himself trapped in a love square.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E19%20-%20My%20Old%20Man-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - My Old Man
+          </div>
+          <div class="plot">An assortment of moms and dads descend on their offspring at home and in the workplace.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E20%20-%20My%20Way%20or%20the%20Highway-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - My Way or the Highway
+          </div>
+          <div class="plot">Turk's competitiveness is starting to annoy J.D. and Dr. Kelso fires the only nurse that makes good coffee. Elliot meets a very attractive patient.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E21%20-%20My%20Sacrificial%20Clam-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - My Sacrificial Clam
+          </div>
+          <div class="plot">J.D. fears being contaminated with Hepatitis B. Elliot has a hard time making time for her new relationship. Turk obsesses about getting in shape.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E22%20-%20My%20Occurrence-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - My Occurrence
+          </div>
+          <div class="plot">Jordan's brother Ben is admitted at Sacred Heart for having an accident with a nail gun. J.D. goes on a search for test results.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E23%20-%20My%20Hero-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - My Hero
+          </div>
+          <div class="plot">Dr. Cox is the voice of reason and compassion. Turk is upset he wasn't chosen for a difficult surgery, and Elliot is criticized by Dr. Kelso for the 100th time.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S01E24%20-%20My%20Last%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - My Last Day
+          </div>
+          <div class="plot">It's J.D.'s last day as an intern. Carla and Turk are arguing about dating other people. Elliot finally rebels against being everyone's doormat, and J.D. is just trying to stay out of people's way.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E01%20-%20My%20Overkill-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - My Overkill
+          </div>
+          <div class="plot">Relationships between the staff of Sacred Heart Hospital have been shaken since Jordan's revelations. Turk is sleeping on J.D.'s bed, after Carla kicked him out of his own. Elliot is having a hard time facing J.D. every day at work. J.D. desperately tries to get Dr. Cox's attention back, unsuccessfully.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E02%20-%20My%20Nightingale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - My Nightingale
+          </div>
+          <div class="plot">J.D., Elliot and Turk find themselves alone in the hospital night shift and face responsibilities without supervision for the first time. Luckily, they have Carla there to support and guide them through the night.
+
+Meanwhile, Dr. Cox doesn't know what to do, when he realizes that he has feelings for his ex-wife Jordan and is asked (forced actually) to introduce Dr. Kelso at a social event, where he will be receiving an award from the medical board.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E03%20-%20My%20Case%20Study-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - My Case Study
+          </div>
+          <div class="plot">When Dr. Kelso challenges the residents by offering a trip to a medical conference in Reno as a reward to the individual, who presents the most interesting case study, J.D. refuses to play along, earning him the respect of Dr. Cox.
+
+In the meantime, Turk misses his opportunity to ask for a new laser on the one day of the year, that Dr. Kelso grants favors, so he is forced to find another way to come up with the goods.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E04%20-%20My%20Big%20Mouth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - My Big Mouth
+          </div>
+          <div class="plot">J.D. insists that Carla should open up to him. When she finally starts to do that, J.D. screws it up by telling Turk. Elliot is desperate for attention from Dr. Cox. Turk sees himself in an ethical dilemma when Dr. Kelso picks him over a female surgeon to spend a weekend in Mexico.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E05%20-%20My%20New%20Coat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - My New Coat
+          </div>
+          <div class="plot">Elliot sleeps with a handsome doctor she hardly knew and soon becomes the hospital tramp. Turk suffers from his back after operating with Dr. Amato, a very short surgeon. J.D. finds out that wearing a white coat doesn't make him a better doctor, but is upset by having Dr. Cox throw in his face that he made another mistake. And Dr. Kelso is just dying for an opportunity to lash out his anger on Dr. Cox.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E06%20-%20My%20Big%20Brother-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - My Big Brother
+          </div>
+          <div class="plot">J.D.'s brother is in town. Turk is thrown out of a patient's funeral for not knowing his name and feels even worse because earlier he made a bet with Dr. Cox over another patient's life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E07%20-%20My%20First%20Step-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - My First Step
+          </div>
+          <div class="plot">All of the male doctors are euphoric due to the visit of Julie Keaton, the pharmaceutical sales rep, except for Dr. Cox, who still believes in treating patients for their best health, instead of trying to get some attention from the hot Ms. Keaton.
+
+Meanwhile, J.D. and Elliot argue over a risky decision regarding one of Elliot's patients. Turk tries to talk Carla into entering a practitioner nurse course, so she won't be so underestimated by the doctor's staff.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E08%20-%20My%20Fruit%20Cups-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - My Fruit Cups
+          </div>
+          <div class="plot">When an expectant Jordan shows up unexpectedly, Cox is forced to choose between her and his new love, Julie.
+
+Meanwhile, J.D. and Turk take advantage of the hospital's supply closet for sleep, when they take on extra shifts at a free clinic to supplement their income. Carla encourages Elliot to stand up to her father, when he pressures her to pick a specialty more &quot;suitable for a woman.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E09%20-%20My%20Lucky%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - My Lucky Day
+          </div>
+          <div class="plot">Ever since her father cut her off financially, Elliot's been feeling the weight of the world on her back. While having to find a new affordable place to live, she also has to face the threat of being sued by a patient whom she told he had only eight months to live. Carla and Jordan hit a sore spot when Carla gives her opinion on Jordan and Perry's relationship.
+
+Meanwhile, J.D. has a fight with Dr. Cox and the two dispute over who gets to give the better treatment to two patients with the same prognosis.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E10%20-%20My%20Monster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - My Monster
+          </div>
+          <div class="plot">Elliot still doesn't have a place to live. J.D. think he's lost his mojo when he can't even kiss the giftshop girl while they go out on a date. Turk and Carla are having romance problems, because she feels he's not being as generous to her as she is to him. And Dr. Cox freaks out when he lets Jordan move in to his place due to her pregnancy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E11%20-%20My%20Sex%20Buddy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - My Sex Buddy
+          </div>
+          <div class="plot">Renewed sex with J.D. calms Elliot, who's facing personal and professional dilemmas: She's broke, and patients are bailing out on her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E12%20-%20My%20New%20Old%20Friend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - My New Old Friend
+          </div>
+          <div class="plot">Comeuppances are in store for Dr. Cox, Dr. Kelso and J.D. from a hypochondriac, a surgical patient and Elliot, who wants more than just sex from J.D.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E13%20-%20My%20Philosophy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - My Philosophy
+          </div>
+          <div class="plot">J.D. bonds with a patient, who is waiting for a heart transplant and discusses with her their idea of what death must be like. Elliot puts her foot down and demands a feminine locker room from Dr. Kelso. Turk decides it's time to propose to Carla, but a kid swallows the engagement ring.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E14%20-%20My%20Brother%2C%20My%20Keeper-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - My Brother, My Keeper
+          </div>
+          <div class="plot">Turk is still waiting for Carla to answer his proposal and asks his brother to stay over a few days to help him deal with it. Dr. Townshend, an old friend of Dr. Kelso and one of the nicest doctors around befriends J.D.
+
+Elliot accidentally finds out the sex of Jordan's baby, becoming the object of Dr. Cox's anxiety.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E15%20-%20His%20Story-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - His Story
+          </div>
+          <div class="plot">Elliot meets a nice guy at the bar, but freaks out when she finds out he's a male nurse at Sacred Heart. Turk keeps asking Carla to marry him, but she still won't give an answer. Dr. Cox feels the pressure he puts on himself everyday: His psychiatrist, his subordination to Dr. Kelso and his paternal feelings for J.D.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E16%20-%20My%20Karma-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - My Karma
+          </div>
+          <div class="plot">J.D. and Turk think they've got bad karma after hitting a car and causing an accident, while playing golf on the hospital roof. Dr. Cox bends over backwards to give Jordan as much comfort as possible on her labor day, and she confesses to J.D. that Dr. Cox is the real father. Elliot seeks advice from Carla on how to tell Paul that she's crazy, because they're getting more intimate and she can't hide it anymore. But Carla is feeling too crazy herself with the upcoming wedding.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E17%20-%20My%20Own%20Private%20Practice%20Guy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - My Own Private Practice Guy
+          </div>
+          <div class="plot">A personal secret of Dr. Cox is revealed during hospital visitations by a cocky MD (Jay Mohr), who establishes a rapport with J.D.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E18%20-%20My%20T.C.W-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - My T.C.W.
+          </div>
+          <div class="plot">J.D. flirts with the wife of a patient who's been in a coma for the past two years, whom they all call T.C.W. (Tasty Coma Wife). He feels guilty for doing that, even though she wants to go ahead with it. Meanwhile, he can't stand listening to any more relationship problems, as everybody dumps their issues on his ears: Elliot, sabotaging her relationship with Paul over beef jerky, Carla, finding out her engagement ring passed through a patient's digestive system and Dr. Cox's unsucessful attempts to get some attention from Jordan, who can only think about her baby right now.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E19%20-%20My%20Kingdom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - My Kingdom
+          </div>
+          <div class="plot">Turk takes J.D. up to surgery, and right from the start J.D. steps all over Turk when trying not to be the geek among the surgeons. Paul hears Elliot say &quot;I love U2&quot; while she was rearranging her CDs and thinks she said &quot;I love you too.&quot; Dr. Cox decides to get even with Dr. Kelso by telling everyone he's dead, revealing what people really think of him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E20%20-%20My%20Interpretation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - My Interpretation
+          </div>
+          <div class="plot">Jamie's (T.C.W.) husband died, and J.D. struggles with the ethical issues involved in starting a relationship with her. Dr. Cox babysits his son, whom Jordan still hasn't chosen a name for, and is disturbed that he feels nothing for the baby. Turk is haunted by erotic dreams about Elliot, which gets him into hot water with Carla.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E21%20-%20My%20Drama%20Queen-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x21 - My Drama Queen
+          </div>
+          <div class="plot">J.D. carries on with his romance with Jamie, but finds himself at a dead end after realizing she's a drama queen. Dr. Kelso makes Dr. Cox give a class on how to approach the patients nicely in order to prevent possible law suits. Carla's mother dies and she wants to get married.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S02E22%20-%20My%20Dream%20Job-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x22 - My Dream Job
+          </div>
+          <div class="plot">J.D. and Turk's college buddy, Spence, drops by for a visit, and accidentally tells Dr. Cox a secret. Too much partying with successful Spence causes Turk and J.D. to show up late and drunk for work, which Dr. Kelso fully reprehends them for. Elliot's feeling low since she can't measure up to Dr. Kelso's standards, and the Janitor starts another feud &ndash; this time over paychecks &ndash; with J.D.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E01%20-%20My%20Own%20American%20Girl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x1 - My Own American Girl
+          </div>
+          <div class="plot">A run-in with her old flame Sean and an accident in her new car lead Elliot to the realization that nothing good has happened to her in the three years that she has been at Sacred Heart. This realization drives her to take drastic measures, including a complete makeover, both inside and out, in an attempt to change her luck.
+
+Meanwhile, J.D. gets stuck with a patient, whose diagnosis he can't quite pin down, and when Dr. Cox denies him any assistance, he looks to Carla and Turk to help him out. While Dr. Cox is busy not helping J.D., he takes the time to make amends with Dr. Kelso.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E02%20-%20My%20Journey-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x2 - My Journey
+          </div>
+          <div class="plot">J.D. is feeling left out of his friendship with Turk and gets hurt when Turk is scared of opening up to him.
+
+Meanwhile, Carla is driven crazy over an unidentified urine sample, and Elliot tries to balance Sean and her career, so that one doesn't end up getting in the way of the other.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E03%20-%20My%20White%20Whale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x3 - My White Whale
+          </div>
+          <div class="plot">Finding difficulties training his interns, J.D. asks to Elliot for some help. She tells J.D. about Sean, who gave Elliot great tips based on his dolphin training that fit perfectly for her interns.
+
+Dr. Cox finds the ideal pediatrician for his son: Dr. Norris, who acts and looks just like him. However, Dr. Cox is quick to find a problem with him once Jack develops a cough that scares both him and Jordan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E04%20-%20My%20Lucky%20Night-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x4 - My Lucky Night
+          </div>
+          <div class="plot">Sean is a bit surprised and disturbed to learn about Elliot and J.D.'s history together, but it turns out his anger is really a cover up for his upcoming six month long trip and he doesn't want Elliot to explode.
+
+Dr. Cox. is forced to swallow his pride and actually ask for help when he decides to throw his hat in the ring for the Residency Director position at the hospital.
+
+Carla picks up an extra shift as a surgical nurse, which allows her to spend the day working alongside with Turk, to his great annoyance.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E05%20-%20My%20Brother%2C%20Where%20Art%20Thou-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x5 - My Brother, Where Art Thou?
+          </div>
+          <div class="plot">Dan decides to stay with J.D. for a while after their mom's new fianc&eacute; kicks him out, but after spending some quality time with him at the hospital, Dan isn't sure if he likes the cynical person his little brother has become.
+
+Elliot tries to deal with her own problems of a long distance relationship and decides to try moonlighting as a pet examiner with Carla to save up money.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E06%20-%20My%20Advice%20to%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x6 - My Advice to You
+          </div>
+          <div class="plot">A chance meeting in the elevator sparks a new friendship between J.D. and the mysterious Danni whose ongoing dialogue about her ex forces J.D. to talk about his feelings for Elliot.
+
+Carla's brother Marco comes to visit, but he still hasn't forgiven Turk for mistaking him for a valet at their mother's funeral. Unfortunately, Turk can't even apologize because Marco can't speak anything but Spanish.
+
+At the hospital, Dr. Cox relishes his new job promotion but is surprised when J.D. doesn't follow his lead in contradicting Dr. Kelso's orders.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E07%20-%20My%20Fifteen%20Seconds-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x7 - My Fifteen Seconds
+          </div>
+          <div class="plot">As J.D.'s relationship with Danni progresses, he and Dr. Cox are forced to spend more time together outside of the hospital, to Perry's great chagrin.
+
+Meanwhile, as they each deal with problems in their own relationships, Carla and Elliot work to find their own balance between their personal and professional relationships.
+
+Dr. Kelso accidentally punctures his eardrums giving the hospital staff an opportunity to tell him how they truly feel about him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E08%20-%20My%20Friend%20the%20Doctor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x8 - My Friend the Doctor
+          </div>
+          <div class="plot">Elliot struggles to find her defining moment after Turk performs his first solo surgery. Dr. Cox deals with the reality of growing older when his back goes out. J.D. finds out that many of the hospital staff don't know the Janitor as he does.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E09%20-%20My%20Dirty%20Secret-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x9 - My Dirty Secret
+          </div>
+          <div class="plot">Elliot feels uneasy with the proper terms for sexual organs, especially after performing a pelvic exam; J.D.'s patient refuses to have surgery for prostate cancer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E10%20-%20My%20Rule%20of%20Thumb-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x10 - My Rule of Thumb
+          </div>
+          <div class="plot">Carla and Elliot try to help a patient, Maggie, lose her virginity as she prepares to die.
+
+Walking in on her sister and Dr. Cox prompts Danni to move in with J.D. Dr. Cox attempts to convince Turk to do a kidney transplant for a patient he has &quot;moved up&quot; the list. But a personal grudge seems to stand in the way and may decide whether the patient lives or dies.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E11%20-%20My%20Clean%20Break-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x11 - My Clean Break
+          </div>
+          <div class="plot">J.D. tries to break-up with Danni, but she beats him to it when she realizes that she will always be second place to Elliot in his heart.
+
+Dr. Cox suddenly becomes a nice guy and Elliot changes back to her old self after Dr. Kelso criticizes her new look.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E12%20-%20My%20Catalyst-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x12 - My Catalyst
+          </div>
+          <div class="plot">J.D. believes he may have finally found a mentor in Dr. Kevin Casey, a surgeon with obsessive-compulsive disorder, and it turns out that Dr. Cox has always been jealous of the guy.
+
+Meanwhile, the Janitor and his new assistant help Kelso out with a garbage problem.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E13%20-%20My%20Porcelain%20God-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x13 - My Porcelain God
+          </div>
+          <div class="plot">Elliot finds herself perplexed over a simple procedure that leaves her questioning her career path. She goes to seek Dr. Kevin Casey's advice but becomes frustrated when she learns that the epiphany toilet, which the Janitor secretly installed on the roof, is getting more attention than she is.
+
+Meanwhile, Turk asks J.D. to be his best man at his wedding, which sends J.D. into sheer bliss momentarily until he hears a phone message that makes him question his friendship with Turk.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E14%20-%20My%20Screw%20Up-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x14 - My Screw Up
+          </div>
+          <div class="plot">Jordan's brother and sister return, but Dr. Cox learns that his brother-in-law Ben hasn't visited a doctor about his cancer in the two years he has been gone traveling the world.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E15%20-%20My%20Tormented%20Mentor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x15 - My Tormented Mentor
+          </div>
+          <div class="plot">Jordan's friends Allison and Maddie come to town to provide moral support for Jordan after her brother's death &ndash; however, their constant presence does not provide any relief to Dr. Cox.
+
+Meanwhile, Turk tries to impress the new female surgeon, Dr. Miller, but his first encounter serves only to leave him baffled by the opposite sex yet again. Attempting to reinforce the policy on sexual harassment at Sacred Heart, Carla is forced to teach a course where Dr. Kelso is the number-one student.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E16%20-%20My%20Butterfly-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x16 - My Butterfly
+          </div>
+          <div class="plot">An ever present butterfly prompts the question on what could have happened different as Turk looks for his lucky do-rag for surgery, and Elliot tries to find a lost stuffed animal for a child needing a bone marrow transplant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E17%20-%20My%20Moment%20of%20Un-Truth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x17 - My Moment of Un-Truth
+          </div>
+          <div class="plot">J.D. must keep a secret when Carla's &quot;what-if&quot; guy asks her out on a date.
+
+Meanwhile, on the other side of the argument, Carla hounds Turk for checking out other women.
+
+Elliot is also on the spot as Dr. Cox and Dr. Kelso both advise her not to give her patient drugs as they suspect he is an addict faking pain.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E18%20-%20His%20Story%20II-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x18 - His Story II
+          </div>
+          <div class="plot">Turk has to confront a young patient of his, when he accidentally cuts a nerve and the boy (who happens to be a concert pianist) loses use of one of his hands.
+
+Meanwhile, one of Elliot's patients unintentionally teaches her a lesson about her relationship with J.D.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E19%20-%20My%20Choosiest%20Choice%20of%20All-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x19 - My Choosiest Choice of All
+          </div>
+          <div class="plot">J.D. hooks up with Danni again, after Sean returns, but he can't forget about his passionate night with Elliot.
+
+Meanwhile, Dr. Cox realizes, that he might actually have a crush on the one doctor he loathes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E20%20-%20My%20Fault-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x20 - My Fault
+          </div>
+          <div class="plot">Elliot asks Sean to move in with her, which only adds to J.D.'s problems.
+
+Turk is unsure why Dr. Miller's attitude towards him has changed, until he finds out that Carla un-invited her from their wedding.
+
+Dr. Kelso outrages Dr. Cox when he announces that Sacred Heart will begin doing full body scans, starting with an ever present hypochondriac patient, who wants any freebies he can get.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E21%20-%20My%20Self-Examination-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x21 - My Self-Examination
+          </div>
+          <div class="plot">J.D. is unsure what to do, when he realizes he made a mistake telling Elliot he loved her.
+
+The Janitor squares off against Dr. Cox after he loses the election of the janitors to Randall.
+
+Carla's brother Marc constantly puts Turk in a tough situation, when Turk forgets to write his wedding vows.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S03E22%20-%20My%20Best%20Friend%27s%20Wedding-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            3x22 - My Best Friend's Wedding
+          </div>
+          <div class="plot">The big day for Turk and Carla has finally arrived, but a patient holds up Turk.
+
+With Elliot still angry at him, J.D. attempts to reconcile her with Sean as a way to make everything right again in their friendship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E01%20-%20My%20Old%20Friend%27s%20New%20Friend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x1 - My Old Friend's New Friend
+          </div>
+          <div class="plot">Turk and Carla start to have issues when Carla tries to change everything about her new husband. Molly Clock (Heather Graham), the hospital's new psychiatrist, becomes friends with Elliot because she believes Turk, J.D. and Carla are shutting her out. Also, when Turk and J.D.'s car blows up, Carla lets him pick out the new ride only to find that instead of a car, he buys three scooters for them, further proving Carla's point that she needs to always be in control. The episode guest stars the Sugarhill Gang.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E02%20-%20My%20Office-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x2 - My Office
+          </div>
+          <div class="plot">Dr. Clock tries to reconcile J.D. and Eliot, while waiting to see which one Dr. Cox will give the Chief Resident position to. Molly and Carla are experiencing some subtle conflict and Elliot and J.D. begin to come together after long bouts of conflict of their own.
+
+Meanwhile, Dr. Cox, Turk and the Janitor are forced to work together to help a patient.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E03%20-%20My%20New%20Game-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x3 - My New Game
+          </div>
+          <div class="plot">Dr. Cox is having issues with Jordan, since Ted revealed that they are still technically married due to some filing problems.
+
+J.D. has problems of his own as he can't shake off the tag of Co-Chief Resident the Janitor assigned to him, while Elliot keeps the Chief Resident tag.
+
+Elsewhere, Turk begins to doubt his abilities after letting a patient die and isn't helped, when he finds out J.D. has no confidence in him either.
+
+Dr. Cox and Molly spar about her involvement in his patients.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E04%20-%20My%20First%20Kill-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x4 - My First Kill
+          </div>
+          <div class="plot">J.D. is shocked to hear Dr. Cox tell his interns that eventually, they will screw up and kill a patient. J.D. fears his first time killing someone will soon be upon him.
+
+Elliot is upset with Molly, after she disagrees about a patient's promise to attend drug rehab.
+
+Carla loses Rowdy and she and the Janitor go looking for him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E05%20-%20Her%20Story-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x5 - Her Story
+          </div>
+          <div class="plot">Elliot becomes unsure, if she wants Molly as her mentor, when she finds out that Molly doesn't have a perfect home life.
+
+J.D. is tested in leadership skills when Dr. Cox yells at him in front of his interns.
+
+Carla and Turk try to come to an agreement when Turk continuously wakes Carla up every night.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E06%20-%20My%20Cake-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x6 - My Cake
+          </div>
+          <div class="plot">When Dan resurfaces, J.D. is shocked to learn his father has passed away. The reactions from his co-workers help J.D. a little, but the one person, Dr. Cox, who he wanted to be there for him is too busy with J.D.'s patients.
+
+Meanwhile, Dan sits drunk in the bath tub the whole day and Turk finds out he has Type II Diabetes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E07%20-%20My%20Common%20Enemy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x7 - My Common Enemy
+          </div>
+          <div class="plot">When J.D. finds Dan with Elliot, Turk tells him to use the hurt brother excuse to get them to break up, just like Turk uses his diabetes to get stuff from Carla. But then J.D. realizes he wasn't hurt at all...
+
+Dr. Cox and Dr. Kelso unite to try and torment their common enemy: Dr. Clock.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E08%20-%20My%20Last%20Chance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x8 - My Last Chance
+          </div>
+          <div class="plot">When Molly takes a job at a different city, she and J.D. end up having a night of kissing, and he tries to rush to sleep with her before she leaves.
+
+Dr. Cox goes on ambulance duty with a maniac, who he eventually finds out is a woman who has lost her son to an accident.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E09%20-%20My%20Malpractical%20Decision-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x9 - My Malpractical Decision
+          </div>
+          <div class="plot">J.D. is approached by a malpractice attorney, asking him to do a risky procedure on her father. Meanwhile, Elliot guides Doug to a new career path and Turk struggles to avoid a hypochondriac patient.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E10%20-%20My%20Female%20Trouble-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x10 - My Female Trouble
+          </div>
+          <div class="plot">With the case against Turk on his mind, J.D. attempts to end it with Neena, but she won't take &quot;no&quot; for an answer and keeps him wrapped around her finger. Carla tries her own way of persuading Mr. Corman to drop the lawsuit.
+
+Elliot sets out to prove she isn't the doctor she was four years ago and doesn't need to rely on anyone anymore.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E11%20-%20My%20Unicorn-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x11 - My Unicorn
+          </div>
+          <div class="plot">J.D. takes matters into his own hands, when searching for a relative for his favorite patient.
+
+Meanwhile, Elliot is fed up with coworkers not taking her serious and discovers, that she can get her way by flaunting her femininity with some help from Carla and Jordan.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E12%20-%20My%20Best%20Moment-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x12 - My Best Moment
+          </div>
+          <div class="plot">When J.D. has to address a bunch of pre-med students about what it's like to be a doctor, he strays off the beaten path and chooses to discuss his best moments as a doctor instead. When he challenges the rest of the staff to do so, they all remember their best memories in the medical field.
+
+Meanwhile, Elliot is forced to face her fear of children, when she must befriend a ten year old boy, whose father is being treated in the I.C.U.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E13%20-%20My%20Ocardial%20Infarction-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x13 - My Ocardial Infarction
+          </div>
+          <div class="plot">Elliot starts showing J.D. up as the calmer, more competent doctor. A date with the Janitor leads to an a capella sing-off between his &quot;group&quot; and Ted's band.
+
+Turk starts taking his diabetes more serious, when he realizes the dire consequences of the disease.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E14%20-%20My%20Lucky%20Charm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x14 - My Lucky Charm
+          </div>
+          <div class="plot">A man injured in a bar fight teaches Turk and J.D. a lesson about living life to the fullest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E15%20-%20My%20Hypocritical%20Oath-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x15 - My Hypocritical Oath
+          </div>
+          <div class="plot">J.D. has a crush on a girl, who he met at a club, and he's torn about telling her, that her boyfriend has gonorrhea.
+
+Elliot decides to take a stand against Dr. Kelso with one of her patients. And Dr. Cox is blackmailed by the Janitor for a basketball game's score, after he spoils the end of &quot;The Sixth Sense.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E16%20-%20My%20Quarantine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x16 - My Quarantine
+          </div>
+          <div class="plot">J.D. tries to impress Kylie by paying a hobo in the hospital to fake a heart attack, when everything becomes boring due to a quarantine that he caused.
+
+Turk learns, that Carla dated Cox and gets mad at her for not telling him.
+
+The Janitor makes a bet with Dr. Kelso, who is starving, that will make him pay $700, unless the Janitor is able to get a &quot;face cake,&quot; in order to satisfy him, from Laverne.
+
+Also, Danni Sullivan returns to annoy everyone, causing a constant fight between Ted and Doug.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E17%20-%20My%20Life%20in%20Four%20Cameras-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x17 - My Life in Four Cameras
+          </div>
+          <div class="plot">When J.D. meets a former writer from his all time favorite TV show &quot;Cheers,&quot; he begins to picture his life at the hospital as a bland, multiple camera sitcom, where everything is perfect and wraps up nicely.
+
+Back in reality, Cox is relunctant to fire an amiable cafeteria worker, while Turk and Carla struggle to keep their promise of constant romantic affection afloat.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E18%20-%20My%20Roommates-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x18 - My Roommates
+          </div>
+          <div class="plot">J.D. is thrown out of the apartment.
+
+Turk and Carla continue to struggle to keep the romance alive.
+
+Dr. Cox has reason to believe that the son of an old buddy is autistic.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E19%20-%20My%20Best%20Laid%20Plans-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x19 - My Best Laid Plans
+          </div>
+          <div class="plot">J.D. ditches a seemingly uninterested Kylie for Dr. Molly Clock, who just returned from Milwaukee.
+
+Carla fumes over Turk's frequent phone calls to an ex-girlfriend.
+
+The Janitor and Dr. Cox make a wager over Elliot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E20%20-%20My%20Boss%27s%20Free%20Haircut-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x20 - My Boss's Free Haircut
+          </div>
+          <div class="plot">Dr. Kelso dons scrubs to prove a point to Dr. Cox, only to watch it backfire, when an obnoxious patient refuses to listen to him.
+
+J.D. and Turk party, while Carla struggles to find solace in Elliot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E21%20-%20My%20Lips%20Are%20Sealed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x21 - My Lips Are Sealed
+          </div>
+          <div class="plot">When Carla and J.D. go out to let Carla have some fun, they get drunk and end up accidentally kissing.
+
+Dr. Cox gets the hammer dropped by Jordan, when Jack has to get stitches under Perry's watch.
+
+Elliot has trouble with a male patient, who has taken enhancement pills.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E22%20-%20My%20Big%20Move-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x22 - My Big Move
+          </div>
+          <div class="plot">J.D. and Carla get the silent treatment from Turk, who can't seem to control his emotions, after learning about their kiss.
+
+Dr. Cox reluctantly seeks the help of Elliot, when an epileptic patient won't listen to him.
+
+The Janitor feels emasculated by his new uniform.
+
+Jordan trys Botox.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E23%20-%20My%20Faith%20in%20Humanity-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x23 - My Faith in Humanity
+          </div>
+          <div class="plot">Turk won't open up at couples therapy.
+
+Elliot refuses Dr. Cox's romantic advice, when a very attractive man saunters into the hospital.
+
+J.D. learns a lesson in humanity from a dying old woman.
+
+The Janitor accidently lets a bunch of rats run around Sacred Heart.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E24%20-%20My%20Drive-By-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x24 - My Drive-By
+          </div>
+          <div class="plot">Elliot is torn between moving too quickly and ruining her new relationship with Jake. Dr. Cox teaches Turk about having a healthy ego and Dr. Kelso and the Janitor fight over who gets to use the motorized cart.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S04E25%20-%20My%20Changing%20Ways-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            4x25 - My Changing Ways
+          </div>
+          <div class="plot">With their residencies over, there are big changes at Sacred Heart. J.D. moves out to live on his own, while Turk and Carla consider a family change, creating another rift in their long friendship.
+
+Jordan is hired to handle some paperwork for Kelso, which annoys Cox.
+
+Elliot has a job interview at a different hospital thanks to her boyfriend Jake.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E01%20-%20My%20Intern%27s%20Eyes-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x1 - My Intern's Eyes
+          </div>
+          <div class="plot">Attending at Sacred Heart, J.D. now has to deal with his own interns. Turk has doubts having children, then tries to prevent Carla from getting pregnant. Meanwhile Elliot struggles to find her way at County Hospital and doesn't want to seem like the helpless person she was before.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E02%20-%20My%20Rite%20of%20Passage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x2 - My Rite of Passage
+          </div>
+          <div class="plot">J.D. wants to show Dr. Cox and Dr. Kelso how to treat interns, but instead he finds out that they laugh at his bad jokes out of fear and respect.
+
+Everyone at the hospital is avoiding Jordan to get rid of her except for Turk. An aborted attempt to bond with her results in Jordan being conned by Sam, the drug addict. Elsewhere, Elliot's fellowship goes sour and she finds herself confiding in loose-lipped Carla.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E03%20-%20My%20Day%20at%20the%20Races-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x3 - My Day at the Races
+          </div>
+          <div class="plot">While planning his birthday, J.D. finds a list of things he wanted to accomplish, before he turned 30. He enters a triathlon to begin. Meanwhile, Elliot discovers a side of her boyfriend Jake, that freaks her out. And Turk is working hard to impress his bosses and takes on a patient, who wants to be hypnotized during surgery in effort to be promoted.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E04%20-%20My%20Jiggly%20Ball-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x4 - My Jiggly Ball
+          </div>
+          <div class="plot">J.D. is asked to introduce Dr. Kelso at an awards dinner, so he wants to find out something good about him. Dr. Kelso and Dr. Cox each have a patient, whom they feel deserves the benefit of a new experimental treatment, but there is only one open slot. Elsewhere, Carla and Turk try to help Elliot get her old job at Sacred Heart back. And the Janitor taunts J.D. with the made up game of &quot;Jiggly Ball.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E05%20-%20My%20New%20God-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x5 - My New God
+          </div>
+          <div class="plot">Dr. Cox's religious sister Paige comes to visit for her nephew's baptism. Turk is finding out, just how unsexy baby making can be. Elliot helps him realize that Carla finds the whole process to be romantic. Elswhere, J.D. and the Janitor start a buddy friendship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E06%20-%20My%20Missed%20Perception-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x6 - My Missed Perception
+          </div>
+          <div class="plot">J.D. mistakes an elderly woman's happiness as her wish to stop treatment for a fatal illness.
+
+Turk and Elliot struggle to find the cause of a patient's body pain and Carla tries to organize the annual group photo.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E07%20-%20My%20Way%20Home-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x7 - My Way Home
+          </div>
+          <div class="plot">In a &quot;Wizard of Oz&quot; homage, J.D. is trying to go home, Turk searches for a heart donor and Carla worries, that she doesn't have the courage to become a parent. Meanwhile, Elliot doesn't believe, that she has the brains to lead a question and answer session. Also, the Janitor is painting color coded lines throughout the hospital for easier navigation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E08%20-%20My%20Big%20Bird-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x8 - My Big Bird
+          </div>
+          <div class="plot">J.D., Turk, Elliot and Carla are interrogated about the mysterious death of a patient.
+
+Dr. Kelso learns, that J.D. and Turk were away tracking down a patient, Elliot was traumatized over finding out that her make-out buddy was married and Carla was busy recruiting hospital personnel for a group lottery purchase.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E09%20-%20My%20Half-Acre-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x9 - My Half-Acre
+          </div>
+          <div class="plot">J.D. meets the klutzy Julie, and when he becomes smitten, Elliot attempts to help out with romance advice. Meanwhile, Carla tries to find Dr. Cox's soft side, when he refuses to kiss his son.
+
+Turk and the Janitor put together an air band to win a contest, but Kelso gives them a tremendous obstacle.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E10%20-%20Her%20Story%20II-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x10 - Her Story II
+          </div>
+          <div class="plot">J.D. is annoyed, that Julie doesn't laugh, so Elliot encourages him, to tell her his feelings, and Turk tries to use psychology to fix the issue.
+
+Meanwhile, Carla is upset, when the Janitor refers to a new nurse as a &quot;hot young Carla,&quot; which intensifies her growing concern, that she is too old to conceive.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E11%20-%20My%20Buddy%27s%20Booty-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x11 - My Buddy's Booty
+          </div>
+          <div class="plot">J.D. is still dealing with his recent breakup and trying not to kill intern Keith, who has become annoyingly perfect. To make matters worse, a favorite patient is in a serious coma and each of the staff finds their own way to deal with it.
+
+Dr. Cox and the Janitor bond over drinks at the bar and Carla makes it her mission to make the hospital's gym female friendly. Meanwhile Turk suggests, that J.D. and Elliot find themselves 'booty calls'.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E12%20-%20My%20Cabbage-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x12 - My Cabbage
+          </div>
+          <div class="plot">Dr. Kelso is outraged, when he discovers, that a bird has been living in Sacred Heart. He orders the Janitor to dispose of it immediately. However, the Janitor likes the bird so much, he secretly keeps it as a pet. Meanwhile, J.D., annoyed with Keith, tries to get his intern fired, but things don't turn out as intended.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E13%20-%20My%20Five%20Stages-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x13 - My Five Stages
+          </div>
+          <div class="plot">J.D. and Dr. Cox go through the five stages of grief with their favorite patient, who is declining in health. Carla forces Turk to go on a string of double dates, including Elliot and her booty call Keith. Elsewhere, Dr. Kelso hits Ted with his car, thus Ted finally has the upper hand with a potential lawsuit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E14%20-%20My%20Own%20Personal%20Hell-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x14 - My Own Personal Hell
+          </div>
+          <div class="plot">J.D. is sick of perfect intern Keith and he's not the only one. Elliot's relationship with Keith is revealed, so the other interns think that he is getting special attention. In the meantime Dr. Cox boasts about being named &quot;The Best Doctor in the City&quot; by a local magazine, thus Dr. Kelso assigns him to the most difficult patient in the hospital to deflate his ego. Also, Turk and Carla continue to struggle in their quest for conception.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E15%20-%20My%20Extra%20Mile-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x15 - My Extra Mile
+          </div>
+          <div class="plot">J.D. urges Cox and his fellow doctors to do special, unconventional things for their patients, but J.D. himself is not sure he can shave his head for a woman undergoing chemotherapy, after meeting a woman who loves his hair. Meanwhile,Turk and Carla attempt to eliminate all the stress in their lives, to better their chances of conceiving. Also, Elliot can't stop giving her new boyfriend Keith stupid gifts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E16%20-%20My%20Bright%20Idea-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x16 - My Bright Idea
+          </div>
+          <div class="plot">Turk finds out, that Carla is pregnant, before she does, so J.D. convinces Turk to tell the entire hospital staff to surprise Carla with the news. But Carla wants to personally share her baby news with everybody, so Turk and J.D. have to quickly contain the hospital gossip. Meanwhile, when Elliot puts Dr. Cox into an embarrassing situation, he decides to get even with Elliot through Keith and Carla.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E17%20-%20My%20Chopped%20Liver-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x17 - My Chopped Liver
+          </div>
+          <div class="plot">When J.D. rearranges his schedule to allow himself more time to spend with Turk, Turk secretly resents hanging out with J.D. in that time because it interferes with his own &quot;Turk Time.&quot;
+
+Meanwhile, Dr. Cox and Jordan go on a double date with Elliot and Keith, and Carla covers for Kelso at work, as he grieves for his dead dog.
+
+Later, a patient almost dies, after giving up part of his liver for his brother, and the hospital staff learns about making sacrifices for the people they really care about.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E18%20-%20My%20New%20Suit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x18 - My New Suit
+          </div>
+          <div class="plot">J.D.'s brother Dan returns for a surprise visit and Elliot learns that J.D. has been telling Dan that she still likes him. A patient with weight-related problems needs an MRI, but he's too big for the machine. Carla and Turk freak out when they begin to discuss baby names. Meanwhile, Dr. Kelso assigns Dr. Cox to assist Ted with malpractice claim paperwork after Dr. Cox insults Dr. Kelso's son.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E19%20-%20His%20Story%20III-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x19 - His Story III
+          </div>
+          <div class="plot">Turk and Carla turn J.D.'s old bedroom into a nursery for the baby. The Janitor seizes an opportunity to shove J.D. out of the picture for a day. Elsewhere, Elliot uses her mother to learn information about Keith's peers and Turk &amp; Dr. Cox accuse each other of not being hip.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E20%20-%20My%20Lunch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x20 - My Lunch
+          </div>
+          <div class="plot">J.D. asks Dr. Cox out for lunch, but runs into annoying former patient Jill Tracy, who unexpectedly teaches him something about responsibility.
+
+Elliot and Carla discover that Todd has been lying about all his hospital &quot;conquests&quot; and suspect that he's been less than truthful about other issues. Turk warns them not to meddle in his affairs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E21%20-%20My%20Fallen%20Idol-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x21 - My Fallen Idol
+          </div>
+          <div class="plot">Dr. Cox starts drinking after his decisions result in the death of three of his patients. The staff tries to cover for him at the hospital, while everyone tries to convince him how inspiring he is for them.
+
+Turk starts his new rotation with orthopedic surgery, but isn't so fond of his attending doctor's touchy-feely methods. Thus, J.D. and the Janitor attempt to help Turk find ways to bond with his new supervisor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E22%20-%20My%20D%C3%A9j%C3%A0%20vu%2C%20My%20D%C3%A9j%C3%A0%20vu-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x22 - My D&eacute;j&agrave; vu, My D&eacute;j&agrave; vu
+          </div>
+          <div class="plot">J.D. feels that the same things happen over and over again at the hospital. Dr. Cox returns to work, but Elliot believes that he has lost his usual confidence. Elliot calls Dr. Cox on his behavior. Carla gets fed up with Turk, because he still can do a lot of stuff, but she can't since she is now pregnant.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E23%20-%20My%20Urologist-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x23 - My Urologist
+          </div>
+          <div class="plot">J.D. challenges an urologist's assessment on a consult for a patient in need of a risky surgical procedure. He also starts to fall for her. Meanwhile, Elliot considers breaking up with Keith, but Carla is showing extreme hormonal changes due to her pregnancy and tries to interfere. The Janitor and Dr. Kelso are having a little tiff of their own about fear.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S05E24%20-%20My%20Transition-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            5x24 - My Transition
+          </div>
+          <div class="plot">J.D. plans a date with Kim on their night off but Elliot keeps getting in their way. Meanwhile, Elliot throws a baby shower for Carla.Perry and Jordan hand over all of Jack's stuff to Carla. And someone announces a very surprising pregnancy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E01%20-%20My%20Mirror%20Image-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x1 - My Mirror Image
+          </div>
+          <div class="plot">J.D. addresses the news that he is going to be a father and Dr. Cox is worried about how his anger is going to impact his offspring. Meanwhile, Carla and Turk prepare for the impending arrival of their new baby. Elliot feels left out because she is childless, while the Janitor wonders if he has wasted his life.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E02%20-%20My%20Best%20Friend%27s%20Baby%27s%20Baby%20and%20My%20Baby%27s%20Baby-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x2 - My Best Friend's Baby's Baby and My Baby's Baby
+          </div>
+          <div class="plot">J.D. and Kim start contemplating about their future and their baby's future. Meanwhile, Turk rushes Carla to the hospital after she goes into labor. And Jordan accuses Dr. Cox of not being a more defensive father towards Jack.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E03%20-%20My%20Coffee-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x3 - My Coffee
+          </div>
+          <div class="plot">J.D. and Kim are surprised of how much they have in common. Recently giving birth, Carla doesn't want to return to work. Meanwhile, Elliot tries to persuade Dr. Turner, a surgeon with thirty years of experience, that medicine is the better option to work with and that surgery could kill him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E04%20-%20My%20House-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x4 - My House
+          </div>
+          <div class="plot">Dr. Cox feels like the TV character House when he has to solve several mysteries, one of them being Elliot's anger towards Dr. Kelso, while for some reason she is taking it out on Turk.
+
+J.D. tries to be a better boyfriend to Kim.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E05%20-%20My%20Friend%20with%20Money-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x5 - My Friend with Money
+          </div>
+          <div class="plot">Elliot begins enjoying luxuries since she has extra money with her new private practice gig. But eventually, J.D. becomes jealous of her and that forbids him the use of these privileges.
+
+Dr. Cox and the Janitor become roommates in one of the hospital suites, while Turk tries to convince Carla that she has postpartum depression and that she needs help.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E06%20-%20My%20Musical-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x6 - My Musical
+          </div>
+          <div class="plot">A new patient at the hospital wakes up and sees everything happening around her as a musical.
+
+Carla can't decide whether or not to return to work and Elliot must find a way to tell J.D. he can't move into her new house with her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E07%20-%20His%20Story%20IV-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x7 - His Story IV
+          </div>
+          <div class="plot">The hospital is seen through the eyes of Dr. Kelso, who befriends an Iraq War veteran.
+
+The soldier's stay sparks a political debate among staff members.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E08%20-%20My%20Road%20to%20Nowhere-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x8 - My Road to Nowhere
+          </div>
+          <div class="plot">After being convinced to go to Tacoma for Kim's first ultrasound, J.D., along with Carla, Elliot, Janitor, Keith and Ted, takes Kelso's new RV on a road trip. Meanwhile, Jordan and Dr. Cox have trouble when Jordan's ultrasound reveals that the baby will need surgery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E09%20-%20My%20Perspective-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x9 - My Perspective
+          </div>
+          <div class="plot">A Croatian Doctor comes to Sacred Heart, only to find out that he has to redo his Internship there.
+
+J.D. shows symptoms of 'Vasovagal Syncope', a condition that causes fainting and blackouts.
+
+Turk and Elliot argue over whose turn it is to take care of him, whilst Carla tries out her new excuse &quot;I have a baby&quot; and the Janitor takes a vacation.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E10%20-%20My%20Therapeutic%20Month-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x10 - My Therapeutic Month
+          </div>
+          <div class="plot">J.D. develops a crush on a new physical therapist but due to his latest misfortunes, he finds it difficult to ask her out. Elliot asks Keith to move in with her, but is not willing to budge on her home rules. Turk breaks his arm and is sent back to residency by Dr. Kelso. Thanks to Dr. Cox, he realizes that he doesn't know as much about medicine as he thought.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E11%20-%20My%20Night%20to%20Remember-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x11 - My Night to Remember
+          </div>
+          <div class="plot">A memory loss patient is the peg for a look back on the last seasons of Scrubs, when the Sacred Heart crew looks back at their memorable moments.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E12%20-%20My%20Fishbowl-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x12 - My Fishbowl
+          </div>
+          <div class="plot">When Private Dancer is released from the hospital, the military informs him that his injuries are too severe to be reinstated into the service, so he gets depressed. The Sacred Heart staff try to cheer him up, while the Janitor is having a fish problem.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E13%20-%20My%20Scrubs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x13 - My Scrubs
+          </div>
+          <div class="plot">J.D. and Turk try to treat Dr. Kelso's uninsured friend. Meanwhile, Dr. Kelso himself is concerned about a clothing thief. Elsewhere, Dr. Cox tries to convince Elliot that a reformed drug addict isn't exactly clean, and the Janitor blackmails Carla.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E14%20-%20My%20No%20Good%20Reason-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x14 - My No Good Reason
+          </div>
+          <div class="plot">Laverne and Dr. Cox engage in a philosophical debate. Carla finds a hot nanny for Isabella, and Turk struggles to find a way not to leer at her.
+
+Elliot smuggles a patient's dog into the hospital to cheer her up and ends up in hot water with Dr. Kelso. A tragic twist awaits at the end, challenging everyone to decide if they think everything happens for a reason.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E15%20-%20My%20Long%20Goodbye-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x15 - My Long Goodbye
+          </div>
+          <div class="plot">Laverne is brain-dead, and her family decides to take her off life support. One by one, the staff say their goodbyes, except Carla, who stoutly refuses to accept what's happening. She consequently finds herself &quot;haunted&quot; by Laverne. Meanwhile, Jordan gives birth, but Dr. Cox doesn't want to tell anyone because he doesn't want his daughter's birthday to always be associated with Laverne's death.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E16%20-%20My%20Words%20of%20Wisdom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x16 - My Words of Wisdom
+          </div>
+          <div class="plot">In the wake of Laverne's funeral, the Sacred Heart Staff decide to implement lessons from her life to their actions. Carla is upset that everyone seems to act as if nothing has changed. Dr. Cox tries to take twenty minutes for himself every day, but has great difficulty doing that. Meanwhile, the Janitor helps J.D. and Turk treat a deaf patient. And Elliot learns that Keith wants more from their relationship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E17%20-%20Their%20Story-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x17 - Their Story
+          </div>
+          <div class="plot">The perspective shifts between Jordan, Ted, and Todd, as they go about their day.
+
+Jordan messes with Elliot and Keith's relationship and is disturbed when it doesn't give her any satisfaction. Ted tries to settle a pay dispute between the nurses and Dr. Kelso. Todd has found his calling in plastic surgery, but must convince Turk not to interfere with a sixteen-year-old girl getting breast implants.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E18%20-%20My%20Turf%20War-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x18 - My Turf War
+          </div>
+          <div class="plot">When Keith leaves town for a few days, J.D. expects that he'll finally be able to spend some quality time with Elliot. But he doesn't anticipate Elliot's old college friend dropping by. J.D. switches between hitting on her and competing with her for Elliot's attention. Meanwhile, Turk and Dr. Cox volley a hypochondriac patient back and forth since there's nothing wrong with him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E19%20-%20My%20Cold%20Shower-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x19 - My Cold Shower
+          </div>
+          <div class="plot">J.D. tries to get together with Elliot's sorority sister Melody, but she just wants to make out with him without going further. Meanwhile, Keith re-proposes to Elliot after she gets to make everything perfect, while everyone has fantasies about being married to Elliot. Elliot and Carla are having problems figuring out what is wrong with two elderly patients, who show the same symptoms but have no obvious connection.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E20%20-%20My%20Conventional%20Wisdom-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x20 - My Conventional Wisdom
+          </div>
+          <div class="plot">J.D. and Turk go to a medical convention in Phoenix, Arizona, where they run into J.D.'s ex-girlfriend Dr. Kim Briggs, who has a surprise for J.D. Meanwhile at Sacred Heart, the janitor pretends to be the chief of medicine and Dr. Cox starts to put doubts about the wedding into Elliot's mind.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E21%20-%20My%20Rabbit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x21 - My Rabbit
+          </div>
+          <div class="plot">Kim moves in with J.D. in order to raise their child together. J.D. learns from Turk and Dr. Cox that fatherhood changes the way of how to see things.
+
+Carla complains to Elliot about her being a control freak when they prepare the bachelorette party.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S06E22%20-%20My%20Point%20of%20No%20Return-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            6x22 - My Point of No Return
+          </div>
+          <div class="plot">In the season finale, J.D. and Elliot start thinking about their future and if they both made a mistake in not being with each other. The Janitor activates the &quot;Brain Trust&quot; to come up with the perfect wedding gift for Elliot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S07E01%20-%20My%20Own%20Worst%20Enemy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x1 - My Own Worst Enemy
+          </div>
+          <div class="plot">In the aftermath of their near-indiscretion, Elliot realizes she doesn't want to be with Keith, and J.D. resolves to stop sabotaging himself.
+
+Meanwhile, Dr. Cox and Turk find a patient they both like who is in danger of being discharged.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S07E02%20-%20My%20Hard%20Labor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x2 - My Hard Labor
+          </div>
+          <div class="plot">Kim goes into labor, and J.D. struggles to decide if he should tell her what he really thinks of their relationship. Turk, desperate to do something not baby-related, races to beat a video game before Carla discovers him. And Dr. Cox searches for someone he trusts enough to give his daughter a shot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S07E03%20-%20My%20Inconvenient%20Truth-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x3 - My Inconvenient Truth
+          </div>
+          <div class="plot">J.D's brother Dan returns and delivers a few home truths to his little brother. In the meantime, Elliot and Dr. Cox debate over the morals of their practice and the staff of Sacred Heart find the Janitor's behavior rather odd after he watches &quot;An Inconvenient Truth&quot;.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S07E04%20-%20My%20Identity%20Crisis-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x4 - My Identity Crisis
+          </div>
+          <div class="plot">Turk tries to assure a worried Carla that their daughter will acknowledge her Latin heritage. Meanwhile the Janitor challenges J.D. to identify everyone in the hospital, when it is discovered that he uses nicknames, because he doesn't know the people's actual names. If J.D. can't name all of them, he must take up the mop for a day. Elsewhere, Dr. Cox realizes that he is lonely without his wife and children.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S07E05%20-%20My%20Growing%20Pains-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x5 - My Growing Pains
+          </div>
+          <div class="plot">The Sacred Heart staff has to deal with their inner child, when J.D. and Turk remember their first prank, Dr. Cox has a ten year old Leukemia patient and Dr. Kelso celebrates his birthday.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S07E06%20-%20My%20Number%20One%20Doctor-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x6 - My Number One Doctor
+          </div>
+          <div class="plot">Though Elliot boasts that through private practice she gets to get to know her patients, nobody seems to care. Carla is amazed at how the Janitor was able to score such an attractive girlfriend. The doctors are improving their services to get a higher ranking on a website and although J.D. appears nonchalant initially, he is elated when he is ranked #1.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S07E07%20-%20My%20Bad%20Too-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x7 - My Bad Too
+          </div>
+          <div class="plot">J.D.'s teenage burn patient gives him a hard decision to make when he wants to go to his high school graduation. Turk doesn't want Carla to find out that he secretly learned Spanish. And to address Dr. Kelso's weight gain, Dr. Cox makes a game out of stealing his breakfast.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S07E08%20-%20My%20Manhood-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x8 - My Manhood
+          </div>
+          <div class="plot">When Dr. Kelso tells the Janitor that nobody cares what he thinks, he starts a newspaper called &quot;The Janitorial&quot; to prove him wrong. J.D. and Turk fight over their manhood issues, while Dr. Kelso is too proud to ask for help about one of his problems.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S07E09%20-%20My%20Dumb%20Luck-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x9 - My Dumb Luck
+          </div>
+          <div class="plot">Dr. Cox had a patient that he hadn't been able to diagnose for two years, and he is back again.
+
+Dr. Kelso has to face a retirement board when his true age is revealed. Elliot and Carla try to find enough people in favor of Dr. Kelso to keep him as Chief of Medicine.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S07E10%20-%20My%20Waste%20of%20Time-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x10 - My Waste of Time
+          </div>
+          <div class="plot">Elliot and J.D. discover a major change in their relationship, when they spend time together looking for a former patient.
+
+Dr. Cox contemplates his new job title, when Ted refuses to do the majority of his work, whilst Carla and Turk talk about the possibility of a second baby. Meanwhile, the Janitor claims Dr. Kelso's abandoned office for the brain trust.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S07E11%20-%20My%20Princess-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            7x11 - My Princess
+          </div>
+          <div class="plot">After a hard day of work, Dr. Cox has the burden to tell his son Jack a good night story, so he disguises his hard day as a fairy tale about the little village Sacred Heartlia with Carla and Turk as the two-headed witch Turla, Elliot as the princess and J.D. as the village idiot.
+
+Other people featuring are the Janitor as the giant, Keith as the prince, Dr. Kelso as the dark lord Oslek, Ted as his hunchback and of course Dr. Cox as the brave knight.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E01%20-%20My%20Jerks-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x1 - My Jerks
+          </div>
+          <div class="plot">Dr. Kelso's beautiful but unethical replacement, Dr. Maddox, shakes things up at Sacred Heart, while J.D. struggles to manage a new crop of incompetent interns and Carla helps Elliott put her ego in check.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E02%20-%20My%20Last%20Words-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x2 - My Last Words
+          </div>
+          <div class="plot">J.D. and Turk make a huge sacrifice concerning a decade-long steak night tradition for a dying patient. Meanwhile, Dr. Maddox, the new Chief of Medicine, begins to show her true colors.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E03%20-%20My%20Saving%20Grace-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x3 - My Saving Grace
+          </div>
+          <div class="plot">Dr. Kelso and Dr. Cox have to work together again to get rid of Dr. Maddox, while Carla faces an incompetent intern.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E04%20-%20My%20Happy%20Place-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x4 - My Happy Place
+          </div>
+          <div class="plot">J.D. and Elliot's relationship seems to have been rekindled when they encourage Dr. Kelso to find his true happy place.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E05%20-%20My%20ABC%27s-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x5 - My ABC's
+          </div>
+          <div class="plot">Featuring a special appearance from Sesame Workshop's &quot;Muppets&quot;, J.D. learns a lesson about the gift of compassion, while Elliot gets scammed by intern Katie to secure a spot on Turk's team.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E06%20-%20My%20Cookie%20Pants-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x6 - My Cookie Pants
+          </div>
+          <div class="plot">Elliot and J.D. encounter a road block in their newfound romantic relationship, and Dr. Cox considers taking the now vacant Chief of Medicine post.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E07%20-%20My%20New%20Role-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x7 - My New Role
+          </div>
+          <div class="plot">As his increasing workload from being Chief of Medicine begins to take a toll, the unimaginable happens when Dr. Cox reaches out to Dr. Kelso for friendship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E08%20-%20My%20Lawyer%27s%20in%20Love-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x8 - My Lawyer's in Love
+          </div>
+          <div class="plot">It's Ted's lucky day when he falls head over heels in love with an ukulele player, and Dr. Cox realizes he cannot handle everything that is thrown at him.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E09%20-%20My%20Absence-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x9 - My Absence
+          </div>
+          <div class="plot">J.D. manages to still bother Dr. Cox despite being away on a vacation from the hospital. Meanwhile, Turk and Carla have some big news to announce.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E10%20-%20My%20Comedy%20Show-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x10 - My Comedy Show
+          </div>
+          <div class="plot">J.D. and Turk gather up a new crop of interns as they organize their annual (and historically unfunny) sketch show.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E11%20-%20My%20Nah%20Nah%20Nah-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x11 - My Nah Nah Nah
+          </div>
+          <div class="plot">While Turk views an inspiring story on SportsCenter, he comes up with a new procedure which may help a paralyzed teen. Meanwhile, Dr. Cox and the janitor are suffering from romantic problems
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E12%20-%20Their%20Story%20II-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x12 - Their Story II
+          </div>
+          <div class="plot">J.D.'s ego becomes inflated after Dr. Cox finally gives him the recognition he's been waiting for. Elsewhere, the senior staff receives insight from the interns.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E13%20-%20My%20Full%20Moon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x13 - My Full Moon
+          </div>
+          <div class="plot">A combination of a full moon and some bad luck causes Sacred Heart's new crop of interns to receive their toughest case load yet while Elliot makes an important decision regarding her future as a doctor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E14%20-%20My%20Soul%20on%20Fire%20%281%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x14 - My Soul on Fire (1)
+          </div>
+          <div class="plot">The Janitor and Lady invite the Sacred Heart staff to their fake wedding in the Bahamas hoping to score some loot but their scheme is about to backfire...
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E15%20-%20My%20Soul%20on%20Fire%20%282%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x15 - My Soul on Fire (2)
+          </div>
+          <div class="plot">The tropical seaside wedding goes ahead as the Janitor and Lady tie the knot which affirms the relationship of another couple.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E16%20-%20My%20Cuz-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x16 - My Cuz
+          </div>
+          <div class="plot">Things get weird for J.D. when he discovers the identity of Kim's new man as he plans to reach out to her in order to move closer to Sam. Meanwhile, Turk starts a campaign for a promotion.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E17%20-%20My%20Chief%20Concern-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x17 - My Chief Concern
+          </div>
+          <div class="plot">Change doesn't come easy for the gang when J.D. considers moving closer to his son. Meanwhile, Turk gets comfortable as chief of surgery, while Ted and Gooch reach a new level in their relationship.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S08E18%20-%20My%20Finale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            8x18 - My Finale
+          </div>
+          <div class="plot">J.D. is planning on leaving Sacred Heart but before he goes there are a few things that he wants to do including; getting a hug from Dr. Cox, and learning the Janitor's real name. Elliot is ready for the next step in her and J.D.'s relationship and she begins moving her furniture into J.D.'s apartment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/../../images/icons/noPoster.jpg" /></div>
+          <div class="title">
+            8x19 - My Finale Part 2 Panda
+          </div>
+          <div class="plot">
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S09E01%20-%20Our%20First%20Day%20of%20School-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x1 - Our First Day of School
+          </div>
+          <div class="plot">J.D., Turk, Cox, Kelso and intern Denise return to Sacred Heart to teach med school, while new med students Lucy, Drew, Cole and Maya are put through the ringer on their first day of school.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S09E02%20-%20Our%20Drunk%20Friend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x2 - Our Drunk Friend
+          </div>
+          <div class="plot">Lucy learns a hard earned lesson about what it takes to be a doctor. Meanwhile J.D. and Turk spot a potential love connection between Denise and the new med student, Drew, as they play matchmakers with a little bit of help from Dr. Kelso.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S09E03%20-%20Our%20Role%20Models-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x3 - Our Role Models
+          </div>
+          <div class="plot">J.D. and Drew learn a tough lesson in mentoring when Dr. Cox and Lucy show them that sometimes the student is the teacher.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S09E04%20-%20Our%20Histories-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x4 - Our Histories
+          </div>
+          <div class="plot">While their wives are out of town, J.D. and Turk attend a med student's party; Kelso says goodbye to Ted and Gooch.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S09E05%20-%20Our%20Mysteries-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x5 - Our Mysteries
+          </div>
+          <div class="plot">J.D. still clamors for Dr. Turk's approval as he approaches his final day of teaching at Sacred Heart, Lucy searches within herself for the courage to perform a basic medical procedure on a real human, and Denise and Drew make things official.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S09E06%20-%20Our%20New%20Girl-Bro-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x6 - Our New Girl-Bro
+          </div>
+          <div class="plot">While Turk struggles to find a replacement best friend, Elliott offers some sound advice and guidance to an over-worked and exhausted Lucy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S09E07%20-%20Our%20White%20Coats-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x7 - Our White Coats
+          </div>
+          <div class="plot">Before receiving their white coats, the med students of Winston University must figure out why they want to be doctors, and Denise gets a little relationship help from Elliot.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S09E08%20-%20Our%20Couples-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x8 - Our Couples
+          </div>
+          <div class="plot">Lucy finds couplings, dysfunctional or not, throughout the hospital
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S09E09%20-%20Our%20Stuff%20Gets%20Real-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x9 - Our Stuff Gets Real
+          </div>
+          <div class="plot">The reality of having a baby begins to settle in for both J.D. and Elliot while Lucy struggles with the reality of operating on people.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S09E10%20-%20Our%20True%20Lies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x10 - Our True Lies
+          </div>
+          <div class="plot">A case of guilty conscience plagues the med school when a student cheats on an exam and Dr. Cox takes it out on the entire class. Meanwhile, Denise makes a startling admission of her own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S09E11%20-%20Our%20Dear%20Leaders-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x11 - Our Dear Leaders
+          </div>
+          <div class="plot">Lucy takes her new assignment as hell week &quot;team leader&quot; a bit too seriously, and Dr. Turk feels threatened when an internationally renowned surgeon pays a visit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S09E12%20-%20Our%20Driving%20Issues-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x12 - Our Driving Issues
+          </div>
+          <div class="plot">When Cole and Kelso both get negative results back after a few routine tests, they learn the hard way to put their egos in check in order to rein in the support of their so-called friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Scrubs%20-%20S09E13%20-%20Our%20Thanks-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            9x13 - Our Thanks
+          </div>
+          <div class="plot">The med students of Winston University finally find something to be thankful for when Cole identifies his true calling in surgery, Drew finds the love of his life, and Lucy finds the inspiration to become a doctor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

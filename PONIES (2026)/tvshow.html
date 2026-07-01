@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - PONIES
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">PONIES</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/PONIES%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/PONIES%20-%20S01E01%20-%20Second%20Hand%20News-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Second Hand News
+          </div>
+          <div class="plot">After tragedy strikes, two American women embark on a new life as spies in the Soviet Union.‬
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/PONIES%20-%20S01E02%20-%20Hanging%20on%20the%20Telephone-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Hanging on the Telephone
+          </div>
+          <div class="plot">Bea becomes the handler for her Soviet asset, Sasha; Twila begins to uncover a larger‬‭ conspiracy.‬
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/PONIES%20-%20S01E03%20-%20Backstreets-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Backstreets
+          </div>
+          <div class="plot">Bea goes on a date with Andrei; Twila investigates a string of sex worker murders.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/PONIES%20-%20S01E04%20-%20Don%27t%20Go%20Breaking%20My%20Heart-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Don't Go Breaking My Heart
+          </div>
+          <div class="plot">Twila runs her first asset, Vera, a Russian fixer with secrets tied to her husband's death.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/PONIES%20-%20S01E05%20-%20Turn%20the%20Beat%20Around-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Turn the Beat Around
+          </div>
+          <div class="plot">Bea and Twila enlist an unlikely ally to pose as Vera, but the victory may actually be a trap.‬
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/PONIES%20-%20S01E06%20-%20Night%20Moves-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Night Moves
+          </div>
+          <div class="plot">As dark truths surface, Bea struggles to hold her cover with Andrei; ‭Twila goes undercover.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/PONIES%20-%20S01E07%20-%20Livin%27%20Thing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Livin' Thing
+          </div>
+          <div class="plot">When Bea and Twila go on a stakeout across Moscow, they learn about the mole inside the‬ Embassy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/PONIES%20-%20S01E08%20-%20The%20Stranger-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Stranger
+          </div>
+          <div class="plot">Bea, Twila and Sasha flee the city and learn the secret behind Andrei's rise in the KGB.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

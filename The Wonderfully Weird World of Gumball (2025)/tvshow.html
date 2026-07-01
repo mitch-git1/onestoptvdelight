@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Wonderfully Weird World of Gumball
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Wonderfully Weird World of Gumball</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Wonderfully%20Weird%20World%20of%20Gumball%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E01%20-%20The%20Burger-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Burger
+          </div>
+          <div class="plot">Gumball and Darwin want to find a healthy dinner option for their family because they are hooked on Joyful Burger, but an evil food consortium has monopolized the food industry.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E02%20-%20The%20Assistant-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Assistant
+          </div>
+          <div class="plot">Feeling unappreciated by her family, Nicole strikes up a friendship with a sympathetic Al. As their relationship intensifies, the Al tries to drive a wedge between Nicole and the other Wattersons.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E03%20-%20The%20Distance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Distance
+          </div>
+          <div class="plot">Gumball must find a way to save his relationship with Darwin after the boys are forced to live in separate rooms.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E04%20-%20The%20Thing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Thing
+          </div>
+          <div class="plot">Richard must retrace the memories of his day in order to figure out what &quot;the thing&quot; is, so Nicole's family dinner with Granny Jo Jo won't be another epic failure.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E05%20-%20The%20Butts-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Butts
+          </div>
+          <div class="plot">Gumball must help Principal Brown have body confidence about his butt in order to be allowed to do his poem about butts at the Poetry Recital.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E06%20-%20The%20Traffic-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Traffic
+          </div>
+          <div class="plot">The Wattersons must get Anais to Daisyland before the park closes for good.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E07%20-%20The%20Astrological-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Astrological
+          </div>
+          <div class="plot">Gumball and Penny must stay together through the end of the school day to prove that they are meant to be together, despite an astrological prediction Mr. Small has made.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E08%20-%20The%20Cheerleader-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Cheerleader
+          </div>
+          <div class="plot">Gumball wants to get Richard on the cheerleading team in order to end their family's generational trauma.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E09%20-%20The%20Boring-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Boring
+          </div>
+          <div class="plot">Gumball and Darwin use Molly's time-halting power (because she's so boring) to avoid an after school beatdown by Tina.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E10%20-%20The%20Teacher-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Teacher
+          </div>
+          <div class="plot">Gumball wants to take down Miss Simian after she punishes him for not respecting his school-provided calculator.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E11%20-%20The%20App-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The App
+          </div>
+          <div class="plot">Gumball and Darwin must stop an evil social media app from turning every kid in Elmore into mindless internet-trend-following drones.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E12%20-%20The%20Entrance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Entrance
+          </div>
+          <div class="plot">Gumball and Darwin attempt to make a big impression at the coolest party of the year with the most praise-worthy entrance the world has ever seen.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E13%20-%20The%20Letter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - The Letter
+          </div>
+          <div class="plot">Darwin wants to get back a love letter he wrote to Carrie before she sees it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E14%20-%20The%20Gut-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - The Gut
+          </div>
+          <div class="plot">When Anais enlists her dad's help with her science project, Richard's GUT becomes its own brilliant thinking entity, separate from the original Richard we all know, and Anais must choose between the two.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E15%20-%20The%20Wrinkle-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - The Wrinkle
+          </div>
+          <div class="plot">Anais starts aging prematurely due to the stress and pressure of looking out for the rest of her stupid family.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E16%20-%20The%20Gourmet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - The Gourmet
+          </div>
+          <div class="plot">After tasting Masami's gourmet, double-truffle mac-n-cheese at lunch, Gumball decides to do whatever it takes to get a full serving of the delicious meal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E17%20-%20The%20Pool-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - The Pool
+          </div>
+          <div class="plot">In the midst of a heatwave, Richard enlists Gumball, Darwin and Anais to assist him in his mission to jump in the Robinson's newly-installed above ground pool.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E18%20-%20The%20Portrait-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - The Portrait
+          </div>
+          <div class="plot">Nicole wants a new family portrait where everyone's entire face is in the photo and they're all smiling.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E19%20-%20The%20Climb-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - The Climb
+          </div>
+          <div class="plot">Gumball must face his demons and overcome an embarrassing incident from his past if he wants to finally summit the dreaded rock-climbing wall in gym class.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S01E20%20-%20The%20Amadain-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - The Amadain
+          </div>
+          <div class="plot">Gumball vows to wear a shell and partake in strange Fitzgerald traditions, in order to help Penny get through a tense family birthday party with ease.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E01%20-%20The%20Summoning-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - The Summoning
+          </div>
+          <div class="plot">Darwin joins a witch coven and lets the power go to his head.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E02%20-%20The%20Unfollow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - The Unfollow
+          </div>
+          <div class="plot">When Gumball and Darwin realize that Sarah is no longer their number one fan, they try to get her attention back by whatever means possible.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E03%20-%20The%20Promposal-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - The Promposal
+          </div>
+          <div class="plot">Penny wants to ask Gumball to the Elmore Jr High Prom, but when Gumball's expectations for an extra romantic and extra complicated gesture become way more than Penny can handle, Penny must find a way to deliver.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E04%20-%20The%20Trumpet-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - The Trumpet
+          </div>
+          <div class="plot">Nicole needs to make sure Gumball makes something of himself so that when he's older, he flies the nest instead of being a slob at home forever.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E05%20-%20The%20Synthesis-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - The Synthesis
+          </div>
+          <div class="plot">During School's Career Day, Nicole and Yuki unite to impress their kids and show the world their full power only to learn where real power comes from.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E06%20-%20The%20Cheapmas-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - The Cheapmas
+          </div>
+          <div class="plot">After finding out Christmas is cancelled because Elmore is broke, Gumball and Darwin vow to save Christmas.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E07%20-%20The%20Score-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - The Score
+          </div>
+          <div class="plot">Gumball and Darwin try to help Ocho overcome his anger and discover his life is much harder than theirs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E08%20-%20The%20Diary-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - The Diary
+          </div>
+          <div class="plot">Gumball and Darwin find a diary. They discover the author is about to miss out on the biggest moment of her life and must find her to figure out why.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E09%20-%20The%20Punishment-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x9 - The Punishment
+          </div>
+          <div class="plot">Gumball and Nicole vow revenge on the driver of a car that cut them off.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E10%20-%20The%20Roast-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x10 - The Roast
+          </div>
+          <div class="plot">After Gumball's smack talking embarrasses him in front of the entire town, he vows to curb his smug ways.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E11%20-%20The%20Survivalists-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x11 - The Survivalists
+          </div>
+          <div class="plot">Gumball and Darwin go up against a squirrel in a primal fight for survival (...in their backyard).
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E12%20-%20The%20Labels-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x12 - The Labels
+          </div>
+          <div class="plot">When an evil guidance counselor arrives at school and gives all the kids awful labels, Gumball and Darwin must defeat her to reclaim their identities.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E13%20-%20The%20Fools-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x13 - The Fools
+          </div>
+          <div class="plot">When nobody in Elmore is pranking on April Fool's Day, Gumball takes it upon himself to show them how it's done.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E14%20-%20The%20Homework-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x14 - The Homework
+          </div>
+          <div class="plot">Gumball faces the most difficult journey of his life when he attempts to deliver Anais her forgotten homework on the day he is home sick with the flu.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E15%20-%20The%20Sonder-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x15 - The Sonder
+          </div>
+          <div class="plot">Gumball realizes that each random passerby is living a life as vivid and complex as his own.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E16%20-%20The%20Mister-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x16 - The Mister
+          </div>
+          <div class="plot">Now considered a man in his culture, Idaho gets help from Gumball and Darwin as he attempts to handle his new adult responsibilities.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E17%20-%20The%20Tracking-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x17 - The Tracking
+          </div>
+          <div class="plot">The family tries to save Richard from the consequences of a bet involving a fitness tracker.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E18%20-%20The%20Pants-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x18 - The Pants
+          </div>
+          <div class="plot">Disturbed by Banana Joe's decision to start wearing pants, Gumball does everything in his power to put a stop to it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E19%20-%20The%20Necroprancer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x19 - The Necroprancer
+          </div>
+          <div class="plot">Gumball and Darwin travel to the underworld with Carrie, intent on finding her a permanent body.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Wonderfully%20Weird%20World%20of%20Gumball%20-%20S02E20%20-%20The%20Rewrite-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x20 - The Rewrite
+          </div>
+          <div class="plot">The boys are on the verge of discovering the truth about Elmore, but their old nemesis decides to rewrite the story.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Strip Law
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Strip Law</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Strip%20Law%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Strip%20Law%20-%20S01E01%20-%20Finally%2C%20A%20Show%20About%20Lawyers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Finally, A Show About Lawyers
+          </div>
+          <div class="plot">Lincoln agrees to help a stripper whose job is literally making him sick. But to win in court, he'll need someone who understands how to work a crowd.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Strip%20Law%20-%20S01E02%20-%20Crypt%20Law%20Presents%20Fearacle%20on%2031st%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Crypt Law Presents: Fearacle on 31st Day
+          </div>
+          <div class="plot">Halloween's in the air on the Strip &mdash; and Lincoln's client is a man claiming to be Santa Claus. Can Glem and Sheila conjure up a little Christmas magic?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Strip%20Law%20-%20S01E03%20-%20The%20Bad%20News%20Bapples-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Bad News Bapples
+          </div>
+          <div class="plot">Lincoln and Sheila team up to coach a basketball team for sheltered homeschoolers while Irene combs the office for a talking robot toy named Baby Bertram.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Strip%20Law%20-%20S01E04%20-%20Glemtastrophe%20Anatomy%20of%20a%20Glemsaster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Glemtastrophe: Anatomy of a Glemsaster
+          </div>
+          <div class="plot">A high-profile case sends Glem to a town where the tap water is 120 proof. Sheila and Lincoln shake up their winning formula during a courtroom marathon.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Strip%20Law%20-%20S01E05%20-%20The%20People%20Vs.%20Magicians%20Vs.%20Animals%20Dawn%20of%20Justice%20Whoever%20Wins...TA-DA%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The People Vs. Magicians Vs. Animals: Dawn of Justice: Whoever Wins...TA-DA!
+          </div>
+          <div class="plot">With Glem and Irene off at driving school, Lincoln tries to take down an exotic animal show at Sheila's old stomping grounds: the Sweet Babylon Casino.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Strip%20Law%20-%20S01E06%20-%20Rocco%20Prosecco%27s%20Virtual%20Reality%20Workplace%20Sensitivity%20Experience-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Rocco Prosecco's Virtual Reality Workplace Sensitivity Experience
+          </div>
+          <div class="plot">While a riot rages in the Las Vegas streets, Lincoln and his team &mdash; including a newly hired paralegal named Kevin &mdash; are stuck in a mandatory HR seminar.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Strip%20Law%20-%20S01E07%20-%20I%20Was%20a%20Teenage%20Lawbert-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - I Was a Teenage Lawbert
+          </div>
+          <div class="plot">Irene and Sheila create a mascot for the firm's latest commercial and go way over budget. Lincoln learns about Glem's bizarre approach to jury selection.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Strip%20Law%20-%20S01E08%20-%20We%20Need%20to%20Talk%20About%20Heaven-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - We Need to Talk About Heaven
+          </div>
+          <div class="plot">A worried mother hires Gumb &amp; Flamb&eacute; to help her get sole custody of her son. But the story of the &quot;Saw Heaven&quot; boy soon erupts into a media firestorm.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Strip%20Law%20-%20S01E09%20-%20Trophy%20Son%20%28Or%20%27The%20Mother%20Wound%27%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Trophy Son (Or 'The Mother Wound')
+          </div>
+          <div class="plot">The crew spends the evening at the Golden Gavel Awards, where Lincoln comes to terms with his complicated childhood &mdash; and Sheila nurses a groin injury.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Strip%20Law%20-%20S01E10%20-%20Finale%20A%20Show%20About%20Lawyers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Finale: A Show About Lawyers
+          </div>
+          <div class="plot">Hotshot lawyers Pringus &amp; Bench are ready to retire. But first, they must defend the maker of a high-tech toilet, taking on Lincoln and his team.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

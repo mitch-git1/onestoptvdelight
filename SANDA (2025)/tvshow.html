@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - SANDA
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">SANDA</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/SANDA%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SANDA%20-%20S01E01%20-%20Everything%27s%20Bright%2C%20Am%20I%20Aging-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Everything's Bright, Am I Aging?
+          </div>
+          <div class="plot">On a Dec 25 without Christmas, Sanda is attacked by classmate Shiori. Mistaking it for love, he awaits her confession, but hears something else.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SANDA%20-%20S01E02%20-%20Candies%2C%20Canes%2C%20Kisses%2C%20and%20Blades-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Candies, Canes, Kisses, and Blades
+          </div>
+          <div class="plot">Amaya learns Sanda is Santa, restrains him and Shiori to force a kiss. Santa refuses, unlocks sled power to escape. Then Headmaster Oshibu appears!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SANDA%20-%20S01E03%20-%20Charred%20Fruit%20Tastes%20All%20the%20Sweeter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Charred Fruit Tastes All the Sweeter
+          </div>
+          <div class="plot">Sanda gains lie-detecting power. Shiori tries to use it to find Ono, but doubt overwhelms Sanda. Shiori then tells a self-harming lie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SANDA%20-%20S01E04%20-%20Zeus%2C%20Smasher%20of%20Textbooks-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Zeus, Smasher of Textbooks
+          </div>
+          <div class="plot">At a funeral, Santa fights Yagiuda but fears his power. His resolve returns, shattering the roof and leaving him exposed before all.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SANDA%20-%20S01E05%20-%20A%20Typhoon%20in%20a%20Snow%20Globe-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - A Typhoon in a Snow Globe
+          </div>
+          <div class="plot">Sanda vows never to love, but in a typhoon his message to fiancee Niko fails and he's drawn to her. The next day, Yagiuda arrives as a teacher.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SANDA%20-%20S01E06%20-%20Cyborg%20vs.%20Santa%20Claus-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Cyborg vs. Santa Claus
+          </div>
+          <div class="plot">Santa blocks Headmaster Oshibu from attacking adult Ono, but the enhanced 92-year-old overpowers him. Santa asks the kids for their belief to fight.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SANDA%20-%20S01E07%20-%20Double-Faced%20Carnivorous%20Plant-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Double-Faced Carnivorous Plant
+          </div>
+          <div class="plot">Amaya ends his friendship with Sanda to save him. Meanwhile, the scarred Oshibu, comforted by Yagiuda, turns to Class 10 students who killed adults.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SANDA%20-%20S01E08%20-%20Love%2C%20the%20Most%20Selfish%20Thing%20There%20Is-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Love, the Most Selfish Thing There Is
+          </div>
+          <div class="plot">Saved from Namatame by Shiori, Santa vows to harden his heart, but when Niko asks for a kiss, Sanda panics and almost transforms before her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SANDA%20-%20S01E09%20-%20A%20Fake%20Flower%2C%20Yet%20Its%20Roots%20Rot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - A Fake Flower, Yet Its Roots Rot
+          </div>
+          <div class="plot">Tetsudome says Santa lacks grit. With her aid Sanda becomes dark Santa, but doubts himself. After meeting Namatame again, he vows not to fight kids.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SANDA%20-%20S01E10%20-%20You%2C%20an%20Everlasting%20Moment-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - You, an Everlasting Moment
+          </div>
+          <div class="plot">At the Peak of Youth Ceremony, Niko steals Sanda's first kiss at twilight. Meanwhile Yagiuda faces Namatame alone, offering himself as decoy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SANDA%20-%20S01E11%20-%20Flashback%20Attack-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - Flashback Attack
+          </div>
+          <div class="plot">Namatame wrecks the ceremony. Eating yakisoba, she's met by Sanda in child form. His body starts breaking down as Ono's own changes grow.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/SANDA%20-%20S01E12%20-%20Pale%20Blue%20Pall-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Pale Blue Pall
+          </div>
+          <div class="plot">Santa fights Oshibu before the students. The headmaster thrives on cheers, but Santa regains power by revealing his truth. The duel peaks on the roof.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

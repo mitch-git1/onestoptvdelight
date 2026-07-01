@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - My Status as an Assassin Obviously Exceeds the Hero's
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">My Status as an Assassin Obviously Exceeds the Hero's</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/My%20Status%20as%20an%20Assassin%20Obviously%20Exceeds%20the%20Hero%27s%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Status%20as%20an%20Assassin%20Obviously%20Exceeds%20the%20Hero%27s%20-%20S01E01%20-%20The%20Assassin%20Eats%20Bread-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Assassin Eats Bread
+          </div>
+          <div class="plot">Transported with his class to another world, Akira quickly discovers that he far surpasses his classmates.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Status%20as%20an%20Assassin%20Obviously%20Exceeds%20the%20Hero%27s%20-%20S01E02%20-%20The%20Assassin%20Takes%20Care%20of%20the%20Wounded-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Assassin Takes Care of the Wounded
+          </div>
+          <div class="plot">Akira is fighting his way through the Kantinen Labyrinth when he encounters an injured elf.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Status%20as%20an%20Assassin%20Obviously%20Exceeds%20the%20Hero%27s%20-%20S01E03%20-%20The%20Assassin%20Plays%20With%20a%20Cat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Assassin Plays With a Cat
+          </div>
+          <div class="plot">アメリアとの共闘で倒した８０階層のボスが、真の姿を露わにする。ブラックキャットという名の魔物は、魔王から晶への伝言を携えていた。役目を終えたので殺せと言い放つブラックキャット。晶は拒絶するが、生かしておいてはボス部屋の閉鎖は解除されず、いずれ全員が飢えて死んでしまう。残された唯一の打開策は、主従の契約。失敗は死を意味する儀式のさなか、晶はブラックキャットの心の底を見る。
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Status%20as%20an%20Assassin%20Obviously%20Exceeds%20the%20Hero%27s%20-%20S01E04%20-%20The%20Assassin%20Calls%20the%20Name-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Assassin Calls the Name
+          </div>
+          <div class="plot">The gang encounters Kilika, Amelia's sister, who holds a massive grudge against her.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Status%20as%20an%20Assassin%20Obviously%20Exceeds%20the%20Hero%27s%20-%20S01E05%20-%20The%20Assassin%20Sleeps%20In%20A%20Bed-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Assassin Sleeps In A Bed
+          </div>
+          <div class="plot">Akira and gang head to the land of beastfolk and face new encounters.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Status%20as%20an%20Assassin%20Obviously%20Exceeds%20the%20Hero%27s%20-%20S01E06%20-%20The%20Assassin%20Fights%20a%20Demon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Assassin Fights a Demon
+          </div>
+          <div class="plot">Amelia has been abducted, and Akira gets some unexpected aid in his quest to take her back.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Status%20as%20an%20Assassin%20Obviously%20Exceeds%20the%20Hero%27s%20-%20S01E07%20-%20The%20Assassin%20Makes%20a%20Vow-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Assassin Makes a Vow
+          </div>
+          <div class="plot">Akira faces an unprecedented challenge as Mahiro, another demon, appears to take him on.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Status%20as%20an%20Assassin%20Obviously%20Exceeds%20the%20Hero%27s%20-%20S01E08%20-%20The%20Assassin%20Is%20Spellbound-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Assassin Is Spellbound
+          </div>
+          <div class="plot">His determination renewed, Akira now gets to... watch a beauty pageant?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Status%20as%20an%20Assassin%20Obviously%20Exceeds%20the%20Hero%27s%20-%20S01E09%20-%20The%20Assassin%20Sees%20the%20Sights-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Assassin Sees the Sights
+          </div>
+          <div class="plot">Akira separates from the hero's party to search for clues about Gram while wandering through a new city.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Status%20as%20an%20Assassin%20Obviously%20Exceeds%20the%20Hero%27s%20-%20S01E10%20-%20The%20Assassin%20Gazes%20at%20the%20River%20Surface-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Assassin Gazes at the River Surface
+          </div>
+          <div class="plot">Crow tells Akira things about Gram to convince him to kill him, but he remembers his family and hesitates.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Status%20as%20an%20Assassin%20Obviously%20Exceeds%20the%20Hero%27s%20-%20S01E11%20-%20The%20Assassin%20Browses-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Assassin Browses
+          </div>
+          <div class="plot">Akira and the others investigate the Uruk City Adventurer's Guild to obtain information about Gram.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/My%20Status%20as%20an%20Assassin%20Obviously%20Exceeds%20the%20Hero%27s%20-%20S01E12%20-%20Oda%20Akira%20Becomes%20An%20Assassin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - Oda Akira Becomes An Assassin
+          </div>
+          <div class="plot">After much deliberation and an unpleasant encounter with Gram at the guild, Akira decides what to do.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

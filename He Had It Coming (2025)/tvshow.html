@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - He Had It Coming
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">He Had It Coming</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/He%20Had%20It%20Coming%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/He%20Had%20It%20Coming%20-%20S01E01%20-%20This%20is%20NOT%20what%20a%20Feminist%20Looks%20Like-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - This is NOT what a Feminist Looks Like
+          </div>
+          <div class="plot">An awkward scholarship student and a social media influencer vandalize a university statue in protest. The next morning, they discover a murdered athlete at its base and must clear their names while finding the real killer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/He%20Had%20It%20Coming%20-%20S01E02%20-%20Little%20Miss%20P.I-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Little Miss P.I.
+          </div>
+          <div class="plot">As the girls deal with an anonymous threat that could tie them to the campus murder, Officers Shepherd and Roach kick off their investigation with an arrest.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/He%20Had%20It%20Coming%20-%20S01E03%20-%20The%20Witch%20Hunt-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Witch Hunt
+          </div>
+          <div class="plot">With a second murder victim found on campus, University Club Day proves the perfect place for Elise and Barbara to search for the killer. Vice Chancellor employs a self-defense &quot;coach&quot; for vulnerable male students.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/He%20Had%20It%20Coming%20-%20S01E04%20-%20Clit%20Pong-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Clit Pong
+          </div>
+          <div class="plot">With Prue behaving strangely, the girls must crash a feminist protest party to find out what she remembers about the night of the murders. Meanwhile, Shepherd is philosophically torn as the Vice Chancellor demands she shut the protest party down.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/He%20Had%20It%20Coming%20-%20S01E05%20-%20In%20the%20Kay-ge-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - In the Kay-ge
+          </div>
+          <div class="plot">As cracks begin to form in Elise and Barbara's friendship, Elise finds solace in her newfound bond with University Improv Theatre legend Kaye Blanchett. The only problem is Kaye is just a little bit connected to every single murder.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/He%20Had%20It%20Coming%20-%20S01E06%20-%20Cops%20and%20Tarts-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Cops and Tarts
+          </div>
+          <div class="plot">With a mutilated boy still missing, Shepherd and Roach are desperate to get information before it&rsquo;s too late. Barbara and Elise are attending an infamous St. Stephens college party to reclaim Barbara's reputation and kickstart Elise's.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/He%20Had%20It%20Coming%20-%20S01E07%20-%20Self-Care-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Self-Care
+          </div>
+          <div class="plot">As Barbara comes to terms with her past trauma at a university group therapy session, Elise is doing her best to be a supportive friend whilst also stopping the Archaeology Club from digging up evidence linking them to the night of the murder.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/He%20Had%20It%20Coming%20-%20S01E08%20-%20The%20Captain%27s%20Luncheon-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Captain's Luncheon
+          </div>
+          <div class="plot">Together the girls must protect the football team at their infamous Captain's Luncheon, before things end with a BOOM!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

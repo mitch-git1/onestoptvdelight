@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Mating Season
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Mating Season</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Mating%20Season%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mating%20Season%20-%20S01E01%20-%20The%20Copulatory%20Tie-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Copulatory Tie
+          </div>
+          <div class="plot">Josh wakes up late from hibernation to find his longtime girlfriend has moved on. Fawn tries dating an older stag. Ray gets himself stuck inside a skunk.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mating%20Season%20-%20S01E02%20-%20The%20Dating%20Sites-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Dating Sites
+          </div>
+          <div class="plot">Ray urges a nervous Josh to get back out on the dating scene. Fawn plays Penelope's wing-deer to help her pick up girls at The Beaver Dam.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mating%20Season%20-%20S01E03%20-%20The%20Lull-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Lull
+          </div>
+          <div class="plot">Josh steals his dad's stash of horny goat weed to help Ray keep it up. Penelope consults a psychic. Fawn dates a moose who won't make the first move.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mating%20Season%20-%20S01E04%20-%20The%20Truth%20About%20Canada-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Truth About Canada
+          </div>
+          <div class="plot">A flashback reveals Penelope's brush with forbidden love, Fawn's frustrating attempts to cohabitate &mdash; and the moment the two first became friends.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mating%20Season%20-%20S01E05%20-%20The%20Hot%20Mess-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Hot Mess
+          </div>
+          <div class="plot">Josh is on guard when Ray's deadbeat mom pops into town to throw him a party. Fawn celebrates her freedom, and Penelope learns how to do &quot;The Thing.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mating%20Season%20-%20S01E06%20-%20The%20Horse%20Who%20Loved%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Horse Who Loved Me
+          </div>
+          <div class="plot">While Penelope and Fawn take Zeke to The Boneyard to sow his wild oats, Josh goes out with a well-heeled horse who's running from her past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mating%20Season%20-%20S01E07%20-%20The%20Polycule-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Polycule
+          </div>
+          <div class="plot">A pair of polyamorous marmots pull Penelope into a throuple. Fawn hits it off with a cute bobcat, and Ray takes Josh to an orgy with too many rules.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mating%20Season%20-%20S01E08%20-%20The%20Passion%20of%20Raynal%20Skidski-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Passion of Raynal Skidski
+          </div>
+          <div class="plot">Ray falls in love with a sweet schoolteacher while Fawn dates a bro-goat from hell. Josh and Penelope try living as platonic partners.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mating%20Season%20-%20S01E09%20-%20The%20All-Nighter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The All-Nighter
+          </div>
+          <div class="plot">Penelope plans a cozy night in for a heartbroken Ray &mdash; but he wants a wild night out. Fawn runs into her ex. Josh finds trouble with a tempting mink.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Mating%20Season%20-%20S01E10%20-%20The%20Wolf%20Wedding-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Wolf Wedding
+          </div>
+          <div class="plot">The friends leave the forest to crash Dylan's wedding when Fawn admits she still has feelings for him. Will the truth come out... or is it too late?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

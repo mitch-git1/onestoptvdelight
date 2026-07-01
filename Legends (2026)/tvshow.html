@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Legends
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Legends</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Legends%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Legends%20-%20S01E01%20-%20Could%20You%20Offer%20More-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Could You Offer More?
+          </div>
+          <div class="plot">As drug deaths surge in '90s Britain, the government turns to a veteran customs investigator to recruit a novice unit for an unprecedented covert mission.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Legends%20-%20S01E02%20-%20Alliance-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Alliance
+          </div>
+          <div class="plot">Customs recruit Guy faces tests that threaten to blow his cover. Meanwhile, the team in Liverpool chase the scent of a suspicious bakery.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Legends%20-%20S01E03%20-%20This%20Is%20Liverpool-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - This Is Liverpool
+          </div>
+          <div class="plot">A volatile alliance puts Guy at the heart of a high-risk smuggling deal. The Legends in Liverpool embark on a surveillance mission that ends in trouble.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Legends%20-%20S01E04%20-%20The%20War%20on%20Drugs-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The War on Drugs
+          </div>
+          <div class="plot">Cracks start to appear in both gangs as tensions, pressure and paranoia run high. Kate looks to exploit a possible weakness in Carter's armour.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Legends%20-%20S01E05%20-%20Old%20Kings-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Old Kings
+          </div>
+          <div class="plot">While Kate chases a murky trail of corruption, a potential meeting with a feared drug lord sends Guy, Bailey and Don on a dangerous overseas mission.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Legends%20-%20S01E06%20-%20Legends%20Never%20Die-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Legends Never Die
+          </div>
+          <div class="plot">Betrayal, distrust and ambition put the entire mission &mdash; and the Legends &mdash; at risk. Can they stop an unprecedented heroin shipment from reaching Britain?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

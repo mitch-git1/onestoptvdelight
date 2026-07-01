@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Pyramid Game
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Pyramid Game</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Pyramid%20Game%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Pyramid%20Game%20-%20S01E01%20-%20Sung%20Soo%20Ji%20The%20Transfer%20Student-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Sung Soo Ji: The Transfer Student
+          </div>
+          <div class="plot">Soo Ji transfers to Baekyeon Girls&rsquo; High School and discovers that her class plays a game called the Pyramid Game in which the students decide on a hierarchy based on a popular vote. As Soo Ji ends up in the lowest rank, she devises a plan to get back on her feet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Pyramid%20Game%20-%20S01E02%20-%20The%20Mastermind%20of%20the%20Pyramid%20Game-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Mastermind of the Pyramid Game
+          </div>
+          <div class="plot">Soo Ji is determined to figure out the characteristics of her classmates and the mastermind behind the Pyramid Game. She also tries to join forces with other girls who seem vulnerable. She even asks her homeroom teacher for help, only to be disappointed. Meanwhile, the 14th Pyramid Game begins, and Ja Eun, who kept skipping school, shows up.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Pyramid%20Game%20-%20S01E03%20-%20The%20Birth%20of%20a%20Trio-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Birth of a Trio
+          </div>
+          <div class="plot">Soo Ji moves up to Grade C, and the treatment she gets changed completely overnight. She breaks the promise she made with Ja Eun, but she decides to join hands with her and help the new girl in Grade F, Pyo Ji Ae. Soo Ji, Ja Eun, and Ji Ae come up with a plan to destroy the pyramid altogether.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Pyramid%20Game%20-%20S01E04%20-%20The%20Leaked%20Plan-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Leaked Plan
+          </div>
+          <div class="plot">Soo Ji begins to feel uneasy about the unfolding events, suspecting that her plan may have been compromised and that Ha Rin is catching on. Learning this, Pyo Ji Ae worries she may have made a mistake and dreads the potential consequences. Meanwhile, Soo Ji hints to Hae Jun that she holds leverage over her, coercing Hae Jun into assisting her. Soo Ji recruits a hacker to join her team.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Pyramid%20Game%20-%20S01E05%20-%20Parent%20Observation%20Day-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Parent Observation Day
+          </div>
+          <div class="plot">During the parents' visit to the school, Soo Ji gets caught up in Ha Rin's trap. While Soo Ji tries to make a pact with Do Ah,  Seung Yi puts on a show to put Soo Ji on the spot. Although the parents witness the ordeal, Ha Rin turns the situation to her advantage and even has her grandmother, the chairwoman of Baekyeon Group. Meanwhile, Soo Ji switches to her Plan B.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Pyramid%20Game%20-%20S01E06%20-%20Tables%20Turned-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Tables Turned
+          </div>
+          <div class="plot">With no Grade F in the 15th game, Soo Ji changes gears to eliminate the game with Ye Lim's help. First, she suggests voting to revoke Grade A privileges and puts Ha Rin on the spot. Meanwhile, Ha Rin doesn't give in to Soo Ji's hindrances and thinks of a plan to demolish Soo Ji's game.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Pyramid%20Game%20-%20S01E07%20-%20Shattering%20Friendship-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Shattering Friendship
+          </div>
+          <div class="plot">Baekyeon Girls&rsquo; High School goes on a school retreat. While practicing diving, someone pushes Ha Rin into the water, and Ja Yeon jumps in to save her. The next day, Class Five plays a survival game using paint guns. The last five standing, Soo Ji, Ja Eun, Jae Hyung, Eun Jung, and Ji Ae are put in danger of ending up in Grade F.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Pyramid%20Game%20-%20S01E08%20-%20The%20Majority-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Majority
+          </div>
+          <div class="plot">Soo Ji decides to recruit more girls to end the game and Ha Rin for good. When Da Yeon is about to be punished for what she did to Eun Jung, their teacher tells everyone that Da Yeon has to transfer to another school. Meanwhile, right before the Pyramid Game is held, Ye Lim gets taken to the hospital.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Pyramid%20Game%20-%20S01E09%20-%20The%20Final%20Vote-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Final Vote
+          </div>
+          <div class="plot">The 16th Pyramid Game begins, and Ha Rin suggests choosing a classmate who will become a permanent Grade F. Before the voting takes place, Soo Ji tells the class that Ye Lim was attacked and hospitalized. The class decides to vote on whether to stay. playing or not, and the entire process is broadcast live, causing the school to be in an uproar. Meanwhile, Ja Eun tells Soo Ji what she did to Ha Rin when they were little.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Pyramid%20Game%20-%20S01E10%20-%20The%20Verdict-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Verdict
+          </div>
+          <div class="plot">Ja Eun reveals what she used to do to Ha Rin, but Soo Ji thinks Ha Rin is just using it as an excuse to make Ja Eun's life miserable. The school and Baekyeon Group decide to blame Soo Ji and her group for the violence at school, but Ms. Yoon Na Hee takes action and reveals the video of Soo Ji being bullied. Meanwhile, Soo Ji reveals the corruption behind the teacher recruitment.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

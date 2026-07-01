@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Among Us
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Among Us</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Among%20Us%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Among%20Us%20-%20S01E01%20-%20A%20Pizza%20Party%20Where%20Nothing%20Bad%20Happens-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - A Pizza Party Where Nothing Bad Happens
+          </div>
+          <div class="plot">Two newcomers tour The Skeld just before disaster strikes!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Among%20Us%20-%20S01E02%20-%20You%20Can%27t%20Be%20Hot%20and%20Smart-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - You Can't Be Hot and Smart
+          </div>
+          <div class="plot">A dead body is found -- Who ya gonna call? Hot Doctor!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Among%20Us%20-%20S01E03%20-%20CHAOS%20HAS%20FOUND%20A%20NEW%20HOME%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - CHAOS HAS FOUND A NEW HOME!
+          </div>
+          <div class="plot">Something isn't right on board. Time for the first EMERGENCY MEETING!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Among%20Us%20-%20S01E04%20-%20AND%20THEY%20LIKE%20TO%20KILL%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - AND THEY LIKE TO KILL!
+          </div>
+          <div class="plot">Factions form, pizza is eaten, and the hunter may become hunted.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Among%20Us%20-%20S01E05%20-%20Good%20Vibes%20Only-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Good Vibes Only
+          </div>
+          <div class="plot">The crew votes out the Imposter...but something feels off.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Among%20Us%20-%20S01E06%20-%20Insecurity%20in%20Security-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Insecurity in Security
+          </div>
+          <div class="plot">Equipment on board has been sabotaged the crew must figure it out...again.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Among%20Us%20-%20S01E07%20-%206%20Angry%20Crewmates-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - 6 Angry Crewmates
+          </div>
+          <div class="plot">Crewmates are put on trial, secrets come out, and decisions get even harder.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Among%20Us%20-%20S01E08%20-%20Imposter%20Syndrome-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Imposter Syndrome
+          </div>
+          <div class="plot">Alliances form as blame spreads and a startling discovery changes things.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Among%20Us%20-%20S01E09%20-%20I%27m%20Just%20Venting-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - I'm Just Venting
+          </div>
+          <div class="plot">Fewer survivors, rising panic, and a reactor on the brink.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Among%20Us%20-%20S01E10%20-%20Everyone%20Is%20Still%20Alive.%20No%20One%20Is%20Dead-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Everyone Is Still Alive. No One Is Dead.
+          </div>
+          <div class="plot">Survival is on the line, secrets collide, and long-running tensions finally explode.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

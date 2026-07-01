@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Dead Mount Death Play
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Dead Mount Death Play</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Dead%20Mount%20Death%20Play%20%282023%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E01%20-%20The%20Reincarnation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Reincarnation
+          </div>
+          <div class="plot">A legendary necromancer known as the Corpse God is finally slain by a hero&mdash;only to wake up in the body of Polka Shinoyama, a newly assassinated boy in present-day Tokyo. Can the sorcerer survive in this strange new world?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E02%20-%20The%20New%20World-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The New World
+          </div>
+          <div class="plot">Polka scrambles to get his bearings while facing off against his would-be killer's colleagues. Is this the prelude to a new fight for survival or the start of an unlikely friendship?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E03%20-%20The%20Necromancer-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Necromancer
+          </div>
+          <div class="plot">Polka is settling into his new life when a man arrives begging Misaki to save him from gangsters. Polka sends her with him, but the job isn't what it seems. Meanwhile, other factions in Shinjuku investigate Polka's role in the fire.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E04%20-%20The%20Mad%20Dog-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Mad Dog
+          </div>
+          <div class="plot">Polka's recent activities have caught the eye of a police unit dedicated to hunting down the most bizarre and seemingly superhuman offenders. To a peace-seeking necromancer, these cops could be worse trouble than the criminals he's fallen in with!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E05%20-%20The%20Monster-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Monster
+          </div>
+          <div class="plot">Just when he thought the cops were bad enough, Polka comes face to face with Lemmings, Shinjuku's most legendary criminal. Will Polka reveal his necromancy to save his new friends? And will his powers even be enough to save them if he does?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E06%20-%20The%20Firestarter-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - The Firestarter
+          </div>
+          <div class="plot">Keeping his promise to a ghost, Polka returns to his family's mansion with Misaki in tow. Can the necromancer fool the people who know the real Polka best? And can he save them from an unknown threat without arousing their suspicions?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E07%20-%20The%20Magician-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Magician
+          </div>
+          <div class="plot">The Shinoyama family is out of danger, but the Corpse God still needs to explain himself to Polka's father, Rozan! How will the gruff tycoon react to his youngest son's fate? Meanwhile, an eccentric criminal stages a jailbreak.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E08%20-%20The%20Assassin-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Assassin
+          </div>
+          <div class="plot">Polka is about to resume business as usual when he gets two unexpected houseguests: his niece Sayo and her bodyguard! Do the pair just need a place to crash, or is something more sinister at play? And Inspector Iwanome is still on Polka's track.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E09%20-%20The%20Signpost-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - The Signpost
+          </div>
+          <div class="plot">Inspector Iwanome pressures Polka into reading his fortune. What does the inspector hope to gain, and what will he do when the reading dredges up secrets from his past? Meanwhile, the date of the Phantom Solitaire's &quot;performance&quot; is fast approaching.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E10%20-%20The%20Emblem-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - The Emblem
+          </div>
+          <div class="plot">Solitaire fills the skies of Shinjuku with blimps&mdash;all marked with the emblem of the Corpse God's home country! What is a symbol from another world doing in modern Japan, and who will take the magician's bait?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E11%20-%20The%20Beginning-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - The Beginning
+          </div>
+          <div class="plot">While everyone scrambles to discover the secret of the emblem, Polka receives an unexpected visitor. The modern world's most dangerous individuals are starting to realize that the fortune teller is more than he appears.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E12%20-%20The%20Sacred%20Place-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - The Sacred Place
+          </div>
+          <div class="plot">As a string of criminals, cops, and assassins converge on his building, the Corpse God finally decides to take action. How far will the necromancer go to defend his new home? And what new attention will his actions draw in a world without magic?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E13%20-%20The%20Invaders-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - The Invaders
+          </div>
+          <div class="plot">Polka's magical rampage has drawn even more unwanted attention to his new home. As if thrill-seeking magicians and underworld hitmen weren't bad enough, he now has a shrewd reporter to contend with.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E14%20-%20The%20Corpse-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x14 - The Corpse
+          </div>
+          <div class="plot">Fortune telling for a reporter is interrupted by a police raid on Polka's building, and the necromancer could find himself on the wrong end of a frame-up. Does he have a new enemy, or is he caught in the crossfire between underworld power brokers?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E15%20-%20The%20Vampire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x15 - The Vampire
+          </div>
+          <div class="plot">One group of police officers leave empty-handed, but Polka and co. can't rest easy just yet&mdash;Inspector Iwanome is back for answers. The duo who tried to frame them hasn't given up, either, and one is a face from Takumi's past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E16%20-%20The%20Fake-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x16 - The Fake
+          </div>
+          <div class="plot">Misaki and Xiaoyu team up to take on Momoya. But are even the two of them together a match for this gangly member of the Agakura clan? Meanwhile, Iwanome gets a phone call from his past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E17%20-%20The%20Matriarch-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x17 - The Matriarch
+          </div>
+          <div class="plot">One Agakura assassin didn't go down easy, and now the head of the clan has come to settle the score. How will Xiaoyu cope with this face from his past? And how will Iwanome and Arase cope when the Fire-Breathing Bug crashes their interrogation?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E18%20-%20The%20Revenge-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x18 - The Revenge
+          </div>
+          <div class="plot">Iwanome unmasks the traitor in the Metropolitan Police, but subduing them won't be easy&mdash;and he isn't the only one out for payback. An enigmatic new arrival may make things unexpectedly personal for the Corpse God.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E19%20-%20The%20Friends-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x19 - The Friends
+          </div>
+          <div class="plot">A surprise visit from an old friend prompts the Corpse God to rethink how he fits into his new world. His first step? An overdue confrontation with Xiaoyu. Meanwhile, Iwanome, Clarissa, and Solitaire pursue the same mystery in their own ways.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E20%20-%20The%20Visitors-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x20 - The Visitors
+          </div>
+          <div class="plot">The mysterious Civil visits the Corpse God to have his fortune told, and the encounter surprises both of them. The necromancer draws a step closer to the traces of his old world, but are they friend or foe?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E21%20-%20The%20Spirit-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x21 - The Spirit
+          </div>
+          <div class="plot">A fight between a Shinoyama enforcer and Civil's bodyguard brings an abrupt end to the mysterious visitor's interview with the Corpse God. But will he really leave in peace? Meanwhile, Solitaire's latest scheme causes a stir.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E22%20-%20The%20Karma-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x22 - The Karma
+          </div>
+          <div class="plot">Civil confronts Solitaire, hoping to provoke a confrontation with the Fire-Breathing Bug, but he may get his wish sooner than he planned. Meanwhile, the Corpse God plots a rescue mission.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E23%20-%20The%20Declaration-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x23 - The Declaration
+          </div>
+          <div class="plot">The day of the showdown arrives. The Corpse God and friends prepare to rescue the real Polka while other forces maneuver in the shadows. But a surprise visit from the kidnapper himself takes events in a direction no one expected.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Dead%20Mount%20Death%20Play%20-%20S01E24%20-%20The%20Shinjuku%20War-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x24 - The Shinjuku War
+          </div>
+          <div class="plot">The Corpse God prepares to sacrifice himself to stop Civil, but his new friends have other ideas. Rescuing Polka's soul and regaining any shot at a peace will take two lifetimes worth of connections.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

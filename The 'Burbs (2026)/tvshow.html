@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The 'Burbs
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The 'Burbs</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20%27Burbs%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20%27Burbs%20-%20S01E01%20-%20The%20Goddamn%20Brownies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Goddamn Brownies
+          </div>
+          <div class="plot">Samira and Rob's suburban life is upended when a mysterious new neighbor moves into the Victorian.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20%27Burbs%20-%20S01E02%20-%20Mind%20Your%20Own%20Business-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Mind Your Own Business
+          </div>
+          <div class="plot">Samira becomes convinced that her new neighbor is up to no good and possibly involved in a crime.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20%27Burbs%20-%20S01E03%20-%20Sardine-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Sardine?
+          </div>
+          <div class="plot">When a neighbor's dog goes missing, Samira and her new friends break into the Victorian to find it.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20%27Burbs%20-%20S01E04%20-%20A%20Nine%20on%20the%20Tension%20Scale-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - A Nine on the Tension Scale
+          </div>
+          <div class="plot">A neighborhood block party brings secrets to light; Samira suspects that Rob is hiding something.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20%27Burbs%20-%20S01E05%20-%20The%20Old%20Face-to-Face-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - The Old Face-to-Face
+          </div>
+          <div class="plot">As glimpses of Rob and Naveen's past surface, Samira makes a discovery that changes everything.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20%27Burbs%20-%20S01E06%20-%20Neighbor%20Take%20Warning-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Neighbor Take Warning
+          </div>
+          <div class="plot">The cul-de-sac crew goes on a mission to find answers and save a neighbor who may be in danger.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20%27Burbs%20-%20S01E07%20-%20Do%20Not%20Mess%20with%20Suburbanites-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Do Not Mess with Suburbanites
+          </div>
+          <div class="plot">Just when the cul-de-sac crew thinks they&rsquo;ve run into a dead end, danger arrives on Ashfield Place.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20%27Burbs%20-%20S01E08%20-%20Only%20One%20Way%20Out-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Only One Way Out
+          </div>
+          <div class="plot">Samira uncovers a conspiracy that could ruin Hinkley Hills' image as &quot;The Safest Town in America.&quot;
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - A Man on the Inside
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">A Man on the Inside</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/A%20Man%20on%20the%20Inside%20%282024%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S01E01%20-%20Tinker%20Tailor%20Older%20Spy-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Tinker Tailor Older Spy
+          </div>
+          <div class="plot">Encouraged by his daughter to try something new, widower Charles Nieuwendyk answers an ad from a private eye seeking a mole at a retirement community.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S01E02%20-%20The%20Man%20Who%20Knew%20Too%20Much%20About%20Bridges-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Man Who Knew Too Much About Bridges
+          </div>
+          <div class="plot">Charles charms his fellow residents at happy hour while finding his footing as a sleuth. But will a mysterious warning end the case before it even begins?
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S01E03%20-%20The%20Emily%20Always%20Rings%20Twice-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - The Emily Always Rings Twice
+          </div>
+          <div class="plot">Charles has some explaining to do when Emily unexpectedly arrives in town &mdash; and another missing item lands him in Elliott's cranky crosshairs.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S01E04%20-%20The%20Curious%20Incident%20of%20the%20Dog%20in%20the%20Painting%20Class-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Curious Incident of the Dog in the Painting Class
+          </div>
+          <div class="plot">Pacific View's group activities give Charles the perfect opportunity to narrow down his list of suspects, but his chumminess raises concerns for Julie.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S01E05%20-%20Presents%20and%20Clear%20Danger-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Presents and Clear Danger
+          </div>
+          <div class="plot">While Julie uses a lavish gift as bait, Charles tries to connect with Gladys. Virginia encourages Florence to splurge on something she's always wanted.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S01E06%20-%20Our%20Man%20in%20Sacramento-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Our Man in Sacramento
+          </div>
+          <div class="plot">As the Pacific View community reels from a sudden loss, Charles goes on an emotional journey with Emily. Didi weighs an intriguing offer from corporate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S01E07%20-%20From%20Russian%20Hill%20with%20Love-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - From Russian Hill with Love
+          </div>
+          <div class="plot">On a tour of San Francisco's historic sites, Charles and Calbert bond while talking about the past, present and future. Didi and Julie lock horns.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S01E08%20-%20The%20Spy%20Who%20Came%20In%20from%20the%20Cold-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Spy Who Came In from the Cold
+          </div>
+          <div class="plot">When the pieces click into place, Charles faces the difficult task of revealing his true purpose at Pacific View. Emily helps him unpack the past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S02E01%20-%20Orientation-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x1 - Orientation
+          </div>
+          <div class="plot">When a college president's secrets fall into the wrong hands, Charles poses as a visiting lecturer on campus to sniff out an anonymous blackmailer.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S02E02%20-%20Major%20Declaration-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x2 - Major Declaration
+          </div>
+          <div class="plot">While Julie enlists an unlikely expert to dig into new evidence, Charles finds himself on thin ice when his professional and personal lives intersect.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S02E03%20-%20Family%20Weekend-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x3 - Family Weekend
+          </div>
+          <div class="plot">A briefing with Brad turns into a chaotic brainstorming session. Emily gets called in as backup when her dad has lingering doubts about Mona.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S02E04%20-%20Spirit%20Week-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x4 - Spirit Week
+          </div>
+          <div class="plot">The blackmailer's pressure escalates, a new suspect emerges and a cherished school tradition forces Charles to navigate a glittering gauntlet.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S02E05%20-%20Thanksgiving%20Break-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x5 - Thanksgiving Break
+          </div>
+          <div class="plot">The Nieuwendyks' Thanksgiving dinner comes with a side of commotion as an overstuffed table and a pie-related crisis test everyone's holiday spirit.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S02E06%20-%20Extracurriculars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x6 - Extracurriculars
+          </div>
+          <div class="plot">Out of leads, Charles and Julie wonder if they've been searching in the wrong direction all along. Work takes a backseat when Mona and Emily play hooky.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S02E07%20-%20Group%20Project-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x7 - Group Project
+          </div>
+          <div class="plot">Charles turns a class reunion into a high-stakes heist, complete with code names, sleight-of-hand and a crew of operatives with more heart than skill.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/A%20Man%20on%20the%20Inside%20-%20S02E08%20-%20Final%20Exams-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            2x8 - Final Exams
+          </div>
+          <div class="plot">As the final puzzle pieces of the Wheeler case fall into place, new doors open for everyone &mdash; detectives and suspects alike.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

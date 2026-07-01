@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - The Gray House
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">The Gray House</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/The%20Gray%20House%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gray%20House%20-%20S01E01%20-%20Nothin%27%20Like%20the%20Fourth%20of%20July-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Nothin' Like the Fourth of July
+          </div>
+          <div class="plot">It seems all of Richmond Virginia is celebrating Independence Day 1860 until a slave wagon appears; among its sickly occupants is Mary Jane Richards, who is being questioned by Slave Patrol Officer Pike.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gray%20House%20-%20S01E02%20-%20Never%20Secede%21-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Never Secede!
+          </div>
+          <div class="plot">As Mary Jane recovers, the Van Lew family prepares to transport runaway Robert Ford across the border to the safety of the North...nearly getting caught by Laurette when smuggling him out. For Elizabeth, this is their last Underground Railroad duty.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gray%20House%20-%20S01E03%20-%20First%20Blood-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - First Blood
+          </div>
+          <div class="plot">Grieving Tadpole, the Van Lew's ensure his death is not in vain. After his funeral, Mary Jane confides to Elizabeth and Eliza an idea for retribution against the Confederacy.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gray%20House%20-%20S01E04%20-%20Spy%20Ring-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Spy Ring
+          </div>
+          <div class="plot">Mary Jane arrives at the Gray House and is warned about Lavinia. Union officers Captain Lounsbury and Major Revere, captured at Bull Run, get mustered into the P.O.W. lockup by Confederate General Winder as Erasmus Ross looks on.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gray%20House%20-%20S01E05%20-%20Treason%20Ends%20on%20the%20Gallows-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Treason Ends on the Gallows
+          </div>
+          <div class="plot">In 1862, the Van Lews, upset over the Balls Bluff defeat, fret over how to get General McClellan to take them seriously. At the Confederate fundraiser, Mary Jane informs Eliza and Elizabeth of more messages sewn into her donated clothes.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gray%20House%20-%20S01E06%20-%20Alien%20Enemies-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Alien Enemies
+          </div>
+          <div class="plot">Stokely and Lumpkin round up enemies, holding some hostage and beating and killing others. Clara is about to be beaten for a confession by Stokely when the Van Lews and President Davis arrive. Stokely is stopped and the hostages are released.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gray%20House%20-%20S01E07%20-%20Babcock-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Babcock
+          </div>
+          <div class="plot">Mary Jane searches Davis' office to differentiate real intel from planted misinformation. Nearly caught, Mary Jane hurries to write notes for Jericho to deliver to their cohort.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/The%20Gray%20House%20-%20S01E08%20-%20The%20Firestorm-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - The Firestorm
+          </div>
+          <div class="plot">Numb from trauma, Elizabeth returns from the conflict and is stopped by Stokely for questioning. She finds an ally in Hampton.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Big Mistakes
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Big Mistakes</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Big%20Mistakes%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Big%20Mistakes%20-%20S01E01%20-%20Get%20Your%20Nonna%20a%20Necklace-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Get Your Nonna a Necklace
+          </div>
+          <div class="plot">Tasked with buying a sentimental gift for their dying grandmother, bickering siblings Nicky and Morgan commit a minor crime with major consequences.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Big%20Mistakes%20-%20S01E02%20-%20I%20Will%20Do%20ANYTHING%20to%20Survive-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - I Will Do ANYTHING to Survive
+          </div>
+          <div class="plot">A dangerous ultimatum from Yusuf forces Morgan and Nicky to run interference at an already chaotic family funeral.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Big%20Mistakes%20-%20S01E03%20-%20Show%20Me%20the%20Money-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Show Me the Money
+          </div>
+          <div class="plot">Nicky and Morgan's success is short-lived when they're coerced into a &quot;friendship&quot; with Yusuf's boss. Linda reconsiders her run for mayor.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Big%20Mistakes%20-%20S01E04%20-%20Weakness%20Always%20Exposes%20Itself-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Weakness Always Exposes Itself
+          </div>
+          <div class="plot">Nicky and Tareq share their feelings, while Morgan and Max get personal at couple's therapy. A surprise guest adds extra spice to a family dinner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Big%20Mistakes%20-%20S01E05%20-%20James%20417-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - James 4:17
+          </div>
+          <div class="plot">When a job at a cattle auction goes sideways, Nicky must leverage his job to prove his worth. Linda's campaign gets a boost from a political scandal.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Big%20Mistakes%20-%20S01E06%20-%20You%20F-ck%20with%20My%20Family%2C%20You%20F-ck%20with%20Me-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - You F-ck with My Family, You F-ck with Me
+          </div>
+          <div class="plot">A fed-up Nicky tries to cut ties with Ivan &mdash; and his sister &mdash; as he prepares to come clean about Tareq. Morgan attends an uncomfortable baby shower.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Big%20Mistakes%20-%20S01E07%20-%20I%27ve%20Really%20Enjoyed%20My%20Time%20with%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - I've Really Enjoyed My Time with You
+          </div>
+          <div class="plot">Anxious to impress an important partner, Ivan splashes out on a trip to Miami. Nicky and Morgan connect on a new level after a stimulating dinner.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Big%20Mistakes%20-%20S01E08%20-%20Rock%2C%20Paper%2C%20Scissors-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Rock, Paper, Scissors
+          </div>
+          <div class="plot">Morgan and Nicky brace for blowback from the Miami operation as their family, friends and some unwelcome faces converge around the election results.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

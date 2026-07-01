@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - May I Ask for One Final Thing?
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">May I Ask for One Final Thing?</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/May%20I%20Ask%20for%20One%20Final%20Thing%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/May%20I%20Ask%20for%20One%20Final%20Thing%20-%20S01E01%20-%20May%20I%20Kindly%20Beat%20the%20Tar%20Out%20of%20Those%20Evil%20Nobles%20%28Pigs%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - May I Kindly Beat the Tar Out of Those Evil Nobles (Pigs)?
+          </div>
+          <div class="plot">When &quot;villainess&quot; Scarlet's fianc&eacute; dumps her at a ball, she requests an unexpected form of satisfaction.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/May%20I%20Ask%20for%20One%20Final%20Thing%20-%20S01E02%20-%20May%20I%20Offer%20You%20the%20Taste%20of%20My%20Fist%20as%20the%20Ladylike%20Thing%20to%20Do-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - May I Offer You the Taste of My Fist as the Ladylike Thing to Do?
+          </div>
+          <div class="plot">Scarlet's behavior at the ball has unexpected consequences, including a direct attempt on her life!
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/May%20I%20Ask%20for%20One%20Final%20Thing%20-%20S01E03%20-%20I%20Considered%20a%20Negotiated%20Resolution%2C%20but%20May%20I%20Biff%20and%20Pow%20Those%20Noblemen%20Instead-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - I Considered a Negotiated Resolution, but May I Biff and Pow Those Noblemen Instead?
+          </div>
+          <div class="plot">To take down the kingdom's slave trader, Scarlet negotiates access to the upcoming slave auction.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/May%20I%20Ask%20for%20One%20Final%20Thing%20-%20S01E04%20-%20May%20I%20Go%20to%20See%20My%20Fists%27%20Beloved%20One%20%28Punching%20Bag%29-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - May I Go to See My Fists' Beloved One (Punching Bag)?
+          </div>
+          <div class="plot">Scarlet infiltrates the slave auction, but her priority is to find and pummel Lord Godwin.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/May%20I%20Ask%20for%20One%20Final%20Thing%20-%20S01E05%20-%20May%20I%20Clobber%20This%20Asshole%20Prince-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - May I Clobber This Asshole Prince?
+          </div>
+          <div class="plot">In the aftermath of the slave auction raid, Scarlet and Julius consider their next moves.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/May%20I%20Ask%20for%20One%20Final%20Thing%20-%20S01E06%20-%20May%20I%20Send%20This%20Pig%20Flying%20into%20the%20Sky-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - May I Send This Pig Flying into the Sky?
+          </div>
+          <div class="plot">Scarlet is to accompany Saint Diana's Holy Land Pilgrimage, but the servants of Palmianism stand in her way.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/May%20I%20Ask%20for%20One%20Final%20Thing%20-%20S01E07%20-%20May%20I%20Carry%20Out%20a%20Plan%20That%20Shows%20a%20New%20Side%20of%20You-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - May I Carry Out a Plan That Shows a New Side of You?
+          </div>
+          <div class="plot">Diana explores new feelings while Scarlet explores a festival looking for new people to punch.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/May%20I%20Ask%20for%20One%20Final%20Thing%20-%20S01E08%20-%20If%20You%20Don%E2%80%99t%20Mind%2C%20Can%20I%20Give%20You%20My%20Fist%20As%20a%20Handkerchief-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - If You Don&rsquo;t Mind, Can I Give You My Fist As a Handkerchief?
+          </div>
+          <div class="plot">The pilgrimage proceeds to Snowind, where Scarlet and her crew receive a less than warm welcome.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/May%20I%20Ask%20for%20One%20Final%20Thing%20-%20S01E09%20-%20May%20I%20Explain%20That%20This%20Is%20Not%20Something%20That%20Just%20Anyone%20Can%20Do-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - May I Explain That This Is Not Something That Just Anyone Can Do?
+          </div>
+          <div class="plot">While threats approach from all sides, Diana is racked with guilt over Scarlet's condition.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/May%20I%20Ask%20for%20One%20Final%20Thing%20-%20S01E10%20-%20May%20I%20Cook%20This%20Thick%20Cut%20of%20Pork%20Through%20With%20Body%20Punches-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - May I Cook This Thick Cut of Pork Through With Body Punches?
+          </div>
+          <div class="plot">Julius negotiates with an unexpected ally while Scarlet hones her fists for a new kind of feast.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/May%20I%20Ask%20for%20One%20Final%20Thing%20-%20S01E11%20-%20As%20These%20Appear%20Undercooked%2C%20May%20I%20Turn%20Them%20Into%20Mince%20Meat-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x11 - As These Appear Undercooked, May I Turn Them Into Mince Meat?
+          </div>
+          <div class="plot">Scarlet and her friends continue to deal with the external threats, but the source of the problem remains.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/May%20I%20Ask%20for%20One%20Final%20Thing%20-%20S01E12%20-%20May%20I%20Pay%20Off%20the%20Massive%20Debt%20My%20Fists%20Have%20Accrued-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x12 - May I Pay Off the Massive Debt My Fists Have Accrued?
+          </div>
+          <div class="plot">Scarlet pursues a final reckoning with Terenezza, but the would-be heroine has a cruel plan in store.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/May%20I%20Ask%20for%20One%20Final%20Thing%20-%20S01E13%20-%20May%20I%20Ask%20For%20One%20Final%20Thing-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x13 - May I Ask For One Final Thing?
+          </div>
+          <div class="plot">Scarlet is ready to deal her last punch to Terenezza, but she must first overcome a mind-controlled Julius.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

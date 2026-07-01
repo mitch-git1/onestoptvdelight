@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - IT: Welcome to Derry
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">IT: Welcome to Derry</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/IT%20Welcome%20to%20Derry%20%282025%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/IT%20Welcome%20to%20Derry%20-%20S01E01%20-%20The%20Pilot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - The Pilot
+          </div>
+          <div class="plot">As four misfit kids vow to find their missing classmate, Major Leroy Hanlon arrives to a mixed reception at Derry Air Force Base.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/IT%20Welcome%20to%20Derry%20-%20S01E02%20-%20The%20Thing%20in%20the%20Dark-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - The Thing in the Dark
+          </div>
+          <div class="plot">While Charlotte and Will navigate their new life in Derry, Ronnie worries about her father's fate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/IT%20Welcome%20to%20Derry%20-%20S01E03%20-%20Now%20You%20See%20It-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Now You See It
+          </div>
+          <div class="plot">As Leroy, Pauly, and Dick search for a new dig site, the kids attempt to get visual proof of the phenomena they've been experiencing.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/IT%20Welcome%20to%20Derry%20-%20S01E04%20-%20The%20Great%20Swirling%20Apparatus%20of%20Our%20Planet%27s%20Function-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - The Great Swirling Apparatus of Our Planet's Function
+          </div>
+          <div class="plot">As the kids face increasingly terrifying experiences, Charlotte attempts to advocate for Hank, and General Shaw escalates his efforts.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/IT%20Welcome%20to%20Derry%20-%20S01E05%20-%20Neibolt%20Street-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Neibolt Street
+          </div>
+          <div class="plot">As the military descends on Neibolt Street, the kids head into the sewers with their own objective.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/IT%20Welcome%20to%20Derry%20-%20S01E06%20-%20In%20the%20Name%20of%20the%20Father-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - In the Name of the Father
+          </div>
+          <div class="plot">Plagued by dark visions, Dick gets a surprise at the Black Spot. Meanwhile, the kids each face their own challenges.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/IT%20Welcome%20to%20Derry%20-%20S01E07%20-%20The%20Black%20Spot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - The Black Spot
+          </div>
+          <div class="plot">A vigilante attack on the Black Spot unleashes long dormant forces. In the aftermath, Dick helps uncover another crucial artifact.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/IT%20Welcome%20to%20Derry%20-%20S01E08%20-%20Winter%20Fire-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Winter Fire
+          </div>
+          <div class="plot">As a dense fog engulfs the town &ndash; and General Shaw pushes ahead with his mission &ndash; the Hanlons, Rose, Dick, and the kids must work together to save Derry.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

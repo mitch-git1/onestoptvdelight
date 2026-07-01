@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Episode List</title>
+</head>
+<body>
+  Library - TV Shows - Regular Show: The Lost Tapes
+  <link rel="shortcut icon" href="../images/icons/favicon.ico" />
+  <script type="text/javascript" src="../lib/jquery.js">
+  </script>
+  <link rel="stylesheet" href="../lib/jquery.fancybox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../style.css" />
+  <script type="text/javascript">
+  //<![CDATA[
+            function sleep(millis)
+             {
+              var date = new Date();
+              var curDate = null;
+              do { curDate = new Date(); }
+              while(curDate-date < millis);
+            }
+            function openEpisode(epID)
+            {
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Stop","params":{"playerid":1},"id":1}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+                sleep(500);
+                $.ajax({
+                    url: 'http://127.0.0.1:8899/jsonrpc?request={"jsonrpc":"2.0","method":"Player.Open","id":1,"params":{"item":{"episodeid":'+epID+'}}}',
+                    type: 'GET',
+                    dataType: 'jsonp',
+                    crossDomain: true
+                });
+            }
+  //]]>
+  </script>
+  <div id="largeContainer">
+    <div class="infoContainer">
+      <div class="pageLinkContainer">
+        <span class="pageLink pageLink_first"><a href="#" onclick="JavaScript:window.close();">Close</a></span>
+      </div>
+      <div class="infoBackTitleContainer">
+        <span class="infoBackTitle">Regular Show: The Lost Tapes</span>
+        <hr class="subTitleSeprator" />
+        <span class="infoBackTitleSub">Episode List</span>
+      </div>
+      <div class="infoContainerTextContainer"></div>
+      <div class="aniEpPosterHead"><img alt="poster" onerror="this.src = &#39;none&#39;;" 
+      src="../images/Regular%20Show%20The%20Lost%20Tapes%20%282026%29-POSTER.thumb.jpg" /></div><span class="dateInfo"><span>Generated on:</span> </span>
+    </div>
+    <div class="aniEpsContainer">
+
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Regular%20Show%20The%20Lost%20Tapes%20-%20S01E01%20-%20Fix%20That%20Tape-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x1 - Fix That Tape
+          </div>
+          <div class="plot">A broken VHS tape needs to be fixed.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Regular%20Show%20The%20Lost%20Tapes%20-%20S01E02%20-%20Skips%27%20Luau-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x2 - Skips' Luau
+          </div>
+          <div class="plot">Mordecai and Rigby want a burger with a special ingredient.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Regular%20Show%20The%20Lost%20Tapes%20-%20S01E03%20-%20Blade%20Games-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x3 - Blade Games
+          </div>
+          <div class="plot">Benson learns a better way to motivate.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Regular%20Show%20The%20Lost%20Tapes%20-%20S01E04%20-%20Nap%20Spot-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x4 - Nap Spot
+          </div>
+          <div class="plot">A secret nap spot causes major problems.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Regular%20Show%20The%20Lost%20Tapes%20-%20S01E05%20-%20Coffee%20Shop%20Wars-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x5 - Coffee Shop Wars
+          </div>
+          <div class="plot">A rival coffee shop moves into town.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Regular%20Show%20The%20Lost%20Tapes%20-%20S01E06%20-%20Boba%20or%20Bo-Bust-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x6 - Boba or Bo-Bust
+          </div>
+          <div class="plot">Mordecai and Rigby have to unload a lot of boba.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Regular%20Show%20The%20Lost%20Tapes%20-%20S01E07%20-%20Corpse%20Flower-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x7 - Corpse Flower
+          </div>
+          <div class="plot">Some flowers smell really bad.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Regular%20Show%20The%20Lost%20Tapes%20-%20S01E08%20-%20Beginson-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x8 - Beginson
+          </div>
+          <div class="plot">Benson gets booted out of Heir to the Throne.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Regular%20Show%20The%20Lost%20Tapes%20-%20S01E09%20-%20Good%20Mitch%20Spiking-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x9 - Good Mitch Spiking
+          </div>
+          <div class="plot">Muscle Man reveals his secret past.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+      <div class="aniEpItemWrapper">
+        <div class="aniEpItemContainer">
+          <div class="epThumb"><img onerror="this.style.visibility=&#39;hidden&#39;;" src=
+          "../images/epthumbs/Regular%20Show%20The%20Lost%20Tapes%20-%20S01E10%20-%20Stilt%20Walkers-THUMB.thumb.jpg" /></div>
+          <div class="title">
+            1x10 - Stilt Walkers
+          </div>
+          <div class="plot">Rigby wants this photo to be taken, seriously.
+          </div>
+          <div class="quality"></div>
+        </div>
+      </div>
+  
+
+      <div class="footerSpacer"></div>
+      <div class="footerContainer">
+        <div class="footerTextContainer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
